@@ -88,12 +88,22 @@
 
 ---
 
-## Sprint 1 Status: NOT STARTED
+## Sprint 1 Status: INITIALIZED
 
-- **Current Phase:** Research & Question Definition
-- **Today's First Task:** Execute Scholar searches + organize literature
+### Setup Complete ✓
+- [x] Folder structure created
+- [x] CLAUDE.md (project rules) created
+- [x] TODO.md (this file) created
+- [x] Exposé LaTeX template (`expose/exposé.tex`) created with Harvard style
+- [x] Research question framework (`expose/research-question.md`) created
+- [x] Exposé outline structure (`expose/outline.md`) created
+- [x] Literature tracking template (`literature/sources-summary.md`) created
+- [x] Master bibliography file (`references.bib`) created
+
+### Current Phase: Research & Question Definition (Days 1–3)
+- **Today's First Task:** Execute Google Scholar searches (5 queries in TODO.md 1.1)
 - **Blockers:** None
-- **Next Review:** After Day 3 (research completion)
+- **Next Review:** After completing searches (Day 2–3)
 
 ---
 
