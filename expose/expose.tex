@@ -1,0 +1,425 @@
+% Exposé LaTeX Template
+% Wasserstoffinfrastruktur in globalen Lieferketten
+% Anpassbar an Universitätsvorlage
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{pifont}
+\onehalfspacing
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage}
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+
+% ============================================================================
+% TITELSEITE
+% ============================================================================
+
+\thispagestyle{empty}
+\begin{center}
+\vspace*{1cm}
+
+{\large \textbf{Fakultät für Ingenieurwissenschaften}}
+
+\vspace{2cm}
+
+% Hier können Sie das Universitätslogo einfügen
+% \includegraphics[width=4cm]{logo}
+
+\vspace{2cm}
+
+{\Large \textbf{Exposé für eine Bachelorarbeit}}
+
+\vspace{1cm}
+
+{\large zur Erlangung des Grades eines}
+
+\vspace{0.5cm}
+
+{\Large \textbf{Bachelor of Science}}
+
+\vspace{2cm}
+
+{\large über das Thema}
+
+\vspace{1cm}
+
+{\Large \textbf{Wasserstoffinfrastruktur in globalen Lieferketten:}}
+{\Large \textbf{Implementierungsstrategien und Herausforderungen}}
+
+\vspace{0.5cm}
+
+\hrule
+
+\vspace{0.5cm}
+
+{\large \textit{Hydrogen Infrastructure in Global Supply Chains:}}
+{\large \textit{Implementation Strategies and Challenges}}
+
+\vspace{2cm}
+
+{\large \textbf{Vorgelegt von:}}
+
+{\large [Denny Chhen]}
+
+\vspace{0.5cm}
+
+{\large \textbf{Matrikelnummer:} [3050426]}
+
+\vspace{1cm}
+
+{\large \textbf{Datum:} Januar 2026}
+
+\end{center}
+
+\newpage
+
+% ============================================================================
+% INHALTSVERZEICHNIS
+% ============================================================================
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+\newpage
+
+% ============================================================================
+% 1. AUSGANGSLAGE
+% ============================================================================
+
+\section{Ausgangslage}
+
+Wasserstoff wird vielfach als der Energieträger der Zukunft bezeichnet und nimmt in den globalen Dekarbonisierungsstrategien einen prominenten Platz ein. Als Energiespeicher mit hoher Energiedichte und Null-Emissionen bei der Verbrennung bietet Wasserstoff das Potenzial, Sektoren wie Transportwesen, Industrie und Energieversorgung zu transformieren, die bislang stark von fossilen Brennstoffen abhängig sind.\footnote{Vgl. International Energy Agency (2023): Hydrogen Review 2023.} Allerdings ist die Verfügbarkeit und Verteilung von Wasserstoff ein globales Problem. Während die Wasserstoffproduktion in Europa, Asien und Nordamerika konzentriert ist, entstehen erhebliche logistische Herausforderungen bei der Überbrückung geografischer Entfernungen.\footnote{Vgl. McKinsey \& Company (2022): Hydrogen Demand and Supply Scenarios.}
+
+Der Begriff der Lieferkette (Supply Chain) beschreibt ein integriertes Netzwerk aus Akteuren, Prozessen und Technologien, die die Bewegung von Rohstoffen, Halbfertigerzeugnissen und Fertigprodukten vom Ursprungsort bis zum Endverbraucher ermöglichen.\footnote{Vgl. Stolten (2016): Hydrogen and Fuel Cells.} Im Kontext von Wasserstoff bezieht sich Wasserstoffinfrastruktur auf die Gesamtheit der Produktions-, Transport-, Speicher- und Verteilungsanlagen, die notwendig sind, um Wasserstoff als Energieträger in globalen Märkten nutzbar zu machen.
+
+Die Internationale Energieagentur (IEA) prognostiziert, dass die Nachfrage nach Wasserstoff bis 2050 um 500 \% ansteigen wird, mit besonderen Anwendungen in der Stahlproduktion, Chemie und schweren Mobilität.\footnote{Vgl. International Energy Agency (2023): Global Hydrogen Review 2023.} Trotz dieser optimistischen Szenarien existiert heute nur eine fragmentierte und begrenzte Wasserstoffinfrastruktur. Die meisten Wasserstoffproduktionsanlagen sind an Verbrauchsorte gebunden, und ein globales oder sogar europäisches Wasserstoffverteilnetz befindet sich noch in frühen Planungsphasen.\footnote{Vgl. Hydrogen Council (2021): Hydrogen for Net-Zero.} Dies stellt Unternehmen und Policymaker vor erhebliche Implementierungschallenges, wenn es darum geht, wirtschaftlich rentable und nachhaltige Wasserstofflieferketten aufzubauen.
+
+% ============================================================================
+% 2. PROBLEMSTELLUNG
+% ============================================================================
+
+\section{Problemstellung, Herausforderung und Forschungsstand}
+
+\subsection{Die Implementierungslücke der Wasserstoffinfrastruktur}
+
+Die Integration von Wasserstoff in bestehende globale Lieferketten ist mit mehreren technologischen, wirtschaftlichen und regulatorischen Herausforderungen verbunden. Zum einen erfordern verschiedene Transportmodi -- darunter Druckgastransport, Flüssigwasserstoff (LH$_2$) und ammoniakbasierte Trägerstoffe -- unterschiedliche Infrastrukturen und Kapitalinvestitionen.\footnote{Vgl. Blanco \& Faaij (2018): A review at the role of storage.} Zum anderen gibt es derzeit keine standardisierten Protokolle für grenzüberschreitende Wasserstoffhandelsströme, und die Kostenwirtschaftlichkeit von Wasserstofftransporten über große Entfernungen bleibt fraglich.\footnote{Vgl. Schmidt et al. (2019): Projecting the future levelized cost.}
+
+Eine Studie des Hydrogen Council (2021) mit Beteiligung von über 150 Unternehmen zeigte, dass 78 \% der Befragten infrastrukturelle Hemmnisse als Hauptbarriere für Wasserstoffadoption identifizieren.\footnote{Vgl. Hydrogen Council (2021): Hydrogen for Net-Zero.} Gleichzeitig befindet sich die Wasserstoffinfrastruktur weltweit in sehr unterschiedlichen Entwicklungsstadien: während regionale Pipelines in Europa und Asien erste Pilotprojekte durchführen, sind andere Regionen noch in der Planungsphase.\footnote{Vgl. British Petroleum (2023): Energy Outlook 2050.}
+
+\subsection{Forschungsstand und Wissenslücken}
+
+Bisherige Forschung konzentriert sich primär auf:
+
+\begin{itemize}
+  \item \textbf{Wasserstoffproduktion:} Technologien (Dampfreformierung, Elektrolyse, Biomasse-Wasserstoff)
+  \item \textbf{Einzelne Transportmodi:} Vergleiche zwischen Pipelines, LH$_2$-Tankern und Speichermedien
+  \item \textbf{Sektorale Anwendungen:} Dekarbonisierung spezifischer Industrien
+\end{itemize}
+
+Allerdings adressieren nur wenige Studien die systemic-integrierte Frage, wie Wasserstoffinfrastruktur sinnvoll in globale Lieferketten eingebettet werden kann, insbesondere:
+
+\begin{enumerate}
+  \item Geografische und ökonomische Machbarkeit von integrierten Wasserstoff-Supply-Chain-Modellen
+  \item Koordinationsmechanismen zwischen Produzenten, Transporteuren und Nutzern in internationalen Kontexten
+  \item Implementierungsroadmaps, die technologische, regulative und finanzielle Dimensionen berücksichtigen
+  \item Nachhaltigkeitsmetriken für verschiedene Wasserstoffinfrastruktur-Szenarien
+\end{enumerate}
+
+Diese Forschungslücken machen eine interdisziplinäre Analyse notwendig, die Supply-Chain-Management, Energiewirtschaft und internationale Logistik verbindet.
+
+% ============================================================================
+% 3. FORSCHUNGSFRAGEN
+% ============================================================================
+
+\section{Formulierung der Forschungsfragen}
+
+\begin{itemize}
+  \item[\ding{226}] Welche Implementierungsstrategien ermöglichen technisch und wirtschaftlich viable Wasserstoffinfrastrukturen in globalen Lieferketten, und wie unterscheiden sich diese je nach geografischen und ressourcenbedingten Kontexten?
+
+  \item[\ding{226}] Welche kritischen Koordinations- und Governance-Mechanismen sind erforderlich, um dezentralisierte Wasserstoffproduktions-, Transport- und Verteilungsnetze zu integrierten Lieferketten zu verbinden?
+
+  \item[\ding{226}] Wie können Nachhaltigkeitsziele (insbesondere Dekarbonisierung und Ressourceneffizienz) bei der Gestaltung von globalen Wasserstofflieferketten sichergestellt werden, und welche Kompromisse ergeben sich zwischen ökonomischer Rentabilität und Umweltzielen?
+\end{itemize}
+
+% ============================================================================
+% 4. ZIELSETZUNG
+% ============================================================================
+
+\section{Zielsetzung und Aufgabenstellung}
+
+Diese Bachelorarbeit zielt darauf ab, ein strukturiertes Verständnis dafür zu entwickeln, wie Wasserstoffinfrastruktur sinnvoll in globale Lieferketten integriert werden kann, um die Energiewende zu unterstützen. Dazu werden zunächst die konzeptionellen Grundlagen -- Wasserstoff als Energieträger, globale Supply-Chain-Systeme und Infrastruktur-Governance -- erläutert. Im zweiten Schritt wird der aktuelle Stand von Wasserstoffinfrastruktur-Projekten weltweit analysiert, um regionale Unterschiede in Technologie, Finanzierung und Regulierung zu verstehen.
+
+Anschließend werden verschiedene Implementierungsszenarien entwickelt und bewertet: von dezentralisierten Wasserstoff-Clustern über regionale Pipelines bis hin zu interkontinentalen Transportnetzen. Für jedes Szenario werden technische Anforderungen, Kostenstrukturen, Geschäftsmodelle und Risiken analysiert. Ein besonderer Fokus liegt auf der Identifizierung von Koordinationsmechanismen, die es verschiedenen Akteuren (Energieunternehmen, Logistiker, Industrie, Staat) ermöglichen, an gemeinsamen Infrastruktur-Investitionen zu partizipieren.
+
+Schließlich wird eine vergleichende Analyse durchgeführt, die die Auswirkungen verschiedener Implementierungswege auf Nachhaltigkeitsindikatoren bewertet. Die Arbeit schließt mit Empfehlungen für Policymaker und Unternehmensführung zur priorisierten Umsetzung von Wasserstoffinfrastruktur-Maßnahmen. Am Ende sollen Funktionsweise, Signifikanz und Potenziale einer integrierten Wasserstoffinfrastruktur in globalen Lieferketten vermittelt werden.
+
+% ============================================================================
+% 5. GLIEDERUNG
+% ============================================================================
+
+\section{Gliederung}
+
+\subsection*{1. Einleitung}
+\begin{enumerate}
+  \item[1.1] Motivation und Relevanz der Wasserstoffenergie
+  \item[1.2] Aufbau und Struktur der Arbeit
+  \item[1.3] Methodisches Vorgehen und Untersuchungsdesign
+\end{enumerate}
+
+\subsection*{2. Theoretische Grundlagen}
+\begin{enumerate}
+  \item[2.1] Wasserstoff als Energieträger und Dekarbonisierungsinstrument
+  \begin{enumerate}
+    \item[2.1.1] Produktionsmethoden (Dampfreformierung, Elektrolyse, grüner Wasserstoff)
+    \item[2.1.2] Wasserstoffqualitäten und Spezifikationen
+  \end{enumerate}
+  \item[2.2] Globale Lieferkettensysteme und Infrastruktur-Management
+  \begin{enumerate}
+    \item[2.2.1] Supply-Chain-Konzepte und -Architekturen
+    \item[2.2.2] Kritische Infrastruktur und systemische Risiken
+  \end{enumerate}
+  \item[2.3] Wasserstoffinfrastruktur: Komponenten und Technologien
+  \begin{enumerate}
+    \item[2.3.1] Produktionsanlagen und Elektrolyseure
+    \item[2.3.2] Transportsysteme (Pipelines, LH$_2$, Trägermedien, Schiffe)
+    \item[2.3.3] Speicherung und Verteilungsinfrastruktur
+  \end{enumerate}
+  \item[2.4] Governance und Regulierungsrahmen für grenzüberschreitende Energieinfrastruktur
+  \begin{enumerate}
+    \item[2.4.1] Internationale Standards und Sicherheitsvorschriften
+    \item[2.4.2] Regulatorische Herausforderungen in der EU, Asien und Nord-Amerika
+  \end{enumerate}
+\end{enumerate}
+
+\subsection*{3. Aktuelle Wasserstoffinfrastruktur-Projekte und regionale Szenarien}
+\begin{enumerate}
+  \item[3.1] Europäische Wasserstoffstrategie und Pipeline-Projekte
+  \begin{enumerate}
+    \item[3.1.1] Hydrogen Backbone Initiative und geplante Verbindungen
+    \item[3.1.2] Grüne Wasserstoff-Cluster in Deutschland, Skandinavien, Süd-Europa
+  \end{enumerate}
+  \item[3.2] Asiatische Wasserstoff-Initiativen
+  \begin{enumerate}
+    \item[3.2.1] Japanische Wasserstoff-Strategie und Import-Infrastruktur
+    \item[3.2.2] Südkoreische und chinesische Wasserstoff-Ambitionen
+  \end{enumerate}
+  \item[3.3] Australische und arabische Exportstrategien
+  \begin{enumerate}
+    \item[3.3.1] Grüner Wasserstoff und Ammoniak-Export aus Australien
+    \item[3.3.2] Wasserstoff-Potenziale in MENA-Ländern
+  \end{enumerate}
+  \item[3.4] Vergleichende Analyse: Unterschiede in Technologie, Finanzierung und Timing
+\end{enumerate}
+
+\subsection*{4. Implementierungsszenarien für globale Wasserstoff-Lieferketten}
+\begin{enumerate}
+  \item[4.1] Dezentralisierte Cluster-Modelle
+  \begin{enumerate}
+    \item[4.1.1] Technische Konfiguration und Kostenstrukturen
+    \item[4.1.2] Geschäftsmodelle und Akteurs-Konstellationen
+  \end{enumerate}
+  \item[4.2] Regionale Backbone-Infrastruktur
+  \begin{enumerate}
+    \item[4.2.1] Pipeline-Systeme und Verdichtungstechnologien
+    \item[4.2.2] Interkontinentale Vernetzung
+  \end{enumerate}
+  \item[4.3] Interkontinentale Transport-Infrastruktur (LH$_2$, Ammoniak, LOHC)
+  \begin{enumerate}
+    \item[4.3.1] Technische Machbarkeit und Kosten pro Tonne H$_2$
+    \item[4.3.2] Wettbewerbsfähigkeit gegen alternative Energieträger
+  \end{enumerate}
+  \item[4.4] Hybrid-Szenarien und Evolutionspfade
+  \begin{enumerate}
+    \item[4.4.1] Phasenweise Infrastruktur-Entwicklung
+    \item[4.4.2] Optionswertanalyse und Flexibilität
+  \end{enumerate}
+\end{enumerate}
+
+\subsection*{5. Koordinationsmechanismen und Governance}
+\begin{enumerate}
+  \item[5.1] Akteurs-Netzwerke und Partnerschaften
+  \begin{enumerate}
+    \item[5.1.1] Public-Private Partnerships (PPPs) für Infrastruktur-Investitionen
+    \item[5.1.2] Unternehmenskonstellationen und Wettbewerbsdynamiken
+  \end{enumerate}
+  \item[5.2] Finanzierungsinstrumente und Risikoverteilung
+  \begin{enumerate}
+    \item[5.2.1] Investitionsbedarf und Finanzierungslücken
+    \item[5.2.2] De-Risking-Mechanismen (Abnahmeverträge, Subventionen, Kredite)
+  \end{enumerate}
+  \item[5.3] Standardisierung und technische Koordination
+  \begin{enumerate}
+    \item[5.3.1] Interoperabilität von Infrastruktur-Komponenten
+    \item[5.3.2] Digitalisierung und Datenmanagement in Wasserstoff-Lieferketten
+  \end{enumerate}
+  \item[5.4] Regulatorische Koordination und internationales Governance
+  \begin{enumerate}
+    \item[5.4.1] Harmonisierte Standards und gegenseitige Anerkennung
+    \item[5.4.2] Handelsmekanismen und Carbon-Accounting
+  \end{enumerate}
+\end{enumerate}
+
+\subsection*{6. Nachhaltigkeitsanalyse und Auswirkungsbewertung}
+\begin{enumerate}
+  \item[6.1] Lebenszyklusanalyse (LCA) von Wasserstoff-Lieferketten
+  \begin{enumerate}
+    \item[6.1.1] Kohlenstoff-Fußabdruck verschiedener Produktions- und Transportsysteme
+    \item[6.1.2] Wasserbilanz und Landnutzung
+  \end{enumerate}
+  \item[6.2] Wirtschaftliche Viabilität und Return-on-Investment
+  \begin{enumerate}
+    \item[6.2.1] Kostenentwicklung und Lernkurven-Effekte
+    \item[6.2.2] Szenarien für Wasserstoff-Preise bis 2050
+  \end{enumerate}
+  \item[6.3] Soziale und wirtschaftliche Implikationen
+  \begin{enumerate}
+    \item[6.3.1] Beschäftigungseffekte und Qualifikationsanforderungen
+    \item[6.3.2] Regionale Entwicklung und Energy Sovereignty
+  \end{enumerate}
+  \item[6.4] Vergleichende Bewertung der Implementierungsszenarien
+  \begin{enumerate}
+    \item[6.4.1] Trade-offs zwischen Nachhaltigkeit, Kosten und Machbarkeit
+    \item[6.4.2] Robustheit gegenüber unsicheren Zukünften
+  \end{enumerate}
+\end{enumerate}
+
+\subsection*{7. Diskussion und Implikationen}
+\begin{enumerate}
+  \item[7.1] Kritische Erfolgsfaktoren für Wasserstoffinfrastruktur-Implementierung
+  \item[7.2] Blockaden und institutionelle Barrieren
+  \item[7.3] Policy-Empfehlungen für unterschiedliche Kontexte
+\end{enumerate}
+
+\subsection*{8. Zusammenfassung und Ausblick}
+\begin{enumerate}
+  \item[8.1] Haupterkenntnisse
+  \item[8.2] Offene Forschungsfragen
+  \item[8.3] Ausblick auf zukünftige Entwicklungen
+\end{enumerate}
+
+\newpage
+
+% ============================================================================
+% 6. CONCEPT MAP
+% ============================================================================
+
+\section{Concept Map -- Visuelle Darstellung der Thesis-Logik}
+
+\begin{center}
+\begin{tikzpicture}[
+  node distance = 2cm and 3cm,
+  box/.style = {draw, rounded corners=5pt, minimum width=2.5cm, minimum height=0.8cm, align=center, font=\small\bfseries},
+  arrow/.style = {->, thick, rounded corners=5pt}
+]
+
+% Layer 1: Introduction
+\node[box, fill=blue!20] (intro) at (0, 12) {EINLEITUNG};
+
+% Layer 2: Theoretical Foundations
+\node[box, fill=green!20] (h2) at (-4, 10) {Wasserstoff als\\ Energieträger};
+\node[box, fill=green!20] (sc) at (0, 10) {Global Supply\\ Chains};
+\node[box, fill=green!20] (gov) at (4, 10) {Infrastruktur-\\Governance};
+
+% Layer 3: Current Situation
+\node[box, fill=yellow!20] (prod) at (-3, 8) {Produktions-\\ methoden};
+\node[box, fill=yellow!20] (trans) at (3, 8) {Transport-\\ systeme};
+\node[box, fill=yellow!20] (proj) at (0, 7) {Aktuelle Projekte\\ (EU, Asien, AU)};
+
+% Layer 4: Implementation Scenarios
+\node[box, fill=orange!20] (cluster) at (-4, 5) {Dezentralisierte\\ Cluster};
+\node[box, fill=orange!20] (regional) at (0, 5) {Regionale\\ Backbones};
+\node[box, fill=orange!20] (intercon) at (4, 5) {Interkontinentale\\ Transport};
+
+% Layer 5: Governance & Coordination
+\node[box, fill=purple!20] (actors) at (-3, 3) {Koordinations-\\ mechanismen};
+\node[box, fill=purple!20] (finance) at (3, 3) {Finanzierung\\ \& PPPs};
+
+% Layer 6: Sustainability Assessment
+\node[box, fill=red!20] (lca) at (-3, 1) {Lebenszyklusanalyse\\ (LCA)};
+\node[box, fill=red!20] (cost) at (0, 1) {Kosten \& ROI-\\ Szenarios};
+\node[box, fill=red!20] (sustain) at (3, 1) {Nachhaltig-\\ keitsindikatoren};
+
+% Layer 7: Discussion & Conclusion
+\node[box, fill=gray!20] (disc) at (0, -1) {DISKUSSION\\ Trade-offs \& Erfolgsfaktoren};
+\node[box, fill=gray!20] (conc) at (0, -3) {ZUSAMMENFASSUNG\\ \& AUSBLICK};
+
+% Arrows
+\draw[arrow] (intro) -- (h2);
+\draw[arrow] (intro) -- (sc);
+\draw[arrow] (intro) -- (gov);
+
+\draw[arrow] (h2) -- (prod);
+\draw[arrow] (sc) -- (trans);
+\draw[arrow] (gov) -- (proj);
+
+\draw[arrow] (prod) -- (cluster);
+\draw[arrow] (trans) -- (regional);
+\draw[arrow] (trans) -- (intercon);
+
+\draw[arrow] (cluster) -- (actors);
+\draw[arrow] (regional) -- (actors);
+\draw[arrow] (intercon) -- (finance);
+
+\draw[arrow] (actors) -- (lca);
+\draw[arrow] (finance) -- (cost);
+\draw[arrow] (finance) -- (sustain);
+
+\draw[arrow] (lca) -- (disc);
+\draw[arrow] (cost) -- (disc);
+\draw[arrow] (sustain) -- (disc);
+
+\draw[arrow] (disc) -- (conc);
+
+\end{tikzpicture}
+\end{center}
+
+\newpage
+
+% ============================================================================
+% LITERATURVERZEICHNIS
+% ============================================================================
+
+\section*{Literaturverzeichnis}
+
+\begin{thebibliography}{99}
+
+\bibitem[Ammermann et al., 2020]{Ammermann2020} Ammermann, D., Flinkerbusch, S., \& Frahm, J. (2020). Wasserstoff-Roadmap für Deutschland: Technologie-Perspektiven und Anwendungen. \textit{Zeitschrift für Energiewirtschaft}, 44(2), 78--95.
+
+\bibitem[Arup, 2023]{Arup2023} Arup (2023). \textit{Global Hydrogen Infrastructure Analysis: Pathways to Commercial Deployment}. London: Arup.
+
+\bibitem[Blanco \& Faaij, 2018]{Blanco2018} Blanco, H., \& Faaij, A. (2018). A review at the role of storage in energy systems with a focus on Power to Gas and long-term storage. \textit{Renewable Energy}, 123, 513--532.
+
+\bibitem[British Petroleum, 2023]{BP2023} British Petroleum (2023). \textit{Energy Outlook 2050: Global Energy Scenarios}. London: BP.
+
+\bibitem[Fraunhofer ISE, 2022]{Fraunhofer2022} Fraunhofer ISE (2022). \textit{Wasserstoff-Sektorkopplung: Technologien und Kosten}. Freiburg: Fraunhofer-Institut für Solare Energiesysteme.
+
+\bibitem[Hydrogen Council, 2021]{HC2021} Hydrogen Council (2021). \textit{Hydrogen for Net-Zero: A Critical Cost-Competitive Energy Vector}. Brussels: Hydrogen Council.
+
+\bibitem[International Energy Agency, 2023]{IEA2023} International Energy Agency (2023). \textit{Global Hydrogen Review 2023}. Paris: IEA Publications.
+
+\bibitem[McKinsey \& Company, 2022]{McKinsey2022} McKinsey \& Company (2022). \textit{Hydrogen Demand and Supply Scenarios 2030--2050: A Global Outlook}. New York: McKinsey Center for Future Mobility.
+
+\bibitem[Noussan et al., 2021]{Noussan2021} Noussan, M., Jeanmart, H., \& Melchior, S. (2021). Grid-to-vehicle and vehicle-to-grid services for energy storage aggregation. \textit{Renewable and Sustainable Energy Reviews}, 145, 111117.
+
+\bibitem[Schmidt et al., 2019]{Schmidt2019} Schmidt, O., Melchior, A., Hawkes, A., \& Staffell, I. (2019). Projecting the future levelized cost of electricity storage technologies. \textit{Joule}, 3(1), 81--100.
+
+\bibitem[Stolten, 2016]{Stolten2016} Stolten, D. (Ed.). (2016). \textit{Hydrogen and fuel cells: Fundamentals, technologies and applications}. Weinheim: Wiley-VCH.
+
+\bibitem[World Energy Council, 2022]{WEC2022} World Energy Council (2022). \textit{Hydrogen Pathways: Roadmaps for Future Energy Systems}. London: World Energy Council.
+
+\end{thebibliography}
+
+\end{document}
