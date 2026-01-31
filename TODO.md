@@ -11,11 +11,11 @@
 ### Week 1: Foundation & Research
 
 #### 1.1 Research Infrastructure (Days 1–3)
-- [ ] Execute Google Scholar searches (5 queries provided below)
-- [ ] Download and organize literature in `/literature`
-- [ ] Create summaries for 8–12 foundational sources (regulatory, logistical, technical)
-- [ ] Extract key quotes and position statements
-- [ ] **Deliverable:** `/literature/sources-summary.md` with annotated bibliography
+- [x] Execute Google Scholar searches (5 queries completed)
+- [x] Collect and organize literature links in `/literature`
+- [x] Create summaries for 12 foundational sources (regulatory, logistical, technical)
+- [ ] Download PDFs and extract key quotes and position statements
+- [x] **Deliverable:** `/literature/sources-found.md` with 12 annotated sources + links
 
 **Google Scholar Search Queries:**
 
@@ -88,7 +88,7 @@
 
 ---
 
-## Sprint 1 Status: INITIALIZED
+## Sprint 1 Status: IN PROGRESS
 
 ### Setup Complete ✓
 - [x] Folder structure created
@@ -99,11 +99,15 @@
 - [x] Exposé outline structure (`expose/outline.md`) created
 - [x] Literature tracking template (`literature/sources-summary.md`) created
 - [x] Master bibliography file (`references.bib`) created
+- [x] Literature research completed: 12 sources found + BibTeX entries added
 
-### Current Phase: Research & Question Definition (Days 1–3)
-- **Today's First Task:** Execute Google Scholar searches (5 queries in TODO.md 1.1)
+### Current Phase: Research & Question Definition (Days 1–3) ✓ COMPLETED
+- [x] Execute Google Scholar searches (5 queries completed)
+- [x] Collect sources and add to `references.bib` (Harvard format)
+- [x] Create `sources-found.md` with 12 key papers organized by category
+- **Next Task:** Define research question based on collected literature (Task 1.2)
 - **Blockers:** None
-- **Next Review:** After completing searches (Day 2–3)
+- **Next Review:** After RQ definition (Day 3)
 
 ---
 
