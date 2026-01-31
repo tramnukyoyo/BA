@@ -11,10 +11,11 @@
 | Phase | Name | Duration | Goal | Status |
 |-------|------|----------|------|--------|
 | 1 | Exposé Sprint | 14 days | Refine exposé and submit to professor | ⏳ 70% complete |
-| 2 | Thesis Foundation | 4 weeks | Deep literature review + detailed outline | ○ Pending approval gate |
-| 3 | Core Content Writing | 6 weeks | Write Chapters 1-4 (40-45 pages) | ○ Pending |
-| 4 | Synthesis & Outlook | 2 weeks | Write Chapter 5 + executive summary | ○ Pending |
-| 5 | Final Polish & Submission | 2 weeks | Proofreading, formatting, PDF submit | ○ Pending |
+| 2 | Thesis Foundation | 4 weeks | Deep literature review + detailed outline + analysis frameworks | ○ Pending approval gate |
+| 3 | Core Content Writing | 6 weeks | Write Chapters 1-4 with Scenario SWOT (40-45 pages) | ○ Pending |
+| 4 | Synthesis & Analysis | 2 weeks | Write Chapter 5 with Regional/Governance SWOT + Chapter 6 with Nutzwertanalyse | ○ Pending |
+| 5 | Discussions & Conclusions | 1 week | Write Chapters 7-8 (Discussion, Summary) | ○ Pending |
+| 6 | Final Polish & Submission | 2 weeks | Proofreading, formatting, PDF submit | ○ Pending |
 
 ---
 
@@ -41,6 +42,7 @@
 - [ ] Enhance Ausgangslage with 2-3 specific H₂ project examples/statistics
 - [ ] Verify Problemstellung clearly identifies research gap
 - [ ] Confirm 8-chapter scope is appropriate for bachelor thesis
+- [ ] **NEW:** Validate inclusion of SWOT Analysis and Nutzwertanalyse in thesis scope
 
 **Days 11-12: Language & Polish**
 - [ ] Academic German review (formal register, active voice: "Ich analysiere...")
@@ -96,12 +98,26 @@
   - Chapter 3: Regulatory Analysis (8-10 pages)
   - Chapter 4: Logistics & Technical (10-12 pages)
   - Chapter 5: Implementation Strategies (8-10 pages)
+  - **NEW:** Chapter 6: Sustainability & Impact Assessment (10-12 pages) with SWOT summaries and Nutzwertanalyse
+
+**Parallel Activity: Prepare Analysis Frameworks**
+- [ ] **Define SWOT Analysis dimensions:**
+  - [ ] Scenario SWOT: Strengths/weaknesses of decentralized clusters, regional backbone, intercontinental transport
+  - [ ] Regional SWOT: Comparative analysis of EU, Asia, Australia strategies
+  - [ ] Governance SWOT: PPPs, financing models, standardization, regulatory coordination
+- [ ] **Develop Nutzwertanalyse criteria and scoring matrix:**
+  - [ ] List 8-10 evaluation criteria (e.g., cost, feasibility, sustainability, scalability, timeline)
+  - [ ] Define scoring scale (1-5 or 1-10)
+  - [ ] Weight criteria by importance (% allocation)
+  - [ ] Create matrix template for scenario comparison
 
 **Deliverables:**
 - [ ] 40+ sources organized by category
 - [ ] Full bibliography expanded (Harvard format)
-- [ ] Detailed thesis structure with section-level outlines
+- [ ] Detailed thesis structure with section-level outlines (including Chapter 6)
 - [ ] Visual frameworks (concept maps, comparison tables)
+- [ ] **NEW:** SWOT analysis templates and criteria definitions
+- [ ] **NEW:** Nutzwertanalyse scoring matrix and evaluation framework
 
 **Success Criteria:**
 - [ ] Coverage of all 5 research sub-questions mapped to sections
@@ -176,23 +192,32 @@
 - Storage technologies & economics
 - Compression, purity, and safety challenges
 - Refueling station design
+- **NEW:** SWOT Analysis for Implementation Scenarios (1-2 pages)
+  - Evaluate decentralized clusters, regional backbone, intercontinental transport
+  - Structure: S/W/O/T for each scenario type
 
 **Success Criteria:**
 - Technical feasibility clearly explained
 - Cost breakdowns detailed (capex/opex)
 - Real-world examples provided
 - Realistic timeline assessment
+- **NEW:** SWOT comparisons are evidence-based and differentiated
+
+### Phase 3 Parallel: SWOT Analysis Development
+- **Weeks 1-4:** Research and document SWOT elements for scenarios and regional strategies
+- **Weeks 5-6:** Integrate SWOT analyses into chapters 4 and 5 as they are written
 
 ### Writing Schedule
 - **Weeks 1-2:** Chapter 1 + Chapter 2 (first half)
-- **Weeks 3-4:** Chapter 2 (second half) + Chapter 3
-- **Weeks 5-6:** Chapter 4 + internal review
+- **Weeks 3-4:** Chapter 2 (second half) + Chapter 3 + start scenario SWOT research
+- **Weeks 5-6:** Chapter 4 + SWOT for Implementation Scenarios + Chapter 5 start
 
 **Deliverables:**
 - [ ] `thesis/chapter-01-intro.tex` (4-6 pages)
 - [ ] `thesis/chapter-02-litreview.tex` (12-15 pages)
 - [ ] `thesis/chapter-03-regulatory.tex` (8-10 pages)
-- [ ] `thesis/chapter-04-infrastructure.tex` (10-12 pages)
+- [ ] `thesis/chapter-04-infrastructure.tex` (10-12 pages) with Scenario SWOT
+- [ ] **NEW:** SWOT analysis documents (scenarios, regional, governance)
 - [ ] All sources properly cited (Harvard format)
 - [ ] Academic German register consistent
 
@@ -214,6 +239,10 @@
 
 **Sections:**
 - Synthesis: Barriers across dimensions (regulatory × technical × logistical × economic)
+- **NEW:** SWOT Analysis for Regional Strategies (1-2 pages)
+  - Comparative SWOT for European, Asian, and Australian hydrogen initiatives
+- **NEW:** SWOT Analysis for Governance Mechanisms (1-2 pages)
+  - Analyze S/W/O/T of PPPs, financing models, standardization, regulatory coordination
 - Policy instruments (subsidies, mandates, partnerships, standards)
 - Infrastructure prioritization framework (by geographic/resource context)
 - Public-private partnership models
@@ -228,13 +257,35 @@
 - Timeline is realistic and justified
 - All 5 research questions fully answered
 - Addresses stakeholder perspectives (policymakers, utilities, industry)
+- **NEW:** Regional and governance SWOT analyses differentiate strategy options
+
+### Chapter 6: Nachhaltigkeitsanalyse & Auswirkungsbewertung — 10-12 pages
+
+**Sections:**
+- Lebenszyklusanalyse (LCA) implications of different scenarios
+- Wirtschaftliche Viabilität und ROI-Szenarien
+- Soziale und wirtschaftliche Implikationen
+- **NEW:** Nutzwertanalyse Framework (2-3 pages)
+  - Systematic utility evaluation of implementation scenarios
+  - Scoring matrix comparing scenarios on 8-10 criteria
+  - Weighted results and sensitivity analysis
+  - Recommendations for prioritization by context
+
+**Success Criteria for Chapter 6:**
+- LCA perspectives clearly explained
+- Economic scenarios well-documented
+- **NEW:** Nutzwertanalyse is transparent, systematic, and evidence-based
+- **NEW:** Scenario rankings support evidence-based recommendations
 
 ### Additional Elements
 - Executive summary (German) — 1 page
 - Ensure bibliography completeness (60+ sources)
 
 **Deliverables:**
-- [ ] `thesis/chapter-05-strategies.tex` (8-10 pages)
+- [ ] `thesis/chapter-05-strategies.tex` (8-10 pages) with Regional & Governance SWOT
+- [ ] **NEW:** `thesis/chapter-06-sustainability.tex` (10-12 pages) with Nutzwertanalyse
+- [ ] **NEW:** SWOT summary tables and visualizations
+- [ ] **NEW:** Nutzwertanalyse scoring matrix and results table
 - [ ] Executive summary (1 page)
 - [ ] Complete bibliography (60+ sources, Harvard format)
 
@@ -283,12 +334,13 @@
 Week 1    |████████████| Phase 1: Exposé Foundation ✓
 Week 2    |████████████| Phase 1: Exposé Refinement (⏳ IN PROGRESS)
           [PROFESSOR APPROVAL GATE — triggers Phase 2]
-Weeks 3-6 |████████████████████| Phase 2: Thesis Foundation
-Weeks 7-12|██████████████████████████████| Phase 3: Core Writing
-Weeks 13-14|████████████| Phase 4: Chapter 5 & Synthesis
-Weeks 15-16|████████████| Phase 5: Final Polish & Submission
+Weeks 3-6 |████████████████████| Phase 2: Thesis Foundation + Analysis Frameworks
+Weeks 7-12|██████████████████████████████| Phase 3: Core Writing (Ch. 1-4) + Scenario SWOT
+Weeks 13-14|████████████| Phase 4: Ch. 5-6 + Regional/Governance SWOT + Nutzwertanalyse
+Week 15   |██████| Phase 5: Chapters 7-8 (Discussion & Summary)
+Weeks 16-17|████████████| Phase 6: Final Polish & Submission
 
-Total: ~4 months (after exposé approval)
+Total: ~4.5 months (after exposé approval)
 ```
 
 ---
@@ -303,13 +355,17 @@ Total: ~4 months (after exposé approval)
 - [ ] Bibliography refined with H₂-specific sources
 - [ ] Ausgangslage enhanced with examples
 - [ ] Academic German polished
+- [ ] **NEW:** Scope includes SWOT Analysis and Nutzwertanalyse (validated)
 - [ ] **GATE:** Professor approval required
 
 ### Phase 2: Foundation
 - [ ] 40+ sources collected and organized
 - [ ] Comprehensive literature review written (12-15 pages)
-- [ ] Detailed 5-chapter outline with key arguments
+- [ ] Detailed 6-chapter outline with key arguments
 - [ ] Visual frameworks created
+- [ ] **NEW:** SWOT analysis criteria and templates defined
+- [ ] **NEW:** Nutzwertanalyse scoring matrix and evaluation criteria created
+- [ ] **NEW:** Chapter 6 (Sustainability & Impact Assessment) outlined
 - [ ] **GATE:** Self-approval or advisor feedback
 
 ### Phase 3: Core Content
@@ -317,22 +373,34 @@ Total: ~4 months (after exposé approval)
 - [ ] Chapter 2: Literature Review (12-15 pages) ✓
 - [ ] Chapter 3: Regulatory Analysis (8-10 pages) ✓
 - [ ] Chapter 4: Logistics & Technical (10-12 pages) ✓
+- [ ] **NEW:** Scenario SWOT Analysis completed and integrated
 - [ ] All sources properly cited (Harvard)
 - [ ] Academic German consistent
 - [ ] **GATE:** Internal review complete
 
-### Phase 4: Synthesis
-- [ ] Chapter 5: Implementation Strategies (8-10 pages) ✓
-- [ ] Executive summary (German) ✓
+### Phase 4: Synthesis & Analysis
+- [ ] Chapter 5: Implementation Strategies (8-10 pages) with Regional & Governance SWOT ✓
+- [ ] **NEW:** Chapter 6: Sustainability & Impact Assessment (10-12 pages) with Nutzwertanalyse ✓
+- [ ] **NEW:** Regional Strategies SWOT Analysis completed
+- [ ] **NEW:** Governance Mechanisms SWOT Analysis completed
+- [ ] **NEW:** Nutzwertanalyse framework executed and results documented
 - [ ] All 5 research questions answered
 - [ ] Evidence-based recommendations provided
-- [ ] Realistic implementation roadmap included
 - [ ] **GATE:** Content review complete
 
-### Phase 5: Submission
+### Phase 5: Discussions & Conclusions
+- [ ] Chapter 7: Discussion (4-6 pages)
+- [ ] Chapter 8: Summary & Outlook (3-4 pages)
+- [ ] Synthesis of findings coherent
+- [ ] Critical success factors identified
+- [ ] **GATE:** Structural completeness verified
+
+### Phase 6: Final Polish & Submission
 - [ ] Final PDF compiled (50-70 pages)
-- [ ] No spelling/grammar errors
-- [ ] Bibliography complete (60+ sources)
+- [ ] No spelling/grammar errors (German)
+- [ ] Bibliography complete (60+ sources, Harvard format)
+- [ ] All citations properly formatted
+- [ ] Table of contents and references updated
 - [ ] Formatting consistent
 - [ ] **GATE:** Submit to professor
 
@@ -360,7 +428,7 @@ SUBMISSION ✓
 
 ## Page Budget
 
-**Target:** 50-70 pages (excluding bibliography)
+**Target:** 65-85 pages (excluding bibliography)
 
 | Component | Pages | % |
 |-----------|-------|---|
@@ -368,11 +436,16 @@ SUBMISSION ✓
 | Chapter 1: Introduction | 5 | 8% |
 | Chapter 2: Literature Review | 14 | 22% |
 | Chapter 3: Regulatory Barriers | 9 | 14% |
-| Chapter 4: Logistics & Technical | 11 | 17% |
-| Chapter 5: Implementation & Outlook | 9 | 14% |
-| Executive Summary | 1 | 2% |
-| Bibliography | 8 | 20% |
-| **TOTAL** | **59** | **100%** |
+| Chapter 4: Logistics & Technical + Scenario SWOT | 12 | 19% |
+| Chapter 5: Implementation Strategies + Regional/Governance SWOT | 10 | 16% |
+| **NEW** Chapter 6: Sustainability & Nutzwertanalyse | 11 | 17% |
+| **NEW** Chapter 7: Discussion | 5 | 8% |
+| **NEW** Chapter 8: Summary & Outlook | 4 | 6% |
+| Executive Summary | 1 | 1% |
+| Bibliography | 10 | 16% |
+| **TOTAL** | **83** | **100%** |
+
+**Note:** Added 3 chapters (6-8) to original scope. Analyses (SWOT, Nutzwertanalyse) are integrated within chapters rather than standalone. Total pages increased from 59 to 83 (40% increase), but still within bachelor thesis norms (60-100 pages typical).
 
 ---
 

@@ -1,6 +1,6 @@
 # Project State — Wasserstoffinfrastruktur in globalen Lieferketten
 
-**Last Updated:** 2026-01-31 16:30 UTC+1
+**Last Updated:** 2026-01-31 16:45 UTC+1
 
 ---
 
@@ -101,13 +101,24 @@ Phase 1: Exposé Sprint ██████████░░ 70%
   - Examples: EU Hydrogen Backbone, Japan/Korea H₂ import, Australia export plans
 
 - **Scope Validation** — Is 8 chapters appropriate?
-  - Current: 8 chapters, 28 subsections
-  - Question: Too ambitious for bachelor thesis?
-  - Action: Confirm scope or consolidate chapters
+  - Current: 8 chapters (now expanded to full thesis structure with Chapters 1-8)
+  - Note: SWOT and Nutzwertanalyse add 2-3 pages per chapter
+  - Total pages: ~83 pages (within bachelor thesis norms)
+  - Action: Confirm scope is manageable
 
 - **Language Polish** — German academic register
   - Format: Formal German, active voice ("Ich analysiere...")
   - Action: Review for consistency and clarity
+
+- **⭐ NEW: SWOT Analysis Preparation** — Framework definition
+  - Define criteria and structure for 3 SWOT analyses (scenarios, regions, governance)
+  - Create evaluation criteria and scoring guidelines
+  - Action: Phase 2 task (during foundation work)
+
+- **⭐ NEW: Nutzwertanalyse Preparation** — Scoring matrix development
+  - Define 8-10 evaluation criteria for ranking scenarios
+  - Create weighted scoring scale
+  - Action: Phase 2 task (during foundation work)
 
 ---
 
@@ -120,6 +131,9 @@ Phase 1: Exposé Sprint ██████████░░ 70%
 | Peer template as reference | Fast-track exposé generation | ✓ Worked well |
 | Harvard + BibTeX | UDE template requirement | ✓ Working |
 | 11 baseline sources | Quick foundation for draft | ⚠️ Needs expansion to H₂-specific |
+| **NEW:** Add SWOT Analysis (3 dimensions) | Systematic evaluation framework for scenarios, regions, governance | ✓ Approved — integrated into Phases 2-4 |
+| **NEW:** Add Nutzwertanalyse for scenario ranking | Evidence-based utility analysis for implementation prioritization | ✓ Approved — main analysis in Chapter 6 |
+| **NEW:** Expand to 8-chapter structure with Chapters 6-8 | Add Sustainability/Impact, Discussion, Summary chapters for completeness | ✓ Approved — timeline extended, total ~83 pages |
 
 ---
 
