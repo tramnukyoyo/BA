@@ -1,0 +1,60 @@
+% !TeX root = main.tex
+
+\chapter{Einleitung - Zitieren}
+
+Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter ``Deich'' \cite{einstein}.
+
+Lorem\footcite{einstein} ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident\footnote{this is an url \url{https://wikipedia.de}}, sunt in culpa qui officia deserunt mollit anim id est laborum. \cite{knuthwebsite}
+
+\section{Abschnitt Eins - Gleichungen}
+
+\begin{equation} \label{eq:relativity}
+e = m \cdot c^{2}
+\end{equation}
+
+Lorem ipsum dolor sit amet, \autoref{eq:relativity} consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco $m=\frac{1 \cdot n}{2k!}$ laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \cite{latexcompanion}
+
+$$ e=\frac{a}{b}$$
+
+\subsection{Unterabschnitt Eins}
+Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Abschnitt Zwei}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=8cm]{Plot}
+	\caption[Kurzbeschreibung]{Die Graphik zeigt gedöns.}
+	\label{fig:labelForPlot}
+\end{figure}
+
+
+Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \autoref{fig:subPlot1} 
+
+Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \autoref{fig:labelForPlot}.
+
+\subsection{Unterabschnitt Eins}
+
+Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \autoref{fig:subPlot2}
+
+Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \autoref{fig:subPlotAll}
+
+\begin{figure}
+	\centering
+	\begin{subfigure}{.49\textwidth}
+		\includegraphics[width=\textwidth]{Plot}
+		\caption[Kurzbeschreibung]{Die Graphik zeigt gedöns a.}
+		\label{fig:subPlot1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{.49\textwidth}
+		\includegraphics[width=\textwidth]{Plot}
+		\caption[Kurzbeschreibung]{Die Graphik zeigt gedöns b.}
+		\label{fig:subPlot2}
+	\end{subfigure}
+	\caption[Kurzbeschreibung Gedöns All]{Die Graphik zeigt gedöns insgesammt.}
+	\label{fig:subPlotAll}
+\end{figure}
+
+\section[Kurztitel 3]{Abschnitt Drei - Abkürzungen}
+Lorem \ac{KDE} ipsum dolor sit amet, consectetur adipisici \ac{KDE} elit, sed eiusmod \ac{SQL} tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \ac{JDK} ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \ac{JDK} sunt in culpa qui officia deserunt mollit anim id est laborum. 
