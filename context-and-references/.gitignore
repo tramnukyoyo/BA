@@ -1,0 +1,29 @@
+# Context and References Git Ignore
+
+# Uncomment below if you want to store PDFs separately (cloud storage)
+# and keep the repository lean
+# This is useful if you accumulate many large reference files
+
+# PDF files (uncomment to exclude from git)
+# *.pdf
+
+# Microsoft Word documents (uncomment to exclude)
+# *.docx
+# *.doc
+
+# Large files
+# *.zip
+# *.rar
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Note: By default, metadata.txt and notes.md files ARE tracked in git
+# This keeps your analysis and metadata in version control while allowing
+# you to optionally exclude large binary files if desired
