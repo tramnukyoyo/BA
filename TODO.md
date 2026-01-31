@@ -123,5 +123,18 @@
 
 ---
 
+## Full Project Roadmap
+
+See `ROADMAP.md` for:
+- Complete 5-phase timeline (Exposé → Thesis submission)
+- Chapter structure and page budgets
+- Success criteria for each phase
+- Requirements mapping
+- Decision gates and milestones
+- Sprint structure for post-Exposé work
+
+---
+
 **Project Rules:** See `CLAUDE.md`
+**Project Roadmap:** See `ROADMAP.md`
 **Last Updated:** 2026-01-31 (Initialization)
