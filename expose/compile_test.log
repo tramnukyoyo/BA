@@ -1,0 +1,1275 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(expose.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ld
+f
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngermanb.l
+df)))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/de\babel
+-ngerman.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+)))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty)
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty)))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+)))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def)))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex)))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex)))
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def)
+No file expose.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg)) [1{C:/Users/denny/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+No file expose.toc.
+[2]
+Overfull \hbox (4.12134pt too wide) in paragraph at lines 117--118
+\T1/cmr/m/n/12 grenz-über-schrei-ten-de Was-ser-stoff-han-delss-trö-me, und die
+ Kos-ten-wirt-schaft-lich-keit von Was-
+[3]
+Overfull \hbox (7.23445pt too wide) in paragraph at lines 126--127
+[]\T1/cmr/bx/n/12 Wasserstoffproduktion: \T1/cmr/m/n/12 Tech-no-lo-gi-en (Dampf
+re-for-mie-rung, Elek-tro-ly-se, Biomasse-
+! Undefined control sequence.
+<argument> \ding 
+                 {226}
+l.149   \item[\ding{226}]
+                          Welche Implementierungsstrategien ermÃ¶glichen tec...
+
+[4]
+! Undefined control sequence.
+<argument> \ding 
+                 {226}
+l.151   \item[\ding{226}]
+                          Welche kritischen Koordinations- und Governance-Me...
+
+! Undefined control sequence.
+<argument> \ding 
+                 {226}
+l.153   \item[\ding{226}]
+                          Wie kÃ¶nnen Nachhaltigkeitsziele (insbesondere Dek...
+
+
+Overfull \hbox (29.0057pt too wide) in paragraph at lines 162--163
+\T1/cmr/m/n/12 Governance -- er-läu-tert. Im zwei-ten Schritt wird der ak-tu-el
+-le Stand von Wasserstoffinfrastruktur-
+[5] [6] [7] [8] [9] [10] (expose.aux)Trying to make PK font ecti1200 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecti1200.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecti1200
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecti.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\extextit
+.mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exileast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exilwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exilig.m
+f
+ Ok [25] [26] [27] [28] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exitalp.
+mf
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exillett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exidigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exiligtb
+.mf
+ Ok) ) ) )
+(some charht values had to be adjusted by as much as 0.07143pt)
+Font metrics written on ecti1200.tfm.
+Output written on ecti1200.600gf (256 characters, 63048 bytes).
+Transcript written on ecti1200.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+63048 bytes packed to 39120 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `expose.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information) <C:\Users\denny\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk>Trying to make PK font ecbx1095 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecbx1095.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecbx1095
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecbx.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exroman.
+mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrleast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlig.m
+f
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exromp.m
+f
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrllett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrdigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrligtb
+.mf
+ Ok) ) ) )
+Font metrics written on ecbx1095.tfm.
+Output written on ecbx1095.600gf (256 characters, 54848 bytes).
+Transcript written on ecbx1095.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+54848 bytes packed to 28976 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C:\Users\denny\AppD
+ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk>Trying to make PK font ecbx1200 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecbx1200.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecbx1200
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecbx.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exroman.
+mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrleast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlig.m
+f
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exromp.m
+f
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrllett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrdigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrligtb
+.mf
+ Ok) ) ) )
+Font metrics written on ecbx1200.tfm.
+Output written on ecbx1200.600gf (256 characters, 59220 bytes).
+Transcript written on ecbx1200.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+59220 bytes packed to 31952 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C:\Users\denn
+y\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk>Trying to make PK font tcrm1200 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating tcrm1200.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\tcrm1200
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\tcrm.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\txsymb.m
+f
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\txpseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\txaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [27] [29])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\txgen.mf
+ Ok [100] [109] [98] [99] [108])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\txsymbol
+.mf
+ Ok [13] [18] [21] [22] [23] [24] [25] [26] [28] [31] [32] [36] [39] [44]
+[45] [46] [42] [47] [60] [61] [62] [77] [79] [87] [110] [91] [93] [94] [95]
+[96] [126] [127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137]
+[138] [139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149]
+[150] [151] [152] [153] [154] [155] [156] [157] [158] [159] [160] [161]
+[162] [163] [164] [165] [166] [167] [168] [169] [171] [172] [173] [174]
+[175] [177] [176] [180] [181] [182] [183] [184] [187] [191] [214] [246])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\txromod.
+mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\txrsuper
+.mf
+ Ok [185] [178] [179] [170] [186])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\txrfract
+.mf
+ Ok [188] [189] [190]) ) ) )
+(some charht values had to be adjusted by as much as 0.06665pt)
+Font metrics written on tcrm1200.tfm.
+Output written on tcrm1200.600gf (128 characters, 28032 bytes).
+Transcript written on tcrm1200.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+28032 bytes packed to 14064 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C:\User
+s\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>Trying to make PK font ecrm1000 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecrm1000.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecrm1000
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecrm.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exroman.
+mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrleast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlig.m
+f
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exromp.m
+f
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrllett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrdigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrligtb
+.mf
+ Ok) ) ) )
+(some charht values had to be adjusted by as much as 0.06586pt)
+Font metrics written on ecrm1000.tfm.
+Output written on ecrm1000.600gf (256 characters, 51184 bytes).
+Transcript written on ecrm1000.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+51184 bytes packed to 23808 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C
+:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.
+pk>Trying to make PK font ecrm0700 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecrm0700.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecrm0700
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecrm.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exroman.
+mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrleast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlig.m
+f
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exromp.m
+f
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrllett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrdigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrligtb
+.mf
+ Ok) ) ) )
+Font metrics written on ecrm0700.tfm.
+Output written on ecrm0700.600gf (256 characters, 37344 bytes).
+Transcript written on ecrm0700.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+37344 bytes packed to 17000 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
+m0700.pk>Trying to make PK font ecrm0800 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecrm0800.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecrm0800
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecrm.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exroman.
+mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrleast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlig.m
+f
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exromp.m
+f
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrllett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrdigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrligtb
+.mf
+ Ok) ) ) )
+(some charht values had to be adjusted by as much as 0.06445pt)
+Font metrics written on ecrm0800.tfm.
+Output written on ecrm0800.600gf (256 characters, 41732 bytes).
+Transcript written on ecrm0800.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+41732 bytes packed to 19080 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
+00\ecrm0800.pk>Trying to make PK font ecrm1200 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecrm1200.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecrm1200
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecrm.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exroman.
+mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrleast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlig.m
+f
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exromp.m
+f
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrllett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrdigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrligtb
+.mf
+ Ok) ) ) )
+(some charht values had to be adjusted by as much as 0.07143pt)
+Font metrics written on ecrm1200.tfm.
+Output written on ecrm1200.600gf (256 characters, 60320 bytes).
+Transcript written on ecrm1200.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+60320 bytes packed to 28440 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e
+c/dpi600\ecrm1200.pk>Trying to make PK font ecti1440 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecti1440.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecti1440
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecti.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\extextit
+.mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exileast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exilwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exilig.m
+f
+ Ok [25] [26] [27] [28] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exitalp.
+mf
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exillett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exidigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exiligtb
+.mf
+ Ok) ) ) )
+(some charht values had to be adjusted by as much as 0.07997pt)
+Font metrics written on ecti1440.tfm.
+Output written on ecti1440.600gf (256 characters, 74296 bytes).
+Transcript written on ecti1440.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+74296 bytes packed to 47464 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\ecti1440.pk>Trying to make PK font ecrm1440 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecrm1440.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecrm1440
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecrm.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exroman.
+mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrleast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlig.m
+f
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exromp.m
+f
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrllett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrdigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrligtb
+.mf
+ Ok) ) ) )
+(some charht values had to be adjusted by as much as 0.08084pt)
+Font metrics written on ecrm1440.tfm.
+Output written on ecrm1440.600gf (256 characters, 71064 bytes).
+Transcript written on ecrm1440.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+71064 bytes packed to 34320 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfou
+r/jknappen/ec/dpi600\ecrm1440.pk>Trying to make PK font ecbx1728 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecbx1728.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecbx1728
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecbx.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exroman.
+mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrleast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlig.m
+f
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exromp.m
+f
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrllett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrdigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrligtb
+.mf
+ Ok) ) ) )
+(some charht values had to be adjusted by as much as 0.13197pt)
+Font metrics written on ecbx1728.tfm.
+Output written on ecbx1728.600gf (256 characters, 84848 bytes).
+Transcript written on ecbx1728.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+84848 bytes packed to 49100 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecbx1728.pk>Trying to make PK font ecbx1440 at 600 DPI...
+The METFAONT mode is: ljfour
+Creating ecbx1440.pk...
+Running miktex-mf.exe...
+This is METAFONT, Version 2.71828182 (MiKTeX 24.1)
+
+
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecbx1440
+.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbase.m
+f)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\ecbx.mf
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exroman.
+mf
+ Ok
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccess
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expseudo
+.mf
+ Ok)
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exruwest
+.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlwest
+.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrueast
+.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrleast
+.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exbraces
+.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\expunct.
+mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exaccent
+.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exsign.m
+f
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrlig.m
+f
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exromp.m
+f
+ Ok [38] [63] [190])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrulett
+.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrllett
+.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrdigit
+.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(C:\Users\denny\AppData\Local\Programs\MiKTeX\fonts/source/jknappen/ec\exrligtb
+.mf
+ Ok) ) ) )
+(some charht values had to be adjusted by as much as 0.10997pt)
+Font metrics written on ecbx1440.tfm.
+Output written on ecbx1440.600gf (256 characters, 70764 bytes).
+Transcript written on ecbx1440.log.
+Running miktex-gftopk.exe...
+This is GFtoPK, Version 2.4 (MiKTeX 24.1)
+'METAFONT output 2026.01.31:1603'
+70764 bytes packed to 40136 bytes.
+Installing C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk...
+miktex-makepk: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+ <C:\Users\denny\AppData\Local\MiKTeX\fo
+nts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/denny/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on expose.pdf (10 pages, 204454 bytes).
+Transcript written on expose.log.
+pdflatex: major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.

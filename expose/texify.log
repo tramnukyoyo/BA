@@ -1,0 +1,45 @@
+2025-08-17 01:11:19,601+0200 INFO  texify - this process (19564) started by miktex-texworks in directory F:\Thermo 2 with command line: C:\Users\denny\AppData\Local\Programs\MiKTeX\miktex\bin\x64\texify.exe --pdf --synctex=1 --clean Klausur_FeuchteLuft.tex
+2025-08-17 01:11:19,601+0200 INFO  texify - running on Windows 10.0.26100
+2025-08-17 01:11:19,609+0200 INFO  texify.core - start process: pdflatex --synctex=1 "F:/Thermo 2\Klausur_FeuchteLuft.tex"
+2026-01-31 01:54:48,375+0100 INFO  texify - this process (22736) started by miktex-texworks in directory C:\Users\denny\Bachelorarbeit\expose with command line: C:\Users\denny\AppData\Local\Programs\MiKTeX\miktex\bin\x64\texify.exe --pdf --synctex=1 --clean exposé.tex
+2026-01-31 01:54:48,375+0100 INFO  texify - running on Windows 10.0.26200
+2026-01-31 01:54:48,385+0100 INFO  texify.core - start process: pdflatex --synctex=1 C:/Users/denny/Bachelorarbeit/expose\exposé.tex
+2026-01-31 01:55:52,865+0100 INFO  texify.core - start process: pdflatex --synctex=1 C:/Users/denny/Bachelorarbeit/expose\exposé.tex
+2026-01-31 01:55:53,925+0100 INFO  texify.core - start process: pdflatex --synctex=1 C:/Users/denny/Bachelorarbeit/expose\exposé.tex
+2026-01-31 01:55:54,957+0100 INFO  texify - this process (22736) finishes with exit code 0
+2026-01-31 01:55:54,958+0100 ERROR texify - major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+2026-01-31 02:00:48,035+0100 INFO  texify - this process (24400) started by miktex-texworks in directory C:\Users\denny\Bachelorarbeit\template with command line: C:\Users\denny\AppData\Local\Programs\MiKTeX\miktex\bin\x64\texify.exe --pdf --synctex=1 --clean main.tex
+2026-01-31 02:00:48,035+0100 INFO  texify - running on Windows 10.0.26200
+2026-01-31 02:00:48,043+0100 INFO  texify.core - start process: pdflatex --synctex=1 C:/Users/denny/Bachelorarbeit/template\main.tex
+2026-01-31 02:01:00,688+0100 INFO  texify.core - start process: pdflatex --synctex=1 C:/Users/denny/Bachelorarbeit/template\main.tex
+2026-01-31 02:01:02,031+0100 INFO  texify.core - start process: pdflatex --synctex=1 C:/Users/denny/Bachelorarbeit/template\main.tex
+2026-01-31 02:01:03,352+0100 INFO  texify - this process (24400) finishes with exit code 0
+2026-01-31 02:01:03,352+0100 ERROR texify - major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+2026-01-31 15:58:44,257+0100 INFO  texify - this process (26720) started by miktex-texworks in directory C:\Users\denny\Bachelorarbeit\expose with command line: C:\Users\denny\AppData\Local\Programs\MiKTeX\miktex\bin\x64\texify.exe --pdf --synctex=1 --clean expose.tex
+2026-01-31 15:58:44,258+0100 INFO  texify - running on Windows 10.0.26200
+2026-01-31 15:58:44,267+0100 INFO  texify.core - start process: pdflatex --synctex=1 C:/Users/denny/Bachelorarbeit/expose\expose.tex
+2026-01-31 15:59:40,468+0100 INFO  texify - this process (17928) started by miktex-texworks in directory C:\Users\denny\Bachelorarbeit\expose with command line: C:\Users\denny\AppData\Local\Programs\MiKTeX\miktex\bin\x64\texify.exe --pdf --synctex=1 --clean expose.tex
+2026-01-31 15:59:40,468+0100 INFO  texify - running on Windows 10.0.26200
+2026-01-31 15:59:40,476+0100 INFO  texify.core - start process: pdflatex --synctex=1 C:/Users/denny/Bachelorarbeit/expose\expose.tex
+2026-01-31 16:00:54,765+0100 INFO  texify - this process (21240) started by miktex-texworks in directory C:\Users\denny\Bachelorarbeit\expose with command line: C:\Users\denny\AppData\Local\Programs\MiKTeX\miktex\bin\x64\texify.exe --pdf --synctex=1 --clean expose.tex
+2026-01-31 16:00:54,765+0100 INFO  texify - running on Windows 10.0.26200
+2026-01-31 16:00:54,772+0100 INFO  texify.core - start process: pdflatex --synctex=1 C:/Users/denny/Bachelorarbeit/expose\expose.tex
+2026-01-31 16:00:58,131+0100 FATAL texify.core - TeX engine failed for some reason (see log file).
+2026-01-31 16:00:58,131+0100 FATAL texify.core - Data: 
+2026-01-31 16:00:58,131+0100 FATAL texify.core - Source: Programs\MiKTeX\texify\mcd.cpp:1564
+2026-01-31 16:00:58,134+0100 FATAL texify - TeX engine failed for some reason (see log file).
+2026-01-31 16:00:58,134+0100 FATAL texify - Info: 
+2026-01-31 16:00:58,134+0100 FATAL texify - Source: Programs\MiKTeX\texify\mcd.cpp
+2026-01-31 16:00:58,134+0100 FATAL texify - Line: 1564
+2026-01-31 16:00:58,143+0100 ERROR texify - major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.
+2026-01-31 16:01:16,626+0100 INFO  texify - this process (17772) started by miktex-texworks in directory C:\Users\denny\Bachelorarbeit\expose with command line: C:\Users\denny\AppData\Local\Programs\MiKTeX\miktex\bin\x64\texify.exe --pdf --synctex=1 --clean expose.tex
+2026-01-31 16:01:16,626+0100 INFO  texify - running on Windows 10.0.26200
+2026-01-31 16:01:16,635+0100 INFO  texify.core - start process: pdflatex --synctex=1 C:/Users/denny/Bachelorarbeit/expose\expose.tex
+2026-01-31 16:01:18,865+0100 FATAL texify.core - TeX engine failed for some reason (see log file).
+2026-01-31 16:01:18,865+0100 FATAL texify.core - Data: 
+2026-01-31 16:01:18,865+0100 FATAL texify.core - Source: Programs\MiKTeX\texify\mcd.cpp:1564
+2026-01-31 16:01:18,868+0100 FATAL texify - TeX engine failed for some reason (see log file).
+2026-01-31 16:01:18,868+0100 FATAL texify - Info: 
+2026-01-31 16:01:18,868+0100 FATAL texify - Source: Programs\MiKTeX\texify\mcd.cpp
+2026-01-31 16:01:18,868+0100 FATAL texify - Line: 1564
+2026-01-31 16:01:18,875+0100 ERROR texify - major issue: Bis jetzt haben Sie noch nicht nach MiKTeX-Updates gesucht.

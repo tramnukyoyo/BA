@@ -1,0 +1,349 @@
+\documentclass[12pt, a4paper, oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[backend=biber,style=authoryear,sorting=nyt]{biblatex}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+
+% Margins
+\geometry{
+  top=2.5cm,
+  bottom=2.5cm,
+  left=2.5cm,
+  right=2.5cm
+}
+
+% Bibliography
+\addbibresource{references_h2.bib}
+
+% Line spacing
+\setstretch{1.5}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% Title page setup
+\title{
+  \textbf{Wasserstoffinfrastruktur in globalen Lieferketten}\\
+  \vspace{0.5cm}
+  \normalsize Exposé für eine Bachelorarbeit
+}
+\author{Denny}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\newpage
+
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1}
+
+% ============================================================
+% AUSGANGSLAGE
+% ============================================================
+
+\section*{Ausgangslage}
+\addcontentsline{toc}{section}{Ausgangslage}
+
+Die globale Energiewende erfordert die schnelle Dekarbonisierung von schwer zu elektrifizierenden Sektoren wie Stahlproduktion, Chemie und Langstreckentransport. Wasserstoff (H\textsubscript{2}) gilt dabei als Schlüsseltechnologie: Er kann als Energieträger für diese Sektoren dienen und in erneuerbaren Energiesystemen überschüssige Elektrizität speichern.
+
+\subsection*{Der aktuelle Stand (2025)}
+
+\begin{itemize}
+  \item \textbf{Angebotslücke:} Die globale grüne H\textsubscript{2}-Produktion liegt bei etwa 5 Megatonnen pro Jahr, während die erwartete Nachfrage bis 2050 auf 500+ Megatonnen projiziert wird.
+  \item \textbf{Infrastrukturdefizit:} Die meisten Länder verfügen nicht über spezialisierte H\textsubscript{2}-Transportnetze. Es gibt weltweit nur etwa 4.600 km Wasserstoff-Pipelines, während für die Skalierung hunderttausende Kilometer notwendig sind.
+  \item \textbf{Regionale Unterschiede:} Industrieländer wie Deutschland und Japan investieren aktiv in H\textsubscript{2}-Infrastruktur, während andere Regionen aufgrund fehlender Finanzierung, Regulierung und technologischer Reife zurückbleiben.
+\end{itemize}
+
+\subsection*{Beispiele bestehender Initiativen}
+
+\begin{itemize}
+  \item \textbf{EU Hydrogen Backbone:} Geplantes europäisches Verbundnetz von 39.700 km Wasserstoff-Pipelines (2030--2040)
+  \item \textbf{Japan/Südkorea:} Importorientierte Strategie mit Partnerschaften zu Australien und dem Nahen Osten
+  \item \textbf{Australien:} Export-fokussiert, verfügt über große Mengen erneuerbarer Energie für H\textsubscript{2}-Produktion
+\end{itemize}
+
+Diese regionalen Unterschiede zeigen: Es gibt nicht einen einzigen "`richtigen Weg"', sondern unterschiedliche Implementierungsstrategien je nach geografischem Kontext und vorhandenen Ressourcen.
+
+% ============================================================
+% PROBLEMSTELLUNG
+% ============================================================
+
+\section*{Problemstellung / Herausforderung und Forschungsstand}
+\addcontentsline{toc}{section}{Problemstellung / Herausforderung und Forschungsstand}
+
+\textbf{Das Kern-Dilemma (Chicken-and-Egg Problem):} Investoren wollen nur in H\textsubscript{2}-Infrastruktur investieren, wenn ausreichend Nachfrage vorhanden ist. Andererseits können Unternehmen nicht in H\textsubscript{2}-basierte Produktionsprozesse umsteigen, wenn die Infrastruktur fehlt. Dieses Koordinationsproblem verzögert weltweit die Dekarbonisierung.
+
+\subsection*{Aktuelle Herausforderungen}
+
+\begin{enumerate}
+  \item \textbf{Regulatorisch:} Unterschiedliche internationale Standards (ISO 14687, EU-Gasrichtlinie, nationale Sicherheitsvorschriften) erschweren grenzüberschreitende Projekte.
+
+  \item \textbf{Technisch:} Wasserstoff-Speicherung und -Transport erfordern spezialisierte Infrastruktur (Salzkavernen für Speicherung, Rohre mit H\textsubscript{2}-Sperrschicht, spezialisierte Schiffe für Flüssigtransport).
+
+  \item \textbf{Ökonomisch:} Grüner Wasserstoff ist noch teuer (aktuell 3--8 €/kg, Ziel bis 2030: <2 €/kg). Große Infrastrukturinvestitionen erfordern klare Geschäftsmodelle und staatliche Unterstützung.
+
+  \item \textbf{Logistisch:} Wasserstoff ist dünn und schwer zu transportieren. Verschiedene Transport-Modi (Pipeline, Schiff, Truck, chemische Träger wie Ammoniak) haben unterschiedliche Kosten und Eignung je nach Distanz und Volumen.
+\end{enumerate}
+
+\subsection*{Stand der Forschung}
+
+Bestehende Arbeiten konzentrieren sich oft auf Einzelaspekte (Technologie, Umwelt, Märkte). Es fehlt eine systematische Analyse, wie diese Dimensionen zusammenspielen und welche \textbf{regionsabhängigen Implementierungsstrategien} am vielversprechendsten sind.
+
+% ============================================================
+% FORSCHUNGSFRAGEN
+% ============================================================
+
+\section*{Formulierung der Forschungsfragen}
+\addcontentsline{toc}{section}{Formulierung der Forschungsfragen}
+
+\textbf{Hauptfrage:}
+\begin{quote}
+  Welche Implementierungsstrategien für Wasserstoffinfrastruktur sind in unterschiedlichen regionalen Kontexten wirtschaftlich rentabel und regulatorisch machbar?
+\end{quote}
+
+\textbf{Unterfragen:}
+\begin{enumerate}
+  \item \textbf{RQ1:} Welche regulatorischen, technischen, wirtschaftlichen und logistischen Barrieren hemmen die H\textsubscript{2}-Infrastrukturentwicklung in unterschiedlichen Regionen?
+
+  \item \textbf{RQ2:} Wie unterscheiden sich regionale Ansätze (EU-Backbone-Modell vs. asiatisches Import-Modell vs. australisches Export-Modell) in der Überwindung dieser Barrieren?
+
+  \item \textbf{RQ3:} Welche Implementierungsstrategien zeigen das beste Kosten-Nutzen-Verhältnis unter Berücksichtigung regionaler Rahmenbedingungen?
+\end{enumerate}
+
+% ============================================================
+% ZIELSETZUNG
+% ============================================================
+
+\section*{Zielsetzung und Aufgabenstellung}
+\addcontentsline{toc}{section}{Zielsetzung und Aufgabenstellung}
+
+Die Abschlussarbeit verfolgt folgendes Ziel:
+
+\textbf{Empirische Grundlagen schaffen} für die Priorisierung von H\textsubscript{2}-Infrastrukturinvestitionen durch:
+\begin{itemize}
+  \item Vergleichende Analyse von 3 regionalen Modellen (Europa, Asien-Pazifik, Australien)
+  \item Systematische Bewertung von Barrieren und Erfolgsfaktoren
+  \item Quantitative Kostennutzenanalyse für unterschiedliche Szenarios
+\end{itemize}
+
+\textbf{Die Arbeit wird:}
+\begin{enumerate}
+  \item \textbf{Theoretische Grundlagen} liefern (H\textsubscript{2}-Technologie, Supply-Chain-Konzepte, Barrieren)
+  \item \textbf{Benchmarking durchführen:} Vergleichende Matrix der regionalen Ansätze (Regulierung, Technologie, Wirtschaft, Logistik)
+  \item \textbf{Kostennutzenanalyse (CBA) anwenden:} NPV-Berechnung für 2--3 Implementierungsszenarien pro Region
+  \item \textbf{Sensitivitätsanalyse erstellen:} Wie beeinflussen politische Variablen (Subventionen, CO\textsubscript{2}-Preise) die Rentabilität?
+  \item \textbf{Praktische Empfehlungen} formulieren für Entscheidungsträger (Politiker, Infrastrukturunternehmen, Energieunternehmen)
+\end{enumerate}
+
+% ============================================================
+% GLIEDERUNG
+% ============================================================
+
+\section*{Gliederung}
+\addcontentsline{toc}{section}{Gliederung}
+
+\subsection*{1. Einleitung (4--5 Seiten)}
+\begin{enumerate}
+  \item[1.1] Motivation: Wasserstoff als Schlüssel der Energiewende
+  \item[1.2] Problemstellung: Das Chicken-and-Egg Dilemma
+  \item[1.3] Forschungsfragen und Ziele
+  \item[1.4] Aufbau der Arbeit
+\end{enumerate}
+
+\subsection*{2. Theoretische Grundlagen (8--10 Seiten)}
+\begin{enumerate}
+  \item[2.1] Wasserstoff-Technologie und Herstellung
+  \begin{itemize}
+    \item Produktionsmethoden (grauer, blauer, grüner Wasserstoff)
+    \item Speicherung und Transport (Pipeline, flüssig, chemische Träger)
+  \end{itemize}
+  \item[2.2] Supply-Chain- und Infrastrukturkonzepte
+  \begin{itemize}
+    \item Netzwerkdesign und Interdependenzen
+    \item Infrastrukturelles Bottleneck-Denken
+  \end{itemize}
+  \item[2.3] Globale H\textsubscript{2}-Infrastrukturlandschaft
+  \begin{itemize}
+    \item Aktueller Stand: Produktion, Projekte, regionale Strategien
+    \item EU Hydrogen Backbone, Japan/Korea Import-Initiativen, Australien Export
+  \end{itemize}
+  \item[2.4] Barrieren und Erfolgsfaktoren der Implementierung
+  \begin{itemize}
+    \item Regulatorische Hürden (Standards, Sicherheit, Genehmigungen)
+    \item Technische Anforderungen
+    \item Ökonomische Rentabilität
+    \item Logistische Koordination
+  \end{itemize}
+\end{enumerate}
+
+\subsection*{3. Methodik (3--4 Seiten)}
+\begin{enumerate}
+  \item[3.1] Forschungsdesign: Vergleichende Analyse
+  \item[3.2] Benchmarking-Framework (4 Dimensionen)
+  \item[3.3] Cost-Benefit-Analysis Modell
+  \item[3.4] Datenquellen und Analyserahmen
+  \item[3.5] Geografischer und methodischer Scope
+\end{enumerate}
+
+\subsection*{4. Ergebnisse (12--15 Seiten)}
+\begin{enumerate}
+  \item[4.1] Benchmarking-Ergebnisse: Regionale Vergleichsmatrix
+  \begin{itemize}
+    \item Regulatorische Readiness
+    \item Technische Infrastruktur-Status
+    \item Kosten-Struktur und Geschäftsmodelle
+    \item Implementierungs-Zeithorizonte
+  \end{itemize}
+  \item[4.2] Cost-Benefit-Analysis
+  \begin{itemize}
+    \item Szenario-Definition (zentral vs. dezentral, Pipeline vs. Maritime)
+    \item NPV-Berechnungen für 2--3 Szenarien pro Region
+    \item Break-Even-Analysen
+  \end{itemize}
+  \item[4.3] Sensitivitätsanalyse
+  \begin{itemize}
+    \item Einfluss von Subventionen
+    \item CO\textsubscript{2}-Preis-Variation
+    \item Technologische Kostenreduktionen
+  \end{itemize}
+\end{enumerate}
+
+\subsection*{5. Diskussion (8--10 Seiten)}
+\begin{enumerate}
+  \item[5.1] Synthese der Benchmarking-Ergebnisse
+  \item[5.2] Interpretation der CBA-Ergebnisse
+  \item[5.3] Beantwortung der Forschungsfragen
+  \item[5.4] Regionale Implikationen und Trade-offs
+  \item[5.5] Limitationen und offene Fragen
+\end{enumerate}
+
+\subsection*{6. Fazit (3--4 Seiten)}
+\begin{enumerate}
+  \item[6.1] Zusammenfassung der Erkenntnisse
+  \item[6.2] Handlungsempfehlungen für Entscheidungsträger
+  \item[6.3] Ausblick und zukünftige Forschung
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% LITERATURVERZEICHNIS
+% ============================================================
+
+\section*{Literaturverzeichnis}
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+
+\subsection*{Technologie und Infrastruktur}
+
+Hydrogen Council. (2021). \textit{Hydrogen for net-zero growth: A critical price moment}. Hydrogen Council.
+
+International Energy Agency. (2021). \textit{The Future of Hydrogen}. IEA Publications.
+
+Leeuwen, R. P., et al. (2022). Hydrogen infrastructure for the energy transition. \textit{Renewable Energy}, 190, 1--12.
+
+Scapolo, F., \& Smeets, E. (2020). Hydrogen: A promising energy vector. \textit{Energy Policy}, 140, 111319.
+
+\subsection*{Supply-Chain und Logistik}
+
+Christopher, M. (2016). \textit{Logistics \& Supply Chain Management} (5th ed.). Pearson Education.
+
+Pimentel, E., et al. (2019). Hydrogen supply chains: An integrated assessment. \textit{Applied Energy}, 255, 113863.
+
+\subsection*{Regionale Strategien}
+
+Hydrogen Europe. (2022). \textit{Hydrogen Roadmap Europe: A sustainable pathway for the European Energy Transition}.
+
+Ministry of Economy, Trade and Industry Japan. (2021). \textit{Strategic Roadmap for Hydrogen and Fuel Cells}.
+
+Department of Climate Change, Energy, Environment and Water Australia. (2023). Hydrogen Headstart Scheme.
+
+\subsection*{Ökonomische Bewertung}
+
+Schmidt, O., et al. (2019). Green hydrogen from power-to-X: Technology status and perspectives. \textit{Frontiers in Energy Research}, 8, 1--23.
+
+Buttler, A., \& Müller, M. (2021). Making sense of supply roles for hydrogen in Europe's energy transition. \textit{Nature Climate Change}, 11(5), 383--390.
+
+\subsection*{Politische und regulatorische Aspekte}
+
+European Commission. (2020). \textit{A hydrogen strategy for a carbon-neutral Europe}.
+
+Weibel, C., \& Blum, N. U. (2022). Global hydrogen infrastructure development. \textit{Energy Policy}, 165, 112933.
+
+\newpage
+
+% ============================================================
+% CONCEPT MAP
+% ============================================================
+
+\section*{Concept Map}
+\addcontentsline{toc}{section}{Concept Map}
+
+\begin{center}
+  \textbf{H\textsubscript{2}-Infrastruktur-Deployment: Synthese der Analyserahmen}
+
+  \vspace{1cm}
+
+  \fbox{
+    \begin{minipage}{0.9\textwidth}
+      \centering
+      \textbf{Energiewende \& Dekarbonisierung} \\
+      (Ziel: Schwer-zu-elektrifizieren Sektoren)
+
+      \vspace{0.8cm}
+      $\downarrow$
+
+      \vspace{0.8cm}
+
+      \begin{tabular}{c c c}
+        \fbox{\textbf{Wasserstoff-}} & \fbox{\textbf{Globale H\textsubscript{2}-}} & \fbox{\textbf{Regionale}} \\
+        \fbox{\textbf{Technologie}} & \fbox{\textbf{Infrastruk.-}} & \fbox{\textbf{Strategien}} \\
+        & \fbox{\textbf{Lücke}} & \\
+        (Produktion, & (Chicken \& & (EU Backbone, \\
+        Speicherung, & Egg Problem) & Asien Import, \\
+        Transport) & & AU Export) \\
+      \end{tabular}
+
+      \vspace{0.8cm}
+      $\downarrow$
+
+      \vspace{0.8cm}
+
+      \begin{tabular}{c c c}
+        \fbox{\textbf{Barrieren}} & \fbox{\textbf{Erfolgsfaktoren}} & \fbox{\textbf{Implementierungs-}} \\
+        (Regulierung, & (Koordination, & (Benchmarking + \\
+        Technologie, & Finanzierung, & Cost-Benefit \\
+        Ökonomie, & Standards) & Analysis) \\
+        Logistik) & & \\
+      \end{tabular}
+
+    \end{minipage}
+  }
+\end{center}
+
+\vspace{1cm}
+
+\noindent \textbf{Methodik-Integration:}
+\begin{itemize}
+  \item \textbf{Benchmarking:} Vergleicht die 4 Dimensionen systematisch über 3 Regionen
+  \item \textbf{CBA (Kostennutzenanalyse):} Quantifiziert wirtschaftliche Rentabilität
+  \item \textbf{Sensitivitätsanalyse:} Testet Robustheit gegenüber politischen Parametern
+\end{itemize}
+
+\end{document}

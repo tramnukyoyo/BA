@@ -2,88 +2,96 @@
 
 ## What This Is
 
-A comprehensive bachelor's thesis analyzing the regulatory, logistical, technical, and economic barriers to global hydrogen infrastructure deployment, with evidence-based implementation strategies bridging the "chicken-and-egg" problem between supply and demand.
+A bachelor's thesis (50 pages, 6 chapters) analyzing global hydrogen infrastructure deployment strategies across three regions (EU, Asia-Pacific, Australia) using benchmarking and cost-benefit analysis to identify region-specific implementation approaches and barriers.
 
 ## Core Value
 
-Synthesize fragmented global research on hydrogen infrastructure into an actionable framework that enables decision-makers (policymakers, energy companies, infrastructure operators) to prioritize implementation strategies by geographic and resource context.
+Provide evidence-based guidance for hydrogen infrastructure investment decisions by comparing regional approaches and quantifying economic viability of different deployment models.
 
 ## Requirements
 
 ### Validated
 
-- ✓ Exposé structure with 8 chapters and 3 hierarchical research questions — Phase 1
-- ✓ 11 academic sources in Harvard format collected and integrated — Phase 1
-- ✓ LaTeX compilation working (UTF-8, pifont package) — Phase 1
-- ✓ Exposé PDF (10 pages) draft generated — Phase 1
+- ✓ Bachelor-level thesis scope (50 pages, 6 chapters)
+- ✓ Research methodology: Benchmarking + Cost-Benefit Analysis (CBA)
+- ✓ 12 academic sources collected (initial foundation)
+- ✓ LaTeX compilation working (UTF-8, pifont package)
 
-### Active
+### Active — Phase 1: Exposé Completion
 
-- [ ] Final research question validation and refinement
-- [ ] Bibliography expansion (11 sources → 40+ for thesis)
-- [ ] Ausganglage refinement with specific H₂ project examples
-- [ ] Scope validation: Is 8 chapters appropriate for bachelor thesis?
-- [ ] Detailed thesis outline with section-level arguments
-- [ ] Chapter 1: Introduction (4-6 pages) with clear problem framing
-- [ ] Chapter 2: Literature Review (12-15 pages) covering regulatory, technical, logistical, economic barriers
-- [ ] Chapter 3: Regulatory Analysis (8-10 pages) covering ISO, EU, US, China frameworks
-- [ ] Chapter 4: Logistics & Technical Infrastructure (10-12 pages) with cost breakdowns
-- [ ] **Chapter 4: SWOT Analysis for Implementation Scenarios** (1-2 pages) — Strengths, weaknesses, opportunities, threats for decentralized clusters, regional backbone, intercontinental transport models
-- [ ] Chapter 5: Implementation Strategies & Outlook (8-10 pages) with evidence-based recommendations
-- [ ] **Chapter 5: SWOT Analysis for Regional Strategies** (1-2 pages) — Comparative SWOT for European, Asian, and Australian hydrogen initiatives
-- [ ] **Chapter 5: SWOT Analysis for Governance Mechanisms** (1-2 pages) — Analyze PPPs, financing, standardization, and regulatory coordination models
-- [ ] Chapter 6: Sustainability & Impact Assessment (10-12 pages) including Nutzwertanalyse framework
-- [ ] **Chapter 6: Nutzwertanalyse (Value Utility Analysis)** (2-3 pages) — Systematic scoring of implementation scenarios against criteria (cost, feasibility, sustainability, timeline, scalability)
-- [ ] Scoring matrix and criteria definition for Nutzwertanalyse
-- [ ] Executive summary in German
-- [ ] Final PDF compilation (50-70 pages target)
+- [ ] Create bachelor-level exposé (Ausgangslage, Problemstellung, RQs, Zielsetzung, Gliederung, Bibliography, Concept Map)
+- [ ] Convert exposé to LaTeX format
+- [ ] Expand bibliography (12 → 30+ sources, H2-focused)
+- [ ] Refine Ausgangslage with specific H2 projects/statistics
+- [ ] Obtain professor feedback and approval
+
+### Active — Phase 2-3: Thesis Writing (Post-Approval)
+
+- [ ] **Chapter 1: Einleitung** (4-5 pages) — Problem statement, RQs, outline
+- [ ] **Chapter 2: Theoretische Grundlagen** (8-10 pages) — H2 technology, supply chain, barriers, regional context
+- [ ] **Chapter 3: Methodik** (3-4 pages) — Benchmarking framework + CBA model (detailed guidance provided)
+- [ ] **Chapter 4: Ergebnisse** (12-15 pages)
+  - 4.1 Benchmarking results: Regional comparison matrix
+  - 4.2 Cost-Benefit Analysis: NPV calculations for scenarios
+  - 4.3 Sensitivity analysis: Policy impact scenarios
+- [ ] **Chapter 5: Diskussion** (8-10 pages) — Interpret findings, answer RQs, limitations
+- [ ] **Chapter 6: Fazit** (3-4 pages) — Summary, implications, recommendations
+- [ ] **Bibliography** (30-40 sources, Harvard format)
+- [ ] Final PDF compilation (target: 45-52 pages)
 
 ### Out of Scope
 
-- Mobile application development — This is a research thesis, not a tool
-- Real-time hydrogen market tracking system — Beyond thesis scope, would be standalone project
-- Comprehensive global patent review — Limited to strategy frameworks
-- Advanced LCA modeling beyond literature synthesis — Use existing studies, don't conduct own experiments
-- Pilot project implementation — Research and recommendations only
+- Proprietary industry cost data — use published sources and literature estimates
+- Primary data collection — literature-based analysis only
+- Technology R&D — focus on deployment strategies, not innovation
+- Detailed LCA modeling — reference existing studies
+- Pilot implementation — recommendations only
 
 ## Context
 
-**Bachelor thesis project** in the context of energy transition, focused on hydrogen as critical enabler of decarbonization in hard-to-abate sectors (steel, chemicals, long-haul transport).
+**Bachelor thesis project** in the context of energy transition, hydrogen infrastructure deployment for decarbonization in hard-to-abate sectors (steel, chemicals, transport).
 
 **Prior work completed:**
-- Literature foundation: 12 academic sources collected (Hydrogen Council, IEA, McKinsey, Arup, etc.)
-- Peer template analysis: Extracted structure from colleague's exposé
-- Draft generation: 8-chapter exposé with 3 RQs, 11 bibliography sources, concept map
-- LaTeX setup: Compilation issues resolved (UTF-8 encoding, pifont package)
+- Literature foundation: 12 academic sources collected
+- Peer template analysis: Extracted structure from Aaron Chhen's exposé
+- Initial draft: 8-chapter outline created (now being reset to bachelor scope)
+- LaTeX setup: Compilation working
 
 **Known context:**
-- University is University Duisburg-Essen (UDE)
+- University: University Duisburg-Essen (UDE)
 - Language: German academic register (active voice, formal tone)
 - Citation style: Harvard (author-date)
-- Deadline: ~4 months for full thesis after exposé approval
-- Previous interruption: Session paused mid-refinement (Jan 31, 2026)
+- Timeline: 14 days for exposé + approval, then 14 weeks for thesis writing
+- Template: vorlage_expose.docx (to be converted to LaTeX)
 
 ## Constraints
 
-- **Timeline:** 14 days for exposé completion + professor approval gate → then 14 weeks for thesis writing
-- **Scope:** Bachelor thesis constraints (50-70 pages, not comprehensive monograph)
-- **Language:** German output required (academic register, modern active voice)
-- **Bibliography:** Minimum 40-50 sources for thesis credibility
-- **Technical:** LaTeX/BibTeX required (UDE template constraint)
-- **Access:** Limited to published/open-access research (no proprietary industry data)
+- **Timeline:** 14 days for exposé + approval, then 14 weeks for thesis writing
+- **Scope:** Bachelor thesis (50 pages, 6 chapters, not master-level detail)
+- **Language:** German output (academic register)
+- **Bibliography:** 30-40 sources minimum (Harvard format)
+- **Technical:** LaTeX/BibTeX required (UDE template)
+- **Data access:** Published/open-access research only
+- **Research method:** Must use Benchmarking + CBA approach
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Use 3 hierarchical research questions | Scope management: RQ1 (technical/economic viability) → RQ2 (governance/coordination) → RQ3 (sustainability trade-offs) | ✓ Good — allows nested analysis |
-| Structure as 8 chapters in exposé | Comprehensive coverage of all dimensions (introduction, theory, projects, scenarios, governance, sustainability, discussion, summary) | — Pending — needs scope validation (is 8 too ambitious?) |
-| Focus on implementation strategies, not technology R&D | Thesis is applied research, not pure science | ✓ Good — aligns with bachelor thesis scope |
-| Harvard citations + BibTeX | Consistency with UDE template requirements | ✓ Good — working in LaTeX |
-| Peer template as structural reference | Accelerated draft generation from working example | ✓ Good — baseline created quickly |
-| Use comprehensive SWOT Analysis (3 dimensions) | Systematic evaluation of implementation scenarios, regional strategies, and governance mechanisms | ✓ Good — provides structured comparative framework |
-| Use Nutzwertanalyse for scenario ranking | Quantitative utility analysis enables evidence-based prioritization of infrastructure models | ✓ Good — bridges qualitative insights with decision-making criteria |
-| Place analyses in Chapter 6 (Sustainability & Impact Assessment) | Consolidate evaluation frameworks with sustainability and economic assessment | ✓ Good — natural integration point with LCA and cost analysis |
+| Use 6-chapter bachelor structure | Standard format (Einleitung, Grundlagen, Methodik, Ergebnisse, Diskussion, Fazit); ~50 pages fits constraints | ✓ Approved |
+| **Use Benchmarking + CBA methodology** | Benchmarking compares regions objectively; CBA quantifies viability; provides evidence-based recommendations | ✓ Approved |
+| Compare 3 regions (EU, Asia-Pac, Australia) | Represent different implementation contexts | ✓ Good |
+| Analyze 4 dimensions (regulatory, technical, economic, logistical) | Systematic barrier assessment | ✓ Good |
+| Harvard citations + BibTeX | UDE template requirement | ✓ Good |
+
+## Research Questions (Provisional)
+
+1. **RQ1:** What are the key regulatory, technical, economic, and logistical barriers to hydrogen infrastructure deployment across different regions?
+
+2. **RQ2:** How do regional approaches (EU backbone model vs. Asia-Pac import model vs. Australia export model) differ in addressing these barriers?
+
+3. **RQ3:** Which implementation strategies offer the best cost-benefit ratio given regional context and constraints?
 
 ---
-*Last updated: 2026-01-31 after project initialization*
+
+*Last updated: 2026-02-01 — Scope corrected to bachelor level with Benchmarking + CBA methodology*
