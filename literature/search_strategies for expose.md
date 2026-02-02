@@ -42,7 +42,7 @@
 **Alternative sources if paywall:**
 - https://juser.fz-juelich.de (try direct PDF link)
 - ResearchGate (search "Prokopou hydrogen refueling")
-
+https://www.sciencedirect.com/science/article/pii/S0098135424002801?via%3Dihub
 ---
 
 ## PAPER 3: Eißler et al. – HRS Cost Analysis 350-bar (2024)
