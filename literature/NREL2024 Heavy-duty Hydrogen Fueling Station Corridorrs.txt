@@ -1,0 +1,502 @@
+Heavy-duty Hydrogen Fueling Station Corridors
+
+Mark Chung National Renewable Energy Laboratory
+WBS 8.6.2.1 May 7, 2024
+
+DOE Hydrogen Program 2024 Annual Merit Review and Peer Evaluation Meeting
+
+Project ID: SA187
+
+Photo from iStock-627281636
+
+This presentation does not contain any proprietary, confidential, or otherwise restricted information
+
+Project Goal and Approach
+
+Assess ranges of levelized cost of dispensed hydrogen to meet hydrogen fueling demand for transportation in the heavy-duty vehicle sector to
+support development of hydrogen fueling corridors in the United States.
+
+(1) System boundary and pathways
+· Define system boundary · Define major
+assumptions and inputs · Define pathways to
+assess
+
+(2) Run HDSAM and estimate costs
+· Run HDSAM given inputs and assumptions
+· Calculate costs by pathway and at the station component level
+
+(3) Assess results
+· What is the levelized cost contribution of each component?
+· What is the production component?
+· Understand where there is room for improvement
+NREL | 2
+
+Overview
+
+Timeline and Budget
+· Project Start Date: 10/22 · Project End Date: 3/24 · NREL's Project Budget: $300K
+· Total DOE Share: 60% · Total EPA Share: 30% · FY 2024: $200K
+Partners
+· NREL's project lead: Mark Chung, NREL
+· Co-PI(s): Bin Wang, LBNL
+
+Barriers and Targets
+· Project closes the information/knowledge gap barrier
+· for strategic heavy-duty vehicle infrastructure deployment with respect to location, volume, and station type (e.g., gaseous or liquid)
+· for most economic pathway for heavy-duty hydrogen vehicle dispensed costs
+· Project supports DOE's freight vehicles infrastructure planning efforts and accelerate zero-emission vehicles adoption in the United States
+NREL | 3
+
+Potential Impact
+
+Photo credit: iStock
+1. Facilitate development and early adoption of hydrogen fueling corridors 2. Calculate dispensed levelized cost of dispensed hydrogen (LCOH) under
+a few scenarios which could be used by industry in planning of station and/or fleet deployment 3. Accelerate decarbonization of the HDV hydrogen fleet 4. Use to inform other similar transportation decarbonization studies
+NREL | 4
+
+Accomplishments and Progress (1/6): Pathway Definitions
+Consideration given to two types of hydrogen fueling station supply configurations* (1) Liquid H2 delivery to hydrogen fueling station
+700 bar
+(2) On-site gaseous H2 produced and piped short distance to fueling station
+700 bar
+
+*Note: Pathways chosen due to higher level of commercial readiness
+
+NREL | 5
+
+Accomplishments and Progress (2/6): Major Assumptions
+
+Review of key parameters
+
+Refueling Parameters
+Fill rate [kg/min]
+
+Assumption
+
+Delivery Parameters
+
+5
+
+Production cost [USD/kg]
+
+Assumption
+1.5*
+
+Dispensed hydrogen per truck [kg]
+
+50
+
+Liquefier and terminal size [MTPD]
+
+50
+
+State of charge at refueling [%]
+
+15-25
+
+Baseline LH2 delivery distance [km]
+
+100
+
+Hours of operation [hours] Refueling demand profile
+
+18
+
+On-site production piping length
+
+0.1
+
+[km]
+
+Back-to-Back
+
+Vehicle linger time [mins]
+
+5
+
+Fleet size to station size ratio
+
+20 vehicles per MTPD capacity
+
+*Note: Assumed cost used as a place holder. Based on median production cost for predominant form of production today: https://liftoff.energy.gov/clean-hydrogen/
+
+NREL | 6
+
+Accomplishments and Progress (3/6): Liquid Pathway Delivery Costs
+
+Liquefaction is a major cost contributor in the LH2-supplied station pathway
+
+Levelized cost of transport [2022$/kg-H2] Levelized cost of liquefaction and terminal
+[2022$/kg-H2]
+
+Tractor-Trailer LH2 Transport Cost vs. Distance
+$0.25
+Tractor-Trailer [$/kg]
+$0.20
+
+$0.15
+
+$0.10
+$0.05 $0.12
+
+$0.13
+
+$0.16
+
+$0.18
+
+$0.20
+
+$0.00
+
+10 km
+
+50 km 100 km
+
+(6.2 miles) (31 miles) (62 miles)
+
+150 km 200 km (93 miles) (120 miles)
+
+Source: HDSAM v4.5
+
+Round-Trip Delivery Distance
+
+Liquefaction and Terminal Cost vs. Market Size
+
+$7.0
+
+6.3
+
+$6.0
+
+$1.0
+
+5.2
+
+$5.0
+
+$0.6
+
+Terminal [$/kg] Liquefaction [$/kg] Total [$/kg]
+
+$4.0
+$3.0
+$5.2
+$2.0
+$1.0
+
+3.7
+
+3.3
+
+$0.3
+
+3.0
+
+3.0
+
+$0.3
+
+$0.2
+
+$4.6
+
+$0.2
+
+$3.4
+
+$3.0
+
+$2.7
+
+$2.7
+
+$0.0
+5 MTPD 10 MTPD 50 MTPD 100 MTPD 500 MTPD 1000 MTPD
+Market Size
+NREL | 7
+
+Accomplishments and Progress (4/6): Heavy-Duty Fueling Station Characterization
+
+HRS Costs Breakdown by Component at 4 MTPD, 700-bar dispensing
+
+Components
+
+On-Site GH2 Station
+
+LH2 Station
+
+Compressors and Pumps
+Storage
+Dispensers (2) Refrigeration and Heat Exchanger Electrical, Controls, and Other Indirect Capital Costs
+
+8 total compressors Energy: 5.5 kWh/kg CAPEX: $6.96 MM 401 kg cascade storage 3,100 kg low-pressure storage CAPEX: $8.36 MM
+CAPEX: $0.37 MM
+2 condensing/heat exchange units 16 ton capacity each CAPEX: $0.57 MM BoP and electrical equipment CAPEX: $0.56 MM
+$3.9 MM
+
+4 LH2 pumps Energy: 0.54 kWh/kg CAPEX: $5.18 MM
+10,720 kg cryogenic tank 241 kg cascade storage CAPEX: $1.91 MM
+CAPEX: $0.37 MM
+2 heat exchangers 1 evaporator CAPEX: $1.14 MM
+BoP and electrical equipment CAPEX: $0.27 MM
+$2.04 MM
+
+Capital Cost (Total, per kgday)
+Source: HDSAM v4.5
+
+$20.7 MM $5,170/kg-day
+
+$10.9 MM $2,730/kg-day
+
+Key Considerations: · Storage size may vary depending
+on station requirements, station operating profile, and access to reliable supply and delivery · Requirement for heat exchangers may also differ per station developer requirements (e.g. precooling needs). · Safety code and standards must also be met when deciding station location and considering space requirements.
+NREL | 8
+
+Accomplishments and Progress (5/6): Heavy-Duty Fueling Station Characterization
+
+HRS Costs Breakdown by Component at 18 MTPD, 700-bar dispensing
+
+Components
+
+On-Site GH2 Station
+
+LH2 Station
+
+Compressors and Pumps
+Storage
+Dispensers (5)
+Refrigeration and Heat Exchanger
+Electrical, Controls, and Other Indirect Capital Costs
+
+20 total compressors Energy: 4.1 kWh/kg CAPEX: $17.4 MM 963 kg cascade storage 5,950 kg low-pressure storage CAPEX: $16.7 MM
+CAPEX: $0.92 MM
+5 condensing/heat exchange units 16 ton capacity each Energy: 0.09 kWh/kg CAPEX: $1.32 MM BoP and electrical equipment CAPEX: $0.58 MM
+CAPEX: $8.49 MM
+
+9 LH2 pumps Energy: 0.54 kWh/kg CAPEX: $11.7 MM
+10,720 kg cryogenic tank 803 kg cascade storage CAPEX: $3.75 MM
+CAPEX: $0.92 MM
+5 heat exchangers 1 evaporator CAPEX: $2.59 MM
+BoP and electrical equipment CAPEX: $0.56 MM
+CAPEX: $4.48 MM
+
+Capital Cost (Total, per kg- $45.4 MM
+
+day)
+
+$2,520/kg-day
+
+$24.0 MM $1,330/kg-day
+
+Key Considerations:
+· Storage size may vary depending on station requirements and access to reliable supply and delivery.
+· Requirement for heat exchangers may also differ per station developer requirements (e.g. pre-cooling needs).
+· Long-distance pipeline delivery scenario not modeled here.
+NREL | 9
+
+Source: HDSAM v4.5
+
+Accomplishments and Progress (6/6): Analysis
+
+Potential dispensed LCOH can vary widely depending on many conditions (HRS utilization rate and up-time, fill rates, on-site storage, delivery method and distance)
+
+$2.2 $1.5
+
+$3.2 $1.5
+
+$5.0
+
+$3.1 $1.5
+
+$7.2
+
+$4.0 $1.5
+
+$6.1
+
+$4.6
+
+$1.1 $3.4 $1.5
+
+$1.6 $3.4 $1.5
+
+$1.5 $3.4 $1.5
+
+Levelized cost of dispensed hydrogen (2022$/kgH2)
+
+Levelized Cost of Dispensed Hydrogen in 2030 with LH2
+
+Delivery
+
+$16.0
+
+$14.0
+
+Refueling Station Transport
+
+Liquefaction
+
+Production
+
+Terminal
+
+$12.0 $10.0
+$8.0 $6.0
+
+$3.4 $1.5
+
+$10.60
+$8.60 $7.50
+
+$8.80
+$7.50 $6.80
+
+$7.90 $7.00 $6.50
+
+$16.0 $14.0 $12.0 $10.0
+$8.0 $6.0
+
+$3.4 $1.5
+
+$3.4 $1.5
+
+$3.4 $1.5
+
+$3.4 $1.5
+
+$3.4 $1.5
+
+$4.0
+
+$4.0
+
+Levelized Cost of Dispensed Hydrogen in 2030 with Onsite Production
+
+$11.70
+
+Refueling Station Piping Production
+
+$1.5
+
+$1.5
+
+$7.90 $5.80
+
+$1.5
+
+$1.5
+
+$9.00
+$6.30 $4.70
+
+$1.5
+
+$6.70
+$4.80 $3.80
+
+$9.6
+
+$5.2
+
+$2.5
+
+$2.2
+
+$3.5
+
+$2.1
+
+$3.2
+
+$2.0
+
+$2.0
+
+$0.0
+
+30% 50% 80%
+
+30% 50% 80%
+
+30% 50% 80%
+
+$0.0
+
+30% 50% 80%
+
+30% 50% 80%
+
+30% 50% 80%
+
+4 MTPD
+
+8 MTPD
+
+18 MTPD
+
+4 MTPD
+
+8 MTPD
+
+18 MTPD
+
+% = station utilization, X MTPD = fueling station capacity
+
+% = station utilization, X MTPD = fueling station capacity
+
+NREL | 10
+
+Note: Prices are not retail. Retail prices may include additional markup and subject to numerous dynamics not accounted for in this analysis.
+
+Source: Bracci et. al 2024
+
+Accomplishments and Progress:
+Response to Previous Year Reviewers' Comments
+· This project was not previously reviewed at an AMR
+NREL | 11
+
+Collaboration and Coordination
+
+· Support and input provided by EPA and HFTO
+· Coordination with ANL on hydrogen fueling station cost parameters using HDSAM v4.5
+· Collaboration with LBNL on the electric vehicle (EV) freight analysis using Mediumand Heavy-Duty Electric Vehicle Load, Operations, and Deployment (HEVI-LOAD) software tool
+
+2030 ACT Class 8
+2030 ACT Class 4-6
+NREL | 12
+
+Remaining Challenges and Barriers
+· Challenges are associated with obtaining data · high quality fueling station cost data to adequately model their deployment with station parameter changes
+· Uncertainty of costs of hydrogen and electricity · Uncertainty of reliability and up-time of fueling stations
+NREL | 13
+
+Proposed Future Work: Considerations for HRS Parameters
+There may be numerous HRS configurations depending on end-user requirements
+· Incorporate latest learnings and cost data from newly built fueling stations to refine dispensed LCOH analysis. Parameters that may change could include direct capital costs, utilization rates, storage capacity, number of dispensers, refrigeration and cryogenic equipment, maintenance and operations costs, etc.
+· Alignment on methodologies and assumptions with literature, academia, and industry. · Coordinate with other national labs or incorporate latest from hydrogen hubs to assess
+potential national and/or regional adoption scenarios.
+
+Note: Any proposed future work is subject to change based on funding levels
+
+NREL | 14
+
+Summary
+
+· Dispensed LCOH for heavy-duty fueling stations can vary widely with utilization rates, station sizing, production costs, access to storage, delivery pathways, and hours of operation, for example.
+
+· Economies of scale contribute to lowering costs at larger fueling station capacities; however, liquefaction remains a large cost component of the LH2 pathway.
+· Current estimates for the 2030 timeframe range from as low as $3.80/kg to $11.70/kg [at 4 to 18 MTPD station capacities and 30%-80% utilization rates]
+
+· This cost is not a retail price. Additional markup may be added depending on the retailer and supply/demand dynamics.
+
+· Tax incentives were excluded from this analysis and could lower LCOH
+
+NREL | 15
+
+Thank You
+www.nrel.gov
+NREL/PR-5400-89459
+This work was authored by the National Renewable Energy Laboratory, operated by Alliance for Sustainable Energy, LLC, for the U.S. Department of Energy (DOE) under Contract No. DE-AC36-08GO28308. Funding provided by U.S. Department of Energy Office of Energy Efficiency and Renewable Energy Hydrogen and Fuel Cell Technologies Office. The views expressed in the article do not necessarily represent the views of the DOE or the U.S. Government. The U.S. Government retains and the publisher, by accepting the article for publication, acknowledges that the U.S. Government retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of this work, or allow others to do so, for U.S. Government purposes.
+
+

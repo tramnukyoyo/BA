@@ -1,0 +1,785 @@
+Computers and Chemical Engineering 192 (2025) 108862 Contents lists available at ScienceDirect
+Computers and Chemical Engineering
+journal homepage: www.elsevier.com/locate/cace
+
+Cost-optimal design and operation of hydrogen refueling stations with
+mechanical and electrochemical hydrogen compressors
+Georgia Ioanna Prokopou a,b, Johannes M.M. Faust a, Alexander Mitsos c,a,d, Dominik Bongartz b,
+a Process Systems Engineering (AVT.SVT), RWTH Aachen University, 52074 Aachen, Germany b Department of Chemical Engineering, KU Leuven, 3001 Leuven, Belgium c JARA-ENERGY, 52056 Aachen, Germany d Energy Systems Engineering (ICE-1), Forschungszentrum Jülich, 52425 Jülich, Germany
+
+ARTICLE INFO
+Keywords: Hydrogen refueling station Electrochemical hydrogen compressor Mechanical compressor Cost-optimal sizing & operation
+
+ABSTRACT
+Hydrogen refueling stations (HRS) can cause a significant fraction of the hydrogen refueling cost. The main cost contributor is the currently used mechanical compressor. Electrochemical hydrogen compression (EHC) has recently been proposed as an alternative. However, its optimal integration in an HRS has yet to be investigated. In this study, we compare the performance of a gaseous HRS equipped with different compressors. First, we develop dynamic models of three process configurations, which differ in the compressor technology: mechanical vs. electrochemical vs. combined. Then, the design and operation of the compressors are optimized by solving multi-stage dynamic optimization problems. The optimization results show that the three configurations lead to comparable hydrogen dispensing costs, because the electrochemical configuration exhibits lower capital cost but higher energy demand and thus operating cost than the mechanical configuration. The combined configuration is a trade-off with intermediate capital and operating cost.
+
+1. Introduction
+Hydrogen is considered a highly promising alternative to traditional fossil fuels within the automotive sector. It locally produces zero emissions of air pollutants and shows a high specific energy storage capacity (Blazquez-Diaz, 2019). Today, hydrogen vehicles have started appearing in the market, and their penetration is expected to grow in the following years.
+To integrate hydrogen vehicles into the market, an efficient hydrogen refueling station (HRS) network is necessary. Such stations have already been established in various countries, including Germany, the USA, Japan, and others. For the successful transition to hydrogen vehicles, customers must consider the refueling costs within an affordable range (Linzenich et al., 2019). Refueling stations play an essential role among the various cost components associated with hydrogen vehicles, accounting for approximately half the total hydrogen price (Reddi et al., 2014). As a result, economic assessments and optimization of hydrogen refueling infrastructure are of great importance.
+Out of the different units of a hydrogen refueling station, the compressors and the cascade storage system account for half of the total capital investment cost (Reddi et al., 2014). The sizes of these units are interdependent: an extensive high-pressure storage system allows the use of a compressor with a small flow rate. On the other
+
+hand, a compressor with a large flow rate only requires a small highpressure storage system to fulfill the same hydrogen demand. Besides the investment cost, the energy demand also depends on the size of these components: the lower the high-pressure storage system volume, the lower the investment cost, but the higher the working pressure in the tanks to achieve a given storage capacity and thus the energy consumption (Mayer et al., 2019). An optimization of this costdriving equipment, both in terms of investment and operating cost, taking into account these interdependencies, is expected to improve the performance of the HRS.
+Several publications have focused on optimizing the energy consumption of the HRS. Rothuizen et al. (2013) optimized the energy consumption in refueling stations with cascade storage as a function of the number of tanks by performing a parametric study. Luo et al. (2022) performed a multi-objective optimization to minimize the cooling energy consumption and maximize the state of charge. Bai et al. (2021) proposed a multi-objective formulation for minimal energy consumption and refueling time. Besides studies that aim at optimizing such technical metrics of an HRS, there are also studies that aim at optimizing cost. Mayer et al. (2019) conducted a detailed economic analysis and optimization of hydrogen refueling stations with liquid or gaseous stored hydrogen. They determined the throughput of the
+
+ Corresponding author. E-mail address: dominikbongartz@alum.mit.edu (D. Bongartz).
+https://doi.org/10.1016/j.compchemeng.2024.108862 Received 27 June 2024; Received in revised form 4 September 2024; Accepted 4 September 2024 Available online 7 September 2024 0098-1354/© 2024 The Author(s). Published by Elsevier Ltd. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+
+G.I. Prokopou et al.
+compressor (in the gaseous hydrogen case) and pump (in the liquid hydrogen case), maximum pressures, and volumes of the cascaded highpressure storage system vessels to minimize the total cost for different station sizes. Reddi et al. (2014) determined the optimal number of tanks in the cascade-storage system for minimizing the total cost of the station.
+Beyond optimizing compressor and storage sizing, an alternative way to improve HRS lies in novel compressor technologies. Today, the most widely used type of compressors in an HRS are mechanical compressors, as their maturity level is relatively high (Tian et al., 2022). They are reported to perform well for moderate flow rates and high-pressure applications. However, they require a multi-stage configuration with intercooling to achieve high efficiency, which increases the capital cost (Sdanghi et al., 2019). Another disadvantage is their noisy operation and the high maintenance cost due to their moving parts (Sdanghi et al., 2019). Recently, electrochemical hydrogen compressors (EHC) have gained attention in research thanks to their noise-free operation, instant response, and the ability to compress hydrogen up to 100 MPa (Zou et al., 2020). They are reported to perform well when the discharge pressure is moderate, but they likely have higher energy demand than the mechanical compressors (Prokopou et al., 2024a). At the same time, they offer the advantage of no moving parts and low capital and maintenance cost (Sdanghi et al., 2019).
+However, the studies on optimizing HRS, which are mentioned above, focus only on HRS equipped with mechanical compressors. Regarding the use of EHC, to our knowledge, only the work of Toghyani et al. (2021), the performance of an HRS equipped with an electrochemical compressor is studied. They performed an exergo-economic analysis but did not optimize the sizing and operation of the components of the HRS equipped with EHC.
+In summary, while there are studies on optimal sizing of mechanical compressors in an HRS, much less is known about the use of EHC in HRS. In particular, a study on optimizing the design and operation of HRS equipped with mechanical and electrochemical hydrogen compressors and comparing the different configurations is missing. More specifically, there are several open questions regarding the HRS:
+1. Are EHCs a competitive alternative to mechanical compressors in HRS in terms of total cost and energy consumption?
+2. What is the optimal design and operation of an HRS with an electrochemical compressor?
+3. Is there a benefit in the integration of an EHC as a first-stage compression before the mechanical compressors?
+In this work, we aim to answer these questions using dynamic models of the different process configurations. These models are used to solve multi-stage dynamic optimization problems for the sizing and operation of the station. The goal is to minimize the total cost of one refueling for different station sizes.
+In the following, in Section 2, we describe the components of the considered HRS and the process configurations that differ in the compressor used for compressing hydrogen. In Sections 3 and 4, we present the optimization formulation and implementation, respectively. The optimal results, specific energy consumption, and total cost of the different HRS sizes and configurations are discussed in Section 5, and the conclusions from this work are drawn in Section 6.
+2. Process configuration
+In the present work, we optimize a gaseous hydrogen refueling station where hydrogen is assumed to be produced by an electrolyzer at atmospheric pressure. It comprises a compression and cascade storage system, a refrigeration unit, and a hydrogen dispensing unit. A schematic representation is shown in Fig. 1.
+
+Computers and Chemical Engineering 192 (2025) 108862
+2.1. Operation of hydrogen refueling station
+
+The cascade storage system consists of a standard three-tank cascade configuration. Each tank operates at a different pressure level, resulting in three pressure levels: low-, medium-, and high-pressure. Refueling the vehicle tank starts with flowing hydrogen out of the tank with the lowest pressure level (Rothuizen et al., 2013). When the pressure level inside the vehicle and the low-pressure tank converge, there is a switch, and the medium-pressure tank continues filling the vehicle. Similarly, the high-pressure tank is used at a later stage. With this cascade configuration, not all hydrogen needs to be compressed and stored at the maximum pressure level, lowering the energy consumption of compression.
+After leaving the storage tanks, hydrogen is expanded via a pressure reducing valve to the current vehicle tank pressure (Rothuizen et al., 2013). The negative Joule-Thomson coefficient of hydrogen in the temperature and pressure range of the HRS causes an increase in hydrogen temperature after the expansion. Moreover, the compression heat generated in the onboard tank leads to a further increase in the temperature (Bauer et al., 2019). To ensure that the temperature inside the onboard tank will not exceed the upper safety limit of 85 C, hydrogen is pre-cooled in a refrigeration unit to -40 C before entering the vehicle (Bai et al., 2021).
+The pressure increase rate in the dispenser nozzle determines the pressure increase rate inside the car. This rate is constant during the refueling process as determined by the SAE J2601 fueling protocol (Blazquez-Diaz, 2019; Reddi et al., 2017b). This protocol provides look-up tables for Average Pressure Rise Rate (APRR) for given ambient temperature  and initial pressure inside the vehicle vessel 0. The pressure  before the fuel nozzle is then given by
+
+z() = 0 + APRR  .
+
+(1)
+
+The pressure level at which the refueling will be terminated is also determined in these tables.
+After the vehicle tank has been filled, the tanks of the cascade storage system need to be re-filled. The refueling cycle is finished when the pressure levels inside the cascade storage system are restored to the initial levels. The compressor compresses hydrogen to the current pressure level of the tank in use in the cascade storage system (Bauer et al., 2019). Refilling the cascade storage system starts with the highest-pressure tank and then switches to the medium and the lowpressure reservoirs. This way, the high-pressure tank is kept at the maximum pressure level whenever possible, and the highest supply reliability can be secured (Farzaneh-Gord et al., 2012).
+The cases that are studied in the present work are of a hydrogen refueling station with one dispenser serving up to 2.5 vehicles per hour (i.e., one vehicle every 24 min) and 6 vehicles per hour (i.e., one vehicle every 10 min), based on the `H2 Mobility' document for the description of standardized HRS (Mayer et al., 2019). It should be noted that the vehicle fueling is fast (around 3 min), and the rest of the time is available for refilling the cascade storage system. Hydrogen is assumed to be produced on-site in an electrolyzer at a working pressure of 0.1 MPa (Toghyani et al., 2021). The ambient temperature is assumed to be 20 C. A vehicle with a 0.173 m3 tank (Rothuizen et al., 2013) and an initial pressure of 5 MPa is considered for the refueling. The APRR under these conditions is 21.8 MPamin, and the final target pressure is 81.2 MPa (Reddi et al., 2017b).
+
+2.2. Compressor configurations
+
+Three alternative configurations of a hydrogen refueling station are studied in the present work, one standard and two alternative ones. A schematic representation is shown in Fig. 1. They differ in the compressor used to compress hydrogen for filling the cascade storage system.
+
+2
+
+G.I. Prokopou et al.
+
+Computers and Chemical Engineering 192 (2025) 108862
+
+Fig. 1. Schematic representation hydrogen refueling station with alternatively (a) a mechanical compressor, (b) an electrochemical compressor, (c) an electrochemical and a mechanical compressor.
+
+2.2.1. Hydrogen refueling station with a mechanical compressor The first process configuration is the benchmark case, with a tra-
+ditional mechanical compressor compressing hydrogen to the current pressure level in the tank. The compressor consists of 7 stages to keep the maximum compression ratio of each stage close to 2.5. After each compression stage, hydrogen is cooled down via a cooling medium (see Section 5.2) to approach isothermal compression.
+2.2.2. Hydrogen refueling station with an electrochemical compressor The second process configuration has an electrochemical compres-
+sor (EHC), which consists of multiple cells that are parallel in terms of mass flow. Hydrogen is first humidified to saturation at the working temperature and enters the compressor. By applying current, hydrogen is oxidized at the anode, and the produced protons are transferred through the membrane to the cathode, where they recombine with electrons to form hydrogen compressed to the current pressure level of the tank in use. Different current densities are applied when changing the tank connected to the compressor, as the optimal current density depends on the pressure level (Prokopou et al., 2024b). The temperature in the stack is kept constant over time and uniform in space by cooling (Zou et al., 2020). After compression, gaseous hydrogen is separated from liquid water, and the hydrogen stream enters a heat exchanger to reduce the temperature. Cooling water is used for cooling the stack and in the heat exchanger. This process configuration has been proposed as promising (Sdanghi et al., 2020) but has not been optimized in terms of cost.
+2.2.3. Hydrogen refueling station with an electrochemical and a mechanical compressor
+The third process configuration uses combined electrochemical and mechanical compression. In this hybrid concept, the electrochemical compressor, claimed to show better performance at low to moderate pressure levels (Sdanghi et al., 2020), is the first stage, and the mechanical compressor is the second stage. Hydrogen enters the electrochemical compressor and is compressed to an intermediate pressure level (up to 10 MPa) by applying a constant current density. After cooling, the hydrogen stream enters the mechanical compressor and is compressed to the required pressure level of the tank in use. The number of stages in the mechanical compressor is fixed to 4 to keep the maximum compression ratio around 2.5.
+
+3. Optimization formulation
+A dynamic HRS model is implemented in Modelica (Modelica Association, 2023). The model describes the components mentioned above, i.e., a compressor, which can be mechanical, EHC, or a combination of them, a cascade storage system, a refrigeration unit, and a dispenser. For the mechanical compressor, a standard multi-stage model based on the isentropic efficiencies is used. For the EHC, a model developed in our previous work is used (Prokopou et al., 2024b). The model of the EHC is integrated with the rest of the HRS unit models. The details of the respective models can be found in Appendix A.1.
+The goal of the present optimization problem is the minimization of the cost of one refueling. For this, both design variables, such as the volume of the tanks in the cascade storage system, the maximum mass flow rate of the mechanical compressor, and the number of cells of the EHC, and operational variables, such as the maximum allowed pressure levels in the tanks, the current density, the temperature in the EHC, and the intermediate pressure level in the combined configuration, can be optimized.
+3.1. Optimization variables
+For the design of the cascade storage tank system, the volumes and the initial masses inside the tanks are considered optimization variables. Physically, for a given tank volume, the initial mass is equivalent to initial pressure; numerically, the former has the advantage that it is a differential variable in the implemented formulation. The used language (Modelica) facilitates the optimization if initial values of the differential values are used. Algebraic equations then determine the initial pressure levels based on the tank volume and initial mass.
+For the design of the compressor system, the three compressor configurations described above give rise to different optimization variables. A summary of the optimization variables for every configuration is shown in Table 1. The boundaries of the optimization variables are listed (together with the optimal design and operation results) in Table 2. In the mechanical compressor configuration, the mass flow rate determines the size of the compressor. In the EHC configuration, the current density, operating temperature, and number of cells for delivering the required amount of hydrogen within a specific time are considered optimization variables. Finally, in the combined configuration, the same optimization variables as in the EHC configuration and the intermediate pressure level up to which the electrochemical compressor compresses hydrogen are considered. The upper bound for
+
+3
+
+G.I. Prokopou et al.
+
+the intermediate pressure is set to 10 MPa, as EHC generally exhibits better performance at low to medium pressure levels (Sdanghi et al., 2019; Prokopou et al., 2024a). In this way, the benefit of lower capital cost of the EHC and lower energy consumption of the mechanical compressor can be combined.
+The optimization problem is formulated as a multi-stage dynamic optimization problem, since refueling the vehicle tank and refilling the tanks in the cascade storage system is not continuous but consists of discrete modes. There are six discrete modes: the first three are about the refueling of the vehicle, starting with the tank of lowest pressure, then medium, and finally, high pressure, and the last three are about the refilling of the tanks, starting with the tank with the highest pressure, then medium and last low pressure. The tanks of the cascade storage system can be either filled or emptied at any given time, but not simultaneously (Reddi et al., 2018). In the case of filling in and out the tanks simultaneously, an enumeration of the different options would be required, which would increase the complexity of the optimization problem and is beyond the scope of this work.
+Regarding the design variables that apply to all stages, we define vector 0
+0 = [T1, T2, T3,  1,0,  2,0,  3,0],
+where T1, T2, and T3 is the volume of the low-, medium-, and highpressure tank, respectively, and T1,0, T2,0, T3,0 is the initial mass at  = 0 in the low-, medium-, and high-pressure tank, respectively. Moreover, let  denote the index of stages present in the multistage problem and take the set  = {1, ... , 6} of all stages. Each stage corresponds to a mode, and as mentioned before, we assume a fixed sequence of modes. At each stage, different optimization variables  are defined:
+
+1 = [1],
+
+2 = [2],
+
+3 = [3],
+
+[mech, 4] 4 = [4, EHC, cells, 4]
+[4, EHC, cells, inter, 4]
+5 = [5, 5],
+
+in the mechanical configuration in the electrochemical configuration in the combined configuration
+
+6 = [6, 6],
+
+where  is the time duration of each stage, mech is the mechanical compressor mass flow rate,  is the current density in the EHC, EHC is the operating temperature in the EHC, cells is the number of cells of the EHC stack, assuming a fixed area per cell, and inter is the intermediate pressure level in the combined configuration. While the time durations
+ are also optimization variables, their values are determined by constraints as described below, based on the pressure levels and the
+volumes of the tanks, as well as the mass flow rate of the compressors.
+
+3.2. Objective function
+
+The objective of the respective optimization problem is to minimize the cost of one refueling with respect to the optimization variables of each of the three case studies:
+
+min
+ 
+
+COHD(
+
+),
+
+where COHD( ) stands for the cost of hydrogen dispensing at the end of the refueling. It includes the capital and the operating cost for one refueling and is computed as described in Appendix A.2. It should be noted that the power consumption is integrated over time to compute the operating cost of one refueling.
+
+Computers and Chemical Engineering 192 (2025) 108862
+3.3. Constraints
+For Stages 1­3, the following constraints are defined for the volume and the initial pressure levels of the tanks:
+TLB,  T,  TUB,, LTB,  T,(0)  UTB,, where LB and UB indicate the lower and upper bound, respectively, and T is the index indicating the tank. The initial temperature in the tanks is set equal to the ambient temperature, assuming that the tanks cool back to the ambient temperature after each refueling
+T (0) = amb,
+where amb is the ambient temperature. At the end of each of Stages 1­3, the pressure level in the tank in use needs to fulfill the following constraint:
+T ()  z().
+Moreover, at the end of Stage 3, the pressure at the nozzle z in Eq. (1), needs to reach a certain level, as determined by the APRR and the protocol for Hydrogen Refueling Stations (Reddi et al., 2017b):
+z(3) = target,
+where target is the target pressure level at the nozzle, which depends on the ambient temperature and the initial pressure of the vehicle tank, as discussed in Section 2.1.
+For Stages 4­6, the optimization variables in each configuration are within certain bounds:
+mLBech  mech  mUBech, LB    U B,
+ELHBC  EHC  EUHBC, LceBlls  cells  UceBlls,
+LB    U B, iLnBter  inter  UinBter.
+Moreover, at the end of Stages 4­6, the tanks must be filled up to their initial pressure level. As a result, the following constraint is defined:
+T () = T (0).
+Finally, the total duration of the refueling  must be constrained as well to ensure that the station can serve the next car reliably within a specific time:
+  U B.
+4. Implementation
+The HRS models are implemented in Modelica (Modelica Association, 2023). The constrained dynamic optimization problems are solved with the C++-based framework DyOS (Caspari et al., 2019) (via the Python interface), which can be used for sequential approach dynamic optimization. To import the model, a functional mock-up unit (FMU) (Modelica Association, 2023) is used, which is created with the commercial software Dymola (Dassault Systèmes, 2023). Within DyOS, to integrate the system of differential­algebraic equations, the integrator LIMEX (Deuflhard et al., 1987) is used with an absolute and relative tolerance of 10-8. To solve the optimization problems within DyOS, the optimizer SNOPT (Gill et al., 2002) is used with a major optimality tolerance of 10-5. The model contains more than 1600 model variables, up to 14 optimization variables, and up to 29 constraints. It should be noted that DyOS is a local optimizer. As a result, the solutions to the above optimization problems are not guaranteed to be globally optimal. Different initial guesses of the optimization variables were tested and the one that gives the lowest cost of hydrogen dispensing is chosen. The initial guesses for some of the optimization variables (namely the operating temperature and current density of the EHC) were based on our previous work (Prokopou et al., 2024b).
+
+4
+
+G.I. Prokopou et al.
+
+Table 1
+
+Summary of the optimization variables for the mechanical, electrochemical, and
+
+combined configuration, where mech is the mechanical compressor mass flow rate, T1, T2, and T3 is the volume of the low-, medium-, and high-pressure tank, respectively, T1,0, T2,0, T3,0 is the initial mass at  = 0 in the low-, medium-, and high-pressure tank, respectively,  is the current density in the EHC, cells is the number of cells of the EHC stack, assuming a fixed area per cell, EHC is the operating temperature in the EHC, and inter is the intermediate pressure level in the combined configuration.
+
+Optimization variables
+
+Mechanical
+
+EHC
+
+Combined
+
+mechkg s-1 T1 m3 T2 m3 T3 m3
+T1 (0 )k g
+T2 (0 )k g
+T3 (0 )k g A m-2
+cells -
+EHC K
+inter MPa
+
+
+
+­
+
+­
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+­
+
+
+
+
+
+­
+
+
+
+
+
+­
+
+
+
+
+
+­
+
+­
+
+
+
+5. Results and discussion
+5.1. Base case
+5.1.1. Cost of hydrogen dispensing Fig. 2 represents the COHD for the three configurations of an HRS
+serving (a) 2.5 vehicles/h, and (b) 6 vehicles/h. The cost for the on-site hydrogen production is not included in the cost estimation. Overall, the three configurations lead to similar COHD.
+For the mechanical configuration, the primary cost contribution is the capital expenditure of the mechanical compressor, which accounts for around 45% of the total cost. Maintenance costs also play an important role, followed by operating costs. The tanks, pre-cooler, and dispenser costs have minor contributions. The results are similar for both HRS sizes. It is assumed that no replacement of the mechanical compressor is needed within the station lifetime since mechanical compressors show a long lifetime. As a result, no replacement cost is included in the analysis of the mechanical configuration. Similar cost ranges are reported in the literature (Mayer et al., 2019).
+For the electrochemical configuration, a different cost distribution is observed compared to the mechanical configuration: the primary cost contributor is the operating expenses, accounting for around 60% of the total cost. The capital expenditure of the EHC is the second significant contributor. As in the mechanical configuration, the tanks, pre-cooler, and dispenser costs have smaller contributions. It is assumed that the EHC has a lower lifetime than the station lifetime. As a result, the cost of replacing the device is included in the analysis. Compared to the mechanical configuration, the OPEX in the case of the EHC configuration is much higher and the maintenance cost plays a minor role in the total cost. This trend is expected, considering that the EHC is assumed to have lower maintenance cost than the mechanical compressor (Minutillo et al., 2021).
+For the combined configuration, a cost distribution between the mechanical and the electrochemical configuration is obtained. The operating and compressor capital expenditures have almost equal contributions to the total cost. More specifically, there is a decrease in the operating cost compared to the electrochemical configuration since the EHC is used as a first compression stage. The capital cost of the EHC is also lower in the combined configuration than in the electrochemical configuration. This can be explained by the fact that hydrogen is compressed to a lower level in the combined configuration, and the back-diffusion effect is less pronounced, requiring a smaller number of EHC cells. Moreover, a smaller number of thinner tie rods can be used due to the reduced mechanical stress, reducing the capital cost as well (Moton et al., 2014). The capital cost of the mechanical compressor is also reduced since a lower number of stages is required.
+
+Computers and Chemical Engineering 192 (2025) 108862
+An increase in the maintenance cost compared to the electrochemical configuration is observed and can be attributed to the high maintenance cost of the mechanical compressor. The tanks, pre-cooler, and dispenser costs again have minor contributions. Overall, the capital cost reduction by using the EHC as a first compression stage compensates for the increase in the operating cost compared to the mechanical configuration. As a result, the combined configuration leads to lower COHD than the mechanical configuration.
+Fig. 3 represents the OPEX distribution for the three configurations of an HRS serving 6 vehicles/h. As has also been observed in Fig. 2, the electrochemical configuration has the highest operating cost, followed by the combined and mechanical configuration. In all configurations, the compressor is the primary cost contributor. The operating cost results are caused by the higher energy consumption of the EHC compared to that of the mechanical compressor (see Section 5.1.3). In the combined case, an intermediate operating cost is obtained, as the EHC, which is the main cost driver, serves as a first compression stage, compressing hydrogen only up to 10 MPa. Similar results are obtained for the case of 2.5 vehicles/h. On the other hand, the cooling cost has only a minor contribution. It should be noted that the cooling cost includes both the compressor cooling (cooling water) and the hydrogen pre-cooling in the refrigeration unit. As explained in the Appendix, the refrigeration unit is assumed to deliver hydrogen at the target temperature, and the amount of energy needed to keep the heat exchanger at a stand-by temperature is not included in the analysis.
+In summary, the optimal hydrogen dispensing cost results suggest that both the electrochemical and the combined configurations are promising alternatives to the mechanical configuration in terms of cost. While the CAPEX is the main cost contributor in the mechanical configuration, the OPEX of the compressor has the most significant share in the total cost in the electrochemical configuration. The value of combining the two compressors leans on the possibility of combining the lower capital cost of the EHC and the lower energy consumption of the mechanical compressor.
+5.1.2. Optimal design and operation Table 2 contains the optimal values of the optimization variables
+for the three configurations of an HRS serving 2.5 vehicles/h and 6 vehicles/h. For the mechanical configuration, the designs of the two HRS sizes are similar in terms of tank volumes and pressure levels. A significant difference is the mass flow rate of the mechanical compressor, which is 0.005 kg s-1 and 0.015 kg s-1 for the case of an HRS serving 2.5 vehicles/h and 6 vehicles/h, respectively. This can be explained by the fact that in the case of a station serving a larger number of vehicles per hour, the time duration of filling the tanks is shorter, and as a result, a larger compressor flow rate is required to satisfy the time constraint. An example of the pressure profile of the cascade storage system and the nozzle during the refueling process for the optimal design of the mechanical configuration serving 6 vehicles/h is presented in Fig. 8 in Appendix A.1.
+For the electrochemical configuration, the pressure levels at the HRS serving 2.5 vehicles/h are slightly higher than the ones of 6 vehicles/h. In both HRS sizes, the operating current density is kept at the maximum of 10 000 A m-2 when filling the high-pressure tank, and then it is reduced when filling the medium and low-pressure tank. Moreover, the operating temperature is 313 K for both HRS sizes. This can be explained by the fact that there is a trade-off between Faradaic and voltage efficiencies in an EHC, and the optimal operating point is a compromise between the enhanced membrane conductivity and faster kinetics at high temperatures and low current densities and the low back-diffusion effect at low temperatures and high current densities (Zachert et al., 2021; Prokopou et al., 2024b). As a result, in terms of cost optimization, higher current densities and lower temperatures are more beneficial at higher target pressure levels, as the capital cost gets considerably larger and dominates at low current densities. The
+
+5
+
+G.I. Prokopou et al.
+
+Computers and Chemical Engineering 192 (2025) 108862
+
+Fig. 3. Contribution of operating cost of the three configurations to the cost of hydrogen dispensing (COHD) for an HRS serving 6 vehicles/h. The compressor is the major contributor to the operating cost in all three cases. The cost of cooling has a minor effect. Similar results are obtained for the HRS serving 2.5 vehicles/h.
+
+Fig. 2. Cost of hydrogen dispensing (COHD) for the three configurations for an HRS serving (a) 2.5 vehicles/h, and (b) 6 vehicles/h. The cost includes the compression and dispensing cost but not the cost of hydrogen production. The electrochemical configuration has the lowest dispensing cost, followed by the combined and mechanical configuration for both HRS sizes. The main contributor to the total cost of the mechanical compressor case is the capital expenditure of the compressor. In contrast, the operating cost dominates the total cost of the electrochemical compressor.
+number of cells is larger in the case of an HRS serving 6 vehicles/h, as the refilling of the tanks must be finished in a shorter period.
+For the combined configuration, the designs of the two HRS sizes do not differ much regarding the tank volumes and the pressure levels. The optimal temperature is 342 K and 343 K for the case of an HRS serving 2.5 vehicles/h and 6 vehicles/h, respectively, and the intermediate pressure level is kept at 10 MPa for both HRS sizes. The intermediate pressure reaches the upper bound. This is expected, as the EHC leads to a lower cost of hydrogen dispensing. The optimal operating current density is 4900 A m-2 and 5580 A m-2 for 2.5 vehicles/h and 6 vehicles/h, respectively. Compared to the electrochemical configuration, the applied current density is lower, and the operating temperature is higher. This can be explained by the fact that in the combined configuration, the EHC compresses hydrogen to a much lower pressure level than the electrochemical configuration. As a result, the backdiffusion effect is less pronounced, allowing the operation at lower current densities and higher temperatures (Kim et al., 2022; Prokopou et al., 2024b). The number of cells is again increased in the case of a larger HRS, as the duration till the next refueling is smaller.
+5.1.3. Specific energy consumption Fig. 4 depicts the specific energy consumption for the three con-
+figurations of an HRS serving 6 vehicles/h. The trends of energy consumption are similar to those of operating costs. The electrochemical configuration has a significantly higher energy consumption than the mechanical configuration, while in the combined configuration, an intermediate energy consumption is observed. The major contributor to the energy consumption in all three configurations is the compressor, while the cooling demand (i.e., the electricity for operating the refrigeration unit) has a minor contribution. Similar energy consumptions are obtained for the HRS serving 2.5 vehicles/h, as they do not depend on the number of refuelings but on how the compressor is operated.
+
+These results are consistent with our previous work that shows that at the current state of development, EHC exhibits significantly higher energy consumption at high current densities and pressure levels than the mechanical compressor due to the pronounced ohmic and backdiffusion losses (Prokopou et al., 2024a). Only at very low current densities and pressure levels, the energy demand of the EHC is lower than the mechanical compressor, as the ohmic, activation, and backdiffusion losses are small, and the Nernst potential (corresponding to the minimum compression work) dominates the total cell potential. While high current densities increase the energy consumption of the EHC, they are beneficial regarding the total cost at high-pressure levels, as they decrease the capital cost for delivering a specific amount of hydrogen (Mrusek et al., 2024; Prokopou et al., 2024b).
+In the combined configuration, an intermediate energy consumption between the mechanical and the electrochemical configuration is obtained. Lower pressure levels reduce the energy consumption of the EHC, as they increase the Faraday efficiency, and the compressor can operate at lower current densities and higher temperatures (Zachert et al., 2021; Prokopou et al., 2024b). However, the decrease in the energy consumption of the mechanical compressor is not enough to compensate for the increase in the energy consumption caused by the EHC in the combined configuration compared to the mechanical configuration. As a result, the combined configuration does not result in lower energy consumption than the mechanical configuration.
+While cost is critical in evaluating the most appropriate technology, energy demand is also important because of the environmental impact it often entails. In the combined configuration, a trade-off in cost and energy consumption can be achieved. To determine whether the combined configuration is better than the mechanical and the electrochemical configuration at a fleet level (a group of HRS), the linear combination metric proposed by Sheu et al. (2012) is used (see Fig. 5). This metric captures the trade-off between the COHD and the specific energy consumption of the different technologies and proposes that one technology should be chosen only when it improves one of the opposing objectives compared to any other linear combination of alternative technologies (Sheu et al., 2012). According to the linear combination metric, the combined configuration is viable as it indeed gives lower COHD than a linear combination of the mechanical and electrochemical configuration with the same specific energy consumption, or lower specific energy consumption for the same COHD (see Fig. 5).
+5.2. Cooling alternatives
+The results of the optimal design and operation of the three configurations of the HRS described above were obtained using cooling water for the intercooling between the mechanical compressor stages and the thermal management of the EHC. Nevertheless, it is essential to investigate cooling alternatives in case cooling water is unavailable in
+
+6
+
+G.I. Prokopou et al.
+
+Computers and Chemical Engineering 192 (2025) 108862
+
+Table 2 Optimization results of the HRS serving 2.5 vehicles/h and 6 vehicles/h in the mechanical, electrochemical, and combined configuration. The initial pressures of the tanks are not optimization variables; instead, they are determined by the initial masses and the tank volumes, as described in Section 3.1. For the EHC in the electrochemical configuration, three different current densities are applied, corresponding to the different pressure levels in the tanks.
+
+Variables
+
+Mechanical
+
+Electrochemical
+
+Combined
+
+Bounds
+
+2.5 Veh/h
+
+6 Veh/h
+
+2.5 Veh/h
+
+6 Veh/h
+
+2.5 Veh/h
+
+6 Veh/h
+
+T1 /m3 T2 /m3 T3 /m3 T1 (0 )/MPa T2 (0 )/MPa T3 (0 )/MPa /kg s-1
+/A m-2  /K
+cells inter MPa
+
+0.34 0.41 0.47 60 75 95 0.005 ­ ­ ­ ­
+
+0.32 0.39 0.47 60 75 95 0.015 ­ ­ ­ ­
+
+0.50 0.53 0.51 47 71 95 ­ 10 000/ 8311/ 7255 313 15 259 ­
+
+0.98 0.69 0.85 46 70 88 ­ 10 000/ 8811/ 7200 313 46 856 ­
+
+0.86 0.60 0.50 42 71 95 ­ 4924 342 2609 10
+
+0.78 0.58 0.56 49 75 91 ­ 5576 343 7205 10
+
+0.1­1 0.1­1 0.1­1 40­60 60­75 75­95 0.001­0.05 1000­10 000 313­343 1000­40 000 1­10
+
+Fig. 4. Specific energy consumption for the three configurations for an HRS serving 6 vehicles/h. The mechanical compressor case has the lowest energy consumption in both HRS sizes. The electrochemical compressor case is the most energy-demanding, with the main contributor being the compressor. Similar results are obtained for the HRS serving 2.5 vehicles/h.
+Fig. 5. Comparison of mechanical, electrochemical, and combined configuration for an HRS serving 6 vehicles/h with respect to a linear combination metric that captures the trade-off between the COHD and specific energy consumption. At a fleet level, the HRS with combined compressors are better than a collection of HRS with either purely mechanical or purely electrochemical configurations.
+the HRS, as they are not usually located in industrial parks. For this purpose, air cooling is the most straightforward alternative. For the electrochemical compressor, air cooling is sufficient, as the temperature of the stacks must be kept higher than the ambient temperature, between 313­343 K. However, for the mechanical compressor, a refrigeration unit is considered instead of a fan, as hydrogen is assumed to be cooled down to the ambient temperature.
+For the mechanical configuration, correlations found in Biegler et al. (1997) are used for the design of the refrigeration unit to obtain an
+
+estimate of the capital expenditure. The coefficient of performance (COP) of the refrigeration unit is assumed to be equal to 2, as has been done in other works (Rothuizen and Rokni, 2014). This COP is higher than the COP of the pre-cooler since, in the compressor, the hydrogen only needs to be cooled to ambient temperature. It would be inefficient to use the already-designed pre-cooler unit that cools down to -40 C for cooling to ambient temperature.
+For the electrochemical configuration, power law correlations of the capital cost as a function of the fan power are used (Smith, 2005) for the design of the fan. The energy consumption of the fan is estimated based on the air flow rate and the fan efficiency (Ma et al., 2021). For the combined configuration, a refrigeration unit is assumed for the mechanical compressor and a fan for the EHC, and the design of the units is done similarly.
+Fig. 6 represents the CAPEX and OPEX distributions of the three configurations and the different cooling methods, namely cooling water (CW), refrigeration unit (RU), and fan (F), for an HRS serving 6 vehicles/h. For the mechanical configuration, the change in the method used for the intercooling significantly affects the total cost. There is a 9% and 4% increase in the CAPEX and OPEX, respectively. This increase comes from the extra cost associated with the purchase of the refrigeration unit, as well as its operating cost.
+For the electrochemical configuration, the change in the method used for the intercooling only slightly affects the total cost. More specifically, there is a 3% and 4% increase in the CAPEX and OPEX, respectively. The fan capital and operational expenses are small compared to the other expenses. More specifically, the fan energy consumption is approximately 4% of the total energy consumption. Similar results have also been observed for fuel cell systems (Sohn et al., 2005).
+For the combined configuration, there is a slight increase in the total cost with a change in the cooling method. This increase is attributed mainly to the capital and operational cost of the refrigeration unit used for intercooling the multi-stage mechanical compressor. The fan makes quite a small contribution to the increase of the total cost, as in the electrochemical configuration.
+5.3. Sensitivity analysis
+The optimal design and operation results for the two HRS sizes discussed above were estimated by assuming fixed values of several parameters that affect the total cost. However, these values have uncertainty. For example, the contingency in the capital cost as described in Appendix A.2, which covers the manufacturing and non-manufacturing capital cost, the electricity price, which is known to have high fluctuations, and the cell price for the EHC are highly uncertain parameters, and a change in their values influences the optimal results. Thus, we perform a sensitivity analysis to quantify the influence of these parameters on the optimal cost. A ±30% change on the contingency, electricity price, and cell price is studied, and the system is re-optimized for each for these parameter values.
+
+7
+
+G.I. Prokopou et al.
+Fig. 6. CAPEX and OPEX distribution comparison of the base case of cooling with cooling water (CW) and alternative cooling methods, namely refrigeration unit (RU) and fan (F), for the mechanical, electrochemical, and combined configuration for an HRS serving 6 vehicles/h. There is a significant increase in the total cost when using a refrigeration unit for cooling in the mechanical configuration. The change in the total cost when using fans for cooling is minor in the electrochemical configuration.
+
+Computers and Chemical Engineering 192 (2025) 108862
+electricity price. This can be attributed to the fact that in the optimal base case, the capital expenditure has a bigger share in the total cost than the operating cost. As a result it is expected to affect more the optimal point. The influence of the contingency and electricity price is similar on both HRS sizes.
+For the electrochemical configuration, the different parameters influence the optimal cost differently. A change of 30% in the electricity price has the most significant influence on the total cost. The cost reduction is estimated to be 15% and 19% for the case of 2.5 vehicles/h and 6 vehicles/h, respectively, with a 30% reduction in the electricity price. At the same time, the cost increase is 21% and 22%, respectively, with a 30% increase in the electricity price. This can be explained by the fact that at the optimal base case, the operating cost has a bigger share in the total cost, and consequently, the change in the electricity price affects the optimal result more. The cell price and the contingency have more minor influences on the optimal result.
+For the combined configuration, the influences of changes in the different parameters on the optimal cost are between the mechanical and the electrochemical configurations. The electricity price has the biggest influence, slightly higher than the influence of the contingency. More specifically, with a change of 30% on the electricity price, the reduction in the cost is 8% and 9% for the case of 2.5 vehicles/h and 6 vehicles/h, respectively, while the increase in the cost is 9% and 11% for the case of 2.5 vehicles/h and 6 vehicles/h, respectively. The cell price has a smaller effect on the optimal point.
+Regarding the comparison of the cost of hydrogen dispensing between the three configurations, it is observed that the mechanical configuration has the highest cost with a 30% change both in the contingency and the electricity price. Moreover, with a 30% increase in the electricity price, the combined configuration performs better than the electrochemical one, while with a 30% decrease in the electricity price, the electrochemical configuration exhibits the lowest cost.
+
+6. Conclusions
+
+Fig. 7. Influence of the contingency, electricity price, and cell price, on the optimal cost of hydrogen dispensing for an HRS serving (a) 2.5 vehicles/h, and (b) 6 vehicles/h. A change of ±30% on the contingency, electricity price, and cell price is studied. The influence of the parameters is similar for both HRS sizes. Electricity price has the most significant influence in the electrochemical and combined case. In the mechanical compressor case, the contingency has the biggest influence.
+Fig. 7 compares the deviations of the optimal total cost, calculated for the different parameter values, to the optimal base cases, determined in Fig. 2, for the three configurations and the two HRS sizes. Decreasing the contingency, the electricity and cell prices are expected to decrease the total cost. For the mechanical configuration, a change of 30% on the contingency has a larger influence than a 30% change in the
+
+Three alternative technologies for a gaseous HRS were studied: a mechanical, an electrochemical, and a combined configuration. Their sizing and operation were optimized by solving multi-stage dynamic optimization problems to minimize the cost of one refueling. The results were compared regarding cost and energy demand for two HRS sizes, serving 2.5 vehicles/h and 6 vehicles/h.
+The results show that the three configurations lead to similar costs of hydrogen dispensing for both HRS sizes. However, there are differences in the main cost drivers among the different configurations. While in the mechanical configuration, the capital cost of the compressor is the main cost contributor, in the electrochemical configuration, the operating cost contributes the most to the total cost. In the combined configuration, an intermediate cost distribution between the mechanical and the electrochemical configuration was obtained. The designs between the two HRS sizes are similar. At the same time, differences between the design and operation of the EHC in the electrochemical and the combined configuration are observed. Lower temperatures and higher current densities benefit the EHC in the purely electrochemical configuration, as hydrogen is compressed up to higher pressure levels, compared to the combined configuration, where hydrogen is only compressed up to 10 MPa in the EHC.
+Regarding energy demand, the compressor is the main cost contributor in all three configurations. The electrochemical configuration exhibits the highest energy consumption, followed by the combined and mechanical configurations. In the combined configuration, lower energy demand than the one in the electrochemical configuration is achieved since the EHC compresses hydrogen up to 10 MPa and lower capital cost of the mechanical compressor due to the fewer compressor stages. As a result, the combined configuration exhibits the advantage of low energy demand while keeping the total cost similar to the
+
+8
+
+G.I. Prokopou et al.
+EHC configuration, achieving a better trade-off than a combination of separate HRS with only mechanical compressors and only EHC.
+Moreover, since there is uncertainty in the parameters used for the economic evaluation of the three configurations, a sensitivity analysis was performed, and the system was re-optimized for a 30% change in contingency, electricity, and cell prices. It is observed that with a 30% increase in the electricity price, the combined configuration exhibits lower hydrogen dispensing cost compared to the electrochemical configuration.
+Based on the outcomes of this work, EHC could complement mechanical compressors in an HRS, but further research is needed to reduce the energy demand and, hence, improve its environmental impact. Future work could focus on analyzing the whole value chain of hydrogen, including the different production and transportation methods, which lead to different inlet pressure levels in the compressor, and performing a superstructure optimization of the different alternative routes to minimize the total hydrogen refueling cost. There is also a need to investigate the possibility of operating the station flexibly to take advantage of intermittent electricity prices, which would further reduce the refueling costs.
+CRediT authorship contribution statement
+Georgia Ioanna Prokopou: Writing ­ original draft, Visualization, Software, Investigation, Formal analysis. Johannes M.M. Faust: Writing ­ review & editing, Software, Conceptualization. Alexander Mitsos: Writing ­ review & editing, Supervision, Funding acquisition, Conceptualization. Dominik Bongartz: Writing ­ review & editing, Supervision, Funding acquisition, Conceptualization.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Data availability
+Data will be made available on request.
+Acknowledgments
+This work was funded by the German Federal Ministry for Education and Research (BMBF) within the project HyInnoSep of Zukunftcluster Wasserstoff (grant number 03ZU1115CA). We are grateful to Natalia Skevi, Mohammad El Wajeh, Jan Schulze, and TLK Energy GmbH for their help and valuable discussions.
+Appendix A
+A.1. Modeling
+A.1.1. Thermodynamics Because of the high involved pressure range (0.1 MPa to 95 MPa),
+the compressibility factor approach is used for the hydrogen state calculations:
+ =  ,
+where  is the gas pressure,  the volume,  are the moles of the gas,  the compressibility factor,  the universal gas constant, and  the temperature. The hydrogen compressibility factor is calculated using the approximation of Zheng et al. (2016).
+For the specific enthalpy and the specific entropy of hydrogen as functions of pressure and temperature, polynomial fittings were done in Matlab using the National Institute of Standards and Technology (NIST)
+
+Computers and Chemical Engineering 192 (2025) 108862
+
+database (National Institute of Standards and Technology (NIST), 2023;
+
+Leachman et al., 2009) to describe the thermodynamic properties of
+
+hydrogen (see Supporting Information). The valid pressure range is 0.1­
+
+100 MPa, and the temperature range is 233­473 K. The RMSE are 0.001
+
+and 0.059 for the enthalpy and entropy fittings, respectively. For the specific entropy, three fittings as a function of pressure and
+temperature were required to accurately describe hydrogen behavior in
+
+the whole investigated operating range: one for a pressure range of 0.1­
+
+1 MPa, one for 1­15 MPa, and one for 15­100 MPa. The fitting valid for
+
+a pressure range of 0.1­1 MPa is used for the first compression stages
+
+in the 7-stage compressor. For the components operating at higher
+pressure, two integer variables, y1 and y2, are introduced, whose value is 0 or 1 for the activation or deactivation of one of the other two
+
+fittings, valid for 1­15 MPa and 15­100 MPa, based on the pressure level. This corresponds to a conditional statement, which leads to a
+
+nonsmooth function. To allow for the use of standard NLP solvers
+
+and DAE integrators, we relax the two integers and use the Fischer­
+
+Burmeister function with the smoothing term 0 (Caspari et al., 2020) as follows:
+
+ y1,0 + y2,0 = y12,0 + y22,0 + 0,
+
+y1,0 - y2,0 =  - 15 MPa,
+
+y1
+
+=
+
+y1,0
+
+,
+
+ - 15 MPa + 1
+
+y2
+
+=
+
+15
+
+y2,0
+
+,
+
+MPa -  + 1
+
+where 1 is equal to 10-2 for avoiding zero in the denominator. To achieve accurate convergence of the DAE system to the exact solution,
+
+selecting an appropriate value for 0 is crucial. This value should be sufficiently small for accurate convergence (Ralph and Wright, 2004). 0 is set equal to 10-4 in this work. In the optimization problems of this work, using the Fischer­Burmeister function with the smoothing term
+
+did not create convergence issues.
+
+A.1.2. Mechanical compressor Mechanical compressors compress hydrogen in multiple stages, with
+intermediate cooling to the inlet temperature. In this way, the behavior of the process approaches the isothermal one. The number of stages of a multistage compressor system is selected such that the discharge temperature does not exceed 200 C, and the pressure ratio does not exceed 2.5. The compression ratio p per stage for a multistage compressor is
+
+p()
+
+=
+
+(
+
+out() in
+
+)1stages
+
+,
+
+where out is the target pressure level, in is the pressure level of the inlet stream, and stages is the number of stages. The power of each stage , assuming an adiabatic process, can be calculated as follows:
+
+() = ()  (() - -1,cool()),
+
+where  is the compressor mass flowrate,  is the enthalpy of hydrogen leaving stage , and cool,-1 is the enthalpy of hydrogen leaving the intercooler of stage  - 1 and entering compressor stage .
+The enthalpy of hydrogen exiting each compressor stage is calcu-
+lated using an estimate of the isentropic efficiency is (Smith, 2005)
+
+is() = 0.1091  (ln p())3 - 0.5247  (ln p())2 + 0.8577 ln p() + 0.3727.
+
+This equation is valid for 1.1 < p < 5. Then the enthalpy of hydrogen exiting each compressor stage can be found by
+
+() =
+
+,is() - -1,cool() is()
+
++ -1,cool(),
+
+where is, is the enthalpy of hydrogen in the case the process is isentropic. It can be calculated from the isentropic equation:
+
+(-1(), -1()) = ((), is,()),
+
+9
+
+G.I. Prokopou et al.
+Table A.3 Cost parameters.
+Parameter
+present cost index base cost index fHX,cost fHX,mass HX,mass p,AL ele Maintenance (Mechanical Compressor) Maintenance (EHC) Maintenance (Refrigerator) Maintenance (Dispenser) Maintenance (Tanks)   Currency conversion factor water
+
+Value
+797.6 115 35 000 1000 0.9 0.837 0.0981 8% of the annual compressor cost 2% of the annual EHC cost 3% of the annual refrigerator cost 3% of the annual dispenser cost 3.5% of the annual tanks cost 3% 20 0.94 1
+
+Computers and Chemical Engineering 192 (2025) 108862
+
+Unit
+­ ­ $ kg ­ kJ kg-1 K-1 e kWh-1 ­ ­ ­ ­ ­ ­ yr $/e e MWh-1
+
+Source
+Biegler et al. (1997) Elgowainy et al. (2017) Elgowainy et al. (2017) Elgowainy et al. (2017) Elgowainy et al. (2017)
+Minutillo et al. (2021) Minutillo et al. (2021) Minutillo et al. (2021) Minutillo et al. (2021) Simunovi et al. (2022) Minutillo et al. (2021) Minutillo et al. (2021) ­ El-Halwagi (2017)
+
+as well as the correlation for enthalpy as a function of temperature
+
+,is() = ((), is,()),
+
+where , is the temperature of hydrogen in the case the process was isentropic.
+After each stage, hydrogen is cooled down to the inlet temperature to minimize the compression work. The total heat flow rate  which
+needs to be removed is
+
+ () = ()  (-1,cool() - -1()).
+
+The total compression power tot is equal to the sum of the powers of each stage, divided by the 95% of the electrical compressor drive
+ele :
+
+stages
+
+tot()
+
+=
+
+1 ele
+
+
+
+
+=1
+
+().
+
+A.1.3. Electrochemical compressor An electrochemical hydrogen compressor model is used, developed
+in our previous work (Prokopou et al., 2024b). The model is dynamic and spatially distributed (1D) and accounts for the different overpotentials: Ohmic, activation, mass transport losses, and the back-diffusion effect. The electrochemical compressor is assumed to work in a warm start-up, similar to a PEM electrolyzer (Lange et al., 2023). A single EHC cell is small in terms of cell area, usually in a range of 100­ 400 cm2 (Moton et al., 2014), and can deliver only small amounts of compressed hydrogen. As a result, repetitive parallel cells are used. It is assumed that the compressor is fed with the required amount of hydrogen at each current density (Mrusek et al., 2024). The total power needed for compressing hydrogen EHC is equal to
+EHC() = cells  cell()  ,
+where cells is the number of cells, cell is the cell voltage, and  is the applied current. Before entering the compressor, hydrogen is heated to the stack working temperature in a heat exchanger. The excess heat in the HRS is sufficient to provide this heating requirement. After heating, hydrogen is humidified to saturation with water vapor. The heat flow rate for humidifying hydrogen is given by
+ hum = H2O  H2O,
+where H2O is the mass flowrate of water vapor, and H2O is the enthalpy of water evaporation at the operating temperature of the stack. Additional liquid water is provided when needed for the humidification of the membrane (Mrusek et al., 2024). It is assumed that the excess heat in the HRS provides the energy for humidifying hydrogen.
+The cells are assumed to operate at a constant temperature over time. Since electrical energy is converted to heat during the electrochemical compression, the device must be cooled down to keep the
+
+temperature constant (Zou et al., 2020). Assuming there is no heat exchange between the stack and the environment, the total heat flow rate  EHC,cool to be removed is
+ EHC,cool() = EHC() + () -  hum -  preheat,
+where  is the enthalpy difference between the inlet and outlet stream, and  preheat is the heat requirement for preheating the inlet stream. After compression, hydrogen is separated from liquid water, which can be recycled for membrane humidification (Mrusek et al., 2024), and further cooled to the ambient temperature before entering the cascade storage system.
+
+A.1.4. Storage tanks For modeling the 3-tank cascade storage system, the mass conser-
+vation equation can be written as
+
+T 
+
+= in() - out(),
+
+where in is the mass flowrate that enters the tank, and out is the mass flowrate that exits the tank. The heat exchange between the tanks and the environment during the refueling process is neglected for simplicity. The energy conservation equation can then be expressed as
+
+T 
+
+= in()  in() - out()  out(),
+
+where T is the internal energy of hydrogen, in is the specific enthalpy of the inlet stream, and out the specific enthalpy of the outlet
+stream. The internal energy can be calculated from the enthalpy as
+
+T () = ()  () - ()   .
+For calculating the pressure level in the tank, the compressibility factor approach, as described in Appendix A.1.1, is used.
+
+A.1.5. Throttle valve After leaving the tank, hydrogen is expanded using an isenthalpic
+throttle valve. In the pressure and temperature range of the refueling process, the Joule-Thomson coefficient of hydrogen is negative. As a result, hydrogen temperature is increased after the expansion, which is captured by the enthalpy model described in Appendix A.1.1.
+
+A.1.6. Refrigeration unit Before entering the vehicle tank, hydrogen must be cooled down to
+satisfy the safety temperature on board limit of 85 C. The cooling of hydrogen is realized by a refrigeration unit. The typical refrigerant is R404 A (Elgowainy et al., 2017), and hydrogen is cooled to -40 C. The total heat flow rate  refr to be removed from hydrogen is
+ refr() = ()  (in,refr() - out,refr()),
+
+10
+
+G.I. Prokopou et al.
+
+Computers and Chemical Engineering 192 (2025) 108862
+where inv is the initial investment cost and  is the station lifetime. The initial investment cost includes the manufacturing and the nonmanufacturing capital, which add in total a 65% contingency on the equipment cost (Biegler et al., 1997). The capital costs are converted to euros. For the EHC, an extra contribution for the replacement cost is assumed, as discussed in Appendix A.2.6.
+The maintenance cost differs among the station units and is calculated as a percentage of the equipment cost annually. The operating cost represents the cost of operating the station units, such as compressors, heat exchangers, refrigeration units, etc., and is discussed below. A summary of the cost parameters is given in Table A.3.
+
+Fig. 8. Pressure profile over time for the cascade storage system and the nozzle for the
+optimal design and operation of the mechanical configuration serving 6 vehicles/h.  1,  2,  3, and  are the pressure level at tank 1, 2, 3, and at the nozzle, respectively. The profiles are qualitative the same for the other cases.
+
+where in,refr is the specific enthalpy of hydrogen that enters the refrigeration unit, and out,refr is the specific enthalpy of hydrogen that exits the refrigeration unit. The power consumption required to cool
+
+hydrogen refr is
+
+refr()
+
+=
+
+ refr() , COP
+
+where COP is the coefficient of performance for the refrigeration unit.
+
+In this work, a COP of 1.12 is used (Elgowainy et al., 2017). As has
+
+been done in other works (Maurer et al., 2023; Rothuizen and Rokni,
+
+2014), the amount of energy necessary to keep the heat exchanger
+
+of the refrigeration cycle at a specific standby temperature (when no
+
+refueling is happening) is not included in the analysis and is beyond
+
+the scope of this work.
+
+A.1.7. Pressure losses
+For the pressure loss loss after the nozzle, which corresponds to the pressure loss in the vehicle (Rothuizen and Rokni, 2014), the following equation is used:
+
+loss()
+
+=
+
+0.5
+
+
+
+p
+
+
+
+()
+
+(
+
+() ()
+
+)2
+
+,
+
+where  is the density of hydrogen, and p is a dimensionless pressure loss coefficient given by the component manufacturer, which is
+assumed to be equal to 100 in this case study (Rothuizen et al., 2013).
+
+A.2. Cost assessment
+
+The cost of hydrogen dispensing (COHD) is calculated as
+
+COHD
+
+=
+
+inv,a
+
++ m,a
+
++ op,a ,
+
+r  H2,r
+
+where inv,a is the annualized investment cost, m,a is the annual cost for the maintenance of the station, op,a is the annual operational cost, r is the number of refuelings per year, and H2,r is the mass of hydrogen fed into the car per refueling. The number of refuelings
+per year is assumed to equal 50% of the maximum capacity in each
+HRS case, as at the beginning, a smaller penetration of hydrogen cars is
+expected in the market. The annual investment cost is calculated taking
+into account a nominal interest rate  via
+
+inv,a
+
+=
+
+  (1 + ) (1 + ) - 1
+
+ inv,
+
+A.2.1. Mechanical compressor Power law correlations are used to calculate the mechanical com-
+pressor and the intercooler unit base cost (Biegler et al., 1997). To update the costs from the cost given in Biegler et al. (1997), the update factor is used with CEPI of 2022. The costs are then converted to euros. Each stage of the compressor and each intercooler unit is sized separately. The compressor stages have a significantly larger contribution to the capital cost than the intercoolers. It should be noted that these correlations have a certain range of validity. In the case of 2.5 vehicles/h, an extrapolation was done to estimate the cost of the compressor due to the lack of correlations valid for lower power ranges. The lower bound for the mechanical compressor correlation is 30 hp (Biegler et al., 1997), and the rated power used for the cost estimation of each stage is 12 hp. This extrapolation introduces a source of uncertainty in the cost evaluation. The capital cost was estimated at the maximum power condition for the mechanical and the combined configuration with a 7- and 4-stage mechanical compressor, respectively.
+A.2.2. Electrochemical compressor For the electrochemical case, the data of Moton et al. (2014) for
+their case study of 103 MPa and 5000 systems/yr are used. Assuming that the total stack cost has an almost linear dependence on the total stack area (as is the case of other electrochemical systems such as water electrolysis (Bertuccioli et al., 2014), a cell cost is determined to be 6 ecell for a cell area of 50 cm2.
+For the combined case, based on the data of Moton et al. (2014) for their case study of 7 MPa and 5000 systems/yr, a cost of 30 ecell is used for an active area of 400 cm2. The difference in the cell area, compared to the case of the pure EHC, comes from the fact that hydrogen is compressed to a lower pressure level, which poses fewer challenges for mechanical stability and thus allows for larger cell areas.
+The installation cost is assumed to be 30% of the uninstalled cost. The cost of the balance of the plant for the electrochemical compressor, including AC converter, humidifier, and coolant loop, is assumed to be 10 000 e and 20 000 e for the case of 2.5 vehicle/hour and 6 vehicle/hour, respectively, based on the data of Moton et al. (2014). The heat exchanger cost for heating and cooling hydrogen after compression is estimated to be 10 000 e (Biegler et al., 1997).
+A.2.3. Storage tanks The high-, medium-, and low-pressure tanks are assumed to have a
+capital cost of 1030 e, 690 e, and 575 e per kilogram of stored hydrogen, respectively, using a mid-term cost reduction according to Reddi et al. (2017a). The cost is converted to e per cubic meter by using the density of hydrogen at the maximum pressure level of each storage tank. The installation and maintenance cost is assumed to be 30% and 3.5% of the annual uninstalled cost, respectively.
+
+11
+
+G.I. Prokopou et al.
+
+A.2.4. Refrigeration unit
+
+The capital cost of the refrigeration unit includes the cost of the
+
+aluminum heat exchanger and the cost of the chiller. The cost of the
+
+aluminum heat exchanger HX is estimated based on
+
+HX
+
+=
+
+HX,cost
+
+
+
+( Thermal HX,mass
+
+)HX,mass
+
+,
+
+where HX,mass is the mass of a reference aluminum HX block, HX,cost is the reference cost of this reference aluminum HX block, Thermal is the HX thermal mass in kg, and HX,mass is a power exponent (Elgowainy et al., 2017).
+To calculate the HX thermal mass, an allowed temperature rise  of 5 C is assumed:
+
+Thermal
+
+=
+
+HX p,AL  
+
+,
+
+where HX is the heat removed to cool down hydrogen to -40 C, and p,AL is the heat capacity of the aluminum HX block (Elgowainy et al., 2017).
+For the refrigerator, a fitting on the data of Reddi et al. (2017a) was
+done and the following correlation is used:
+
+Ch = 6611.3eTR-0.86  capC0.h86,
+where capCh is the refrigeration capacity in refrigeration tons. A refrigeration capacity of 45 kW is assumed in this work (Mayer et al., 2019) and converted to refrigeration tons. An installation cost of 30% of the uninstalled cost is assumed. Electricity from the grid is used for operating the refrigeration unit (see Table A.3 for electricity price).
+
+A.2.5. Dispenser The capital cost of one dispenser is estimated to be 47000 $, by
+using a mid-term cost reduction, according to Reddi et al. (2017a). An installation cost of 30% of the uninstalled cost is also used.
+
+A.2.6. Replacement cost All the HRS units are assumed to have a lifetime of 20 yr, so no
+replacement is necessary, besides the EHC. For the EHC, a lifetime of 10 yr is assumed, similar to the one of a PEM Electrolyzer (Minutillo et al., 2021). The cost of replacement of EHC rep,EHC is
+
+rep,EHC
+
+=
+
+  (1 + ) (1 + ) - 1
+
+ (1 + )-10
+
+ EHC,
+
+where EHC is the manufacturing capital cost of EHC.
+
+Appendix B. Supplementary data
+
+Supplementary material related to this article can be found online at https://doi.org/10.1016/j.compchemeng.2024.108862.
+
+References
+
+Bai, Y., Zhang, C., Duan, H., Jiang, S., Zhou, Z., Grouset, D., Zhang, M., Ye, X., 2021. Modeling and optimal control of fast filling process of hydrogen to fuel cell vehicle. J. Energy Storage 35, 102306. http://dx.doi.org/10.1016/j.est.2021.102306.
+Bauer, A., Mayer, T., Semmel, M., Guerrero Morales, M.A., Wind, J., 2019. Energetic evaluation of hydrogen refueling stations with liquid or gaseous stored hydrogen. Int. J. Hydrogen Energy 44 (13), 6795­6812. http://dx.doi.org/10.1016/j.ijhydene. 2019.01.087.
+Bertuccioli, L., Chan, A., Hart, D., Lehner, F., Madden, B., Standen, E., 2014. Development of Water Electrolysis in the European Union. Tech. Rep. No. February, Fuel Cells and Hydrogen Joint Undertaking.
+Biegler, L.T., Grossmann, I.E., Westerberg, A.W., 1997. Systematic Methods of Chemical Process Design, first ed. Prentice Hall PTR, Upper Saddle River, N.J., p. 796.
+Blazquez-Diaz, C., 2019. Techno-economic modelling and analysis of hydrogen fuelling stations. Int. J. Hydrogen Energy 44 (2), 495­510. http://dx.doi.org/10.1016/j. ijhydene.2018.11.001.
+Caspari, A., Bremen, A.M., Faust, J.M.M., Jung, F., Kappatou, C.D., Sass, S., Vaupel, Y., Hannemann-Tamás, R., Mhamdi, A., Mitsos, A., 2019. DyOS - A framework for optimization of large-scale differential algebraic equation systems. Comput. Aided Chem. Eng. 46, 619­624. http://dx.doi.org/10.1016/B978-0-12-818634-3.501041.
+
+Computers and Chemical Engineering 192 (2025) 108862
+Caspari, A., Lüken, L., Schäfer, P., Vaupel, Y., Mhamdi, A., Biegler, L.T., Mitsos, A., 2020. Dynamic optimization with complementarity constraints: Smoothing for direct shooting. Comput. Chem. Eng. 139, 106891. http://dx.doi.org/10.1016/j. compchemeng.2020.106891.
+Dassault Systèmes, 2023. dymola systems engineering. https://www.3ds.com/productsservices/catia/products/dymola/. (Accessed 2 November 2023).
+Deuflhard, P., Hairer, E., Zugck, J., 1987. One-step and extrapolation methods for differential-algebraic systems. Numer. Math. 51 (5), 501­516. http://dx.doi.org/ 10.1007/BF01400352.
+El-Halwagi, M.M., 2017. Sustainable Design Through Process Integration, second ed. Elsevier, p. 618. http://dx.doi.org/10.1016/B978-0-12-809823-3.00002-3.
+Elgowainy, A., Reddi, K., Lee, D.Y., Rustagi, N., Gupta, E., 2017. Techno-economic and thermodynamic analysis of pre-cooling systems at gaseous hydrogen refueling stations. Int. J. Hydrogen Energy 42 (49), 29067­29079. http://dx.doi.org/10. 1016/j.ijhydene.2017.09.087.
+Farzaneh-Gord, M., Deymi-Dashtebayaz, M., Rahbari, H.R., Niazmand, H., 2012. Effects of storage types and conditions on compressed hydrogen fuelling stations performance. Int. J. Hydrogen Energy 37 (4), 3500­3509. http://dx.doi.org/10.1016/j. ijhydene.2011.11.017.
+Gill, P.E., Murray, W., Saunders, M.A., 2002. A SQP algorithm for large-scale constrained optimization: SNOPT. Soc. Ind. Appl. Math. 12 (4), 979­1006. http: //dx.doi.org/10.1007/978- 3- 319- 58356- 3_15.
+Kim, C., Gong, M., Lee, J., Na, Y., 2022. Minimizing specific energy consumption of electrochemical hydrogen compressor at various operating conditions using pseudo-2D model simulation. Membranes (Basel) 12 (12), http://dx.doi.org/10. 3390/membranes12121214.
+Lange, H., Klose, A., Lippmann, W., Urbas, L., 2023. Technical evaluation of the flexibility of water electrolysis systems to increase energy flexibility: A review. Int. J. Hydrogen Energy 48 (42), 15771­15783. http://dx.doi.org/10.1016/j.ijhydene. 2023.01.044.
+Leachman, J.W., Jacobsen, R.T., Penoncello, S.G., Lemmon, E.W., 2009. Fundamental equations of state for parahydrogen, normal hydrogen, and orthohydrogen. J. Phys. Chem. Ref. Data 38 (3), 721­748. http://dx.doi.org/10.1063/1.3160306.
+Linzenich, A., Arning, K., Bongartz, D., Mitsos, A., Ziefle, M., 2019. What fuels the adoption of alternative fuels? Examining preferences of German car drivers for fuel innovations. Appl. Energy 249 (March), 222­236. http://dx.doi.org/10.1016/ j.apenergy.2019.04.041.
+Luo, H., Xiao, J., Bénard, P., Chahine, R., Yang, T., 2022. Multi-objective optimization of cascade storage system in hydrogen refuelling station for minimum cooling energy and maximum state of charge. Int. J. Hydrogen Energy 47 (20), 10963­10975. http://dx.doi.org/10.1016/j.ijhydene.2022.01.059.
+Ma, Z., Liu, X., Zhang, T., 2021. Measurement and optimization on the energy consumption of fans in semiconductor cleanrooms. Build. Environ. 197 (April), 107842. http://dx.doi.org/10.1016/j.buildenv.2021.107842.
+Maurer, W., Justl, M., Keuschnigg, R., 2023. Improving hydrogen refueling stations to achieve minimum refueling costs for small bus fleets. Int. J. Hydrogen Energy 48 (77), 29821­29834. http://dx.doi.org/10.1016/j.ijhydene.2023.04.144.
+Mayer, T., Semmel, M., Guerrero Morales, M.A., Schmidt, K.M., Bauer, A., Wind, J., 2019. Techno-economic evaluation of hydrogen refueling stations with liquid or gaseous stored hydrogen. Int. J. Hydrogen Energy 44 (47), 25809­25833. http: //dx.doi.org/10.1016/j.ijhydene.2019.08.051.
+Minutillo, M., Perna, A., Forcina, A., Di Micco, S., Jannelli, E., 2021. Analyzing the levelized cost of hydrogen in refueling stations with on-site hydrogen production via water electrolysis in the Italian scenario. Int. J. Hydrogen Energy 46 (26), 13667­13677. http://dx.doi.org/10.1016/j.ijhydene.2020.11.110.
+Modelica Association, 2023. functional mock-up interface for model exchange and co-simulation. https://fmi-standard.org/. (Accessed 2 November 2023).
+Moton, J.M., James, B.D., Colella, W.G., 2014. Advances in electrochemical compression of hydrogen. ASME 2014 12th Int. Conf. Fuel Cell Sci. Eng. Technol. FUELCELL 2014 Collocated with ASME 2014 8th Int. Conf. Energy Sustain. 1­10. http: //dx.doi.org/10.1115/FuelCell2014- 6641.
+Mrusek, S., Blasius, M., Morgenroth, F., Thiele, S., Wasserscheid, P., 2024. Hydrogen extraction from methane-hydrogen mixtures from the natural gas grid by means of electrochemical hydrogen separation and compression. Int. J. Hydrogen Energy 50, 526­538. http://dx.doi.org/10.1016/j.ijhydene.2023.08.195.
+National Institute of Standards and Technology (NIST), 2023. Standard reference data. https://webbook.nist.gov/chemistry/fluid/. (Accessed 13 November 2023).
+Prokopou, G.I., Mödden, M.L., Mitsos, A., Bongartz, D., 2024a. Energetic comparison of electrochemical versus mechanical compression of hydrogen. In: Computer Aided Chemical Engineering, vol. 53, pp. 2047­2052.
+Prokopou, G.I., Mödden, M.L., Mitsos, A., Bongartz, D., 2024b. Optimal sizing and operation of electrochemical hydrogen compression. Chem. Eng. Sci. 293, 120031. http://dx.doi.org/10.1016/j.ces.2024.120031.
+Ralph, D., Wright, S.J., 2004. Some properties of regularization and penalization schemes for MPECS. Optim. Methods Softw. 19 (5 SPEC. ISS.), 527­556. http: //dx.doi.org/10.1080/10556780410001709439.
+Reddi, K., Elgowainy, A., Rustagi, N., Gupta, E., 2017a. Impact of hydrogen refueling configurations and market parameters on the refueling cost of hydrogen. Int. J. Hydrogen Energy 42 (34), 21855­21865. http://dx.doi.org/10.1016/j.ijhydene. 2017.05.122.
+
+12
+
+G.I. Prokopou et al.
+Reddi, K., Elgowainy, A., Rustagi, N., Gupta, E., 2017b. Impact of hydrogen SAE J2601 fueling methods on fueling time of light-duty fuel cell electric vehicles. Int. J. Hydrogen Energy 42 (26), 16675­16685. http://dx.doi.org/10.1016/j.ijhydene. 2017.04.233.
+Reddi, K., Elgowainy, A., Rustagi, N., Gupta, E., 2018. Two-tier pressure consolidation operation method for hydrogen refueling station cost reduction. Int. J. Hydrogen Energy 43 (5), 2919­2929. http://dx.doi.org/10.1016/j.ijhydene.2017.12.125.
+Reddi, K., Elgowainy, A., Sutherland, E., 2014. Hydrogen refueling station compression and storage optimization with tube-trailer deliveries. Int. J. Hydrogen Energy 39 (33), 19169­19181. http://dx.doi.org/10.1016/j.ijhydene.2014.09.099.
+Rothuizen, E., Mérida, W., Rokni, M., Wistoft-Ibsen, M., 2013. Optimization of hydrogen vehicle refueling via dynamic simulation. Int. J. Hydrogen Energy 38 (11), 4221­4231. http://dx.doi.org/10.1016/j.ijhydene.2013.01.161.
+Rothuizen, E., Rokni, M., 2014. Optimization of the overall energy consumption in cascade fueling stations for hydrogen vehicles. Int. J. Hydrogen Energy 39 (1), 582­592. http://dx.doi.org/10.1016/j.ijhydene.2013.10.066.
+Sdanghi, G., Maranzana, G., Celzard, A., Fierro, V., 2019. Review of the current technologies and performances of hydrogen compression for stationary and automotive applications. Renew. Sustain. Energy Rev. 102, 150­170. http://dx.doi. org/10.1016/j.rser.2018.11.028.
+Sdanghi, G., Maranzana, G., Celzard, A., Fierro, V., 2020. Towards non-mechanical hybrid hydrogen compression for decentralized hydrogen facilities. Energies 13 (12), 1­27. http://dx.doi.org/10.3390/en13123145.
+Sheu, E.J., Mitsos, A., Eter, A.A., Mokheimer, E.M., Habib, M.A., Al-Qutub, A., 2012. A review of hybrid solar-fossil fuel power generation systems and performance metrics. J. Sol. Energy Eng. Trans. ASME 134 (4), 1­17. http://dx.doi.org/10.1115/ 1.4006973.
+
+Computers and Chemical Engineering 192 (2025) 108862
+Simunovi, J., Pivac, I., Barbir, F., 2022. Techno-economic assessment of hydrogen refueling station: A case study in Croatia. Int. J. Hydrogen Energy 47 (57), 24155­24168. http://dx.doi.org/10.1016/j.ijhydene.2022.05.278.
+Smith, R., 2005. Chemical Process Design and Integration. John Wiley & Sons, Ltd, p. 712.
+Sohn, Y.J., Park, G.G., Yang, T.H., Yoon, Y.G., Lee, W.Y., Yim, S.D., Kim, C.S., 2005. Operating characteristics of an air-cooling PEMFC for portable applications. J. Power Sources 145 (2), 604­609. http://dx.doi.org/10.1016/j.jpowsour.2005.02. 062.
+Tian, Z., Lv, H., Zhou, W., Zhang, C., He, P., 2022. Review on equipment configuration and operation process optimization of hydrogen refueling station. Int. J. Hydrogen Energy 47 (5), 3033­3053. http://dx.doi.org/10.1016/j.ijhydene.2021.10.238.
+Toghyani, S., Baniasadi, E., Afshari, E., 2021. Performance assessment of an electrochemical hydrogen production and storage system for solar hydrogen refueling station. Int. J. Hydrogen Energy 46 (47), 24271­24285. http://dx.doi.org/10.1016/ j.ijhydene.2021.05.026.
+Zachert, L., Suermann, M., Bensmann, B., Hanke-Rauschenbach, R., 2021. Energetic evaluation and optimization of hydrogen generation and compression pathways considering PEM water electrolyzers and electrochemical hydrogen compressors. J. Electrochem. Soc. 168 (1), 014504. http://dx.doi.org/10.1149/1945-7111/abcf1a.
+Zheng, J., Zhang, X., Xu, P., Gu, C., Wu, B., Hou, Y., 2016. Standardized equation for hydrogen gas compressibility factor for fuel consumption applications. Int. J. Hydrogen Energy 41 (15), 6610­6617. http://dx.doi.org/10.1016/j.ijhydene.2016. 03.004.
+Zou, J., Han, N., Yan, J., Feng, Q., Wang, Y., Zhao, Z., Fan, J., Zeng, L., Li, H., Wang, H., 2020. Electrochemical compression technologies for high-pressure hydrogen: Current status, challenges and perspective. Electrochem. Energy Rev. 3 (4), 690­729. http://dx.doi.org/10.1007/s41918- 020- 00077- 0.
+
+13
+
+

@@ -1,0 +1,912 @@
+Chemie
+Ingenieur Research Article
+Technik
+
+These are not the final page numbers! (( 1
+
+Detailed Cost Analysis of Hydrogen Refueling Costs for Fleets
+Tobias Eißler*, Gwendolyn Schumacher, Jochen Behrens, Friedrich Mendler, and Christopher Voglsta¨ tter
+DOI: 10.1002/cite.202300123
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.
+The costs for hydrogen refueling of fleets were calculated by a two-step approach. Firstly, different hydrogen refueling station (HRS) system configurations were simulated and optimized for various HRS sizes and 350 bar pressure, with the Fraunhofer ISE's toolkit H2ProSim, showing that large-scale and pipeline-supplied HRS can reduce the hydrogen refueling costs. Secondly, as customer travel costs to the HRS play an important role, especially in the hydrogen market activation phase, the placement and dimensioning of the HRS network was optimized in a case study for the Upper Rhine region. The analysis shows possible network structure and cost distributions for a set of specific customers. Hydrogen supply costs are highly dependent on the hydrogen demand and spatial distribution of the customers and can drop to values of around  0.60 kg­1 for depot refueling stations for high-volume customers. However, some customers cannot be supplied at a reasonable cost.
+Keywords: Hydrogen pipeline supply, Hydrogen refueling station, Hydrogen supply for trucks, Refueling costs
+Received: August 09, 2023; accepted: December 11, 2023
+
+1 Introduction
+In 2021, the European road transport sector was responsible for approximately 740 million metric tons of carbon dioxide (CO2) emissions, with a share of 27 % for heavy-duty vehicles (HDV). The quantity of CO2 emissions from road freight transport operations had risen by 21 % since 1990, due to an increase in mileage [1, 2]. Alongside electromobility, hydrogen (H2) mobility offers an opportunity to counteract this trend; to effectively employ H2 as a potential solution, a nationwide network of hydrogen refueling stations (HRS) for HDV is essential.
+Most stakeholders in the road freight sector are motivated to reduce their fleet's CO2 emissions and need to decide on an approach to do so. For the majority, the cost of refueling is one of the main drivers of decision making. However, there is currently only very limited data in the literature on the refueling costs of HRS for 350-bar HDV.
+Cost values found in the literature are currently mostly based on passenger car HRS, which has led to an overestimation of hydrogen refueling costs. Moreover, a hydrogen core network (implementation planned for the next 8­10 years) should lead to lower costs for HRS. On the other hand, it is expected that the distribution density of HRS will be lower than that of today's petrol refueling stations, as a share of future road-based mobility is expected to be powered by electricity. This in turn will lead to higher travel costs for hydrogen refueling. As a result, there is a high degree of uncertainty regarding the achievable level-
+
+ized costs of hydrogen refueling (LCoHyR) and hydrogen supply costs (refueling costs including customer travel costs) for the road freight sector.
+This contribution aims to provide data for these specific cases by presenting and discussing cost calculations of HRS for 350-bar HDV, as well as presenting an optimization methodology and results for setting up an HRS network to supply spatially distributed H2 vehicles at minimal cost. This will provide a better understanding of travel costs in a future HRS network.
+2 Current State of Knowledge
+A detailed literature review of relevant scientific publications up to 2017/2018 is provided by Apostolou and Xydis [3]. For H2 HDV refueling, publications after 2017 are of greater importance due to the shift of attention from passenger vehicles to light-duty vehicles (LDV) and HDV. Of particular note is the work of researchers around Elgowainy and Reddi [4­6], who were involved in the development of a publicly available HRS cost calculation tool. Work by these
+­
+1Tobias Eißler (tobias.eissler@ise.fraunhofer.de), 1Gwendolyn Schumacher, 1Jochen Behrens, 1Friedrich Mendler, 1Dr. Christopher Voglsta¨tter 1Fraunhofer Institute for Solar Energy Systems ISE, Hydrogen Technologies, Heidenhofstraße 2, 79110 Freiburg, Germany.
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+www.cit-journal.com
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+'' These are not the final page numbers! 2
+
+Research Article
+
+Chemie Ingenieur Technik
+
+authors includes process engineering simulations and operational management analyses, as well as techno-economic analyses, which present LCoHyR for a 700-bar gaseous HRS of between USD 2 kg­1 and USD 8.5 kg­1 [6]. The wide cost range derives from numerous HRS configurations, HRS capacities, and component production volumes. The cost functions of the applied simulation tool are largely based on manufacturer data and information obtained in the USA. Although cost data of the dispensers were based on [7], no other primary literature sources were found for the cost data used.
+Of further note are the publications by Mayer [8] and Mayer et al. [9], who published a detailed, simulation-based, techno-economic analysis of HRS for 700-bar passenger cars supplied by compressed gaseous hydrogen (cgH2) and liquid hydrogen (LH2) for 2015 and the future (2050). The analysis covers capacities ranging from 176 to 4239 kg per cycle. The cost data in the paper is based on manufacturer data as well as on publications from the US Department of Energy [10] and Reddi et al. [6].
+Other post-2020 publications are by Caponi et al. [11] and Althoff et al. [12]. Caponi et al. [11] show the results of a component-oriented, scale-sensitive HRS cost model, which was used to model five European HRS for bus refueling. For the different HRS designs, capacities, and operation concepts, simulation results of LCoHyR from  1 kg­1 to  3 kg­1 are obtained, mainly considering 350-bar HRS, except for two HRS with 700-bar refueling options for passenger cars. The cost data used for the calculations are mostly based on existing literature sources, including publications from Reddi et al. [6, 13]. Althoff et al. [12] depicted refueling costs for the state of Baden-Wu¨rttemberg for the base years 2025, 2030, and 2035. The authors expected refueling costs of  1.03 kg­1,  0.89 kg­1, and  0.84 kg­1, respectively. Since the results of the following location optimization represent a region in Baden-Wu¨rttemberg, the results of Althoff et al. [12] are of particular relevance.
+With regard to refueling station network costs, it has become apparent that the overall goal of ideal HRS placement is either to minimize associated costs, such as customer travel costs or HRS construction costs, or to maximize the demand served [14]. Thus, approaches generally differ between point-based models, which assume that refueling demand can only be localized at nodes of the network, and flow-based or arc-based models, which consider flows in the form of routes or journeys and place refueling stations so that they can intercept as many trips as possible. Yet, it is often criticized that many studies do not consider any capacity restrictions [14].
+Upchurch et al. [15], for example, developed the flowbased Capacitated Flow Refueling Location model and included a capacity constraint that takes into account the limit on the number of vehicles that can be refueled at a single station. Miralinaghi et al. [16] demonstrated a capacityconstrained model with traffic deviations over multiple time periods, which was primarily used for mathematical model
+
+development and therefore did not provide sound cost assumptions. Recently, Rose and Neumann [17] presented the Node-Capacitated Fuel Refueling model for HDV. In contrast to the approach presented here, in his 2020 published dissertation [18], Rose clearly stated that varying the type of H2 supply had no influence on the spatial distribution or composition of the HDV HRS, but was rather intended to serve as a baseline for determining the economic implications of a pipeline supply for such HRS.
+It has become apparent that there have been few technoeconomic results based on process modeling and simulation, as well as results for small-scale and demand-oriented location optimizations, published in the area of 350-bar HRS in recent years. Most of the more recent publications are based on data sources developed before 2018 and refer to the publications from Elgowainy and Reddi et al. (see above) as a primary data source. The following results aim to provide new comparative data based on techno-economic simulations. Specific refueling costs and capital expenditures (CAPEX) are determined based on cost data from recent cost inquiries and manufacturer quotes. Furthermore, the impact on the overall costs of increasing the refueling capacity is investigated, as well as the impact of placing large-scale stations near recently planned hydrogen pipelines.
+3 Hydrogen Refueling Costs
+3.1 HRS Simulation Model
+The techno-economic model of the 350-bar HRS is based on the in-house simulation toolkit H2ProSim implemented in Matlab/Simulink. The technical part consists of individual (component) blocks, which simulate the behavior of each component and are combined in an HRS model by means of control signals as well as energy and mass flows. Storage and compressor processes are modeled by thermodynamic equations; this includes, but is not limited to, the use of the real gas equation and multi-stage isentropic compression. This results in a nonlinear technical model capable of emulating part-load behavior and complex operational management with a high time resolution, allowing detailed simulations of refueling processes and HRS operation. The subsequent economic model utilizes the results of the technical model. Costs are calculated using the annuity method. An annuity factor transforms the investment costs (CAPEX) by means of the technical lifetime of the components into a continuous series of payments. The CAPEX include the costs of the main components as well as secondary costs. Taking into account the operating costs (OPEX) consisting of maintenance costs and costs for electric power, the levelized costs of refueling (here, LCoHyR in  kgH2­1 (Eqs. (1) and (2); Tab. 1)) can be determined in relation to the total amount of hydrogen refueled.
+
+www.cit-journal.com
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Chemie
+Ingenieur Research Article
+Technik
+
+These are not the final page numbers! (( 3
+
+Table 1. Equation variables.
+
+Variable LCoHyR CAPEX OPEX mH2 WACC n i
+
+Description Levelized cost of hydrogen refueling Investment costs of component i () Operating costs of component i () Mass of H2 refueled (kg) Weighted average capital costs Technical lifetime of component i Component index
+
+ EUR
+LCoHyR
+
+¼
+
+X
+
+CAPEXi
+
+Ã
+
+Annuityi þ OPEXi
+
+(1)
+
+kg
+
+i¼1
+
+mH2
+
+WACC Ã ð1 þ WACCÞni
+
+Annuityi ¼ ð1 þ WACCÞni À 1
+
+(2)
+
+It should be noted that the costs calculated here can only serve as an indication. Actual project costs depend on many individual factors such as location, margins, and other indirect costs, which are not included in these calculations.
+In order to optimize the setup of the HRS, a nonlinear evolutionary optimization method is used. This optimization algorithm searches for the best combination of component sizes to minimize or maximize an optimization objective. In this paper, three design parameters of the HRS (size of the medium-pressure storage, size of the high-pressure storage, size of the H2 compressor) were optimized towards
+
+the minimum LCoHyR under the boundary condition of satisfying H2 customers (H2 demand time series).
+3.2 HRS Design and Input Parameters
+The basic structure of the model of a 350-bar HRS is illustrated in Fig. 1. The HRS consists of a medium-pressure storage tank (minimum pressure: 80 bar, maximum pressure: 200 bar), a two-stage compressor with a maximum pressure ratio of 2.5, a high-pressure storage tank (minimum pressure: 350 bar, maximum pressure: 500 bar), and a dispenser for H2 filling. It should be noted that concepts for passenger car HRS have also used 60 or 30 bar as minimum pressure in the past. Precooling is not considered and is not necessary if the temperature of the H2 dispensed stays under a certain temperature limit specified in the SAE J2601-2 fueling protocol as stated in [19]. Elgowainy and Reddi [5] outline that vehicles fitted with 350-bar typeIII tanks do not require H2 precooling at the HRS dispenser. However, in recent times, type-IV tanks have also been integrated into 350-bar vehicles, which could lead to precooling requirements at the HRS.
+For simplification reasons, in this work, the refueling process was simulated at a constant mass flow of 3.6 kg min­1, derived from the information in SAE J2601-2 ``Surface Vehicle Technical Information. Fueling Protocol for Gaseous Hydrogen Powered Heavy Duty Vehicles'' [19], instead of a constant pressure ramp rate as utilized at passenger car HRS. In this setup, the medium-pressure storage tank is the mass storage tank, receiving the H2 supplied by the truck trailer. The high-pressure storage tank, in addition to the compressor, allows the vehicles to be refueled up to a
+
+Figure 1. Process diagram of a 350-bar HRS.
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+www.cit-journal.com
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+'' These are not the final page numbers! 4
+
+Research Article
+
+Chemie Ingenieur Technik
+
+pressure level of 350 bar. By using a high-pressure storage tank for the refueling process, the compressor can be designed with a lower maximum throughput and avoids rapid start/stop changes from an operational point of view.
+Four different HRS sizes were designed and optimized in the model (M, L, XL, XXL). The daily H2 throughput for each is 500, 1000, 1700, and 4000 kg d­1, respectively, derived from [20]. If the HRS is supplied by cgH2 trailers, the gas flow from the 500-bar trailer to the 200-bar stationary cgH2 storage tank is assumed to be a constant mass flow of 12.2 kg min­1, which corresponds to the overflow of 1100 kg cgH2 in 90 min [21].
+The high demand for H2 in the largest design stage of the HRS (XXL) has required the modeling of a pipeline supply system. The design of the pipeline connection for HRS is currently subject to a high degree of uncertainty concerning the necessary instrumentation, pressure reduction, gas cleaning, and low-pressure H2 distribution grids. For this reason, this analysis assumes that: ­ a pipeline-connected HRS needs to be close to the
+planned hydrogen backbone. ­ an HRS is connected via a dedicated H2 pipeline directly
+to the hydrogen transport grid. It must be mentioned that for the current gas grid this is only the case for very large natural gas consumers and might not be a correct assumption for HRS. ­ no additional metering and pressure reduction is necessary at the pipeline. Therefore, a pipeline supply of cgH2 at a pressure level of 80 bar was used in the simulation (see Fig. 1) and costs for the pipeline were assumed per kilometer distance between the HRS and the backbone, excluding any costs for a handover station. Since the pipeline was designed to meet the maximum throughput of the compressor, no additional intermediate pressure storage was required. The H2 is compressed directly from the 80-bar pipeline to the 500-bar
+
+high-pressure storage tank. In the future, it is also conceivable that the HRS will be connected directly to a local H2 distribution network with a pressure level of 1.1­16 bar.
+Trailer deliveries and refueling operations were predefined by a time series. The refueling/demand time series depends on the fill rates and the number of dispensers. The refueling operations were modeled according to the hourly utilization rate of the H2 demand profile, to be performed at the beginning of each hour until the utilization rate was reached. Fig. 2 shows the utilization rates for each hour of one day, totaling 100 % of the daily amount of H2 dispensed for each HRS size at the end of the day. The H2 demand profile was based on a profile presented by Mayer [8], derived from data of 387 conventional fueling stations in the USA. However, a more specific definition of vehicle classes considered was not provided.
+The H2 demand profile assumed hours of operation between 6:00 a.m. and 10:00 p.m. The hourly utilization rates are lowest at the beginning and end of the day and highest during the peak period between 2:00 p.m. and 6:00 p.m. For the XL and XXL sizes, multiple dispensers are required to satisfy the H2 demand profile.
+The first delivery of H2 to the HRS was therefore scheduled for 4:00 a.m. For sizes M and L, a single delivery was sufficient. For size XL (1700 kg d­1), a second delivery at 3:00 p.m. was necessary (see Tab. 2).
+Tabs. 2 and 3 summarize the technical and economical parameters that, in addition to the integrated time series, provide the base for all simulation and optimization calculations. As energy markets are still in a state of volatility at the time of writing, it is currently difficult to make reliable assumptions about electricity prices. For this reason, electricity prices from 2019, based on [22], were applied for the simulations. However, to illustrate the impact of electricity prices that are likely to be higher in the future, the refueling costs were calculated using an electricity price that is
+
+Figure 2. Presentation of the refueling/demand profile on an hourly basis.
+
+www.cit-journal.com
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Chemie
+Ingenieur Research Article
+Technik
+
+These are not the final page numbers! (( 5
+
+Table 2. Technical parameters.
+
+Parameter
+
+M
+
+Maximal amount of H2 per day [kg d­1]
+
+500
+
+Utilization rate [%]
+
+100
+
+Average amount of H2 per day [kg d­1]
+
+350
+
+Amount of H2 per trailer [kg] Method of delivery Unloading time [h] Pressure level trailer/pipeline [bar] Pressure level medium-pressure storage [bar] Pressure level high-pressure storage [bar]
+
+500 Trailer 1.5 500 200 500
+
+Number of dispensers
+
+1
+
+Flow rate per dispenser [kg min­1]
+
+3.6
+
+L 1000 100 700
+1000 Trailer 1.5 500 200 500
+1 3.6
+
+XL
+
+XXL
+
+1700
+
+4000
+
+100
+
+100
+
+1050
+
+2800
+
+1100, 600 Trailer 1.5 500 200 500
+
+­ Pipeline ­ 80 ­ 500
+
+2
+
+3
+
+3.6
+
+3.6
+
+Description Capacities derived from [20]
+
+Source [20]
+
+Equals 70 % of the maximal daily H2 throughput
+
+[8, 21] [21]
+
+[21]
+
+[21]
+
+Minimum pressure level: 80 bar [23]
+
+Minimum pressure level:
+
+[23]
+
+360 bar
+
+Matched to refueling profiles [20]
+
+[19]
+
+Table 3. Economic parameters.
+
+Parameter
+
+Value
+
+WACC [%] Electricity price [ kWh­1] CAPEX medium-pressure storage tank [ kg­1] CAPEX high-pressure storage tank [ kg­1]
+
+6 0.1234 450 800
+
+CAPEX compressor []
+
+380 000
+
+Dispenser [] Gas cleaning unit []
+
+30 000 356 000
+
+Transformer [] Engineering costs [%] Installation costs [%] Pipeline connection []
+
+180 000 20 10 2 432 864
+
+Component lifetime [a] ­ ­ 20 20 20
+20 20
+20 ­ ­ 40
+
+Description
+
+Source [22]
+
+Cost function (cost over flow
+rate) example shown here: 100 kg h­1
+
+Cost function (cost over flow
+rate) example shown here: 100 kg h­1
+
+Internal data based on enquiries and manufacturer quotes
+
+% of overall CAPEX
+% of overall CAPEX
+Size- and length-related cost function example shown here: 5 km, 4000 kg d­1
+
+ 50 MWh­1 higher than in 2019, leading to assumptions for electricity prices of  0.123 kWh­1 and  0.173 kWh­1. As displayed in Tab. 3, the input data for component CAPEX and engineering and installation markups are based on manufacturer specifications as well as internal experience and feedback from external experts. These data were collected almost exclusively from 2018 to 2022; no inflation rates were assumed.
+
+3.3 Simulation Results for a 350-bar HRS Model
+In this section, selected results of the HRS simulations are presented, focusing on the results of the cost calculations, including investment costs and LCoHyR. For all four capacities of the HRS, the size of the key components was optimized towards minimum LCoHyR.
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+www.cit-journal.com
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+'' These are not the final page numbers! 6
+
+Research Article
+
+Chemie Ingenieur Technik
+
+As indicated in Tab. 4, the compressor capacity increased linearly for the HRS sizes M to XL, as did the volume of the high-pressure storage tank. The medium-pressure storage tank was designed for the amount of H2 delivered. For an XL HRS, the medium-pressure storage tank was only sized to a maximum of 1100 kg of H2, as a second delivery arrives in the afternoon, resulting in a comparably small increase in the medium-pressure storage volume of 15 % compared to the L HRS.
+The sizes of the compressor and the high-pressure storage tank were adapted to the refueling processes, and whether all planned refueling operations can be carried out smoothly depends to a large extent on this. This corresponded to a maximum compressor flow rate of 50.4 and 100.8 kg h­1 for size M and size L, respectively. The size XL with two dispensers achieved a maximum flow rate of 169.2 kg h­1, while the XXL HRS with three dispensers achieved a maximum of 399.2 kg h­1.
+Fig. 3 presents the specific refueling costs based on cost calculations for all HRS sizes. Scaling the refueling capacity resulted in a reduction in LCoHyR. The range of costs for the XXL HRS demonstrates the current lack of information concerning the pipeline connection. Both the LCoHyR and CAPEX figures illustrate the costs for a pipeline connection (striped area) ranging from no costs (due to an HRS built directly onto the hydrogen backbone, without any metering or gas cleaning) to high additional costs for a gas cleaning unit and a 5.14-km pipeline connection built to supply only this HRS. In the future, HRS could be supplied by an H2 distribution network at a lower final pressure.
+For certain components (trailer station, grid connection, single dispenser), the investment costs are independent of the HRS size; the share of specific fueling costs decreases as the annual fueling capacity increases. The medium-pressure storage tank costs showed the effect of two daily H2 deliveries instead of one. The LCoHyR share of the medium-pressure storage tank increased from size M to size L. In the size XL model, the medium-pressure storage tank was utilized more efficiently with two deliveries per day. A more detailed analysis considering the transportation costs for H2 delivery could show whether multiple deliveries per day would lead to a reduction in costs compared to larger on-site storage.
+
+Table 4. Simulation results for selected parameters.
+
+Parameter Daily HRS capacity [kg d­1] Compressor [kg h­1] Medium-pressure storage [m3] High-pressure storage [m3] Electrical energy demand [MWh a­1] H2 output [kg a­1]
+
+M 500 63 59 7 139 181 321
+
+L 1000 113 120 14 279 363 956
+
+The LCoHyR share of the energy costs remained constant at  0.095 kg­1 from size M to size XL and scaled linearly.
+
+The specific LCoHyR of the compressor experienced a
+
+degression as refueling capacities increased. For an HRS
+
+design with a higher daily H2 throughput, a linear scaling of the compressor power is not necessarily required, but the
+
+exact scaling of compressor and storage size depends
+
+strongly on the refueling time series, the operational man-
+
+agement, and the available high-pressure storage volume
+
+(see also [24]). The compressor costs decreased from  0.18 kg­1 for the size M HRS to  0.07 kg­1 for the size XXL
+
+HRS; likewise the cost shares in the LCoHyR tended to
+
+decrease slightly.
+
+The proportion of energy costs in the LCoHyR is directly
+
+related to the pressure levels at which the compressor oper-
+
+ates. In the case of the M HRS, these are at 8.9 % with a pri-
+
+mary pressure on the supply side ranging from 200 bar
+
+(``low'' amount of energy needed to compress to 500 bar) in
+
+the morning to 80 bar (``high'' amount of energy needed to
+
+compress to 500 bar) in the evening. In the case of the XXL
+
+HRS the primary pressure on the supply side of the com-
+
+pressor is fixed at 80 bar pipeline pressure, resulting in a
+
+higher energy demand over the day compared to a trailer-
+
+supplied HRS and an energy cost share of 25.2 %. It is
+
+important to mention that this does not mean that, in gen-
+
+eral, a pipeline supply is a less efficient approach; for an
+
+overall assessment it is also necessary to take into account
+
+the trailer delivery supply chain and therefore the energy
+
+needed for the trailer to fill up to 500 bar, as well as several
+
+other processes of the supply chain.
+
+A sensitivity calculation on the electricity price of  +0.05 kWh­1 is specified in the diagram by means of the
+
+error indicators. The maximum impact on the LCoHyR was  +0.06 kg­1 for the XXL HRS calculations.
+
+Overall, scaling up the HRS reduced costs as the impact
+
+of fixed-price components decreased. In general, refueling
+
+costs are highly dependent on the utilization rate of the
+
+HRS, with internal analysis showing that LCoHyR can be
+
+six to seven times higher at low HRS utilization rates. Aside
+
+from pipeline cost uncertainties, energy costs were the pri-
+
+mary cost driver for the XXL HRS. Likewise, the medium-
+
+pressure storage tank had a high impact on the refueling
+
+costs, at 20­26 % for HRS with trailer delivery of H2. The
+LCoHyR for a full utilization of the HRS ranged from  0.34 kg­1 to  1.10 kg­1, depending on the
+
+XL
+
+XXL
+
+HRS size and uncertainties (e.g., the electricity price sensitivity).
+
+1700
+
+4000
+
+174
+
+389
+
+138
+
+­
+
+23
+
+43
+
+480
+
+1670
+
+620 171
+
+1 459 767
+
+www.cit-journal.com
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Chemie
+Ingenieur Research Article
+Technik
+
+These are not the final page numbers! (( 7
+
+Figure 3. Simulation results for the LCoHyR and CAPEX.
+
+4 Techno-Economic Optimization of an HRS Network in the Southern Upper Rhine Region (Germany)
+For the supply of H2 to spatially distributed fleets, the travel costs to the HRS are important as well. Furthermore, a spatially optimized HRS infrastructure can benefit from economies of scale and the positive impact that pipeline connections have on the costs of refueling ­ especially in the rampup phase of H2 mobility at rather small scales. Therefore, this study aims for a geo-techno-economic optimization of such a network for the southern Upper Rhine region. This means that not only a techno-economic optimization of
+
+HRS is performed but also a location optimization of their placement to generate minimum overall hydrogen refueling costs and to gain a further understanding of a developing hydrogen infrastructure.
+4.1 Data Basis
+The study is based on survey results from ``H2-SO ­ hydrogen technologies on the southern Upper Rhine,'' a project of the Fraunhofer ISE (Freiburg) [25]. It covers the results from the year 2021 and contains information on the H2 demand from a total of 122 stakeholders. 41 stakeholders
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+www.cit-journal.com
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+'' These are not the final page numbers! 8
+
+Research Article
+
+Chemie Ingenieur Technik
+
+agreed to the publication of the survey results without further anonymization, while the remaining 81 stakeholders agreed to publication in an anonymized manner, and their data was therefore processed further in the form of spatial redistribution. Data processing was carried out via the Python programming language (version 3.11.0) [26] and/or QGIS geographic information software (version 3.26 Buenos Aires) [27].
+Since this study refers to the refueling process at filling stations with 350 bar cgH2, only the requirements of the corresponding vehicle classes, in this case buses and other HDV, were considered. The requirements of vehicles used for municipal waste disposal were not considered, even though they are heavier than 3.5 t, as they are currently refueled with 700 bar cgH2 [20].
+Already existing HRS that provide 350 bar cgH2 were considered if located within the region or its 20-km periphery. Modeling-wise, positioning an HRS of size M at the location of an already existing 350-bar HRS will not cause any CAPEX (as HRS built up to now have exceeded size M only in a few cases). At the same time, the positioning of an HRS of size L, XL, or XXL at the location of an already existing 350-bar HRS would only cost half of the original CAPEX, as it is assumed that existing structures can be used. In the use case of the southern Upper Rhine region, there is one operating HRS near Basel that was considered in this way.
+4.1.1 Scenarios
+While the extent of future H2 use in HDV is still under debate, the H2-SO survey collected data on the maximum potential for H2 from the above-mentioned stakeholders. Three different scenarios were introduced to analyze varying shares of H2 in HDV-based transportation: ­ Scenario 1 uses the original survey results that corre-
+spond to 100 % of the fuel demand being covered by H2. ­ Scenario 2 assumes that 60 % of the fuel requirement is
+covered by H2. ­ Scenario 3 corresponds to 30 % of the fuel demand being
+covered by H2.
+4.2 The Capacity-Constrained HRS Location Model
+To meet the requirements of a techno-economic location optimization, a capacity-constrained HRS location model was developed. The capacity-constrained HRS location model represents a discrete location problem in the form of a multiple-allocation fixed-charge location problem. This means that the H2 demand is distributed spatially via specific demand points. Similarly, HRS can only be located at a predefined set of potential candidate sites ­ in this case, either at existing petrol station locations or directly at the customer's depot. This constraint was introduced because most studies consider conventional refueling stations as
+
+potential HRS sites due to easy access, existing high safety standards, and good visibility [28]. In the case of a customer depot as a potential HRS location, two conditions were defined that had to be met: Either the client has an existing company-owned petrol filling station on site or the client's demand alone would result in a utilization rate of at least 70 %, in order to reach the 70 % target load as determined by Reuß [21].
+
+4.2.1 Capital Investment (CAPEX) and Connecting Potential of XXL HRS to the Pipeline Grid
+The developed HRS location model is a mixed-integer optimization problem. It includes a set of H2 demand points, a set of potential HRS sites, and a set of four different HRS sizes, as presented in Sect. 3.2. At each site, one of these HRS types can be built to meet the required demand. However, each placed HRS will have its associated CAPEX (see Sect. 3.3). XXL HRS include not only the costs of station construction but also the costs of connecting the station to the existing gas pipeline grid, based on the shortest distance from each HRS site to an existing natural gas transfer grid pipeline (based on the IGGIELGN Dataset by SciGRID_gas) [29] and the pipeline connection cost as described in Sect. 3.2 (see Tab. 3).
+
+4.2.2 Functionality and Mathematical Basis
+
+Whether or not it is economically viable to open a particular HRS also depends on the travel costs (TExp) a customer must incur to reach the station. Refueling at a customer's depot may therefore be a particularly efficient option. To calculate the associated travel costs, the openrouteservice routing machine [30] was used to determine the length (Dist) and duration (Dur) of the fastest route from each H2 demand point to a potential HRS location. As the optimization only involves buses and other vehicles heavier than 3.5 t, the calculation was set to ``hgv'' (heavy goods vehicle) as driving mode. Based on the resulting values, travel expenses per kilogram H2 for each customer-HRS pair can be calculated taking into account fuel costs (H2Price), fuel consumption rates (AvCon), wear costs in the form of a kilometer allowance (Wcost), the salary of the driver (S), and the average quantity of H2 per refueling (AvFill) (Eq. (3); Tab. 5).
+
+
+
+EUR TExp kg
+
+¼ H2Price Á AvCon Á Dist þ Wcost Á Dist þ S Á Dur AvFill
+
+(3)
+
+The capacity-constrained HRS location model optimizes the overall setup for minimum overall costs based on the annual costs of investment and the annual travel expenses between the assigned client and the assigned HRS. The form of the multiple-allocation fixed-charge location problem thereby allows one customer's demand to be served by multiple HRS. Constraints of the problem are that each demand
+
+www.cit-journal.com
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Chemie
+Ingenieur Research Article
+Technik
+
+These are not the final page numbers! (( 9
+
+Table 5. Input parameters for calculating travel expenses.
+
+Parameter TExp
+
+Value Variable
+
+H2Price AvCon Dist Dur
+
+12.85 9 Variable Variable
+
+Wcost
+
+0.64
+
+S
+
+26.5
+
+AvFill
+
+30
+
+Description
+
+Source
+
+Travel expenses a given customer must incur to reach a ­ given HRS [ kgH2­1]
+
+H2 price for 350 bar refueling at the HRS [ kgH2­1]
+
+[31]
+
+Average fuel consumption, kg H2 per 100 km
+
+[32]
+
+Shortest distance between customer and HRS [km]
+
+Calculated via openrouteservice [30]
+
+Duration of the fastest route between customer and HRS [h] Wear costs of heavy fuel cell electric vehicle [ km­1]
+Salary of the driver [ h­1]
+
+Calculated via openrouteservice [30]
+Calculation based on annual mileages from the survey results and the annual maintenance costs for fuel cell electric trucks given by Reuß [21] [33]
+
+Average quantity per refueling [kgH2]
+
+[34]
+
+must be satisfied, that the capacity of the HRS must not be exceeded, that customers cannot be assigned to closed or non-existing facilities, and that there can only be one open HRS at each geographical location. Finally, whether an HRS is built or not falls within the domain of a binary decision variable depending on the overall network costs associated.
+Moreover, it is important to emphasize that the H2 demand and coverage during the optimization process are based on the maximum hourly demand of the consumer (10 % of the daily requirement) and the maximum refueling capacity of the HRS during the peak hour (10 % of the daily HRS capacity) in order to ensure that the demand of the customers is always met. This approach was chosen to respond to the peak loads and technical limitations of the various station designs. The demand during the peak hour was expected to be 10 % of the approximated daily demand, to align with the refueling profile on an hourly basis (Fig. 2). The daily demand was calculated by dividing the annual fuel requirement by 252 working days. In the objective function (Eq. (4); variables listed in Tab. 6)), the overall travel expenses are therefore multiplied by 10 and 252 working days to calculate back to annual costs.
+
+XX
+
+minimize z ¼
+
+fit yit þ
+
+t  Ti  I
+
+! XX
+cij xij · 10 · 252
+i  Ij  J
+
+(4)
+
+The optimization was computed using the Python PuLP package [35]. CBC (COIN-OR Branch and Cut), an opensource mixed-integer linear programming solution method written in C++ by John Forrest (IBM Research), served furthermore as the problem solver [36].
+
+Table 6. Equation variables of the objective function.
+
+Variable Description
+
+z
+
+Overall network cost
+
+I
+
+A set of potential HRS locations with I = {1, K, i, K n}
+
+T
+
+A set of different types of HRS, T = {1, K, t, K n}, from
+
+which the optimizer can choose one to be built
+
+fit
+
+The fixed costs fit if an HRS of type t  T is built at loca-
+
+tion i  I
+
+yit
+
+A binary decision variable that has the value 1 if an HRS
+
+of type t  T is built at location i  I, and 0, if no HRS is
+
+built there
+
+J
+
+A set of H2 customers with J = {1, K, j, K n}
+
+cij
+
+The travel expenses cij that customer j  J has to incur
+
+when their demand is covered by an HRS at location i  I
+
+xij
+
+The amount of H2 a customer j  J receives from an HRS
+
+built at location i  I
+
+5 Optimization Results
+Optimization results were used to determine the utilization rates of the individual filling stations and for resolving exact supply structures between stations and H2 consumers. Such structures included not only purchase quantities but also travel costs and specific hydrogen costs for single HRS and consumers.
+5.1 Network Layout
+The spatially resolved optimization results provided a different infrastructure layout for each modeling scenario
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+www.cit-journal.com
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+'' These are not the final page numbers! 10
+
+Research Article
+
+Chemie Ingenieur Technik
+
+(Fig. 4). Scenario 1, the one with the highest H2 demand in the region, requires 26 HRS in total to meet an overall demand of approx. 11 000 t H2 per year. The correspondingly lower demand of the other scenarios can be met by 16 HRS for Scenario 2 and 13 HRS for Scenario 3. The already operating HRS south of the model region was included in each scenario, demonstrating that several customers with rather low demand can be served by existing structures. Interestingly, the optimization process did not lead to an increase in the size of the existing filling station in any of the three scenarios, even though sizes other than M would only cause half of the original determined CAPEX (see Sect. 4.1). This might be due to a rather unfavorable location site in the model region.
+The resulting layouts furthermore illustrate the location of XXL HRS in areas close to high demand and to the existing gas pipeline (Figs. 4 and 5). Apart from that, XXL HRS were predominantly located in Freiburg and its commuter belt. The location sites therefore align with the project ``RHYn Interco'' by bnNETZE and its goal to transform existing gas infrastructure to supply former natural gas consumers of the region with H2 [37]. This is also consistent with the results of Rose [18] which also suggest the placement of HRS on the A5 highway near Freiburg for several scenarios.
+In the case of Scenario 1, all XXL HRS are located directly at the customer's depot as well as the majority of XL and L HRS. A similar pattern can be seen for Scenario 2. Scenario 3 even consists solely of HRS at the depot, apart from the existing station, near Basel. Regarding the proximity of XXL HRS to the pipeline network, the distance increases as demand increases. In Scenario 3 the XXL HRS is built only 0.75 km away from the grid, whereas in Scenario 1 the XXL filling stations are built up to 5 km away from the existing grid (Tab. 7). However, east of Lo¨rrach and south-east of
+
+Freiburg, demand is met by multiple smaller HRS in close proximity (Figs. 4 and 5). Apparently, connecting these sites to the pipeline was too costly in the optimization context. It remains unclear whether further economies of scale could be exploited if another H2 supply configuration for XXL HRS had been given. Furthermore, the potential establishment of an H2 distribution grid (beyond the scope of this study) serving industry customers (also beyond the scope) might also enable grid-connected XXL HRS.
+5.2 Utilization Rate and Specific Refueling Costs
+Depending on the amount refueled by each station and the utilization rates, HRS-specific LCoHyR were calculated (see Fig. 5; Tab. 6). It should be noted that the results shown in Tab. 7 and Fig. 6 (see below) do not represent the utilization rate or the specific costs related to the operating HRS near Basel, as it is not comparable to the remaining infrastructure development due to zero investment costs.
+5.2.1 Annual Utilization Rates and LCoHyR
+Resulting LCoHyR were calculated for each station, based solely on HRS-specific utilization rates and the CAPEX and OPEX of the HRS configuration. This means that the cost of producing H2 is not included. However, the results show that the highest annual utilization rate of the optimized layout is 70 %, which aligns with the target utilization rate from Reuß [21]. In the presented methodology, 70 % annual utilization corresponds to a 100 % utilization rate at the peak hour. Additionally, the findings revealed that in some cases the capacity was not fully utilized, leading to correspondingly higher LCoHyR. Nevertheless, optimization results effectively demonstrate economies of scale, as the
+
+At customer depot At filling station Pipeline
+
+Operating HRS
+
+Figure 4. Optimized H2 refueling infrastructure layout for the model region.
+
+www.cit-journal.com
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Chemie
+Ingenieur Research Article
+Technik
+
+These are not the final page numbers! (( 11
+
+Operating HRS
+
+Figure 5. Spatial distribution of H2 demand within the model region and the optimized infrastructure layout including HRS-specific refueling costs (LCoHyR) for Scenario 1.
+
+Table 7. Statistical parameters of infrastructure- and development-related variables.
+
+Variable
+Travel expenses per customer [ kg­1]
+Travel duration per customer [min]
+Travel distance per customer [km]
+HRS-specific refueling cost [ kg­1]
+Hydrogen supply costs [ kg­1] (including travel costs to HRS)
+Distance of XXL HRS to pipeline [km]
+
+Scenario 1 Min Max 0.00 3.26 0.00 62.19 0.00 39.08 0.58 2.28 0.58 4.43
+0.06 5.14
+
+Mean 0.86 16.79 10.22 1.10 1.89
+1.62
+
+Scenario 2 Median Min Max 0.77 0.00 3.93 15.95 0.00 74.22 8.71 0.00 47.46 0.93 0.58 2.64 1.68 0.58 4.83
+0.75 0.50 2.35
+
+Mean 1.03 19.77 12.31 1.02 2.01
+1.21
+
+Scenario 3 Median Min Max 0.93 0.00 3.84 18.52 0.00 75.73 10.50 0.00 45.55 0.90 0.69 2.44 1.82 0.69 4.92
+0.75 0.75 0.75
+
+Mean 1.13 21.85 13.53 1.16 2.26
+0.75
+
+Median 1.09 22.11 12.39 1.21 2.23
+0.75
+
+LCoHyR for stations of type XXL remained below the spe-
+cific cost for type M, even when operating at the lowest
+annual utilization rate of 40 %, resulting in a specific LCoHyR of  0.98 kg­1 (Fig. 6).
+
+5.2.2 Customer-Specific Hydrogen Supply Cost (Including Traveling Costs to HRS)
+Apart from LCoHyR per fueling station, modeling results also enabled the customer-specific hydrogen supply costs to be calculated. These costs consist of the average weighted LCoHyR at the HRS and the average weighted travel expenses per kilo-
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+www.cit-journal.com
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+'' These are not the final page numbers! 12
+
+Research Article
+
+Chemie Ingenieur Technik
+
+travel expenses were due to rather long travel durations and
+distances of up to 76 min or 47 km (Tab. 7). It was not consid-
+ered that an HRS located on the way to a destination or on a
+daily route could potentially reduce a customer's travel ex-
+penses. Nevertheless, network results demonstrated that only clients with an H2 demand of less than approx. 100 t a­1 (Fig. 7) had to face high hydrogen supply costs of more than  2 kgH2­1. Therefore, large-scale H2 customers, such as freight hauling companies, show rather low specific costs. For Scenario 1, customers with requirements of more than 100 t a­1 ac-
+counted for about 90 % of the total demand in the analyzed re-
+gion. Even in Scenarios 2 and 3, this share made up 85 % and
+66 %, respectively. Thus, the by far largest part of the demand could be met at hydrogen supply costs of less than  2 kgH2­1.
+
+6 Summary
+
+Figure 6. LCoHyR ( kgH2­1) according to size and utilization rate.
+
+Using Fraunhofer ISE's toolkit H2ProSim, different HRS system configurations were optimized for different HRS sizes (M, L, XL, XXL) at a pressure level of 350 bar, using a typical refueling time series and a utilization rate of 100 %. HRS size XXL were configured as being supplied via pipeline due to the high H2 throughput.
+The results show a direct impact of the size of the HRS on the LCoHyR, with the specific costs decreasing from  1.06 kg­1 for an HRS size M to a minimum of  0.34­0.52 kg­1 for an HRS size XXL. This is mainly due to economies of scale. XXL HRS furthermore benefit from reduced pressure storage sizes enabled by their connection to a pipeline. The exact cost advantage of the XXL HRS depends on the distance to and the necessary equipment for the pipeline connection. Besides, the requirements for connections to the pipeline are, at the time of this study, still a topic under research. These aspects lead to a cost range of  0.34­0.52 kg­1 for a pipeline-connected XXL HRS.
+It is important to mention that the above-mentioned reduction of the storage size assumes that, for pipelineconnected HRS, the required storage capacity is provided by a future H2 grid at very low costs. This might not be true
+
+gram H2 refueled. The average is weighted because consumers could be assigned to multiple HRS at the same time to meet their needs. The lowest hydrogen supply cost (including travel costs to the HRS),  0.58 kgH2­1, is therefore the same as the lowest HRSspecific LCoHyR, indicating that this client is directly served by an HRS at the depot. The highest hydrogen supply cost,  4.92 kgH2­1, occurred in Scenario 3 when demand was generally low and consumers had to face higher travel distances and expenses as well as higher LCoHyR, due to low utilization rates or small sizes. Fairly high
+
+Figure 7. Customer hydrogen supply costs (LCoHyR including travel costs to the HRS) depending on the annual H2 demand.
+
+www.cit-journal.com
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Chemie
+Ingenieur Research Article
+Technik
+
+These are not the final page numbers! (( 13
+
+for small hydrogen grids without connection to large-scale cavern storage.
+Varying the electricity price ( +0.05 kWh­1) has only a minor impact on the LCoHyR, resulting in a maximum cost increase of  0.06 kg­1. Nonetheless, energy costs account for a large part of the LCoHyR, and for XXL HRS their share is 25.2 %.
+In order to create an understanding of the cost of supplying a set of spatially distributed customers, hydrogen supply costs were calculated in the next step. In this study, hydrogen supply costs are defined as hydrogen refueling costs that take into account utilization rates below 100 % and customer travel costs to the HRS. For the calculation of the hydrogen supply costs, a network of several HRS was optimized towards minimum overall hydrogen supply costs. A spatially resolved optimization chose the most suitable locations ­ either at a depot or at the site of an existing petrol filling station ­ as well as the most appropriate HRS size for each location. The optimization considers the investment costs of the HRS and the travel expenses of the customers for each location.
+The optimization and the corresponding calculations were performed as a case study for the Upper Rhine region in the South-West of Germany with a wide range of different customers ranging from LDV with < 100 t a­1 of H2 demand to shipping companies with up to 1500 t a­1 of H2 demand. In the analysis, it was assumed that all customers need to be supplied constantly with H2.
+The results from the optimization show that pipelineconnected HRS are especially prominent in the high-demand scenario. Even if some XXL HRS have low utilization rates, depending on the location, they can still supply customers at lower costs than smaller HRS with higher utilization rates. The results show a placement of seven XXL HRS at a maximum distance of 5.1 km from the existing gas transport grid near Freiburg.
+For lower-demand scenarios, it was assumed that all H2 customers show a reduced demand (assuming that a fixed share of each customer's fleet is powered by electricity). Consequently HRS sizes are reduced to avoid low utilization rates and therefore high refueling costs. As a pipeline connection is only an option for XXL HRS, the number of pipeline-connected HRS is reduced to three for the 60 % scenario and one for the 30 % scenario.
+The resulting LCoHyR for the individual HRS (taking utilization rates below 100 % into account) range from  0.58 kg­1 to  2.64 kg­1 over the three scenarios. This includes one expensive refueling station with a low utilization rate supplying several remote H2 customers in the Black Forest region. The mean LCoHyR is  1.10 kg­1 for the high-demand scenario and  1.16 kg­1 for the low-demand scenario.
+It is important to mention that this analysis does not take the H2 transport costs between H2 production and the HRS into account. Including costs for H2 transport in the analysis might shift the results more towards pipeline-connected HRS, even for smaller HRS sizes. This will be analyzed in a future study.
+
+Since costs are highly dependent on various and individual factors, such as location, demand side, customer distribution, and others, this study can only serve as an indicator and does not eliminate the need for a more laterally in-depth analysis.
+Acknowledgment
+This study was funded by the German Federal Ministry of Education and Research (BMBF) as part of the research program ``TransHyDE-Sys ­ Systemanalyse zu Transportlo¨sungen fu¨r gru¨nen Wasserstoff'' (funding code 03HY201K). Open access funding enabled and organized by Projekt DEAL.
+
+Symbols used
+
+AvCon [kgH2 100 km­1]
+
+cij
+
+[ kgH2­1]
+
+Dist [km]
+
+Dur [h]
+
+fit
+
+[]
+
+H2Price [ kgH2­1]
+
+I
+
+[­]
+
+J
+
+[­]
+
+LCoE [ kWh­1] LCoHyR [ kg­1]
+
+mH2
+
+[kg a­1]
+
+S
+
+[ h­1]
+
+T
+
+[­]
+
+TExp [ kgH2­1]
+
+Wcost [ km­1]
+
+xij
+
+[kg]
+
+yit
+
+[­]
+
+average hydrogen consumption travel expenses a customer j  J has to incur when their demand is covered by an HRS at location i  I shortest distance between customer and HRS duration of the fastest route between customer and HRS fixed costs if an HRS of type t  T is built at location i  I hydrogen fuel costs at the refueling station set of potential HRS locations with I = {1, K, i, K n} set of hydrogen customers with J = {1, K, j, K n} levelized cost of electricity levelized cost of hydrogen refueling mass of hydrogen refueled salary of the driver set of different types of HRS, T = {1, K, t, K n}, from which the optimizer can choose one to be built travel expenses a certain customer must incur to reach a certain HRS wear costs amount of hydrogen a customer j  J receives from an HRS built at location i  I binary decision variable which has the value 1 if an HRS of type t  T is built at location i  I, and 0, if no HRS is built there
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+www.cit-journal.com
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+'' These are not the final page numbers! 14
+
+Research Article
+
+Chemie Ingenieur Technik
+
+Sub-/superscripts
+
+H2
+
+hydrogen
+
+i
+
+component index
+
+n
+
+technical lifetime
+
+Abbreviations
+CAPEX capital expenditures/investment costs cgH2 compressed gaseous hydrogen HDV heavy-duty vehicle hgv heavy-goods vehicle HRS hydrogen refueling station LCoHyR levelized costs of hydrogen refueling LDV light-duty vehicle OPEX operational expenditures/operating costs WACC weighted average capital costs
+
+References
+[1] https://www.destatis.de/Europa/EN/Topic/Environment-energy/ CarbonDioxideRoadTransport.html (accessed on July 27, 2023).
+[2] P. Kluschke, T. Gnann, P. Plo¨tz, M. Wietschel, Energy Rep. 2019, 5, 1010­1024. DOI: https://doi.org/10.1016/j.rser.2019.109292
+[3] D. Apostolou, G. Xydis, Renewable Sustainable Energy Rev. 2019, 113, 109292. DOI: https://doi.org/10.1016/j.rser.2019.109292
+[4] J. Pratt, D. Terlip, C. Ainscough, J. Kurtz, A. Elgowainy, H2FIRST Reference Station Design Task, Technical Report, National Renewable Energy Laboratory (NREL), Golden 2015.
+[5] A. Elgowainy, K. Reddi, Hydrogen Refueling Analysis of HeavyDuty Fuel Cell Vehicle Fleet, Technical Report, Argonne National Laboratory, Lemont 2017.
+[6] K. Reddi, A. Elgowainy, N. Rustagi, E. Gupta, Int. J. Hydrogen Energy 2017, 42 (34), 21855­21865. DOI: https://doi.org/ 10.1016/j.ijhydene.2017.05.122
+[7] G. Parks, Hydrogen station compression, storage, and dispensing technical status and costs, Independent Review 2014. DOI: https://doi.org/10.13140/RG.2.2.23768.34562
+[8] T. Mayer, Modellbasierte Analyse und Optimierung von Wasserstoffprozessketten fu¨r Brennstoffzellen-PKWs in Deutschland, Ph.D. Thesis, Technische Universita¨t Mu¨nchen, Mu¨nchen 2020.
+[9] T. Mayer, M. Semmel, M. Guerrero Morales, K. M. Schmidt, A. Bauer, J. Wind, Renewable Sustainable Energy Rev. 2019, 44 (47), 25809­25833. DOI: https://doi.org/10.1016/ j.ijhydene.2019.08.051
+[10] U.S. Department of Energy, Fuel Cell Technologies Office MultiYear Research, Development, and Demonstration Plan. 3.2 Hydrogen Delivery, U.S. Department of Energy, Washington, DC 2015.
+[11] R. Caponi, A. Monoforti Ferrario, L. Del Zotto, E. Bocci, Hydrogen refueling station cost model applied to five real case studies for fuel cell buses, 76° Italian National Congress ATI, Rome 2021.
+[12] E. Althoff, J. Hobohm, R. Srikandam, S. Lu¨bbers, S. Kreidelmeyer, S. Eckert, V. Roderer, Analyse der aktuellen Situation des H2-Bedarfs und -Erzeugungspotenzials in Baden-Wu¨rttemberg, e-mobil BW GmbH, Stuttgart 2022.
+[13] K. Reddi, A. Elgowainy, N. Rustagi, E. Gupta, Int. J. Hydrogen Energy 2017, 42, 16675­16685. DOI: https://doi.org/10.1016/ j.ijhydene.2017.04.233
+
+[14] J. Koa, T. T. Gimb, R. Guensler, Transport Rev. 2017, 37 (5), 551­ 570. DOI: https://doi.org/10.1080/01441647.2016.1273274
+[15] C. Upchurch, M. Kuby, S. Lim, Geogr. Anal. 2009, 41 (1), 85­ 106. DOI: https://doi.org/10.1111/j.1538-4632.2009.00744.x
+[16] M. Miralinaghi, B. B. Keskin, Y. Lou, A. M. Roshandeh, Networks Spatial Econ. 2017, 17 (1), 129­151. DOI: https://doi.org/ 10.1007/s11067-016-9320-3
+[17] P. K. Rose, F. Neumann, Transp. Res., Part D: Transport Environ. 2020, 83, 102358. DOI: https://doi.org/10.1016/j.trd.2020.102358
+[18] P. Rose, Modeling a potential hydrogen refueling station network for fuel cell heavy-duty vehicles in Germany in 2050, Ph.D. Thesis, Karlsruher Institut fu¨r Technologie, Karlsruhe 2020.
+[19] SAE J2601-2, Surface Vehicle Technical Information. Fueling Protocol for Gaseous Hydrogen Powered Heavy Duty Vehicles, BeuthVerlag, Berlin 2014.
+[20] H2Mobility, Wasserstoffbetankung von Schwerlastfahrzeugen ­ die Optionen im U¨ berblick, H2 MOBILITY Deutschland GmbH & Co. KG, Berlin 2021.
+[21] M. E. Reuß, Techno-o¨konomische Analyse alternativer Wasserstoffinfrastruktur, Ph.D. Thesis, Rheinisch-Westfa¨lische Technische Hochschule Aachen, Aachen 2019.
+[22] www.bdew.de/service/daten-und-grafiken/bdewstrompreisanalyse/ (accessed on July 05, 2023)
+[23] Wasserstoff-Infrastruktur fu¨r eine nachhaltige Mobilita¨t (Eds: e-mobil BW GmbH ­ Landesagentur fu¨r Elektromobilita¨t und Brennstoffzellentechnologie, Fraunhofer-Institut fu¨r Solare Energiesysteme ISE, Ministerium fu¨r Umwelt, Klima und Energiewirtschaft Baden-Wu¨rttemberg, Ministerium fu¨r Finanzen und Wirtschaft Baden-Wu¨rttemberg, Ministerium fu¨r Verkehr und Infrastruktur Baden-Wu¨rttemberg), e-mobil BW, Stuttgart 2013.
+[24] S. Aschbrenner, T. Eißler, M. Schneider, C. Voglsta¨tter, Technoeconomic analysis of 350 bar LOHC-supplied hydrogen refueling stations for heavy duty vehicle fleets, 23rd World Hydrogen Energy Conference, Istanbul 2022.
+[25] https://h2-so.de/potenzialatlas/ (accessed July 25, 2023) [26] G. Van Rossum, F. L. Drake, Python Reference Manual, vol. 111,
+Centrum voor Wiskunde en Informatica, Amsterdam 1995. [27] www.qgis.org (accessed on July 13, 2023) [28] R.-H. Lin, Z.-Z. Ye, B.-D. Wu, Int. J. Hydrogen Energy 2020,
+45 (39), 20176­20183. DOI: https://doi.org/10.1016/ j.ijhydene.2019.12.035 [29] W. Medjroubi, A. Pluta, J. Diettrich, J. Dasenbrock, H. P. Tetens, J. Sandova, Schlussbericht des Einzelvorhabens SciGRID_gas ­ Offenes Referenzmodell Europa¨ischer Gastransportnetze fu¨r wissenschaftliche Untersuchungen zur Sektorenkopplung, Deutsches Zentrum fu¨r Luft und Raumfahrt e. V., Institut fu¨r vernetzte Energiesysteme, Oldenburg 2021. [30] openrouteservice.org (accessed on July 19, 2023) [31] https://h2-mobility.de/ (accessed on July 13, 2023) [32] Nationale Plattform Zukunft der Mobilita¨t, Infrastruktur fu¨r Wasserstoffmobilita¨t, Bundesministerium fu¨r Verkehr und digitale Infrastruktur (BMVI), Berlin 2021. [33] www.statistik-bw.de/Arbeit/Verdienste/VVE-WZ-DE-Yym (accessed on April 02, 2023) [34] J. Zerhusen, H. Landinger, Y. Astono, M. Bo¨hm, J. Pagenkopf, F. Heckert, H2-Infrastruktur fu¨r Nutzfahrzeuge im Fernverkehr, e-mobil BW GmbH ­ Landesagentur fu¨r neue Mobilita¨tslo¨sungen und Automotive Baden-Wu¨rttemberg, Stuttgart 2023. [35] https://pypi.org/project/PuLP/ (accessed July 13, 2023) [36] www.coin-or.org/Cbc/cbcuserguide.html (accessed on April 03, 2023) [37] https://badenovanetze.de/ueber-uns/wasserstoff/projekt-rhyninterco/ (accessed on July 25, 2023)
+
+www.cit-journal.com
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+15222640, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cite.202300123 by Cochrane Germany, Wiley Online Library on [14/01/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Chemie
+Ingenieur Research Article
+Technik
+
+These are not the final page numbers! (( 15
+
+DOI: 10.1002/cite.202300123
+Detailed Cost Analysis of Hydrogen Refueling Costs for Fleets
+Tobias Eißler*, Gwendolyn Schumacher, Jochen Behrens, Friedrich Mendler, Christopher Voglsta¨tter
+Research Article: A simulation-based techno-economic analysis of the refueling costs at 350-bar hydrogen refueling stations (HRS) was performed to evaluate the hydrogen refueling infrastructure for transportation applications. Optimized positioning of the HRS in a
+Operating HRS
+regional context was carried out from a techno-economic point of view. ...................... ¢
+
+Chem. Ing. Tech. 2024, 96, No. 1­2, 1­15
+
+ª 2023 The Authors. Chemie Ingenieur Technik published by Wiley-VCH GmbH
+
+www.cit-journal.com
+
+
