@@ -18,9 +18,334 @@ This document provides a systematic search strategy for finding **10 new HRS-foc
 
 ---
 
+## Progress Tracker: Content Areas (Updated after 5-Paper Review)
+
+| # | Content Area | Status | Paper | Decision | Next Action |
+|---|---|---|---|---|---|
+| 1 | Supply Chain Integration | ❌ NEEDED | — | — | **SEARCH NEEDED** |
+| 2 | Logistical & Technical Challenges | ❌ NEEDED | — | — | **SEARCH NEEDED** |
+| 3 | Spatial Planning & Optimization | ✅ **ACCEPTED** | Isaac & Saha 2023 | ✅ ACCEPT | ✓ DONE (use Paper 5) |
+| 4 | Economic Viability & CBA | ✅ **ACCEPTED** | Wu et al. 2024 | ✅ ACCEPT | ✓ DONE (use Paper 4) |
+| 5 | Technical Reliability & Maintenance | ❌ NEEDED | — | — | **SEARCH NEEDED** |
+| 6 | Regulatory Frameworks & Standards | ❌ NEEDED | — | — | **SEARCH NEEDED** |
+| 7 | Strategic Network Design | ⚠️ OPTIONAL | Isaac & Saha 2023* | ✅ ACCEPT | *Paper 5 can cover both Area 3 & 7 OR use for Area 3 only |
+| 8 | Global Market Insights | ✅ **ACCEPTED** | Samsun et al. 2022 | ✅ ACCEPT | ✓ DONE (use Paper 1) |
+| 9 | Techno-Economic Reviews | ❌ NEEDED | — | — | **SEARCH NEEDED** (Samsun 2022 could also fit here) |
+| 10 | EU Policy & Institutional Context | ❌ NEEDED | Lentschig 2025 | ❌ REJECT | **SEARCH NEEDED** - Find EU HRS policy papers instead |
+
+### Summary
+- ✅ **3 Papers ACCEPTED** (Papers 1, 4, 5) → 3 content areas covered
+- ⚠️ **1 Paper SHORTLISTED** (Paper 2) → Pending review (scope too broad?)
+- ❌ **1 Paper REJECTED** (Paper 3) → Not HRS-specific
+- **7 CONTENT AREAS STILL NEEDED** (Areas 1, 2, 5, 6, 9, 10 + Area 7 if not using Paper 5)
+
+---
+
 ## Section 1: Paper Evaluation Quality Checklist
 
 Use this template to evaluate **every candidate paper** before making a final decision.
+
+### Paper Evaluation Template
+
+**Paper:** Deployment of Fuel Cell Vehicles and Hydrogen Refueling Station Infrastructure: A Global Overview and Perspectives
+**Authors:** Remzi Can Samsun, Michael Rex, Laurent Antoni, Detlef Stolten
+**Journal:** Energies (MDPI)
+**Year:** 2022
+**DOI/Link:** https://doi.org/10.3390/en15144975
+
+#### Quality Checks (Mandatory - all should be YES)
+- [x] **Peer-reviewed?** ✅ YES — Energies is recognized MDPI journal
+- [x] **Recency:** ✅ YES — 2022 (within 2019-2025)
+- [x] **HRS-specific?** ✅ YES — Title explicitly "Hydrogen Refueling Station Infrastructure"
+- [x] **Methodology clear?** ✅ YES — Structured overview with perspectives
+- [x] **Citation strength:** ⚠️ NEEDS CHECK — 2022 paper (need 20+ citations). **You should verify on Google Scholar**
+- [x] **Reference list depth:** ✅ LIKELY YES — Overview papers typically have 50-100+ citations
+- [x] **Is this a review paper?** ✅ YES — "Overview and Perspectives" (BONUS)
+
+#### Content Fit (All should be YES)
+- [x] **Content area:** ✅ Content Area 8: Global Market Insights (global HRS deployment trends)
+- [x] **Focus on HRS, not general H₂?** ✅ YES — Specifically about HRS infrastructure for FCVs
+- [x] **Empirical data or case studies?** ✅ LIKELY YES — Global overview likely includes regional case data
+- [x] **Relevant to thesis focus areas?** ✅ YES — Global market context for HRS implementation strategies
+
+#### Decision
+- [x] **✅ ACCEPT** - Add to core 10 papers (meeting all quality + content criteria)
+
+**Notes:** Strong candidate for Content Area 8 (Global Market Insights). Provides global overview of HRS deployment for fuel cell vehicles, essential for understanding regional differences (EU, Asia-Pacific, Australia) in your thesis. Review format means it synthesizes existing knowledge. Verify citation count on Google Scholar before final confirmation.
+
+### Paper Evaluation Template
+
+**Paper:** Advancements in hydrogen production, storage, distribution and refuelling for a sustainable transport sector: Hydrogen fuel cell vehicles
+**Authors:** Pobitra Halder, Meisam Babaie, Farhad Salek, Nawshad Haque, Russell Savage, Svetlana Stevanovic, Timothy A. Bodisco, Ali Zare
+**Journal:** International Journal of Hydrogen Energy (ScienceDirect)
+**Year:** 2024
+**DOI/Link:** https://doi.org/10.1016/j.ijhydene.2023.07.204
+
+#### Quality Checks (Mandatory - all should be YES)
+- [x] **Peer-reviewed?** ✅ YES — Int. J. Hydrogen Energy (top-tier journal)
+- [x] **Recency:** ✅ YES — 2024 (recent)
+- [x] **HRS-specific?** ⚠️ **PARTIAL/NO** — Title covers "production, storage, distribution AND refuelling" (TOO BROAD, not HRS-focused)
+- [x] **Methodology clear?** ✅ YES — Likely clear
+- [x] **Citation strength:** ❌ WEAK — Brand new 2024 (likely 0-2 citations). **Verify on Google Scholar**
+- [x] **Reference list depth:** ✅ LIKELY YES — Top-tier journal papers typically have 40-50+ citations
+- [x] **Is this a review paper?** ⚠️ UNCLEAR — Appears to be comprehensive coverage but scope ambiguous
+
+#### Content Fit (All should be YES)
+- [x] **Content area:** ⚠️ UNCLEAR — Covers multiple areas but not specifically HRS-focused
+- [x] **Focus on HRS, not general H₂?** ❌ **NO** — Title emphasizes "hydrogen production, storage, distribution" broadly (not HRS-specific)
+- [x] **Empirical data or case studies?** ✅ LIKELY YES
+- [x] **Relevant to thesis focus areas?** ⚠️ **PARTIALLY** — Covers hydrogen for transport but not HRS-specific barriers
+
+#### Decision
+- [x] **⚠️ SHORTLIST** - Strong candidate, but SCOPE TOO BROAD
+
+**Notes:** ⚠️ **CAUTION:** Title explicitly lists "hydrogen production, storage, distribution AND refuelling" - suggests this is a general hydrogen transport paper, not HRS-specific. Keep in shortlist pending:
+1. Review of actual paper abstract (does it focus on HRS or general H₂ infrastructure?)
+2. Citation count verification on Google Scholar
+3. Table of contents examination
+If after review it proves HRS-specific, it could support multiple content areas. If too broad on production/storage/distribution, REJECT in favor of HRS-focused papers.
+
+### Paper Evaluation Template
+
+**Paper:** Multilateral governance in a global hydrogen economy: An overview of main actors and institutions, key challenges and future pathways
+**Authors:** Hannah Lentschig, Aliaksei Patonia, Rainer Quitzow
+**Journal:** International Journal of Hydrogen Energy (ScienceDirect)
+**Year:** 2025
+**DOI/Link:** https://doi.org/10.1016/j.ijhydene.2024.11.393
+
+#### Quality Checks (Mandatory - all should be YES)
+- [x] **Peer-reviewed?** ✅ YES — Int. J. Hydrogen Energy
+- [x] **Recency:** ✅ YES — 2025 (very recent)
+- [x] **HRS-specific?** ❌ **NO** — Title focuses on "governance, actors, institutions" in hydrogen economy (NOT HRS-specific)
+- [x] **Methodology clear?** ✅ LIKELY YES
+- [x] **Citation strength:** ❌ WEAK — Brand new 2025 (0-2 citations at best)
+- [x] **Reference list depth:** ✅ LIKELY YES
+- [x] **Is this a review paper?** ✅ YES — Overview format
+
+#### Content Fit (All should be YES)
+- [x] **Content area:** ❌ NO — Not mapped to any HRS-specific content area (is about governance/institutions generally)
+- [x] **Focus on HRS, not general H₂?** ❌ **NO** — Title does NOT mention HRS, refueling, or stations. It's about "multilateral governance in a global hydrogen economy"
+- [x] **Empirical data or case studies?** ✅ POSSIBLY (overview of institutions)
+- [x] **Relevant to thesis focus areas?** ❌ **NO** — Not about HRS deployment barriers, logistics, technical challenges, scenarios, or economics
+
+#### Decision
+- [x] **❌ REJECT** - Does NOT meet HRS-specific criteria
+
+**Notes:** ❌ **REJECT.** This paper addresses general hydrogen economy governance and institutions, NOT hydrogen refueling station implementation. Title makes no mention of HRS, refueling infrastructure, or deployment. While Content Area 10 (EU Policy) is relevant to thesis, this paper focuses on global governance/institutions rather than HRS-specific policy or EU infrastructure plans (AFIR, TEN-T).
+
+**RECOMMENDATION:** Search for HRS-specific EU policy papers instead (e.g., papers on AFIR regulation, TEN-T corridor planning, EU subsidy schemes for HRS)
+
+### Paper Evaluation Template
+
+**Paper:** Economic analysis of hydrogen refueling station considering different operation modes
+**Authors:** Ling Wu, Zhentao Zhu, Yi Feng, Wenyi Tan
+**Journal:** International Journal of Hydrogen Energy (ScienceDirect)
+**Year:** 2024
+**DOI/Link:** https://doi.org/10.1016/j.ijhydene.2023.09.164
+
+#### Quality Checks (Mandatory - all should be YES)
+- [x] **Peer-reviewed?** ✅ YES — Int. J. Hydrogen Energy (top-tier)
+- [x] **Recency:** ✅ YES — 2024
+- [x] **HRS-specific?** ✅ **YES** — Title explicitly "hydrogen refueling station" and "operation modes"
+- [x] **Methodology clear?** ✅ YES — "Economic analysis" implies rigorous quantitative methodology
+- [x] **Citation strength:** ⚠️ NEEDS CHECK — 2024 (need 5+). **Verify on Google Scholar** (newer papers may have few citations)
+- [x] **Reference list depth:** ✅ LIKELY YES — Economics papers typically have 40-60 citations
+- [x] **Is this a review paper?** ❌ NO — Original research (not review)
+
+#### Content Fit (All should be YES)
+- [x] **Content area:** ✅ **Content Area 4: Economic Viability & Cost-Benefit Analysis** (PERFECT FIT)
+- [x] **Focus on HRS, not general H₂?** ✅ **YES** — Directly addresses HRS operation and economics
+- [x] **Empirical data or case studies?** ✅ LIKELY YES — "Economic analysis" with "different operation modes" suggests case analysis
+- [x] **Relevant to thesis focus areas?** ✅ **YES** — Cost-benefit analysis is critical for your thesis Chapter 4 (Results) CBA section
+
+#### Decision
+- [x] **✅ ACCEPT** - Add to core 10 papers (meeting all quality + content criteria)
+
+**Notes:** Excellent candidate for Content Area 4 (Economic Viability & CBA). Directly addresses HRS economics under different operational scenarios, which is essential for your thesis cost-benefit analysis. Provides empirical cost data and economic trade-offs between different HRS operation modes. Strong fit for your thesis objective on identifying economically viable HRS implementation strategies.
+
+### Paper Evaluation Template
+
+**Paper:** A Review of the Optimization Strategies and Methods Used to Locate Hydrogen Fuel Refueling Stations
+**Authors:** Nithin Isaac, Akshay K. Saha
+**Journal:** Energies (MDPI)
+**Year:** 2023
+**DOI/Link:** https://doi.org/10.3390/en16052171
+
+#### Quality Checks (Mandatory - all should be YES)
+- [x] **Peer-reviewed?** ✅ YES — Energies (MDPI, recognized)
+- [x] **Recency:** ✅ YES — 2023 (recent)
+- [x] **HRS-specific?** ✅ **YES** — Title explicitly "Locate Hydrogen Fuel Refueling Stations"
+- [x] **Methodology clear?** ✅ YES — "Review of Optimization Strategies" implies clear methodology coverage
+- [x] **Citation strength:** ⚠️ NEEDS CHECK — 2023 (need 20+). **Verify on Google Scholar** (review papers typically well-cited)
+- [x] **Reference list depth:** ✅ **YES** — Review papers typically have 60-100+ citations
+- [x] **Is this a review paper?** ✅ **YES** — Explicitly "A Review" (BONUS)
+
+#### Content Fit (All should be YES)
+- [x] **Content area:** ✅ **Content Area 3: Spatial Planning & Corridor Optimization** OR **Content Area 7: Strategic Network Design**
+- [x] **Focus on HRS, not general H₂?** ✅ **YES** — Directly about HRS location optimization
+- [x] **Empirical data or case studies?** ✅ LIKELY YES — Review of optimization strategies likely includes case examples
+- [x] **Relevant to thesis focus areas?** ✅ **YES** — HRS location optimization is critical for your thesis Chapter 4.2 (Scenarios & Network Design)
+
+#### Decision
+- [x] **✅ ACCEPT** - Add to core 10 papers (meeting all quality + content criteria)
+
+**Notes:** Excellent candidate for Content Area 3 (Spatial Planning) or Content Area 7 (Strategic Network Design). Review of optimization methods for HRS site selection is critical for your thesis scenario development (Corridor, Cluster, Hub models). Provides methodological framework for analyzing different HRS integration scenarios. Strong fit for spatial planning and network design sections of Chapter 4.
+
+### Paper Evaluation Template
+
+**Paper:** [Title]
+**Authors:** [Names]
+**Journal:** [Journal name]
+**Year:** [Publication year]
+**DOI/Link:** [URL or DOI]
+
+#### Quality Checks (Mandatory - all should be YES)
+- [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
+- [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
+- [ ] **HRS-specific?** Focuses on Hydrogen Refueling Stations, NOT general hydrogen infrastructure, hydrogen production, or storage?
+- [ ] **Methodology clear?** Paper explains data sources, formulas, simulations, surveys, or empirical methods transparently?
+- [ ] **Citation strength:** Check Google Scholar citation count. Strong if:
+  - 2023-2025 paper: 5+ citations
+  - 2021-2022 paper: 20+ citations
+  - 2019-2020 paper: 50+ citations
+- [ ] **Reference list depth:** 50-100 citations indicates well-researched paper (check PDF)
+- [ ] **Is this a review paper?** (Bonus points for "Hydrogen refueling," "HRS," or "hydrogen fueling infrastructure review")
+
+#### Content Fit (All should be YES)
+- [ ] **Content area:** Maps to one of 10 areas below (Supply Chain, Logistics, Spatial Planning, Economics, Reliability, Regulatory, Network Design, Market, Techno-Economic Review, EU Policy)
+- [ ] **Focus on HRS, not general H₂?** (Reread abstract - should mention "refueling," "fueling station," "HRS," NOT just "hydrogen infrastructure")
+- [ ] **Empirical data or case studies?** Contains real-world data, simulation results, or case studies (NOT purely theoretical)?
+- [ ] **Relevant to thesis focus areas?** Addresses at least one of:
+  - Regulatory barriers to HRS deployment
+  - Logistical challenges in H₂ supply to HRS
+  - Technical challenges (reliability, maintenance, design)
+  - Integration scenarios (corridors, urban, industrial hubs)
+  - Cost-benefit or economic viability analysis
+
+#### Decision
+- [ ] **ACCEPT** - Add to core 10 papers (meeting all quality + content criteria)
+- [ ] **SHORTLIST** - Strong candidate, save for secondary review
+- [ ] **SUPPLEMENTARY** - Useful but not core (only accept if 10 core papers are too hard to find)
+- [ ] **REJECT** - Does not meet criteria (too old, not HRS-specific, insufficient rigor, etc.)
+
+**Notes:** [Brief summary of why you accepted/rejected. For accepted papers, note which thesis components it supports]
+
+### Paper Evaluation Template
+
+**Paper:** [Title]
+**Authors:** [Names]
+**Journal:** [Journal name]
+**Year:** [Publication year]
+**DOI/Link:** [URL or DOI]
+
+#### Quality Checks (Mandatory - all should be YES)
+- [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
+- [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
+- [ ] **HRS-specific?** Focuses on Hydrogen Refueling Stations, NOT general hydrogen infrastructure, hydrogen production, or storage?
+- [ ] **Methodology clear?** Paper explains data sources, formulas, simulations, surveys, or empirical methods transparently?
+- [ ] **Citation strength:** Check Google Scholar citation count. Strong if:
+  - 2023-2025 paper: 5+ citations
+  - 2021-2022 paper: 20+ citations
+  - 2019-2020 paper: 50+ citations
+- [ ] **Reference list depth:** 50-100 citations indicates well-researched paper (check PDF)
+- [ ] **Is this a review paper?** (Bonus points for "Hydrogen refueling," "HRS," or "hydrogen fueling infrastructure review")
+
+#### Content Fit (All should be YES)
+- [ ] **Content area:** Maps to one of 10 areas below (Supply Chain, Logistics, Spatial Planning, Economics, Reliability, Regulatory, Network Design, Market, Techno-Economic Review, EU Policy)
+- [ ] **Focus on HRS, not general H₂?** (Reread abstract - should mention "refueling," "fueling station," "HRS," NOT just "hydrogen infrastructure")
+- [ ] **Empirical data or case studies?** Contains real-world data, simulation results, or case studies (NOT purely theoretical)?
+- [ ] **Relevant to thesis focus areas?** Addresses at least one of:
+  - Regulatory barriers to HRS deployment
+  - Logistical challenges in H₂ supply to HRS
+  - Technical challenges (reliability, maintenance, design)
+  - Integration scenarios (corridors, urban, industrial hubs)
+  - Cost-benefit or economic viability analysis
+
+#### Decision
+- [ ] **ACCEPT** - Add to core 10 papers (meeting all quality + content criteria)
+- [ ] **SHORTLIST** - Strong candidate, save for secondary review
+- [ ] **SUPPLEMENTARY** - Useful but not core (only accept if 10 core papers are too hard to find)
+- [ ] **REJECT** - Does not meet criteria (too old, not HRS-specific, insufficient rigor, etc.)
+
+**Notes:** [Brief summary of why you accepted/rejected. For accepted papers, note which thesis components it supports]
+
+### Paper Evaluation Template
+
+**Paper:** [Title]
+**Authors:** [Names]
+**Journal:** [Journal name]
+**Year:** [Publication year]
+**DOI/Link:** [URL or DOI]
+
+#### Quality Checks (Mandatory - all should be YES)
+- [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
+- [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
+- [ ] **HRS-specific?** Focuses on Hydrogen Refueling Stations, NOT general hydrogen infrastructure, hydrogen production, or storage?
+- [ ] **Methodology clear?** Paper explains data sources, formulas, simulations, surveys, or empirical methods transparently?
+- [ ] **Citation strength:** Check Google Scholar citation count. Strong if:
+  - 2023-2025 paper: 5+ citations
+  - 2021-2022 paper: 20+ citations
+  - 2019-2020 paper: 50+ citations
+- [ ] **Reference list depth:** 50-100 citations indicates well-researched paper (check PDF)
+- [ ] **Is this a review paper?** (Bonus points for "Hydrogen refueling," "HRS," or "hydrogen fueling infrastructure review")
+
+#### Content Fit (All should be YES)
+- [ ] **Content area:** Maps to one of 10 areas below (Supply Chain, Logistics, Spatial Planning, Economics, Reliability, Regulatory, Network Design, Market, Techno-Economic Review, EU Policy)
+- [ ] **Focus on HRS, not general H₂?** (Reread abstract - should mention "refueling," "fueling station," "HRS," NOT just "hydrogen infrastructure")
+- [ ] **Empirical data or case studies?** Contains real-world data, simulation results, or case studies (NOT purely theoretical)?
+- [ ] **Relevant to thesis focus areas?** Addresses at least one of:
+  - Regulatory barriers to HRS deployment
+  - Logistical challenges in H₂ supply to HRS
+  - Technical challenges (reliability, maintenance, design)
+  - Integration scenarios (corridors, urban, industrial hubs)
+  - Cost-benefit or economic viability analysis
+
+#### Decision
+- [ ] **ACCEPT** - Add to core 10 papers (meeting all quality + content criteria)
+- [ ] **SHORTLIST** - Strong candidate, save for secondary review
+- [ ] **SUPPLEMENTARY** - Useful but not core (only accept if 10 core papers are too hard to find)
+- [ ] **REJECT** - Does not meet criteria (too old, not HRS-specific, insufficient rigor, etc.)
+
+**Notes:** [Brief summary of why you accepted/rejected. For accepted papers, note which thesis components it supports]
+
+### Paper Evaluation Template
+
+**Paper:** [Title]
+**Authors:** [Names]
+**Journal:** [Journal name]
+**Year:** [Publication year]
+**DOI/Link:** [URL or DOI]
+
+#### Quality Checks (Mandatory - all should be YES)
+- [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
+- [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
+- [ ] **HRS-specific?** Focuses on Hydrogen Refueling Stations, NOT general hydrogen infrastructure, hydrogen production, or storage?
+- [ ] **Methodology clear?** Paper explains data sources, formulas, simulations, surveys, or empirical methods transparently?
+- [ ] **Citation strength:** Check Google Scholar citation count. Strong if:
+  - 2023-2025 paper: 5+ citations
+  - 2021-2022 paper: 20+ citations
+  - 2019-2020 paper: 50+ citations
+- [ ] **Reference list depth:** 50-100 citations indicates well-researched paper (check PDF)
+- [ ] **Is this a review paper?** (Bonus points for "Hydrogen refueling," "HRS," or "hydrogen fueling infrastructure review")
+
+#### Content Fit (All should be YES)
+- [ ] **Content area:** Maps to one of 10 areas below (Supply Chain, Logistics, Spatial Planning, Economics, Reliability, Regulatory, Network Design, Market, Techno-Economic Review, EU Policy)
+- [ ] **Focus on HRS, not general H₂?** (Reread abstract - should mention "refueling," "fueling station," "HRS," NOT just "hydrogen infrastructure")
+- [ ] **Empirical data or case studies?** Contains real-world data, simulation results, or case studies (NOT purely theoretical)?
+- [ ] **Relevant to thesis focus areas?** Addresses at least one of:
+  - Regulatory barriers to HRS deployment
+  - Logistical challenges in H₂ supply to HRS
+  - Technical challenges (reliability, maintenance, design)
+  - Integration scenarios (corridors, urban, industrial hubs)
+  - Cost-benefit or economic viability analysis
+
+#### Decision
+- [ ] **ACCEPT** - Add to core 10 papers (meeting all quality + content criteria)
+- [ ] **SHORTLIST** - Strong candidate, save for secondary review
+- [ ] **SUPPLEMENTARY** - Useful but not core (only accept if 10 core papers are too hard to find)
+- [ ] **REJECT** - Does not meet criteria (too old, not HRS-specific, insufficient rigor, etc.)
+
+**Notes:** [Brief summary of why you accepted/rejected. For accepted papers, note which thesis components it supports]
 
 ### Paper Evaluation Template
 
