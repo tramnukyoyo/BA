@@ -14,7 +14,9 @@
       "Bash(pdfinfo:*)",
       "Bash(pdftotext:*)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(npx get-shit-done-cc:*)"
+      "Bash(npx get-shit-done-cc:*)",
+      "Bash(dir \"C:\\\\Users\\\\denny\\\\Bachelorarbeit\\\\expose\")",
+      "Bash(biber expose_bachelor:*)"
     ]
   }
 }

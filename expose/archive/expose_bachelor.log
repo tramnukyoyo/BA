@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.31)  13 FEB 2026 21:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.31)  3 FEB 2026 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,25 +570,25 @@ Package babel Info: 'ngerman' activates 'german' shorthands.
 )
 \openout1 = `expose_bachelor.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-Package hyperref Info: Link coloring OFF on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+Package hyperref Info: Link coloring OFF on input line 45.
  (expose_bachelor.out) (expose_bachelor.out)
 \@outlinefile=\write4
 \openout4 = `expose_bachelor.out'.
@@ -644,73 +644,9 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'expose_bachelor.bbl' found.
- (expose_bachelor.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Chung2024
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                ECH2A2023
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                EUCommission2020
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Eissler2023
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                METI2023
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Odenweller2025
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Prokopou2025
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Sujan2024
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Vizza2025
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 46.
-Package biblatex Info: Reference segment=0 on input line 46.
+ (expose_bachelor.bbl)
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -747,9 +683,9 @@ Package biblatex Info: Reference segment=0 on input line 46.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 49.
+(Font)              <14.4> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 49.
+(Font)              <7> on input line 48.
 [1
 
 {C:/Users/denny/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
@@ -759,55 +695,45 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 67.
+(Font)              <12> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 67.
+(Font)              <8> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 67.
+(Font)              <6> on input line 66.
 
-
-LaTeX Warning: Citation 'Odenweller2025' on page 1 undefined on input line 71.
-
-
-LaTeX Warning: Citation 'EUCommission2020' on page 1 undefined on input line 76
-.
-
-
-Overfull \hbox (12.4884pt too wide) in paragraph at lines 76--77
-[]\OT1/cmr/bx/n/12 Europ[]aische Uni-on: \OT1/cmr/m/n/12 Die EU-Verordnung f[]u
-r Al-ter-na-ti-ve Fuels In-fra-struc-ture (AFIR)
+Overfull \hbox (28.02449pt too wide) in paragraph at lines 70--71
+\OT1/cmr/m/n/12 Kapazit[]aten im Jahr 2022 nur 2% p[]unktlich rea-li-siert wur-
+den; 71% ver-zeich-ne-ten Verz[]ogerungen
  []
-
-
-LaTeX Warning: Citation 'METI2023' on page 1 undefined on input line 78.
-
-
-LaTeX Warning: Citation 'Chung2024' on page 1 undefined on input line 85.
-
-
-LaTeX Warning: Citation 'Eissler2023' on page 1 undefined on input line 85.
-
-
-LaTeX Warning: Citation 'Vizza2025' on page 1 undefined on input line 85.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.86 
+l.85 
       [1]
-
-LaTeX Warning: Citation 'ECH2A2023' on page 2 undefined on input line 99.
-
-
-LaTeX Warning: Citation 'EUCommission2020' on page 2 undefined on input line 99
-.
+Overfull \hbox (25.99358pt too wide) in paragraph at lines 98--99
+[]\OT1/cmr/bx/n/12 Regulatorisch: \OT1/cmr/m/n/12 Un-ter-schied-li-che in-ter-n
+a-tio-na-le Stan-dards (ISO 14687, EU-Gasrichtlinie,
+ []
 
 
-Overfull \hbox (48.89522pt too wide) in paragraph at lines 99--100
-\OT1/cmr/m/n/12 Richt-li-nie 2014/94/EU) HRS-Netzwerk-Aufbau und schaf-fen neue
- Compliance-Anforderungen
+Overfull \hbox (22.18845pt too wide) in paragraph at lines 100--101
+\OT1/cmr/m/n/12 struk-tur. Op-tio-nen wie Salzkavernen-Speicherung, spe-zia-li-
+sier-te Pipeline-Beschichtungen
+ []
+
+
+Overfull \hbox (14.07327pt too wide) in paragraph at lines 100--101
+\OT1/cmr/m/n/12 Kom-pres-so-ren (me-cha-nisch oder elek-tro-che-misch) bie-ten 
+ver-schie-de-ne CAPEX/OPEX-
+ []
+
+
+Overfull \hbox (41.71603pt too wide) in paragraph at lines 102--103
+\OT1/cmr/m/n/12 Kos-ten-op-ti-ma-le Sze-na-ri-en (z.B. In-te-gra-ti-on von PV-A
+nlagen bei Depot-Scale-Anwendungen)
  []
 
 
@@ -815,148 +741,100 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.100 
+l.103 
        [2]
-
-LaTeX Warning: Citation 'Eissler2023' on page 3 undefined on input line 101.
-
-
-LaTeX Warning: Citation 'Prokopou2025' on page 3 undefined on input line 101.
-
-
-LaTeX Warning: Citation 'Sujan2024' on page 3 undefined on input line 103.
+Overfull \hbox (17.74887pt too wide) in paragraph at lines 104--105
+[]\OT1/cmr/bx/n/12 Logistisch: \OT1/cmr/m/n/12 Was-ser-stoff ist d[]unn und sch
+wer zu trans-por-tie-ren. Ver-schie-de-ne Transport-
+ []
 
 
-LaTeX Warning: Citation 'Eissler2023' on page 3 undefined on input line 103.
-
-
-LaTeX Warning: Citation 'Prokopou2025' on page 3 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'Chung2024' on page 3 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'Vizza2025' on page 3 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'METI2023' on page 3 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'EUCommission2020' on page 3 undefined on input line 10
-8.
-
-
-Overfull \hbox (7.87071pt too wide) in paragraph at lines 108--109
-\OT1/cmr/m/n/12 gns und Zu-verl[]assigkeit [], []okonomische Sze-na-ri-en []; [
-],
+Overfull \hbox (28.6731pt too wide) in paragraph at lines 104--105
+\OT1/cmr/m/n/12 Integration zwi-schen Pro-duk-ti-on und Nach-fra-ge er-for-dert
+ op-ti-mier-te Netzwerk-Topologien
  []
 
 [3]
-Overfull \hbox (9.32222pt too wide) in paragraph at lines 126--127
-[]\OT1/cmr/bx/n/12 RQ2: \OT1/cmr/m/n/12 Wel-che HRS-Integrationsszenarien (Korr
-idor-basiert, ur-ba-ne Clus-ter, Industrie-
+Overfull \hbox (12.45381pt too wide) in paragraph at lines 129--130
+\OT1/cmr/m/n/12 pe-li-ne vs. ma-ri-tim, mit/ohne Sub-ven-tio-nen) zei-gen das b
+es-te Kosten-Nutzen-Verh[]altnis
  []
 
 
-Overfull \hbox (8.10248pt too wide) in paragraph at lines 143--144
-\OT1/cmr/m/n/12 mit Kor-ri-do-ran-satz, Asi-en mit Nachfrage-fokussiertem An-sa
-tz, Aus-tra-li-en mit Export-
+Overfull \hbox (6.22195pt too wide) in paragraph at lines 144--145
+\OT1/cmr/m/n/12 Pazifik, Aus-tra-li-en) an-hand von 4 Di-men-sio-nen (Re-gu-lie
+-rung, Tech-no-lo-gie, []Okonomie,
  []
 
 
-Overfull \hbox (30.03976pt too wide) in paragraph at lines 144--145
-[]\OT1/cmr/m/n/12 Szenarioentwicklung: De-fi-ni-ti-on und Be-wer-tung von HRS-I
-ntegrationsszenarien (Korridor-
+Overfull \hbox (23.29155pt too wide) in paragraph at lines 154--155
+[]\OT1/cmr/bx/n/12 Benchmarking durchf[]uhren: \OT1/cmr/m/n/12 Ent-wick-lung un
+d An-wen-dung ei-ner 4D-Vergleichsmatrix
  []
 
-[4]
-Overfull \hbox (50.95935pt too wide) in paragraph at lines 151--152
-[]\OT1/cmr/bx/n/12 HRS-spezifische Grund-la-gen \OT1/cmr/m/n/12 schaf-fen (Wass
-erstoff-Refueltechnologie, HRS-Komponenten,
- []
-
-
-Overfull \hbox (22.34915pt too wide) in paragraph at lines 153--154
-[]\OT1/cmr/bx/n/12 Barrieren-Benchmarking durchf[]uhren: \OT1/cmr/m/n/12 Sys-te
--ma-ti-sche Ver-gleichs-ma-trix (3 Barriere-
- []
-
-
-LaTeX Warning: Citation 'Odenweller2025' on page 5 undefined on input line 174.
-
-
-[5]
-Overfull \hbox (11.80101pt too wide) in paragraph at lines 207--208
-[]\OT1/cmr/m/n/12 Regulatorische H[]urden: ISO-Standards, na-tio-na-le Zer-ti-f
-i-zie-rung, Druckstandards-
+[4] [5]
+Overfull \hbox (8.31076pt too wide) in paragraph at lines 205--206
+[]\OT1/cmr/m/n/12 Technische An-for-de-run-gen: In-fra-struk-tur, Spei-che-rung
+, Transport-Optionen []Pro-
  []
 
 [6] [7]
-Overfull \hbox (43.91318pt too wide) in paragraph at lines 257--258
-[]\OT1/cmr/m/n/12 Logistische H[]urden pro Re-gi-on (Ver-sor-gungs-kos-ten, Tra
-ns-port-me-tho-den, Verf[]ugbarkeit) 
- []
-
-
-Overfull \hbox (1.05537pt too wide) in paragraph at lines 264--265
-[]\OT1/cmr/m/n/12 Szenario A (Kor-ri-dor): De-ploy-ment ent-lang Haupt-ver-kehr
-s-ach-sen, Ka-pa-zit[]aten,
+Overfull \hbox (13.82463pt too wide) in paragraph at lines 265--266
+[]\OT1/cmr/m/n/12 Validierung ge-gen[]uber be-ob-ach-te-ten Im-ple-men-tie-rung
+sl[]ucken []Oden-wel-ler und Ueckerdt
  []
 
 [8] [9]
-Overfull \hbox (19.10796pt too wide) in paragraph at lines 340--341
-[]\OT1/cmr/bx/n/12 Infrastrukturbetreiber: \OT1/cmr/m/n/12 Gesch[]aftsmodelle, 
-Fi-nan-zie-rungs-quel-len, Standortwahl-
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 355.
+
+Overfull \hbox (59.58067pt too wide) in paragraph at lines 355--355
+ [][] 
  []
 
-[10]
-Overfull \hbox (26.29532pt too wide) in paragraph at lines 350--351
-[]\OT1/cmr/m/n/12 Globale Wasserstoff-M[]arkte: Wie be-ein-flus-sen Im-port-mo-
-del-le die HRS-Entwicklung? 
+[10] [11]
+Overfull \hbox (18.64061pt too wide) in paragraph at lines 365--366
+[]\OT1/cmr/bx/n/12 Validierung: \OT1/cmr/m/n/12 Er-kl[]art die be-ob-ach-te-te 
+Im-ple-men-tie-rungsl[]ucke und in-for-miert zuk[]unftige
  []
 
-[11] [12]
-Overfull \hbox (1.95009pt too wide) in paragraph at lines 392--393
-[]\OT1/cmr/bx/n/12 Wirtschaftliche Be-wer-tung: \OT1/cmr/m/n/12 Kostenstruktur-
-Analyse (CA-PEX/OPEX), Net Pre-
- []
-
-
-Overfull \hbox (9.76913pt too wide) in paragraph at lines 394--395
-\OT1/cmr/m/n/12 de zwi-schen Eu-ro-pa, Asien-Pazifik und Aus-tra-li-en, so-wie 
-Markt-Treiber und Adoption-
- []
-
-[13] [14] (expose_bachelor.aux)
+[12] (expose_bachelor.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `expose_bachelor.out' has not changed.
-(rerunfilecheck)             Checksum: 0DA9DB7AA4D83F3318F0E7C64E0E991D;1103.
+(rerunfilecheck)             Checksum: FD5DCC5A7AE7D221C8C11628CF6C6493;1048.
 Package logreq Info: Writing requests to 'expose_bachelor.run.xml'.
 \openout1 = `expose_bachelor.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18726 strings out of 467871
- 334878 string characters out of 5418376
- 1209373 words of memory out of 5000000
- 47367 multiletter control sequences out of 15000+600000
- 634350 words of font info for 62 fonts, out of 8000000 for 9000
+ 18749 strings out of 467871
+ 335348 string characters out of 5418376
+ 1211259 words of memory out of 5000000
+ 47390 multiletter control sequences out of 15000+600000
+ 636570 words of font info for 69 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 75i,11n,79p,1070b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,790b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1200.pk><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmcsc10.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><C:/Users/denny/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/denny/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/denny/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on expose_bachelor.pdf (16 pages, 132017 bytes).
+1095.pk> <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcrm1200.pk><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/denny/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/denny/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/denny/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/den
+ny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Us
+ers/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmti10.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmti12.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmtt12.pfb>
+Output written on expose_bachelor.pdf (14 pages, 205456 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

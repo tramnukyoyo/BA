@@ -80,7 +80,7 @@
       <file>expose_bachelor.bcf</file>
     </requires>
     <requires type="editable">
-      <file>references_h2_CORE.bib</file>
+      <file>references_h2.bib</file>
     </requires>
   </external>
 </requests>

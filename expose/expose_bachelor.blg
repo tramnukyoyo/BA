@@ -1,19 +1,25 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'expose_bachelor.blg'
-[142] biber-MSWIN64:342> INFO - === 
-[176] Biber.pm:421> INFO - Reading 'expose_bachelor.bcf'
-[287] Biber.pm:1002> INFO - Found 10 citekeys in bib section 0
-[300] Biber.pm:4487> INFO - Processing section 0
-[314] Biber.pm:4678> INFO - Looking for bibtex file 'references_h2.bib' for section 0
-[376] bibtex.pm:1713> INFO - LaTeX decoding ...
-[397] bibtex.pm:1519> INFO - Found BibTeX data source 'references_h2.bib'
+[148] biber-MSWIN64:342> INFO - === 
+[183] Biber.pm:421> INFO - Reading 'expose_bachelor.bcf'
+[291] Biber.pm:1002> INFO - Found 18 citekeys in bib section 0
+[304] Biber.pm:4487> INFO - Processing section 0
+[313] Biber.pm:4678> INFO - Looking for bibtex file 'references_h2_CORE.bib' for section 0
+[377] bibtex.pm:1713> INFO - LaTeX decoding ...
+[394] bibtex.pm:1519> INFO - Found BibTeX data source 'references_h2_CORE.bib'
 [483] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
 [483] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
 [483] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
-[483] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
+[484] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
 [493] bbl.pm:676> INFO - Writing 'expose_bachelor.bbl' with encoding 'UTF-8'
-[500] bbl.pm:779> INFO - Output to expose_bachelor.bbl
-[500] Biber.pm:132> WARN - legacy month field 'July' in entry 'EUCommission2020' is not an integer - this will probably not sort properly.
-[500] Biber.pm:132> WARN - legacy month field 'May' in entry 'Chung2024' is not an integer - this will probably not sort properly.
-[500] Biber.pm:132> WARN - legacy month field 'March' in entry 'ECH2A2023' is not an integer - this will probably not sort properly.
-[500] Biber.pm:134> INFO - WARNINGS: 3
+[501] bbl.pm:779> INFO - Output to expose_bachelor.bbl
+[501] Biber.pm:132> WARN - I didn't find a database entry for 'Odenweller2025' (section 0)
+[501] Biber.pm:132> WARN - I didn't find a database entry for 'EUCommission2020' (section 0)
+[501] Biber.pm:132> WARN - I didn't find a database entry for 'METI2023' (section 0)
+[501] Biber.pm:132> WARN - I didn't find a database entry for 'Chung2024' (section 0)
+[501] Biber.pm:132> WARN - I didn't find a database entry for 'Eissler2023' (section 0)
+[501] Biber.pm:132> WARN - I didn't find a database entry for 'Vizza2025' (section 0)
+[501] Biber.pm:132> WARN - I didn't find a database entry for 'ECH2A2023' (section 0)
+[502] Biber.pm:132> WARN - I didn't find a database entry for 'Prokopou2025' (section 0)
+[502] Biber.pm:132> WARN - I didn't find a database entry for 'Sujan2024' (section 0)
+[502] Biber.pm:134> INFO - WARNINGS: 9

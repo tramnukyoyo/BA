@@ -19,7 +19,8 @@
 }
 
 % Bibliography
-\addbibresource{references_h2.bib}
+\addbibresource{references_h2_CORE.bib}
+% Supplementary source: references_h2.bib (archived papers for background reference)
 
 % Line spacing
 \setstretch{1.5}
@@ -69,19 +70,19 @@ Die Dekarbonisierung des Verkehrssektors erfordert alternative Antriebskonzepte.
 
 Trotz wachsender politischer Unterstützung zeigt sich eine signifikante Lücke zwischen geplanter und realisierter HRS-Infrastruktur. Die globale H\textsubscript{2}-Infrastruktur weist insgesamt eine erhebliche Lücke zwischen Ankündigungen und Realisierung auf: Von den weltweit angekündigten H\textsubscript{2}-Kapazitäten im Jahr 2022 wurden nur 2\% pünktlich realisiert; 71\% verzeichneten Verzögerungen und 25\% wurden ganz aufgegeben \cite{Odenweller2025}. Diese Diskrepanz trifft besonders auf HRS-Netzwerke zu, wo Investoren garantierte Nachfrage benötigen, während Flottenbetreiber flächendeckende Infrastruktur voraussetzen.
 
-Regionale HRS-Strategien unterscheiden sich erheblich:
+Regionale HRS-Strategien unterscheiden sich erheblich \cite{Samsun2022, Kim2023}:
 
 \begin{itemize}
   \item \textbf{Europäische Union:} Die EU-Verordnung für Alternative Fuels Infrastructure (AFIR) und die TEN-T-Richtlinie verpflichten Mitgliedstaaten, HRS-Netzwerke entlang von Verkehrskorridoren aufzubauen \cite{EUCommission2020}. Ziel: bis 2031 HRS alle 100 km entlang TEN-T-Hauptachsen (über 40.000 km Streckenlänge).
 
   \item \textbf{Japan:} Die nationale Wasserstoff-Strategie (2023) \cite{METI2023} priorisiert den Aufbau von 160-320 öffentlichen HRS bis 2030 für Brennstoff-Zell-Fahrzeuge (FCEV), mit Fokus auf Stadtzentren und Verkehrskorridore.
 
-  \item \textbf{Australien:} Mit reichlich vorhandener erneuerbarer Energie und geografischer Nähe zu asiatischen Märkten entwickelt sich eine HRS-Industrie als Drehscheibe für H\textsubscript{2}-Versorgung zu Japan und Korea.
+  \item \textbf{Australien:} Mit reichlich vorhandener erneuerbarer Energie und geografischer Nähe zu asiatischen Märkten entwickelt sich eine HRS-Industrie als Drehscheibe für H\textsubscript{2}-Versorgung zu Japan und Korea. Die regionale Vergleichsanalyse zeigt unterschiedliche Implementierungsansätze zwischen europäischen Korridoren und asiatischen Nachfrage-fokussierten Modellen \cite{Kim2023}.
 \end{itemize}
 
 \subsection*{Kostenstruktur und Wirtschaftlichkeit von HRS}
 
-Die wirtschaftliche Rentabilität von Wasserstofftankstellen hängt stark von Standort, Stationsgröße und Auslastung ab. Kostenanalysen zeigen für 35-MPa-HRS (heute Standard) Investitionskosten (CAPEX) von €500k bis €2M pro Station, abhängig von regionalen Faktoren und Technik. Die Betriebskosten (OPEX) betragen €50k-€200k/Jahr, inklusive Wartung, Personal und Wasserstoff-Lieferkosten. Wasserstoff-Kosten liegen derzeit bei €7-12/kg grün (abhängig von Stromkosten), müssen aber bis 2030 auf €2-3/kg sinken für Rentabilität ohne Subventionen \cite{Chung2024, Eissler2023}. Bei typischen Auslastungsszenarien (30--80\%) zeigen ökonomische Modelle, dass 58\% Subventionen erforderlich sind für Break-Even-Profitabilität \cite{Vizza2025}. Diese Variation erfordert regionsabhängige Strategien und differenzierte Finanzierungsmechanismen.
+Die wirtschaftliche Rentabilität von Wasserstofftankstellen hängt stark von Standort, Stationsgröße und Auslastung ab. Kostenanalysen zeigen für 35-MPa-HRS (heute Standard) Investitionskosten (CAPEX) von €500k bis €2M pro Station, abhängig von regionalen Faktoren und Technik. Die Betriebskosten (OPEX) betragen €50k-€200k/Jahr, inklusive Wartung, Personal und Wasserstoff-Lieferkosten \cite{Wu2024}. Wasserstoff-Kosten liegen derzeit bei €7-12/kg grün (abhängig von Stromkosten), müssen aber bis 2030 auf €2-3/kg sinken für Rentabilität ohne Subventionen \cite{Chung2024, Eissler2023}. Bei typischen Auslastungsszenarien (30--80\%) zeigen ökonomische Modelle, dass 58\% Subventionen erforderlich sind für Break-Even-Profitabilität \cite{Vizza2025}. Eine Detailanalyse von HRS-Betriebsmodi unter verschiedenen Szenarien verstärkt diese Erkenntnisse \cite{Wu2024}. Diese Variation erfordert regionsabhängige Strategien und differenzierte Finanzierungsmechanismen.
 
 % ============================================================
 % PROBLEMSTELLUNG
@@ -95,11 +96,11 @@ Die wirtschaftliche Rentabilität von Wasserstofftankstellen hängt stark von St
 \subsection*{Drei zentrale Barriere-Kategorien}
 
 \begin{enumerate}
-  \item \textbf{Regulatorische Hürden:} Standards und Zertifizierung sind HRS-spezifisch fragmentiert. Unterschiedliche Drücke (35 MPa vs. 70 MPa), Sicherheitsstandards (ISO 14687, EU-Richtlinien, nationale Vorschriften) und Zertifizierungsprozesse erschweren interoperabilität und grenzüberschreitende Projekte. Die ECH2A-Roadmap identifiziert Harmonisierungslücken als kritische Implementierungshürden \cite{ECH2A2023}. Zusätzlich regeln EU-Verordnungen (AFIR, Richtlinie 2014/94/EU) HRS-Netzwerk-Aufbau und schaffen neue Compliance-Anforderungen \cite{EUCommission2020}.
+  \item \textbf{Regulatorische Hürden:} Standards und Zertifizierung sind HRS-spezifisch fragmentiert. Unterschiedliche Drücke (35 MPa vs. 70 MPa), Sicherheitsstandards (ISO 14687, EU-Richtlinien, nationale Vorschriften) und Zertifizierungsprozesse erschweren interoperabilität und grenzüberschreitende Projekte \cite{Genovese2023}. Die ECH2A-Roadmap identifiziert Harmonisierungslücken als kritische Implementierungshürden \cite{ECH2A2023}. Zusätzlich regeln EU-Verordnungen (AFIR, Richtlinie 2014/94/EU) HRS-Netzwerk-Aufbau und schaffen neue Compliance-Anforderungen \cite{EUCommission2020}.
 
-  \item \textbf{Technische Hürden:} HRS erfordern zuverlässige Kompressoren, Speichertanks, Kühlanlage und Dispensing-Systeme. Technische Herausforderungen umfassen: (a) Zuverlässigkeit und Verfügbarkeit (HRS sollten >95\% Uptime erreichen), (b) Wartungsanforderungen und Ausfallsicherheit, (c) Speicher- und Transportlogistik (Trailer, Pipeline, On-site Elektrolyse), (d) Skalierbarkeit je nach Standort und Nachfrage \cite{Eissler2023, Prokopou2025}.
+  \item \textbf{Technische Hürden:} HRS erfordern zuverlässige Kompressoren, Speichertanks, Kühlanlage und Dispensing-Systeme. Technische Herausforderungen umfassen: (a) Zuverlässigkeit und Verfügbarkeit (HRS sollten >95\% Uptime erreichen), (b) Wartungsanforderungen und Ausfallsicherheit, (c) Speicher- und Transportlogistik (Trailer, Pipeline, On-site Elektrolyse), (d) Skalierbarkeit je nach Standort und Nachfrage \cite{Genovese2024, Eissler2023, Prokopou2025}.
 
-  \item \textbf{Logistische Hürden:} Die Versorgung von HRS mit Wasserstoff ist komplex und ortsabhängig. Optionen sind: (a) Central Production + Trailer-Transport (flexibel, skalierbar, aber teuer), (b) Pipeline-Versorgung (kostengünstig bei hohem Volumen, aber inflexibel), (c) On-site Elektrolyse (dezentral, abhängig von Stromverfügbarkeit). Optimale Netzwerk-Topologie hängt von Standort, Nachfrage und Wasserstoff-Quellen ab. Supply-Chain-Integration von Produktion über Transport zu HRS erfordert koordinierte Planung \cite{Sujan2024, Eissler2023}.
+  \item \textbf{Logistische Hürden:} Die Versorgung von HRS mit Wasserstoff ist komplex und ortsabhängig. Optionen sind: (a) Central Production + Trailer-Transport (flexibel, skalierbar, aber teuer), (b) Pipeline-Versorgung (kostengünstig bei hohem Volumen, aber inflexibel), (c) On-site Elektrolyse (dezentral, abhängig von Stromverfügbarkeit). Optimale Netzwerk-Topologie hängt von Standort, Nachfrage und Wasserstoff-Quellen ab. Supply-Chain-Integration von Produktion über Transport zu HRS erfordert koordinierte Planung \cite{Raeesi2024, Sujan2024, Eissler2023}.
 \end{enumerate}
 
 \subsection*{Stand der Forschung}
@@ -187,10 +188,10 @@ Die Bachelorarbeit verfolgt das Ziel:
 
   \item[2.2] HRS-Versorgungskette und Netzwerkdesign
   \begin{itemize}
-    \item Supply-Chain-Integration von H\textsubscript{2}-Produktion zu Endnutzer
+    \item Supply-Chain-Integration von H\textsubscript{2}-Produktion zu Endnutzer \cite{Raeesi2024}
     \item Transportmodi: Trailer, Pipeline, Schiff (für internationale Supply Chains)
     \item Netzwerk-Topologie: Dezentral (Cluster), zentral (Backbone), hybrid (Corridor)
-    \item Räumliche Optimierung und Standortwahl für HRS
+    \item Räumliche Optimierung und Standortwahl für HRS \cite{Isaac2023}
   \end{itemize}
 
   \item[2.3] Globale und regionale HRS-Landschaft
@@ -215,22 +216,22 @@ Die Bachelorarbeit verfolgt das Ziel:
   \item[3.1] Forschungsdesign: Vergleichende Analyse mit Barrieren-Benchmarking und CBA
   \item[3.2] Barrieren-Benchmarking: 3 Dimensionen × 3 Regionen
   \begin{itemize}
-    \item Dimension 1: Regulatorische Hürden (Standards, Zertifizierung, nationale Regelwerke)
-    \item Dimension 2: Logistische Hürden (Versorgungskette, Transport, Speicherung)
-    \item Dimension 3: Technische Hürden (Zuverlässigkeit, Wartung, Skalierung)
-    \item Anwendung auf 3 Regionen: Europa, Asien-Pazifik, Australien
+    \item Dimension 1: Regulatorische Hürden (Standards, Zertifizierung, nationale Regelwerke) \cite{Genovese2023}
+    \item Dimension 2: Logistische Hürden (Versorgungskette, Transport, Speicherung) \cite{Raeesi2024}
+    \item Dimension 3: Technische Hürden (Zuverlässigkeit, Wartung, Skalierung) \cite{Genovese2024}
+    \item Anwendung auf 3 Regionen: Europa, Asien-Pazifik, Australien \cite{Kim2023, Samsun2022}
   \end{itemize}
   \item[3.3] Szenarioentwicklung: HRS-Integrationsszenarien
   \begin{itemize}
-    \item Szenario A: Korridor-basiert (Highway-Deployment, TEN-T-Modell)
-    \item Szenario B: Urbane Cluster (Stadtnahe HRS-Netzwerke)
+    \item Szenario A: Korridor-basiert (Highway-Deployment, TEN-T-Modell) \cite{Kim2020, Isaac2023}
+    \item Szenario B: Urbane Cluster (Stadtnahe HRS-Netzwerke) \cite{Isaac2023}
     \item Szenario C: Industrie-Hubs (Hafen- und Logistikzentren)
-    \item Versorgungslogistik-Varianten pro Szenario
+    \item Versorgungslogistik-Varianten pro Szenario \cite{Raeesi2024}
   \end{itemize}
   \item[3.4] Cost-Benefit-Analysis (CBA) Modell
   \begin{itemize}
     \item NPV-Berechnung mit 10-20 Jahre Zeithorizont
-    \item Kostendisaggregation: CAPEX (Stationen, Speicherung), OPEX (Wartung, Personal), H\textsubscript{2}-Kosten, Transport
+    \item Kostendisaggregation: CAPEX (Stationen, Speicherung), OPEX (Wartung, Personal), H\textsubscript{2}-Kosten, Transport \cite{Wu2024, Atabay2024}
     \item Empirische Kostenparameter aus Literatur
     \item Szenario-spezifische NPV-Berechnung pro Region
   \end{itemize}

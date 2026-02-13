@@ -19,460 +19,469 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
-    \entry{Chung2024}{report}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=0e0ad912847f40fdcf50e535aa83c9cf}{%
-           family={Chung},
-           familyi={C\bibinitperiod},
-           given={Mark},
+    \entry{Atabay2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a797c4304ee1fb992d9737fe1d9a2d0d}{%
+           family={Atabay},
+           familyi={A\bibinitperiod},
+           given={Reyhan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94ec993a177b1c051c1019515b74b9db}{%
+           family={Devrim},
+           familyi={D\bibinitperiod},
+           given={Y{ı}lser},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{820014555045409bfdde4cc1a4af728e}
+      \strng{fullhash}{820014555045409bfdde4cc1a4af728e}
+      \strng{fullhashraw}{820014555045409bfdde4cc1a4af728e}
+      \strng{bibnamehash}{820014555045409bfdde4cc1a4af728e}
+      \strng{authorbibnamehash}{820014555045409bfdde4cc1a4af728e}
+      \strng{authornamehash}{820014555045409bfdde4cc1a4af728e}
+      \strng{authorfullhash}{820014555045409bfdde4cc1a4af728e}
+      \strng{authorfullhashraw}{820014555045409bfdde4cc1a4af728e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Detailed techno-economic analysis and design of renewable energy-integrated hydrogen refueling station. Provides comprehensive assessment of technical specifications, design approaches, economic viability, and cost structures for alternative HRS configurations.}
+      \field{journaltitle}{International Journal of Hydrogen Energy}
+      \field{title}{Design and techno-economic analysis of solar energy based on-site hydrogen refueling station}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1016/j.ijhydene.2024.07.166
+      \endverb
+      \keyw{HRS,techno-economic analysis,design specifications,renewable energy integration,cost analysis}
+    \endentry
+    \entry{Genovese2024}{article}{}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=c3246175c166552a5a710fd8d3edd822}{%
+           family={Genovese},
+           familyi={G\bibinitperiod},
+           given={Matteo},
            giveni={M\bibinitperiod},
            givenun=0}}%
+        {{un=0,uniquepart=base,hash=bada977a183f3bb56b1f48e556d921ec}{%
+           family={Blekhman},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ca5432d4755e654dacfbd8e91782975}{%
+           family={Dray},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47242d41aa3ffa47206e4e0e95e2e2c7}{%
+           family={Fragiacomo},
+           familyi={F\bibinitperiod},
+           given={Petronilla},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
-      \list{institution}{1}{%
-        {National Renewable Energy Laboratory}%
-      }
-      \list{location}{1}{%
-        {Golden, CO}%
-      }
-      \strng{namehash}{0e0ad912847f40fdcf50e535aa83c9cf}
-      \strng{fullhash}{0e0ad912847f40fdcf50e535aa83c9cf}
-      \strng{fullhashraw}{0e0ad912847f40fdcf50e535aa83c9cf}
-      \strng{bibnamehash}{0e0ad912847f40fdcf50e535aa83c9cf}
-      \strng{authorbibnamehash}{0e0ad912847f40fdcf50e535aa83c9cf}
-      \strng{authornamehash}{0e0ad912847f40fdcf50e535aa83c9cf}
-      \strng{authorfullhash}{0e0ad912847f40fdcf50e535aa83c9cf}
-      \strng{authorfullhashraw}{0e0ad912847f40fdcf50e535aa83c9cf}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \strng{namehash}{a26f750b7dc90803468b3178a43e8ecb}
+      \strng{fullhash}{1c0434292cc3774c161f51ef2a0f8dd3}
+      \strng{fullhashraw}{1c0434292cc3774c161f51ef2a0f8dd3}
+      \strng{bibnamehash}{a26f750b7dc90803468b3178a43e8ecb}
+      \strng{authorbibnamehash}{a26f750b7dc90803468b3178a43e8ecb}
+      \strng{authornamehash}{a26f750b7dc90803468b3178a43e8ecb}
+      \strng{authorfullhash}{1c0434292cc3774c161f51ef2a0f8dd3}
+      \strng{authorfullhashraw}{1c0434292cc3774c161f51ef2a0f8dd3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Assesses levelized cost of dispensed hydrogen (LCOH) for HDV fueling stations. HDSAM v4.5 model comparison of liquid H2 delivery vs. on-site production. 2030 LCOH: €3.80-€11.70/kg depending on capacity (4-18 MTPD), utilization (30-80\%), and supply method. Economies of scale evident.}
-      \field{month}{5}
-      \field{number}{NREL/PR-5400-89459}
-      \field{title}{Heavy-duty hydrogen fueling station corridors}
-      \field{type}{techreport}
+      \field{abstract}{Empirical multi-year operational data on energy performance and reliability of electrolysis-based hydrogen refueling station. Provides real performance metrics, maintenance requirements, and technical specifications essential for understanding HRS operational challenges and reliability factors.}
+      \field{journaltitle}{International Journal of Hydrogen Energy}
+      \field{title}{Multi-year energy performance data for an electrolysis-based hydrogen refueling station}
       \field{year}{2024}
-      \keyw{heavy-duty vehicles,refueling,dispensing costs,LCOH}
+      \verb{doi}
+      \verb 10.1016/j.ijhydene.2023.04.084
+      \endverb
+      \keyw{HRS,technical reliability,maintenance,energy performance,operational data}
     \endentry
-    \entry{EUCommission2020}{report}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a9bee3ff64e0ef4f06532e455eb1658f}{%
-           family={Commission},
+    \entry{Genovese2023}{article}{}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=c3246175c166552a5a710fd8d3edd822}{%
+           family={Genovese},
+           familyi={G\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=730240966f600a7d1ef0a9d69ab559aa}{%
+           family={Cigolotti},
            familyi={C\bibinitperiod},
-           given={European},
+           given={Viviana},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d207328bde6abfdbf23f1ec10845b322}{%
+           family={Jannelli},
+           familyi={J\bibinitperiod},
+           given={Elio},
            giveni={E\bibinitperiod},
            givenun=0}}%
+        {{un=0,uniquepart=base,hash=47242d41aa3ffa47206e4e0e95e2e2c7}{%
+           family={Fragiacomo},
+           familyi={F\bibinitperiod},
+           given={Petronilla},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
-      \list{institution}{1}{%
-        {European Commission}%
-      }
-      \list{location}{1}{%
-        {Brussels}%
-      }
-      \strng{namehash}{a9bee3ff64e0ef4f06532e455eb1658f}
-      \strng{fullhash}{a9bee3ff64e0ef4f06532e455eb1658f}
-      \strng{fullhashraw}{a9bee3ff64e0ef4f06532e455eb1658f}
-      \strng{bibnamehash}{a9bee3ff64e0ef4f06532e455eb1658f}
-      \strng{authorbibnamehash}{a9bee3ff64e0ef4f06532e455eb1658f}
-      \strng{authornamehash}{a9bee3ff64e0ef4f06532e455eb1658f}
-      \strng{authorfullhash}{a9bee3ff64e0ef4f06532e455eb1658f}
-      \strng{authorfullhashraw}{a9bee3ff64e0ef4f06532e455eb1658f}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \strng{namehash}{9c4cc51d3d5df9c091ef0f6c93f76fd1}
+      \strng{fullhash}{781e82f16516b54bea631927c459026f}
+      \strng{fullhashraw}{781e82f16516b54bea631927c459026f}
+      \strng{bibnamehash}{9c4cc51d3d5df9c091ef0f6c93f76fd1}
+      \strng{authorbibnamehash}{9c4cc51d3d5df9c091ef0f6c93f76fd1}
+      \strng{authornamehash}{9c4cc51d3d5df9c091ef0f6c93f76fd1}
+      \strng{authorfullhash}{781e82f16516b54bea631927c459026f}
+      \strng{authorfullhashraw}{781e82f16516b54bea631927c459026f}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Strategic roadmap for scaling renewable hydrogen across 3 phases (2020-2050). Targets: 6 GW by 2024, 40 GW by 2030. Investment needs: €24-42B electrolysers + €220-340B renewables. Proposes carbon contracts-for-difference and natural gas grid repurposing.}
-      \field{month}{7}
-      \field{number}{COM(2020) 301 final}
-      \field{title}{A hydrogen strategy for a climate-neutral {E}urope}
-      \field{type}{techreport}
-      \field{year}{2020}
-      \keyw{EU policy,infrastructure,renewable hydrogen,investment}
-    \endentry
-    \entry{Efthymiadou2025}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=2bd286434de949e30b16ecd2d51ebb19}{%
-           family={Efthymiadou},
-           familyi={E\bibinitperiod},
-           given={Margarita\bibnamedelima E.},
-           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=47c140f3ce32af4a08a3ae3f1f88598c}{%
-           family={Charitopoulos},
-           familyi={C\bibinitperiod},
-           given={Vassilis\bibnamedelima M.},
-           giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f589a1311ad2d52e37984c3313817cfb}{%
-           family={Papageorgiou},
-           familyi={P\bibinitperiod},
-           given={Lazaros\bibnamedelima G.},
-           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{6a835d928c81b21d408bf5605b3910e3}
-      \strng{fullhash}{6a835d928c81b21d408bf5605b3910e3}
-      \strng{fullhashraw}{6a835d928c81b21d408bf5605b3910e3}
-      \strng{bibnamehash}{6a835d928c81b21d408bf5605b3910e3}
-      \strng{authorbibnamehash}{6a835d928c81b21d408bf5605b3910e3}
-      \strng{authornamehash}{6a835d928c81b21d408bf5605b3910e3}
-      \strng{authorfullhash}{6a835d928c81b21d408bf5605b3910e3}
-      \strng{authorfullhashraw}{6a835d928c81b21d408bf5605b3910e3}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Two-stage stochastic optimization framework for hydrogen production, storage, transmission, and CO2 capture. Addresses uncertainty in demand, costs, and renewable availability. Cost-minimization MILP model with spatiotemporal resolution for Great Britain. Results indicate autothermal reforming + biomass gasification with CCS as most cost-efficient strategy.}
-      \field{journaltitle}{Industrial \& Engineering Chemistry Research}
-      \field{title}{Optimization approach for hydrogen infrastructure planning under uncertainty}
-      \field{volume}{64}
-      \field{year}{2025}
-      \field{pages}{7431\bibrangedash 7451}
-      \range{pages}{21}
+      \field{abstract}{Analysis of current international standards, regulatory frameworks, and certification requirements for hydrogen refueling station permitting and operation. Addresses regulatory barriers to HRS deployment across regions and discusses harmonization challenges.}
+      \field{journaltitle}{International Journal of Hydrogen Energy}
+      \field{title}{Current standards and configurations for the permitting and operation of hydrogen refueling stations}
+      \field{year}{2023}
       \verb{doi}
-      \verb 10.1021/acs.iecr.5c00000
+      \verb 10.1016/j.ijhydene.2023.01.324
       \endverb
-      \keyw{optimization,infrastructure,uncertainty,CBA methodology}
+      \keyw{HRS,regulatory frameworks,standards,certification,permitting,safety regulations}
     \endentry
-    \entry{Eissler2023}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=f7af3855b63c5155ad163110de75d414}{%
-           family={Ei{ß}ler},
-           familyi={E\bibinitperiod},
-           given={Tobias},
-           giveni={T\bibinitperiod},
+    \entry{Isaac2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=967405c8fe0444ef2d1b0389e60dbf4f}{%
+           family={Isaac},
+           familyi={I\bibinitperiod},
+           given={Nithin},
+           giveni={N\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=265dfb5981a97a2696bb43fd00dead1c}{%
-           family={Schumacher},
+        {{un=0,uniquepart=base,hash=4d651fed50aedf20ce73494cef104e58}{%
+           family={Saha},
            familyi={S\bibinitperiod},
-           given={Gregor},
-           giveni={G\bibinitperiod},
+           given={Akshay\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=e17021b9ad6b521cb3bc8a7e135ec6f2}{%
-           family={Behrens},
-           familyi={B\bibinitperiod},
-           given={Jan},
-           giveni={J\bibinitperiod},
+      }
+      \strng{namehash}{464831072599073c995729ad984f0e35}
+      \strng{fullhash}{464831072599073c995729ad984f0e35}
+      \strng{fullhashraw}{464831072599073c995729ad984f0e35}
+      \strng{bibnamehash}{464831072599073c995729ad984f0e35}
+      \strng{authorbibnamehash}{464831072599073c995729ad984f0e35}
+      \strng{authornamehash}{464831072599073c995729ad984f0e35}
+      \strng{authorfullhash}{464831072599073c995729ad984f0e35}
+      \strng{authorfullhashraw}{464831072599073c995729ad984f0e35}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Comprehensive review of optimization strategies and methods for hydrogen refueling station site selection and location planning. Covers spatial planning approaches for corridor and network deployment, providing methodological frameworks for analyzing different HRS integration scenarios (corridor, cluster, industrial hub).}
+      \field{journaltitle}{Energies}
+      \field{number}{5}
+      \field{title}{A review of the optimization strategies and methods used to locate hydrogen fuel refueling stations}
+      \field{volume}{16}
+      \field{year}{2023}
+      \field{pages}{2171}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/en16052171
+      \endverb
+      \keyw{HRS,spatial planning,location optimization,site selection,network design}
+    \endentry
+    \entry{Kim2023}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=1,uniquepart=given,hash=2218512c981c9ad780b5ca3685f640f4}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Changjong},
+           giveni={C\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=359117c51bab6f2a90eb3a4d49856488}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Sang\bibnamedelima Hoon},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=09023804c28b6168915bb8cbc482bc79}{%
-           family={Mendler},
-           familyi={M\bibinitperiod},
-           given={Frederik},
-           giveni={F\bibinitperiod},
+        {{un=0,uniquepart=base,hash=c88ded3ef0414dd780ed5152420aec75}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Sung\bibnamedelima Min},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=4917f2f5f3891359c83bea0d5d7a857b}{%
-           family={Vogl{s}tätter},
-           familyi={V\bibinitperiod},
-           given={Christoph},
+        {{un=0,uniquepart=base,hash=d3b073236ceb175d5c17bd3d103f9212}{%
+           family={Na},
+           familyi={N\bibinitperiod},
+           given={Youngseung},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9a0e186b59e1bbe441157e8c740daf3}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Sangwon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c355d4db17b3a0b34f18864af675c22}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Dong\bibnamedelima Kyu},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{43f35cef3090d32b908b261ec825c0e9}
+      \strng{fullhash}{c453800763bdd31bf48cae69564ae47e}
+      \strng{fullhashraw}{c453800763bdd31bf48cae69564ae47e}
+      \strng{bibnamehash}{43f35cef3090d32b908b261ec825c0e9}
+      \strng{authorbibnamehash}{43f35cef3090d32b908b261ec825c0e9}
+      \strng{authornamehash}{43f35cef3090d32b908b261ec825c0e9}
+      \strng{authorfullhash}{c453800763bdd31bf48cae69564ae47e}
+      \strng{authorfullhashraw}{c453800763bdd31bf48cae69564ae47e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Comprehensive review of hydrogen infrastructure development and current status across multiple regions including EU, Japan, and US. Provides comparative analysis of hydrogen production strategies and suggests guidelines for hydrogen-fueling infrastructure development across regions.}
+      \field{journaltitle}{International Journal of Hydrogen Energy}
+      \field{note}{Supplementary source for comparative regional analysis and strategic guidelines}
+      \field{title}{Review of hydrogen infrastructure: the current status and roll-out strategy}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1016/j.ijhydene.2022.10.053
+      \endverb
+      \keyw{HRS,hydrogen infrastructure,status review,regional strategies,international comparison,guidelines}
+    \endentry
+    \entry{Kim2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=3165e1d7308c1cc471939428ec8f1a9e}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyunjoon},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=1b14bb28b4ee5fa2f6626c42f220deb4}{%
+           family={Eom},
+           familyi={E\bibinitperiod},
+           given={Myungeun},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=246bf9c885d2349ad454e552dd5cda0a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Byung-In},
+           giveni={B\bibinithyphendelim I\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{1c7d76cb0bf8895ba11027561a1aea6c}
+      \strng{fullhash}{1c7d76cb0bf8895ba11027561a1aea6c}
+      \strng{fullhashraw}{1c7d76cb0bf8895ba11027561a1aea6c}
+      \strng{bibnamehash}{1c7d76cb0bf8895ba11027561a1aea6c}
+      \strng{authorbibnamehash}{1c7d76cb0bf8895ba11027561a1aea6c}
+      \strng{authornamehash}{1c7d76cb0bf8895ba11027561a1aea6c}
+      \strng{authorfullhash}{1c7d76cb0bf8895ba11027561a1aea6c}
+      \strng{authorfullhashraw}{1c7d76cb0bf8895ba11027561a1aea6c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Strategic deployment plan for hydrogen refueling station network in Korea. Demonstrates phased deployment approach, network topology optimization, and regional strategy for HRS infrastructure rollout. Provides practical case study of strategic network design implementation.}
+      \field{journaltitle}{International Journal of Hydrogen Energy}
+      \field{title}{Development of strategic hydrogen refueling station deployment plan for {Korea}}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1016/j.ijhydene.2020.04.246
+      \endverb
+      \keyw{HRS,strategic network design,deployment planning,phased rollout,regional strategy}
+    \endentry
+    \entry{Raeesi2024}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=ae44e6fa498984d9320bd487fd737fe5}{%
+           family={Raeesi},
+           familyi={R\bibinitperiod},
+           given={Ramin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec4e57e16573b1db563869ce8854492d}{%
+           family={Searle},
+           familyi={S\bibinitperiod},
+           given={Christa},
            giveni={C\bibinitperiod},
            givenun=0}}%
-      }
-      \strng{namehash}{355a5aeed23c9394439bc2e8b37e8f13}
-      \strng{fullhash}{26c18827a00ad5573940ee10d7c3da1f}
-      \strng{fullhashraw}{26c18827a00ad5573940ee10d7c3da1f}
-      \strng{bibnamehash}{355a5aeed23c9394439bc2e8b37e8f13}
-      \strng{authorbibnamehash}{355a5aeed23c9394439bc2e8b37e8f13}
-      \strng{authornamehash}{355a5aeed23c9394439bc2e8b37e8f13}
-      \strng{authorfullhash}{26c18827a00ad5573940ee10d7c3da1f}
-      \strng{authorfullhashraw}{26c18827a00ad5573940ee10d7c3da1f}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Comprehensive techno-economic analysis combining H2ProSim simulation of 350-bar HRS (M/L/XL/XXL sizes) with capacity-constrained location optimization. HRS-specific LCoHyR: €0.34-€1.10/kg (100\% utilization). Supply costs including travel: €0.58-€4.92/kg. Large customers face costs <€2/kg. Pipeline connection critical for XXL stations.}
-      \field{journaltitle}{Chemie Ingenieur Technik}
-      \field{number}{1-2}
-      \field{title}{Detailed cost analysis of hydrogen refueling costs for fleets}
-      \field{volume}{96}
-      \field{year}{2023}
-      \field{pages}{1\bibrangedash 15}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1002/cite.202300123
-      \endverb
-      \keyw{cost benchmarking,spatial optimization,supply logistics,station economics}
-    \endentry
-    \entry{ECH2A2023}{report}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=8770041032064b4cf6af237f73e1797a}{%
-           family={Hydrogen},
-           familyi={H\bibinitperiod},
-           given={European},
-           giveni={E\bibinitperiod},
+        {{un=0,uniquepart=base,hash=64da6bc6ae34bf9746395bbe9f38fc23}{%
+           family={Balta-Ozkan},
+           familyi={B\bibinithyphendelim O\bibinitperiod},
+           given={Nazmiye},
+           giveni={N\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=60f055f31839951a1a8c2723a0f4d5d2}{%
-           family={Association},
-           familyi={A\bibinitperiod},
-           given={Fuel\bibnamedelima Cell},
-           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {ECH2A Working Group on Standardisation}%
-      }
-      \list{location}{1}{%
-        {Brussels}%
-      }
-      \strng{namehash}{07485fef600c91b66780424f2b1e42d3}
-      \strng{fullhash}{07485fef600c91b66780424f2b1e42d3}
-      \strng{fullhashraw}{07485fef600c91b66780424f2b1e42d3}
-      \strng{bibnamehash}{07485fef600c91b66780424f2b1e42d3}
-      \strng{authorbibnamehash}{07485fef600c91b66780424f2b1e42d3}
-      \strng{authornamehash}{07485fef600c91b66780424f2b1e42d3}
-      \strng{authorfullhash}{07485fef600c91b66780424f2b1e42d3}
-      \strng{authorfullhashraw}{07485fef600c91b66780424f2b1e42d3}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Comprehensive standardization landscape for hydrogen sector covering production, storage, distribution, dispensing, and end-use. Maps existing standards, gaps, and timelines. Addresses European standardisation process and global coordination. Identifies pre-normative research needs and regulatory framework critical to infrastructure deployment.}
-      \field{month}{3}
-      \field{title}{Roadmap on hydrogen standardisation}
-      \field{type}{techreport}
-      \field{year}{2023}
-      \keyw{standardization,regulatory framework,deployment barriers,compliance}
-    \endentry
-    \entry{METI2023}{report}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=e15c1ac805ecc1aefcf530482edd17ba}{%
-           family={Japan\bibnamedelimb Ministry\bibnamedelimb of\bibnamedelima Economy},
-           familyi={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim E\bibinitperiod},
-           given={Trade},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4fd0a37b0a02153b23bbb61d7915a429}{%
-           family={Industry},
-           familyi={I\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {METI}%
-      }
-      \list{location}{1}{%
-        {Tokyo}%
-      }
-      \strng{namehash}{3e9abfd7a2070ca8735cef362f750641}
-      \strng{fullhash}{3e9abfd7a2070ca8735cef362f750641}
-      \strng{fullhashraw}{3e9abfd7a2070ca8735cef362f750641}
-      \strng{bibnamehash}{3e9abfd7a2070ca8735cef362f750641}
-      \strng{authorbibnamehash}{3e9abfd7a2070ca8735cef362f750641}
-      \strng{authornamehash}{3e9abfd7a2070ca8735cef362f750641}
-      \strng{authorfullhash}{3e9abfd7a2070ca8735cef362f750641}
-      \strng{authorfullhashraw}{3e9abfd7a2070ca8735cef362f750641}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Japan's national hydrogen strategy covering production, infrastructure, and market development. Addresses hydrogen supply chains, fuel cell vehicles, and industrial applications. Provides non-European perspective on technology development, supply routes, and international cooperation essential for global supply chain analysis.}
-      \field{title}{Strategic roadmap for hydrogen and fuel cells 2023}
-      \field{type}{techreport}
-      \field{year}{2023}
-      \keyw{national strategy,supply chains,international cooperation,Asia-Pacific}
-    \endentry
-    \entry{Odenweller2025}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=5eb11b886d587666bb9b76855cdd5a4f}{%
-           family={Odenweller},
-           familyi={O\bibinitperiod},
-           given={Adrian},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=041517364282238e8a516c87b1a12d10}{%
-           family={Ueckerdt},
-           familyi={U\bibinitperiod},
-           given={Falko},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{0cfed2d082d85f43fa0188e0b8b0f790}
-      \strng{fullhash}{0cfed2d082d85f43fa0188e0b8b0f790}
-      \strng{fullhashraw}{0cfed2d082d85f43fa0188e0b8b0f790}
-      \strng{bibnamehash}{0cfed2d082d85f43fa0188e0b8b0f790}
-      \strng{authorbibnamehash}{0cfed2d082d85f43fa0188e0b8b0f790}
-      \strng{authornamehash}{0cfed2d082d85f43fa0188e0b8b0f790}
-      \strng{authorfullhash}{0cfed2d082d85f43fa0188e0b8b0f790}
-      \strng{authorfullhashraw}{0cfed2d082d85f43fa0188e0b8b0f790}
-      \field{sortinit}{O}
-      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Quantifies hydrogen implementation gaps by tracking 137+ projects over 3 years. Demonstrates 95\% of announced capacity remains unrealized (2022). Only 2\% capacity realized on schedule; 71\% delayed, 25\% disappeared. Hydrogen cost-competitive with natural gas only after 2043 (with carbon pricing). Emphasizes critical role of demand-side policies.}
-      \field{journaltitle}{Nature Climate Change}
-      \field{title}{The green hydrogen ambition and implementation gap}
-      \field{year}{2025}
-      \keyw{implementation barriers,project delays,cost competitiveness,policy}
-    \endentry
-    \entry{Prokopou2025}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=6942818c99b120b9953ea960e9be8837}{%
-           family={Prokopou},
-           familyi={P\bibinitperiod},
-           given={Georgios\bibnamedelima I.},
-           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1464cb0b59ac8ecb005ec33d47b7cec2}{%
-           family={Faust},
-           familyi={F\bibinitperiod},
-           given={Joeri\bibnamedelimb M.\bibnamedelimi M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e56363c80535b637a5107d1a3708edf7}{%
-           family={Mitsos},
+        {{un=0,uniquepart=base,hash=a11ed571356e0a3e8726bdd2248a3b07}{%
+           family={Marsiliani},
            familyi={M\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=0c46709cb48ae0ddf94fc82e1dbc406f}{%
-           family={Bongartz},
-           familyi={B\bibinitperiod},
-           given={Dominik},
+        {{un=0,uniquepart=base,hash=c03d80a988ce0b8fc94f0a229cd7790e}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Mi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16b8cd2a6f733909f3941f23c56523f6}{%
+           family={Greening},
+           familyi={G\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{516bcbd05b69fad240235fc6dbd7deae}
+      \strng{fullhash}{d6c939701679a022751ea87c870d10ca}
+      \strng{fullhashraw}{d6c939701679a022751ea87c870d10ca}
+      \strng{bibnamehash}{516bcbd05b69fad240235fc6dbd7deae}
+      \strng{authorbibnamehash}{516bcbd05b69fad240235fc6dbd7deae}
+      \strng{authornamehash}{516bcbd05b69fad240235fc6dbd7deae}
+      \strng{authorfullhash}{d6c939701679a022751ea87c870d10ca}
+      \strng{authorfullhashraw}{d6c939701679a022751ea87c870d10ca}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Assesses alternative scenarios for hydrogen supply chain integration and refueling network design for long-haul freight transportation in the UK. Addresses end-to-end supply chain from hydrogen production to consumer refueling, providing empirical case study of supply chain feasibility and logistical options.}
+      \field{journaltitle}{International Journal of Hydrogen Energy}
+      \field{title}{Hydrogen supply chain and refuelling network design: assessment of alternative scenarios for the long-haul road freight in the {UK}}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1016/j.ijhydene.2023.03.474
+      \endverb
+      \keyw{HRS,supply chain integration,hydrogen logistics,network design,UK case study}
+    \endentry
+    \entry{Samsun2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=efc69e5db28c7dadc736ffbb01416b05}{%
+           family={Samsun},
+           familyi={S\bibinitperiod},
+           given={Remzi\bibnamedelima Can},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c314468291f8b88c9d987e0097cf0c4a}{%
+           family={Rex},
+           familyi={R\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1b4ec905217d6631be5c5ac82159ccd}{%
+           family={Antoni},
+           familyi={A\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcb017aa00b2d8a14aedfe47f774dda4}{%
+           family={Stolten},
+           familyi={S\bibinitperiod},
+           given={Detlef},
            giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{7251b60205caae377d1f5f547985536b}
-      \strng{fullhash}{4d4cf17b117cfd0c70da1b3ef1fd0d29}
-      \strng{fullhashraw}{4d4cf17b117cfd0c70da1b3ef1fd0d29}
-      \strng{bibnamehash}{7251b60205caae377d1f5f547985536b}
-      \strng{authorbibnamehash}{7251b60205caae377d1f5f547985536b}
-      \strng{authornamehash}{7251b60205caae377d1f5f547985536b}
-      \strng{authorfullhash}{4d4cf17b117cfd0c70da1b3ef1fd0d29}
-      \strng{authorfullhashraw}{4d4cf17b117cfd0c70da1b3ef1fd0d29}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Multi-stage dynamic optimization comparing mechanical, electrochemical, and combined compression for HRS. Mechanical CAPEX-dominated (45\%), electrochemical OPEX-dominated (60\% energy). Combined offers trade-off. Energy consumption: mechanical lowest, electrochemical ~2x higher. Electricity price critical for viability.}
-      \field{journaltitle}{Computers \& Chemical Engineering}
-      \field{title}{Cost-optimal design and operation of hydrogen refueling stations with mechanical and electrochemical hydrogen compressors}
-      \field{volume}{192}
-      \field{year}{2025}
-      \field{pages}{108862}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.compchemeng.2024.108862
-      \endverb
-      \keyw{compression technology,CAPEX/OPEX trade-off,compressor selection}
-    \endentry
-    \entry{Sujan2024}{report}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=05b50a5750fcf299cbab191b39dba85b}{%
-           family={Sujan},
-           familyi={S\bibinitperiod},
-           given={Vivek},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d533225d4cb43d218eb891352fc87221}{%
-           family={Fan},
-           familyi={F\bibinitperiod},
-           given={Jiayang},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6adf6e661c760450d62bb594d05afe45}{%
-           family={Jatana},
-           familyi={J\bibinitperiod},
-           given={Garima},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ab699206bb250ef49ae7815296e0a6e4}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Ruozhou},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {Oak Ridge National Laboratory}%
-      }
-      \strng{namehash}{47710f9bbbceb44bbfb8ac3633546edb}
-      \strng{fullhash}{e4725fc28b914282a663bb7a8a7d6346}
-      \strng{fullhashraw}{e4725fc28b914282a663bb7a8a7d6346}
-      \strng{bibnamehash}{47710f9bbbceb44bbfb8ac3633546edb}
-      \strng{authorbibnamehash}{47710f9bbbceb44bbfb8ac3633546edb}
-      \strng{authornamehash}{47710f9bbbceb44bbfb8ac3633546edb}
-      \strng{authorfullhash}{e4725fc28b914282a663bb7a8a7d6346}
-      \strng{authorfullhashraw}{e4725fc28b914282a663bb7a8a7d6346}
+      \strng{namehash}{a8db41d13cc9ad2743e855bba8575847}
+      \strng{fullhash}{9e8bd4a8e3d43712af3839d750a92b93}
+      \strng{fullhashraw}{9e8bd4a8e3d43712af3839d750a92b93}
+      \strng{bibnamehash}{a8db41d13cc9ad2743e855bba8575847}
+      \strng{authorbibnamehash}{a8db41d13cc9ad2743e855bba8575847}
+      \strng{authornamehash}{a8db41d13cc9ad2743e855bba8575847}
+      \strng{authorfullhash}{9e8bd4a8e3d43712af3839d750a92b93}
+      \strng{authorfullhashraw}{9e8bd4a8e3d43712af3839d750a92b93}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{OR-AGENT modeling framework for nationwide hydrogen infrastructure deployment. Focuses on US megaregions (Texas Triangle, I-10, I-5/CA-99) representing 8.5\% national freight. Optimization for affordability, accessibility, sustainability in HDV corridors. Provides deployment blueprints applicable to global supply chains.}
-      \field{title}{Nationally scalable hydrogen fueling infrastructure deployment: {A} megaregion analysis and optimization approach}
-      \field{type}{techreport}
-      \field{year}{2024}
-      \keyw{deployment optimization,regional analysis,megaregions,HDV corridors}
+      \field{abstract}{Global overview and perspectives on hydrogen refueling station deployment for fuel cell vehicles. Provides comparative analysis of regional HRS strategies and deployment status across multiple countries and regions, essential for thesis global context analysis.}
+      \field{journaltitle}{Energies}
+      \field{number}{14}
+      \field{title}{Deployment of fuel cell vehicles and hydrogen refueling station infrastructure: {A} global overview and perspectives}
+      \field{volume}{15}
+      \field{year}{2022}
+      \field{pages}{4975}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/en15144975
+      \endverb
+      \keyw{HRS,global market,deployment trends,regional strategies,fuel cell vehicles,international comparison}
     \endentry
-    \entry{Vizza2025}{article}{}{}
+    \entry{Wu2024}{article}{}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=9931929c43cffe17d1ebba4a09b50cbf}{%
-           family={Vizza},
-           familyi={V\bibinitperiod},
-           given={Daniele},
-           giveni={D\bibinitperiod},
+        {{un=0,uniquepart=base,hash=23d8d723dee6dac307ad2a0ca2cb4d0b}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Ling},
+           giveni={L\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=35eec7271c4c40f309413adb5b3cda74}{%
-           family={Caponi},
-           familyi={C\bibinitperiod},
-           given={Raffaele},
-           giveni={R\bibinitperiod},
+        {{un=0,uniquepart=base,hash=194b466bbc7f1f78d21b9d42fda4bb1b}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Zhentao},
+           giveni={Z\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=fd055f56dc74892c002cfb68a85f2bf6}{%
-           family={Di\bibnamedelima Matteo},
-           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={Umberto},
-           giveni={U\bibinitperiod},
+        {{un=0,uniquepart=base,hash=66339becd00ca8f499be8fdb5316f7b0}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c007de9cf9fdab96190583f52b10ae93}{%
-           family={Bocci},
-           familyi={B\bibinitperiod},
-           given={Enrico},
-           giveni={E\bibinitperiod},
+        {{un=0,uniquepart=base,hash=56be82e1e3c362e142ee8edffffa7dd6}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Wenyi},
+           giveni={W\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{3ff6d0c327f195dbb65657d5854bf8b6}
-      \strng{fullhash}{2c6652108f6caeb7dbb40162c6257485}
-      \strng{fullhashraw}{2c6652108f6caeb7dbb40162c6257485}
-      \strng{bibnamehash}{3ff6d0c327f195dbb65657d5854bf8b6}
-      \strng{authorbibnamehash}{3ff6d0c327f195dbb65657d5854bf8b6}
-      \strng{authornamehash}{3ff6d0c327f195dbb65657d5854bf8b6}
-      \strng{authorfullhash}{2c6652108f6caeb7dbb40162c6257485}
-      \strng{authorfullhashraw}{2c6652108f6caeb7dbb40162c6257485}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \strng{namehash}{262c925544b5271b9a057619283373f0}
+      \strng{fullhash}{7fb22c780115af7e9b1301ba9715cfc4}
+      \strng{fullhashraw}{7fb22c780115af7e9b1301ba9715cfc4}
+      \strng{bibnamehash}{262c925544b5271b9a057619283373f0}
+      \strng{authorbibnamehash}{262c925544b5271b9a057619283373f0}
+      \strng{authornamehash}{262c925544b5271b9a057619283373f0}
+      \strng{authorfullhash}{7fb22c780115af7e9b1301ba9715cfc4}
+      \strng{authorfullhashraw}{7fb22c780115af7e9b1301ba9715cfc4}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{GA-optimized techno-economic framework for stand-alone HRS integrating PV, PEM electrolyzer, battery, compression, and storage. Optimal config: 11 MWp PV + 4 MW electrolyzer + 7 MWh battery. LCOH: €11/kg (fleet-only) or €7.98/kg (with surplus sales). 58.4\% subsidy needed for 10\% IRR.}
-      \field{journaltitle}{Hydrogen}
-      \field{number}{4}
-      \field{title}{Cost-optimal design of a stand-alone {PV}-driven hydrogen production and refueling station using genetic algorithms}
-      \field{volume}{6}
-      \field{year}{2025}
-      \field{pages}{98}
-      \range{pages}{1}
+      \field{abstract}{Detailed economic analysis of hydrogen refueling stations under different operation modes. Provides cost structure analysis, economic viability assessment, and operational scenario comparison for HRS deployment, essential for understanding cost-benefit factors in thesis economic evaluation.}
+      \field{journaltitle}{International Journal of Hydrogen Energy}
+      \field{title}{Economic analysis of hydrogen refueling station considering different operation modes}
+      \field{year}{2024}
       \verb{doi}
-      \verb 10.3390/hydrogen6040098
+      \verb 10.1016/j.ijhydene.2023.09.164
       \endverb
-      \keyw{off-grid hydrogen,optimization,renewable integration,subsidy analysis}
+      \keyw{HRS,economic analysis,CAPEX,OPEX,operational modes,cost-benefit analysis}
     \endentry
   \enddatalist
+  \missing{Chung2024}
+  \missing{ECH2A2023}
+  \missing{EUCommission2020}
+  \missing{Eissler2023}
+  \missing{METI2023}
+  \missing{Odenweller2025}
+  \missing{Prokopou2025}
+  \missing{Sujan2024}
+  \missing{Vizza2025}
 \endrefsection
 \endinput
 
