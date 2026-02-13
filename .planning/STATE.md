@@ -1,6 +1,6 @@
 # Project State — Wasserstoffinfrastruktur in globalen Lieferketten
 
-**Last Updated:** 2026-02-03 16:00 UTC+1 (Session 5)
+**Last Updated:** 2026-02-13 (Session 6 — Phase 1 Rebuild)
 
 ---
 
@@ -8,39 +8,83 @@
 
 See: `.planning/PROJECT.md` (Wasserstoffinfrastruktur in globalen Lieferketten)
 
-**Core Value:** Synthesize fragmented global research on hydrogen infrastructure into an actionable framework bridging the chicken-and-egg problem
+**Core Value:** Synthesize focused research on **Hydrogen Refueling Stations (HRS)** implementation strategies with emphasis on regulatory, logistical, and technical barriers in global contexts
 
-**Current Focus:** Phase 1: Exposé Sprint — ✅ COMPLETE — Ready for submission
+**Current Focus:** Phase 1: Exposé Sprint (REBUILD) — ⏳ IN PROGRESS — HRS-Focused Content & New Paper Search
 
 ---
 
 ## Current Position
 
-**Phase:** 1 of 5 (Exposé Sprint)
-**Progress:** 100% complete (All tasks done — expose_final.pdf ready for submission)
-**Duration:** 14 days (Week 2, Days 8-14 — COMPLETED ON TIME)
+**Phase:** 1 of 5 (Exposé Sprint — REBUILD for HRS Focus)
+**Progress:** 25% complete (Infrastructure created, awaiting user paper search)
+**Duration:** 10 days (Week 1: Days 1-7 paper search; Week 2: Days 8-10 final integration)
 
 ---
 
 ## Progress Summary
 
 ```
-Phase 1: Exposé Sprint ████████████████ 100% ✅ COMPLETE
+Phase 1: Exposé Sprint (REBUILD) ████░░░░░░░░░░░░░ 25% ⏳ IN PROGRESS
 
-  Week 1 ████████████ 100% ✓
-  Week 2 ████████████ 100% ✓
+  Planning & Infrastructure ████████████ 100% ✓ (Done)
+  Paper Search & Evaluation  ░░░░░░░░░░░░░░░░░░ 0% ⏳ (User-driven)
+  Content Integration        ░░░░░░░░░░░░░░░░░░ 0% (Pending)
 ```
 
 | Task | Status | Completion |
 |------|--------|------------|
-| Collect 12 academic sources | ✓ Complete | 100% |
-| Generate 8-chapter draft | ✓ Complete | 100% |
-| Fix LaTeX compilation | ✓ Complete | 100% |
-| Validate research questions | ✓ Complete | 100% |
-| Update bibliography (H₂-specific) | ✓ COMPLETE | 100% |
-| Enhance Ausgangslage | ✓ COMPLETE | 100% |
-| Language polish (German) | ✓ COMPLETE | 100% |
-| Final PDF compilation | ✓ COMPLETE | 100% |
+| Create SEARCH_STRATEGY_HRS.md | ✓ Complete | 100% |
+| Create PAPER_CANDIDATES.md | ✓ Complete | 100% |
+| Create FRAMEWORK_DESIGN.md | ✓ Complete | 100% |
+| Restructure expose_bachelor.tex (HRS-focus) | ✓ Complete | 100% |
+| Create references_h2_CORE.bib template | ✓ Complete | 100% |
+| Update STATE.md & project files | ⏳ In Progress | 50% |
+| Execute paper search (10 queries) | ░ Pending | 0% |
+| Evaluate & select 10 core papers | ░ Pending | 0% |
+| Integrate papers into exposé | ░ Pending | 0% |
+| Final compilation & review | ░ Pending | 0% |
+
+---
+
+## Phase 1 Rebuild Rationale (Session 6)
+
+**Decision:** Rebuild Phase 1 Exposé with **HRS-Specific Focus**
+
+**Why Rebuild?**
+- Original exposé addressed "Regional Hydrogen Infrastructure" (too broad: production, storage, transmission pipelines, refueling)
+- User's actual thesis is specifically about **Hydrogen Refueling Station (HRS) Implementation**
+- Original 10 papers not aligned with HRS-specific requirements
+- Need to sharpen focus from general H₂ infrastructure to HRS deployment challenges
+
+**What Changed:**
+- **Thesis Title:** "Wasserstoffinfrastruktur in globalen Lieferketten" → "Wasserstofftankstellen in globalen Lieferketten" (HRS focus)
+- **Content Areas:** Redefined 10 content areas specifically for HRS (e.g., "HRS Supply Chain Integration," "HRS Spatial Planning," "HRS Regulatory Frameworks")
+- **Barriers Framework:** Changed from 4 generic barriers to **3 HRS-specific barrier categories**: Regulatory, Logistical, Technical
+- **Scenarios:** Added HRS-specific integration scenarios: Corridor-based (highway HRS), Urban Clusters (city networks), Industry Hubs (ports/logistics)
+- **Papers:** Will search for **10 NEW core papers**, one per content area, all HRS-specific (2019-2025)
+- **Concept Map:** Replaced text-based boxes with **hierarchical bullet-point framework** (clearer structure)
+
+**Deliverables Created (Session 6):**
+1. ✓ `literature/SEARCH_STRATEGY_HRS.md` — 10 targeted search queries with quality criteria
+2. ✓ `literature/PAPER_CANDIDATES.md` — Tracking template for 30-50 candidate papers
+3. ✓ `expose/FRAMEWORK_DESIGN.md` — Design document for new bullet-point framework
+4. ✓ `expose/expose_bachelor.tex` — Restructured with HRS focus (Ausgangslage, Problemstellung, RQs, Gliederung all updated)
+5. ✓ `expose/references_h2_CORE.bib` — BibTeX template for 10 new core papers
+6. ✓ `expose/references_h2_OLD.bib` — Renamed old 10 papers as supplementary
+
+**Next Steps (User-Driven):**
+1. Execute 10 targeted searches in Google Scholar/ScienceDirect using SEARCH_STRATEGY_HRS.md
+2. Track candidates in PAPER_CANDIDATES.md (aim for 30-50 total)
+3. Evaluate using quality checklist, select best 10 (1 per content area)
+4. Fill in references_h2_CORE.bib with final 10 papers
+5. Integrate citations throughout expose_bachelor.tex
+6. Compile and verify PDF
+
+**Timeline:**
+- Days 1-3: Execute searches, track candidates
+- Days 4-7: Evaluate, select final 10 papers, create core bibliography
+- Days 8-10: Integrate into exposé, compile final PDF
 
 ---
 
@@ -190,14 +234,18 @@ Phase 1: Exposé Sprint ████████████████ 100% �
 
 | Decision | Rationale | Status |
 |----------|-----------|--------|
+| **REBUILD Phase 1 with HRS-specific focus** | Original too broad (general H₂ infrastructure), actual thesis is about HRS deployment | ✓ Approved & in progress |
+| Find 10 NEW HRS-focused core papers | Original papers not aligned with HRS-specific thesis focus | ✓ Approved — search strategy created |
+| 10 Content Areas for paper selection | Ensures balanced coverage (1 paper per area) and no redundancy | ✓ Approved |
+| Replace concept map with bullet-point framework | Text-box format unclear, bullets clearer for exposé format | ✓ Design complete, awaiting paper integration |
+| Keep old 10 papers as supplementary | Useful background context, not core | ✓ Approved |
+| 3 HRS-specific barrier categories | Regulatory, Logistical, Technical (instead of 4 generic) | ✓ Implemented in expose_bachelor.tex |
+| 3 HRS integration scenarios | Corridor-based, Urban Clusters, Industry Hubs | ✓ Implemented in gliederung section |
 | Use 8-chapter structure | Comprehensive coverage of all dimensions | ⚠️ Needs validation (too big?) |
-| 3 hierarchical RQs | Scope management through nested questions | — Pending user confirmation |
-| Peer template as reference | Fast-track exposé generation | ✓ Worked well |
+| 3 hierarchical RQs (HRS-focused) | Scope management through nested questions on HRS deployment | ⏳ Pending final paper integration |
 | Harvard + BibTeX | UDE template requirement | ✓ Working |
-| 11 baseline sources | Quick foundation for draft | ⚠️ Needs expansion to H₂-specific |
 | **NEW:** Add SWOT Analysis (3 dimensions) | Systematic evaluation framework for scenarios, regions, governance | ✓ Approved — integrated into Phases 2-4 |
 | **NEW:** Add Nutzwertanalyse for scenario ranking | Evidence-based utility analysis for implementation prioritization | ✓ Approved — main analysis in Chapter 6 |
-| **NEW:** Expand to 8-chapter structure with Chapters 6-8 | Add Sustainability/Impact, Discussion, Summary chapters for completeness | ✓ Approved — timeline extended, total ~83 pages |
 
 ---
 
@@ -211,29 +259,30 @@ Phase 1: Exposé Sprint ████████████████ 100% �
 
 ## Session Continuity
 
-**Last activity:** 2026-02-03 16:00 UTC+1 — Completed final polish, German language review, and LaTeX compilation
+**Last activity:** 2026-02-13 — Phase 1 Rebuild infrastructure created; awaiting user paper search execution
 
-**Phase 1 Status:** ✅ COMPLETE — All tasks done, expose_final.pdf ready for submission
+**Phase 1 Status (REBUILD):** ⏳ IN PROGRESS — 25% complete
+- Infrastructure complete (search strategy, tracking template, framework design, LaTeX restructuring)
+- Awaiting user execution of 10 targeted paper searches
+- Expected completion: Days 4-10 (paper search and integration)
 
-**Files ready for submission:**
-- ✅ `expose/expose_final.pdf` — Final 14-page PDF (German academic register, all 10 papers integrated)
-- ✅ `expose/expose_bachelor.tex` — LaTeX source (with 22 citations)
-- ✅ `expose/references_h2.bib` — Bibliography (10 papers, Harvard format)
-- ✅ `literature/BIBLIOGRAPHY_CHECKLIST.md` — Paper tracking (10/10 reviewed)
+**Files ready for next phase:**
+- ✓ `literature/SEARCH_STRATEGY_HRS.md` — 10 targeted search queries (ready to use)
+- ✓ `literature/PAPER_CANDIDATES.md` — Candidate tracking template (ready to fill)
+- ✓ `expose/FRAMEWORK_DESIGN.md` — Framework design (ready for LaTeX integration)
+- ✓ `expose/expose_bachelor.tex` — HRS-focused restructure (content updated, awaiting paper citations)
+- ✓ `expose/references_h2_CORE.bib` — BibTeX template (ready to fill with 10 papers)
+- ✓ `expose/references_h2_OLD.bib` — Old papers renamed (kept as supplementary)
 
-**Next Phase (Phase 2):**
-After professor approval, proceed to:
-1. Chapter 1: Einleitung (4-5 pages) — Problem statement, RQs, outline
-2. Chapter 2: Theoretische Grundlagen (8-10 pages) — H₂ technology, supply chain, barriers
-3. Chapter 3: Methodik (3-4 pages) — Benchmarking framework + CBA model
-4. Chapter 4: Ergebnisse (12-15 pages) — Results from benchmarking and CBA
-5. Chapter 5: Diskussion (8-10 pages) — Interpretation and RQ answers
-6. Chapter 6: Fazit (3-4 pages) — Summary and recommendations
+**Next steps (User-driven):**
+1. **Days 1-3:** Execute 10 searches from SEARCH_STRATEGY_HRS.md, track in PAPER_CANDIDATES.md (target: 30-50 candidates)
+2. **Days 4-7:** Evaluate candidates using quality template, select best 10 papers (1 per content area)
+3. **Days 8-10:** Fill in references_h2_CORE.bib, integrate citations, compile final expose_final_v2.pdf
 
-**Ready for:**
-- ✅ Professor submission of expose_final.pdf
-- ✅ Awaiting feedback on structure and research questions
-- ✅ Planning full thesis writing (Phase 2+)
+**After Phase 1 Rebuild (Awaiting Professor Approval):**
+- Professor feedback on HRS-focused structure
+- Refinement of research questions if needed
+- Proceed to full thesis writing (Phase 2+):
 
 ---
 

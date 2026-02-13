@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.31)  1 FEB 2026 02:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.31)  3 FEB 2026 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,25 +570,25 @@ Package babel Info: 'ngerman' activates 'german' shorthands.
 )
 \openout1 = `expose_bachelor.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-Package hyperref Info: Link coloring OFF on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+Package hyperref Info: Link coloring OFF on input line 45.
  (expose_bachelor.out) (expose_bachelor.out)
 \@outlinefile=\write4
 \openout4 = `expose_bachelor.out'.
@@ -643,11 +643,11 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `expose_bachelor.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'expose_bachelor.bbl' not found.
+Package biblatex Info: ... file 'expose_bachelor.bbl' found.
+ (expose_bachelor.bbl)
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
 
-No file expose_bachelor.bbl.
-Package biblatex Info: Reference section=0 on input line 43.
-Package biblatex Info: Reference segment=0 on input line 43.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -683,9 +683,9 @@ Package biblatex Info: Reference segment=0 on input line 43.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 46.
+(Font)              <14.4> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 46.
+(Font)              <7> on input line 48.
 [1
 
 {C:/Users/denny/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
@@ -695,33 +695,45 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 64.
+(Font)              <12> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 64.
+(Font)              <8> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 64.
+(Font)              <6> on input line 66.
+
+Overfull \hbox (28.02449pt too wide) in paragraph at lines 70--71
+\OT1/cmr/m/n/12 Kapazit[]aten im Jahr 2022 nur 2% p[]unktlich rea-li-siert wur-
+den; 71% ver-zeich-ne-ten Verz[]ogerungen
+ []
+
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 
+l.85 
       [1]
-Overfull \hbox (25.99358pt too wide) in paragraph at lines 96--97
+Overfull \hbox (25.99358pt too wide) in paragraph at lines 98--99
 []\OT1/cmr/bx/n/12 Regulatorisch: \OT1/cmr/m/n/12 Un-ter-schied-li-che in-ter-n
 a-tio-na-le Stan-dards (ISO 14687, EU-Gasrichtlinie,
  []
 
 
-Overfull \hbox (17.74887pt too wide) in paragraph at lines 102--103
-[]\OT1/cmr/bx/n/12 Logistisch: \OT1/cmr/m/n/12 Was-ser-stoff ist d[]unn und sch
-wer zu trans-por-tie-ren. Ver-schie-de-ne Transport-
+Overfull \hbox (22.18845pt too wide) in paragraph at lines 100--101
+\OT1/cmr/m/n/12 struk-tur. Op-tio-nen wie Salzkavernen-Speicherung, spe-zia-li-
+sier-te Pipeline-Beschichtungen
  []
 
 
-Overfull \hbox (15.25658pt too wide) in paragraph at lines 107--108
-\OT1/cmr/m/n/12 Bestehende Ar-bei-ten kon-zen-trie-ren sich oft auf Ein-zela-sp
-ek-te (Tech-no-lo-gie, Um-welt, M[]arkte).
+Overfull \hbox (14.07327pt too wide) in paragraph at lines 100--101
+\OT1/cmr/m/n/12 Kom-pres-so-ren (me-cha-nisch oder elek-tro-che-misch) bie-ten 
+ver-schie-de-ne CAPEX/OPEX-
+ []
+
+
+Overfull \hbox (41.71603pt too wide) in paragraph at lines 102--103
+\OT1/cmr/m/n/12 Kos-ten-op-ti-ma-le Sze-na-ri-en (z.B. In-te-gra-ti-on von PV-A
+nlagen bei Depot-Scale-Anwendungen)
  []
 
 
@@ -729,49 +741,100 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \end{quote}
-                  [2]
-Overfull \hbox (5.96252pt too wide) in paragraph at lines 127--128
-[]\OT1/cmr/bx/n/12 RQ3: \OT1/cmr/m/n/12 Wel-che Im-ple-men-tie-rungs-stra-te-gi
--en zei-gen das bes-te Kosten-Nutzen-Verh[]altnis
+l.103 
+       [2]
+Overfull \hbox (17.74887pt too wide) in paragraph at lines 104--105
+[]\OT1/cmr/bx/n/12 Logistisch: \OT1/cmr/m/n/12 Was-ser-stoff ist d[]unn und sch
+wer zu trans-por-tie-ren. Ver-schie-de-ne Transport-
  []
 
 
-Overfull \hbox (26.1613pt too wide) in paragraph at lines 139--140
-[]\OT1/cmr/bx/n/12 Empirische Grund-la-gen schaf-fen \OT1/cmr/m/n/12 f[]ur die 
-Prio-ri-sie-rung von H$[]$-Infrastrukturinvestitionen
+Overfull \hbox (28.6731pt too wide) in paragraph at lines 104--105
+\OT1/cmr/m/n/12 Integration zwi-schen Pro-duk-ti-on und Nach-fra-ge er-for-dert
+ op-ti-mier-te Netzwerk-Topologien
  []
 
-[3] [4] [5] [6] [7] [8] [9] (expose_bachelor.aux)
+[3]
+Overfull \hbox (12.45381pt too wide) in paragraph at lines 129--130
+\OT1/cmr/m/n/12 pe-li-ne vs. ma-ri-tim, mit/ohne Sub-ven-tio-nen) zei-gen das b
+es-te Kosten-Nutzen-Verh[]altnis
+ []
+
+
+Overfull \hbox (6.22195pt too wide) in paragraph at lines 144--145
+\OT1/cmr/m/n/12 Pazifik, Aus-tra-li-en) an-hand von 4 Di-men-sio-nen (Re-gu-lie
+-rung, Tech-no-lo-gie, []Okonomie,
+ []
+
+
+Overfull \hbox (23.29155pt too wide) in paragraph at lines 154--155
+[]\OT1/cmr/bx/n/12 Benchmarking durchf[]uhren: \OT1/cmr/m/n/12 Ent-wick-lung un
+d An-wen-dung ei-ner 4D-Vergleichsmatrix
+ []
+
+[4] [5]
+Overfull \hbox (8.31076pt too wide) in paragraph at lines 205--206
+[]\OT1/cmr/m/n/12 Technische An-for-de-run-gen: In-fra-struk-tur, Spei-che-rung
+, Transport-Optionen []Pro-
+ []
+
+[6] [7]
+Overfull \hbox (13.82463pt too wide) in paragraph at lines 265--266
+[]\OT1/cmr/m/n/12 Validierung ge-gen[]uber be-ob-ach-te-ten Im-ple-men-tie-rung
+sl[]ucken []Oden-wel-ler und Ueckerdt
+ []
+
+[8] [9]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 355.
+
+Overfull \hbox (59.58067pt too wide) in paragraph at lines 355--355
+ [][] 
+ []
+
+[10] [11]
+Overfull \hbox (18.64061pt too wide) in paragraph at lines 365--366
+[]\OT1/cmr/bx/n/12 Validierung: \OT1/cmr/m/n/12 Er-kl[]art die be-ob-ach-te-te 
+Im-ple-men-tie-rungsl[]ucke und in-for-miert zuk[]unftige
+ []
+
+[12] (expose_bachelor.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `expose_bachelor.out' has not changed.
-(rerunfilecheck)             Checksum: 6F1ACDC18DAA3DCD4EA9E4628CD43A79;1193.
+(rerunfilecheck)             Checksum: FD5DCC5A7AE7D221C8C11628CF6C6493;1048.
 Package logreq Info: Writing requests to 'expose_bachelor.run.xml'.
 \openout1 = `expose_bachelor.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18404 strings out of 467871
- 327758 string characters out of 5418376
- 1207430 words of memory out of 5000000
- 47060 multiletter control sequences out of 15000+600000
- 634189 words of font info for 61 fonts, out of 8000000 for 9000
+ 18749 strings out of 467871
+ 335348 string characters out of 5418376
+ 1211259 words of memory out of 5000000
+ 47390 multiletter control sequences out of 15000+600000
+ 636570 words of font info for 69 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 75i,14n,79p,706b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,790b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1200.pk><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx8.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/denny/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/denny/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on expose_bachelor.pdf (11 pages, 115962 bytes).
+1095.pk> <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcrm1200.pk><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/denny/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/denny/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/denny/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/den
+ny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Us
+ers/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmti10.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmti12.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmtt12.pfb>
+Output written on expose_bachelor.pdf (14 pages, 205456 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

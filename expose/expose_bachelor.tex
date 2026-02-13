@@ -33,7 +33,7 @@
 
 % Title page setup
 \title{
-  \textbf{Wasserstoffinfrastruktur in globalen Lieferketten}\\
+  \textbf{Wasserstofftankstellen in globalen Lieferketten}\\
   \vspace{0.5cm}
   \normalsize Implementierungsstrategien und Herausforderungen\\
   \vspace{0.3cm}
@@ -63,25 +63,25 @@
 \section*{Ausgangslage}
 \addcontentsline{toc}{section}{Ausgangslage}
 
-Die globale Energiewende erfordert die schnelle Dekarbonisierung von schwer zu elektrifizierenden Sektoren wie Stahlproduktion, Chemie und Langstreckentransport. Wasserstoff (H\textsubscript{2}) gilt dabei als Schlüsseltechnologie: Er kann als Energieträger für diese Sektoren dienen und in erneuerbaren Energiesystemen überschüssige Elektrizität speichern \cite{EUCommission2020}.
+Die Dekarbonisierung des Verkehrssektors erfordert alternative Antriebskonzepte. Wasserstoff (H\textsubscript{2}) ist eine vielversprechende Lösung für schwere Nutzfahrzeuge (HDV), da Batterie-Elektromobilität für diesen Sektor technisch und wirtschaftlich herausfordernd bleibt. Allerdings ist der Aufbau eines flächendeckenden Netzes von Wasserstofftankstellen (Hydrogen Refueling Stations, HRS) mit erheblichen Herausforderungen verbunden.
 
-\subsection*{Die Implementierungslücke (2025)}
+\subsection*{Die Implementierungslücke bei Wasserstofftankstellen (2025)}
 
-Die globale H\textsubscript{2}-Infrastruktur weist eine erhebliche Lücke zwischen Ankündigungen und Realisierung auf. Aktuelle Forschung zeigt, dass von den weltweit angekündigten H\textsubscript{2}-Kapazitäten im Jahr 2022 nur 2\% pünktlich realisiert wurden; 71\% verzeichneten Verzögerungen und 25\% wurden ganz aufgegeben \cite{Odenweller2025}. Dies unterstreicht das systematische Dilemma zwischen Infrastrukturinvestitionen und Nachfrageunsicherheit.
+Trotz wachsender politischer Unterstützung zeigt sich eine signifikante Lücke zwischen geplanter und realisierter HRS-Infrastruktur. Die globale H\textsubscript{2}-Infrastruktur weist insgesamt eine erhebliche Lücke zwischen Ankündigungen und Realisierung auf: Von den weltweit angekündigten H\textsubscript{2}-Kapazitäten im Jahr 2022 wurden nur 2\% pünktlich realisiert; 71\% verzeichneten Verzögerungen und 25\% wurden ganz aufgegeben \cite{Odenweller2025}. Diese Diskrepanz trifft besonders auf HRS-Netzwerke zu, wo Investoren garantierte Nachfrage benötigen, während Flottenbetreiber flächendeckende Infrastruktur voraussetzen.
 
-Konkrete Beispiele regionaler Initiativen verdeutlichen unterschiedliche Implementierungsansätze:
+Regionale HRS-Strategien unterscheiden sich erheblich:
 
 \begin{itemize}
-  \item \textbf{Europäische Union:} Die 2020 verabschiedete Wasserstoffstrategie \cite{EUCommission2020} plant den Aufbau des ``Hydrogen Backbone'' mit bis zu 39.700 km Wasserstoff-Pipelines bis 2040. Investitionsbedarf: €24-42 Mrd. für Elektrolyseure und €220-340 Mrd. für erneuerbare Energiekapazitäten bis 2030.
+  \item \textbf{Europäische Union:} Die EU-Verordnung für Alternative Fuels Infrastructure (AFIR) und die TEN-T-Richtlinie verpflichten Mitgliedstaaten, HRS-Netzwerke entlang von Verkehrskorridoren aufzubauen \cite{EUCommission2020}. Ziel: bis 2031 HRS alle 100 km entlang TEN-T-Hauptachsen (über 40.000 km Streckenlänge).
 
-  \item \textbf{Japan:} Die nationale H\textsubscript{2}-Strategie (2023) \cite{METI2023} setzt auf Importe von grünem Wasserstoff und Wasserstoffträgern (Ammoniak, LOHC) aus strategischen Partnern wie Australien und dem Nahen Osten.
+  \item \textbf{Japan:} Die nationale Wasserstoff-Strategie (2023) \cite{METI2023} priorisiert den Aufbau von 160-320 öffentlichen HRS bis 2030 für Brennstoff-Zell-Fahrzeuge (FCEV), mit Fokus auf Stadtzentren und Verkehrskorridore.
 
-  \item \textbf{Australien:} Mit reichlich vorhandener erneuerbarer Energie positioniert sich das Land als Exporteur von grünem Wasserstoff und Wasserstoffderivaten zu asiatischen Märkten.
+  \item \textbf{Australien:} Mit reichlich vorhandener erneuerbarer Energie und geografischer Nähe zu asiatischen Märkten entwickelt sich eine HRS-Industrie als Drehscheibe für H\textsubscript{2}-Versorgung zu Japan und Korea.
 \end{itemize}
 
-\subsection*{Kostenstruktur und Wirtschaftlichkeit}
+\subsection*{Kostenstruktur und Wirtschaftlichkeit von HRS}
 
-Die technische und wirtschaftliche Machbarkeit von H\textsubscript{2}-Infrastruktur hängt stark vom regionalen Kontext ab. Aktuelle Kostenanalysen zeigen für Wasserstoff-Tankstellen in HDV-Corridoren (Heavy-Duty Vehicles) LCOH-Werte (Levelized Cost of Hydrogen) zwischen €3,80 und €11,70/kg, abhängig von Stationskapazität (4--18 MTPD), Auslastung (30--80\%) und Versorgungsmethode \cite{Chung2024}. Detaillierte Kostenanalysen für verschiedene Stationstypen und -größen variieren zwischen €0,34 und €1,10/kg bei Vollauslastung, während Lieferkosten (inklusive Transport) €0,58 bis €4,92/kg betragen \cite{Eissler2023}. Diese Heterogenität erfordert regionsabhängige Optimierungsansätze.
+Die wirtschaftliche Rentabilität von Wasserstofftankstellen hängt stark von Standort, Stationsgröße und Auslastung ab. Kostenanalysen zeigen für 35-MPa-HRS (heute Standard) Investitionskosten (CAPEX) von €500k bis €2M pro Station, abhängig von regionalen Faktoren und Technik. Die Betriebskosten (OPEX) betragen €50k-€200k/Jahr, inklusive Wartung, Personal und Wasserstoff-Lieferkosten. Wasserstoff-Kosten liegen derzeit bei €7-12/kg grün (abhängig von Stromkosten), müssen aber bis 2030 auf €2-3/kg sinken für Rentabilität ohne Subventionen \cite{Chung2024, Eissler2023}. Bei typischen Auslastungsszenarien (30--80\%) zeigen ökonomische Modelle, dass 58\% Subventionen erforderlich sind für Break-Even-Profitabilität \cite{Vizza2025}. Diese Variation erfordert regionsabhängige Strategien und differenzierte Finanzierungsmechanismen.
 
 % ============================================================
 % PROBLEMSTELLUNG
@@ -90,23 +90,21 @@ Die technische und wirtschaftliche Machbarkeit von H\textsubscript{2}-Infrastruk
 \section*{Problemstellung / Herausforderung und Forschungsstand}
 \addcontentsline{toc}{section}{Problemstellung / Herausforderung und Forschungsstand}
 
-\textbf{Das Kern-Dilemma (Chicken-and-Egg Problem):} Investoren wollen nur in H\textsubscript{2}-Infrastruktur investieren, wenn ausreichend Nachfrage und regulatorische Klarheit vorhanden sind. Andererseits können Unternehmen nicht in H\textsubscript{2}-basierte Produktionsprozesse umsteigen, wenn die Infrastruktur fehlt. Dieses Koordinationsproblem verzögert weltweit die Dekarbonisierung. Die beobachtete Diskrepanz zwischen Ankündigungen und Realisierung wird durch vier systematische Herausforderungen verstärkt:
+\textbf{Das Kern-Dilemma (Chicken-and-Egg Problem):} Investoren wollen nur in HRS investieren, wenn ausreichend Nachfrage (verfügbare Wasserstoff-Fahrzeugflotten) und regulatorische Klarheit vorhanden sind. Andererseits können Flottenbetreiber nicht in Wasserstoff-Fahrzeuge investieren, wenn flächendeckende HRS-Netzwerke fehlen. Dieses Koordinationsproblem verzögert weltweit die Dekarbonisierung des Verkehrssektors. Die beobachtete Diskrepanz zwischen angekündigten HRS-Projekten und ihrer tatsächlichen Realisierung wird durch drei systematische Barrierekategorien verstärkt:
 
-\subsection*{Vier zentrale Barrieren}
+\subsection*{Drei zentrale Barriere-Kategorien}
 
 \begin{enumerate}
-  \item \textbf{Regulatorisch:} Unterschiedliche internationale Standards (ISO 14687, EU-Gasrichtlinie, nationale Sicherheitsvorschriften) erschweren grenzüberschreitende Projekte. Die ECH2A-Roadmap identifiziert Lücken in Standardisierung und regulatorischer Harmonisierung als kritische Implementierungshürden \cite{ECH2A2023}.
+  \item \textbf{Regulatorische Hürden:} Standards und Zertifizierung sind HRS-spezifisch fragmentiert. Unterschiedliche Drücke (35 MPa vs. 70 MPa), Sicherheitsstandards (ISO 14687, EU-Richtlinien, nationale Vorschriften) und Zertifizierungsprozesse erschweren interoperabilität und grenzüberschreitende Projekte. Die ECH2A-Roadmap identifiziert Harmonisierungslücken als kritische Implementierungshürden \cite{ECH2A2023}. Zusätzlich regeln EU-Verordnungen (AFIR, Richtlinie 2014/94/EU) HRS-Netzwerk-Aufbau und schaffen neue Compliance-Anforderungen \cite{EUCommission2020}.
 
-  \item \textbf{Technisch:} Wasserstoff-Speicherung und -Transport erfordern spezialisierte Infrastruktur. Optionen wie Salzkavernen-Speicherung, spezialisierte Pipeline-Beschichtungen und flüssiger Wasserstoff-Transport (LH\textsubscript{2}) mit energieintensiven Verdichtungsanlagen sind technisch gelöst, aber kostenintensiv. Alternativen wie Elektrolyseure mit Kompressoren (mechanisch oder elektrochemisch) bieten verschiedene CAPEX/OPEX-Tradeoffs \cite{Prokopou2025}.
+  \item \textbf{Technische Hürden:} HRS erfordern zuverlässige Kompressoren, Speichertanks, Kühlanlage und Dispensing-Systeme. Technische Herausforderungen umfassen: (a) Zuverlässigkeit und Verfügbarkeit (HRS sollten >95\% Uptime erreichen), (b) Wartungsanforderungen und Ausfallsicherheit, (c) Speicher- und Transportlogistik (Trailer, Pipeline, On-site Elektrolyse), (d) Skalierbarkeit je nach Standort und Nachfrage \cite{Eissler2023, Prokopou2025}.
 
-  \item \textbf{Ökonomisch:} Grüner Wasserstoff ist aktuell 3--8 €/kg; Zielpreis bis 2030 <2 €/kg. Diese Kostenreduktion hängt von Skalierung, Strompreisen und Subventionen ab. Kostenoptimale Szenarien (z.B. Integration von PV-Anlagen bei Depot-Scale-Anwendungen) erfordern aktuell 58\% Subventionen für wirtschaftliche Rendite \cite{Vizza2025}. Wirtschaftlichkeit ist stark von regionaler Stromverfügbarkeit und -kosten abhängig.
-
-  \item \textbf{Logistisch:} Wasserstoff ist dünn und schwer zu transportieren. Verschiedene Transport-Modi (Pipeline, Schiff, Truck, chemische Träger wie Ammoniak oder LOHC) haben unterschiedliche Kosten und Eignung je nach Distanz und Volumen. Supply-Chain-Integration zwischen Produktion und Nachfrage erfordert optimierte Netzwerk-Topologien \cite{Sujan2024}.
+  \item \textbf{Logistische Hürden:} Die Versorgung von HRS mit Wasserstoff ist komplex und ortsabhängig. Optionen sind: (a) Central Production + Trailer-Transport (flexibel, skalierbar, aber teuer), (b) Pipeline-Versorgung (kostengünstig bei hohem Volumen, aber inflexibel), (c) On-site Elektrolyse (dezentral, abhängig von Stromverfügbarkeit). Optimale Netzwerk-Topologie hängt von Standort, Nachfrage und Wasserstoff-Quellen ab. Supply-Chain-Integration von Produktion über Transport zu HRS erfordert koordinierte Planung \cite{Sujan2024, Eissler2023}.
 \end{enumerate}
 
 \subsection*{Stand der Forschung}
 
-Bestehende Arbeiten konzentrieren sich häufig auf Einzelaspekte (Technologie, Umwelt, einzelne Märkte). Ein systematischer Optimierungsrahmen für H\textsubscript{2}-Infrastruktur-Planung unter Unsicherheit wurde von \textcite{Efthymiadou2025} entwickelt, adressiert aber primär lokale Optimierungsprobleme. Es fehlt eine integrierte, \textbf{regionsübergreifende Analyse}, wie regulatorische, technische, ökonomische und logistische Dimensionen zusammenspielen und welche region-abhängigen Implementierungsstrategien unter realistischen Kosten- und Finanzierungsbedingungen am vielversprechendsten sind.
+Bestehende Arbeiten zu HRS konzentrieren sich häufig auf Einzelaspekte: Technische Designs und Zuverlässigkeit \cite{Prokopou2025}, ökonomische Szenarien \cite{Chung2024, Vizza2025}, oder regionale Markt-Analysen \cite{METI2023, EUCommission2020}. Allerdings fehlt eine integrierte, \textbf{systematische Analyse}, die folgende Fragen beantwortet: (1) Wie wirken regulatorische, technische, logistische und ökonomische Barrieren zusammen? (2) Welche HRS-Integrations-Szenarien (Korridore, urbane Cluster, Industrie-Hubs) sind unter regionalen Bedingungen optimal? (3) Welche Implementierungsstrategien unter realistischen Kosten und Finanzierungsbedingungen in verschiedenen Regionen wirtschaftlich tragfähig? Diese Arbeit schließt diese Forschungslücke durch einen integrativen Ansatz der HRS-Implementierung.
 
 % ============================================================
 % FORSCHUNGSFRAGEN
@@ -115,18 +113,18 @@ Bestehende Arbeiten konzentrieren sich häufig auf Einzelaspekte (Technologie, U
 \section*{Formulierung der Forschungsfragen}
 \addcontentsline{toc}{section}{Formulierung der Forschungsfragen}
 
-\textbf{Hauptfrage:}
+\textbf{Hauptforschungsfrage:}
 \begin{quote}
-  Welche Implementierungsstrategien für regionale H\textsubscript{2}-Infrastruktur sind unter gegebenen regulatorischen, technologischen und ökonomischen Rahmenbedingungen wirtschaftlich rentabel, und wie unterscheiden sie sich zwischen den Regionen Europa, Asien-Pazifik und Australien?
+  Welche Implementierungsstrategien für Wasserstofftankstellen (HRS) sind unter gegebenen regulatorischen, logistischen und technischen Rahmenbedingungen wirtschaftlich tragfähig, und wie unterscheiden sie sich zwischen Regionen (Europa, Asien-Pazifik, Australien)?
 \end{quote}
 
-\textbf{Unterfragen:}
+\textbf{Teilforschungsfragen:}
 \begin{enumerate}
-  \item \textbf{RQ1:} Welche regulatorischen, technischen, wirtschaftlichen und logistischen Barrieren hemmen die H\textsubscript{2}-Infrastrukturentwicklung in unterschiedlichen Regionen, und wie werden sie in bestehenden Strategien adressiert?
+  \item \textbf{RQ1:} Welche regulatorischen, logistischen und technischen Barrieren behindern die HRS-Implementierung in Europa, Asien und Australien, und wie adressieren regionale Strategien diese unterschiedlich?
 
-  \item \textbf{RQ2:} Wie unterscheiden sich regionale Implementierungsmodelle (EU-Backbone-Modell mit zentraler Pipeline-Infrastruktur vs. asiatisches Import-Modell mit maritimem Transport vs. australisches Export-Modell mit lokaler Produktion) in ihrer technischen und ökonomischen Struktur?
+  \item \textbf{RQ2:} Welche HRS-Integrationsszenarien (Korridor-basiert, urbane Cluster, Industrie-Hubs) sind unter verschiedenen H\textsubscript{2}-Versorgungslogistiken (Trailer, Pipeline, On-site Elektrolyse) optimal?
 
-  \item \textbf{RQ3:} Welche Implementierungsstrategien und Szenarien (zentral vs. dezentral, Pipeline vs. maritim, mit/ohne Subventionen) zeigen das beste Kosten-Nutzen-Verhältnis unter realistischen Kostenschätzungen und Finanzierungsbedingungen?
+  \item \textbf{RQ3:} Unter welchen Bedingungen (Subventionsniveaus, CO\textsubscript{2}-Preisen, Nachfrageszenarien) erreichen HRS-Implementierungsstrategien wirtschaftliche Rentabilität in verschiedenen Regionen?
 \end{enumerate}
 
 % ============================================================
@@ -138,26 +136,28 @@ Bestehende Arbeiten konzentrieren sich häufig auf Einzelaspekte (Technologie, U
 
 Die Bachelorarbeit verfolgt das Ziel:
 
-\textbf{Empirische und quantitative Grundlagen schaffen} für die Priorisierung von H\textsubscript{2}-Infrastrukturinvestitionen durch systematische Benchmarking und ökonomische Bewertung:
+\textbf{Empirische und quantitative Grundlagen schaffen} für die Priorisierung von HRS-Investitionen durch systematische Barrierenanalyse und ökonomische Bewertung:
 
 \begin{itemize}
-  \item Vergleichende Analyse von 3 regionalen Implementierungsmodellen (Europa, Asien-Pazifik, Australien) anhand von 4 Dimensionen (Regulierung, Technologie, Ökonomie, Logistik)
-  \item Systematische Identifikation von Barrieren und deren Bedeutung in regionalen Strategien
-  \item Quantitative Kostennutzenanalyse (CBA mit NPV-Berechnungen) für 2--3 realistische Szenarios pro Region
-  \item Sensitivitätsanalyse zur Prüfung von politischen Hebeln (Subventionen, CO\textsubscript{2}-Preise)
+  \item Vergleichende Analyse von 3 regionalen HRS-Implementierungsmodellen (Europa mit Korridoransatz, Asien mit Nachfrage-fokussiertem Ansatz, Australien mit Export-Hub-Modell) entlang von 3 Barriere-Dimensionen (Regulatorisch, Logistisch, Technisch)
+  \item Szenarioentwicklung: Definition und Bewertung von HRS-Integrationsszenarien (Korridor-basiert, urbane Cluster, Industrie-Hubs) unter verschiedenen Versorgungslogistiken
+  \item Quantitative Kostennutzenanalyse (Cost-Benefit-Analysis mit NPV und ROI) für 2--3 realistische Szenarien pro Region basierend auf empirischen Kostendaten
+  \item Sensitivitätsanalyse zur Prüfung kritischer Parameter (Subventionsniveaus, CO\textsubscript{2}-Preisierung, Stromkosten, Nachfrageentwicklung)
 \end{itemize}
 
 \textbf{Die Arbeit wird:}
 \begin{enumerate}
-  \item \textbf{Theoretische Grundlagen} schaffen (H\textsubscript{2}-Technologie, Supply-Chain-Infrastruktur, regionale Strategien, Barrieren-Klassifikation)
+  \item \textbf{HRS-spezifische Grundlagen} schaffen (Wasserstoff-Refueltechnologie, HRS-Komponenten, Versorgungslogistik, regionale Implementierungsmodelle, Barrieren-Klassifikation)
 
-  \item \textbf{Benchmarking durchführen:} Entwicklung und Anwendung einer 4D-Vergleichsmatrix (regulatorisch, technisch, ökonomisch, logistisch) auf 3 Regionen, basierend auf \textcite{Eissler2023}, \textcite{EUCommission2020}, und \textcite{METI2023}
+  \item \textbf{Barrieren-Benchmarking durchführen:} Systematische Vergleichsmatrix (3 Barriere-Dimensionen × 3 Regionen) mit empirischen Beispielen und Policy-Ansätzen, basierend auf aktuellen regionalen Strategien und Literatur
 
-  \item \textbf{Cost-Benefit-Analysis (CBA) anwenden:} NPV-Berechnung von 2--3 Implementierungsszenarien pro Region mit empirischen Kostendaten aus \textcite{Chung2024}, \textcite{Efthymiadou2025}, und \textcite{Sujan2024}
+  \item \textbf{Szenarioentwicklung durchführen:} Definition von 3 HRS-Integrationsszenarien (Korridor, Cluster, Hub) mit Netzwerk-Optimierungsprinzipien und räumlicher Planung
 
-  \item \textbf{Sensitivitätsanalyse erstellen:} Analyse der Rentabilität unter Variation von Strompreisen, Subventionsniveaus und CO\textsubscript{2}-Preisen, informiert durch \textcite{Odenweller2025} und \textcite{Vizza2025}
+  \item \textbf{Cost-Benefit-Analysis (CBA) anwenden:} NPV- und ROI-Berechnungen für 2--3 realistische Szenarien pro Region mit disaggregierten Kostendaten (CAPEX, OPEX, H\textsubscript{2}-Kosten, Transport)
 
-  \item \textbf{Praktische Empfehlungen} formulieren für Entscheidungsträger (Politiker, Infrastrukturunternehmen, Energieunternehmen)
+  \item \textbf{Sensitivitätsanalyse erstellen:} Analyse der Rentabilität unter Variation kritischer Parameter (Subventionen 0\%-80\%, CO\textsubscript{2}-Preise, Stromkosten, Auslastung 30\%-80\%)
+
+  \item \textbf{Praktische Handlungsempfehlungen} formulieren für Entscheidungsträger (Policymaker, Infrastrukturbetreiber, Flottenbetreiber) pro Region
 \end{enumerate}
 
 % ============================================================
@@ -177,105 +177,177 @@ Die Bachelorarbeit verfolgt das Ziel:
 
 \subsection*{2. Theoretische Grundlagen (8--10 Seiten)}
 \begin{enumerate}
-  \item[2.1] Wasserstoff-Technologie und Herstellung
+  \item[2.1] Wasserstoff-Refuelling-Technologie
   \begin{itemize}
-    \item Produktionsmethoden (grauer, blauer, grüner Wasserstoff)
-    \item Speicherung und Transport: Pipeline, flüssig (LH\textsubscript{2}), chemische Träger (Ammoniak, LOHC)
-    \item Kostenstrukturen und Technologie-Roadmaps
+    \item HRS-Komponenten: Kompressoren, Speichertanks, Dispenser, Kühlanlage
+    \item Druckstandards (35 MPa vs. 70 MPa) und deren Auswirkungen auf Kosten und Reichweite
+    \item Versorgungsoptionen: Central Production, Pipeline, On-site Elektrolyse
+    \item Zuverlässigkeitsanforderungen und Verfügbarkeitsziele
   \end{itemize}
 
-  \item[2.2] Supply-Chain- und Infrastrukturkonzepte
+  \item[2.2] HRS-Versorgungskette und Netzwerkdesign
   \begin{itemize}
-    \item Netzwerkdesign und räumliche Optimierung
-    \item Interdependenzen zwischen Produktion, Speicherung, Transport und Nachfrage
-    \item Dezentralisierung vs. zentrale Pipeline-Modelle
+    \item Supply-Chain-Integration von H\textsubscript{2}-Produktion zu Endnutzer
+    \item Transportmodi: Trailer, Pipeline, Schiff (für internationale Supply Chains)
+    \item Netzwerk-Topologie: Dezentral (Cluster), zentral (Backbone), hybrid (Corridor)
+    \item Räumliche Optimierung und Standortwahl für HRS
   \end{itemize}
 
-  \item[2.3] Globale und regionale H\textsubscript{2}-Infrastrukturlandschaft
+  \item[2.3] Globale und regionale HRS-Landschaft
   \begin{itemize}
-    \item Aktueller Stand: Investitionen, Projekte, regionale Strategien
-    \item EU Hydrogen Backbone und europäische Roadmap \cite{EUCommission2020}
-    \item Japan/Korea Import-Strategien und Südostasien-Integration \cite{METI2023}
-    \item Australien Export-Potenzial und internationale Supply Chains
+    \item Aktueller Deployment-Status: Anzahl Stationen, Projekte, Timelines
+    \item EU-Strategie: AFIR-Verordnung, TEN-T-Korridore, Zielwerte bis 2031
+    \item Asien-Pazifik: Japan FCE-Strategie, Korea, Australien als Exporteur
+    \item Regionale Unterschiede in Geschäftsmodellen und Finanzierungsansätzen
   \end{itemize}
 
-  \item[2.4] Barrieren und Erfolgsfaktoren der Implementierung
+  \item[2.4] Regulatorische, logistische und technische Hürden bei HRS
   \begin{itemize}
-    \item Regulatorische Hürden: Standards, Sicherheit, Harmonisierung \cite{ECH2A2023}
-    \item Technische Anforderungen: Infrastruktur, Speicherung, Transport-Optionen \cite{Prokopou2025}
-    \item Ökonomische Rentabilität: Kostenstrukturen, Break-Even-Punkte, Subventionsbedarf \cite{Vizza2025}
-    \item Logistische Koordination und Netzwerk-Optimierung \cite{Sujan2024}
+    \item Regulatorische Hürden: ISO-Standards, nationale Zertifizierung, Druckstandards-Harmonisierung, AFIR-Compliance
+    \item Technische Hürden: Zuverlässigkeit, Wartung, Skalierbarkeit, Speicher- und Transportlogistik
+    \item Logistische Hürden: H\textsubscript{2}-Transportkosten, Versorgungskettenintegration, Lageroptimierung
+    \item Ökonomische Barrieren: Hohe Kapitalkosten, geringe Auslastung, Subventionsabhängigkeit
   \end{itemize}
 \end{enumerate}
 
 \subsection*{3. Methodik (3--4 Seiten)}
 \begin{enumerate}
-  \item[3.1] Forschungsdesign: Vergleichende Analyse mit Benchmarking und CBA
-  \item[3.2] Benchmarking-Framework: 4 Dimensionen × 3 Regionen
+  \item[3.1] Forschungsdesign: Vergleichende Analyse mit Barrieren-Benchmarking und CBA
+  \item[3.2] Barrieren-Benchmarking: 3 Dimensionen × 3 Regionen
   \begin{itemize}
-    \item Dimension 1: Regulatorische Readiness
-    \item Dimension 2: Technische Infrastruktur-Status
-    \item Dimension 3: Kosten-Struktur und Geschäftsmodelle (basierend auf \cite{Eissler2023}, \cite{Chung2024})
-    \item Dimension 4: Logistische und Netzwerk-Aspekte
+    \item Dimension 1: Regulatorische Hürden (Standards, Zertifizierung, nationale Regelwerke)
+    \item Dimension 2: Logistische Hürden (Versorgungskette, Transport, Speicherung)
+    \item Dimension 3: Technische Hürden (Zuverlässigkeit, Wartung, Skalierung)
+    \item Anwendung auf 3 Regionen: Europa, Asien-Pazifik, Australien
   \end{itemize}
-  \item[3.3] Cost-Benefit-Analysis Modell
+  \item[3.3] Szenarioentwicklung: HRS-Integrationsszenarien
   \begin{itemize}
-    \item NPV-Rahmenwerk mit empirischen Kostenparametern
-    \item Szenario-Definition (zentral vs. dezentral, Pipeline vs. Maritime)
-    \item Diskontrate und Zeithorizont
+    \item Szenario A: Korridor-basiert (Highway-Deployment, TEN-T-Modell)
+    \item Szenario B: Urbane Cluster (Stadtnahe HRS-Netzwerke)
+    \item Szenario C: Industrie-Hubs (Hafen- und Logistikzentren)
+    \item Versorgungslogistik-Varianten pro Szenario
   \end{itemize}
-  \item[3.4] Sensitivitätsanalyse: Parameter und Szenarien
-  \item[3.5] Datenquellen: Literatur-basierte Analyse mit empirischen Kostendaten
-  \item[3.6] Geografischer und methodischer Scope
+  \item[3.4] Cost-Benefit-Analysis (CBA) Modell
+  \begin{itemize}
+    \item NPV-Berechnung mit 10-20 Jahre Zeithorizont
+    \item Kostendisaggregation: CAPEX (Stationen, Speicherung), OPEX (Wartung, Personal), H\textsubscript{2}-Kosten, Transport
+    \item Empirische Kostenparameter aus Literatur
+    \item Szenario-spezifische NPV-Berechnung pro Region
+  \end{itemize}
+  \item[3.5] Sensitivitätsanalyse
+  \begin{itemize}
+    \item Parameter: Subventionsniveaus (0\%-80\%), CO\textsubscript{2}-Preise (€0-€150/t), Stromkosten, Auslastung (30\%-80\%)
+    \item Identifikation kritischer Erfolgsfaktoren für Rentabilität
+    \item Szenarien-Vergleich unter Unsicherheit
+  \end{itemize}
+  \item[3.6] Datenquellen und Scope
+  \begin{itemize}
+    \item Primär: Literatur-basierte Analyse mit empirischen Kostendaten aus 10+ Core Papers
+    \item Regionale Fokus: EU (AFIR/TEN-T), Japan (METI 2023), Australien (H\textsubscript{2})
+    \item Methodischer Scope: Qualitative Barrierenanalyse + quantitative CBA
+  \end{itemize}
 \end{enumerate}
 
 \subsection*{4. Ergebnisse (12--15 Seiten)}
 \begin{enumerate}
-  \item[4.1] Benchmarking-Ergebnisse: Regionale Vergleichsmatrix
+  \item[4.1] Barrieren-Benchmarking-Ergebnisse: 3 × 3 Vergleichsmatrix
   \begin{itemize}
-    \item Regulatorische Readiness pro Region
-    \item Technische Infrastruktur-Status und Reifungsgrad
-    \item Kosten-Struktur für verschiedene Stationstypen und Transportmodi
-    \item Implementierungs-Zeithorizonte und -Barrieren
+    \item Regulatorische Hürden pro Region (Standards, Zertifizierung, nationale Anforderungen)
+    \item Logistische Hürden pro Region (Versorgungskosten, Transportmethoden, Verfügbarkeit)
+    \item Technische Hürden pro Region (Zuverlässigkeit, Technologie-Status, Wartungsanforderungen)
+    \item Gegenwärtige Implementierungsstrategien und deren Effektivität pro Region
   \end{itemize}
 
-  \item[4.2] Cost-Benefit-Analysis Ergebnisse
+  \item[4.2] HRS-Integrationsszenarien und Netzwerk-Analyse
   \begin{itemize}
-    \item Szenario-Definition: (zentralisiert + Pipeline) vs. (dezentralisiert + maritim) vs. (hybrid)
-    \item NPV-Berechnungen für 2--3 Szenarien pro Region
-    \item Break-Even-Analysen für verschiedene Auslastungsszenarien
-    \item Kostenvergleiche und kritische Parameter
+    \item Szenario A (Korridor): Deployment entlang Hauptverkehrsachsen, Kapazitäten, Kosten
+    \item Szenario B (Cluster): Urbane Netzwerke, Abdeckung, Nachfrage-Profile
+    \item Szenario C (Hubs): Industrie-Standorte, Großmengen-Szenarien
+    \item Vergleich der Szenarien nach Flächenabdeckung, Investmentbedarf, Zeitrahmen
   \end{itemize}
 
-  \item[4.3] Sensitivitätsanalyse
+  \item[4.3] Cost-Benefit-Analysis Ergebnisse
   \begin{itemize}
-    \item Einfluss von Subventionsniveaus auf Rentabilität
-    \item CO\textsubscript{2}-Preis-Variation und Carbon-Pricing-Szenarien
-    \item Technologische Kostenreduktionen und Lernkurven
-    \item Strompreis- und Wechselkurs-Szenarien
+    \item NPV-Berechnungen für 2--3 Szenarien pro Region (20 Jahre Zeithorizont)
+    \item CAPEX- und OPEX-Breakdowns für verschiedene HRS-Größen und -Typen
+    \item Break-Even-Analysen: Bei welcher Auslastung wird Rentabilität erreicht?
+    \item Szenario-Ranking nach wirtschaftlicher Attraktivität pro Region
+  \end{itemize}
+
+  \item[4.4] Sensitivitätsanalyse
+  \begin{itemize}
+    \item Einfluss Subventionen: NPV-Entwicklung von 0\% bis 80\% Subventionierung
+    \item CO\textsubscript{2}-Preis-Szenarios: €0/t bis €150/t und deren Effekt auf Rentabilität
+    \item Stromkosten-Variation: Auswirkungen auf Wasserstoff-Kosten und Gesamtrentabilität
+    \item Auslastungs-Szenarien: 30\%, 50\%, 80\% und Break-Even-Punkte
   \end{itemize}
 \end{enumerate}
 
 \subsection*{5. Diskussion (8--10 Seiten)}
 \begin{enumerate}
-  \item[5.1] Synthese der Benchmarking-Ergebnisse: Regionale Unterschiede und Muster
-  \item[5.2] Interpretation der CBA-Ergebnisse: Welche Szenarien sind unter realistischen Bedingungen rentabel?
+  \item[5.1] Synthese der Barrieren-Analyse: Regionale Muster und Unterschiede
+  \begin{itemize}
+    \item Vergleich: Welche Barrieren sind in welcher Region dominant?
+    \item Effektivität regionaler Strategien zur Überwindung dieser Barrieren
+  \end{itemize}
+
+  \item[5.2] Interpretation der Szenario- und CBA-Ergebnisse
+  \begin{itemize}
+    \item Welche HRS-Integrationsszenarien sind unter realistischen Bedingungen rentabel?
+    \item Break-Even-Punkte und kritische Erfolgsfaktoren pro Region
+  \end{itemize}
+
   \item[5.3] Beantwortung der Forschungsfragen
-  \item[5.4] Regionale Implikationen und politische Trade-offs
-  \item[5.5] Validierung gegenüber beobachteten Implementierungslücken \cite{Odenweller2025}
+  \begin{itemize}
+    \item RQ1: Barrieren und ihre regionalen Unterschiede - Antwort und Implikationen
+    \item RQ2: Optimale Szenarien für verschiedene Logistiken - Erkenntnisse
+    \item RQ3: Wirtschaftlichkeit unter verschiedenen Policy-Szenarien - Ergebnisse
+  \end{itemize}
+
+  \item[5.4] Implikationen für verschiedene Stakeholder
+  \begin{itemize}
+    \item Policymaker: Welche Instrumente (Subventionen, Mandate, Standards) sind effektiv?
+    \item Infrastrukturbetreiber: Welche Geschäftsmodelle sind nachhaltig?
+    \item Flottenbetreiber: Welche regionalen Strategien reducieren Nachfrage-Risiko?
+  \end{itemize}
+
+  \item[5.5] Validierung gegen beobachtete Implementierungslücken
+  \begin{itemize}
+    \item Erklären die Ergebnisse, warum geplante Projekte verzögert/aufgegeben werden?
+    \item Welche Policy-Änderungen könnten die Lücke schließen?
+  \end{itemize}
+
   \item[5.6] Limitationen und offene Fragen
+  \begin{itemize}
+    \item Datenunfänzlichkeiten, Annahmen in der CBA-Modellierung
+    \item Zukünftige Technologie-Entwicklungen (z.B. bessere Speicherung)
+    \item Nachfrageprognosen für H\textsubscript{2}-Fahrzeuge
+  \end{itemize}
 \end{enumerate}
 
 \subsection*{6. Fazit (3--4 Seiten)}
 \begin{enumerate}
   \item[6.1] Zusammenfassung der Erkenntnisse
-  \item[6.2] Handlungsempfehlungen für verschiedene Stakeholder
   \begin{itemize}
-    \item Politische Entscheidungsträger
-    \item Infrastrukturunternehmen
-    \item Energieunternehmen und Industrieabnehmer
+    \item Hauptergebnisse zu HRS-Barrieren pro Region
+    \item Effektivste Integrationsszenarien und Bedingungen für Rentabilität
   \end{itemize}
-  \item[6.3] Ausblick und zukünftige Forschung
+
+  \item[6.2] Handlungsempfehlungen für verschiedene Stakeholder (regionsabhängig)
+  \begin{itemize}
+    \item \textbf{Policymaker:} Spezifische Policy-Instrumente (Subventionen, Standards, Mandate) für jede Region
+    \item \textbf{Infrastrukturbetreiber:} Geschäftsmodelle, Finanzierungsquellen, Standortwahl-Strategien
+    \item \textbf{Flottenbetreiber:} Nachfrage-Signale, Investitions-Timing, regionale Priorities
+    \item \textbf{Investoren:} Rentabilitäts-Szenarien, Risikofaktoren, Opportunitäten pro Region
+  \end{itemize}
+
+  \item[6.3] Ausblick und zukünftiger Forschungsbedarf
+  \begin{itemize}
+    \item Technologie-Roadmaps: Wie sinken HRS-Kosten bis 2035?
+    \item Nachfrageentwicklung: Welche FCEV-Adoption-Raten sind realistisch?
+    \item Institutionelle Reformen: Wie können regulatorische Barrieren schneller gelöst werden?
+    \item Globale Wasserstoff-Märkte: Wie beeinflussen Importmodelle die HRS-Entwicklung?
+  \end{itemize}
 \end{enumerate}
 
 \newpage
@@ -292,77 +364,49 @@ Die Bachelorarbeit verfolgt das Ziel:
 % CONCEPT MAP
 % ============================================================
 
-\section*{Concept Map}
-\addcontentsline{toc}{section}{Concept Map}
+\section*{Konzeptioneller Rahmen}
+\addcontentsline{toc}{section}{Konzeptioneller Rahmen}
 
-\begin{center}
-  \textbf{H\textsubscript{2}-Infrastruktur-Deployment in globalen Lieferketten: Analyserahmen}
+Die Arbeit strukturiert sich entlang von drei Dimensionen der HRS-Implementierung:
 
-  \vspace{1cm}
+\subsection*{1. Herausforderungen (Challenges)}
 
-  \fbox{
-    \begin{minipage}{0.9\textwidth}
-      \centering
-      \textbf{Energiewende \& Dekarbonisierung (Schwer-zu-Elektrifizieren Sektoren)} \\
-      \vspace{0.1cm}
-      \small \textit{(Motivation: EU Strategy 2020, METI 2023)}
+Die Implementierung von Wasserstofftankstellen steht vor drei Haupthürden:
 
-      \vspace{0.8cm}
-      $\downarrow$
-
-      \vspace{0.8cm}
-
-      \begin{tabular}{c c c}
-        \fbox{\textbf{H\textsubscript{2}-Technologie}} & \fbox{\textbf{Globale Lücke}} & \fbox{\textbf{Regionale}} \\
-        \fbox{\textbf{\& Kosten}} & \fbox{\textbf{(2025)}} & \fbox{\textbf{Strategien}} \\
-        & \fbox{\textbf{}} & \\
-        Produktion & 95\% Kapazität & EU Backbone \\
-        Speicherung & nicht realisiert & Asien Import \\
-        Transport & (Odenweller2025) & AU Export \\
-        LCOH: €3.80--€11.70/kg & & \\
-        (Chung2024, Eissler2023) & & \\
-      \end{tabular}
-
-      \vspace{0.8cm}
-      $\downarrow$
-
-      \vspace{0.8cm}
-
-      \begin{tabular}{c c c}
-        \fbox{\textbf{4 Barrieren}} & \fbox{\textbf{Optimierungs-}} & \fbox{\textbf{Implementierungs-}} \\
-        \fbox{\textbf{}} & \fbox{\textbf{Methoden}} & \fbox{\textbf{Strategien}} \\
-        & & \\
-        Regulierung & Benchmarking & Dezentral + \\
-        (ECH2A2023) & (4 Dimensionen) & Pipeline \\
-        Technologie & & \\
-        (Prokopou2025) & Cost-Benefit & Hybrid \\
-        Ökonomie & Analysis (NPV) & (Sujan2024, \\
-        (Vizza2025) & (Efthymiadou2025) & Eissler2023) \\
-        Logistik & & \\
-        (Sujan2024) & Sensitivitäts- & Maritim + \\
-        & analyse & Dezentral \\
-        & (Odenweller2025) & \\
-      \end{tabular}
-
-      \vspace{0.8cm}
-      $\downarrow$
-
-      \vspace{0.8cm}
-
-      \fbox{\textbf{Handlungsempfehlungen: Region-spezifische Strategien mit Best-Cost-Benefit-Ratio}}
-
-    \end{minipage}
-  }
-\end{center}
-
-\vspace{1cm}
-
-\noindent \textbf{Methodik-Integration:}
 \begin{itemize}
-  \item \textbf{Benchmarking:} Systematischer Vergleich der 4 Dimensionen über 3 Regionen mit empirischen Daten
-  \item \textbf{Cost-Benefit Analysis:} Quantifiziert wirtschaftliche Rentabilität von Szenarien mit realistischen Kostendaten
-  \item \textbf{Sensitivitätsanalyse:} Testet Robustheit gegenüber politischen und ökonomischen Parametern
-  \item \textbf{Validierung:} Erklärt die beobachtete Implementierungslücke und informiert zukünftige Investitionen
+\item \textbf{Regulatorische Hürden:} Fragmentierung von Standards (ISO, nationale Vorschriften), Zertifizierungsprozesse, und grenzüberschreitende Regelungslücken
+
+\item \textbf{Logistische Hürden:} H\textsubscript{2}-Transportmodi (Pipeline, Trailer, On-site Produktion), Versorgungskettenintegration von Produktion zu HRS, und Speicher-/Dispensing-Technologien
+
+\item \textbf{Technische Hürden:} Zuverlässigkeit und Wartungsanforderungen, Kompressor- und Kühltechnologie, sowie Skalierbarkeit und Modularität
 \end{itemize}
+
+\subsection*{2. Analyse-Framework (Analysis Framework)}
+
+Zur Analyse dieser Herausforderungen nutzt die Arbeit drei komplementäre Methoden:
+
+\begin{itemize}
+\item \textbf{Räumliche Planung \& Optimierung:} Standortwahl, Netzwerk-Topologie und Deployment-Szenarien für unterschiedliche geografische Kontexte
+
+\item \textbf{Wirtschaftliche Bewertung:} Kostenstruktur-Analyse (CAPEX/OPEX), Net Present Value (NPV), Return on Investment (ROI), sowie Sensitivitätsanalyse für verschiedene Finanzierungsszenarien
+
+\item \textbf{Globaler Marktkontext:} Regionale Deployment-Trends, strategische Unterschiede zwischen Europa, Asien-Pazifik und Australien, sowie Markt-Treiber und Adoption-Barrieren
+\end{itemize}
+
+\subsection*{3. Integrationsszenarien (Integration Scenarios)}
+
+Die Thesis untersucht drei Hauptszenarien für die Integration von HRS in bestehende Infrastrukturen:
+
+\begin{itemize}
+\item \textbf{Korridor-basiert:} HRS entlang von Hauptverkehrsachsen (z.B. TEN-T-Netzwerk in der EU), mit Fokus auf Long-Haul-Transport
+
+\item \textbf{Urbane Cluster:} Stadtnahe HRS-Netzwerke für städtische Mobilität (Busse, Taxis, Flotten), mit kleineren Stationen und höherer Nutzungsfrequenz
+
+\item \textbf{Industrie-Hubs:} Hafen- und Logistikzentren mit Fokus auf Schwertransport und lokale Versorgungsketten
+\end{itemize}
+
+\vspace{0.5cm}
+
+\noindent\textbf{Synthese:} Aus der Analyse dieser drei Dimensionen und Szenarien werden regionsabhängige Strategien und Handlungsempfehlungen abgeleitet, die Investoren, Policymaker und Infrastrukturbetreiber bei der effizienten HRS-Implementierung unterstützen.
 
 \end{document}

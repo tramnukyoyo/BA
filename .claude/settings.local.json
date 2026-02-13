@@ -4,7 +4,17 @@
       "Bash(npm view:*)",
       "Skill(gsd:pause-work)",
       "Skill(gsd:new-project)",
-      "Bash(pdflatex:*)"
+      "Bash(pdflatex:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(ls:*)",
+      "Bash(git pull:*)",
+      "Bash(pdfinfo:*)",
+      "Bash(pdftotext:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npx get-shit-done-cc:*)"
     ]
   }
 }

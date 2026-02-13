@@ -1,8 +1,8 @@
 # Roadmap: Wasserstoffinfrastruktur in globalen Lieferketten
 
-**Project:** Bachelor Thesis on Hydrogen Infrastructure in Global Supply Chains
-**Status:** Phase 1 (Exposé Sprint) — 70% complete
-**Target Completion:** Week 16 after exposé approval
+**Project:** Bachelor Thesis on Hydrogen Refueling Stations in Global Supply Chains (HRS Focus)
+**Status:** Phase 1 (Exposé Sprint — REBUILD) — 25% complete
+**Target Completion:** Week 16 after exposé approval (after 10-day rebuild)
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Phase | Name | Duration | Goal | Status |
 |-------|------|----------|------|--------|
-| 1 | Exposé Sprint | 14 days | Refine exposé and submit to professor | ⏳ 70% complete |
+| 1 | Exposé Sprint (REBUILD) | 10 days | Rebuild exposé with HRS-specific focus and 10 new papers | ⏳ 25% complete |
 | 2 | Thesis Foundation | 4 weeks | Deep literature review + detailed outline + analysis frameworks | ○ Pending approval gate |
 | 3 | Core Content Writing | 6 weeks | Write Chapters 1-4 with Scenario SWOT (40-45 pages) | ○ Pending |
 | 4 | Synthesis & Analysis | 2 weeks | Write Chapter 5 with Regional/Governance SWOT + Chapter 6 with Nutzwertanalyse | ○ Pending |
@@ -19,51 +19,74 @@
 
 ---
 
-## Phase 1: Exposé Sprint — IN PROGRESS (70%)
+## Phase 1: Exposé Sprint (REBUILD) — IN PROGRESS (25%)
 
-**Goal:** Complete, refined exposé (5-8 pages) ready for professor submission
+**Goal:** Rebuild exposé with HRS-specific focus, find 10 new papers, finalize for submission
 
-**Requirements Covered:**
-- EXP-01, EXP-02, EXP-03 (complete)
-- EXP-04, EXP-05, EXP-06 (in progress)
+**Rationale for Rebuild:**
+- Original exposé addressed "Regional Hydrogen Infrastructure" (too broad)
+- User's thesis is specifically about **Hydrogen Refueling Station (HRS) Implementation**
+- Need to sharpen focus on HRS deployment barriers and strategies
+- Original papers not aligned with HRS-specific requirements
 
-### Week 1: Foundation ✓ COMPLETE
-- [x] Collected 12 academic sources (peer-reviewed + authoritative)
-- [x] Generated 8-chapter exposé draft with 3 hierarchical research questions
-- [x] Fixed LaTeX compilation (UTF-8, pifont package)
-- [x] Deliverable: `expose/expose.pdf` (10 pages)
+**Infrastructure Created (Session 6):** ✓ COMPLETE
+- [x] `literature/SEARCH_STRATEGY_HRS.md` — 10 targeted search queries with quality criteria
+- [x] `literature/PAPER_CANDIDATES.md` — Tracking template for 30-50 candidate papers
+- [x] `expose/FRAMEWORK_DESIGN.md` — Design for new bullet-point framework
+- [x] `expose/expose_bachelor.tex` — Restructured with HRS-specific content (Ausgangslage, Problemstellung, RQs, Gliederung, Methodik, Framework)
+- [x] `expose/references_h2_CORE.bib` — BibTeX template for 10 new core papers
 
-### Week 2: Refinement & Submission — IN PROGRESS
+### Week 1: Paper Search & Selection (Days 1-7)
 
-**Days 8-10: Content Validation** (NEXT)
-- [ ] Review `expose.pdf` for structure coherence
-- [ ] Validate 3 research questions against your vision
-- [ ] Update bibliography with 3-5 H₂-specific sources (e.g., H2Future, HyDelta, HEAVENN)
-- [ ] Enhance Ausgangslage with 2-3 specific H₂ project examples/statistics
-- [ ] Verify Problemstellung clearly identifies research gap
-- [ ] Confirm 8-chapter scope is appropriate for bachelor thesis
-- [ ] **NEW:** Validate inclusion of SWOT Analysis and Nutzwertanalyse in thesis scope
+**Days 1-3: Execute Searches**
+- [ ] Execute 10 searches from SEARCH_STRATEGY_HRS.md
+- [ ] Primary search in Google Scholar (sorted by citation count)
+- [ ] Secondary search in ScienceDirect/IEEE Xplore
+- [ ] Track 30-50 candidate papers in PAPER_CANDIDATES.md
 
-**Days 11-12: Language & Polish**
-- [ ] Academic German review (formal register, active voice: "Ich analysiere...")
-- [ ] Consistency check (terminology, citation format, typography)
-- [ ] Refine concept map visual representation
+**Days 4-7: Evaluate & Select**
+- [ ] Evaluate candidates using quality checklist template
+- [ ] Assess papers for: HRS-specificity, peer-review, recency (2019-2025), methodology clarity
+- [ ] Check citation counts and quality metrics
+- [ ] Select best 10 papers (1 per content area, ensuring no redundancy)
+- [ ] **Deliverable:** 10 final core papers selected and documented
 
-**Days 13-14: Final Submission Prep**
-- [ ] Final PDF compilation
-- [ ] Proofread complete draft
-- [ ] **Deliverable:** `expose/exposé-final.pdf` (ready for professor)
+**Content Areas (1 paper each):**
+1. Overview & Supply Chain Integration
+2. Logistical & Technical Challenges
+3. Spatial Planning & Corridor Optimization
+4. Economic Viability & Cost-Benefit Analysis
+5. Technical Reliability & Maintenance
+6. Regulatory Frameworks & Standards
+7. Strategic Network Design
+8. Global Market Insights
+9. Techno-Economic Literature Reviews
+10. Policy & Institutional Context (EU)
+
+### Week 2: Integration & Final Compilation (Days 8-10)
+
+**Day 8: Complete Bibliography**
+- [ ] Fill in references_h2_CORE.bib with 10 final papers (BibTeX format, Harvard style)
+- [ ] Verify all papers have DOI, journal, keywords, abstracts
+
+**Days 9-10: Integration & Compilation**
+- [ ] Integrate citations throughout expose_bachelor.tex (using paper #1-#10 references)
+- [ ] Verify all citations render correctly
+- [ ] Implement new bullet-point framework from FRAMEWORK_DESIGN.md
+- [ ] Compile PDF: pdflatex → biber → pdflatex → pdflatex
+- [ ] **Deliverable:** `expose/expose_final_v2.pdf` (ready for submission)
 
 **Success Criteria:**
-- [ ] 3 RQs match YOUR research vision
-- [ ] Bibliography: 15+ sources (at least 8 H₂-specific)
-- [ ] Ausgangslage includes concrete H₂ examples
-- [ ] Gliederung scope validated (8 chapters confirmed as appropriate)
-- [ ] Academic German language polished
-- [ ] PDF compiled without errors
-- [ ] Ready to submit to professor
+- [x] Infrastructure created (search strategy, tracking templates, LaTeX restructure)
+- [ ] 10 new HRS-specific papers found (peer-reviewed, 2019-2025, strong citations)
+- [ ] All papers meet quality criteria (HRS-specific, clear methodology, empirical data)
+- [ ] Exposé content fully HRS-focused (no generic H₂ infrastructure language)
+- [ ] 5 thesis focus areas clearly addressed (Regulatory, Logistical, Technical, Scenarios, Cost-Benefit)
+- [ ] Bullet-point framework replaces old concept map
+- [ ] PDF compiles without errors, all citations render
+- [ ] Ready for professor submission
 
-**Gate:** Phase 1 Complete when exposé submitted and approved by professor
+**Gate:** Phase 1 Complete when exposé_final_v2.pdf submitted and approved by professor
 
 ---
 

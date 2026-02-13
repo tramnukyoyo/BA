@@ -1,8 +1,7 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{Ausgangslage}{1}{section*.2}%
 \contentsline {section}{Problemstellung / Herausforderung und Forschungsstand}{2}{section*.5}%
-\contentsline {section}{Formulierung der Forschungsfragen}{2}{section*.8}%
-\contentsline {section}{Zielsetzung und Aufgabenstellung}{3}{section*.9}%
-\contentsline {section}{Gliederung}{4}{section*.10}%
-\contentsline {section}{Literaturverzeichnis}{7}{section*.17}%
-\contentsline {section}{Concept Map}{9}{section*.23}%
+\contentsline {section}{Formulierung der Forschungsfragen}{3}{section*.8}%
+\contentsline {section}{Zielsetzung und Aufgabenstellung}{4}{section*.9}%
+\contentsline {section}{Gliederung}{5}{section*.10}%
+\contentsline {section}{Concept Map}{10}{section*.18}%
