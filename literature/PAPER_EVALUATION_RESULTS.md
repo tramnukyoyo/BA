@@ -7,19 +7,18 @@
 
 ## EXECUTIVE SUMMARY
 
-✅ **9 out of 10 content areas now have accepted papers**
-⚠️ **1 paper needs verification (EU policy focus)**
-❌ **1 content area still needs a paper (Logistical & Technical Challenges)**
+✅ **9 CORE PAPERS SELECTED FOR EXPOSÉ**
+✅ **All major thesis focus areas covered** (Supply chain, Spatial planning, Economics, Reliability, Regulatory, Strategic design, Market insights, Techno-economic)
+❌ **Area 2 (Logistical & Technical) omitted** — User decision (not critical for exposé minimum of 5 papers)
+📌 **Paper 10 reassigned** — Repositioned as supplementary global/regional comparison (not EU-policy specific)
 
-### Papers by Decision
+### Final Paper Selection Summary
 
-| Decision | Count | Content Areas |
-|----------|-------|---|
-| ✅ ACCEPT | 9 | 1, 3*, 4*, 5, 6, 7, 8*, 9 |
-| ⚠️ SHORTLIST | 1 | 10 (verify EU-policy focus) |
-| ❌ NEEDED | 1 | 2 (Logistical & Technical Challenges) |
-
-*Previously accepted in earlier evaluation
+| Decision | Count | Papers |
+|----------|-------|--------|
+| ✅ ACCEPT (Core) | 9 | Raeesi, Isaac & Saha, Wu, Genovese (2024), Genovese (2023), Kim (2020), Samsun, Atabay & Devrim |
+| ⓘ SUPPLEMENTARY | 1 | Kim et al. 2023 (comparative regional analysis) |
+| ❌ OMITTED | 1 | Area 2 — User decision |
 
 ---
 
@@ -238,20 +237,20 @@ This paper was **already accepted for Content Area 3 (Spatial Planning)** in ear
 
 ---
 
-## CURRENT STATUS: 10 PAPERS FRAMEWORK
+## FINAL SELECTION: 9 CORE PAPERS FOR EXPOSÉ
 
 | Area | Paper | Authors | Year | Citations | Status |
 |------|-------|---------|------|-----------|--------|
 | 1 | Supply chain and refuelling network design (UK) | Raeesi et al. | 2024 | 14 | ✅ ACCEPT |
-| 2 | **STILL NEEDED** | — | — | — | ❌ SEARCH NEEDED |
+| 2 | *OMITTED* (not critical for exposé minimum) | — | — | — | — |
 | 3 | A Review of Optimization Strategies for HRS Location | Isaac & Saha | 2023 | 44 | ✅ ACCEPT |
 | 4 | Economic analysis of HRS (operation modes) | Wu et al. | 2024 | 38 | ✅ ACCEPT |
 | 5 | Multi-year energy performance data (electrolysis HRS) | Genovese et al. | 2024 | 31 | ✅ ACCEPT |
 | 6 | Current standards and configurations for HRS | Genovese et al. | 2023 | 62 | ✅ ACCEPT |
 | 7 | Strategic HRS deployment plan (Korea) | Kim et al. | 2020 | 92 | ✅ ACCEPT |
-| 8 | Deployment of FCV and HRS Infrastructure: Global Overview | Samsun et al. | 2022 | 128 | ✅ ACCEPT |
+| 8a | Deployment of FCV and HRS Infrastructure: Global Overview | Samsun et al. | 2022 | 128 | ✅ ACCEPT |
+| 8b | Review of hydrogen infrastructure (status + strategy) | Kim et al. | 2023 | 128 | ✅ ACCEPT (Comparative) |
 | 9 | Design and techno-economic analysis (solar-based HRS) | Atabay & Devrim | 2024 | 43 | ✅ ACCEPT |
-| 10 | Review of hydrogen infrastructure (status + strategy) | Kim et al. | 2023 | 128 | ⚠️ VERIFY EU focus |
 
 ---
 
