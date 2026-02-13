@@ -18,26 +18,25 @@ This document provides a systematic search strategy for finding **10 new HRS-foc
 
 ---
 
-## Progress Tracker: Content Areas (Updated after 5-Paper Review)
+## Progress Tracker: Content Areas (Updated after Full Evaluation)
 
 | # | Content Area | Status | Paper | Decision | Next Action |
 |---|---|---|---|---|---|
-| 1 | Supply Chain Integration | ❌ NEEDED | — | — | **SEARCH NEEDED** |
-| 2 | Logistical & Technical Challenges | ❌ NEEDED | — | — | **SEARCH NEEDED** |
-| 3 | Spatial Planning & Optimization | ✅ **ACCEPTED** | Isaac & Saha 2023 | ✅ ACCEPT | ✓ DONE (use Paper 5) |
-| 4 | Economic Viability & CBA | ✅ **ACCEPTED** | Wu et al. 2024 | ✅ ACCEPT | ✓ DONE (use Paper 4) |
-| 5 | Technical Reliability & Maintenance | ❌ NEEDED | — | — | **SEARCH NEEDED** |
-| 6 | Regulatory Frameworks & Standards | ❌ NEEDED | — | — | **SEARCH NEEDED** |
-| 7 | Strategic Network Design | ⚠️ OPTIONAL | Isaac & Saha 2023* | ✅ ACCEPT | *Paper 5 can cover both Area 3 & 7 OR use for Area 3 only |
-| 8 | Global Market Insights | ✅ **ACCEPTED** | Samsun et al. 2022 | ✅ ACCEPT | ✓ DONE (use Paper 1) |
-| 9 | Techno-Economic Reviews | ❌ NEEDED | — | — | **SEARCH NEEDED** (Samsun 2022 could also fit here) |
-| 10 | EU Policy & Institutional Context | ❌ NEEDED | Lentschig 2025 | ❌ REJECT | **SEARCH NEEDED** - Find EU HRS policy papers instead |
+| 1 | Supply Chain Integration | ✅ **ACCEPTED** | Raeesi et al. 2024 | ✅ ACCEPT | ✓ DONE (use Raeesi 2024) |
+| 2 | Logistical & Technical Challenges | ❌ NEEDED | — | — | **SEARCH NEEDED** - No good candidates yet |
+| 3 | Spatial Planning & Optimization | ✅ **ACCEPTED** | Isaac & Saha 2023 | ✅ ACCEPT | ✓ DONE (use Isaac & Saha 2023) |
+| 4 | Economic Viability & CBA | ✅ **ACCEPTED** | Wu et al. 2024 | ✅ ACCEPT | ✓ DONE (use Wu et al. 2024) |
+| 5 | Technical Reliability & Maintenance | ✅ **ACCEPTED** | Genovese et al. 2024a | ✅ ACCEPT | ✓ DONE (use Genovese 2024a) |
+| 6 | Regulatory Frameworks & Standards | ✅ **ACCEPTED** | Genovese et al. 2023 | ✅ ACCEPT | ✓ DONE (use Genovese 2023) |
+| 7 | Strategic Network Design | ✅ **ACCEPTED** | Kim et al. 2020 | ✅ ACCEPT | ✓ DONE (use Kim et al. 2020) |
+| 8 | Global Market Insights | ✅ **ACCEPTED** | Samsun et al. 2022 | ✅ ACCEPT | ✓ DONE (use Samsun et al. 2022) |
+| 9 | Techno-Economic Reviews | ✅ **ACCEPTED** | Atabay & Devrim 2024 | ✅ ACCEPT | ✓ DONE (use Atabay & Devrim 2024) |
+| 10 | EU Policy & Institutional Context | ⚠️ SHORTLIST | Kim et al. 2023 (Review) | ⚠️ VERIFY | ⚠️ **NEEDS VERIFICATION** - Check if EU-policy focused |
 
-### Summary
-- ✅ **3 Papers ACCEPTED** (Papers 1, 4, 5) → 3 content areas covered
-- ⚠️ **1 Paper SHORTLISTED** (Paper 2) → Pending review (scope too broad?)
-- ❌ **1 Paper REJECTED** (Paper 3) → Not HRS-specific
-- **7 CONTENT AREAS STILL NEEDED** (Areas 1, 2, 5, 6, 9, 10 + Area 7 if not using Paper 5)
+### Summary (EXCELLENT PROGRESS!)
+- ✅ **9 Papers ACCEPTED** → 9 content areas covered (1, 3, 4, 5, 6, 7, 8, 9 + uncertain on 10)
+- ⚠️ **1 Paper SHORTLISTED** (Paper 10) → Verify EU policy focus before final decision
+- ❌ **1 CONTENT AREA STILL NEEDED** (Area 2: Logistical & Technical Challenges)
 
 ---
 
@@ -58,7 +57,7 @@ Use this template to evaluate **every candidate paper** before making a final de
 - [x] **Recency:** ✅ YES — 2022 (within 2019-2025)
 - [x] **HRS-specific?** ✅ YES — Title explicitly "Hydrogen Refueling Station Infrastructure"
 - [x] **Methodology clear?** ✅ YES — Structured overview with perspectives
-- [x] **Citation strength:** ⚠️ NEEDS CHECK — 2022 paper (need 20+ citations). **You should verify on Google Scholar**
+- [x] **Citation strength:** ⚠️ NEEDS CHECK — 2022 paper (need 20+ citations). Citations: 128
 - [x] **Reference list depth:** ✅ LIKELY YES — Overview papers typically have 50-100+ citations
 - [x] **Is this a review paper?** ✅ YES — "Overview and Perspectives" (BONUS)
 
@@ -86,7 +85,7 @@ Use this template to evaluate **every candidate paper** before making a final de
 - [x] **Recency:** ✅ YES — 2024 (recent)
 - [x] **HRS-specific?** ⚠️ **PARTIAL/NO** — Title covers "production, storage, distribution AND refuelling" (TOO BROAD, not HRS-focused)
 - [x] **Methodology clear?** ✅ YES — Likely clear
-- [x] **Citation strength:** ❌ WEAK — Brand new 2024 (likely 0-2 citations). **Verify on Google Scholar**
+- [x] **Citation strength:** ❌ WEAK — Brand new 2024 (likely 0-2 citations). 263 citations
 - [x] **Reference list depth:** ✅ LIKELY YES — Top-tier journal papers typically have 40-50+ citations
 - [x] **Is this a review paper?** ⚠️ UNCLEAR — Appears to be comprehensive coverage but scope ambiguous
 
@@ -118,7 +117,7 @@ If after review it proves HRS-specific, it could support multiple content areas.
 - [x] **Recency:** ✅ YES — 2025 (very recent)
 - [x] **HRS-specific?** ❌ **NO** — Title focuses on "governance, actors, institutions" in hydrogen economy (NOT HRS-specific)
 - [x] **Methodology clear?** ✅ LIKELY YES
-- [x] **Citation strength:** ❌ WEAK — Brand new 2025 (0-2 citations at best)
+- [x] **Citation strength:** ❌ WEAK — Brand new 2025 (0-2 citations at best). 18 citations
 - [x] **Reference list depth:** ✅ LIKELY YES
 - [x] **Is this a review paper?** ✅ YES — Overview format
 
@@ -148,7 +147,7 @@ If after review it proves HRS-specific, it could support multiple content areas.
 - [x] **Recency:** ✅ YES — 2024
 - [x] **HRS-specific?** ✅ **YES** — Title explicitly "hydrogen refueling station" and "operation modes"
 - [x] **Methodology clear?** ✅ YES — "Economic analysis" implies rigorous quantitative methodology
-- [x] **Citation strength:** ⚠️ NEEDS CHECK — 2024 (need 5+). **Verify on Google Scholar** (newer papers may have few citations)
+- [x] **Citation strength:** ⚠️ NEEDS CHECK — 2024 (need 5+). **Verify on Google Scholar** (newer papers may have few citations). 38 citations
 - [x] **Reference list depth:** ✅ LIKELY YES — Economics papers typically have 40-60 citations
 - [x] **Is this a review paper?** ❌ NO — Original research (not review)
 
@@ -176,7 +175,7 @@ If after review it proves HRS-specific, it could support multiple content areas.
 - [x] **Recency:** ✅ YES — 2023 (recent)
 - [x] **HRS-specific?** ✅ **YES** — Title explicitly "Locate Hydrogen Fuel Refueling Stations"
 - [x] **Methodology clear?** ✅ YES — "Review of Optimization Strategies" implies clear methodology coverage
-- [x] **Citation strength:** ⚠️ NEEDS CHECK — 2023 (need 20+). **Verify on Google Scholar** (review papers typically well-cited)
+- [x] **Citation strength:** ⚠️ NEEDS CHECK — 2023 (need 20+). **Verify on Google Scholar** (review papers typically well-cited). 44 citations
 - [x] **Reference list depth:** ✅ **YES** — Review papers typically have 60-100+ citations
 - [x] **Is this a review paper?** ✅ **YES** — Explicitly "A Review" (BONUS)
 
@@ -191,14 +190,28 @@ If after review it proves HRS-specific, it could support multiple content areas.
 
 **Notes:** Excellent candidate for Content Area 3 (Spatial Planning) or Content Area 7 (Strategic Network Design). Review of optimization methods for HRS site selection is critical for your thesis scenario development (Corridor, Cluster, Hub models). Provides methodological framework for analyzing different HRS integration scenarios. Strong fit for spatial planning and network design sections of Chapter 4.
 
-### Paper Evaluation Template
+---
 
-**Paper:** [Title]
-**Authors:** [Names]
-**Journal:** [Journal name]
-**Year:** [Publication year]
-**DOI/Link:** [URL or DOI]
+## EVALUATION RESULTS: 7 NEW PAPERS (User Search Results)
 
+### Paper 1: Raeesi et al. 2024
+
+**Paper:** Hydrogen supply chain and refuelling network design: assessment of alternative scenarios for the long-haul road freight in the UK
+**Authors:** [Ramin Raeesi a
+, 
+Christa Searle b
+, Nazmiye Balta-Ozkan c
+, 
+Laura Marsiliani d
+, 
+Mi Tian e
+, 
+Philip Greening b]
+**Journal:** [International Journal of Hydrogen Energy]
+**Year:** [2024]
+**DOI/Link:** [https://doi.org/10.1016/j.ijhydene.2023.03.474]
+**Citations**: 14
+**Content Area:** [1]
 #### Quality Checks (Mandatory - all should be YES)
 - [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
 - [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
@@ -232,12 +245,13 @@ If after review it proves HRS-specific, it could support multiple content areas.
 
 ### Paper Evaluation Template
 
-**Paper:** [Title]
-**Authors:** [Names]
-**Journal:** [Journal name]
-**Year:** [Publication year]
-**DOI/Link:** [URL or DOI]
-
+**Paper:** [A Review of the Optimization Strategies and Methods Used to Locate Hydrogen Fuel Refueling Stations]
+**Authors:** [by Nithin Isaac andAkshay K. Saha]
+**Journal:** [energies]
+**Year:** [2023]
+**DOI/Link:** [https://doi.org/10.3390/en16052171]
+**Citations:** [44]
+**Content Area:** [2]
 #### Quality Checks (Mandatory - all should be YES)
 - [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
 - [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
@@ -271,12 +285,18 @@ If after review it proves HRS-specific, it could support multiple content areas.
 
 ### Paper Evaluation Template
 
-**Paper:** [Title]
-**Authors:** [Names]
-**Journal:** [Journal name]
-**Year:** [Publication year]
-**DOI/Link:** [URL or DOI]
-
+**Paper:** [Multi-year energy performance data for an electrolysis-based hydrogen refueling station]
+**Authors:** [Matteo Genovese a
+, 
+David Blekhman b
+, 
+Michael Dray c
+, Petronilla Fragiacomo a]
+**Journal:** [International journal of hydrogen energy]
+**Year:** [2024]
+**DOI/Link:** [https://doi.org/10.1016/j.ijhydene.2023.04.084]
+**Citations:** [31]
+**Content Area:** [5]
 #### Quality Checks (Mandatory - all should be YES)
 - [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
 - [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
@@ -310,12 +330,14 @@ If after review it proves HRS-specific, it could support multiple content areas.
 
 ### Paper Evaluation Template
 
-**Paper:** [Title]
-**Authors:** [Names]
-**Journal:** [Journal name]
-**Year:** [Publication year]
-**DOI/Link:** [URL or DOI]
-
+**Paper:** [Current standards and configurations for the permitting and operation of hydrogen refueling stations]
+**Authors:** [Matteo Genovese a
+, Viviana Cigolotti b, Elio Jannelli c, Petronilla Fragiacomo a]
+**Journal:** [International journal of hydrogen energy]
+**Year:** [2023]
+**DOI/Link:** [https://doi.org/10.1016/j.ijhydene.2023.01.324]
+**Citations:** [62]
+**Content Area:** [6]
 #### Quality Checks (Mandatory - all should be YES)
 - [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
 - [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
@@ -349,12 +371,18 @@ If after review it proves HRS-specific, it could support multiple content areas.
 
 ### Paper Evaluation Template
 
-**Paper:** [Title]
-**Authors:** [Names]
-**Journal:** [Journal name]
-**Year:** [Publication year]
-**DOI/Link:** [URL or DOI]
+**Paper:** [Development of strategic hydrogen refueling station deployment plan for Korea]
+**Authors:** [Hyunjoon Kim
+, 
+Myungeun Eom
+, Byung-In Kim
 
+]
+**Journal:** [International Journal of Hydrogen Energy]
+**Year:** [2020]
+**DOI/Link:** [https://doi.org/10.1016/j.ijhydene.2020.04.246]
+**Citations:** [92]
+**Content Area:** [7]
 #### Quality Checks (Mandatory - all should be YES)
 - [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
 - [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
@@ -386,6 +414,96 @@ If after review it proves HRS-specific, it could support multiple content areas.
 
 **Notes:** [Brief summary of why you accepted/rejected. For accepted papers, note which thesis components it supports]
 
+### Paper Evaluation Template
+
+**Paper:** [Design and techno-economic analysis of solar energy based on-site hydrogen refueling station]
+**Authors:** [Reyhan Atabay a
+, Yılser Devrim ]
+**Journal:** [International Journal of Hydrogen Energy]
+**Year:** [2024]
+**DOI/Link:** [https://doi.org/10.1016/j.ijhydene.2024.07.166]
+**Citations:** [43]
+**Content Area:** [9]
+#### Quality Checks (Mandatory - all should be YES)
+- [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
+- [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
+- [ ] **HRS-specific?** Focuses on Hydrogen Refueling Stations, NOT general hydrogen infrastructure, hydrogen production, or storage?
+- [ ] **Methodology clear?** Paper explains data sources, formulas, simulations, surveys, or empirical methods transparently?
+- [ ] **Citation strength:** Check Google Scholar citation count. Strong if:
+  - 2023-2025 paper: 5+ citations
+  - 2021-2022 paper: 20+ citations
+  - 2019-2020 paper: 50+ citations
+- [ ] **Reference list depth:** 50-100 citations indicates well-researched paper (check PDF)
+- [ ] **Is this a review paper?** (Bonus points for "Hydrogen refueling," "HRS," or "hydrogen fueling infrastructure review")
+
+#### Content Fit (All should be YES)
+- [ ] **Content area:** Maps to one of 10 areas below (Supply Chain, Logistics, Spatial Planning, Economics, Reliability, Regulatory, Network Design, Market, Techno-Economic Review, EU Policy)
+- [ ] **Focus on HRS, not general H₂?** (Reread abstract - should mention "refueling," "fueling station," "HRS," NOT just "hydrogen infrastructure")
+- [ ] **Empirical data or case studies?** Contains real-world data, simulation results, or case studies (NOT purely theoretical)?
+- [ ] **Relevant to thesis focus areas?** Addresses at least one of:
+  - Regulatory barriers to HRS deployment
+  - Logistical challenges in H₂ supply to HRS
+  - Technical challenges (reliability, maintenance, design)
+  - Integration scenarios (corridors, urban, industrial hubs)
+  - Cost-benefit or economic viability analysis
+
+#### Decision
+- [ ] **ACCEPT** - Add to core 10 papers (meeting all quality + content criteria)
+- [ ] **SHORTLIST** - Strong candidate, save for secondary review
+- [ ] **SUPPLEMENTARY** - Useful but not core (only accept if 10 core papers are too hard to find)
+- [ ] **REJECT** - Does not meet criteria (too old, not HRS-specific, insufficient rigor, etc.)
+
+**Notes:** [Brief summary of why you accepted/rejected. For accepted papers, note which thesis components it supports]
+
+### Paper Evaluation Template
+
+**Paper:** [Review of hydrogen infrastructure: The current status and roll-out strategy]
+**Authors:** [Changjong Kim a b
+, 
+Sang Hoon Cho a c
+, 
+Sung Min Cho d
+, 
+Youngseung Na e
+, 
+Sangwon Kim f
+, Dong Kyu Kim a g]
+**Journal:** [International Journal of Hydrogen Energy]
+**Year:** [2023]
+**DOI/Link:** [https://doi.org/10.1016/j.ijhydene.2022.10.053]
+**Citations:** [128]
+**Content Area:** [10]
+
+#### Quality Checks (Mandatory - all should be YES)
+- [ ] **Peer-reviewed?** Published in recognized journal (Int. J. Hydrogen Energy, Applied Energy, Nature Energy, Transportation Research, Energy Policy, etc.)?
+- [ ] **Recency:** Published 2019-2025? (Hydrogen field moves fast; older papers acceptable only if highly cited)
+- [ ] **HRS-specific?** Focuses on Hydrogen Refueling Stations, NOT general hydrogen infrastructure, hydrogen production, or storage?
+- [ ] **Methodology clear?** Paper explains data sources, formulas, simulations, surveys, or empirical methods transparently?
+- [ ] **Citation strength:** Check Google Scholar citation count. Strong if:
+  - 2023-2025 paper: 5+ citations
+  - 2021-2022 paper: 20+ citations
+  - 2019-2020 paper: 50+ citations
+- [ ] **Reference list depth:** 50-100 citations indicates well-researched paper (check PDF)
+- [ ] **Is this a review paper?** (Bonus points for "Hydrogen refueling," "HRS," or "hydrogen fueling infrastructure review")
+
+#### Content Fit (All should be YES)
+- [ ] **Content area:** Maps to one of 10 areas below (Supply Chain, Logistics, Spatial Planning, Economics, Reliability, Regulatory, Network Design, Market, Techno-Economic Review, EU Policy)
+- [ ] **Focus on HRS, not general H₂?** (Reread abstract - should mention "refueling," "fueling station," "HRS," NOT just "hydrogen infrastructure")
+- [ ] **Empirical data or case studies?** Contains real-world data, simulation results, or case studies (NOT purely theoretical)?
+- [ ] **Relevant to thesis focus areas?** Addresses at least one of:
+  - Regulatory barriers to HRS deployment
+  - Logistical challenges in H₂ supply to HRS
+  - Technical challenges (reliability, maintenance, design)
+  - Integration scenarios (corridors, urban, industrial hubs)
+  - Cost-benefit or economic viability analysis
+
+#### Decision
+- [ ] **ACCEPT** - Add to core 10 papers (meeting all quality + content criteria)
+- [ ] **SHORTLIST** - Strong candidate, save for secondary review
+- [ ] **SUPPLEMENTARY** - Useful but not core (only accept if 10 core papers are too hard to find)
+- [ ] **REJECT** - Does not meet criteria (too old, not HRS-specific, insufficient rigor, etc.)
+
+**Notes:** [Brief summary of why you accepted/rejected. For accepted papers, note which thesis components it supports]
 ---
 
 ## Section 2: 10 Targeted Search Queries
