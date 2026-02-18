@@ -37,3 +37,15 @@ ein Produkt oder eine Dienstleistung vom Rohstofflieferanten bis zum Endverbrauc
 gen. Die Koordination und Integration der Elemente der Lieferkette wird auch als Supply-
 Chain-Management bezeichnet.3
 
+Formulierung der Forschungsfragen
+➢ Inwiefern beeinflussen innovative Anwendungen von K¸nstlicher Intelligenz und Ma-
+schinelles Lernen im Supply-Chain-Management die Effizienz, Flexibilit‰t und Nach-
+haltigkeit von Unternehmen in Industrie 4.0 und Industrie 5.0?
+➢ Welche Auswirkungen haben K¸nstliche Intelligenz und Maschinelles Lernen im Be-
+reich der intelligenten Transport- und Routenplanung auf die Reduzierung von Liefer-
+zeiten und Kosten im Supply-Chain-Management?
+➢ Inwiefern unterscheiden sich verschiedene K¸nstliche Intelligenz- und Maschinelles
+Lernen-Technologien in ihrer Anwendbarkeit und Effizienz im Supply Chain Manage-
+ment?
+
+
