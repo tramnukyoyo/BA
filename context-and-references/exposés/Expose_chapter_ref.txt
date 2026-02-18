@@ -49,3 +49,24 @@ Lernen-Technologien in ihrer Anwendbarkeit und Effizienz im Supply Chain Manage-
 ment?
 
 
+Zielsetzung und Aufgabenstellung
+Nach der Einf¸hrung des Themas und der Beschreibung seiner Relevanz in der Einleitung,
+werden im Rahmen dieser Abschlussarbeit die Grundlagen der wesentlichen Begriffe Supply-
+Chain-Management, K¸nstliche Intelligenz und Maschinelles Lernen erl‰utert. Nachdem ein
+Verst‰ndnis ¸ber die relevanten Begriffe verschaffen wurde, wird eine ‹bersicht der Industrie
+4.0 und 5.0 dargestellt. Dabei sollen der Fortschritt und die Implementierung von intelligenten
+KI-Anwendungen, sowie die Relevanz einer solchen Technik in jedem Unternehmensbereich,
+aber insbesondere in der Logistik und der Supply-Chain verdeutlicht, werden. Im Anschluss
+an das Kapitel der „Theoretischen Grundlagen“ werden diverse KI-Technologien, welche im
+Supply-Chain-Management derzeitig angewendet oder sich noch in der Entwicklungsphase
+befinden, vorgestellt. Durch dieses Kapitel soll dem Leser weitergegeben werden, wie die ver-
+schiedenen Methoden funktionieren und eventuell zusammen agieren, um schlussendlich ein-
+leitend f¸r das n‰chste Kapitel zu sein, welches zugleich die Forschungsfragen beantworten
+sollen. Im Abschnitt „Auswirkungen und Potenziale von KI und ML in der Logistik“ werden die
+Vorteile bzw. Nachteile der Integration von KI-System beschrieben. Dabei liegt der Fokus auf
+der Effizienz, Flexibilit‰t sowie der Nachhaltigkeit. Zum Ende erfolgt eine Revision der Tech-
+nologien, wobei diese ebenfalls hinsichtlich des Potenzials und der Anwendbarkeit bewertet
+werden. Am Ende der Abschlussarbeit sollen die Funktionsweise, die Signifikanz und die Po-
+tenziale einer Integration von K¸nstlichen Intelligenz Anwendungen im Supply-Chain-Manage-
+ment ¸bermittelt werden.
+
