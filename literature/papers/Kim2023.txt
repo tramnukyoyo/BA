@@ -1,0 +1,476 @@
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+Available online at www.sciencedirect.com
+ScienceDirect
+
+journal homepage: www.elsevier.com/locate/he
+
+Review Article
+Review of hydrogen infrastructure: The current status and roll-out strategy
+Changjong Kim a,b, Sang Hoon Cho a,c, Sung Min Cho d, Youngseung Na e, Sangwon Kim f, Dong Kyu Kim a,g,*
+a School of Mechanical Engineering, Chung-Ang University, Seoul 06974, South Korea b Policy Division, H2Korea, Seoul 06716, South Korea c Division of Energy, Chungcheongbuk-do, Provincial Government Chungcheongbuk-do 28515, South Korea d Korea Gas Safety Corporation, Chungcheongbuk-do, 28443, South Korea e Department of Mechanical and Information Engineering, University of Seoul, Seoul 02504, South Korea f Bio Sensor and Materials Group, KIST Europe, Saarbrueken 66123, Germany g School of Computer Science and Engineering, Chung-Ang University, Seoul 06974, South Korea
+
+highlights
+ The current status of the hydrogen supply infrastructure in countries was investigated.  Each country tries to produce hydrogen by utilizing existing industrial facilities.  Hydrogen is usually stored in compressed gas form.  Hydrogen gas is transported via tube trailers or pipelines.  Roll-out strategy for Korea is introduced as guidelines for second-mover countries.
+
+article info
+Article history: Received 24 August 2022 Received in revised form 5 October 2022 Accepted 8 October 2022 Available online 1 November 2022
+Keywords: Hydrogen society Hydrogen infrastructure Hydrogen production Hydrogen transportation Hydrogen refueling station Roll-out strategy
+
+abstract
+The current status of the hydrogen supply infrastructure was investigated to understand progress toward the realization of a hydrogen society. We also tried to help develop a proper strategy for the soft landing of the hydrogen industry by analyzing the roll-out strategy in Korea, one of the first movers into the hydrogen industry. First, the hydrogen supply infrastructure was analyzed. 96% of hydrogen is produced from fossil fuels, with the steam methane reforming method being the most widely used. Hydrogen is usually stored in compressed gas form and transported to refueling stations to consumer via tube trailers or pipelines depending on the delivery distance. Next, the characteristics of the hydrogen infrastructure in countries were examined. Each country tries to produce and supply hydrogen by utilizing existing industrial facilities. The USA and Japan produce hydrogen via natural gas (NG) reforming over 90% and transport the gas using exited pipelines. While the EU produces hydrogen from renewable energy sources, and considering importing the gas from EU members. Finally, we introduced a roll-out strategy for Korea as guidelines for second-mover countries. Korea mainly produces hydrogen as a by-product in existing liquid NG facilities, as well as importing liquefied hydrogen from abroad. Since most hydrogen is transported via pipelines, it is unevenly distributed across the country. Attempts at solving this imbalance in the supply of hydrogen will be by applying hydrogen
+
+* Corresponding author. School of Mechanical Engineering, Chung-Ang University, Seoul 06974, South Korea. E-mail address: dkyukim@cau.ac.kr (D.K. Kim).
+https://doi.org/10.1016/j.ijhydene.2022.10.053 0360-3199/© 2022 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+1702
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+extractors in local plants or developing electrolysis technologies. The Korean government offers subsidies to encourage the participation of private companies to expand the installation of hydrogen refueling stations. Through the supports, the government try to decrease the price of hydrogen gas to 2500 won/kg until 2050. Our findings provide the current status of hydrogen society development and can be used to suggest guidelines for the development of proper hydrogen-fueling strategies for countries.
+© 2022 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+Contents
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1702 The hydrogen infrastructure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1704
+Hydrogen production . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1704 Hydrogen storage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1705 Hydrogen transportation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1705 Hydrogen refueling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1707
+Hydrogen charging methods at hydrogen refueling stations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1707 Configuration of hydrogen refueling stations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1707 Efforts to build hydrogen infrastructure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1708 The current status of hydrogen refueling stations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1708 The USA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1708 Germany . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1709 Japan . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1709 China . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1710 The roll-out strategy for hydrogen infrastructure in the Republic of Korea . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1711 The current hydrogen infrastructure status in Korea . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1711 The roll-out strategy for hydrogen infrastructure in the Republic of Korea . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1712 Roadmap to hydrogen economy of Korea in 2019 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1712 Basic plan to build hydrogen economy of Korea in 2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1713 Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1714 Declaration of competing interest . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1714 Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1714 References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1714
+
+Introduction
+The hydrogen economy, first introduced by American futurist Jeremy Rifkin in 2002 [1], refers to a new economic system powered by hydrogen instead of oil. Since hydrogen is an unrestricted energy source as anyone can be both a consumer and a supplier regardless of region, the advent of the hydrogen economy will have a huge rippling effect on the energy industry [2,3]. Furthermore, hydrogen is an eco-friendly energy source that does not produce harmful by-products during power generation, and so the future value of hydrogen is immense. Therefore, the size of the hydrogen market is expected to grow to around 12 trillion dollars by 2050 [4]. Hydrogen society consists of stages of production, transportation, supply, and utilization as shown in Fig. 1. To successfully realize the hydrogen economy, there must be balance at all stages of development.
+
+Among the stages of the current development process, the hydrogen utilization sector is the fastest growing. Fuel cell electric cars (FCEVs) are the most renowned example in the hydrogen utilization sector. Increasing the number of hydrogen cars can reduce carbon dioxide (CO2) emissions. The International Energy Agency (IEA) analyzed that CO2 emission can be decreased to 60% by applying fuel cell car instead of diesel car [5]. They also predicted that 2.4 million FCEVs will be supplied to the transportation market by 2030 and around 7% of CO2 emissions can be reduced as shown in Fig. 2 [6]. Therefore, countries around the world are also trying to expand the supply of FCEVs. In Europe, Germany and Norway aim to supply 9000 FCEVs by 2025 by providing a 40% tax benefit compared to conventional cars. In addition, pilot projects for city buses and trucks are being conducted in many European countries [7]. Connecting Europe Facility supports 40 million Euro to drive 200 hydrogen fuel cell electric buses and supporting infrastructure in each of Denmark, Latvia and the UK [8]. The distribution of eco-friendly cars is being widely promoted in North
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+1703
+
+Fig. 1 e The entire hydrogen energy utilization process.
+
+America. For instance, California is trying to expand the supply of FCEVs by providing subsidies of 5000 USD per unit for smalland medium-sized cars and up to 11,700 USD per unit for medium- and large-sized cars [9,10]. In addition, pilot projects are being conducted in collaboration with commercial companies for manufacturing fuel cell-powered buses and trucks [11]. The Japanese council is focusing on the development of commercial vehicles such as hydrogen city buses and trucks. They are trying to construct a transportation system powered by hydrogen by supplying 800,000 passenger cars and 1200 buses by 2030 [11,12]. China is trying to supply 1 million hydrogenpowered vehicles by 2030 according to a Chinese road map for hydrogen electric vehicle roll-out [13]. They are trying to develop hydrogen-fueled buses and trucks through collaboration with Ballard Inc [14]. Hydrogen drones, ships, and trains are in the developmental stage, as well. Especially Hyundai Motor Corporation proposes the concept of Urban Air Mobility, which connects the sky and the ground to overcome the constraints on geography and time, by developing core technologies including above hydrogen technologies [15].
+To activate the hydrogen industry, the construction of hydrogen infrastructure must proceed, and so countries around the world are making great efforts to accomplish this. Countries usually produce hydrogen using their strengths. USA produces hydrogen gas by reforming abundant natural gas reserved in the country [16], and industrial countries such as Korea and Japan produce the gas using existing industrial facilities [17]. EU and Australia, countries with abundant renewable energy sources, use renewable energy to produce hydrogen [18]. To further reduction of CO2 emission, however, most countries try to produce green hydrogen because it is able to lower the carbon emission significantly. Therefore, various international cooperation is being conducted among countries. For example, Japan and Australia are conducting project to
+
+demonstrate generation of blue hydrogen using reforming of brown coal together with carbon capture and storage. 53 companies joined this project and they are plan to commercialize until 2030 [19]. In the case of Europe in 2020, the cumulative number of hydrogen refueling stations in operation was 139 and the number of FCEVs supplied was 2360 (Fig. 3) [20]; each hydrogen refueling station can supply 17 FCEVs. Unfortunately, around 47.5% of the FCEVs in Europe are in Germany and France and 64% of hydrogen refueling stations are located in Germany, which means that the rest of Europe does not receive enough hydrogen gas supplies. In the USA, hydrogen refueling stations are being built around California as the number of FCEVs increases (Fig. 4) [21]. However, the number of hydrogen refueling stations outside of California is only 8, and so hydrogen infrastructure is not being developed evenly throughout the USA. Therefore, it is unclear whether hydrogen gas will be supplied sufficiently even in Europe and America where demonstration projects are in progress. Moreover, hydrogen refueling stations need at least two years or more to build whereas facilities for the mass production of FCEVs have already been equipped by auto manufacturers such as Hyundai and Toyota. Therefore, the problem of supplying sufficient hydrogen seems to be becoming more serious [22].
+Since the hydrogen economy is in the early stage, it is important to simultaneously develop hydrogen-related industries. In particular, hydrogen production and the hydrogen supply chain are weak, thereby hindering the development and activation of the entire hydrogen industry. Building hydrogen refueling stations is also in difficulties, because it is expensive and securing appropriate building sites is difficult. That is, it is difficult to construct hydrogen infrastructure only at the private and corporate levels. Therefore, overall strategy for constructing hydrogen infrastructure and aggressive support from governments are required.
+
+1704
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+Fig. 2 e Changes in CO2 emissions due to fuel cell car.
+
+In this study, we investigated the worldwide efforts toward constructing hydrogen infrastructure and introduced roll-out strategies for Korea to help soft-landing of a hydrogen society. By examining the development of the hydrogen infrastructure in Korea, where a large number of FCEVs are already in operation, we contribute to the establishment of a proper roadmap for hydrogen supply in other countries. First, current status of technologies for hydrogen infrastructure was investigated according to stages. Next, the hydrogen supply chain for each country was reviewed, and characteristics of their infrastructure was investigated. Finally, we examined detailed strategies in Korea for realizing hydrogen society to help second-mover countries. The findings from the study could help understand the current status of the hydrogen economy and establish a strategy for realizing the hydrogen society.
+The hydrogen infrastructure
+Hydrogen supply refers to the entire process from the production of hydrogen gas to consumption by the final
+
+purchaser. It includes various devices and pieces of infrastructure required for the entire process. In this section, we provide the elements of the hydrogen infrastructure as production, storage, transport, and refueling.
+Hydrogen production
+Hydrogen production technologies can be divided into those using fossil fuels and other technologies. In the first case, hydrogen gas can be produced by reforming methane gas obtained from fossil fuels, biomass, and so on, or as a by-product of industrial processes such as petrochemical and steel mills [23,24]. For example, Australia uses abundant wind and solar energy to produce hydrogen from natural gas or coal [25]. Hydrogen can also be obtained from various methods (e.g., water electrolysis) using renewable energy sources. Saudi Arabia builds 4 GW class green hydrogen production facilities using wind and solar energy. They plan to generate 650 ton/day of hydrogen [26]. Various methods for obtaining hydrogen gas are shown in Fig. 5.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+1705
+
+Fig. 3 e The cumulative number of hydrogen refueling stations in operation and FCEVs sold in Europe.
+
+electrolyte membrane electrolyzer are commercially available, but they are still uncompetitive with other technologies using fossil fuels [29].
+The current status of raw materials used for hydrogen production worldwide is 48% from natural gas (NG), 30% from oil, 18% from coal, and 4% from water electrolysis (Table 1) [30]. Although hydrogen gas is regarded as an eco-friendly energy source, fossil fuels are still widely used as the raw materials for its production.
+Among the commercialized hydrogen production technologies, steam methane reforming (SMR) is the most economical and commonly used hydrogen extraction technology. Hydrogen can be obtained from SMR through the decomposition reaction of adding steam to methane, which produces over 75% of high purity hydrogen and a low level of CO2. However, the SMR technology needs an operating temperature of over 750 C, so its energy efficiency is low [32]. In addition, CO2 reforming uses CO2 to produce hydrogen, thereby reducing this greenhouse gas emission. However, the efficiency of CO2 reforming is low due to the high operating temperature and frequent coking [33]. Although average CO2 conversion reaches about 55% based on previous literatures, technical advances are still needed for commercialization [34]. Although the energy efficiency of the partial oxidation reaction is relatively high, less than 35% of low purity hydrogen is produced [35]. Similarly, although the auto-thermal reforming reaction also has relatively high energy efficiency because the endothermic and exothermic reactions occur simultaneously, the purity level of the produced hydrogen is low [36].
+
+Hydrogen storage
+
+Fig. 4 e The cumulative number of hydrogen-refueling stations in operation and FCEVs sold in the USA.
+Hydrogen production methods using fossil fuels include fossil-fuel reforming and direct decomposition. Although hydrogen can be obtained from fossil-fuel reforming technology by using existing energy, CO2 can be generated during the process [23]. By IEA, over 100 gCO2/MJ of CO2 is emitted during the reforming of fossil fuels to produce hydrogen as shown in Fig. 6 [27]. On the other hands, obtaining hydrogen as a by-product from petrochemical processing or steel mills via a refining process is the cheapest hydrogen production method. Because hydrogen can be produced without any additional investment.
+Hydrogen also can be obtained by using eco-friendly methods such as electrolysis using surplus power, thermochemical, biological, or optical decomposition [28]. However, among these technologies, the only one to have entered the commercialization stage is electrolysis. Alkaline and polymer
+
+Hydrogen can be stored as a gas, liquid, or solid depending on the state. Hydrogen can be stored as compressed gas, which is the most widely used hydrogen storage method [37]. However, compressed hydrogen gas is not suitable for bulk hydrogen storage because leakage problems in the storage cylinders can occur. Storing a large amount of hydrogen can be achieved in the liquid state. Hydrogen becomes a liquid below À253 C, with a specific volume 1/800 times lower than that of hydrogen gas [38]. Therefore, the storage density of liquefied hydrogen is four times higher than that of hydrogen gas compressed to 200 bar [39] and is safer as well. However, largescale facility investment is required for liquefying hydrogen. Solid hydrogen storage is the method for storing hydrogen in metal hydrides. It is safe because the hydrogen is stored under low pressure. However, the storage capacity is relatively low of 0.06 kg/L, and expensive [40]. On the other hand, hydrogen can also be stored using chemical reactions. Liquid organic hydrogen carriers (LOHCs) are organic compounds that can be used as a storage medium for hydrogen. Although LOHCs can deliver hydrogen under atmospheric pressure and room temperature, an additional dehydrogenation process to use the hydrogen is needed [31]. The characteristics of the various hydrogen storage methods are listed in Table 2.
+Hydrogen transportation
+The transportation of hydrogen depends on the type of hydrogen storage. Hydrogen gas can be transported by
+
+1706
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+Fig. 5 e Various methods for hydrogen production.
+
+Fig. 6 e Comparison of CO2 emission depending on hydrogen production methods.
+pipelines or tube trailers. Pipelines are expensive (the construction cost of a pipeline is around 80,000 USD per 100 m), so
+
+hydrogen transportation via this method is only economical when a large amount of hydrogen is moved [43]. On the other hands, the cost of transportation via tube trailers is relatively low, but there is a risk of explosion [44]. This method is suitable for small-scale hydrogen transportation. Therefore, pipeline is usually used to transport hydrogen near petrochemical complexes where large amount of hydrogen can be produced, and tube trailer is usually used when hydrogen is transported to remote area.
+Liquefied hydrogen in the form of liquid hydrogen, ammonia, or LOHC can be transported using a tanker lorry even in cities due to its excellent safety. However, large-scale investment is required for liquefaction facilities and energy efficiency is low. Ammonia as a hydrogen transportation medium liquefies at À33 C, and so its energy efficiency is relatively high [45]. Furthermore, the transportation of hydrogen as ammonia has many advantages because the existing ammonia infrastructure can be used for transportation and storage. However, the dehydrogenation technology to extract hydrogen from ammonia is still in the development stage, and so further progress is needed [46]. The characteristics of hydrogen transportation are listed in Table 3.
+
+Table 1 e Classification of hydrogen production methods [31].
+
+Classification
+
+Method
+
+Raw Materials
+
+Fossil fuels Non-fossil fuels
+
+Steam reforming CO2 reforming Partial oxidation reaction Auto-thermal reforming Direct decomposition Electrolysis Thermochemical decomposition
+
+NG, LPG, Naphtha NG Heavy oil, Coal NG, LPG, Naphtha NG Water Water
+
+Biological decomposition Optical decomposition
+LPG, liquid petroleum gas; NG, natural gas.
+
+Water, biomass Water
+
+Energy Source
+Heat Heat Heat Heat Heat Electricity High-temperature heat (nuclear, solar) Heat, Microorganism Solar
+
+Technical Readiness Level
+Commercial use e Commercial use Commercial use Commercial use Commercial use Under investigation
+Under investigation Under investigation
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+1707
+
+Table 2 e Characteristics of the hydrogen storage methods [41,42].
+
+Hydrogen Form
+
+Method
+
+Gas
+
+Hydrogen gas is compressed under high pressure.
+
+Liquefied
+
+Liquid
+
+LOHC
+
+Hydrogen is cooled to the cryogenic temperature of À253 C and stored in a cylinder with a double-walled structure. Hydrogen is chemically stored and transported using organic compounds such as toluene.
+
+Ammonia
+
+Hydrogen is converted to ammonia for storage.
+
+Solid
+
+Hydrogen is adsorbed onto a metal hydride.
+
+LOHC, liquid organic hydrogen carrier.
+
+Characteristics
+The technology has been commercialized. Not suitable for mass storage. High storage density and good safety. The risk of explosion is low. Investment in large-scale facilities is required. Transportation is possible at room temperature under atmospheric pressure. Low flammability and good safety. Difficult to transport. Additional hydrogenation and dehydrogenation processes are required. Storage and delivery require high temperatures. Risk of toxicity. An additional dehydrogenation process is required. The safest method. Storage capacity is limited.
+
+Table 3 e The characteristics of hydrogen transportation [43,46].
+
+Methods
+
+Gas
+
+Pipelines
+
+Tube trailer
+
+Liquefied
+
+Liquefied
+
+Tank lorry
+
+Liquid
+
+Tank lorry
+
+Characteristics
+- Continuous supply for small-scale and short-distance
+- Continuous supply for large-scale and long-distance
+- Low energy loss - High fixed cost and low variable cost - Intermittent supply for small/medium-scale
+and medium/long-distance - Good for supplying small-scale and short-distance - Low energy loss - Low fixed cost and high variable cost - About 200 million won for 330 kg, 200 bar vessel - Connection with liquefaction manufacturing
+and storage facilities - Supply for medium/large-scale and medium/long-distance - Greenhouse gas emissions due to electricity
+consumed during liquefaction - High energy loss - High fixed cost and low variable cost - Supply for medium/large-scale and medium/long-distance - Connection with manufacturing facilities of liquid
+substances (ammonia, LOHC, etc.)
+
+Hydrogen refueling
+Hydrogen charging methods at hydrogen refueling stations Hydrogen refueling stations are supplied with hydrogen either centrally (off-site) or locally (on-site). For the central supply method, hydrogen is produced in a certain area and then transported to the hydrogen refueling station via a pipeline or tube trailer. Although the cost of hydrogen production is low, the cost of transportation become high [43,45]. On the other hand, the local supply method produces hydrogen at the hydrogen refueling station by reforming liquid petroleum gas (LPG) or NG, or via water electrolysis. If the hydrogen refueling station is far from the hydrogen production site, this refueling
+
+method can reduce transportation costs. However, the installation cost is high because the hydrogen production facility is required at the hydrogen refueling station [43,45]. The types of hydrogen recharging at the refueling stations are listed in Table 4. In case of Korea, 93% of hydrogen is supplied to refueling station by tube trailer, 4% of hydrogen is supplied by pipeline, and 3% of hydrogen is generated by reforming in the station as shown in Fig. 7 [47].
+Configuration of hydrogen refueling stations Hydrogen refueling stations are important facilities for hydrogen-fueled cars and buses. They consist of a compressor, a storage vessel, a chiller, and a dispenser, as
+
+1708
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+Table 4 e Hydrogen charging methods at hydrogen refueling stations [43,45].
+
+Hydrogen Supply
+
+Hydrogen Form
+
+Specifications
+
+Local supply (on-site) Central supply (off-site)
+
+Steam reforming Water electrolysis Liquefaction
+Gaseous
+
+CGH2 CGH2 LH2 LCGH2 CGH2
+
+NG, Methane, Methanol, LPG. Electricity, wind, solar. Direct refueling liquid hydrogen. Refueling hydrogen after converting to LCGH2. Cylinder, tube trailer, pipeline.
+
+CGH2, compressed gaseous hydrogen; LH2, liquefied hydrogen; LCGH2, liquefied hydrogen as compressed gas.
+
+prevented by using an ionic liquid. Although it can operate at low suction pressure and supply a stable mass flow, maintenance costs are high [51].
+Type 1 to type 4 cylinders can be used for storage at hydrogen refueling stations. Type 1 vessels are made from metallic materials, and so they are cheap to produce but heavy. Therefore, type 1 vessels are commonly used in industries. On the other hands, type 4 vessels use plastic liners, and so they are light. Due to good weight performance, type 4 vessels are promising for mobile application. Nevertheless, it is difficult to find manufacturers and they are susceptible to heat, so that more research is required. The capacity of a storage vessel is usually around 300 L and the storage pressure is around 800 bar [42].
+
+Efforts to build hydrogen infrastructure
+
+Fig. 7 e Number of refueling station depending on hydrogen charge methods in Korea.
+shown in Fig. 8. Here, we briefly introduce the current states of compressor and storage vessel technologies. The types of compressors used at hydrogen refueling stations are classified as diaphragm, piston, or ionic. The diaphragm compressor uses three layers of plates to compress hydrogen gas by using hydraulic pressure; there are almost no gas leaks, maintenance costs are low, and continuous operation is possible [48]. For the piston compressor, a piston is used to compress the hydrogen gas. Although its structure is simple and maintenance is straightforward, a few gas leaks have occurred [49,50]. The operating principle of the ionic type compressor is the same as the piston compressor, while gas leaks are
+
+The current status of hydrogen refueling stations
+The number of hydrogen refueling stations around the world by region is reported in Table 5.
+In 2021, 538 hydrogen refueling stations were in operation around the world. Japan installed the largest number of hydrogen refueling stations, followed by Germany and Korea. However, more stations are needed to support the hydrogen society. In this section, we examine detailed plans to build hydrogen infrastructure focusing on the USA, Europe, Japan, and China where relatively large numbers of hydrogen refueling stations have already been installed.
+The USA
+Several states in the USA are cooperating to promote hydrogen energy policies, with California being the most active among them. The USA now produces 12 million tons of
+
+Fig. 8 e A schematic diagram of a hydrogen refueling station.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+1709
+
+Table 5 e Hydrogen refueling stations in 2021 by region [52].
+
+Region No. of Stations
+
+Countries
+
+Europe
+
+204
+
+Germany (100) France (34), England
+
+(16), Switzerland (9), Denmark (8),
+
+Austria (7)
+
+Asia
+
+274
+
+Republic of Korea (101), China (36),
+
+Japan (137)
+
+America
+
+80
+
+USA (73), Canada (7)
+
+Oceania
+
+1
+
+Australia (1)
+
+hydrogen annually, with 95% being produced via NG reforming, while hydrogen production using fossil fuels is steadily increasing [53]. Since the US Department of Energy announced that the on-site manufacturing method is promising regarding the economic feasibility of hydrogen [9], the USA has concentrated on producing hydrogen domestically rather than importing it. Therefore, research on finding new methods for hydrogen production or the modification of existing processes is currently being conducted. Current projects related to hydrogen production in the USA are summarized in Table 6.
+The method of delivering hydrogen gas in the USA depends on the transportation distance. For long-distance transportation, hydrogen is delivered by using pipelines built around industrial complexes. Tube trailers are used when the delivery distance is short (below 300 km). Meanwhile, liquid
+
+Table 6 e On-going projects related to hydrogen production in the USA [42,53].
+
+Method
+
+Research Content
+
+NG reforming Coal reforming Nuclear power plants Renewable energy Basic research
+
+More than 95% of hydrogen is generated by NG reforming. Production cost reduction from both renewable and fossil energy sources. Capturing greenhouse gases via SMR. Producing hydrogen from coal. Developing highly efficient power plants that can simultaneously produce hydrogen and electricity from coal. Carbon capture and sequestration from coal. Commercialization of hydrogen production from nuclear power plants with support from the Office of Nuclear Energy. High-temperature thermodynamic cycles and high-temperature electrolysis. Electrolysis, thermochemical conversion of biomass, permanent photosynthetic systems, and hightemperature water decomposition. Understanding the mechanism of hydrogen production. Low-cost hydrogen production using coal, catalysts, and membranes.
+
+storage is recommended for hydrogen transportation over 160 km.
+The installation and operation of hydrogen refueling stations are being led by private companies who also set the selling price of hydrogen gas. The government enacted the AB8 Act in 2014 to compensate for the initial low profitability of hydrogen refueling stations [54]. They plan to build 123 hydrogen refueling stations by 2023 with a capacity of 800e1000 kg/day and costs of 8000e10,000 USD/kg/day [55]. The hydrogen infrastructure in the USA is exhibited in Fig. 9.
+Germany
+The European strategy is to simultaneously provide demonstration projects at the EU level and plans for each country [56]. The EU promotes projects for hydrogen infrastructure and vehicle by Fuel Cells and Hydrogen Joint Undertaking established by the Council Regulation of the European Commission in 2008 [57]. Initially, the projects are focused on installing hydrogen refueling stations to supply hydrogen gas to the consumer, while currently, technology for hydrogen production using renewable energy is being developed. Because there is great interest in producing hydrogen through electrolysis using abundant renewable energies in Europe. Through the projects, European companies are able to have commercial-level technologies for hydrogen infrastructure [58]. Among the EU countries, Germany is taking the lead in building hydrogen refueling stations.
+Since 2007, The German government has implemented the national innovation program (NIP) concerning hydrogen and fuel cell technology as well as hydrogen infrastructure by supporting research and technology development [59]. Between 2007 and 2016, they invested 600 million euros to build hydrogen infrastructure and examined the basic feasibility of NIP. Germany plans to build green hydrogen production facilities that produce hydrogen using water electrolysis and renewable energy with a capacity of 40 GW by 2030 [60]. In particular, 23 pilot projects for P2G (power-to-gas) technology that produces hydrogen using surplus power from renewable energy sources such as wind power generators are being conducted throughout the country [61]. In addition, they are considering exporting green hydrogen production technology and importing hydrogen gas from EU members or Africa to satisfy the increasing demand [62].
+The German government has established a joint venture with Total, Air Liquid, and Shell, among others, to enact policies and prepare budgets to support hydrogen infrastructure. They plan to transport hydrogen gas using NG pipelines and install a hydrogen refueling station every 90 km on highways [62]. The hydrogen infrastructure in Germany is exhibited in Fig. 10.
+Japan
+Japan has the most specific strategy among the countries. In April 2014, the Japanese government declared the realization of a hydrogen society at the 4th National Energy Plan and Implementation projects at the national level [63]. It is noteworthy that they continually compare the target and current states, revise the strategy, and implement reliable policies to
+
+1710
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+Fig. 9 e Hydrogen infrastructure in the USA.
+
+realize a hydrogen society. In addition, each local government fosters hydrogen industries to prepare for a hydrogen society. In particular, Japan tried to use the Tokyo Olympics in 2021 as an opportunity to accelerate the growth of hydrogen society [64]. During the Olympics, Toyota offered about 500 fuel cell cars to the game to help transport staff and officials. They set a target of supplying 800,000 fuel cell cars by 2030 and constructing network of refueling stations [65].
+Japan produced around 3 million tons of hydrogen gas in 2018, with by-product hydrogen and NG reforming being the main production methods [66]. By 2030, they plan to reduce the price of hydrogen gas to 30 yen/Nm3 and install more than 100 hydrogen refueling stations in four major metropolitan areas and highways [67]. They also plan to import a large amount of hydrogen gas. Japan has formed the CO2-free Hydrogen Energy Supply Chain Technology Research Association (HySTRA) to establish an international CO2-free hydrogen supply chain. Through HySTRA, they are trying to establish a liquid hydrogen supply chain from Australia to Japan by developing liquefied hydrogen tanks with a capacity of 2500 m3 and CO2 separation by 2030 [68]. In addition, Japan is conducting demonstration project to store and transport hydrogen in the form of methylcyclohexane (MCH) with Brunei. Japan invests 100 million USD to produce 210 tons of hydrogen per year by 2025. Many companies such as Chiyoda chemical co. ltd and Mitsubishi Heavy Industries participate for this project [67].
+In Japan, hydrogen is usually delivered in the form of liquefied or compressed hydrogen. Moreover, research on developing high-pressure tube trailers, improving the efficiency of hydrogen liquefaction, providing hydrogen pipelines, and using ammonia electrolysis are all in progress [67]. The existing pipeline infrastructure in Japan, however, much less connected across the nation than other industrial countries [66]. Therefore, it seems that hydrogen transportation using tube trailer is more favorable in Japan.
+
+Under the supervision of the Ministry of Economy, Trade, and Industry, the Japanese government supports the Japanese Hydrogen and Fuel Cell project to build hydrogen refueling stations and better fuel cells. They plan to reduce the price of hydrogen to 30 Yen/Nm3 by 2030 and install more 100 refueling stations in the four major metropolitan areas and highways. Through the project, they try to conduct the groundwork for disseminating and using hydrogen energy [69]. The hydrogen infrastructure in Japan is shown in Fig. 11.
+China
+In 2019 at the national people's congress, China announced plans to construct hydrogen storage facilities and refueling stations, and the National Development and Reform Commission [70] classified hydrogen energy as promising. China is promoting hydrogen electric vehicles and hydrogen refueling stations through strong national-level policies and collaboration with companies. China plan to supply 1 million of hydrogen electric vehicle and over 100 thousand of fuel cell power generator through strong national-level policies and collaboration with companies by 2030 [13].
+It is expected that hydrogen will initially be produced by using fossil fuels. For example, industrial by-products such as coke-oven gas will be used to produce hydrogen [13]. However, in the long term, decentralized hydrogen production using renewable energy sources is planned from 2030 onward [71]. Although tube trailers are being considered for hydrogen transportation due to the large land area of China, liquefied hydrogen or LOHC for hydrogen delivery are also being looked at [72]. On the other hand, 36 hydrogen refueling stations are currently being built, with plans to build 1000 more by 2030 [73]. The hydrogen infrastructure in China is exhibited in Fig. 12.
+Although China is second-mover country in hydrogen industries, they foster the hydrogen industry in cooperation
+
+Fig. 10 e Hydrogen infrastructure in Germany.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+1711
+
+Fig. 11 e Hydrogen infrastructure in Japan.
+
+with other first-mover countries. For example, Beijing Gas signed a strategic cooperation agreement with SK E&S in Korea to conduct LNG and hydrogen project in China [74]. Considering the previous industrial development in China, the technology and production capacity of the hydrogen infrastructure are also expected to be improved in the near future.
+The roll-out strategy for hydrogen infrastructure in the Republic of Korea
+In this section, we report on the current status and policies of Korea where the mass production of commercial hydrogen electric vehicles started in 2013 and supplies 52.4% of the global hydrogen car market [75]. We investigated the current status of the hydrogen society in Korea and analyzed strategies for smooth hydrogen supply.
+The current hydrogen infrastructure status in Korea
+Currently, the most economical hydrogen production method in Korea is the by-product hydrogen method. By-product hydrogen is obtained through refining mixed gases containing a lot of hydrogen that is generated by the reforming or decomposition of naphtha and from steelmaking [22]. Although around 75% of domestic hydrogen is obtained as a by-product, it is used directly in the refinery for hydrogenation, desulfurization, etc. In the petrochemical industry, hydrogen is generated as a by-product of the naphthacracking and chlor-alkali processes [76]. In addition, chemical plants that already have a naphtha reforming process supply necessary hydrogen with the remainder being sold in the marketplace [77]. Therefore, by-product hydrogen gas is difficult to use as a hydrogen supply source in Korea.
+Although Korean companies have alkaline and protonexchange membrane water electrolysis technologies [78], their technical level has not yet reached the commercialization
+
+stage. Although hydrogen production technology from ammonia is cheaper than that from methane, it is insufficient for supplying consumers in Korea due to low technology readiness level [79]. Therefore, it is necessary to increase the amount of hydrogen production in Korea or to import hydrogen gas from abroad.
+Storage and transportation of hydrogen gas in Korea are built based on using by-product hydrogen. Since Korea has already established a nationwide liquid NG (LNG) supply chain, commercialization of technologies and abundant experience in utilizing high-pressure gas are already present, so that Korea has strengths in the storage and transportation of hydrogen gas [80]. However, hydrogen pipelines in Korea are mainly located around petrochemical complexes, so it seems that an imbalance in hydrogen supply has already become a serious problem [31,79]. Although around 500 tube trailers are being used for hydrogen transportation, the amount of hydrogen supplied via this route is much lower than via pipelines. Hence, a balanced hydrogen supply chain is needed.
+In 2020, around 31 hydrogen refueling stations were being built or in operation [20]. However, the capacity for hydrogen supply by these stations is insufficient for the current hydrogen electric vehicles in Korea, and even worse, most stations are located around metropolitan areas. The technical level related to hydrogen refueling stations is lower than those of overseas companies, and the rate of localization of components for the stations is relatively low (around 40%) [79]. Moreover, negative perceptions about hydrogen refueling stations and related regulations are hindering the installation of stations in urban areas.
+The hydrogen society in Korea comprises a relatively small number of hydrogen refueling stations compared to the supply of hydrogen cars. The Korean government is encouraging participation by private operators for the stations by offering subsidies for operating and constructing them. In addition, they plan to build high-capacity hydrogen refueling stations (1000 kg/day) to supply hydrogen for taxis and buses by
+
+Fig. 12 e Hydrogen infrastructure in China.
+
+1712
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+converging existing compressed NG stations [81]. Private companies are also investing around 43 trillion won and have announced hydrogen infrastructure as a new future industry [82]. With this large amount of investment, they are planning 180,000 job openings and 100 specialized companies by 2030 [83]. The hydrogen infrastructure in Korea is shown in Fig. 13.
+The roll-out strategy for hydrogen infrastructure in the Republic of Korea
+Roadmap to hydrogen economy of Korea in 2019 Korea announced roadmap to build a hydrogen industry ecosystem in 2019 [84]. They are going to complete the hydrogen infrastructure and prepare a legal and institutional foundation. By 2030, Korea plans to increase the use of hydrogen and build a large-scale hydrogen supply and demand system. After 2040, they plan to start hydrogen production overseas along with water electrolysis. The Korean government is alleviating regulations and investing in hydrogen infrastructure to implement the hydrogen society. The private sector is planning to develop the market by creating a commercial production system and hydrogen business platform. Accordingly, producing around 470000 tons/year of hydrogen is expected by using by-product hydrogen and water electrolysis, thereby lowering the price of hydrogen to 6000 won/kg [84]. Moreover, by 2030, the Korean government is planning to reduce the price of hydrogen to 4000 won/kg by supplying 1.94 million tons/year of hydrogen by supplementation with overseas supplies [84]. Finally, 5.26 million tons/year of hydrogen will be supplied and the hydrogen price will be reduced to 3000 won/kg [84]. The plans for reducing the price of hydrogen in Korea are exhibited in Fig. 14.
+Korea also has clear plans to realize a hydrogen society [84]. First, economically priced hydrogen will be supplied to hydrogen refueling stations located near large plants that produce by-product hydrogen. Second, extracted hydrogen will be supplied from large-scale production plants connected to the NG supply chain with plants having large extractors to reach a capacity of 100e5000 Nm3/h near large distribution areas. Small-scale extractors (300 Nm3/h) will also be used by combining heat and power plants, or city gas pipes. Next, hydrogen production by water electrolysis will be gradually expanded in areas rich in renewable energy. They also plan to establish a hydrogen acquisition base for importing hydrogen produced overseas by developing the related infrastructure and technology, such as hydrogen liquefaction, hydrogen transportation ships, and liquefaction plants.
+For a balanced hydrogen supply across the country, the Korean government plans to use tube trailers. These will
+
+mainly be used to deliver hydrogen to hydrogen refueling stations in cities. Transportation via tube trailers can be improved by reducing the weight density and increasing the transportation capacity [37]. Moreover, they plan to develop pipeline materials that can withstand over 50 bar by overcoming the brittleness of the materials since cheap hydrogen transportation can be achieved by connecting import bases and customers using pipelines [84]. In addition, convenient localization of components in the hydrogen infrastructure (liquefaction plants, tanks, pumps, and valves) will be promoted.
+Hydrogen refueling stations in Korea will be built according to the growth of the hydrogen car market. The Korean government plans to build at least one hydrogen refueling station per city, so that consumers can use the station within 15 min. In addition, they plan to build 310 hydrogen refueling stations by 2022 on highways in large cities across the country in response to expanding the supply of hydrogen-fueled cars [84]. Through the optimal distribution of hydrogen refueling stations across the country, they will encourage the use of hydrogen energy and create hydrogen demand, thereby helping to form the initial market. On the other hand, hydrogen refueling stations for buses will be built by considering the bus routes and pipelines for 638 bus depots nationwide [84]. As a large amount of hydrogen is required for buses, hydrogen bus refueling stations will be connected to nearby by-product hydrogen production plants. Mainly using pipelines will eventually reduce hydrogen transportation costs.
+Fig. 14 e Hydrogen supply plans and price changes in Korea.
+
+Fig. 13 e Hydrogen infrastructure in Korea.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+1713
+
+They also plan to supply hydrogen gas within 75 km of each highway and guarantee enough hydrogen supply for 40,000 hydrogen buses [84]. However, to expand the supply of hydrogen refueling stations, it is necessary to show that it is economically feasible by solving problems such as the high installation cost of a hydrogen refueling station, high station operating costs, and lowering the hydrogen gas price. In this regard, proactive support by the government is needed. Installation plans for hydrogen refueling stations in Korea are exhibited in Fig. 15.
+
+Basic plan to build hydrogen economy of Korea in 2022 The roadmap to hydrogen economy of Korea in 2019 focused on developing hydrogen society related to automobile and petrochemical industries. Through the roadmap, the number of fuel cell car in Korea increased to 25 thousand and the number of hydrogen refueling station reaches about 160 stations in 2021 [86]. Although this does not meet the goal of the roadmap, the number of fuel cell car has doubled compared to the number of fuel cell car in 2019. Moreover, cumulative rate of power generation by fuel cell in Korea reaches 688 MW, that is the larger than that of USA of 527 MW and Japan of 352 W [85,86]. In particular, private companies decided to invest about 43 trillion won to hydrogen industries.
+Although the roadmap of Korea helps foster hydrogen society in automobile and petrochemical industries, strategies for hydrogen production and industries which emit large amount of greenhouse gas were not well prepared. In basic plan announced in 2022, the Korean government tries to increase self-sufficiency of hydrogen to 60% until 2050 by producing blue hydrogen through early commercialization of technologies of carbon capture and storage. The green hydrogen production facilities will be also established by demonstrating large-capacity water electrolysis facilities, and import of overseas hydrogen will be expanded, as well. They also have plan to strengthen the hydrogen infrastructure by expanding hydrogen transport system and refueling stations.
+
+Fig. 16 e Trends in budget of Korean government to hydrogen industries.
+To respond large amount of hydrogen demand, they plan to develop hydrogen port operated by hydrogen ecosystem, liquid hydrogen plant, and ammonia conversion technology to hydrogen. In hydrogen utilization section, introduction of hydrogen in power plant, diversification of hydrogen cars, and development of hydrogen ship and train will be conducted.
+To expand hydrogen industries, subsidy support is necessary to ensure minimum profitability. The budget of Korean government for supporting hydrogen industries increases from 3783 billion won in 2019 to 13,100 billion won in 2022 as shown in Fig. 16 [87]. The budget for R&D is increased from 854 billion won to 2948 billion won. The budget planning, however, becomes difficult due to the low level of financial independence of local governments. Providing subsidies to hydrogen industries is a public good in that it induced
+
+Fig. 15 e Installation plans of hydrogen refueling station in Korea.
+
+1714
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+industrial revitalization along with financial aid to local governments. Therefore, it is necessary to expand the subsidies of the central government.
+Conclusions
+In this study, we investigated the current status of hydrogen infrastructure installation in countries throughout the world and introduced the roll-out strategy for Korea because it is one of the most active countries pursuing the realization of a hydrogen society.
+First, we analyzed the infrastructure for the entire hydrogen supply process. Although hydrogen can be produced by using renewable energy sources, currently over 96% is produced from fossil fuels. Among the hydrogen production methods, SMR is widely used for hydrogen production due to low CO2 emissions and good profitability. Hydrogen gas needs to be stored prior to transportation. Although hydrogen storage in solid and liquid forms is actively being developed, the gaseous form is now widely used because existing facilities for LPG storage can be used. Hydrogen transportation can be conducted using tube trailers and pipelines; the pipeline method is preferable near industrial complexes and tube trailers are better for remote areas. Hydrogen is supplied to the consumer at hydrogen refueling stations consisting of a compressor, a storage vessel, a chiller, a dispenser, and an operator. For hydrogen refueling stations, the diaphragm type compressor and type 1 hydrogen storage tanks with a capacity of around 300 L and a charging pressure of around 800 bar are widely used.
+Next, we examined the efforts of countries to prepare their hydrogen supply infrastructures. In the USA, California leads the way for hydrogen-related policies. They produce hydrogen via NG reforming, and the produced hydrogen is transported using tube trailers and pipelines depending on the distance. Hydrogen refueling stations have been built by private companies, and the government offers subsidies to complement the currently low profitability. Germany is the leading country for hydrogen infrastructure in the EU. It produces a large amount of hydrogen from renewable energy sources and plans to build 40 GW-class hydrogen production facilities using them by 2030. Hydrogen is usually transported via pipelines, and hydrogen refueling stations have been built by private companies. Japan produces 3 million tons of hydrogen via NG reforming and as a by-product and plans to import a large amount of hydrogen from overseas in the form of MCH. Hydrogen is delivered via tube trailers and pipelines, and liquefaction technologies are being developed. Hydrogen refueling stations are being built by private companies under the supervision of the government. China is a secondmover country in building hydrogen infrastructure. It distributes hydrogen-fueled cars and hydrogen infrastructure via national control and incentive policies. Hydrogen infrastructure of China is expected to be significantly improved in the near future.
+Last, the current status and roll-out strategy for hydrogen infrastructure in Korea toward realizing a hydrogen society was discussed. Korea mainly produces by-product hydrogen because they have a large LNG supply chain. Therefore, hydrogen is usually transported via pipelines and hydrogen refueling stations are mainly located near metropolitan cities,
+
+thereby creating a hydrogen supply imbalance. To diversify the hydrogen production method, Korea is trying to extract hydrogen using renewable energy sources through electrolysis. Hydrogen port, liquid hydrogen plant, and ammonia conversion technology will be also developed to respond large amount of hydrogen demand. In hydrogen utilization section, introduction of hydrogen in power plant, diversification of hydrogen cars, and development of hydrogen ship and train will be conducted. The Korean government encourages the participation of private companies to install hydrogen refueling stations by offering subsidies. After the roadmap is announced, 43 trillion won was invested by private companies. Our findings will help develop proper hydrogenfueling strategies for countries.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Acknowledgments
+This work was supported by the Korea Evaluation Institute of Industrial Technology (KEIT) funded by the Ministry of Trade, Industry and Energy (grant number 20009835), the National Fir Agency and the Korea Institute of Energy Technology Evaluation and Planning(KETEP) (No. 20008021), and the Korea Agency for Infrastructure Technology Advancement(KAIA) grant funded by the Ministry of Land, Infrastructure and Transport (Grant 22HBST-C158081-03).
+references
+[1] Rifkin J. The hydrogen economy. New York: Polity; 2002. [2] Stephens-Romero SD, Brown TM, Kang JE, Recker WW.
+Systematic planning to optimize investments in hydrogen infrastructure deployment. Int J Hydrogen Energy 2010;35:4652e67. [3] Agnolucci P, Mcdowall W. Designing future hydrogen infrastructure: insights from analysis at different spatial scales. Int J Hydrogen Energy 2013;38:5181e91. [4] Goldman Sachs Group. Green hydrogen: the next transformational driver of the utilities industry. 2020. https:// www.goldmansachs.com/insights/pages/gs-research/greenhydrogen/report.pdf. [5] Wee J. Contribution of fuel cell systems to CO2 emission reduction in their application fields. Renew Sustain Energy Rev 2010;14:735e44. [6] International Energy Agency. The future of hydrogen: seizing today's opportunities. 2019. https://www.hydrogenexpo. com/media/9370/the_future_of_hydrogen_iea.pdf. [7] McKinsey & Company. Hydrogen Insights: a perspective on hydrogen investment, market development and cost competitiveness. 2021. https://hydrogencouncil.com/wpcontent/uploads/2021/02/Hydrogen-Insights-2021-Report. pdf. [8] Fuel cell electric buses: a proven zero-emission solution. https://fuelcellbuses.eu/projects/h2bus-europe.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+1715
+
+[9] US Department of Energy. DOE hydrogen program plan. 2020. https://www.hydrogen.energy.gov/pdfs/hydrogen-programplan-2020.pdf.
+[10] Eberle U, Mueller B, Helmolt R. Fuel cell electric vehicles and hydrogen infrastructure: status 2021. Energy Environ Sci 2012;5:8780.
+[11] National Renewable Energy Laboratory. California hydrogen infrastructure research consortium task. 2022. https://www. nrel.gov/docs/fy22osti/82672.pdf.
+[12] Nagashima M. Japan's hydrogen society ambition: 2020 status and perspectives. 2020. https://www.ifri.org/sites/default/ files/atoms/files/nagashima_japan_hydrogen_2020.pdf.
+[13] Zhao F, Mu Z, Hao H, Liu Z, He X, Przesmitzki SV, Amer AA. Hydrogen fuel cell vehicle development in China: an industry chain perspective. Energy Technol 2020;8:2000179.
+[14] Ballard Inc.. Ballard's growing presence in China supports the strong demand for clean new energy vehicles. 2022. https:// www.ballard.com/about-ballard/ballard-in-china#: ~:text¼Established%20in%20November%202018%2C% 20Weichai,Weichai%20become%20Ballard%27s%20largest% 20shareholder.
+[15] New future of urban Air mobility. https://tech. hyundaimotorgroup.com/mobility-device/uam/.
+[16] Ishaq H, Dincer I, Crawford C. A review on hydrogen production and utilization: challenges and opportunities. Int J Hydrogen Energy 2022;47:26238e64.
+[17] Dawood F, Anda M, Shafiullah GM. Hydrogen production for energy: a review. Int J Hydrogen Energy 2020;45:3847e69.
+[18] Yu M, Wang K, Vrendenburg H. Insights into low-carbon hydrogen production methods: green, blue and aqua hydrogen. Int J Hydrogen Energy 2021;46:21261e73.
+[19] Hydrogen energy supply chain project. https://www. hydrogenenergysupplychain.com/about-hesc/.
+[20] H2Stations.org. Statistics: hydrogen infrastructure. 2022. https://www.h2stations.org/statistics/.
+[21] US Department of Energy. Alternative fuels data center: hydrogen fueling station locations. 2022. https://afdc.energy. gov/fuels/hydrogen_locations.html#/find/nearest?fuel¼HY.
+[22] Gye H, Seo S, Bach Q, Ha D, Lee C. Quantitative risk assessment of an urban hydrogen refueling station. Int J Hydrogen Energy 2019;44:1288e98.
+[23] Apostolou D, Xydis G. A literature review on hydrogen refueling stations and infrastructure, Current status and future prospects. Renew Sustain Energy Rev 2019;113:109292.
+[24] Kurtz J, Sprik S, Bradley TH. Review of transportation hydrogen infrastructure performance and reliability. Int J Hydrogen Energy 2019;44:12010e23.
+[25] Boretti A. Production of hydrogen for export from wind and solar energy, natural gas, and coal in Australia. Int J Hydrogen Energy 2020;45:3899e904.
+[26] Saudi Arabia's hydrogen industrial strategy. https://www.csis. org/analysis/saudi-arabias-hydrogen-industrial-strategy.
+[27] IEA. The role of low-carbon fuels in the clean energy transitions of the power sector. https://www.iea.org/reports/ the-role-of-low-carbon-fuels-in-the-clean-energytransitions-of-the-power-sector; 2021.
+[28] Safari F, Dincer I. A review and comparative evaluation of thermochemical water splitting cycles for hydrogen production. Energy Convers Manag 2020;205:112182.
+[29] Hydrogen technologies that are still far from becoming commercial. https://www.iea.org/reports/hydrogen-supply.
+[30] Bhandari R, Trudesind CA, Zapp P. Life cycle assessment of hydrogen production via electrolysis e a review. J Clean Prod 2014;85:151e63.
+[31] Korean Institute of S&T evaluation and planning. 2021 (in Korean), https://www.kistep.re.kr/boardDownload.es? bid¼0031&list_no¼34997&seq¼12808.
+
+[32] Zhang H, Sun Z, Hu YH. Steam reforming of methane: current states of catalyst design and process upgrading. Renew Sustain Energy Rev 2021;149:111330.
+[33] Li M, Sun Z, Hu YH. Catalysts for CO2 reforming of CH4: a review. R Soc Chem 2021;9:12495e520.
+[34] Farooqi AS, Yusuf M, Zabidi NAM, Saidur R, Sanaullah K, Farooqi AS, Khan A, Abdullah C. A comprehensive review on improving the production of rich-hydrogen via combined steam and CO2 reforming of methane over Ni-based catalysts. Int J Hydrogen Energy 2021;46:31024e40.
+[35] Sengodan S, Lan R, Humphreys J, Du D, Xu W, Wang H, Tao S. Advances in reforming and partial oxidation of hydrocarbons for hydrogen production and fuel cell applications. Renew Sustain Energy Rev 2018;82:761e80.
+[36] Oni AO, Anaya K, Giwa T, Lullo GD, Kumar A. Comparative assessment of blue hydrogen from steam methane reforming, autothermal reforming, and natural gas decomposition technologies for natural gas-producing regions. Energy Convers Manag 2022;254:115245.
+[37] Cho SM, Kim C, Kim KS, Kim DK. Lightweight hydrogen storage cylinder for fuel cell propulsion systems to be applied in drones. Int J Pres Ves Pip 2021;194:104428.
+[38] Niermann M, Beckendorff A, Kaltschmitt M, Bonhoff K. Liquid organic hydrogen carrier (LOHC)-assessment based on chemical and economic properties. Int J Hydrogen Energy 2019;44:6631e54.
+[39] Zhao Y, Gong M, Zhou Y, Dong X, Jun S. Thermodynamics analysis of hydrogen storage based on compressed gaseous hydrogen, liquid hydrogen and cryo-compressed hydrogen. Int J Hydrogen Energy 2019;44:16833e40.
+[40] Taravow BP, Fursikov PV, Volodin AA, Bocharnikov MS, Shumkus YY, Kashin AM, Yartys VA, Chidziva S, Pasupathi S, Lototskyy MV. Metal hydride hydrogen storage and compression systems for energy storage technologies. Int J Hydrogen Energy 2021;46:13647e57.
+[41] Sekine Y, Higo T. Recent trends on the dehydrogenation catalysis of liquid organic hydrogen carrier: a review. Top Catal 2021;64:470e80.
+[42] Korean Institute for Industrial Economics and Trade. Analysis of Korea hydrogen industry ecosystem and development task. 2019. https://www.kiet.re.kr/research/ reportView?report_no¼956.
+[43] Korean Energy Economics Institute. Energy focus. 2019. http://www.keei.re.kr/keei/download/focus/ef1912/ef1912. pdf. 2019.
+[44] International Energy Agency. Technology roadmap: hydrogen and fuel cells. 2015. https://iea.blob.core.windows. net/assets/e669e0b6-148c-4d5c-816b-a7661301fa96/ TechnologyRoadmapHydrogenandFuelCells.pdf.
+[45] Staffell I, Dodds P, Scamman D, Abad AV, MacDowell N, Ward K, Agnolucci P, Papageorgiou L, Shah N, Ekins P. The role of hydrogen and fuel cells in the future energy systems. 2017. https://www.h2fcsupergen.com/wp-content/uploads/ 2015/08/J5212_H2FC_Supergen_Energy_Systems_WEB.pdf.
+[46] Intralink. The hydrogen economy South Korea, market intelligence report. 2021. https://www.intralinkgroup.com/ Syndication/media/Syndication/Reports/Korean-hydrogeneconomy-market-intelligence-report-January-2021.pdf.
+[47] Current status of hydrogen infrastructure supply. http://gis. h2korea.or.kr/.
+[48] Kim MS, Kim J, Kim SY, Chu CH, Rho KH, Kim M, Kim DK. Parametric study on the performance of electrochemical hydrogen compressors. Rew. Energy 2022;199:1176e88.
+[49] Tian Z, Lv H, Zhou W, Zhang C, He P. Review on equipment configuration and operation process optimization of hydrogen refueling station. Int J Hydrogen Energy 2022;47:3033e53.
+
+1716
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 7 0 1 e1 7 1 6
+
+[50] Zou Z, Han N, Yan J, Feng Q, Wang Y, Zhao Z, Fan J, Zeng L, Li H, Wang H. Electrochemical compression technologies for high-pressure hydrogen: current status, challenges and perspective. Electrochem. Energy Rev. 2020;3:690e729.
+[51] Linde Group. Hydrogen technologies: the ionic compressor 50. 2022. https://www.linde-engineering.com/en/images/DS_ IC%2050_tcm19-523715.pdf.
+[52] International Energy Agency. Hydrogen. Paris: IEA; 2021. https://www.iea.org/reports/hydrogen.
+[53] California Fuel Cell Partnership. Road map to a US hydrogen economy. 2022. https://cafcp.org/sites/default/files/ RoadþMapþtoþaþUSþHydrogenþEconomyþFullþReport. pdf.
+[54] Fuel cell and hydrogen transportation northeast review. https://www.des.nh.gov/sites/g/files/ehbemt341/files/ documents/2020-01/20190426-h2-fcev-presentation.pdf.
+[55] Hardman S, Davis A, Tal G. Investigation hydrogen station use and station access in California using a survey of fuel cell vehicle drivers. https://escholarship.org/content/ qt4qp5m2kr/qt4qp5m2kr.pdf?t¼rap7ta; 2022.
+[56] Fuel cells and hydrogen 2 joint undertaking. 2019. Hydrogen roadmap: Europe, https://www.fch.europa.eu/sites/default/ files/Hydrogen%20Roadmap%20Europe_Report.pdf.
+[57] Hydrogen carrier for renewable energy storage. https:// hycare-project.eu/fch-ju/.
+[58] Directorate-General for Energy, European Commission. Communication from the commission to the European parliament, the council, the European economic and social committee and the committee of the regions, A hydrogen strategy for a climate-neutral Europe. 2020. https://op. europa.eu/en/publication-detail/-/publication/5602f358c136-11ea-b3a4-01aa75ed71a1/language-en.
+[59] NIP- the German national innovation programme hydrogen and fuel cell technology. https://juser.fz-juelich.de/record/ 135833/files/78_11.pdf.
+[60] Germany and the EU's hydrogen strategies in perspective. https://www.kas.de/documents/274425/8492225/Germanþ% 2BþEUþHydrogenþStrategies.pdf/b069d44b-5af0-9ec8-da1ce0c10335e08e?version¼1.0&t¼1597804839540.
+[61] Fuel cells and hydrogen 2 joint undertaking. 2019. Hydrogen roadmap: Europe, https://www.fch.europa.eu/sites/default/ files/Hydrogen%20Roadmap%20Europe_Report.pdf.
+[62] Federal Government. The national hydrogen strategy. 2020. https://www.giz.de/en/downloads/giz2020-en-nationalhydrogen-strategy.pdf.
+[63] Kucharski JB, Unesaki H. Japan's 2014 strategic energy plan: a planned energy system transition. J Energy 2017:4107614. https://doi.org/10.1155/2017/4107614.
+[64] International Olympic Committee. Tokyo 2020, hydrogen shows promise of a carbon-free future. 2021. https:// olympics.com/ioc/news/at-tokyo-2020-hydrogen-showspromise-of-a-carbon-free-future.
+[65] At Tokyo. Hydrogen shows promise of a carbon-free future. 2020. https://olympics.com/ioc/news/at-tokyo-2020hydrogen-shows-promise-of-a-carbon-free-future.
+[66] Ifri. Japan's hydrogen strategy and its economic and geopolitical implications. 2018. https://www.ifri.org/sites/ default/files/atoms/files/nagashima_japan_hydrogen_2018_. pdf.
+[67] Hydrogen and Fuel Cell Strategy Council. The strategic roadmap for hydrogen and fuel cells. 2019. https://www. hydrogenenergysupplychain.com/wp-content/uploads/2021/ 07/0312_002b.pdf.
+[68] Hydrogen Energy Supply-Chain Technology Research Association. Hydrogen supply chain. 2022. https://www. hystra.or.jp/en/project/.
+
+[69] Arias J. Hydrogen and fuel cells in Japan, https://www.eujapan.eu/sites/default/files/publications/docs/hydrogen_ and_fuel_cells_in_japan.pdf; 2019.
+[70] State Council. Report on the work of the government. 2019. http://english.www.gov.cn/premier/speeches/2019/03/16/ content_281476565265580.htm.
+[71] Chai S, Zhang G, Li G, Zhang Y. Industrial hydrogen production technology and development status in China: a review. Clean Technol. Environ Pol 2021;23:1931e46.
+[72] Li Y, Taghizadeh-Hesary F. The economic feasibility of green hydrogen and fuel cell electric vehicles for road transport in China. Energy Pol 2022;160:112703.
+[73] Holland Innovation Network China. Overview of hydrogen and fuel cell developments in China. 2019. https://www.rvo. nl/sites/default/files/2019/03/Overview-of-Hydrogen-andFuel-Cell-Developments-in-China.pdf.
+[74] SK E&S and Beijing Gas to cooperate on LNG and hydrogen. https://www.offshore-energy.biz/sk-es-and-beijing-gas-tocooperate-on-lng-and-hydrogen/.
+[75] Ministry of Land, Infrastructure, and Transport. Innovative growth, safety, comfortable daily lives. 2022. http://www. molit.go.kr/USR/NEWS/m_71/dtl.jsp? lcmspage¼1&id¼95086498.
+[76] Yoo E, Kim M, Song HH. Well-to-wheel analysis of hydrogen fuel-cell electric vehicle. Int J Hydrogen Energy 2018;43:19267e78.
+[77] Lee D, Elgowainy A. By-product hydrogen from steam cracking of natural gas liquids (NGLs): potential for largescale hydrogen fuel production, life-cycle air emissions reduction, and economic benefit. Int J Hydrogen Energy 2018;43:20143e60.
+[78] Commercially available water electrolyzer in Korea: business of EM Korea. http://www.yesemk.com/eng/business/energy_ h2_station.html#header.
+[79] Hydrogen Convergence Alliance. Trends of hydrogen energy technology. 2022. http://h2korea.or.kr/sub/sub04_05.php.
+[80] Korea energy market LNG. https://www.trade.gov/marketintelligence/korea-energy-market-lng.
+[81] Ministry of Trade, Industry, and Energy. Future vehicle expansion and market preoccupation strategy. 2022. http:// www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do? bbs_seq_n¼163453&bbs_cd_n¼81.
+[82] Korea H2 business summit. http://www. koreah2businesssummit.net/sub/event_summary.html.
+[83] Maeil Business News Korea. Hydrogen company association (in Korean), https://www.mk.co.kr/news/business/view/ 2022/06/559796/; 2022.
+[84] Hydrogen economy roadmap. 2019. https://www.korea.kr/ news/pressReleaseView.do?newsId¼156313631.
+[85] Basic plan to build hydrogen economy. 2022. https://www. motie.go.kr/motie/ne/announce2/bbs/bbsView.do?bbs_seq_ n¼67130&bbs_cd_n¼6.
+[86] Status of renewable energy use and distribution. https:// www.knrec.or.kr/biz/introduce/new_policy/plan4tdus.do? gubun¼B.
+[87] Report of analysis of the National Assembly budget planning. https://www.nabo.go.kr/Sub/01Report/01_01_Board.jsp? funcSUB¼view&bid¼19&arg_cid1¼0&arg_cid2¼0&arg_class_ id¼0&currentPage¼0&pageSize¼10&currentPageSUB¼ 0&pageSizeSUB¼10&key_typeSUB¼subject&keySUB¼%EC% 98%88%EC%82%B0&search_start_dateSUB¼&search_end_ dateSUB¼&department¼0&department_sub¼0&etc_ cate1¼&etc_cate2¼&sortBy¼reg_ date&ascOrDesc¼desc&search_key1¼&etc_1¼0&etc_ 2¼0&tag_key¼&arg_id¼7602&item_id¼7602&etc_1¼0&etc_ 2¼0&name2¼0.
+
+

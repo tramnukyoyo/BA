@@ -1,0 +1,706 @@
+International Journal of Hydrogen Energy 80 (2024) 151­160 Contents lists available at ScienceDirect
+International Journal of Hydrogen Energy
+journal homepage: www.elsevier.com/locate/he
+
+Design and techno-economic analysis of solar energy based on-site hydrogen refueling station
+Reyhan Atabay a, Yilser Devrim b,*
+a Atilim University, Graduate School of Natural and Applied Sciences, Department of Mechanical Engineering, Incek, Golbasi, Ankara, 06830, Turkey b Atilim University, Department of Energy Systems Engineering, Incek, Golbasi, Ankara, 06830, Turkey
+
+ARTICLE INFO
+Handling Editor: J. W. Sheffield
+Keywords: Hydrogen refueling station Photovoltaic panel Anion exchange membrane electrolyzer On-site hydrogen production Levelized cost of hydrogen
+
+ABSTRACT
+This paper presents a detailed techno-economic review and assessment of a hydrogen refueling station (HRS) powered by a grid-connected photovoltaic (PV) system to address the issues of carbon emissions and energy sustainability in transportation. In the study, the HRS system with 1, 3 and 5 MW PV installed capacity for Ankara, the capital city of Türkiye, is considered for different system lifetimes. In the proposed HRS, on-site hydrogen production is achieved through anion exchange membrane water electrolysis (AEMWE) using a grid-connected PV system, and the produced hydrogen is stored in a cascaded storage system and is utilized at the HRS station. In order to evaluate the cost competitiveness and economic viability of the designed HRS system, the levelized cost of hydrogen (LCOH) is determined by considering the initial investment costs, oper ating expenses and potential revenue streams. The results show that the HRS capacity, PV installed capacity and system lifetime significantly impact the LCOH. The technoeconomic analysis results show that the best system configuration was determined as 8.54 /kg H2 in the 20-year long term refueling scenario for a 5 MW installed PV capacity with a daily refueling capacity of 170 kg H2. This study contributes to the development of sus tainable energy infrastructure by providing a comprehensive framework for the design, calculation and economic evaluation of PV-integrated hydrogen refueling stations. The results provide valuable information for policy makers, industry stakeholders, and researchers to help achieve a carbon-neutral transportation sector and pro mote energy sustainability.
+
+1. Introduction
+In recent years, using alternative energy sources has played a vital role in combating global climate change, which has become a global problem. Energy production based on fossil fuels emits large amounts of greenhouse gases into the atmosphere. Therefore, alternatives based on renewable energy sources (such as solar, wind, hydropower, and biomass) play a crucial role in dealing with climate change [1,2]. These energy sources are clean and minimize greenhouse gas emissions. In addition, their costs are decreasing with technological advances, so they are more widely used.
+Hydrogen, the most abundant element in the universe, holds tremendous potential as a clean energy carrier [3­5]. Unlike fossil fuels, its combustion produces only water vapor, making it a zero-emission fuel derived from renewable sources. Hydrogen is a reliable energy storage source, addressing the intermittency of renewable energy sour ces such as wind and solar. Excess electricity generated during periods of
+
+low demand can produce hydrogen through water electrolysis, which can then be stored for later use or converted back into electricity through fuel cells [6]. Surplus hydrogen from industrial plants can be repurposed to fuel vehicles or provide building heat, promoting resource efficiency and circularity. Diversifying energy sources with hydrogen reduces dependence on fossil fuels, enhancing energy security and resilience to supply disruptions. As a domestically producible resource, hydrogen mitigates geopolitical risks associated with oil and gas imports, fostering energy independence.
+A hydrogen economy involves the widespread utilization of hydrogen as a primary energy carrier, powering various sectors such as transportation, industry, and residential heating. Hydrogen-powered vehicles emit only water vapor and produce no harmful pollutants, of fering a cleaner alternative to internal combustion engines. Transition ing to a low-carbon economy, hydrogen refueling stations emerge as critical enablers of the hydrogen economy [7,8]. Expanding the hydrogen distribution and refueling infrastructure can accelerate the
+
+* Corresponding author. E-mail address: yilser.devrim@atilim.edu.tr (Y. Devrim).
+https://doi.org/10.1016/j.ijhydene.2024.07.166 Received 31 March 2024; Received in revised form 8 July 2024; Accepted 11 July 2024 Available online 15 July 2024 0360-3199/© 2024 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+R. Atabay and Y. Devrim
+adoption of hydrogen-powered vehicles, promote energy security, and pave the way toward a more sustainable future. Hydrogen fuel cell technology has gained significant attention in recent years due to its potential to reduce greenhouse gas emissions and dependence on fossil fuels. Unlike battery electric vehicles (BEVs), which require lengthy recharging times, hydrogen vehicles can refuel in minutes, providing drivers with a comparable experience to gasoline-powered cars [9,10]. This rapid refueling capability, coupled with an expanding network of refueling stations, enhances the appeal of hydrogen vehicles for long-distance travel and urban commuting.
+The most critical challenge in developing electric vehicles based on hydrogen fuel and transitioning towards a sustainable, low-carbon economy is the development and optimal design of hydrogen energy production and distribution infrastructures. Refueling stations provide the essential infrastructure for fueling hydrogen-powered vehicles and supporting industrial applications. In addition to fueling vehicles, hydrogen refueling stations are vital in supporting industrial applica tions, such as hydrogen fuel cell-powered forklifts, buses, and trucks. An HRS system can be small or medium-scale on-site and/or larger scale (off-site) as a centralized HRS [11]. On-site hydrogen refueling stations offer a reliable and feasible way to supply hydrogen on a small scale compared to centralized hydrogen stations [12,13].
+Hydrogen can be produced through various methods, including water electrolysis using renewable electricity, steam methane reforming coupled with carbon capture and storage (CCS), and biomass gasifica tion. Among the production technologies, the electrolysis of water, which is directly linked to renewable energy sources, is considered one of the most sustainable and environmentally friendly production pro cesses [14,15]. Several types of water electrolyzers include alkaline electrolyzers, proton exchange membrane electrolyzers (PEMWEs), and anion exchange membrane electrolyzers (AEMWEs). In producing green hydrogen, fast start-up of the electrolyzer is an essential parameter in water electrolyzers powered by electricity from renewable energy. PEMWE and AEMWEs have a faster start-up time than alkaline elec trolyzers. The hydrogen production value can be adjusted with the current and voltage values applied to the [16] electrolyzers. At the same time, their modular structure provides the advantage of starting hydrogen production by switching on at low currents and voltages [17]. Compared to existing electrolyzer technologies, AEMWEs offer signifi cant benefits in cost-effectiveness, energy efficiency, and operational flexibility, making them a promising solution for scalable and sustain able hydrogen production. Furthermore, it also reduces production costs by enabling the use of cheaper and more readily available materials [18, 19]. These features reduce the capital cost of AEMWE compared to PEMWEs [20­22].
+The most crucial cost in HRS installation is the investment in equipment. However, when considering the return on investment, hydrogen filling capacity and energy consumption are also considered in addition to the initial investment. Hence, reducing energy consumption and increasing the filling capacity in HRS systems is critical.
+Due to the high cost of hydrogen, improving the infrastructure of hydrogen refueling stations (HRS) requires further and detailed studies. This paper develops and evaluates the conceptual design and economic evaluation of a grid-connected photovoltaic (PV) based on-site HRS under various parameters and scenarios. The planned HRS consists of an anion exchange membrane water electrolysis process, hydrogen storage and dispenser. In the developed economic assessment, the levelized cost of hydrogen (LCOH) is calculated and discussed for different scenarios and plans based on various dimensions of the HRS. To our knowledge, no previous studies in the literature report on the design and technoeconomic analysis of an on-site hydrogen refueling station powered by a grid-connected photovoltaic solar PV system for Ankara, Turkey's capital city. Despite the progress made in understanding HRS's poten tial, there is still a lack of research on public perception and acceptance of these facilities and their potential impact on local communities. The economic approach developed for the proposed PV-integrated HRS can
+
+International Journal of Hydrogen Energy 80 (2024) 151­160
+be a good guide for developing hydrogen-based vehicles and refueling stations.
+2. System description
+2.1. Methodology
+This study evaluates the economic performance of a hydrogenenergy-based fuel station (HRS). The proposed HRS is considered onsite and based on a water electrolysis process. The hydrogen produc tion capacity is estimated based on supplying the hydrogen needs of ten cars and two buses daily, assuming that cars have 5 kg hydrogen tanks and buses have 40 kg hydrogen tanks. The analysis of the designed system was performed using Excel enabled with macros. Fig. 1 shows the schematic configuration of the HRS.
+As can be seen, the proposed system includes solar electric power generation, hydrogen fuel production from the electrolyzer, hydrogen compression, hydrogen storage, hydrogen cooling and vehicle refueling. A grid-connected PV-based solar unit provides the required electricity for the HRS. The sharing of grid and solar units to provide the necessary electricity for the proposed HRS is evaluated for different PV installed capacities for 1, 3, and 5 MW installed power. The proposed HRS system consists of an on-grid PV system for electricity generation, an AEMWE for hydrogen production, a low-pressure storage system, a compressor, high-pressure storage with a cascade system, a pre-cooling unit, and a dispenser. The power consumption of the electrolyzer, compressor, precooling unit, and other auxiliary equipment were considered when calculating the electricity consumption of the designed HRS system.
+When the system's electricity demand exceeds the PV unit's output, the grid supplies the energy deficit. In addition, when the solar unit's output exceeds the process's demand, surplus electricity is delivered to the grid. The water electrolysis unit in the proposed HRS system is the primary unit that converts water into hydrogen and oxygen through electrochemical reactions. Produced hydrogen is initially sent to a lowpressure storage tank for use in the HRS.
+The hydrogen filling pressure of fuel cell vehicles is typically 350 bar for heavy-duty vehicles and 700 bar for automobiles. However, the AEMWE used for hydrogen production produces hydrogen at a pressure of about 35 bar. Also, refueling takes place from a high-pressure source to a lower-pressure tank, and hydrogen needs to be stored in highpressure tanks at higher pressure than the refueling pressure. The compressor transfers hydrogen from a low-pressure storage tank to a high-pressure cascade tank system by gradually increasing the hydrogen pressure.
+Considering that there are pressure losses between the flow control valve, the hydrogen cooler and dispenser, the source and the vehicle tank, it means maintaining a pressure of around 800 bar for a 700 bar filling and having a higher pressure source for this, usually in the 900­950 bar range. However, storing large volumes of hydrogen at 900 bar requires large-sized tanks, which is very costly. Further to the cost, there is also the danger of storing large quantities of hydrogen at very high pressure and the potential significant losses associated with pres sure control in a hot environment. For this reason, a cascaded storage system is preferred in HRSs rather than a single tank at high pressure.
+In a cascade system, cooling energy consumption is influenced by many factors, such as the number of cascade storage tanks, their initial pressures and volumes [23]. Refueling with staged high-pressure storage reduces the cooling energy consumption compared to single-stage refueling. Since compression increases the gas temperature, a chiller usually follows the compressor to bring the hydrogen back to ambient temperature and reduce the demand for hydrogen refrigerant during dispensing. While compressing hydrogen to 900 bar accounts for the largest share of energy consumption, shortening the use of a 900 bar resource during refueling is the key to energy savings. A cascade setup divides the buffer volume into multiple tanks with various pressure levels to do this. At the start of refueling, The lowest pressure level is
+
+152
+
+R. Atabay and Y. Devrim
+
+International Journal of Hydrogen Energy 80 (2024) 151­160
+
+Fig. 1. Schematics of the PV-integrated HRS
+
+utilized, followed automatically by intermediate pressure levels, and in the final stage, only the highest (900 bar) pressure level is used. The total energy consumption of the system decreases as the number of cascaded storage tanks increases, but for the simplicity of the system, the number of cascaded storage tanks should not be more than three.
+Cascaded high-pressure storage consists of three tanks with different pressure levels. The storage tanks are filled one after the other using the compressor unit, first the low-pressure tanks, then the medium-pressure storage tanks and finally the high-pressure tanks [24]. When a vehicle arrives for refueling, the dispenser is connected to the low-pressure tank in the cascade storage system. It delivers hydrogen to the car until the hydrogen flow becomes too low. When the flow between the low-pressure storage tank and the vehicle tank drops below the step switch point (i.e., the pressures equalize), the dispenser switches to the medium-pressure tank and then to the high-pressure tank until the vehicle tank is full or the user stops the process.
+In HRSs, hydrogen is pre-cooled to sub-zero temperatures (- 40oC) for 700 bar hydrogen supply to vehicles but is usually not cooled for a 350-bar supply. Since the high-pressure tank at the station is at a higher pressure than the vehicle tank, hydrogen generates a significant amount of heat during expansion. Due to the heat released, a pre-cooling unit is required for Type III and Type IV hydrogen storage tanks used in vehi cles, which should not be exposed to temperatures higher than 80oC. The pre-cooling unit is attached to the HRS gas distributor connected to the refueling hoses [25]. Characteristics and operating parameters of the main components are listed in Table 1. The electricity consumption of auxiliary equipment is included as approximately 5 % of the total electricity consumption of the main components.
+
+Table 1 Characteristics and operating parameters of the HRS components.
+
+PV Panel Maximum Power (Pmax) G1,ref Tc,ref NOCT Temperature Coefficient, p AEMWE AEMWE Power Stack Module Number H2 Nominal Flow H2 Outlet Pressure H2 Outlet Temperature HO nominal consumption Specific Power Consumption Efficiency Ambient Operating Temperature (Telectrolyzer) Hydrogen Compressor Isentropic Efficiency Mechanical Efficiency Electric Generator Efficiency Gas Storage System Low-Pressure Buffer Tank Cascade System Low-Pressure Tank Cascade System Medium Pressure Tank Cascade System High-Pressure Tank Pre- Cooling Unit Car Dispensing Pressure Bus Dispensing Pressure Car Refueling Time Buses Refueling Time Hydrogen delivery temperature
+
+415 W 1000 W/m2 25 C 45 - 0.34 %/oC
+500 kW 210 105 Nm3/h Up to 35 barg 5­55 C 95 L/h 53.3 kWh/kgH2 62.5% - 15<Telectrolyzer< 35  C
+80% 98% 96%
+35 bar 350 bar 550 bar 950 bar
+700 bar 350 bar 5 min. 25 min. - 40oC
+
+2.2. Solar energy potential
+The electrical energy produced in a PV system depends on the site, solar radiation data and climatic conditions. Golbasi, Ankara (Türkiye), is selected as a potential application area for installing a hydrogen fueling station powered by a PV-based renewable energy system (Fig. 2).
+Daily solar radiation and ambient temperature data for 2023 were obtained from Atilim University Meteorological Station (39.8 latitude, 32.7 longitude, 1182 m altitude). The HRS system is simulated on an daily basis with solar data. The recorded solar radiation and ambient temperature data are shown in Fig. 3a and b, respectively.
+
+2.3. HRS components and selection
+
+2.3.1. PV system
+
+The daily power of the grid-connected PV system was calculated
+
+using Equations (1) and (2) with measured daily global irradiance,
+
+sunshine duration and ambient temperature data [26].
+
+[
+
+]
+
+Tm = Ta + GI
+
+NOCT - 800
+
+20
+
+(1)
+
+153
+
+R. Atabay and Y. Devrim
+
+International Journal of Hydrogen Energy 80 (2024) 151­160
+
+Fig. 2. Site location of HRS.
+
+Fig. 3. Daily solar radiation and ambient temperature of Golbasi, Ankara.
+
+PPV
+
+=
+
+NPV
+
+GI GI,ref
+
+[ PPV,max
+
++
+
+( p
+
+Tm
+
+-
+
+)] Tm,ref
+
+(2)
+
+Where Tm is module temperature (oC), Ta is ambient temperature (oC), GI and GI,ref refer to solar irradiance (kW/m2) and reference solar irra diation of PV (kW/m2), p is module power variation coefficient, NOCT is the nominal operating cell temperature, NPV is the PPV,max shows the number of PV panels and the maximum power of PV panels (0.415 kW).
+
+2.3.2. AEMWE unit In this study, AEMWE technology is selected for hydrogen produc
+tion. The selected AEMWE module (Enapter Nexus 500) can produce 105 Nm3/h hydrogen up to 35 bar working pressure with a power consumption of 53.3 kWh/kg H with a corresponding water con sumption of 95 L/h. AEMWE's daily energy consumption is determined as a function of power and operating time, as given in Equation (3).
+
+EElectrolyzer = PElectrolyzer × tday
+
+(3)
+
+where EElectrolyzer is the electricity consumed by the electrolyzer (kWh/
+
+day), PElectrolyzer is nominal power (kW) and tday is the daily operating period (18 h/day) of AEMWE.
+The low-pressure storage tank between the electrolyzer and the compressor buffers the gas flow at the compressor inlet [27]. It was sized for 20% of the daily hydrogen demand with the same pressure and output flow as the electrolyzer.
+
+2.3.3. Hydrogen compressor and storage system The rated power of the hydrogen compressor was calculated using
+Equation (4) [13].
+
+[( )r- 1 ]
+
+WCompressor
+
+=
+
+Cp
+
+T1 C
+
+P2 P1
+
+r
+- 1 mcomp
+
+(4)
+
+where Cp is the specific heat of hydrogen at constant pressure (14.304 kJ/kg.K), T1 is the gas temperature at the compressor inlet (298 K), c is the compressor efficiency, taking into account isentropic (80%), me chanical (98%) and electric generator (96%) efficiencies, r is the isen tropic exponent of hydrogen (r = 1.4), mcomp is the gas flow rate through
+the hydrogen compressor (kg/s), P1 and P2 are the compressor's inlet and outlet gas pressures, respectively. Thus, the compressor's daily en ergy consumption is calculated according to Equation (5) [27].
+
+ECompressor = Wcompressor × tcomressor
+
+(5)
+
+where, ECompressor is the daily energy consumption of the compressor and tcomressor is the compressor's daily operating time.
+Considering HRS's daily hydrogen demand, the storage volume ratio in the cascaded storage system was determined as [0.4:0.35:0.25] for [350 bar: 550 bar: 950 bar].
+
+2.3.4. Pre-cooling unit The pre-cooling unit capacity was calculated by considering the
+fueling time for each vehicle. The assumptions made to calculate the required pre-cooling power are given below.
+
+· Station/hose dispensing pressure is 700 bar for automobiles and 350 bar for buses.
+· The hydrogen delivery temperature is - 40oC for 700 bar filling. · Hydrogen refueling time for the dispenser is expected to be 5 min for
+automobiles and 25 min for buses. · The maximum hydrogen flow in the dispenser should be less than 60
+g/s for safety reasons [28].
+
+The cooling power demand of HRS was determined according to
+
+Equation (6) [29].
+
+(
+
+)
+
+PPre- cooling unit = Nvehicle.mH2 .Cp,H2 Tin,H2 - Tout,H2
+
+(6)
+
+where Nvehicle is the number of vehicles, mH2 is the mass flow rate of hydrogen-refueling per vehicle (kg/s), Cp,H2 is the specific heat at con stant pressure for hydrogen (kJ/kg.K), Tin,H2 is the inlet temperature (K) of hydrogen and Tout,H2 is the outlet temperature (K) of hydrogen.
+
+154
+
+R. Atabay and Y. Devrim
+
+International Journal of Hydrogen Energy 80 (2024) 151­160
+
+The energy consumption of the hydrogen pre-cooling system should be calculated according to the coefficient of performance of the hydrogen pre-cooling system. Electric power supplied for cooling unit:
+
+Ecooling =
+
+PPre- cooling unit COP
+
+(7)
+
+where, COP is the performance coefficient of the HRS pre-cooling system (for - 40 C) calculated according to Equation (8).
+
+COP = 1.6.e(- 0.018. Ta)
+
+(8)
+
+2.4. Techno-economic analysis
+
+The levelized cost of hydrogen (LCOH) is a critical index of economic evaluation in hydrogen technologies [30,31]. It is an essential tool for evaluating hydrogen among alternative energy sources to measure sus tainable hydrogen production and its competitiveness in the market. LCOH, expressed as cost per mass unit of hydrogen produced (/kg H2), is the discounted lifetime cost of building and operating a hydrogen production plant [32]. The LCOH calculation evaluates the overall financial performance of the designed renewable energy-integrated HRS corresponding to the lowest hydrogen production cost [24]. CAPEX, OPEX, replacement costs, and all associated costs incurred over the system's life, such as the cost of electricity required, are considered in the LCOH calculation given in Equation (9). As the PV-integrated HRS examined in this study is grid-connected, the excess electricity generated from the PV system is sold to the grid (CElectrical Revenue,  /year).
+
+LCOH
+
+=
+
+Cinv,a
+
++
+
+CO&M + Crep,a - CElectrical Annual H2 production
+
+Revenue
+
+(9)
+
+Investment and replacement costs are annualized according to Equations (11) and (12) by considering the capital recovery factor (CRF) in Equation 10.
+
+CRF
+
+=
+
+i.(1 (1 +
+
++ i)n
+
+i)n -
+
+1
+
+(11)
+
+Cinv,a = Cinv.CRF
+
+Crep,a
+
+=
+
+Crep (1 + i)t
+
+.CRF
+
+(12) (13)
+
+where i is the discount rate (3%), n is the economic lifetime of the HRS system and t is the year of replacement. The techno-economic specifi cations of the components are listed in Table 2.
+
+3. Result and discussion
+
+In this study, HRS has been designed to supply daily hydrogen needs of 130 kg H2/day to provide fuel for ten cars with 5 kg tank capacity and three buses with 40 kg capacity. Designs have been executed for different PV installation powers, and the HRS system has been examined in the selected region to install the HRS station. Owing to the inter mittent nature of solar irradiation, the required hydrogen production rate by solar-based electrolysis does not precisely match the consump tion rate, so a grid-connected PV system was chosen to increase the reliability of the systems. The electricity generated by PV was the pri mary energy source in the HRS system, but if the generated electricity was not sufficient, the energy deficit was met by the grid electricity.
+Fig. 4 shows the total electricity generated per day, the surplus electricity sent to the grid and the electricity supplied from the grid, if required, for the PV-integrated grid-connected and on-site hydrogen production HRS system for 1, 3 and 5 MW PV installation capacities, respectively. According to the hydrogen refueling capacity of 130 kg H2/ day determined in the proposed HRS, the HRS has a daily power con sumption of approximately 7300 kWh, considering all system
+
+Table 2 Economic specifications of the HRS system components.
+
+Parameter
+
+Value
+
+Unit
+
+Lifetime
+
+Ref
+
+(year)
+
+Installation Cost
+
+PV plant cost
+
+800 (>1 MW) /kW
+
+25
+
+[33,
+
+34]
+
+Electrolyzer cost
+
+2000
+
+/kW
+
+10
+
+[35]
+
+Compressor
+
+394,398
+
+
+
+20
+
+[10,
+
+36]
+
+Storage (up to 50 bar) 632
+
+/kg
+
+30
+
+[10,
+
+37]
+
+Storage (1000 bar)
+
+1144
+
+/kg
+
+20
+
+[10]
+
+Pre-Cooling
+
+140,000
+
+
+
+20
+
+[10,
+
+38]
+
+Dispenser
+
+107,000
+
+
+
+20
+
+[36]
+
+Water cost
+
+3
+
+/m3
+
+­
+
+[39,
+
+40]
+
+O&M Cost (% CAPEX)
+
+PV plant
+
+1
+
+%
+
+­
+
+[33]
+
+Electrolyzer
+
+2
+
+%
+
+­
+
+[41]
+
+Compressor
+
+8
+
+%
+
+­
+
+[42]
+
+Refrigerator
+
+3
+
+%
+
+­
+
+[43]
+
+Dispenser
+
+3
+
+%
+
+­
+
+[43]
+
+LP Storage
+
+6
+
+/(kg.
+
+­
+
+[10]
+
+year)
+
+HP Storage
+
+11 
+
+/(kg.
+
+­
+
+[10]
+
+year)
+
+components. The electricity produced from PV was insufficient for hydrogen production, providing the targeted daily hydrogen refueling; the grid supplied the energy deficit.
+Fig. 4a presents the results of the PV-integrated HRS with an installed capacity of 1 MW. The results showed that the electricity generated for 1 MW PV installed capacity could not meet the entire daily electricity demand of the system and the electricity deficit was supplied from the grid. In Fig. 4b, in the case of 3 MW installed capacity, it is determined that the electricity generated from PV in April­October, when solar ra diation is high, meets the entire daily electricity demand of the system and the surplus electricity is sent to the grid. However, dependence on the grid continues in the remaining months of the year. In Fig. 4c, in the case of 5 MW installed capacity, it is determined that the electricity generated from PV in March­November, when solar radiation is high, meets the entire daily electricity demand of the system and the surplus electricity is sent to the grid.
+In Fig. 5, the installation, operation and maintenance costs of the main components in the HRS system are given comparatively according to different PV installed capacities for 20 year investment period. The installation capacity of renewable energy in filling stations integrated with renewable energy for on-site hydrogen production dramatically affects the HRS's capital expenditures (CAPEX). The CAPEX of 1 MW installed PV capacity was estimated at around 0.8  million, whereas the CAPEX for 5 MW installed capacity was projected as 4  million. Besides PV, the highest installation cost in the system was for the electrolyzer. The electrolyzer, which has a shorter lifetime compared to other com ponents in the system, also has a replacement cost. The high initial capital cost may make the widespread adoption of green hydrogen systems difficult, especially for small-scale projects or regions with limited financial resources. Maintenance costs are also crucial for the long-term economic sustainability of HRS systems. Efficient system utilization should be prioritized to minimize the frequency of replace ment and associated costs.
+The ratios of the proposed HRS system components on the system's initial cost for different operating periods are presented in Fig. 6. The long-term project operation analysis also considers the system compo nents' lifetime. It is seen that PV installation costs have a significant share in total CAPEX with the increase in PV installed capacity. In addition to the PV renewable energy system, the electrolyzer has the highest investment cost. It was determined that the cost of the high-
+
+155
+
+R. Atabay and Y. Devrim
+
+International Journal of Hydrogen Energy 80 (2024) 151­160
+
+Fig. 4. Daily produced electricity, surplus electricity and electricity supplied from the grid for the HRS system with 130 kg H2/day.
+
+pressure storage system after the renewable energy system and elec trolyzer with a daily hydrogen filling capacity of 130 kg H2/day dramatically affected the system's CAPEX. PV CAPEX was determined to be 61.66% and 50.29% of the total CAPEX for 10 and 20 years of
+
+operation for the 5 MW PV-integrated HRS system. With the increased operating period, the PV cost ratio decreased when replacing compo nents such as electrolyzers, etc., with a shorter lifetime than the oper ating period.
+
+156
+
+R. Atabay and Y. Devrim
+
+International Journal of Hydrogen Energy 80 (2024) 151­160
+
+Fig. 5. Investment, O&M and replacement costs of HRS with 130 kg H2/day for a)1 MW, b) 3 MW, c) 5 MW installed PV capacity and 20 year period. 157
+
+R. Atabay and Y. Devrim
+
+International Journal of Hydrogen Energy 80 (2024) 151­160
+
+Fig. 6. Cost ratios of 130 kg H2/day capacity HRS for different PV installed capacities and a) 10 years and b) 20 years project period.
+
+Fig. 7 shows the LCOH values according to the PV installed capacity for different project periods and 130 kg H2/day refueling capacity. In order to observe the impact of the investment period on LCOH in short, medium and long-term investment scenarios, LCOH values were deter mined for different PV installation capacities assuming technical and financial lifetimes of 10, 15 and 20 years.
+It was observed that LCOH values decreased with the increase in the project period for all PV installed capacities. As a result of the technoeconomic analysis, it was stated that the LCOH of the proposed HRS system varies between 9.50 and 15.52 /kg H2 depending on the PV installed capacity and project lifetime. The lowest LCOH value was
+
+obtained as 9.50 /kg H2 for 3 MW grid-connected PV installed capacity for a project period of 20 years. The highest LCOH value was 15.52 /kg H2 for a 5 MW PV installed capacity for a 10-year project period and LCOH decreased with the increase of the project period to 20 years and was obtained as 10.28 /kg H2. Since the selected project period affects the amortization of the CAPEX investment, a more extended project period reduces the annual cost associated with financing and deprecia tion by spreading the CAPEX over more years. The project period also influences the total volume of hydrogen produced over its operational lifetime, thus allowing for more hydrogen production cycles and potentially a higher total volume of hydrogen, which reduces LCOH by
+
+158
+
+R. Atabay and Y. Devrim
+
+International Journal of Hydrogen Energy 80 (2024) 151­160
+
+Table 3 Effect of HRS capacity on LCOH values.
+HRS Capacity (kg H2/day) Project Lifetime (year)
+
+70
+
+10
+
+15
+
+20
+
+130
+
+10
+
+15
+
+20
+
+170
+
+10
+
+15
+
+20
+
+PV Installation Capacity
+
+1 MW 3 MW 5 MW
+
+16.79 15.94 14.01 11.20 11.01 10.12 9.66 9.54 9.05
+
+21.24 18.01 14.69 12.77 11.14 9.50 10.83 9.67 8.54
+
+26.34 20.78 16.15 15.52 12.63 10.28 12.55 10.39 8.68
+
+Fig. 7. LCOH values according to PV power plant capacity and project period for 130 kg H2/day refueling capacity.
+spreading fixed costs over a larger volume of hydrogen. The LCOH calculations were executed for 70 and 170 kg H2/day
+production capacities in addition to the 130 kg H2/day design parameter in the proposed system to examine the effect of HRS refueling capacity on LCOH. Table 3 shows the LCOH values of different HRS daily refu eling capacities concerning PV installation power and project duration.
+As the system's hydrogen refueling capacity increases, the invest ment costs increase proportionally due to the size of the PV plant and HRS units. The achieved results emphasized that the plant size of the HRS capacity has a significant impact on LCOH. The techno-economic analysis results show that the best system configuration in the 20-year long-term refueling scenario for a 3 MW installed PV capacity with a daily refueling capacity of 170 kg H2 was determined as 8.54 /kg H2.
+The LCOH results obtained for renewable energy-integrated HRS systems in the literature were given comparatively in Table 4. It was determined that the LCOH values obtained in this study are consistent with the literature. In on-site HRS systems integrated with renewable energy, the renewable energy potential of the location of the installation is of great importance. In addition, parameters such as selecting a suit able electrolyzer for hydrogen production affect the LCOH values.
+4. Conclusions
+This study presents the sizing and optimization of on-grid PV renewable energy systems integrated HRS. The proposed HRS comprised a water electrolysis process, a hydrogen storage system, a distributor, and a grid-connected PV unit. The design was developed based on conditions in Ankara (Türkiye) and geographical data. Different HRS plant configurations were techno-economically analyzed regarding hydrogen production capacity (70 kg H2/day, 130 kg H2/day, 170 kg H2/day) and PV installed capacities (1, 3, and 5 MW). Within the developed economic evaluation, the LCOH value was calculated and discussed for different scenarios and schemes based on various di mensions of the HRS and energy management considerations. The HRS system consists of a specified number and type of subsystems/compo nents that may fail before the entire system lasts. Therefore, the number of replacements/repairs of a component, e.g., compressor or pre-cooling component, during the lifetime of the HRS system is a stochastic vari able. Each component's mean number of replacements should be considered for a more realistic and consistent replacement cost. Mani festly, this consideration is concerned with reliability-based modeling of the entire system. Such a modeling approach considers the components' failure and repair rates. This more general modeling setting will be included in our future research agenda. In today's world, although green hydrogen-based hydrogen production systems may appear economically costly compared to conventional methods, considering the climate crisis
+
+Table 4 Literature comparison of LCOH for different HRS systems.
+
+Capacity (kg H2/day)
+
+System life (year)
+
+Electricity Supply
+
+Electrolyzer LCOH
+
+100
+
+15
+
+125
+
+15
+
+125
+
+15
+
+65
+
+20
+
+50
+
+20
+
+100
+
+20
+
+200
+
+20
+
+22
+
+20
+
+1600
+
+25
+
+160
+
+25
+
+185.4
+
+20
+
+120
+
+30
+
+120
+
+30
+
+130
+
+20
+
+170
+
+20
+
+Grid
+
+PEMWE
+
+Off-grid WindPV-Battery Off-grid WindBattery On-grid PV + Wind On-grid PV
+
+PEMWE PEMWE AWE AWE
+
+On-grid PV
+
+AWE
+
+On-grid PV
+
+AWE
+
+On-grid PV
+
+AWE
+
+Off-grid WindBattery On-grid PV
+
+AWE PEMWE
+
+On-grid PV
+
+AWE
+
+Off-grid PV
+
+PEMWE
+
+Off-grid PV + Wind On-grid PV
+
+PEMWE AEMWE
+
+On-grid PV
+
+AEMWE
+
+10.57 /kg H2 8.92 $/kg H2 11.08 $/kg H2 13.9 /kg H2 11.49 /kg H2 10.64 /kg H2 9.29 /kg H2 9.18 $/kg H2 6.52 $/kg H2 5.5 /kg H2 8.96 /kg H2 6.15 $/kg H2 5.83 $/kg H2 9.50 /kg H2 8.54 /kg H2
+
+Ref.
+[44] [13] [13] [39] [24] [24] [24] [45] [46] [47] [27] [48] [48] This study This study
+
+and environmental factors, hydrogen production facilities integrated with renewable energy are inevitably essential. The proposed study will provide a reference for achieving a zero-carbon, sustainable hydrogen society.
+CRediT authorship contribution statement
+Reyhan Atabay: Resources, Investigation. Yilser Devrim: Writing ­ review & editing, Writing ­ original draft, Supervision, Methodology, Investigation.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+159
+
+R. Atabay and Y. Devrim
+References
+[1] Schultz MG, Diehl T, Brasseur GP, Zittel W. Air pollution and climate-Forcing impacts of a global hydrogen economy. Science 2003:302. https://doi.org/ 10.1126/science.1089527. 1979.
+[2] Nnabuife SG, Oko E, Kuang B, Bello A, Onwualu AP, Oyagha S, Whidborne J. The prospects of hydrogen in achieving net zero emissions by 2050: a critical review. Sustainable Chemistry for Climate Action 2023;2. https://doi.org/10.1016/j. scca.2023.100024.
+[3] Mazloomi K, Gomes C. Hydrogen as an energy carrier: prospects and challenges. Renew Sustain Energy Rev 2012;16. https://doi.org/10.1016/j.rser.2012.02.028.
+[4] Sazali N. Emerging technologies by hydrogen: a review. Int J Hydrogen Energy 2020. https://doi.org/10.1016/j.ijhydene.2020.05.021.
+[5] Abe JO, Popoola API, Ajenifuja E, Popoola OM. Hydrogen energy, economy and storage: review and recommendation. Int J Hydrogen Energy 2019;44:15072­86. https://doi.org/10.1016/j.ijhydene.2019.04.068.
+[6] Krajaci´c G, Martins R, Busuttil A, Dui´c N, da Graça Carvalho M. Hydrogen as an energy vector in the islands' energy supply. Int J Hydrogen Energy 2008;33. https://doi.org/10.1016/j.ijhydene.2007.12.025.
+[7] Zhao L, Brouwer J. Dynamic operation and feasibility study of a self-sustainable hydrogen fueling station using renewable energy sources. Int J Hydrogen Energy 2015;40. https://doi.org/10.1016/j.ijhydene.2015.01.044.
+[8] Ayodele TR, Mosetlhe TC, Yusuff AA, Ntombela M. Optimal design of windpowered hydrogen refuelling station for some selected cities of South Africa. Int J Hydrogen Energy 2021;46:24919­30. https://doi.org/10.1016/J. IJHYDENE.2021.05.059.
+[9] Cipriani G, Di Dio V, Genduso F, La Cascia D, Liga R, Miceli R, Ricco Galluzzo G. Perspective on hydrogen energy carrier and its automotive applications. Int J Hydrogen Energy 2014;39:8482­94. https://doi.org/10.1016/J. IJHYDENE.2014.03.174.
+[10] Grüger F, Dylewski L, Robinius M, Stolten D. Carsharing with fuel cell vehicles: sizing hydrogen refueling stations based on refueling behavior. Appl Energy 2018; 228. https://doi.org/10.1016/j.apenergy.2018.07.014.
+[11] Cro¨nert T, Minner S. Location selection for hydrogen fuel stations under emerging provider competition. Transp Res Part C Emerg Technol 2021;133. https://doi.org/ 10.1016/j.trc.2021.103426.
+[12] Qadrdan M, Shayegan J. Economic assessment of hydrogen fueling station, a case study for Iran. Renew Energy 2008;33. https://doi.org/10.1016/j. renene.2008.02.014.
+[13] Go¨kçek M, Kale C. Optimal design of a hydrogen refuelling station (HRFS) powered by hybrid power system. Energy Convers Manag 2018;161:215­24. https://doi. org/10.1016/j.enconman.2018.02.007.
+[14] Shiva Kumar S, Lim H. An overview of water electrolysis technologies for green hydrogen production. Energy Rep 2022;8. https://doi.org/10.1016/j. egyr.2022.10.127.
+[15] Granovskii M, Dincer I, Rosen MA. Greenhouse gas emissions reduction by use of wind and solar energies for hydrogen and electricity production: economic factors. Int J Hydrogen Energy 2007;32:927­31. https://doi.org/10.1016/j. ijhydene.2006.09.029.
+[16] Vinodh R, Kalanur SS, Natarajan SK, Pollet BG. Recent Advancements of Polymeric membranes in anion exchange membrane water electrolyzer (AEMWE): a critical review. Polymers 2023;15. https://doi.org/10.3390/polym15092144.
+[17] Martinez Lopez VA, Ziar H, Haverkort JW, Zeman M, Isabella O. Dynamic operation of water electrolyzers: a review for applications in photovoltaic systems integration. Renew Sustain Energy Rev 2023;182. https://doi.org/10.1016/j. rser.2023.113407.
+[18] Motealleh B, Liu Z, Masel RI, Sculley JP, Richard Ni Z, Meroueh L. Next-generation anion exchange membrane water electrolyzers operating for commercially relevant lifetimes. Int J Hydrogen Energy 2021;46. https://doi.org/10.1016/j. ijhydene.2020.10.244.
+[19] Santoro C, Lavacchi A, Mustarelli P, Di Noto V, Elbaz L, Dekel DR, Jaouen F. What is Next in anion-exchange membrane water electrolyzers? Bottlenecks, benefits, and future. ChemSusChem 2022;15. https://doi.org/10.1002/CSSC.202200027.
+[20] Du N, Roy C, Peach R, Turnbull M, Thiele S, Bock C. Anion-exchange membrane water electrolyzers. Chem Rev 2022;122:11830­95. https://doi.org/10.1021/ACS. CHEMREV.1C00854/ASSET/IMAGES/MEDIUM/CR1C00854_0037.GIF.
+[21] Santoro C, Lavacchi A, Mustarelli P, Di Noto V, Elbaz L, Dekel DR, Jaouen F. What is Next in anion-exchange membrane water electrolyzers? Bottlenecks, benefits, and future. ChemSusChem 2022;15. https://doi.org/10.1002/cssc.202200027.
+[22] Miller HA, Bouzek K, Hnat J, Loos S, Berna¨cker CI, Weißga¨rber T, Ro¨ntzsch L, Meier-Haack J. Green hydrogen from anion exchange membrane water electrolysis: a review of recent developments in critical materials and operating conditions. Sustain Energy Fuels 2020;4. https://doi.org/10.1039/c9se01240k.
+[23] Luo H, Xiao J, B´enard P, Chahine R, Yang T. Multi-objective optimization of cascade storage system in hydrogen refuelling station for minimum cooling energy and maximum state of charge. Int J Hydrogen Energy 2022;47. https://doi.org/ 10.1016/j.ijhydene.2022.01.059.
+[24] Minutillo M, Perna A, Forcina A, Di Micco S, Jannelli E. Analyzing the levelized cost of hydrogen in refueling stations with on-site hydrogen production via water electrolysis in the Italian scenario. Int J Hydrogen Energy 2021;46. https://doi. org/10.1016/j.ijhydene.2020.11.110.
+
+International Journal of Hydrogen Energy 80 (2024) 151­160
+[25] Farzaneh-Gord M, Deymi-Dashtebayaz M, Rahbari HR, Niazmand H. Effects of storage types and conditions on compressed hydrogen fuelling stations performance. Int J Hydrogen Energy 2012;37. https://doi.org/10.1016/j. ijhydene.2011.11.017.
+[26] Tebibel H, Menia S, Khellaf A. Off grid PV system for hydrogen production using methanol electrolysis and an optimal management strategy. In: Proceedings of 2016 International renewable and sustainable energy Conference, vol. 2016. IRSEC; 2017. p. 999­1004. https://doi.org/10.1109/IRSEC.2016.7983941.
+[27] Micena RP, Llerena-Pizarro OR, de Souza TM, Silveira JL. Solar-powered hydrogen refueling stations: a techno-economic analysis. Int J Hydrogen Energy 2020;45. https://doi.org/10.1016/j.ijhydene.2019.11.092.
+[28] Caponi R, Monforti Ferrario A, Bocci E, Valenti G, Della Pietra M. Thermodynamic modeling of hydrogen refueling for heavy-duty fuel cell buses and comparison with aggregated real data. Int J Hydrogen Energy 2021;46. https://doi.org/10.1016/j. ijhydene.2021.02.224.
+[29] Elgowainy A, Reddi K, Lee DY, Rustagi N, Gupta E. Techno-economic and thermodynamic analysis of pre-cooling systems at gaseous hydrogen refueling stations. Int J Hydrogen Energy 2017;42. https://doi.org/10.1016/j. ijhydene.2017.09.087.
+[30] Xiuying G, Xianming L, Zhuang X, Guangli H, Ping M. Cost analysis of hydrogen production by electrolysis of renewable energy. Energy Storage Science and Technology 2020;9.
+[31] Fragiacomo P, Genovese M. Numerical simulations of the energy performance of a PEM water electrolysis based high-pressure hydrogen refueling station. Int J Hydrogen Energy 2020;45. https://doi.org/10.1016/j.ijhydene.2020.07.007.
+[32] María Villarreal Vives A, Wang R, Roy S, Smallbone A. Techno-economic analysis of large-scale green hydrogen production and storage. Appl Energy 2023;346. https://doi.org/10.1016/j.apenergy.2023.121333.
+[33] Bhandari R, Shah RR. Hydrogen as energy carrier: techno-economic assessment of decentralized hydrogen production in Germany. Renew Energy 2021;177:915­31. https://doi.org/10.1016/J.RENENE.2021.05.149.
+[34] Fraunhofer ISE. Current and future cost of photovoltaics. Long-term scenarios for market development, system Prices and LCOE of Utility-scale PV systems, Agora Energiewende. 2015.
+[35] Schmidt O, Gambhir A, Staffell I, Hawkes A, Nelson J, Few S. Future cost and performance of water electrolysis: an expert elicitation study. Int J Hydrogen Energy 2017;42. https://doi.org/10.1016/j.ijhydene.2017.10.045.
+[36] Parks G, Boyd R, Cornish J, Remick R. Hydrogen station compression, storage, and dispensing technical Status and costs: system integration. 2014. https://doi.org/ 10.2172/1130621.
+[37] Donadei S. Integration von Wind-Wasserstoff-Systemen in das Energiesystem. Niedersa¨chsisches Forum Für Energiespeicher Und -Systeme 2013;2.
+[38] Reddi K, Elgowainy A, Rustagi N, Gupta E. Impact of hydrogen refueling configurations and market parameters on the refueling cost of hydrogen. Int J Hydrogen Energy 2017;42. https://doi.org/10.1016/j.ijhydene.2017.05.122.
+[39] Viktorsson L, Heinonen JT, Skulason JB, Unnthorsson R. A step towards the hydrogen economy - a life cycle cost analysis of a hydrogen refueling station. Energies 2017;10. https://doi.org/10.3390/en10060763.
+[40] Klinger A, Schmid G, Martic N, Strobl O, Kress M, Michaels H, Ignat T, Maltenberger A. Mechanical and Physio-Chemical Properties of anion exchange membranes and their Implications on industrial scale water electrolysis. ECS Meeting Abstracts MA2023-01 2023. https://doi.org/10.1149/ma202301362036mtgabs.
+[41] Mason J, Zweibel K. Centralized production of hydrogen using a coupled water electrolyzer-solar photovoltaic system. In: Solar hydrogen generation: toward a renewable energy future; 2008. https://doi.org/10.1007/978-0-387-72810-0_9.
+[42] Niaz S, Manzoor T, Pandith AH. Hydrogen storage: materials, methods and perspectives. Renew Sustain Energy Rev 2015;50. https://doi.org/10.1016/j. rser.2015.05.011.
+[43] USA Department of Energy. Fuel cell technologies Office Multi-year research, development and Demonstration plan 3.1 hydrogen production, fuel cell technologies Office Multi-year research. Development and Demonstration Plant 2015:11007.
+[44] Caponi R, Ferrario AM, Del Zotto L, Bocci E. Hydrogen refueling station cost model applied to five real case studies for fuel cell buses. In: E3S Web of Conferences; 2021. https://doi.org/10.1051/e3sconf/202131207010.
+[45] Bahou S. Techno-economic assessment of a hydrogen refuelling station powered by an on-grid photovoltaic solar system: a case study in Morocco. Int J Hydrogen Energy 2023;48. https://doi.org/10.1016/j.ijhydene.2023.03.220.
+[46] Siyal SH, Mentis D, Howells M. Economic analysis of standalone wind-powered hydrogen refueling stations for road transport at selected sites in Sweden. Int J Hydrogen Energy 2015;40. https://doi.org/10.1016/j.ijhydene.2015.05.021.
+[47] Barhoumi EM, Okonkwo PC, Ben Belgacem I, Zghaibeh M, Tlili I. Optimal sizing of photovoltaic systems based green hydrogen refueling stations case study Oman. Int J Hydrogen Energy 2022;47. https://doi.org/10.1016/j.ijhydene.2022.07.140.
+[48] Go¨kçek M, Paltrinieri N, Liu Y, Badia E, Dokuz AS¸ , Erdogmus¸ A, Urhan BB, Yoldas¸ O¨ . Optimum sizing of hybrid renewable power systems for on-site hydrogen refuelling stations: case studies from Türkiye and Spain. Int J Hydrogen Energy 2024;59. https://doi.org/10.1016/j.ijhydene.2024.02.068.
+
+160
+
+

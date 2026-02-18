@@ -1,0 +1,508 @@
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+Available online at www.sciencedirect.com
+ScienceDirect
+
+journal homepage: www.elsevier.com/locate/he
+
+Current standards and configurations for the permitting and operation of hydrogen refueling stations
+Matteo Genovese a,*, Viviana Cigolotti b, Elio Jannelli c, Petronilla Fragiacomo a
+a Department of Mechanical, Energy and Management Engineering, University of Calabria, Arcavacata di Rende, 87036 Cosenza, Italy b Laboratory for Energy Storage, Batteries and Hydrogen Production and Utilization Technologies, Department of Energy Technologies and Renewable Sources, ENEAdItalian National Agency for New Technologies, Energy and Sustainable Economic Development, Research Centre of Portici, 80055 Naples, Italy c Department of Engineering, University of Naples "Parthenope", Centro Direzionale Is. C4, 80143 Naples, Italy
+
+article info
+Article history: Received 14 December 2022 Received in revised form 30 January 2023 Accepted 18 February 2023 Available online 2 March 2023
+Keywords: Hydrogen refueling station Hydrogen station regulations Hydrogen safety Permitting and operation Codes and standards
+
+abstract
+The literature lacks a systematic analysis of HRS equipment and operating standards. Researchers, policymakers, and HRS operators could find this information relevant for planning the network's future expansion. This study is intended to address this information need by providing a comprehensive strategic overview of the regulations currently in place for the construction and maintenance of hydrogen fueling stations.
+A quick introduction to fundamental hydrogen precautions and hydrogen design is offered. The paper, therefore, provides a quick overview of hydrogen's safety to emphasize HRS standards, rules, and regulations. Both gaseous and liquid safety issues are detailed, including possible threats and installation and operating expertise.
+After the safety evaluation, layouts, equipment, and operating strategies for HRSs are presented, followed by a review of in-force regulations: internationally, by presenting ISO, IEC, and SAE standards, and Europeanly, by reviewing the CEN/CENELEC standards. A brief and concise analysis of Italy's HRS regulations is conducted, with the goal of identifying potential insights for strategic development and more convenient technology deployment.
+© 2023 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+Contents
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19358 Short overview of hydrogen safety . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19359
+Public perception and hydrogen safety reports . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19359 Examples of hydrogen safety engineering in an HRS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19360 Hydrogen refueling station . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19362 Hydrogen refueling station e equipment involved . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19362
+* Corresponding author. E-mail address: matteo.genovese@unical.it (M. Genovese).
+https://doi.org/10.1016/j.ijhydene.2023.01.324 0360-3199/© 2023 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+19358
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+Compressed GH2 HRSs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19362 LH2 HRSs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19363 Design considerations for HRSs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19363 HRS standards . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19364 Global standards . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19365 European standards . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19366 Italian national regulatory framework . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19366 Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19367 Declaration of competing interest . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19367 Supplementary data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19367 References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19368
+
+Nomenclature
+
+CEN European Committee for Standardization
+
+CENELEC European Committee for Electro-Technical
+
+Standardization
+
+EC
+
+International Electro-Technical Commission
+
+FCEV Fuel Cell Electric Vehicle
+
+GH2 HRS
+
+Gaseous Hydrogen Hydrogen Refueling Station
+
+ISO
+
+International Standards Organization
+
+LH2 NSB
+
+Liquid Hydrogen National Standardization Bodies
+
+SAE
+
+Society of Automotive Engineers
+
+SM
+
+Steam Reforming
+
+TC
+
+Technical Committee
+
+UNI
+
+Ente Nazionale Italiano di Unificazione
+
+WE
+
+Water Electrolysis
+
+WG
+
+Working Group
+
+Introduction
+Due to hydrogen's immense potential in energy systems, it can address a number of pressing energy issues in numerous sectors [1]. Its uses contribute to the decarbonization of several industries [2], offer high efficiency in terms of energy conversion [3], and enable storing energy for long-term operation [4].
+Hydrogen's versatility in application enables the production and conversion of energy in a wide range of industries currently dependent on fossil fuels, guaranteeing minimal or no environmental impact [5]. Hydrogen is undoubtedly gaining traction as a viable alternative [6], attracting both academic and corporate attention [7e10].
+Since the transportation sector is responsible for approximately 30% of global carbon dioxide emissions (contributing to climate change), the use of hydrogen in combination with fuel cell technology [11], such as in fuel cell electric vehicles (FCEVs), is widely recognized as an alternative fuel that can reduce greenhouse gas emissions in this sector. Furthermore, hydrogen may be generated by the electrolysis of water using
+
+renewable energy, rendering it "green" and "clean" at the moment of creation [12e14].
+Therefore, a network of hydrogen refueling stations, sometimes referred to as HRSs, should be developed in support of this new concept of mobility [15]. These points of refueling are crucial to the distribution infrastructure that supports a fuel cell (FC)-based sustainable mobility by acting as a center to facilitate hydrogen supply to FCEVs [16,17]. However, the success of this technology is limited by a number of barriers that obstacle a sustained development [18]. The primary drawbacks include a limited adequate infrastructure [19], a costly investment, and a lack of defined laws, norms, and standards [20,21] in comparison to other refueling infrastructures, such as for methane vehicles or pure electric vehicles [22e24].
+The most current scholarly contribution on HRS norms and standards, as far as the authors are aware, was published in 2017 by Pique et al. [25], who evaluated the standards governing hydrogen fueling stations. Their study was based on data up to 2014, and it was comprised of materials and data obtained via private communication with authorities and IA HySafe [26] members.
+Recently, within the HyLaw project [27], researchers faced a similar challenge by providing market developers with insights into relevant legislation and pointing out legal obstacles. A recent study [28] included a concise and comprehensive legislative description of HRS laws and standards, followed by an evaluation and suggestion.
+The literature lacks a systematic analysis of HRS equipment and operating standards. Researchers, policymakers, and HRS operators could find this information relevant for planning the network's future expansion. This study is intended to address this information need by providing a comprehensive strategic overview of the regulations currently in place for the construction and maintenance of hydrogen fueling stations.
+Regulations for hydrogen refueling stations are extensively researched and reviewed at the global, European, and Italian levels. Standards for on-site hydrogen production through water electrolysis, hydrogen storage (both liquid and gaseous), and refueling processes are some of the many topics addressed at the global, European, and Italian levels. To address this knowledge gap, this paper will offer a high-level strategic overview of the existing standards governing the
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+19359
+
+design and operation of hydrogen filling stations. A quick introduction to fundamental hydrogen precautions and hydrogen design is offered. Worldwide, in Europe, and in Italy, a succinct and complete investigation and assessment of hydrogen refueling station standards are conducted and evaluated. Among the several issues reviewed on an international, European, and Italian level are the standards in effect for on-site hydrogen generation through water electrolysis, hydrogen storage, both liquid and gaseous, and refueling procedures.
+Short overview of hydrogen safety
+This section will present a brief summary of hydrogen's safety aspects in order to highlight the requirements of standards, rules, and regulations at an HRS [29]. Table 1 compares the primary features of hydrogen to those of other fuels. Hydrogen is colorless and odorless, with a broad spectrum of flammability. Hydrogen is flammable across a broad range of concentrations (from 4 to 74% volume) but has a lower limit higher than gasoline, propane, and diesel [30].
+However, due to hydrogen's low density, it dissipates rapidly in open areas [31], in contrast to other flammable gases such as LPG (liquid propane gas), which is heavier than air and flows downhill. Gases with a high density, such as gasoline and propane, are more prone to explosion. These gases tend to condense near the ground, posing an increased danger of explosion.
+Hydrogen is non-toxic and non-poisonous, and its use as a fuel produces no odors. Hydrogen dangers may be minimized with the proper precautions. There are several compelling reasons to use hydrogen in industry rather than conventional hydrocarbon fuels such as gasoline or propane [32,33].
+Hydrogen has low ignition energy, a rapid flame speed, poor flame visibility, is colorless and odorless, and has a wide range of flammability. Hydrogen can burst into flames at many different gas concentrations in air (from 4 to 74% by volume), while its lower flammability limit is greater than that of several other popular fuels such as gasoline, propane, or diesel.
+However, since hydrogen has a density that is approximately one-fourteenth that of air, it dissipates swiftly in open regions and so disperses rapidly in the atmosphere [34], in contrast to other flammable gases such as LPG (liquid propane gas), which flows downhill due to its heavier density. Because gasoline and propane are heavier than hydrogen, they are more prone to explode. Each of them produces gases that tend to remain close to the ground, increasing the probability of an
+
+Table 1 e Hydrogen properties compared to other fuels.
+
+Property
+
+Hydrogen Methane Gasoline
+
+Lower Heating Value [kWh/kg] Flame temperature in air [K] Flammable range [vol%] in air Ignition energy in air [mJ] Auto-ignition temperature [C] Density ratio with air
+
+33.33 2318.15 4.0e75.0 20 858.15 0.07
+
+13.89 2148.15 5.3e15 290 813.15 0.55
+
+12.36 2473.15 1.0e7.6 240 503.15 4.0
+
+explosion. When hydrogen is ignited, it immediately burns away. The human eye has a tough time detecting hydrogen combustion since it burns in the UV color spectrum and produces no smoke. As a result, detectors should be used to detect unseen flames. Due to its flammability, all electrical equipment should be grounded to avoid static dischargeinduced sparks [35]. Among some important phenomena that must be considered for hydrogen safety evaluation, it is worthy to mention deflagration and detonation [36,37]. Deflagration is a burning process that occurs when the initial velocity of the hydrogen/air or hydrogen/oxygen mixture is equal to the laminar burning velocity of the hydrogen-in-air or hydrogen-in-oxygen mixtures. The flame is defined by a shift from a laminar to a turbulent state, which results in the formation of a pressure wave. Because the pressure wave propagates outward at sonic velocity, it precedes the flame front. Detonation is a kind of combustion in which the flame travels faster than the speed of sound, causing a shock wave that travels through the mixture at the same speed as the flame front and compresses it, raising the temperature level. This temperature rise has the potential to ignite the air behind the shock wave front. Detonation is the most serious situation if a hydrogen leak occurs within the detonability range (e.g., 11%e 70% in air), but not within the flammability limit (4e75%). Experiments have shown that the flow may undergo a transition known as the Deflagration-to-Detonation Transition (DDT). When this happens, the flame accelerates to speeds of up to 800 m/s, and a tremendous amount of pressure is created at the site of the DDT, resulting in a spike in the temperature of up to 30 times the starting pressure. Additionally, detonation may be defined as the creation of a tremendous explosion that is lethal to people. The inclusion of gadgets and impediments may reduce these phenomena' runup distance. Simultaneously, safety actions must be implemented to address DDT phenomena and prevent their repercussions.
+Public perception and hydrogen safety reports
+Public opinion on hydrogen safety is influenced in some way by misunderstandings about hydrogen's participation in previous catastrophes, such as the 1937 "Hindenburg" accident [38,39], in which the passenger airship caught fire, killing 35 passengers. The first concept postulated that a spark would ignite on the dirigible skin during the descent operation, generated by a potential difference between the ground and landing equipment, lighting a fire and also generating diffusion combustion of hydrogen (used as a lifting gas) discharged into the air. However, a further investigation conducted by NASA experts in 1999 established that the fatalities were caused by the dirigible's burning skin, which was constructed of highly flammable material, the burning oil, or by leaping from the dirigible. The likelihood that any fatalities were caused by hydrogen fire was determined to be negligible. The buoyancy of hydrogen, which enabled its flames to generate updrafts without exploding, aided the dirigible in remaining afloat. As with other fuels, hydrogen must be treated cautiously due to the risks associated with its use (the explosion of a space shuttle in 2007 [40] and the nuclear accident that happened in Fukushima in 2011 [41,42]), but it is
+
+19360
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+unquestionably erroneous to consider hydrogen to be more hazardous than other fuels. In 2019, an accident occurred at a Santa Clara, California hydrogen facility. After being filled, a truck carrying hydrogen in liquid form began to leak, causing an explosion. For three months during its outage, it impacted and damaged the supply to Northern California's hydrogen station network. In an unrelated incident, an HRS disaster outside Oslo, Norway, happened in 2019. Hydrogen escaping from the high-pressure storage facility caused an explosion. In their risk study for an urban hydrogen station. Additionally, in their risk analysis for a hydrogen refueling station in an urban setting, Gye et al. [43] identified dispenser and trailer leaks as the most significant. The Hydrogen Tool Portal [44] has a comprehensive database of hydrogen-related mishaps.
+As can emerge from the presented literature review, few assessments can be found on HRS operation and evaluation [45]. Shared experience and lessons gained are crucial, since they may significantly reduce the likelihood of explosions or hazardous circumstances such as those described above. Indeed, it would assist the industry in mitigating risks and facilitating the sustainable scale-up of these technologies [46e48].
+Moreover, hydrogen application promotion is undoubtedly connected with a more mature knowledge of the dangers and risks associated with it [49,50]. Risk assessment techniques are often used in safety design and safety engineering, particularly for typical applications and established technology [51,52]. The risk assessment technique, on the other hand, requires a large amount of statistical data on system functioning, scheduled and unplanned maintenance interventions, and probable faults [53]. Fuel cell units, electrolyzers, and HRSs are new technologies whose viability is being shown in several pilot projects worldwide [54,55]. Thus, the collecting of statistical data is harmed by the poor availability level associated with a small number of installations [56]. As a result, at this phase of hydrogen technology development, a risk assessment method based only on statistical data might result in ambiguity and unacceptable levels of risk. Having a safety-oriented standard and a methodology for safety design is undoubtedly more beneficial for hydrogen safety evaluations [57,58]. This technique may give more definite instructions for both qualitative and quantitative design by comparing the trial's safety design to existing acceptance criteria iteratively until a suitable answer is determined. These are the critical ideas for developing a dependable and dynamic approach to hydrogen safety engineering.
+Current hydrogen methods operate at high pressures (700 bars) or liquefy hydrogen at temperatures as low as À253 Celsius, which introduces extra dangers [59,60]. Safety measures such as natural or forced ventilation in the event of a leak, the elimination of all possible ignition sources, detection of the leak and subsequent reduction of the gas pressure, and extinguishing equipment are just a few of the systems used to minimize the likelihood of flammability and hydrogen dispersion [61]. Liquid hydrogen may produce severe freeze burns if it comes into touch with exposed flesh. It is kept in liquid form in specialized containers that are double-walled and very well-insulated [62,63]. Liquid escaping and coming into touch with a person's skin is very unlikely [64,65]. The
+
+Biennial Report on Hydrogen Safety [66]notes that hydrogen has two primary impacts on materials: cold embrittlement and hydrogen embrittlement. The first effect is a feature of cryogenic gases and storage systems, occurring when the operating temperature falls below the ductile-brittle transition point, reducing the material's toughness. This impact must be considered when working with hydrogen cryogenics and cryogenic storage. The second effect, referred to as hydrogen embrittlement, has a significant impact on the material characteristics, reducing mechanical resistance, inducing cracking, and resulting in unexpected failures. From a phenomenological standpoint, this phenomenon is primarily ignited by hydrogen ingression into the component structure, and prior to this process occurring, the molecules of the involved hydrogen undergo breakdown into atoms and subsequently diffuse into the metallic structure. The purity of the hydrogen, the material used, the temperature, the hydrogen partial pressure, the stress, and the deformation, as well as the exposure period, all have an effect on the hydrogen embrittlement process.
+Examples of hydrogen safety engineering in an HRS
+The decay of the hydrogen mass fraction in a circular jet demonstrates that as the storage pressure increases, the danger distance increases as well (axial distance to e.g., 4% hydrogen vol. fraction) [51,67]. The similarity law, stated in Ref. [51], establishes a link between the axial concentration and the separation distance, providing an intriguing window into all the elements involved and those that impact the computation and outcome. With a constant axial concentration, the danger distance is proportional to the square root of hydrogen density evaluated at the nozzle, and therefore to the hydrogen pressure level evaluated at the nozzle, which is proportional to the reservoir's hydrogen pressure. Increased storage pressure results in a rise in the pressure, hence increasing the danger/safety distance.
+Table 2 illustrates the outcomes of examining a storage pressure range of 1 bare700 bar and three distinct axial hydrogen concentrations in the air: 4%, 11%, and 29.5%. The data was obtained using the e-Laboratory of hydrogen safety's Similarity law tool [30,68].
+The pressure dependency is more pronounced at lower volumetric hydrogen concentrations in air. However, as indicated above, the relationships for all of them follow a squareroot tendency. A greater storage pressure results in a longer danger distance, as seen in Fig. 1 below, using the data processing explained above.
+Hydrogen jet fires fall into three distinct regimes and categories: buoyancy, momentum expanded, and momentum under-expanded [69,70]. The first category shows low Froude Number (Fr) values, and since the flame length is a proportional function of the Fr Number, a larger Fr number predicts a longer dimensionless flame length. The momentumexpanded jet regime has bigger Fr Numbers than the conventional buoyancy-controlled jet regime, and the dimensionless flame length is not reliant on the Fr Number. The third regime, termed momentum under-expanded jets, could not be explored using just Fr Number correlations, as was done for buoyancy-controlled and momentum under-
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+19361
+
+Table 2 e Pressure dependence of the axial distance from the nozzle for a fixed volumetric concentration of hydrogen in air*.
+
+Storage Axial distance Axial distance Axial distance
+
+Pressure from nozzle to from nozzle to from nozzle to
+
+[bar]
+
+4% [m]
+
+11% [m]
+
+29.5% [m]
+
+1
+
+2
+
+0.83
+
+0.25
+
+50
+
+13.51
+
+4.58
+
+1.38
+
+100
+
+18.78
+
+6.37
+
+1.92
+
+150
+
+22.63
+
+7.67
+
+2.31
+
+200
+
+25.71
+
+8.72
+
+2.63
+
+250
+
+28.31
+
+9.6
+
+2.89
+
+300
+
+30.55
+
+10.36
+
+3.12
+
+350
+
+32.53
+
+11.03
+
+3.32
+
+400
+
+34.29
+
+11.62
+
+3.5
+
+450
+
+35.88
+
+12.16
+
+3.67
+
+500
+
+37.32
+
+12.65
+
+3.81
+
+550
+
+38.65
+
+13.1
+
+3.95
+
+600
+
+39.86
+
+13.51
+
+4.07
+
+650
+
+40.99
+
+13.9
+
+4.19
+
+700
+
+42.04
+
+14.25
+
+4.29
+
+*The reservoir temperature is 300 C, the ambient temperature is 293 C, the ambient pressure is 1 bar, and the orifice diameter is
+5 mm.
+
+expanded hydrogen jets [71,72]. Correlations based solely on Fr-Numbers are indeed physically imprecise, and their experimental validation revealed an excessively scattered trend for momentum under-expanded jets, because Reynolds Number (Re) and Mach Number (M) also play a role, as their dependence has been observed experimentally. A new connection has been developed recently [73,74], which
+
+incorporates the flame length dependency on Reynolds Number and Mach Number as well. The following features have been observed as a result of the new correlation: for under-expanded jets, the regime is characterized by high Re Numbers and a rise in dimensionless flame length; this tendency is referred to as the momentum-dominated underexpanded jet fire "slope." In this regime, the Fr Number is almost constant.
+A hydrogen explosion might trigger a cascade of events that cannot be ignored, and safety must be carefully examined [75,76]. Typically, the sequence of events that occurs is as follows: the initial event is the release of hydrogen, followed by hydrogen dispersion into the surrounding environment [77]. Confined places are the most crucial because hydrogen may build during and after dispersion, resulting in further fire or deflagration and re-ignition owing to secondary ignition sources. Ventilation is crucial in confined areas, and three distinct regimes may be distinguished: well-ventilated environment, under-ventilated environment, and self-extinction owing to air consumption. Immediately after the ignition, a fire or explosion may occur. Ignition may occur as a result of an auto-ignition stage or as a result of unintentional ignition triggered by possible ignition sources. Depending on the local and environmental circumstances of the adjacent area, the ignited release may create sustained flames or blown-off flames, which are very hazardous since they may result in hydrogen buildup and subsequent fire/explosion. Therefore, the ignited flames may result in a fire or explosion, known as deflagration or detonation. In this scenario, it is also necessary to examine the DDT phenomena (deflagration to detonation transition).
+
+Fig. 1 e Pressure dependence of the axial distance from the nozzle for a fixed volumetric concentration of hydrogen in air.
+
+19362
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+It is critical to evaluate a safety distance, also known as danger distance, during a safety assessment. Exposure to a hydrogen flame directly may result in a third-degree burn. The primary source of worry for those not directly involved in free hydrogen flames is exposure to very high heat fluxes and temperatures. In a confined environment, the results may be much more lethal: asphyxiation and overpressure/shock wave are possible during a hydrogen fire/explosion.
+The fire/explosion will very certainly cause significant damage to structures and buildings, most notably owing to overpressure phenomena, high-temperature exposure and thermal radiation, and flying objects (referred to as flying "debris"). Indeed, there are damage standards in Hydrogen Safety that are described in terms of the severity of injury produced by temperature and heat flux exposure or overpressure [71,78,79].
+Adopting a fixed-aperture TPRD may certainly result in the formation of blown-off flames, which must be a matter of worry, as the blown-off flames might result in hydrogen buildup, which could result in additional fire/explosion or deflagration. A possible solution may be the adoption and construction of a variable aperture TPRD along the lines. The variable aperture TPRD may be schematized as follows: with greater input pressures (upstream), the valve tends to shut against the spring, but at lower pressure levels (e.g., as the pressure declines), the valve opens more. However, the diameter change and connection with the spring load must be carefully developed and confirmed, since a bigger diameter means a longer flame length, but a lower pressure implies a shorter flame length [80]. Indeed, the diameter reducing trend must be closely associated with the upstream pressure in order to prevent an increase in the flame length, which would create extra threats to previously constructed infrastructures. Another important parameter in hydrogen safety is the adiabatic blowdown time to avoid tank rupture during a fire. A typical diagram is shown in Fig. 2, calculated with the approach proposed in Refs. [81,82]. If the fire resistance rating is less than the blowdown time, further safety precautions and procedures must be taken, such as selecting a larger TPRD diameter.
+Fig. 2 e Adiabatic blowdown time for a 120 L vehicle tank, considering a pressure level of 490 bar and a TPRD size for the diameter of 3 mm.
+
+Hydrogen refueling station
+HRSs for fuel cell cars are essential components of the technology's expansion. The number of installed and operational stations is rising, although it remains much smaller than the number of conventional refueling stations [83].
+According to Ref. [84], there were around 320 operational HRS stations in 2017, 375 in 2018, and 470 in 2019. At the end of 2019, Asia had the most operational stations, with over 200 HRS (most in Japan). Europe had the second-highest number of HRS in 2019, with 185 stations. Germany alone had 81 stations, while America counted around 70 stations (mainly the USA). Prior to discussing the laws and standards governing HRS technology, a quick introduction to the HRS architecture and components will be offered.
+Hydrogen refueling station e equipment involved
+The contemporary hydrogen industry offers a variety of distinct refueling station configurations, including liquid (LH2) and gaseous (GH2) hydrogen storage.
+The key components of a hydrogen station are seen in Fig. 3, split by installation area (supply, intermediate storage, high-pressure storage, and dispensing). The choice and technique used in the hydrogen supply chain dictate the layout of the station. Hydrogen gas may be transported through tube trailers, pipelines, or on-site generation (e.g., steam methane reforming, SMR, or water electrolysis, WE). Another possibility is to have liquid hydrogen delivered by trucked tanks to replenish an on-site cryogenic liquid hydrogen tank.
+In today's market, the majority of stations have daily capabilities of between 100 and 520 kg of compressed GH2, and more than 1000 kg of LH2. This is due to the denser nature of liquid hydrogen.
+Compressed GH2 HRSs Currently, gaseous hydrogen storage stations are supplied through pressurized tube trailers, or they can have on-site generation units installed; another option, in the future expansion of the hydrogen economy, is represented by hydrogen supplied via dedicated or refurbished gas pipelines [85]. Although on-site production facilities like SMR or WE units typically deliver hydrogen at 20 bar, in the electrolyzers industry new enhancements and products offer generation units with operation at higher pressures [86e88]. The tube trailer transports hydrogen at a pressure of 200e500 bar to the station, where it is reduced to 20e50 bar before being switched. When hydrogen is supplied through pipelines, the operating pressure is typically maintained at 20 bar [89e91]. Regardless of the source of hydrogen gaseous supply, the majority of hydrogen gaseous stations are designed to withstand 20 bar of hydrogen at the hydrogen source. These stations are equipped with compressors that increase the pressure levels to about 950 bar [92]. The compressed hydrogen is then stored in pressurized tanks, installed horizontally or vertically [93,94]. After being pre-cooled to around À40 C, the hydrogen may be supplied fast avoiding the dangerous overheating of the hydrogen within the vehicle's tank [95], above all in multiple back-to-back fueling processes
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+19363
+
+Fig. 3 e Technology and equipment installed in an HRS
+
+[96,97]. Another possible configuration is to use a storage compressor [98] to compress hydrogen from the supply source to 500 bar for storage in a medium-pressure system [99]. The vehicle is then refueled through a booster compressor after passing through a pre-cooling device and a high-pressure buffer tank (HPBT) [100,101]. HPBTs are added to mitigate the booster compressor's pressure pulsing on station and vehicle gauges, while the dispenser monitors and manages hydrogen flow in the onboard tank [102]. Modular HRSs are also under development [103,104] The refueling process is also critical in terms of hydrogen safety, as investigated in Refs. [105,106].
+LH2 HRSs For liquid storage, a hydrogen station can be configured in one of two ways: with an on-site cryogenic tank that is refilled by tankers carrying approximately 4 tons of cryogenic liquid hydrogen; or with an off-site cryogenic tank that is refilled by tankers carrying about 4 tons of cryogenic liquid hydrogen [107]. As with liquid hydrogen, cold hydrogen gas vaporizes and collects in the cryogenic tank headspace, a process known as "boil-off," before being handled by a compressor [108,109]. Before hydrogen is transferred to the vehicle's onboard tank, it is pre-cooled to around À40 C in a hydrogen chiller. Alternatively, liquid hydrogen is compressed and then gasified using a cryogenic pump and evaporator. After evaporation, gaseous hydrogen is maintained compressed in the highpressure system storage tank and pre-cooled to À40 C during the refueling process. The pre-cooling unit might be cooled by cryogenic hydrogen in this configuration.
+
+The configuration of the station is therefore highly dependent on the method of delivering hydrogen (GH2 or LH2) [110,111]. Therefore, various safety measures must be performed, depending on the chosen configuration [112e114]. Liquid hydrogen must be stored in special tanks, that can operate in cryogenic conditions at a temperature as low as 20 K and at pressures ranging from 0.6 MPa to 35 MPa. For these tanks, assuring proper insulation is critical, and consequently, boil-off is a common occurrence [115,116]. In order to avoid explosions, it is essential to manage and monitor pressure levels and properly size venting valves [117]. Indeed, evaporation creates large amounts of GH2, which raises the pressure level of the gas when stored in closed tanks. In the presence of static electricity or condensed air, if these pressure increases are not addressed, leaks and subsequently the potential for ignitions may emerge. If there is a leak in a liquid hydrogen tank, precise measurements must be made.
+Design considerations for HRSs Due to the low-temperature level of cryogenic tanks, a leak might result in hypothermia or frostbite. If air enters the tank, moisture is injected, which may cause ice to form, causing damage to the lines, valves, and sensors.
+On the other hand, GH2 transported via pressurized trailers, up to 90 MPa, is the most favored delivery mechanism for short distances in the current state of the art. Despite its bulkiness, this approach appears to be more economically feasible than transporting the hydrogen in liquid form and then vaporizing it afterward [117]. Hydrogen disperses swiftly in the air after a
+
+19364
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+spill. All pressure vessels must adhere to a variety of standards and norms. The hydrogen gas cycling test requires that the tank be loaded and drained without degradation 1000 times [118]. Another intelligent alternative for transitioning to a hydrogen economy is on-site generation via electrolysis of water, which can minimize the need for frequently needed external storage trailers, either GH2 or LH2. This layout ensures reliability and eliminates breakdowns, shortages, and wasteful energy usage during delivery. Bauer et al. [119] conducted a technical investigation of several station layouts, including GH2 or LH2. The authors discovered how HRS with LH2 might result in decreased energy usage, while gaseous stations need high-pressure storage, which has an effect on the design and architecture. As indicated before, cryogenic tanks are required when storing hydrogen in liquid form, however, transfer and boil-off losses are common, and evaporation rates may exceed 1% of hydrogen per day in tiny tanks such as those used in automobile applications [120]. Petitpas et al. [63] analyzed all leaks that occurred during the generation, delivery, storage, pumping, and refueling of LH2, while also highlighting lessons learned throughout experimental operations. If the station operates with gaseous hydrogen, it may be supplied externally or generated on-site. The HRS layout is less complex in the first scenario than it is with an on-site generation unit, where additional challenges may arise owing to the system's complexity. However, an on-site electrolyzer might possibly eliminate emissions, and for refueling capacity, greater than 1 ton per day, the installation of on-site WE units could expedite market entry and lower supply costs, as Reddi et al. [121] examined. In fact, if green H2 production is used to operate onsite HRSs, they contribute to the growth of the hydrogen market and associated technologies by using a low-carbon supply chain. Nistor et al. [122] examined the technical and economic outcomes of two distinct configurations for an onsite HRS, respectively with the installation of a PEM WE and an alkaline WE, based on experimental activities carried out in the UK. The authors' findings indicated how green H2 is emerging as a feasible alternative to hydrocarbons, even as they advocated for additional studies to include the demand side to reproduce a more plausible option. In this context, analyses into hydrogen leaks during the transition from generation to refueling serve as a bridge between the supply and demand sides, enhancing the analysis conducted in the literature and providing insight into potential issues to the commercial development of a hydrogen station. Although the scientific community has not conducted much research on this subject, the few scholarly studies available demonstrate its critical relevance. Kurtz et al. [123] conducted an in-depth analysis of all the characteristics and impediments to ramping up and expanding HRSs in their review. Among these, insufficient reliability has an effect on maintenance expenses by necessitating frequent unplanned repair tasks. Lipman et al. [124] discussed several lessons gained from Berkeley's HRS operation, at the University of California. The authors demonstrated that HRS personnel must plan and schedule maintenance tasks meticulously in order to minimize station outages. Additionally, infrastructure management via data processing may prevent unexpected breakdowns or difficulties and uncover performance deterioration. Stolzenburg et al. [125] described the performance of nine HRSs supporting a bus
+
+fleet of 27 units, as part of a European Project. The HRS configurations varied in terms of design and layout: six had on-site production units (four with WEs and two with SMRs), while three had offsite storage systems (two GH2 and one LH2). Among the several characteristics and metrics examined, the authors concentrated on both individual hydrogen leaks and total hydrogen leaks. They claimed that around 80,000 kg of hydrogen were lost out of 274.5 tons throughout the operating period of all nine stations, with particular losses ranging between 7% and 46%. The principal events that resulted in these big leaks were hydrogen contamination caused by compressor failures or oil spills, metering and hydrogen purging difficulties, as well as venting processes, and other leakages. Three WE-based HRSs demonstrated specific hydrogen losses of between 7 and 9%, with only one exceeding 20% due to the long idle period. Additionally, they stated that 5% of hydrogen was utilized to regenerate purifying systems. The single station in London with liquid storage had the highest rate, up to 69%, owing to numerous evaporations and boil-offs resulting from low demand and lengthy idle periods. Moreover, the authors highlighted how around 15% of the produced H2 is typically utilized for gas purification in steam-reformer-based power plants. Genovese et al. [126] investigated an abnormally big difference between the amount of hydrogen generated and the amount of hydrogen distributed at a public hydrogen station, around 35%. The standard functioning of the station was studied, with a particular emphasis on stand-by times, the manufacturing phase, and dispensing operations. The creation of checklists aided in identifying probable leak sources. Across all studied categories, maintenance operations emerged as the most essential, resulting in data mismatches in hydrogen accounting. In Ref. [127], the minimum number of HPBTs has been investigated, to allow a safe and smooth free-pulsation refueling process.
+HRS standards
+The short safety excursus and the description of HRS layouts are functional to the introduction of the standards in force for installing and operating an HRS. Regulation, code
+Fig. 4 e HRS, ISO standards.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+19365
+
+development, and standardization are critical actions that must be taken to ensure the safe and expedited entry of HRS components and technologies into the market [128e131]. The following taxonomy of standards, codes, and regulations is used in this paper.
+ A standard is an institutional paper that outlines the specifications for a specific component or explains a specific approach or methodology. A code is a document that describes the desirable results e what a product should dodbut not how it should be done;
+ Regulations are mandatory and binding, unlike codes and standards, which are voluntary.
+The standards are crucial for the hydrogen fueling station industry as it ensures compatibility and safety for different systems and components. It also increases the interoperability between different parties in the hydrogen fuel cell ecosystem, including vehicle manufacturers, station operators, and hydrogen suppliers. These standards are continuously reviewed and updated, to keep up with the advancing technology and safety requirements.
+Global standards ISO (International Standards Organization) and IEC (International Electro-Technical Commission) are the two major worldwide standards-publishing organizations. Within these organizations (ISO and IEC), as well as within the Society of Automotive Engineers (SAE), standards are established by Technical Committees (TCs) with input from European Committee for Standardization (CEN) members, referred to as National Standards Bodies (NSBs). The TC appoints a working group to fulfill a specific task by a certain time. The working group (WG) is ultimately responsible for standard development. The ISO hydrogen standards are developed by the following technical committees.
+ "ISO/TC 197 Hydrogen technologies";  "ISO/TC 220 Cryogenic vessels";  "ISO/TC 58 Gas cylinders;  "ISO/TC 22/SC 41 Gaseous fuels-specific issues".
+
+The ISO requirements for HRS equipment and operation are summarized in Fig. 4. Four HRS areas are covered by ISO, namely production, storage, dispensing and an area called in this paper "general applications for HRS equipment". For the production area, ISO covers both hydrogen production from fossil fuels and generation from water electrolysis. Additionally, there is a specific standard concerning the safety of hydrogen separation and purification systems (ISO 19983). In Appendix A, Figure A1 and Figure A2 present the main ISO codes and standards, with the identification number and the related description.
+Notably, a number of standards for different components and equipment are now being defined and are currently under development. LH2 technology seems to have a greater degree of maturity in terms of published standards, but numerous GH2 standards, which cover the majority of the hydrogen use, are in the process of being drafted or completed. ISO TC 197 is the most active in the HRS field since it focuses on hydrogen fuel stations and hydrogen-powered vehicles. The ISO TC 197 standards provide specifications and guidelines for the design, construction, operation, and maintenance of hydrogen fueling stations, as well as the performance and safety requirements for hydrogen fuel cell vehicles. The main standard associated with general and specific requirements for the design and operation of HRSs is ISO 19880, from 1 to 9. The ISO 19880 standards provide guidance for safe and efficient hydrogen refueling, ensure compatibility between various refueling stations and vehicles, and provide a framework for commercial operations.
+The majority of IEC standards are concerned with FC technology and its usage in energy systems, above all in stationary applications. However, as seen in Fig. 5, suitable standards exist for explosive gas atmospheres, and are applicable in HRS operation, too. As presented in Appendix A in Figure A3, there are nine relevant standards that are related to safety procedures and considerations, as well as explosive gas atmospheres, grouped into four main standard categories: IEC 60079, IEC 80079, IEC 60204, and IEC 60529. The following are the primary TCs for IEC H2-related standards.
+
+Fig. 5 e IEC standard for HRS equipment.
+
+Fig. 6 e SAE HRS equipment.
+
+19366
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+ "IEC/TC 31 - Explosion-proof equipment";  "IEC/TC 69 - Electrical power/energy transfer systems for
+electrically powered road vehicles and industrial trucks";  "IEC/TC 105 - Fuel cell technology".
+
+Additionally, SAE standards are currently in force for hydrogen applications, as shown in Fig. 6. SAE is a global organization of engineers and technical professionals that develops technical standards for hydrogen refueling operations and connecting devices. The SAE FC Standards Committee is the primary technical committee for SAE hydrogen standards [132e134]. The main standards are related to safety, fuel quality, terminology, fueling connection devices, and above all fueling protocols. Among the latter, SAE J2601 is the most adopted. It is a technical standard developed by the SAE that provides specifications for the dispensing of hydrogen fuel to vehicles. This standard applies to the interface between hydrogen dispensing equipment and vehicles and provides guidelines for the dispensing pressure, flow rate, and other parameters. The goal of this standard is to ensure the safe and efficient transfer of hydrogen fuel from the dispenser to the vehicle and to promote compatibility between different hydrogen fueling stations and vehicles. The standard also describes safety and performance requirements for the dispenser and vehicle, including the amount of hydrogen that can be dispensed in a single transaction. It also covers the procedure for the system's selfdiagnosis, which is used to monitor and report the dispenser's status. The standard is continuously reviewed and updated to keep up with advances in hydrogen technology and to improve safety and performance. Adoption of this standard supports and ensures the safe and efficient transfer of hydrogen, promotes interoperability between hydrogen filling stations and automobiles, and fosters the expansion of the hydrogen fuel cell sector. Figure A4 in Appendix A depicts the principal SAE standards, together with the corresponding identification number and description.
+European standards CEN or CENELEC (European Committee for Electro-Technical Standardization) are responsible for the generation and publication of standards in Europe, as well as the ISO standard implementation. They provide technical requirements and recommendations to assure product safety, quality, and interoperability throughout Europe. European, national, and industry standards typically reference CEN and CENELEC standards, which are voluntary. After adoption, member states must consider these requirements while implementing EU law. CEN and CENELEC have developed and published several standards related to hydrogen, which provide specifications and guidelines for the safe and efficient use of hydrogen in various applications. These standards cover different aspects of hydrogen safety, storage, transport, and use. The following are the primary TCs for CEN/CENELEC H2-related standards.
+ "Hydrogen - CEN/CLC/TC 6";  "CEN/TC 23 Transportable gas cylinders";  "CEN/TC 69 Industrial valves";  "CEN/TC 185 Fasteners";
+
+Fig. 7 e HRS equipment - CEN/CENELEC
+ "CEN/TC 197 Pumps";  "CEN/TC 234 Gas infrastructure";  "CEN/TC 235 Gas pressure regulators and associated safety
+devices for use in gas transmission and distribution";  "CEN/TC 236 Non-industrial manually operated shut-off
+valves for gas and particular combinations valves-other product".
+CEN and CENELEC have produced various hydrogenrelated safety, performance, and quality standards. To stay up with technology and safety, they examine and update these standards. Fig. 7 depicts the most important CEN/CENELEC standards. For the purpose of this manuscript, they have been grouped into five main categories: production and supply (i), storage (ii), compression (iii), dispensing (iv), and general applications (v). Figures A5 and A6 in Appendix A list the analyzed standards, grouped into the above-mentioned categories. Concerning hydrogen supply, there are several standards for gas supply systems, with operating pressure less or over 16 bar, as well as the consequences of the injection/ transport of hydrogen into the gas infrastructure and the main requirements of transportable gas cylinders. Storage-related standards are focused both on gaseous hydrogen (EN 17533) and liquid hydrogen storage (EN 1797) via cryogenic tanks. An important gap in hydrogen compression is covered by EN 12583, under approval.
+The procedures of hydrogen dispensing are assessed from multiple perspectives. EN 17127 covers outdoor dispensing stations, while hydrogen refueling procedures and equipment for train uses are still in development. EN ISO 16380 and 17,268 additionally discuss connectivity with fuel-cell electric vehicles, while EN 17124 deals with hydrogen quality.
+An interesting guideline is presented by CEN/CLC Guide 38, for multifuel stations, where HRS can be installed with other alternative fuel refueling stations.
+Italian national regulatory framework Italy is a favorable location for the expansion of green hydrogen thanks to its availability of clean energy sources and the existence of a capillary network for natural gas
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+19367
+
+transmission, that can be potentially repurposed. Due to its location in the Mediterranean, Italy is a prime hub for travel between the Middle East and Africa, which are significant hydrogen producers, and the northern states, which are significant hydrogen consumers. Despite the enormous potential, numerous regulatory and other impediments remain in the way of the full development of green hydrogen in Italy.
+The UNI/CT 056/GL 01, which also serves as the national mirror group for CEN/CLC/JTC 6, is the sole TC National mirror group for ISO/TC 197 Hydrogen technology. The Italian TC is concentrating on the systems, equipment, and connections necessary for the production and use of hydrogen from renewable energy sources.
+The December 16, 2016 National Decree n. 1657, which implements the EU Directive 2014/94/EU, acknowledges hydrogen as an alternative fuel and commits Italy to develop an acceptable network of hydrogen refueling stations by December 31, 2025. Due to the absence of implementing legislation for the Ministerial Decree of August 31, 2006, the expansion of hydrogen refueling stations in Italy has been hampered significantly. A revised Decree from 2018 allows for a 700 bar supply pressure and improves compliance with ISO 19880, overcoming the Ministerial Decree of August 31, 2006's lack of implementing regulations. Locally, the "National Fire Corps Corpo Nazionale dei Vigili del Fuoco" is responsible for safety and fire prevention evaluations. However, a number of hydrogen-related acts are not allowed, including the following.
+- Liquid hydrogen and its storage and distribution; - Safety distances are to be evaluated according to the
+equipment's working pressure. - Adoption of pipeline-supplied hydrogen; - A methodology for calculating safety distances in the event
+of ignited and un-ignited hydrogen leaks; - Mitigating strategies such as passive or active ventilation
+systems.
+At the time of writing, the only national standards accessible are those developed by UNI (Ente Nazionale Italiano di Unificazione), and they are as follows.
+- "UNI ISO 14687:2020, Hydrogen fuel quality d Product specifications, which incorporates ISO 14687:2019; "
+- "UNI ISO 19880e1:2020, Gaseous hydrogen d Fueling stations, which incorporates ISO 14687:2019. - Part 1: Basic specifications, which include ISO 19880e1:2020".
+- "UNI ISO/TR 15916:2018, Fundamental safety considerations for hydrogen systems, which incorporates ISO/TR 15916:2015".
+Conclusions
+The present article aimed to provide a comprehensive strategic overview of the regulations currently in place for the construction and maintenance of hydrogen fueling stations. The main reason behind the paper is the lack of a systematic
+
+overview of HRS equipment and operating standards in the literature. This information could help researchers, policymakers, and HRS operators plan for the network's future growth.
+The paper introduced a brief summary of hydrogen's safety aspects to highlight the requirements of standards, rules, and regulations at an HRS. The safety aspects have been outlined both for GH2 and for LH2, in terms of potential dangers and knowledge that can be applied during the installation or operation of hydrogen-related technologies.
+After the short safety assessment, an overview of HRS layouts, equipment, and operating strategies have been presented. The main components of an HRS have been broken down by where they are installed (supply, intermediate storage, high-pressure storage, and dispensing). A special focus was given to the way the station is set up, depending on the choice and method used in the hydrogen supply chain. Hydrogen gas can be moved by tube trailer, pipeline, or by generating it on-site (e.g. SMR or WE). Another option analyzed is to have liquid hydrogen brought in by trucked tanks to fill up a cryogenic liquid hydrogen tank already on site. It was outlined how, in today's market, the majority of stations have daily capabilities of between 100 and 520 kg of compressed GH2, and more than 1000 kg of LH2. This is due to the denser nature of liquid hydrogen.
+At an international level, ISO produced various hydrogen standards related to HRS components and operation, mostly addressing quality, safety, manufacturing, and testing. Notably, a number of standards for different components and equipment are now being defined. SAE has already developed technical guidelines for hydrogen refueling techniques and associated equipment. Most IEC standards are concerned with fuel cell technology and its use in electrical power systems. The International Electrotechnical Commission (IEC) has produced hydrogen safety, application, and testing standards. Only a few standards are specifically related to HRS components, focusing more on explosive gas atmospheres.
+Numerous European standards are in the process of being accepted, written, or in their infancy. They will be released soon to coincide with the launch of the new European Hydrogen Strategy and Roadmap.
+In Italy, hydrogen standards for HRS are varied and inadequate. Standards for hydrogen production, storage, transportation, and fueling should be better defined and finalized, along with a thorough examination of the whole supply chain in light of hydrogen's use in multiple energy sectors.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi.org/10.1016/j.ijhydene.2023.02.076.
+
+19368
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+references
+[1] You C, Kim J. Optimal design and global sensitivity analysis of a 100% renewable energy sources based smart energy network for electrified and hydrogen cities. Energy Convers Manag 2020;223:113252. https://doi.org/10.1016/ j.enconman.2020.113252.
+[2] Bhandari R, Shah RR. Hydrogen as energy carrier: technoeconomic assessment of decentralized hydrogen production in Germany. Renew Energy 2021;177:915e31. https://doi.org/10.1016/J.RENENE.2021.05.149.
+[3] Abdin Z, Merida W. Hybrid energy systems for off-grid power supply and hydrogen production based on renewable energy: a techno-economic analysis. Energy Convers Manag 2019. https://doi.org/10.1016/j.enconman.2019.06.068.
+[4] Abdalla AM, Hossain S, Nisfindy OB, Azad AT, Dawood M, Azad AK. Hydrogen production, storage, transportation and key challenges with applications: a review. Energy Convers Manag 2018. https://doi.org/10.1016/ j.enconman.2018.03.088.
+[5] Ishimoto Y, Voldsund M, Neksa° P, Roussanaly S, Berstad D, Gardarsdottir SO. Large-scale production and transport of hydrogen from Norway to Europe and Japan: value chain analysis and comparison of liquid hydrogen and ammonia as energy carriers. Int J Hydrogen Energy 2020;45:32865e83. https://doi.org/10.1016/j.ijhydene.2020.09.017.
+[6] Xu Z, Yan Y, Wei W, Sun D, Ni Z. Supply system of cryocompressed hydrogen for fuel cell stacks on heavy duty trucks. Int J Hydrogen Energy 2020;45:12921e31. https:// doi.org/10.1016/J.IJHYDENE.2020.01.034.
+[7] Hassan IA, Ramadan HS, Saleh MA, Hissel D. Hydrogen storage technologies for stationary and mobile applications: review, analysis and perspectives. Renew Sustain Energy Rev 2021;149:111311. https://doi.org/10.1016/ j.rser.2021.111311.
+[8] Alazemi J, Andrews J. Automotive hydrogen fuelling stations: an international review. Renewable and Sustainable Energy Reviews; 2015. https://doi.org/10.1016/ j.rser.2015.03.085.
+[9] Zoulias E, Varkaraki E, Lymberopoulous N, Christodoulou CN, Karagiorgis GN. A review on water electrolysis. Tcjst 2004;4:41e71. https://doi.org/10.1111/ j.1399-0012.2009.00992.x.
+[10] E4tech. The Fuel Cell Industry Review 2020:2021. [11] Abdelkareem MA, Elsaid K, Wilberforce T, Kamil M,
+Sayed ET, Olabi A. Environmental aspects of fuel cells: a review. Science of the Total Environment; 2021. https:// doi.org/10.1016/j.scitotenv.2020.141803. [12] Acar C, Dincer I. Review and evaluation of hydrogen production options for better environment. J Clean Prod 2019. https://doi.org/10.1016/j.jclepro.2019.02.046. [13] Ozbilen A, Dincer I, Rosen MA. Comparative environmental impact and efficiency assessment of selected hydrogen production methods. Environ Impact Assess Rev 2013. https://doi.org/10.1016/j.eiar.2013.03.003. [14] Farahani SS, Bleeker C, van Wijk A, Lukszo Z. Hydrogenbased integrated energy and mobility system for a real-life office environment. Appl Energy 2020;264. https://doi.org/ 10.1016/j.apenergy.2020.114695. [15] Blekhman D. Hydrogen and fuel cell education at California State University, Los Angeles. 2010. DOE Hydrogen Program and Vehicle Technologies Program Annual Merit Review, Report, https://www.hydrogen.energy.gov/pdfs/review10/ ed003_blekhman_2010_o_web.pdf, accessed 3 February 2020 [16] Apostolou D, Xydis G. A literature review on hydrogen refuelling stations and infrastructure. Current status and
+
+future prospects. Renewable and Sustainable Energy Reviews; 2019. https://doi.org/10.1016/j.rser.2019.109292. [17] California Air Resources Board. Annual evaluation of fuel cell electric vehicle deployment & hydrogen fuel station network development (report pursuant to AB 8; perea. 2020 [Chapter 401], Statutes of 2013). [18] Kurtz J, Sprik S, Peters M, Bradley TH. Retail hydrogen station reliability status and advances. Reliab Eng Syst Saf; 2020. https://doi.org/10.1016/j.ress.2020.106823. [19] NREL. Next generation hydrogen station composite data products: retail stations. 2020. https://www.nrel.gov/ hydrogen/infrastructure-cdps-retail.html. [Accessed 3 February 2020]. [20] Wurster R, Hof E. The German hydrogen regulation, codes and standards roadmap. Int J Energy Res 2020;1e6. https:// doi.org/10.1002/er.6249. [21] Apak S, Atay E, Tuncer G. Renewable hydrogen energy regulations, codes and standards: challenges faced by an EU candidate country. Int J Hydrogen Energy 2012;37:5481e97. https://doi.org/10.1016/j.ijhydene.2012.01.005. [22] Will J. An introduction to SAE hydrogen fueling standardization. U.S. Department of Energy, Fuel Cell Technologies Office; 2014. [23] Schneider J. Hydrogen fueling standardization for FCEVs: enabling ZEVs with "same as Today" fueling and range. ECS Trans 2015. https://doi.org/10.1149/ 06501.0143ecst. [24] Schneider J, Meadows G, Mathison SR, Veenstra MJ, Shim J, Immel R, et al. Validation and sensitivity studies for SAE J2601, the light duty vehicle hydrogen fueling standard. SAE International Journal of Alternative Powertrains 2014;3:257e309. [25] Pique S, Weinberger B, De-Dianous V, Debray B. Comparative study of regulations, codes and standards and practices on hydrogen fuelling stations. Int J Hydrogen Energy 2017. https://doi.org/10.1016/j.ijhydene.2016.02.158. [26] IA HySafe. International association on hydrogen safety n.d. http://www.hysafe.info/(accessed October 12, 2021). [27] HyLAW. HyLAW online database n.d. https://www.hylaw. eu (accessed October 12, 2021). [28] Floristean A. EU policy paper (June 2019) HyLAW2019; 2019. [29] Pagliaro M, Iulianelli A. Hydrogen refueling stations : safety and sustainability, vols. 8e13; 2019. https://doi.org/ 10.13140/RG.2.2.10338.48324. [30] Tretsiakova-McNally S, Makarov D. Lecture - safety of hydrogen storage. 2016. https://doi.org/10.5849/forsci.14-029. [31] Hu¨ bert T, Boon-Brett L, Palmisano V, Bader MA. Developments in gas sensor technology for hydrogen safety. Int J Hydrogen Energy 2014. https://doi.org/10.1016/ j.ijhydene.2014.05.042. [32] Buttner WJ, Post MB, Burgess R, Rivkin C. An overview of hydrogen safety sensors and requirements. Int J Hydrogen Energy 2011. https://doi.org/10.1016/j.ijhydene.2010.04.176. [33] Charolais A, Ammouri F, Vyazmina E, Werlen E, Harris A. Safety Watchdog for universally safe gaseous high pressure hydrogen fillings. Int J Hydrogen Energy 2021;46:16019e29. https://doi.org/10.1016/J.IJHYDENE.2021.02.034. [34] Schmidt H. Anatomy of an incident: a hydrogen gas leak showcases the need for antifragile safety systems. J Chem Health Saf 2019;26:36e9. https://doi.org/10.1016/ j.jchas.2019.05.005. [35] Sasaki K, Li H-W, Hayashi A, Yamabe J, Ogura T. Hydrogen energy engineering. 2016. https://doi.org/10.1007/978-4-43156042-5. [36] Makarov D, Shentsov V, Kuznetsov M, Molkov V. Hydrogen tank rupture in fire in the open atmosphere: hazard distance defined by fireball. Hydrogen. 2021. https://doi.org/ 10.3390/hydrogen2010008.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+19369
+
+[37] Yang F, Wang T, Deng X, Dang J, Huang Z, Hu S, et al. Review on hydrogen safety issues: incident statistics, hydrogen diffusion, and detonation process. Int J Hydrogen Energy 2021;46:31467e88. https://doi.org/10.1016/ j.ijhydene.2021.07.005.
+[38] Sandy) Thomas CE (. A review of hindenburg: exploring the truth, by addison bain. Int J Hydrogen Energy 2015;40:752. https://doi.org/10.1016/j.ijhydene.2014.10.113.
+[39] Bain A, Vorst WmDV. The Hindenburg tragedy revisited:: the fatal flaw found. Int J Hydrogen Energy 1999;24:399e403. https://doi.org/10.1016/S0360-3199(98)00176-1.
+[40] Logsdon JM. Truths, lies, and O-rings: inside the space shuttle challenger disaster. Space Pol 2009;25:269. https:// doi.org/10.1016/j.spacepol.2009.09.002.
+[41] Murakami M, Kobayashi T, Oikawa Y, Goto S, Momoi M, Takebayashi Y, et al. Associations of the COVID-19 pandemic with the economic status and mental health of people affected by the Fukushima disaster using the difference-in-differences method: the Fukushima Health Management Survey. SSM Popul Health 2021;14:100801. https://doi.org/10.1016/j.ssmph.2021.100801.
+[42] Schreurs MA. Reconstruction and revitalization in Fukushima a decade after the "triple disaster" struck: striving for sustainability and a new future vision. Int J Disaster Risk Reduc 2021;53:102006. https://doi.org/10.1016/ j.ijdrr.2020.102006.
+[43] Gye HR, Seo SK, Bach QV, Ha D, Lee CJ. Quantitative risk assessment of an urban hydrogen refueling station. Int J Hydrogen Energy 2019. https://doi.org/10.1016/ j.ijhydene.2018.11.035.
+[44] Hydrogen Tool Portal 2019. https://h2tools.org/lessons (accessed October 26, 2019).
+[45] Lee J, Cameron I, Hassall M. Information needs and challenges in future process safety. Digital Chemical Engineering 2022;3:100017. https://doi.org/10.1016/ j.dche.2022.100017.
+[46] Tretsiakova-McNally S, Maranne E, Verbecke F, Molkov V. Mixed e-learning and virtual reality pedagogical approach for innovative hydrogen safety training of first responders. Int J Hydrogen Energy 2017;42:7504e12.
+[47] Skjold T, Siccama D, Hisken H, Brambilla A, Middha P, Groth KM, et al. 3D risk management for hydrogen installations. Int J Hydrogen Energy 2017;42:7721e30. https://doi.org/10.1016/j.ijhydene.2016.07.006.
+[48] Han U, Oh J, Lee H. Safety investigation of hydrogen charging platform package with CFD simulation. Int J Hydrogen Energy 2018;43:13687e99. https://doi.org/10.1016/ j.ijhydene.2018.05.116.
+[49] Ball M, Basile A, Veziroglu TN. Building a hydrogen infrastructure in the EU compendium of hydrogen energy. In: Hydrogen use, safety and the hydrogen economy. 1st ed. Woodhead Publishing; 2016. p. 267e92.
+[50] Hansen OR. Hydrogen infrastructuredefficient risk assessment and design optimization approach to ensure safe and practical solutions. Process Saf Environ Protect 2020. https://doi.org/10.1016/j.psep.2020.06.028.
+[51] Molkov V. Fundamentals of hydrogen safety engineering I. 2012.
+[52] Yoo B-H, Wilailak S, Bae S-H, Gye H-R, Lee C-J. Comparative risk assessment of liquefied and gaseous hydrogen refueling stations. Int J Hydrogen Energy 2021;46:35511e24. https://doi.org/10.1016/j.ijhydene.2021.08.073.
+[53] Li H, Welsh R, Morris A. Emergency responders' perceptions of Hydrogen Fuel Cell Vehicle: a qualitative study on the U.K. fire and rescue services. Int J Hydrogen Energy 2021;46:32750e61. https://doi.org/10.1016/ j.ijhydene.2021.07.146.
+
+[54] Guandalini G, Campanari S, Valenti G. Comparative assessment and safety issues in state-of-the-art hydrogen production technologies. Int J Hydrogen Energy 2016. https://doi.org/10.1016/j.ijhydene.2016.08.015.
+[55] Cigolotti V, Genovese M, Fragiacomo P. Comprehensive review on fuel cell technology for stationary applications as sustainable and efficient poly-generation energy systems. Energies 2021. https://doi.org/10.3390/ en14164963.
+[56] Molkov V. Hydrogen safety research : state-of-the-art. Proceedings of the 5th international seminar on fire and explosion hazards. 2007.
+[57] Molkov V. Closing knowledge gaps and technological bottlenecks in hydrogen safety: a snapshot of recent activities at ulster university. Gorenie i vzryv (moskva) d combustion and explosion. 2020. https://doi.org/10.30826/ ce20130201.
+[58] Dadashzadeh M, Kashkarov S, Makarov D, Molkov V. Risk assessment methodology for onboard hydrogen storage. Int J Hydrogen Energy 2018. https://doi.org/10.1016/ j.ijhydene.2018.01.195.
+[59] Zhang C, Cao X, Bujlo P, Chen B, Zhang X, Sheng X, et al. Review on the safety analysis and protection strategies of fast filling hydrogen storage system for fuel cell vehicle application. J Energy Storage 2022;45:103451. https://doi.org/ 10.1016/j.est.2021.103451.
+[60] Park B, Kim Y, Paik S, Kang C. Numerical and experimental analysis of jet release and jet flame length for qualitative risk analysis at hydrogen refueling station. Process Saf Environ Protect 2021;155:145e54. https://doi.org/10.1016/ j.psep.2021.09.016.
+[61] Fuster B, Houssin-Agbomson D, Jallais S, Vyazmina E, DangNhu G, Bernard-Michel G, et al. Guidelines and recommendations for indoor use of fuel cells and hydrogen systems. Int J Hydrogen Energy 2017. https://doi.org/ 10.1016/j.ijhydene.2016.05.266.
+[62] Hettinger W, Michel F, Ott P, Theissen F. Refueling equipment for liquid hydrogen vehicles. Int J Hydrogen Energy 1998;23. https://doi.org/10.1016/s0360-3199(97) 00137-7.
+[63] Petitpas G, Simon AJ, Moreno-Blanco J, Aceves SM. Liquid hydrogen infrastructure analysis. 2018.
+[64] Aasadnia M, Mehrpooya M. Large-scale liquid hydrogen production methods and approaches: a review. Appl Energy 2018;212:57e83. https://doi.org/10.1016/ J.APENERGY.2017.12.033.
+[65] Mobile filling station for FCEV using liquid hydrogen electrive n.d.
+[66] HySafe Chapter III: Accidental phenomena and consequences. n.d.
+[67] Jallais S, Houssin D, Shentsov E v, Molkov V, Makarov D, Melideo D, et al. Pre-normative research on safe indoor use of fuel cells and hydrogen systems Hyindoor Final Report. 2015.
+[68] Molkov V. 4.04 - hydrogen safety engineering and standards. In: Letcher TM, editor. Comprehensive renewable energy. 2nd ed. Oxford: Elsevier; 2022. p. 86e118. https://doi.org/10.1016/B978-0-12-819727-1.00023-6.
+[69] Cao W, Zhou Z, Zhou W, Xu S, Xiao Q, Cao W, et al. The flow field behaviours of under-expansion jet flame in premixed hydrogen/air explosion venting. Int J Hydrogen Energy 2022;47:10420e30. https://doi.org/10.1016/ j.ijhydene.2022.01.082.
+[70] Chang X, Bai C, Zhang B. The effect of gas jets on the explosion dynamics of hydrogen-air mixtures. Process Saf Environ Protect 2022;162:384e94. https://doi.org/10.1016/ j.psep.2022.04.032.
+
+19370
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+[71] Molkov, Bragin M v, Brennan S, Makarov D, Saffers J-B. Hydrogen safety engineering: overview of recent progress and unresolved issues. 2010.
+[72] Shevyakov GG, Komov VF. Effect of noncombustible admixtures on length of an axisymmetric on-port turbulent diffusion flame. Combust Explos Shock Waves 1977;13:563e6. https://doi.org/10.1007/BF00742209.
+[73] Molkov V, Saffers J-B. The correlation for non-premixed hydrogen jet flame length in still air. Fire Saf Sci 2011;10:933e43. https://doi.org/10.3801/IAFFS.FSS.10-933.
+[74] Molkov, Bragin M v, Brennan S, Makarov D, Saffers J-B. Hydrogen safety engineering: overview of recent progress and unresolved issues. 2010.
+[75] Chang X, Bai C, Zhang B. The effect of gas jets on the explosion dynamics of hydrogen-air mixtures. Process Saf Environ Protect 2022;162:384e94. https://doi.org/10.1016/ j.psep.2022.04.032.
+[76] Cao W, Zhou Z, Zhou W, Xu S, Xiao Q, Cao W, et al. The flow field behaviours of under-expansion jet flame in premixed hydrogen/air explosion venting. Int J Hydrogen Energy 2022;47:10420e30. https://doi.org/10.1016/ j.ijhydene.2022.01.082.
+[77] Shevyakov GG, Komov VF. Effect of noncombustible admixtures on length of an axisymmetric on-port turbulent diffusion flame. Combust Explos Shock Waves 1977;13:563e6. https://doi.org/10.1007/ BF00742209.
+[78] Giannissi SG, Tolias IC, Melideo D, Baraldi D, Shentsov V, Makarov D, et al. On the CFD modelling of hydrogen dispersion at low-Reynolds number release in closed facility. Int J Hydrogen Energy 2021;46:29745e61. https:// doi.org/10.1016/j.ijhydene.2020.09.078.
+[79] Takeno K, Yamamoto S, Sakatsume R, Hirakawa S, Takeda H, Shentsov V, et al. Effect of shock structure on stabilization and blow-off of hydrogen jet flames. Int J Hydrogen Energy 2020;45:10145e54. https://doi.org/10.1016/ j.ijhydene.2020.01.217.
+[80] Molkov V. 4.04 - hydrogen safety engineering: the state-ofthe-art and future progress. In: Sayigh A, editor. Comprehensive renewable energy. Oxford: Elsevier; 2012. p. 97e129. https://doi.org/10.1016/B978-0-08-0878720.00418-2.
+[81] Molkov V. Fundamentals of hydrogen safety engineering I. 2012.
+[82] Molkov V. Fundamentals of hydrogen safety engineering II. 2012.
+[83] Record number of new hydrogen stations in 2020. Fuel Cell Bull 2021;2021:1. https://doi.org/10.1016/S1464-2859(21) 00056-0.
+[84] Samsun RC, Antoni L, Rex M. Advanced fuel cells technology collaboration programme report on mobile fuel cell application : tracking market trends. 2020.
+[85] Research, Market. Global market for hydrogen fueling stations, 2019. 2019.
+[86] Genovese M, Fragiacomo P. Parametric technical-economic investigation of a pressurized hydrogen electrolyzer unit coupled with a storage compression system. Renew Energy 2021;180:502e15. https://doi.org/10.1016/ J.RENENE.2021.08.110.
+[87] Grigoriev SA, Porembskiy VI, Korobtsev Sv, Fateev VN, Aupre^tre F, Millet P. High-pressure PEM water electrolysis and corresponding safety issues. Int J Hydrogen Energy 2011;36:2721e8. https://doi.org/10.1016/ j.ijhydene.2010.03.058.
+[88] Yigit T, Selamet OF. Mathematical modeling and dynamic Simulink simulation of high-pressure PEM electrolyzer system. Int J Hydrogen Energy 2016;41:13901e14. https:// doi.org/10.1016/j.ijhydene.2016.06.022.
+
+[89] Witkowski A, Rusin A, Majkut M, Stolecka K. Comprehensive analysis of hydrogen compression and pipeline transportation from thermodynamics and safety aspects. Energy 2017;141:2508e18. https://doi.org/10.1016/ j.energy.2017.05.141.
+[90] Johnson N, Ogden J. A spatially-explicit optimization model for long-term hydrogen pipeline planning. Int J Hydrogen Energy 2012;37:5421e33. https://doi.org/10.1016/ j.ijhydene.2011.08.109.
+[91] Weber AC, Papageorgiou LG. Design of hydrogen transmission pipeline networks with hydraulics. Chem Eng Res Des 2018;131:266e78. https://doi.org/10.1016/ j.cherd.2018.01.022.
+[92] Sdanghi G, Maranzana G, Celzard A, Fierro V. Review of the current technologies and performances of hydrogen compression for stationary and automotive applications. Renew Sustain Energy Rev 2019. https://doi.org/10.1016/ j.rser.2018.11.028.
+[93] Andrea MF, Sara RH, Luca DZ, Giovanni SS, Enrico B. Techno-economic analysis of in-situ production by electrolysis, biomass gasification and delivery systems for Hydrogen Refuelling Stations: rome case study. Energy Procedia; 2018. https://doi.org/10.1016/ j.egypro.2018.08.033.
+[94] Business H, Group D. Demonstration of hydrogen stations integrated with gas stations targeting the commercial start of fuel cell vehicles(FCV) 3. 2014.
+[95] Genovese M, Blekhman D, Dray M, Fragiacomo P. Improving chiller performance and energy efficiency in hydrogen station operation by tuning the auxiliary cooling. Int J Hydrogen Energy 2021;47:2532e46. https://doi.org/10.1016/ j.ijhydene.2021.10.156.
+[96] Genovese M, Blekhman D, Dray M, Fragiacomo P. Hydrogen station in situ back-to-back fueling data for design and modeling. J Clean Prod 2021;329:129737. https://doi.org/ 10.1016/J.JCLEPRO.2021.129737.
+[97] Kurtz J, Bradley T, Winkler E, Gearhart C. Predicting demand for hydrogen station fueling. Int J Hydrogen Energy 2020;45:32298e310. https://doi.org/10.1016/ j.ijhydene.2019.10.014.
+[98] Elgowainy A, Mintz M, Kelly B, Hooks M, Paster M. Optimization of compression and storage requirements at hydrogen refueling stations. 2009. https://doi.org/10.1115/ pvp2008-61638.
+[99] Riedl SM. Development of a hydrogen refueling station design tool. Int J Hydrogen Energy 2020. https://doi.org/ 10.1016/j.ijhydene.2019.09.234.
+[100] Rothuizen ED. Hydrogen fuelling stations A thermodynamic analysis of fuelling hydrogen vehicles for personal transportation. Technical University of Denmark; 2013.
+[101] Omdahl N. Modelling of a hydrogen refueling station. Trondheim: Norwegian University of Science and Technology; 2014.
+[102] Mayyas A, Mann M. Manufacturing competitiveness analysis for hydrogen refueling stations. Int J Hydrogen Energy 2019. https://doi.org/10.1016/j.ijhydene.2019.02.135.
+[103] Niedwiecki A, Sirosh N, Abele A. Transportable hydrogen refueling station. 2004.
+[104] Team O, Eli M, Richardson I, Karlberg B, Johnson D, Beal N, et al. Modular hydrogen fueling station n.d.
+[105] Molkov V, Dadashzadeh M, Makarov D. Physical model of onboard hydrogen storage tank thermal behaviour during fuelling. Int J Hydrogen Energy 2019;44:4374e84. https:// doi.org/10.1016/j.ijhydene.2018.12.115.
+[106] Makarov D, Verbecke F, Molkov V, Roe O, Skotenne M, Kotchourko A, et al. An inter-comparison exercise on CFD model capabilities to predict a hydrogen explosion in a simulated vehicle refuelling environment. Int J Hydrogen
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 8 ( 2 0 2 3 ) 1 9 3 5 7 e1 9 3 7 1
+
+19371
+
+Energy 2009;34:2800e14. https://doi.org/10.1016/ j.ijhydene.2008.12.067. [107] Mayer T, Semmel M, Bauer A, Guerrero-Morales M, Schmidt KM, Wind J. Techno-economic evaluation of hydrogen refueling stations with trucked-in gaseous or liquid hydrogen. Evs 2017 - 30th international electric vehicle symposium and exhibition. 2017. [108] Brown T, Stephens-Romero S, Scott Samuelsen G. Quantitative analysis of a successful public hydrogen station. Int J Hydrogen Energy 2012;37:12731e40. https:// doi.org/10.1016/j.ijhydene.2012.06.008. [109] Liquide A. How does a hydrogen refuelling station work ?. 2020. [110] Schnell P. Refueling station layout. Hydrogen science and engineering: materials, processes, systems and technology. 2016. https://doi.org/10.1002/9783527674268.ch37. [111] Blazquez-Diaz C. Techno-economic modelling and analysis of hydrogen fuelling stations. Int J Hydrogen Energy 2019. https://doi.org/10.1016/j.ijhydene.2018.11.001. [112] California N, Chapter N, Woycheese J. Introduction to the safe design of LNG. Garden: CNG and Hydrogen Refueling Stations; 2007. [113] Nardi KJ, Koenig JL. Hydrogen fuel stations in California : a practical guide to permitting and CEQA review hydrogen fuel stations in California : a practical guide to permitting and CEQA review n.d. [114] London hydrogen network expansion (LHNE) project. Installing accessible hydrogen refuelling stations - a best practice guide. 2015. [115] Tang X, Pu L, Shao X, Lei G, Li Y, Wang X. Dispersion behavior and safety study of liquid hydrogen leakage under different application situations. Int J Hydrogen Energy 2020;45:31278e88. https://doi.org/10.1016/ j.ijhydene.2020.08.031. [116] Buttner WJ, Ciotti M, Hartmann K, Schmidt K, Wright H, Weidner E. Empirical profiling of cold hydrogen plumes formed from venting of LH2 storage vessels. Int J Hydrogen Energy 2021;46:32723e34. https://doi.org/10.1016/ j.ijhydene.2018.10.231. [117] Sørensen B, Spazzafumo G. Implementation scenarios. Hydrogen and Fuel Cells 2018. https://doi.org/10.1016/b9780-08-100708-2.00005-9. [118] Frischauf N. Hydrogen-fueled spacecraft and other space applications of hydrogen. Compendium of Hydrogen Energy 2016. https://doi.org/10.1016/b978-1-78242-364-5.00005-1. [119] Bauer A, Mayer T, Semmel M, Guerrero Morales MA, Wind J. Energetic evaluation of hydrogen refueling stations with liquid or gaseous stored hydrogen. Int J Hydrogen Energy 2019. https://doi.org/10.1016/j.ijhydene.2019.01.087. [120] Barbir F. Chapter ten - fuel cell applications. PEM fuel cells. 2nd ed. 2013. https://doi.org/10.1016/B978-0-12-387710-9.00010-2. [121] Reddi K, Elgowainy A, Rustagi N, Gupta E. Impact of hydrogen refueling configurations and market parameters on the refueling cost of hydrogen. Int J Hydrogen Energy 2017;42:21855e65. https://doi.org/10.1016/ j.ijhydene.2017.05.122. [122] Nistor S, Dave S, Fan Z, Sooriyabandara M. Technical and economic analysis of hydrogen refuelling. Appl Energy
+
+2016;167:211e20. https://doi.org/10.1016/ j.apenergy.2015.10.094. [123] Kurtz J, Sprik S, Bradley TH. Review of transportation hydrogen infrastructure performance and reliability. Int J Hydrogen Energy 2019;44:12010e23. https://doi.org/10.1016/ j.ijhydene.2019.03.027. [124] Lipman T, Witt M, Elke M. Lessons learned from the installation and operation of Northern California's first 70MPa hydrogen fueling station. Int J Hydrogen Energy 2013;38:15868e77. https://doi.org/10.1016/ j.ijhydene.2013.08.120. [125] Stolzenburg K, Tsatsami V, Grubel H. Lessons learned from infrastructure operation in the CUTE project. Int J Hydrogen Energy 2009. https://doi.org/10.1016/j.ijhydene.2008.06.035. [126] Genovese M, Blekhman D, Dray M, Fragiacomo P. Hydrogen losses in fueling station operation. J Clean Prod 2020;248:119266. https://doi.org/10.1016/ j.jclepro.2019.119266. [127] Genovese M, Blekhman D, Xie C, Dray M, Fragiacomo P. Assuring pulsation-free flow in a directly pressurized fuel delivery at a retail hydrogen station. Int J Hydrogen Energy 2018;43:16623e37. https://doi.org/10.1016/ j.ijhydene.2018.07.024. [128] Bai M, Liu Y, Qi M, Roy N, Shu C-M, Khan F, et al. Current status, challenges, and future directions of university laboratory safety in China. J Loss Prev Process Ind 2022;74:104671. https://doi.org/10.1016/ j.jlp.2021.104671. [129] Moretto P, Quong S. Chapter 7 - legal requirements, technical regulations, codes, and standards for hydrogen safety. In: Kotchourko A, Jordan T, editors. Hydrogen safety for energy applications. Butterworth-Heinemann; 2022. p. 345e96. https://doi.org/10.1016/B978-0-12-8204924.00003-8. [130] Nakayama J, Misono H, Sakamoto J, Kasai N, Shibutani T, Miyake A. Simulation-based safety investigation of a hydrogen fueling station with an on-site hydrogen production system involving methylcyclohexane. Int J Hydrogen Energy 2017;42:10636e44. https://doi.org/10.1016/ j.ijhydene.2016.11.072. [131] Genovese M, Cigolotti V, Jannelli E, Fragiacomo P. Comparative study of global, European and Italian standards on hydrogen refueling stations. E3S Web of Conferences 2022;334:09003. https://doi.org/10.1051/ e3sconf/202233409003. [132] Society of Automotive Engineers (Sae). SAE J2601(2016): Fueling protocols for light duty gaseous hydrogen surface vehicles. 2016. [133] Reddi K, Elgowainy A, Rustagi N, Gupta E. Impact of hydrogen SAE J2601 fueling methods on fueling time of light-duty fuel cell electric vehicles. Int J Hydrogen Energy 2017;42:16675e85. https://doi.org/10.1016/ j.ijhydene.2017.04.233. [134] Mathison S, Handa K, McGuire T, Brown T, Goldstein T, Johnston M. Field validation of the MC default fill hydrogen fueling protocol. SAE International Journal of Alternative Powertrains 2015. https://doi.org/10.4271/201501-1177.
+
+

@@ -1,0 +1,963 @@
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+Available online at www.sciencedirect.com
+ScienceDirect
+
+journal homepage: www.elsevier.com/locate/he
+
+Economic analysis of hydrogen refueling station considering different operation modes
+Ling Wu a, Zhentao Zhu a, Yi Feng a, Wenyi Tan a,b,*
+a School of Economics and Management, Nanjing Institute of Technology, Nanjing, China b International Joint Laboratory of Green & Low Carbon Development, Jiangsu Province, China
+
+highlights
+ An annualized cost model for hydrogen transportation modes and A levelized cost model for HRSs were established.  The comprehensive costs analysis throughout the full life cycle was conducted in four different operation modes of HRSs.  The factors affecting HRS costs were analyzed in depth:hydrogen source distance, pipeline utilization, and cost structure.  On-site hydrogen production in integrated station is not yet economically feasible.
+
+article info
+Article history: Received 14 April 2023 Received in revised form 14 September 2023 Accepted 15 September 2023 Available online 3 October 2023
+Keywords: Hydrogen refueling station Economic analysis Operation modes Life-cycle analysis
+
+abstract
+Hydrogen refueling stations (HRSs) are crucial infrastructures for the advancement of hydrogen energy. To promote and construct HRSs, a cost-benefit analysis is essential. Factors such as hydrogen transportation, storage, production technology, and subsidy policies can impact the costs. This paper aims to analyze the economics of HRSs under four operation modes, ie., on-site hydrogen production, off-site production with pipeline transportation, off-site production with tube trailer, and off-site production with liquid hydrogen tanker. Two life-cycle analysis models, an annualized cost model for hydrogen transportation and a levelized cost model for HRSs, are established for economic assessment. The study reveals that hydrogen supply costs account for over 50% of the LCOH for off-site station, and power costs drive up the LCOH for on-site station. Among the four operation modes, off-site station with pipeline is most economical, and the cost advantage increases as pipeline capacity utilization rate reaches 100%, but decreases as it drops to 20%. off-site station with long tubes is economical within 300 km, and off-site station with liquid hydrogen tankers is more economical within 300km~1,000 km. On-site hydrogen production by water electrolysis is not economical at a cost of 35.24 CNY/kg. The optimal operation scheme under different hydrogen source distances is proposed.
+© 2023 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+1. Introduction
+Hydrogen energy plays an important role in the current global energy transition [1]. It is a clean, sustainable, and abundant
+
+energy source that can replace fossil fuels and reduce greenhouse gas emissions, thus helping to mitigate climate change [2]. Hydrogen energy can be utilized in a diverse range of applications, including transportation, electricity generation,
+
+* Corresponding author. School of Economics and Management, Nanjing Institute of Technology, Nanjing, China. E-mail address: twy1102@gmail.com (W. Tan).
+https://doi.org/10.1016/j.ijhydene.2023.09.164 0360-3199/© 2023 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+1578
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+heating, and industrial processes. As an energy carrier, hydrogen energy can be produced from a variety of sources, such as renewable energy sources (e.g. wind, solar), nuclear power, and fossil fuels (e.g. natural gas, coal). The production of hydrogen energy through renewable energy sources can help to reduce the dependence on fossil fuels and increase the share of clean energy in the energy mix [3].
+Hydrogen refueling stations (HRSs) are an important infrastructure for the hydrogen energy industry [4], and HRS construction is a necessary condition to promote the development of hydrogen energy industry and hydrogen fuel cell vehicles (FCVs). Several countries have implemented ambitious plans to build HRSs, such as Japan, Germany, and the United States. Japan has been leading the way in HRS construction and currently has more than 100 operational HRSs, with plans to increase the number to 900 by 2030 [5]. Germany has also been rapidly expanding its HRS network, with plans to have 400 stations in operation by 2025 [6]. The United States has committed to building 40,000 HRSs by 2030. In China, the government has also recognized the importance of HRSs and set a target of building 1000 HRSs by 2030, as part of the broader efforts to promote the development of hydrogen economy. In recent years, China has made significant progress in HRS construction, with more than 60 HRSs currently in operation and over 200 in the planning or construction phase [7]. The construction of HRSs in China has been supported by various policies, such as financial subsidies and favorable regulations, and has been driven by both government and private sector investments.
+The cost-benefit analysis of HRSs is the prerequisite for their promotion and construction [8]. The main costs of HRSs include initial investment costs and operating costs, while the main income comes from government subsidies and hydrogen refueling service fees [9]. Hydrogen sources [10], hydrogen application market, investment environment, hydrogen transportation [11], hydrogen production technology [12] and related policies can have an impact on the cost of HRSs [13e16]. Hydrogen source is the key factor that determines whether a HRS can operate normally. In addition, the storage and transportation of hydrogen are also bottlenecks for the hydrogen energy industry. With the development of renewable energy and the increasing demand for hydrogen, large-scale and low-cost hydrogen storage and transportation are also problems that need to be urgently solved [17,18]. The life-cycle costs of HRSs can vary significantly, depending on different hydrogen production sites (outside or inside the station) or different ways of hydrogen transportation. The profitability of HRSs is an important indicator of whether investors invest in the construction of HRSs.
+The supply of hydrogen includes steps such as compression, storage, pre-cooling, and dispensing at an HRS, and centralized terminals for liquefaction or compression [19e21]. Compressed hydrogen is expensive due to its low energy density and high cost of compression [22], while liquid hydrogen requires additional energy input for liquefaction [23]. On-site hydrogen generation reduces transportation costs but widespread use is necessary to meet economic goals [24]. Hydrogen can be produced off-site using dedicated pipelines, or trucks/ tankers [25], which can then be compressed or liquefied at
+
+distribution terminals for transport to HRSs [26]. However, building a new gas pipeline network is costly and requires certified materials and equipment [27]. Liquid hydrogen must be loaded into cryogenic tanks and transported by large cryogenic storage tanks in surrounding distribution facilities [28]. The delivery of liquefied hydrogen is generally cheaper than that of compressed hydrogen, but its energy-intensive liquefaction process requires renewable sources for economic and environmental convenience [29,30]. Reddi et al. conducted a viability assessment of compressed hydrogen transport using different tanker trailer designs without comparing them to other transportation options [31]. The International Energy Agency (IEA) compared various transportation options, but only provided a high-level analysis with point estimates, and no in-depth analysis was conducted to examine the factors that affect each transportation option's performance [32]. Wulf et al. compared the economic feasibility of two different gaseous hydrogen pathways in a life cycle assessment, and found that pipeline transport is economically feasible for the case of 80 t/d, while for a demand of 40 t/d, truck transport is the best pathway in economic terms. Future investigations could expand upon this abstract model to account for more realistic conditions, such as the degree of capacity utilization of the pipeline network [33]. Di et al. conducted a comparative analysis of hydrogen transportation scenarios, and proposed pure hydrogen pipelines have a transportation cost of $0.66/kg for 1000 km and $1.98/kg for 3000 km, with the costs dominated by pipeline costs (70%) and electricity costs making up 8% [34]. Minutillo et al. assessed the economic feasibility of on-site hydrogen refueling stations. Three hydrogen production capacities and four electric energy supply management strategies were selected for evaluation. Results showed that plant size significantly affects the levelized cost of hydrogen (LCOH). The optimal configuration is reached when the annual sharing of electricity supply by the grid is equal to 50%, resulting in a LCOH of 9.29 V/kg. Operational and maintenance costs are the main contributors to LCOH calculation, highlighting the importance of lower electricity prices to reduce investment costs of more expensive components [35].
+There are few literatures on unified model to illustrate the cost-benefit economic analysis of HRSs. The comprehensive consideration of cost and income elements throughout the full life cycle of HRSs is lacking. A comprehensive analysis of cost and income elements throughout the full life cycle of HRSs was conducted in our study, by establishing two kinds of life-cycle analysis model, including an annualized cost model for transportation modes (off-site) and a levelized cost model for HRSs. Four different operation modes, ie., on-site hydrogen production in integrated station (on-site), pipeline transportation (off-site), long tube trailer transportation (off-site), and liquid hydrogen tanker transportation (off-site) were discussed in detail. The economics of these four operation modes were compared systematically. The dependence of cost on distance of the hydrogen source, transportation pattern, and the degree of capacity utilization of the hydrogen pipeline was also considered.
+The findings of this study are significant in several ways: It provides a basis for making informed decisions about the development and deployment of hydrogen refueling stations (HRSs); It helps to assess the viability and profitability of such
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+1579
+
+systems; It informs the design, operation, and management of hydrogen fueling infrastructure, such as determining the optimal placement of HRSs, assessing the most efficient supply chain, analyzing the transport patterns, and determining the appropriate number of HRSs to deploy.
+2. Operation modes of HRSs
+According to the different hydrogen supply methods, HRSs can be classified into two types: independent stations with external hydrogen transportation and integrated stations that produce hydrogen on-site [36]. The hydrogen transportation for off-site stations can be further divided into three modes: long tube trailer, liquid hydrogen tanker and pipeline. In summary, the operation modes of hydrogen supply and refueling include four types, ie., on-site hydrogen production in integrated station (on-site), pipeline transportation (offsite), long tube trailer transportation (off-site), and liquid hydrogen tanker transportation (off-site).
+2.1. Long tube trailer transportation (off-site)
+The long tube trailer is used to transport hydrogen to the station. Once the semitrailer, loaded with hydrogen, arrives at the station, it is separated from the tractor and connected to the unloading tank. The hydrogen is then sent to the compressor for compression, before being transferred to the hydrogen storage cylinder group for hierarchical storage. When a vehicle needs to be refueled, the hydrogen is sent to the sequential control cabinet from the storage cylinder group, and filled into the hydrogen fuel cell vehicle via the hydrogen dispenser [37]. The entire process is illustrated in Fig. 1.
+
+2.2. Liquid hydrogen tanker transportation (off-site)
+The liquid hydrogen tanker is used to transport hydrogen to the station. Once it arrives, the hydrogen in the liquid hydrogen storage tank is pressurized by the pump and then gasified by the gasifier. The gas is then transferred to the hydrogen storage cylinder group. It is important to maintain the temperature of the liquid hydrogen at approximately À253 C during transportation [38]. The entire process is illustrated in Fig. 2.
+2.3. Pipeline transportation (off-site)
+Hydrogen is transported to the station through pipelines and enters the buffer tank. It is then compressed by the compressor and delivered to the hydrogen storage cylinder group [39]. The entire process is illustrated in Fig. 3.
+2.4. On-site hydrogen production in integrated station
+Among the methods of on-site hydrogen production, the electrolysis of water is an important development direction. One of the advantages of using water electrolysis for hydrogen production is the ability to utilize local resources within the city, such as water and electricity. Therefore, this paper considers hydrogen production by electrolysis of water as the onsite hydrogen production method.
+In the station, hydrogen is produced by electrolyzing water. It then enters a gas-water separator for drying and is further purified in a hydrogen purifier. The purified hydrogen is then transferred to the buffer tank, compressed, and finally delivered to the hydrogen storage cylinder group [40]. The entire process is illustrated in Fig. 4.
+
+Fig. 1 e Long tube trailer transportation (off-site). Fig. 2 e Liquid hydrogen tanker transportation (off-site).
+Fig. 3 e Pipeline transportation (off-site).
+
+1580
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+Fig. 4 e On-site hydrogen production in integrated station.
+
+3. The life-cycle analysis model of HRSs
+According to the Hydrogen Station Cost Model [41], the lifecycle cost of a HRS is divided into four parts, including construction cost, operation cost, transportation cost, and feedstock cost. These costs are based on the three development stages of HRSs, which are the initial construction stage of the first stage, the operation and maintenance stage of the second stage, and the cost recovery stage of the third stage.
+Construction cost refers to the expenses incurred for the procurement of equipment, installation engineering, land and civil construction, and other necessary costs during the preparation and construction of the station. Operation cost includes the expenses related to the management and operation of the station, such as maintenance, rent, labor, and insurance, incurred during the process of station completion and operation. Transportation cost refers to the expenses incurred for the hydrogen transportation in an off-site station. Feedstock cost includes the expenses related to the procurement of power, water, and other raw materials required for hydrogen production in an on-site station, or the cost of purchasing hydrogen in an off-site station.
+HRSs generate income primarily from hydrogen refueling service fees, government subsidies, and residual value income from equipment at the end of its useful life.
+The life cycle cost-benefit structure is shown in Table 1.
+3.1. Annualized cost model
+Annualized cost represents the total amount of cost that needs to be paid annually, taking into account construction cost, operation cost, maintenance cost, depreciation cost, loan interest, and other costs associated with the investment. Typically, the annualized cost is calculated by considering the
+
+total cost of the project or asset, including the purchase cost, operating and maintenance cost, and depreciation cost, and then computing it based on the investment horizon and cost of capital. The annualized cost can be used to compare different investment projects or assets and determine which one is more economically efficient.
+Annualized cost analysis involves converting all expenses incurred at different time points in the life cycle of the project into equivalent annual expenses of the payment sequence based on the social discount rate. In the case of HRSs, the construction costs, purchase costs of hydrogen transport vehicles, and hydrogen pipeline construction costs all take place in year 0. Therefore, these three costs need to be multiplied by conversion coefficients to convert them to equivalent annual costs.
+The annualized cost of HRSs can be expressed as:
+
+AC
+
+¼
+
+CAPEX
+
+rð1 ð1 þ
+
+þ rÞN rÞN À
+
+1
+
+þ
+
+OPEX
+
+þ
+
+FEEDX
+
+À
+
+L
+
+ð1
+
+þ
+
+r rÞN
+
+À
+
+1
+
+(1)
+
+where AC is annualized cost; CAPEX is construction cost; OPEX is annual operation cost; FEEDX is annual feedstock costs; N is station operation period; L is salvage value; r is social discount rate.
+
+3.1.1. Annualized cost model of vehicle transportation To determine the vehicle transportation cost, it is necessary to calculate the number of the vehicles per year required based on the hydrogen refueling scale of the station and the number of daily transportation trips needed. The annualized cost of vehicle transportation can be expressed as:
+
+ACvehi ¼ ACv þ ACf þ ACvm þ ACve þ ACl
+
+(2)
+
+where ACv is the annualized vehicle purchase cost; ACf is the annual fuel cost and toll; ACvm is the annual vehicle
+
+Table 1 e Life cycle cost-benefit analysis.
+
+Cycle stage
+
+Construction stage
+
+Construction cost
+
+Operation and maintenance stage
+
+Operation cost
+Transportation cost Feedstock cost
+
+Cost recovery stage
+
+Operation income qun'sheng Government subsidy Equipment recovery income
+
+Cost-benefit composition
+Equipment cost, software and hardware cost, construction project cost, land cost, etc. Hydrogen production cost (on-site station), management cost, repair and maintenance cost, etc. Hydrogen transportation cost (off-site station) Power cost, water cost, etc. (on-site station)/Hydrogen purchase cost (off-site station) Hydrogen refueling service fee Government subsidy
+Equipment salvage value income
+
+Category Total cost
+Total revenue
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+1581
+
+maintenance cost; ACve is the annual power cost used for hydrogen compression or liquefaction; ACl is the annual labor cost.
+
+
+
+
+
+ACv ¼ n Â
+
+2L S
+
+þ
+
+Tl
+
+Dy Â Td
+
+Â
+
+Cv
+
+rð1 ð1 þ
+
+þ rÞTv rÞTv À
+
+1
+
+(3)
+
+where n is the number of round trips per year, and n ¼ mMh; M is the annual hydrogen refueling capacity of the station; m is the
+
+transportation volume of one vehicle; h is transportation ef-
+
+ficiency; L is the transportation distance; S is the vehicle
+
+speed; Tl is the loading and unloading time; Dy is the usage days per year; Td is the usage time per day; Cv is the purchase cost per vehicle; r is social discount rate; Tv is the lifespan of the vehicle.
+
+À
+
+Á
+
+ACf ¼ 2L Â Cf Pf þ Ct Â n
+
+(4)
+
+where Cf is fuel consumption per kilometer of the vehicle; Pf is fuel price; Ct is the tolls per kilometer.
+
+ACvm ¼ 2L Â Cvm Â n
+
+(5)
+
+where Cvm is the vehicle maintenance cost per kilometer.
+
+ACve ¼ Pe Â M Â Qe
+
+(6)
+
+where Pe is electricity price; Qe is unit electricity consumption for hydrogen compression or liquefaction.
+
+3.1.2. Annualized cost model of pipeline transportation The annualized cost of high-pressure hydrogen pipeline mainly includes the material and installation cost of the pipeline, the electricity cost of the compressor, and the labor cost. The model is shown below
+
+ACpipe ¼ ACp þ ACpm þ ACpe þ ACl
+
+(7)
+
+where ACp is the annualized pipeline construction cost; ACpm is the annual pipeline maintenance cost; ACpe is the annual power cost used for hydrogen compression; ACl is the annual labor cost.
+
+ACp
+
+¼
+
+Cp
+
+Â
+
+L
+
+rð1 þ rÞTp ð1 þ rÞTp À
+
+1
+
+(8)
+
+where Cp is the pipeline cost per kilometer; Tp is the lifespan of the pipeline.
+
+ACpm ¼ Cpm Â L
+
+(9)
+
+where Cpm is the pipeline maintenance cost per kilometer.
+
+ACpe ¼ Pcom Â Pe Â Dy Â Ttr
+
+(10)
+
+where Pcom is compressor power; Pe is electricity price.
+
+3.2. Levelized cost model
+
+Levelized cost is a method for calculating the cost of producing and supplying hydrogen [42]. It takes into account the total cost of hydrogen production and supply chain over the entire life cycle, and averages it out to the cost per unit of hydrogen produced or used. It considers various costs of hydrogen production, including production costs, manufacturing costs,
+
+transportation costs, storage costs, distribution costs, and other associated costs. These costs are averaged over the entire life cycle and divided by the total amount of hydrogen produced or used to calculate the levelized cost. Levelized cost is an important indicator for assessing the economic feasibility of hydrogen production and supply chain. It can be used to compare different production and supply methods and determine which method is the most economically efficient. The levelized cost can be expressed as:
+
+LCOH
+
+¼
+
+CAPEX
+
+þ
+
+PN OPEXþFEEDX
+
+t¼1
+
+ð1þrÞt
+
+PN QH2
+
+À
+
+L ð1þrÞN
+
+t¼1 ð1þrÞt
+
+(11)
+
+where LCOH stands for levelized cost of hydrogen; QH2 is annual hydrogen supply.
+
+4. Analysis and discussion
+4.1. Background about HRSs in China
+In China, hydrogen energy is mainly distributed in the Pearl River Delta, the Yangtze River Delta, and the Bohai Sea hydrogen energy circle with Foshan, Guangzhou, Shanghai, Suzhou, Beijing and Hebei as the center [43]. At present, China's HRSs are mainly 35 MPa and external hydrogen HRSs with high-pressure gas hydrogen storage [44]. The main equipments of HRSs include hydrogen storage vessels, hydrogen dispensers, and compressors. The technical content, investment cost, and safe operation of a HRS are all closely related to these components.
+4.1.1. Hydrogen storage vessels Most HRSs in China mainly store hydrogen in high-pressure gaseous pressure vessels. For stations with 35 MPa filling pressure, the design pressures of high-pressure hydrogen storage vessels are generally 45, 47 and 50 MPa, and for stations with 70 MPa filling pressure, the design pressures are mainly 82, 87.5, 98 and 103 MPa. Hydrogen storage containers can be divided into several types, including single-layer steel cylinder type containers and steel strip staggered hydrogen storage containers. With the advancement of HRS technology, the hydrogen storage pressure will be further increased in order to increase the capacity of the hydrogen storage containers. An ultra-high pressure hydrogen storage container has been developed, which can store hydrogen with a pressure higher than 100 MPa. In recent years, solid metal hydrogen storage and liquid hydrogen carrier hydrogen storage have also developed. Methanol and ammonia have a high hydrogen storage density, approximately three times that of gaseous hydrogen storage (70 MPa), and these two hydrogen storage methods are more secure.
+4.1.2. Hydrogen dispensers Currently, most hydrogen dispensers in China use external cooling and integrate all modules, including the cooling system, into the machines. This approach can reduce floor space and installation costs. The hydrogenation gun is the core
+
+1582
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+component, and its filling pressure can be divided into two types: 35 MPa and 70 MPa. In high-pressure environments, the gas has higher requirements for the sealing structure of the hydrogenation gun, the high flow rate of the hydrogenation gun during operation will generate high heat, and the hydrogenation gun has a complex structure and multiple components, therefore requiring high integration.
+4.1.3. Hydrogen compressors Compressor is a crucial component of HRSs. The current trend in the development of hydrogen compressors is towards lower cost, higher discharge pressure, and larger displacement capacity. Traditional types of compressors include diaphragm compressors, reciprocating piston compressors, and liquid-driven piston compressors. Currently, diaphragm compressor is the most widely used one in HRSs in China due to its mature technology and widespread availability, but it needs to be started frequently under the working conditions, resulting in short service life of the compressor and further increasing costs.
+4.1.4. HRS cost Compared with mature gas stations, the current construction cost of HRSs is relatively high. The cost of a station is mainly divided into initial investment cost and operation cost. Currently, the investment scale of a standard fixed HRS with external hydrogen and a filling capacity of 500 kg/d is about 7~12 million yuan (excluding land costs)in China, which is three times that of a traditional gas station [45]. Furthermore, the operating costs of equipment maintenance, operation, labor, etc. are also high. In the pursuit of carbon neutrality in China, green hydrogen is poised to become the primary direction of hydrogen production in the future. Additionally, electrolyzed water hydrogen production using renewable energy sources such as wind and solar power has already been demonstrated through successful engineering applications of renewable energy hydrogen stations.
+4.2. Descriptions of scenarios
+In this paper, taking a HRS with hydrogen refueling capacity of 500 kg/d as an example. The technical parameters are based on market research and relevant literature.
+The station is equipped with various supporting equipment, including a hydrogen unloading device, a hydrogen compressor with a pressure of 45 MPa, two sets of fixed hydrogen storage cylinders with hydrogen storage capacity of 500 kg, a 35 MPa hydrogen dispenser with two hydrogenation guns, necessary auxiliary equipment, and a process control system [46]. The equipment maintenance fee is 3% of the equipment costs.
+HRS are considered as special equipment and pressure vessels, and require higher operating standards and have higher risks associated with them. According to Technical specification of Hydrogen station2021 [47], an independent refueling station with external hydrogen supply covers an area of 1000 m2, and is required to be equipped with 6 people, while an integrated station with on-site hydrogen production and refueling covers an area of 2000 m2, is required to be equipped with 8 people [48]. Labor wages are 100,000 CNY per year.
+The total power of compressors and electrical equipment is 150 kW, operating for 12 h a day, 350 days a year, at an average
+
+electricity price of 0.6 CNY/(kWh). The hydrogen source price is 10 CNY/kg for industrial by-product hydrogen.
+The residual value income after the operational period of the hydrogen refueling station is 10% of the equipment costs [49]. Considering the local government's subsidy policy for HRSs, currently domestic HRSs with a hydrogen refueling capacity of 500 kg/d and above are eligible for a construction subsidy of 5 million yuan per station. The station's Operating cycle is 20 years. The social discount rate is 5%.
+Consider two hydrogen supply methods: external hydrogen with three transportation modes (off-site) and onsite hydrogen production.
+The scene parameters of the HRSs without hydrogen production system are shown in Table 2.
+4.2.1. Scenario description of the three modes of transportation The long tube trailer operates at a working pressure of 20 MPa and has a capacity of 350 kg of hydrogen per fill, with a transportation efficiency of 75% [50]. Each trailer requires two drivers and one operator for filling and unloading, with an annual salary of 100,000 CNY per person.
+The scene parameters of the long tube trailer transportation are shown in Table 3.
+The volumetric energy density of liquid hydrogen is approximately 8.5 MJ/L, which means that a liquid hydrogen tanker can transport around 4000 kg of hydrogen per trip. However, the production of liquid hydrogen consumes a large amount of energy, and the power consumption of liquefied hydrogen with the same calorific value is more than 11 times that of compressed hydrogen. Additionally, there is a certain amount of evaporation loss that occurs during the process of liquid hydrogen storage and transportation.
+The scene parameters of the liquid hydrogen transportation are shown in Table 4.
+The particularity of hydrogen pipelines makes the high cost. Since the pipe is prone to hydrogen embrittlement, which will cause hydrogen to escape, it is necessary to choose materials with low carbon content as the hydrogen pipeline. The cost of hydrogen pipelines in the United States is 310,000e940,000 US dollars/km. At present, there are several hydrogen pipelines in China, including the Baling-Changling Hydrogen Transmission Pipeline, which has a unit investment cost of 4.56 million CNY/km. The Luoyang Hydrogen Transmission Pipeline has a unit investment cost of 6.16 million CNY/km. On average, the unit investment cost for hydrogen pipelines in China is around 5.36 million CNY/km. The maintenance cost during the operation period is typically estimated to be around 10% of the total investment [52].
+The scene parameters of the pipeline transportation are shown in Table 5.
+4.2.2. Scenario description of the on-site hydrogen production system Alkaline electrolysis of water is currently the more mature technology for hydrogen production among the different methods of water electrolysis. If nighttime valley electricity is used to electrolyze water to produce hydrogen, the cost of hydrogen production can be further reduced. Taking into account the requirements of environmental protection and cost
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+1583
+
+Table 2 e Scene parameters of the HRSs without hydrogen production system.
+
+Parameter
+
+Value
+
+unit
+
+Parameter
+
+hydrogen storage capacity The hydrogen source price Usage days per year Total power area of off-site station area of on-site station Residual value rate Operating cycle
+
+500 10 350 150 1000 2000 10 20
+
+kg CNY/kg d kw m2 m2 % year
+
+hydrogen storage cost Rate of equipment maintenance fee Usage time per day electricity price employees number of off-site station employees number of off-site station construction subsidy The social discount rate
+
+Value
+3300 3 12 0.6 6 8 500 5
+
+unit
+CNY/kg % hour CNY/kWh person person 104CNY %
+
+Table 3 e Long tube trailer transportation parameters.
+
+Parameter
+
+Value
+
+Usage days per year
+
+350
+
+Fuel consumption per kilometer
+
+0.25
+
+Transportation efficiency
+
+75%
+
+Vehicle purchase cost
+
+100
+
+Vehicle transportation volume
+
+350
+
+Vehicle maintenance cost
+
+0.3
+
+Unit electricity consumption for hydrogen compression
+
+1
+
+Numbers of drivers and stevedores
+
+3
+
+unit
+d L/km % 104CNY kg CNY/km kWh/kg person
+
+Parameter
+Usage time per day Fuel price [51] Average speed The lifespan of vehicle The loading and unloading time Tolls Electricity price Annual labor cost per person
+
+Value
+15 7 80 10 5 0.6 0.6 10
+
+unit
+h CNY/L km/h year h CNY/km CNY/kWh 104CNY
+
+Table 4 e Liquid hydrogen tanker transportation parameters.
+
+Parameter
+
+Value
+
+unit
+
+Usage days per year Fuel consumption per kilometer Transportation efficiency Vehicle purchase cost Vehicle transportation volume Vehicle maintenance cost Unit electricity consumption for hydrogen liquefaction Numbers of drivers and stevedores
+
+350 0.25 85 300 4000 0.3 11 3
+
+d L/km % 104CNY kg CNY/km kWh/kg person
+
+Parameter
+Usage time per day Diesel price Average speed The lifespan of vehicle The loading and unloading time Tolls Electricity price Annual labor cost per person
+
+Value
+15 7 80 10 5 0.6 0.6 10
+
+unit
+h CNY/L km/h year h CNY/km CNY/kWh 104CNY
+
+Table 5 e Pipeline transportation parameters.
+
+Parameter
+
+Value
+
+Pipeline construction cost
+
+536
+
+Annual pipeline maintenance cost
+
+2.68
+
+Compressor power
+
+750
+
+unit
+104CNY/km 104CNY/km kW
+
+Parameter
+Transport capacity The lifespan of pipeline Electricity price
+
+Value
+10 20 0.6
+
+unit
+104tons/year year CNY/kWh
+
+reduction, the technology of alkaline electrolysis with offpeak electricity is adopted in integrated station with on-site hydrogen production [53e55]. The hydrogen production technical parameters are shown in Table 6.
+4.3. Comparative analysis of the annualized cost for hydrogen transportation
+4.3.1. Inputs Based on the annualized cost model and scene parameters provided above, the annualized cost variable values of the three hydrogen transportation modes are as shown in Table 7.
+
+Table 6 e Hydrogen production technical parameters.
+
+Parameter
+
+Value
+
+unit
+
+Alkaline electrolyzer cost Alkaline electrolysis efficiency Rated power of electrolyzer Electricity price in valley section Electrolyzer replacement cycle Electrolyzer replacement cost Water consumption Water price Hydrogen storage cylinder cost Operating hours
+
+201 70 5 0.3 10 301.5 0.0178 3.32 3300 5
+
+104CNY/MW % MW CNY year 104CNY m3/kg CNY/m3 CNY/kg h/d
+
+1584
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+Table 7 e The annualized cost variable values of hydrogen transportation.
+
+variable
+
+Interpretation
+
+Long tube trailer transportation
+
+M
+
+Annual hydrogen refueling capacity
+
+175,000 kg
+
+m
+
+Transportation volume per vehicle
+
+350 kg
+
+h
+
+Transportation efficiency
+
+0.75
+
+n
+
+Number of round trips per year
+
+666.67
+
+S
+
+Vehicle speed
+
+80 km/h
+
+Tl
+
+Loading and unloading time
+
+Dy
+
+Usage days per year
+
+Td
+
+Usage time per day
+
+Cv
+
+Purchase cost per vehicle
+
+Cp
+
+Pipeline cost per kilometer
+
+5h 350 d 15 h 100 Â 104 CNY e
+
+Tv
+
+Lifespan of the vehicle
+
+10 y
+
+r
+
+Social discount rate
+
+5%
+
+Cvm
+
+Vehicle maintenance cost
+
+0.3 CNY/km
+
+Cpm
+
+Pipeline maintenance cost per kilometer
+
+e
+
+Cf
+
+Fuel consumption per kilometer
+
+0.25 L/km
+
+Pf
+
+Fuel price
+
+7 CNY/L
+
+Ct
+
+Tolls per kilometer
+
+0.6 CNY/km
+
+ACl
+
+Annual labor cost
+
+30 Â 104 CNY
+
+Qe
+
+Unit electricity consumption for hydrogen
+
+1 kWh/kg
+
+compression or liquefaction
+
+Pcom
+
+Compressor power
+
+e
+
+Pe
+
+Electricity price
+
+0.6 CNY/kWh
+
+Liquid hydrogen tanker transportation
+175,000 kg 4000 kg 0.85 51.47 80 km/h 5h 350 d 15 h 300 Â 104 CNY e 10 y 5% 0.3 CNY/km e 0.25 L/km 7 CNY/L 0.6 CNY/km 30 Â 104 CNY 11 kWh/kg
+e 0.6 CNY/kWh
+
+Pipeline transportation
+175,000 kg e 0.9 e e e e e e 536 Â 104 CNY/km 20 y 5% e 2.5 Â 104 CNY/km e e e 10 Â 104 CNY e
+1 kWh/kg
+
+4.3.2. Results The comparative analysis on the costs of the three transportation models can be carried out under the hydrogen source distance of 50 km, 100 km, 200 km, 300 km, 500 km, and 1000 km. As shown in Table 8.
+With the increase of hydrogen distance, the transportation costs of the three models all increase. When the transportation distance is within 270 km, the transportation cost of the long tube trailer is lower than that of the liquid hydrogen tanker, and the cost of liquid hydrogen tanker is lower if it exceeds 270 km. The hydrogen pipeline has a cost advantage over long tube trailer and liquid hydrogen tanker. However the
+
+prerequisite for achieving this low cost is that the capacity utilization rate of the pipeline reaches 100%, which means the HRSs have sufficient hydrogen demand. The cost of hydrogen transportation increases as the utilization rate decreases. When the utilization rate of transportation capacity is only 20%, the cost of hydrogen transportation by pipeline is already close the long tube trailers. As shown in Fig. 5.
+From the perspective of cost structure, fuel costs, tolls and labor costs are the main factors driving up the transportation costs of long tube trailer. Fixed costs proportion gradually decreases as the distance increases. Increasing the working pressure of the tube bundle from 20 MPa to 50 MPa can reduce
+
+Table 8 e The annualized cost of hydrogen transportation at different distances.
+
+Hydrogen source distance/km
+
+The annualized transportation cost/(CNY/kg)
+
+Long Tube Trailer Liquid hydrogen tanker
+
+Pipeline
+
+Capacity utilization rate
+
+100%
+
+70%
+
+50%
+
+20%
+
+50 100 200 300 500 1000
+
+3.91 5.04 7.29 9.55 14.05 25.32
+
+8.53 8.63 8.84 9.05 9.47 10.53
+
+1.40
+
+1.50
+
+1.63
+
+2.31
+
+1.63
+
+1.82
+
+2.08
+
+3.45
+
+2.08
+
+2.47
+
+2.99
+
+5.72
+
+2.54
+
+3.12
+
+3.90
+
+7.99
+
+3.45
+
+4.42
+
+5.72
+
+12.54
+
+5.72
+
+7.67
+
+10.27
+
+23.92
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+1585
+
+Fig. 5 e Comparative analysis of the annualized cost of hydrogen transportation.
+
+the transportation cost of the long tube trailer. As shown in Fig. 6.
+The cost change of liquid hydrogen tanker is not sensitive to distance. When the HRS is 50e500 km away from the hydrogen source, the transportation cost of the liquid hydrogen tanker will increase slightly. Although transportation costs increase with distance, the increase is not large. This is because the cost of electricity, which accounts for about 60% of the cost, is only related to the hydrogen capacity, not the distance. However, fuel costs and tolls, which
+
+are positively correlated with distance, do not account for a large proportion, and liquid hydrogen tankers have a cost advantage in long-distance transportation. As shown in Fig. 7.
+Comparing the above calculation results, it is found that in the range of 0e1000 km, the cost of pipeline transportation is the lowest. Although currently HRSs are not yet popular and the stations are scattered, and the cost advantage of hydrogen pipelines is not obvious. With the development of the hydrogen industry, the hydrogen pipeline will eventually become the best choice for low-cost hydrogen transportation.
+
+Fig. 6 e Structure of annualized cost for long tube trailer transportation.
+
+1586
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+Fig. 7 e Structure of annualized cost for liquid hydrogen tanker transportation.
+
+Table 9 e Cost composition of off-site stations.
+
+Cost structure
+
+Name
+
+CAPEX: Construction cost
+OPEX: Annual operation cost
+FEEDX: Feedstock cost L: Residual value income
+
+Hydrogen compressor costs [56] Hydrogen storage cylinder costs Hydrogen unloading device and dispenser costs Other equipment costs Land and civil costs Transportation costs Maintenance costs Labor costs Management costs Power costs Hydrogen purchase price Equipment salvage value
+
+Value
+504 165 300 100 250 e 32 60 10 38 10 106.9
+
+Table 10 e Cost composition of on-site stations.
+
+Cost structure
+
+Name
+
+CAPEX: Construction cost
+OPEX:Annual operation cost FEEDX:Feedstock cost L:Residual value income
+
+Hydrogen compressor costs Hydrogen storage costs Hydrogen unloading device and dispenser costs Alkaline electrolyzer costs Other equipment costs Land and civil costs Maintenance costs Labor costs Management costs Electrolyzer replacement costs Water costs Power costs Equipment salvage value
+
+Value
+504 165 300 1005 100 350 62.2 80 10 301.5 1.034 300.5 207.4
+
+Unit
+104CNY 104CNY 104CNY 104CNY 104CNY e 104CNY 104CNY 104CNY 104CNY CNY/kg 104CNY
+Unit
+104CNY 104CNY 104CNY 104CNY 104CNY 104CNY 104CNY 104CNY 104CNY 104CNY 104CNY 104CNY 104CNY
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+1587
+
+Table 11 e The levelized cost of hydrogen at different distances.
+
+Hydrogen source distance/km
+
+The levelized cost of hydrogen/(CNY/kg) Off-site stations
+
+Long Tube Trailer Liquid hydrogen tanker
+
+Pipeline
+
+Capacity utilization rate
+
+100%
+
+70%
+
+50%
+
+20%
+
+50 100 200 300 500 1000
+
+25.48 26.61 28.86 31.12 35.62 46.89
+
+30.10 30.20 30.41 30.62 31.05 32.10
+
+22.21 22.44 22.90 23.35 24.26 26.53
+
+22.31 22.64 23.29 23.93 25.23 28.48
+
+22.44 22.90 23.81 24.71 26.53 31.08
+
+23.12 24.26 26.53 28.81 33.36 44.73
+
+On-site stations 35.24
+
+Fig. 8 e Comparative analysis of the levelized cost of HRS operation modes. Fig. 9 e Structure of levelized cost for off-site station with long tube trailer transportation.
+
+1588
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+4.4. Comparative analysis of the levelized cost for HRSs
+4.4.1. Inputs The cost composition of the HRSs with external hydrogen supply is shown in Table 9. Among them, transportation costs vary depending on distance and transportation methods, as shown in Table 8.
+The cost composition of the HRSs with on-site hydrogen production system is shown in Table 10.
+4.4.2. Results Based on the levelized cost model and data provided above, the comparative analysis on the LCOH of four HRSs operation modes can be carried out under the hydrogen source distance of 50 km, 100 km, 200 km, 300 km, 500 km, and 1,000 km. As shown in Table 11.
+With the increase of hydrogen transportation distance, the LCOH of off-site stations with external hydrogen supply modes increase, while that of on-site hydrogen production modes remains stable at 35.24 CNY/kg, which is higher than the recommended price of 35 CNY/kg in China. When the hydrogen transportation distance is within 300 km, the LCOH of off-site station with long tube trailer transportation is lower than 35 CNY/kg, while that of off-site station with liquid hydrogen tanker transportation is lower than 35CNY/kg within the range of 0~1,000 km. The LCOH of pipeline transportation mode is also lower than 35CNY/kg, except when the hydrogen distance is 1000 km and the utilization rate is only 20%.As shown in Fig. 8.
+From the perspective of cost structure, transportation cost is the main factor driving up the LCOH of off-site station with long tube trailer translation. When the transportation
+
+Fig. 11 e The cost structure of on-site hydrogen production mode.
+distance exceeds 300 km, this mode will no longer be economical. As shown in Fig. 9.
+The cost structure of the off-station with liquid hydrogen tanker transportation is relatively balanced. The levelized cost increases slightly within the range of 0~1000 km. This model is obviously economical. As shown in Fig. 10.
+For an integrated station that produces hydrogen on-site through water electrolysis, the cost of electricity, even with the use of low-cost valley electricity, remains a significant factor affecting the overall cost. Additionally, the costs associated with purchasing and maintaining the electrolyzer comprise a considerable proportion of the total cost. As shown in Fig. 11.
+
+Fig. 10 e Structure of levelized cost for off-site station with liquid hydrogen tanker transportation.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+1589
+
+Table 12 e The literature research results.
+
+Key technology
+
+Results
+
+Demir et al. (2017) Wulf et al. (2018) Penev et al. (2019 Minutillo et al. (2021) Caponi et al. (2022) Di et al. (2022) This paper
+
+H2A model
+
+Transportation cost of H2 transmission pipeline network is 2.73 $/kg;
+
+Transportation cost of small scale H2 conveying pipe trailer is 2.86$/kg;
+
+The costs are highly dependent on the number of served refueling stations.
+
+Levelized cost model
+
+Pipeline transport is economically feasible for the case of 80 t/d;
+
+Truck transport is the best pathway in economic terms for a demand of 40 t/d;
+
+Future investigations could account for the degree of capacity utilization of
+
+the pipeline network.
+
+Steam Methane
+
+In the scenario of 24 stations with capacities of 1500 kg/d, HyLine achieves a
+
+Reforming hydrogen
+
+cost of $5.3/kg, which is 60% lower than the liquid truck cost and 40% lower
+
+production;
+
+than the low-pressure pipeline cost.
+
+Levelized cost model
+
+Using high-pressure pipelines to transport hydrogen will also be more
+
+economical than using pipelines with lower pressures.
+
+Electrolysis units; Grid-
+
+The optimal configuration is reached when the annual sharing of electricity
+
+connected PV plants;
+
+supply by the grid is equal to 50%, resulting in a LCOH of 9.29 V/kg;
+
+Levelized cost model
+
+Lower electricity prices are important to reduce investment costs of more
+
+expensive components.
+
+On-site electrolysis
+
+Green hydrogen production could be a competitive solution if coupled with
+
+production plants;
+
+low electricity prices, resulting in an LCOH between 4.21 V/kg and 6.80 V/kg.
+
+renewable power
+
+generation;
+
+Levelized cost model
+
+Levelized cost model
+
+Pure hydrogen pipelines have a transportation cost of $0.66/kg for 1000 km and
+
+$1.98/kg for 3000 km.
+
+Pure hydrogen pipelines is the least expensive hydrogen transportation
+
+options for the 1000 and 3000 km scenarios.
+
+Reasonable assumptions: Using high-pressure pipelines to transport pure hydrogen; Adopting valley time low
+
+electricity prices; Electrolysis units;
+
+Cost model: Annualized cost model; Levelized cost model;
+
+Key research points: The costs for different transportation methods at different hydrogen distances; Pipeline
+
+transportation costs under different pipeline utilization rates; Cost comparison between off-site hydrogen
+
+production and on-site hydrogen production.
+
+5. Conclusions
+Based on the literature research results, this paper makes the following reasonable assumptions and key research points, as presented in Table 12.
+According to the different hydrogen supply methods, this paper evaluates the costs of four operation modes for HRSs. Two kinds of life-cycle analysis models, including an annualized cost model for hydrogen transportation and a levelized cost model for HRSs, were applied respectively. The annualized cost model is a novel approach that has been utilized for the first time to estimate the expenses associated with hydrogen transportation. This method is more objective when applied to comparing the costs of transportation modes with varying lifespans.
+Hydrogen distance affects transportation costs. In the range of 0~1000 km, the cost of pipeline transportation is the lowest. When the distance is within 270 km, the cost of long tube trailer transportation is lower than that of liquid hydrogen tanker, and the cost of liquid hydrogen tanker is lower if it exceeds 270 km. The cost of pipeline transportation is not only dependent on distance, but also on utilization rate. pipeline has a cost advantage when the capacity utilization rate reaches 100%.The cost increases as the utilization rate
+
+decreases. When the utilization rate is only 20%, the cost of pipeline transportation increases close the long tube trailers.
+Among the four operation modes, the off-site station with pipeline transportation is the most economical mode. The LCOH of off-site station with long tube trailers transportation is less than 35 CNY/kg when the distance is within 300 km. The mode of off-site station with liquid hydrogen tankers transportation is always cost-effective, less than 35 CNY/kg, when the distance of the hydrogen source is within 1,000 km. However, the LCOH of on-site hydrogen production in integrated station by water electrolysis is 35.24 CNY/kg, which is not economical.
+In the off-site station with external hydrogen supply modes, the hydrogen supply cost accounts for over 50% of the LCOH. As the hydrogen transportation distance increases, the proportion of hydrogen supply cost also increases. In the onsite hydrogen production in integrated station mode, power costs are the main factor restricting hydrogen production.
+The size of the hydrogen supply network can impact economic viability of HRSs due to economies of scale benefits. Additionally, the social discount rate is a critical factor that influences the cost-benefit analysis. If HRSs are deemed to be high-risk, investors may demand a higher discount rate. Therefore, exploring different hydrogen supply scales and
+
+1590
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+discount rates to determine optimal HRS modes is an important research direction for future studies.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Acknowledgment
+The project was supported by National Natural Science Foundation (No. 51678291), Scientific Research Fund Project of Nanjing Institute of Technology (No. CKJB201907), Open Research Fund of Jiangsu Collaborative Innovation Center for Smart Distribution Network (No. XTCX202212), and Outstanding Youth Program in Jiangsu Province (No. JSKJZK2023051).
+references
+[1] Salhi MS, Okonkwo PC, Belgacem IB, Farhani S, Zghaibeh M, Bacha F. Techno-economic optimization of wind energy based hydrogen refueling station case study Salalah city Oman. Int J Hydrogen Energy 2023;48(26):9529e39.
+[2] Okonkwo PC, Belgacem IB, Zghaibeh M, Tlili I. Optimal sizing of photovoltaic systems based green hydrogen refueling stations case study Oman. Int J Hydrogen Energy 2022;47(75):31964e73.
+[3] Wang Z, Wang D, Zhao F, Han F, Ji Y, Cai W. Hydrogen refueling stations and carbon emission reduction of coastal expressways: a deployment model and multi-scenario analysis. J Mar Sci Eng 2022;10(7):992.
+[4] Genovese M, Fragiacomo P. Hydrogen refueling station: overview of the technological status and research enhancement. J Energy Storage 2023;61:106758.
+[5] Wang Y, Seo B, Wang B, Zamel N, Jiao K, Adroher XC. Fundamentals, materials, and machine learning of polymer electrolyte membrane fuel cell technology. Energy and AI 2020;1:100014.
+[6] Pan Xiangmin, Yang Liang, Cheng Jing. Current situation and foresight of hydrogenation infrastructure construction [C]// international clean energy forum (Macau). International hydrogen energy industry development report (2017). World Knowledge Press; 2017. p. 33.
+[7] Zhao T, Liu Z, Jamasb T. Developing hydrogen refueling stations: an evolutionary game approach and the case of China. Energy Econ 2022;115:106390.
+[8] Zhou Sha, Liu Fujian. Cost-benefit assessment of hydrogen refueling station based on full life cycle. J Chongqing University of Technology (Natural Science) 2019;33(7):58e65.
+[9] Wang Kunhua. Research on construction and operation of hydrogenation station [C]//safety management committee of China city gas association. Proceedings and research reports of the 2020 gas safety exchange seminar. 2020. p. 332e6.
+[10] Wang H, Lu L, Xiong B, Ling Y, Zeng X, Qiu X. Nickelcatalyzed transfer hydrogenation of unactivated aryl alkenes with hydrosilane as hydrogen source. Asian J Organic Chemistry 2023;12(1):e202200590.
+[11] Gu Y, Chen Q, Xue J, Tang Z, Sun Y, Wu Q. Comparative techno-economic study of solar energy integrated hydrogen
+
+supply pathways for hydrogen refueling stations in China. Energy Convers Manag 2020;223:113240. [12] Perna A, Minutillo M, Di Micco S, Jannelli E. Design and costs analysis of hydrogen refuelling stations based on different hydrogen sources and plant configurations. Energies 2022;15(2):541. [13] Ariga KK, Verma G, Agrawal D. Higher respiratory complications in alcoholic hepatitis patients with HRS when treated with terlipressin: is it safe? Clinical Gastroenterology and Hepatology: the Official Clinical Practice Journal of the American Gastroenterological Association 2023;(23):S1542e3565. 00245. [14] Lu D, Sun J, Peng Y, Chen X. Optimized operation plan for hydrogen refueling station with on-site electrolytic production. Sustainability 2023;15(1):347. [15] Lyu X, Cheng J, Feng Y, Liu T, Huang X. Effectiveness analysis of hydrogen control system in AP1000 nuclear power plant under LB-LOCA. Ann Nucl Energy 2020;147:107695. [16] Roberta Caponi, Enrico Bocci, Del Zotto Luca. Technoeconomic model for scaling up of hydrogen refueling stations. Energies 2022;15(20):7518. 7518. [17] Ustolin F, Paltrinieri N, Landucci G. An innovative and comprehensive approach for the consequence analysis of liquid hydrogen vessel explosions. J Loss Prev Process Ind 2020;68:104323. [18] Shan T-Wen, Song Pengfei, Li Youwu, Hou Jianguo, Wang Xiulin, Zhang Dan. Hydrogen cost analysis of the whole industry chain of hydrogen production, storage, transportation and filling. Nat Gas Chem Ind 2020;45(1):85e90. þ 96. [19] G M, F P. Hydrogen refueling station: overview of the technological status and research enhancement. J Energy Storage 2023:61. [20] Yin M, X.R W, Tong L, et al. Hydrogen and ethanol: production, storage, and transportation. Int J Hydrogen Energy 2021;46(54). [21] Abdalla MA, Hossain S, Nisfindy BO, et al. Hydrogen production, storage, transportation and key challenges with applications: a review. Energy Conversion and Management; 2018. p. 165. [22] Demir EM, Dincer I. Cost assessment and evaluation of various hydrogen delivery scenarios. Int J Hydrogen Energy 2018;43(22). [23] Yanxing Z, Maoqiong G, Yuan Z, et al. Thermodynamics analysis of hydrogen storage based on compressed gaseous hydrogen, liquid hydrogen and cryo-compressed hydrogen. Int J Hydrogen Energy 2019;44(31). [24] Cho S, Kim J. Multi-site and multi-period optimization model for strategic planning of a renewable hydrogen energy network from biomass waste and energy crops. Energy 2019;185(C). [25] Penev M, Zuboy J, Hunter C. Economic analysis of a highpressure urban pipeline concept (HyLine) for delivering hydrogen to retail fueling stations. Transport Res Part D 2019;77(C). [26] Damien G, Gianpaolo V. Hydrogen as a clean and sustainable energy Vector for global transition from fossil-based to zerocarbon. Clean Technologies 2021;3(4). [27] Bin M, Lorenzo G, Hwa SC. Long-distance renewable hydrogen transmission via cables and pipelines. Int J Hydrogen Energy 2021;46(36). [28] Yuki I, Mari V, Petter N, et al. Large-scale production and transport of hydrogen from Norway to Europe and Japan: value chain analysis and comparison of liquid hydrogen and ammonia as energy carriers. Int J Hydrogen Energy 2020;45(58). [29] Aasadnia M, Mehrpooya M. Large-scale liquid hydrogen production methods and approaches: a review. Applied Energy; 2018. p. 212.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 1 5 7 7 e1 5 9 1
+
+1591
+
+[30] Sanghun L, Taehong K, Gwangwoo H, et al. Comparative energetic studies on liquid organic hydrogen carrier: a net energy analysis. Renew Sustain Energy Rev 2021:150.
+[31] Reddi K, Elgowainy A, Rustagi N, et al. Techno-economic analysis of conventional and advanced high-pressure tube trailer configurations for compressed hydrogen gas transportation and refueling. Int J Hydrogen Energy 2018;43(9).
+[32] IEA. The future of hydrogen. https://www.iea.org/reports/ the-future-of-hydrogen. [Accessed 12 May 2022].
+[33] Wulf C, Reuß M, Grube T, et al. Life cycle assessment of hydrogen transport and distribution options. J Clean Prod 2018:199.
+[34] L D G, G T, O A, et al. Large-scale long-distance land-based hydrogen transportation systems: a comparative technoeconomic and greenhouse gas emission assessment. Int J Hydrogen Energy 2022;47(83).
+[35] M M, P A, F A, et al. Analyzing the levelized cost of hydrogen in refueling stations with on-site hydrogen production via water electrolysis in the Italian scenario. Int J Hydrogen Energy 2020;46(26).
+[36] Apostolou D, Xydis G. A literature review on hydrogen refuelling stations and infrastructure. Current status and future prospects. Renew Sustain Energy Rev 2019;113(C).
+[37] Moradi R, Groth MK. Hydrogen storage and delivery: review of the state of the art technologies and risk and reliability analysis. Int J Hydrogen Energy 2019;44(23).
+[38] Reddi K, Elgowainy A, Rustagi N, et al. Impact of hydrogen refueling configurations and market parameters on the refueling cost of hydrogen. Int J Hydrogen Energy 2017;42(34).
+[39] Heeyeon L, Sanghun L. Economic analysis on hydrogen pipeline infrastructure establishment scenarios: case study of South Korea. Energies 2022;15(18).
+[40] Fragiacomo P, Genovese M. Technical-economic analysis of a hydrogen production facility for power-to-gas and hydrogen mobility under different renewable sources in Southern Italy. Energy Conversion and Management; 2020. p. 223.
+[41] Weinert JX, Shaojun L, Ogden JM, Jianxin M. Hydrogen refueling station costs in Shanghai. Int J Hydrogen Energy 2007;32(16):4089e100.
+[42] Doracic B, Puksec T, Schneider DR, Duic N. The effect of different parameters of the excess heat source on the levelized cost of excess heat. J Energy 2020;201:117686.
+[43] Li Fengdi, Cheng Guangxu, Jia Tonghua, et al. Development status and new mode seeking of hydrogen fueling station. Mod Chem Ind 2023;43(4):1e8.
+
+[44] Shan Tongwen, Song Pengfei, Li Youwu, et al. Cost analysis of hydrogen from the perspective of the whole industrial chain of production,storage, transportation and refueling. Low-carbon Chemistry And Chemical Engineering 2020;45(1):85e90þ96.
+[45] In depth analysis of the current situation of China's Hydrogen station industry and research report on investment trends[R].https://www.chinabaogao.com/ baogao/202207/604047.html.
+[46] Fan Junming, Li Luling, Yang Guang, et al. Optimaization of hydrogen fueling station system with hydrogen produced on site and purchased. Chem Eng (China) 2022;50(11):69e73.
+[47] Ministry of Housing and Urban-Rural Development of the People s Republic of China.Technical specification of Hydrogen station[R]. https://www.mohurd.gov.cn/gongkai/ zhengce/zhengcefilelib/202104/20210402_249677.html.
+[48] Liu Fei. Discussion on the whole process project management of commercial hydrogenation station. Energy Technol 2020;18(10):78e82.
+[49] Deng Tianyin, He Guangli, Miao Ping. Analysis of the cost of hydrogen production by electrolytic water in different application scenarios. Energy and Chemical Industry 2020;41(6):1e5.
+[50] Li Qinan. Research on cost model of oil, gas, hydrogen and electricity. Petroleum and petrochemical green and lowcarbon 2021;6(6):10e6.
+[51] Huang Xuanxu, Lian Jijian, Shen Wei, et al. Economic analysis of the large-scale hydrogen energy supply chain in China. Southern Energy Construction 2020;7(2):1e13.
+[52] Tian Tian, Li Yixue, Huang Lei, et al. Comparative analysis of the economy of hydrogen production technology from offshore wind power. Electric Power Construction 2021;42(12):136e44.
+[53] Wang Yanzhe, Zhou Sheng, Zhou Xiangwen, et al. Cost analysis of different hydrogen production methods in China. Energy of China 2021;43(5):29e37.
+[54] Guo Xiuying, Li Xianming, Xu Zhuang, et al. Cost analysis of hydrogen production by electrolysis of renewable energy. Energy Storage Science and Technology 2020;9(3):688e95.
+[55] Zhang Xuan, Wang Kai, Fan Xinye, et al. Cost analysis of hydrogen production from electrolyzed water. Mod Chem Ind 2021;41(12):7e11.
+[56] Yan Li, Chang Haoming, Lin Shixiang, et al. Hydrogen cost analysis of external hydrogen supply and on-site hydrogen production refueling station. Gas Heat 2022;42(3):26e9.
+
+

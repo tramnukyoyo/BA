@@ -1,0 +1,1110 @@
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+Available online at www.sciencedirect.com
+ScienceDirect
+
+journal homepage: www.elsevier.com/locate/he
+
+Hydrogen supply chain and refuelling network
+design: assessment of alternative scenarios for the
+long-haul road freight in the UK
+Ramin Raeesi a,*, Christa Searle b, Nazmiye Balta-Ozkan c, Laura Marsiliani d, Mi Tian e, Philip Greening b
+a Centre for Logistics and Heuristic Optimisation (CLHO), Kent Business School, University of Kent, Chatham ME4 4AG, UK b Centre for Sustainable Road Freight, Heriot-Watt University, Edinburgh Campus, Boundary Rd N, Edinburgh, EH14 4AS, UK c School of Water, Energy and Environment, Cranfield University, Bedford MK43 0AL, UK d Durham University Business School, Durham Energy Institute Mill Hill Lane, Durham, DH1 3LB, UK e Department of Engineering, College of Engineering, Mathematics and Physical Sciences, University of Exeter, Exeter EX4 4QF, UK
+
+article info
+Article history: Received 11 November 2022 Received in revised form 4 February 2023 Accepted 20 March 2023 Available online 5 May 2023
+Keywords: Road freight Hydrogen supply chain Distribution network Hydrogen refuelling station Underground storage of hydrogen Hydrogen powered HGV
+
+abstract
+Shifting from fossil fuels to clean alternative fuel options such as hydrogen is an essential step in decarbonising the road freight transport sector and facilitating an efficient transition towards zero-emissions goods distribution of the future. Designing an economically viable and competitive Hydrogen Supply Chain (HSC) to support and accelerate the widespread adoption of hydrogen powered Heavy Goods Vehicles (H2-HGVs) is, however, significantly hindered by the lack of the infrastructure required for producing, storing, transporting and distributing the required hydrogen. This paper focuses on a bespoke design of a hydrogen supply chain and distribution network for the long-haul road freight transportation in the UK and develops an improved end-to-end and spatially-explicit optimisation tool to perform scenario analysis and provide important first-hand managerial and policy making insights. The proposed methodology improves over existing gridbased methodologies by incorporating spatially-explicit locations of Hydrogen Refuelling Stations (HRSs) and allowing further flexibility and accuracy. Another distinctive feature of the method and the analyses carried out in the paper pertains to the inclusion of bulk geographically agnostic, as well as geological underground hydrogen storage options, and reporting on significant cost saving opportunities. Finally, the curve for H2-HGVs penetration levels, safety stock period decisions, and the transport mode capacity against hydrogen levelized cost at pump have been generated as important policy making tools to provide decision support and insights into cost, resilience and reliability of the HSC. © 2023 The Author(s). Published by Elsevier Ltd on behalf of Hydrogen Energy Publications LLC. This is an open access article under the CC BY license (http://creativecommons.org/
+licenses/by/4.0/).
+
+* Corresponding author.
+
+Introduction
+
+E-mail addresses: r.raeesi@kent.ac.uk (R. Raeesi), c.searle@hw.
+
+ac.uk (C. Searle), n.ozkan@cranfield.ac.uk (N. Balta-Ozkan), laura. marsiliani@durham.ac.uk (L. Marsiliani), m.tian@exeter.ac.uk (M. Tian), p.greening@hw.ac.uk (P. Greening).
+
+The ability to utilise abundant renewable resources for its production, as well as opportunities to decarbonise hard to abate
+
+https://doi.org/10.1016/j.ijhydene.2023.03.474
+
+0360-3199/© 2023 The Author(s). Published by Elsevier Ltd on behalf of Hydrogen Energy Publications LLC. This is an open access article under the CC BY
+
+license (http://creativecommons.org/licenses/by/4.0/).
+
+668
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+sectors like road freight [1,34], manufacturing industry [40,41], rail [17] and aviation [28,46] has placed hydrogen at the centre of climate change and energy policy discourse in many countries. More than 30 countries and regions around the globe have therefore laid out hydrogen import or export plans and strategies, pointing to the `regionalisation' of energy markets [28].
+One of these countries is the United Kingdom (UK) which has committed to reduce its greenhouse gas emissions from 1990 levels to net zero by 2050 via the Climate Change Act. The UK's hydrogen ambition, as outlined in its hydrogen strategy [24], initially focused on its use to displace natural gas which is used for high temperature processes in industry and heating buildings and homes as well as decarbonisation of shipping, rail and aviation sectors. The strategy outlined government's plans to develop a hydrogen economy in stages over the next 15 years. It includes progression from a hydrogen neighbourhood trial in 2023, to a village trial and installation of 1 GW production capacity in 2025, to a town trial and reaching a production capacity of 5 GW in 2030. However, ongoing market volatility and political instability linked to the RussiaUkraine conflict have renewed interest in hydrogen. Consequently, hydrogen is increasingly being seen as a vector to contribute to the security of UK energy system whereby production capacity target of 2030 has been doubled [25]. Of different production methods to produce hydrogen, the government has favoured a twin-track approach whereby it envisions both blue and green hydrogen to play a role.
+The UK has made significant progress to reduce its emissions to net-zero in 2050, mainly by decarbonising its power generation by adding renewables. As of 2020, the UK emissions stood at 405.5 Mt CO2e, delivering a 49.7% reduction over three decades [8]. While transport sector reduced its emissions from 1990 levels by 25%, its share relative to UK's total emissions has grown from 18.9% in 1990 to 28.3% in 2020. Despite passenger transport accounting for the largest share (57.3% on average over three decades) of 114.6 Mt CO2e domestic transport emissions, its share is declining while those from Heavy Goods Vehicles (HGVs1) have increased from 15.3% in 1990 to 17.6% in 2020. Beyond emission targets, decarbonisation of HGVs is essential for human health as they are a main source of roadside nitrogen oxide emissions. It is these considerations that have led to the development of transport decarbonisation plan [16] which identifies ending the sale of new, non-zero emission HGVs of over 26 tonnes by 2040 at the latest.2 The phase out date of new, non-zero emission lighter HGVs (those less than or equal to 26 tonnes) will be introduced from 2035 while an ongoing consultation3 gathers evidence whether a limited exemptions may be justified.
+1 A full list of acronyms used within the paper is available in Appendix A.
+2 https://www.gov.uk/government/publications/cop26declaration-zero-emission-cars-and-vans/cop26-declaration-onaccelerating-the-transition-to-100-zero-emission-cars-and-vans (Accessed on 18/10/2022).
+3 https://www.gov.uk/government/consultations/heavy-goodsvehicles-ending-the-sale-of-new-non-zero-emission-models/ outcome/outcome-and-response-to-the-consultation-on-whento-phase-out-the-sale-of-new-non-zero-emission-hgvs (Accessed on 18/10/2022).
+
+Electrification and hydrogen or a combination of the two emerge as prime options to decarbonise HGVs, as noted by both academics [23] and government's independent advisory body, the Committee on Climate Change [14]. Hydrogenpowered HGVs (H2-HGVs), in particular, are believed to offer multiple competitive advantages over electric HGVs (particularly in relation to long-haul distribution) due to their larger driving range, much faster refuelling time, and improved payload efficiency.
+Transitioning to a hydrogen-based energy system to support and accelerate the widespread adoption of H2-HGVs is, however, significantly hindered by the lack of the infrastructure required for producing, storing, transporting and distributing the required hydrogen. Designing an economically viable and competitive Hydrogen Supply Chain (HSC) to meet the end-user demand is a significant challenge and relies primarily on the optimal configuration and sizing of required facilities and infrastructure [32]. In essence, the ultimate cost of hydrogen at pump (which is in turn a key determinant of its competitiveness, adoption appeal and even H2-HGVs' total cost of ownership) relies greatly on the optimal determination of production and storage facilities technology, capacity, and locations, given their required capital investment and operational costs, and connecting them using cost-effective, sufficient, and appropriate transport links.
+To carry out the aforementioned task efficiently, this paper focuses on a bespoke design of a hydrogen supply chain and distribution network for the long-haul road freight transportation in the UK and develops an improved end-to-end and spatially-explicit optimisation tool to perform scenario analysis and provide important first-hand managerial and policy making insights. The contribution of this paper is multi-fold: (i) a new flexible and generic modelling approach for hydrogen supply chain and distribution network design problem is proposed; the proposed mathematical optimisation tool works with spatially-explicit locations of Hydrogen Refuelling Stations (HRSs) and allows free movement of hydrogen flow within the first tier (between production and storage facilities) and the second tier (between storage facilities and HRSs), and improves over existing grid-based methodologies; (ii) the expected demand for hydrogen by the long-haul road freight sector has been identified through the analysis of existing demand for diesel by HGVs in the UK, and the potential location of HRSs and their daily demand for hydrogen has been identified; (iii) potentials for establishing bulk underground hydrogen storage sites are considered for the first time in HSC design, and significant cost saving opportunities have been reported; (iv) multiple existing and futuristic blue and green hydrogen production technologies and scales have been considered and assessed within different technoeconomic scenarios; and (v) the curve for H2-HGVs penetration level, safety stock of hydrogen period and the transport mode capacity against hydrogen levelized cost at pump has been generated and important policy insights regarding cost, resilience and reliability of the HSC are provided.
+In the remainder of the paper, in Section Literature review, a concise literature review is provided. Section Problem description establishes the problem description and modelling assumptions. Section The mathematical model elaborates on the optimisation-based methodology, and Section
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+669
+
+The case study and assessment of alternative scenarios presents the case study and the assessment of alternative scenarios. Finally, Section Concluding remarks concludes the paper.
+Literature review
+Road freight transport accounts for 80% of the global net increase in diesel use since 2000 and consumes about 50% of all diesel fuel [29]. Within the last mile delivery and urban freight distribution context, various decarbonisation initiatives ranging from emissions-aware routing [51] and development of autonomous vehicles [47], to the acquisition of electric commercial vehicles [19,52,53] have been put forth and showed promising outlooks. The long-haul road freight is, however, harder to decarbonise due to its significant range and payload requirements, and as such attention has been increasingly drawn towards hydrogen as a fuel carrier that addresses many of these concerns.
+Moriarty and Honnery [43] provide an account of the development of hydrogen as a clean fuel for transport over the past century and offer an evidence-based agenda for future implementation. Recognising the projected global increase in the share of the HGV sector in the total transport energy use, they argue in favour of urgent policies to incentivise adoption of hydrogen powered freight transportation. The above findings are supported by the analysis of Cullen et al. [15] for the US. They make the case for fuel cell being adopted for HGVs. Also, as overall truck mileage is expected to increase by more than 50% by 2050, they recognize the potential of green hydrogen HGV market for reducing energy used and emissions. Laguipo et al. [34] argue for a scale up of the green hydrogen HGV sector in the Irish economy alongside the need to explore its demand side. They conduct an end-user survey to record truck operational cost and elicit attitudes towards decarbonisation and H2-HGVs adoption. The survey data are used to estimate annual demand for green hydrogen and the delivery cost to H2-HGVs users. They find that the Irish market is ready for the scaling up of H2-HGVs. Liu et al. [39] focus on the impact of fuel cell technology on GHG emissions from HGVs in China. They simulate future pathways for the hydrogen supply and fuel cell HGV penetration up to 2050 and calculate resulting GHG emission reductions. Their findings highlight the importance of increasing the penetration of hydrogen fuel cell HGVs to reduce GHG emissions in China. They also suggest the adoption of non-fossil electrolysis of water to produce hydrogen for further GHG emissions decrease.
+Much as hydrogen is identified as an attractive alternative to fossil fuels to power the road freight of the future, its production, storage, transportation and distribution, and hence its supply chain design and implementation, remains a significant challenge in the face of a hydrogen economy. Spatially-explicit optimisation models that consider the entire HSC and run at a national or regional scale [37] are central to addressing this challenge and the need for optimal deployment of hydrogen infrastructure and a strategic HSC design. Such models were initially presented in Almansoori and Shah [3] for the case of Great Britain (GB) and were subsequently picked up by several other studies in
+
+other contexts. The steady-state model proposed by [3] integrates multiple HSC components pertaining to production, storage, and transportation within a single MixedInteger Linear Programming (MILP) framework and outputs optimal number and location of the required facilities with their adopted technology and size, as well as the transportation infrastructure needed while minimising the capital and operating costs of the HSC. Follow up studies to that of [3] have mostly modified and adopted a similar model to incorporate other factors such as demand uncertainty [5,31], multiple periods [4], use of centralised storage [57], emissions constraints [2], and other objectives such as safety and emissions alongside economic costs [22]. For a comprehensive survey on the most pertinent literature until June 2018, we may refer the interested reader to the paper of [37]. Most recent literature, on the other hand, has mostly concentrated on HSC optimisation with a focus on hydrogen purity and purification requirements [62], hydrogen and methane supply chains based on power-to-gas systems [13], accelerated solution algorithms for solving existing HSC optimisation models [55], and several other areas, some of which are concisely reviewed here. Li et al. [38] design a HSC network to meet hydrogen demands in 31 most populous cities in Franche-Comte, France, by integrating upstream and fuelling infrastructure technologies and considering differences in vehicle ownership rates, income, education and share of commuting population in private vehicles to calculate demands for hydrogen at each node. Ochoa Bique and Zondervan [45] look into cost-effective development of HSC in Germany where 10% and 30% of overall passenger transport demand is assumed to be met by fuel cell electric vehicles by 2030 and 2050, respectively. Reuß et al. [54] analyse whether renewable energy from wind and solar can meet the spatiotemporally explicit demands for hydrogen in Germany and highlight the importance of salt caverns and transmission lines to deliver hydrogen to where it is needed. Gu¨ ler et al. [21] study differences in resource availabilities and demand patterns and their impacts on the composition of regional HSC for Turkey. Their analysis uses grids that are defined by a combination of a number of cities that host minimum 1% of total vehicles in the country, resulting in grouping of 81 cities into 33 grids. Demands are assumed to follow an S-curve (through penetration rates) and supply is met by seven types of feedstocks, including geothermal and hydroelectric energy. Hwangbo et al. [27] adopt a multisectoral approach to analyse hydrogen demand and its uncertainty. By utilising steam vented by petrochemical industrial complexes in Steam Methane Reformer (SMR) processes, they analyse how these complexes can be integrated with local SMR technologies to meet demands for hydrogen. They employ a two-stage stochastic MILP that builds on general mass balance principle. Their model outputs the location and size of producftion facilities and storage tanks and resulting hydrogen distribution flows between 15 regions in the country.
+Research focusing exclusively on the distribution side of HSCs and the problem of siting and sizing of HRSs has also taken off in recent years. Gec¸ ici et al. [18] develop a multiperiod planning approach to analyse the location of hydrogen refuelling stations in Istanbul for the next 30
+
+670
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+years. They use human development index and vehicle flow between districts to identify the demand, and minimise the total average distances in the proposed multi-period pmedian model. Kim et al. [30] introduce a multi-objective hydrogen refuelling station deployment problem and develop three mathematical models for the problem and present results of station deployment plan for the years 2022e2040. Kuvvetli [33] proposes a goal programming model for hydrogen refuelling station location problem. He examines safety risks of stations and a multi-period version of the problem. Three single objectives and multi-objective models are compared to each other, and a conducted case study determines 77 stations in Adana, Turkey over the next decade. Rose and Neumann [56] combine a location planning model with electricity system optimisation and grid expansion, and investigate scenarios for sizing of stations in support of power system and as independent. They report an average levelized cost of hydrogen between 4.83 euro/kg and 5.36 euro/kg. Thiel [60] considers the location of new hydrogen fuelling stations in Paris from 2020 and develops an agent-based model integrating particle swarm optimisation and GIS for the problem. The proposed model searches for station locations that supply optimal market shares. Sun et al. [59] develop a mathematical model for siting stations with combined multiple sources and GIS factors. They consider both rebuilding at existing gas stations and avoiding must-not-build locations and apply particle swarm optimisation for station siting with multisource supply and programs. Brey et al. [11] employ a spatial GIS approach using nodes and clusters to determine stations for Andalusia roll out. They estimate the number, size, nature and cost of stations and the total investment considering cost of different sizes and technologies. Greene et al. [20] review challenges against the development of hydrogen refuelling infrastructure and argue that design, cost and environmental effects depend on hydrogen production and delivery. They also find out that methods for planning numbers, size and location of stations have advanced and co-evolution of station deployment and demand adoption remains a challenge.
+As stated earlier, underground hydrogen storage is an economically promising approach to achieve cost competitiveness and is a key element within the analyses carried out in this study. Salt caverns, in particular, are promising storage solutions and provide storage capacity in the 100 GWh range. Salt caverns are frequently used to store natural gas. Rock salt has a very low hydrogen permeability, which ensures minimal loss of hydrogen or contamination with the geological surroundings. Salt caverns can store hydrogen at pressures!200 bar [36], with a fast storing and release rate. The Teeside salt cavern in the UK stores 25 GWh of hydrogen at 45 bar pressure in three separate cavities [58], while the Clemens Dome salt cavern in Texas has a capacity of 92 GWh and pressure in the range 70e135 bar. From a practical viewpoint, the salt cavern storage solution is highly flexible in terms of storage volume and also in terms of modularity. However, salt structures have limited use due to a restricted cavern volume and the finite occurrence of salt deposits suitable for slat-leached cavern constructions. Another disadvantage of salt
+
+caverns is their location, which may not be near local hydrogen pipelines or generation sites. Lankof and Tarkowski [35] study the potential for underground storage of hydrogen in salt formations in Poland. Using geological structural and thickness maps they develop maps of hydrogen storage capacity and energy value, and show a large potential for hydrogen storage in salt caverns. Zivar et al. [63] review the technical aspects and feasibility of the underground storage of hydrogen in depleted hydrocarbon reservoirs, aquifers, and manmade underground cavities (caverns). They also discuss the mechanisms of underground hydrogen storage and the various phenomena that occur during the process, and provide an overview of worldwide ongoing lab and field studies, potential storage sites, technical challenges, remedial techniques and economic viability. Amirthan and Perera [6] investigate the available subsurface storage options for hydrogen in Australia, such as depleted gas fields, salt caverns, aquifers, coal seams and abandoned underground mines. They present the projected demand for hydrogen storage, basin-wide geological information on storage structures, technical challenges, and factors to consider during site selection, and highlight how Australia can benefit from its experience and knowledge in utilising depleted reservoirs for gas storage and carbon capture and sequestration, but also important knowledge gaps to utilise the subsurface geology for hydrogen storage successfully in the future. Navaid et al. [44] define, characterise, and summarise different types of subsurface geological media currently considered viable for underground hydrogen storage, and discuss the potential interactions and challenges that may occur in ensuring hydrogen's large scale geological storage.
+As will be discussed further in the next section, most of the existing HSC design optimisation models are grid-based models which lack the flexibility required for inclusion of bulk storage options, and due to various shortcomings can lead to sub-optimal design of the HSC network. A core contribution of this study is therefore to address these shortcomings through a new grid-free modelling approach for hydrogen supply chain and distribution network design problem. Within this study, in addition to salt caverns and conventional overground compressed hydrogen gas tanks at 700 MPa, we focus on two other large geographically agnostic, as well as geological storage options corresponding to underground pipes and lined rock caverns as bulk underground hydrogen storage options to assess their suitability for use within HSC, and their economic implications with regard to the ultimate cost of each kg hydrogen delivered at pump. We refer the interested reader to the study of Papadias and Ahluwalia [48] for a detailed exposition of these storage options. The current study is also one of the first attempts in analysing the long-haul road freight HGV demand, identifying the location and capacity of HRSs and coordinating them with a fully dedicated hydrogen supply chain.
+Problem description
+Most of the existing HSC design optimisation models are extensions of the "grid-based" modelling approach proposed
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+671
+
+initially by Almansoori and Shah [3]. A preliminary requirement of these modelling approaches is to divide the entire region of interest (e.g., the entire country) into equal sized grids (i.e., equal-sized squares), to facilitate the representation of demand, and the identification of candidate sites for establishing hydrogen production and storage facilities. Demand, on the other hand, is not identified for spatially-explicit end-users, e.g., HRSs, and is instead estimated and aggregated at a high level for each grid and is satisfied through establishing production facilities within the same or neighbouring grids. Within all grids with a realised demand, regardless of the size of the demand, however, it is a requirement to establish appropriate storage facilities to satisfy the daily demand of the grid and to hold a safety stock against production disruptions.
+It may be already clear with the description above that while the grid-based representation is a great tool to help identify candidate locations for establishing production and storage facilities, it lacks flexibility and due to various shortcomings can lead to sub-optimal design of the HSC network. Since the HSC design optimisation problem is essentially a demand-driven problem, and demand dictates the ultimate optimal allocation of production, storage and transportation facilities, accurate and spatially-explicit representation of demand is quite important. Within gridbased representations, however, the resolution of the grid (i.e., the size of each square) has a significant impact on how demand is allocated, and hence the need for storage facilities. It can be simply shown that with increasing the grid resolution (i.e., decreasing the size of each square) the storage cost will also increase, since if we have n grids, and there are demands for hydrogen in m4n grids, the minimum number of the storage facilities required would be m. Moreover, as the location of HRSs are not explicitly considered in the model, transportation between storage facilities and HRSs within each grid cannot be explicitly represented and accounted for, and thus transport cost estimates can be highly inaccurate. Finally, as the model forces the establishment of storage facilities within each grid, it limits the possibility of exploiting bulk storage facilities that can be established to serve a large number of geographically scattered demand points if the trade-off between transportation and storage favours their establishment.
+To address these shortcomings, we are proposing a new grid-free modelling approach for hydrogen supply chain and distribution network design problem that is more generic and flexible and works with spatially-explicit locations of HRSs and allows free movement of hydrogen flow within the first tier (between production and storage facilities) and the second tier (between storage facilities and HRSs). This modelling approach is particularly suited for the explicit consideration of production, storage and distribution facilities, and the potentials of establishing bulk underground hydrogen storage sites and provides an excellent tool to exercise various technoeconomic and policy-informing scenarios. In what follows, the corresponding optimisation problem is first described, and all key modelling assumptions are established, and then in the next section the mathematical optimisation model is given.
+A hydrogen supply chain dedicated to fuelling the longhaul road freight transport is comprised of four key
+
+components corresponding to hydrogen production, storage, transportation and distribution through HRSs. An additional component relating to hydrogen production "feedstock" can be also considered, but this is often excluded from HSC design modelling as costs that arise from feedstocks acquisition and transportation are often sufficiently reflected in the hydrogen production costs used within the model.
+Starting from the upstream of the HSC, hydrogen is produced and conditioned in two possible physical forms of liquid (LH2) or compressed-gaseous (CH2) at hydrogen production facilities of different production capacities that are based on either blue (e.g., steam methane reforming with carbon capture, usage and storage) or green (e.g., proton exchange membrane electrolysis) hydrogen production technologies. Given the road freight application context considered within this study and the better suitability of CH2 over LH2, however, in the rest of this paper we will focus only on CH2 as the predominant physical form of hydrogen across the intended HSC. While this is a realistic and practical assumption, it is not a restrictive one for the proposed modelling approach, and the model can be simply extended to incorporate the LH2 option if needed. Hence, to each hydrogen production facility, two key attributes corresponding to: (i) the production technology, and (ii) the production capacity (merged and referred to as production "tech-cap" attribute, hereafter) can be associated. Assuming the set P ¼ {1,..,§} denotes the set of all the § possible hydrogen production tech-caps, to each production tech-cap i2P a total capital investment CiP ð£Þ, an operating cost cPi (£/kg CH2 produced), a minimum daily production capacity to justify the opening of the facility Pimin (kg CH2/day), and a maximum production capacity Pmi ax (kg CH2/day) is associated. A set of potential sites for establishing hydrogen production facilities can be also identified and denoted by LP ¼ f1; ::; [pg to indicate the set of all the [p candidate locations. The number of production facilities of tech-cap i2P already established at candidate location j2LP can be denoted by Pi0j.
+Hydrogen produced at hydrogen production facilities must be transported to hydrogen storage sites where hydrogen is stored to satisfy the immediate incoming daily demands from HRSs, as well as to hold a safety stock of hydrogen in the face of demand and supply fluctuations and plant interruptions [22]. CH2 can be stored in overground or large underground hydrogen storage facilities of different storage capacities. Therefore, similar to the case of hydrogen production, to each hydrogen storage facility, two key attributes corresponding to: (i) the storage technology, and (ii) the storage capacity (i.e., storage tech-cap attribute) can be associated. Assuming the set S ¼ f1; ::; s g denotes the set of all the s possible hydrogen storage tech-caps, to each storage tech-cap i2S a total capital investment CiS (£), an operating cost cSi (£/kg/day CH2 stored), a minimum storage capacity to justify the opening of the facility Simin (kg CH2), and a maximum storage capacity Smi ax (kg CH2) is associated. A set of potential sites for establishing hydrogen storage facilities can be also identified and denoted by LS ¼ f1; ::; [sg to indicate the set of all the [s candidate locations. The number of storage facilities of tech-cap i2S already established at candidate location j2LS can be denoted by Si0j.
+
+672
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+There are two tiers of hydrogen transportation within the proposed hydrogen supply chain and distribution network design; within the first tier, produced hydrogen must be transported from hydrogen production facilities to allocated storage sites; and within the second tier, hydrogen is transported from storage facilities to HRSs. While different modes of transportation corresponding to road, rail and pipeline can be established within each tier, we are focusing on the use of tube trailers for the road transportation of CH2 in this study. Each tube trailer has a total capacity of carrying Q kg of CH2 and its acquisition incurs a total capital cost of CT (£). Operational costs arising from the transportation of hydrogen within the two tiers of the HSC pertain to fuel cost, driver cost, maintenance costs and other general expenses (e.g., road tax, insurance, etc.).
+Finally, terminating at the downstream of the HSC, are HRSs. Within the long-haul HGV road freight context, these are expectedly located within service stations that are along the major HGV routes, ports and distribution warehouses (as is the case currently with the conventional fuels for the existing HGV fleet). The capacity (or daily demand) of each HRS at these locations, on the other hand, can be deduced by direct conversion of the current daily demands for diesel, or through analytical approaches (e.g., as described in Section Freight HGV demand analysis and the location and size of HRSs) if direct access to data is not possible. Under either of the cases, we denote the set of HRSs sites by LH ¼ f1;::;[hg, and associate to each HRS i2 LH a total deterministic daily demand of di (kg/day CH2). The capital cost (£) and operational cost (£/day) of establishing an HRS is dependent on its capacity (i.e., daily demand). Using an empirical analysis (e.g., through regression analysis) of existing reports on the cost of HRSs with different capacities [42,49,50,61], a linear expression of the form acapex þ bcapexdi and aopex þ bopexdi can be deduced to estimate the capital and operational cost of an HRS as a variable that is dependent on the station capacity (di), respectively. Within these expressions, acapex, bcapex, aopex and bopex are estimated parameters using the empirical data used. It is worth noting that, since all HRSs must be opened and served, the total capital cost of all HRSs, i.e., CH (£), and their daily operational costs, i.e., cH (£/day) Pcan be calculated externaPlly using expressions [hacapex þ bcapex i2LH di and [haopex þ bopex i2LH di, respectively, and fed into the optimisation model.
+Given the above descriptions, the objective of the HSC and distribution network design optimisation problem is to determine the location and tech-cap of opened hydrogen production and storage facilities, and establishing sufficient transportation units between them and between storage and HRSs, such that the daily demand of all HRSs is fully satisfied, all production, storage and transport constraints are fulfilled, and the total cost of each kilogram of hydrogen distributed at pump, considering all capital and operational costs from production, storage, transportation and distribution, is minimised.
+A new mixed integer linear programming formulation of the proposed problem is developed in the next section.
+The mathematical model
+In this section, the mathematical formulation of the proposed HSC and distribution network design optimisation problem is
+
+presented. A list of all notations relating to sets, input parameters, and decision variables is given in Table 1.
+
+Tier I constraints: coordinating production and storage
+
+Within the first tier of the HSC, the total demanded hydrogen by HGVs is produced at opened production facilities and is transported to hydrogen storage sites. The first set of constraints needed within this tier, i.e., constraints (1), reinforce the opening of existing hydrogen production facilities. Clearly, if the intended HSC for the road freight HGVs is to be designed from ground up, all P0ij s can be set to zero.
+
+Pij ! Pi0j; ci2P; j2LP
+
+(1)
+
+Constraints (2) link hydrogen flows within the first and the second tiers. The right-hand side of constraints (2) determine the total amount of hydrogen stored for daily HRSs demands in each corresponding storage facility, and the left-hand side of these constraints ensure that these demands are satisfied through one or multiple production facilities.
+
+X xkj
+
+¼
+
+wij b
+
+;
+
+ci2S; j2LS
+
+(2)
+
+k2LP
+
+Constraints (3) tune the number of production facilities of each production tech-cap opened at each candidate site based on the total hydrogen output required at the site, and also ensure that the minimum and maximum capacity of the corresponding production tech-cap is not violated.
+
+PiminPij uij PimaxPij; ci2P; j2LP
+
+(3)
+
+Constraints (4) and (5) together set the total production
+
+output at each production site:
+
+X
+
+Ui ! xij; ci2LP
+
+(4)
+
+j2LS
+
+X
+
+Uj ¼ uij; cj2LP
+
+(5)
+
+i2P
+
+Finally, constraints (6) to (8) determine the total number of transport units, the total number of return trips, and the total time of return trips in tier I between production and storage facilities, respectively.
+
+M0ij !
+
+
+
+xij tv
+
+% ; ci2LP; j2LS
+
+O0ij
+
+!
+
+Q
+xij Q
+
+2D0ij þ vl ; ci2LP;
+
+j2LS
+
+(6) (7)
+
+Ni0j
+
+¼
+
+O0ij
+
+2D0ij v
+
+þ
+
+ l;
+
+ci2LP; j2LS
+
+(8)
+
+Tier II constraints: coordinating storage and HRSs
+
+Within the second tier of the HSC, hydrogen is transported between storage facilities and HRSs to satisfy their daily demands. Similar to the case of hydrogen production in tier I, the first set of constraints needed within this tier, i.e., constraints (9), reinforce the opening of existing hydrogen storage facilities.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+673
+
+Table 1 e Notation and definitions.
+Sets: P ¼ f1; ::; P g LP ¼ f1; ::; [pg
+S ¼ f1; ::; s g LS ¼ f1; ::; [sg
+LH ¼ f1;::;[hg Input parameters: CiP ciP Pimin
+Pimax
+P0ij
+CiS ciS
+Smi in Simax S0ij
+Q CT e v t l s f m g di CH cH R a b Di0j
+D0i0j Decision variables: zij
+xij
+uij
+wij Ui Wi Pij
+Sij
+Auxiliary decision variables: P G GP GS GT g gP gS
+
+The set of all the § possible hydrogen production tech-caps. The set of all the [p candidate locations for establishing hydrogen production facilities. The set of all the s possible hydrogen storage tech-caps. The set of all the [s candidate locations for establishing hydrogen storage facilities. The set of all the [h locations of HRSs.
+Total capital investment (£) required to set up production tech-cap i2P. Operating cost of producing each kg CH2 using tech-cap i2P (£/kg). Minimum daily production capacity of the production tech-cap i2P (kg/ day). Maximum daily production capacity of the production tech-cap i2P (kg/ day). The number of production facilities of tech-cap i2P already established at candidate location j2LP. Total capital investment (£) required to set up storage tech-cap 2S . Operating cost of storing each kg CH2 at storage tech-cap i2S per day (£/kg/ day). Minimum storage capacity of the storage tech-cap i2S (kg/day). Maximum storage capacity of the storage tech-cap i2S (kg/day). The number of storage facilities of tech-cap i2S already established at candidate location j2LS. Total capacity of a tube trailer (kg). Acquisition cost of a tube trailer (£). Fuel economy of a tube trailer (l/km). Average travelling speed of a tube trailer across the network (km/h). Total number of hours of availability of a tube trailer in each day (hr/day). Total loading and unloading time of a tube trailer (hr). Tube trailer's driver hourly wage (£/hr). Price of each litre of tube trailer fuel (£/l). Maintenance expenses of a tube trailer per km travelled (£/km). General daily expenses of a tube trailer (£/day). The total deterministic daily demand of HRS i2LH (kg/day). The capital cost of establishing all HRSs (£). The daily operational cost of all HRSs (£/day). Capital charge factordpayback period of capital investment (year). Number of days in a year (day). Storage (safety stock) holding period (day). Tier I distance between a production facility location i2LP and a storage facility location j2LS. Tier II distance between a storage facility location i2LS and an HRS j2LH.
+Continuous variable between 0 and 1, indicating the proportion of demand dj of HRS j2LH transported from storage facility i2LS. Continuous variable indicating the total kg hydrogen transported from production facility i2LP to storage facility j2LS. Established production output of production tech-cap i2P at production facility j2LP. Established storage capacity of storage tech-cap i2S at storage facility j2LS. Total production output at production facility i2LP. Total storage capacity at storage facility i2LS. The number of production facilities of tech-cap i2P established at location j2LP . The number of storage facilities of tech-cap i2S established at location j2LS .
+Cost per kg hydrogen distributed at HRSs. Total capital cost. Total capital cost of production. Total capital cost of storage. Total capital cost of transportation. Total daily costs of the HSC. Total daily cost of production. Total daily cost of storage.
+
+674
+gT gf gl gm gg Mi0j Mi00j O0ij Oi00j Ni0j Ni00j
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+Total daily cost of transportation. Total daily fuel cost of tube trailers. Total daily cost of tube trailer drivers. Total daily cost of tube trailers maintenance. Total daily general cost of tube trailers. Total number of transport units needed in tier one between production facility i2LP and storage facility j2LS. Total number of transport units needed in tier two between storage facility i2LS and HRSs j2LH. Total number of return trips in tier one between production facility i2LP and storage facility j2LS. Total number of return trips in tier two between storage facility i2LS and HRSs j2LH. Total time of return trips in tier one between production facility i2LP and storage facility j2LS. Total time of return trips in tier two between storage facility i2LS and HRSs j2LH .
+
+Sij ! S0ij; ci2S; j2LS
+
+(9)
+
+Constraints (10) ensure that the demand of each HRS is
+
+fully satisfied through the flow of hydrogen from one or
+
+several opened storage facilities, and constraints (11) deter-
+
+mine the proportion of a given HRS's demand that is satisfied
+
+by a given storage site.
+
+X
+
+zij ¼ 1; cj2LH
+
+(10)
+
+i2LS
+
+0 zij 1; ci2LS; j2LH
+
+(11)
+
+Constraints (12) tune the number of storage facilities of each storage tech-cap opened at each candidate site based on the total storage capacity required at the site, and also ensure that the minimum and maximum capacity of the corresponding storage tech-cap is not violated.
+
+SiminSij wij SimaxSij; ci2S; j2LS
+
+(12)
+
+Constraints (13) and (14) together set the total storage ca-
+
+pacity at storage facility i2LS:
+
+X Wi ! b djzij;
+j2LH
+
+ci2LS
+
+(13)
+
+X
+
+Wi ¼ wji; ci2LS
+
+(14)
+
+j2S
+
+Finally, constraints (15) to (17) determine the total number of transport units, the total number of return trips, and the total time of return trips in tier two between storage facilities and HRSs, respectively.
+
+M00 ij
+
+!
+
+dj zij 
+tv
+
+% ; ci2LS; j2LH
+
+(15)
+
+Q 2Di00j þ vl
+
+O00 ij
+
+!
+
+dj zij Q
+
+;
+
+ci2LS; j2LH
+
+(16)
+
+N00 ij
+
+¼
+
+O00 ij
+
+2D0i0j v
+
+þ
+
+ l;
+
+ci2LS; j2LH
+
+(17)
+
+Development of the objective function
+
+Various Key Performance Indicators (KPIs) can be assigned as
+
+the objective function of the proposed optimisation problem,
+
+but as mentioned earlier, our primary objective is to mini-
+
+mise the cost of each kg hydrogen distributed at HRSs, which
+
+can be calculated using Eq. (18):
+
+,
+
+X
+
+P¼g
+
+di
+
+(18)
+
+i2LH
+
+where the cost of each kg hydrogen distributed at HRSs (P) is calculated by dividing the total daily costs (g) by the total daily HRSs demand. However, to avoid using a fractional expression in the objective function (which is typically not favoured by optimisation solvers), instead of minimising P, we opt to minimise g as shown in Eq. (19), which would essentially minimise the cost of each kg hydrogen distributed at HRSs.
+
+Minimise g
+
+(19)
+
+Expressions to calculate the total daily cost, the total capital cost, and its comprising components, i.e., total capital cost of production, storage, and transport, the total daily cost of production, storage and transportation, and its components, i.e., daily cost of labour, fuel, maintenance and other general costs are given in equations (20)e(31), respectively.
+
+g
+
+¼
+
+G aR
+
+þ
+
+gP
+
+þ
+
+gS
+
+þ
+
+gT
+
+þ
+
+cH
+
+(20)
+
+G ¼ GP þ GS þ GT þ CH
+
+XX
+
+GP ¼
+
+CiP Pij
+
+i2P j2LP
+
+(21) (22)
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+675
+
+XX
+
+GS ¼
+
+CiS Sij
+
+i2S j2LS
+
+0
+
+1
+
+GT
+
+¼
+
+CT
+
+@X
+
+X M0ij
+
+þ
+
+X
+
+X
+
+M00 ij
+
+A
+
+i2LP j2LS
+
+i2LS j2LH
+
+XX
+
+gP ¼
+
+ciP Pij
+
+i2P j2LP
+
+XX
+
+gS ¼
+
+cSi Sij
+
+i2S j2LS
+
+(23) (24) (25) (26)
+
+gT ¼ gl þ gf þ gm þ gg
+
+(27)
+
+0
+
+1
+
+gl
+
+¼
+
+X s@
+
+X Ni0j
+
+þ
+
+X
+
+X
+
+N00 ij
+
+A
+
+i2LP j2LS
+
+i2LS j2LH
+
+(28)
+
+0
+
+1
+
+gf
+
+¼
+
+f @XX2D0ijOi0j
+
+þ
+
+X
+
+X
+
+2Di00j
+
+O00 ij
+
+A
+
+e i2LP j2LS
+
+e i2LS j2LH
+
+(29)
+
+0
+
+1
+
+gm
+
+¼
+
+m@X
+
+X 2D0ij
+
+O0ij
+
+þ
+
+X
+
+X
+
+2Di00j
+
+O00 ij
+
+A
+
+i2LP j2LS
+
+i2LS j2LH
+
+(30)
+
+0
+
+1
+
+gg
+
+¼
+
+g@X
+
+X M0ij
+
+þ
+
+X
+
+X
+
+M00 ij
+
+A
+
+i2LP j2LS
+
+i2LS j2LH
+
+(31)
+
+It is worth mentioning that the cost of carbon is assumed considered in the production cost of hydrogen for each hydrogen production tech-cap, and therefore, the proposed methodology is considering carbon emissions in a rather implicit fashion.
+This optimisation model provides an excellent tool to exercise alternative scenarios for the road freight HGV in the UK. Details of the case study and the alternative techno-economic and policy-informing scenarios, and the result of the conducted experiments against the proposed model are presented in the next section.
+
+The case study and assessment of alternative scenarios
+According to the Total Cost of Ownership (TCO) quantification study of Argonne National Laboratory [12], fuel cost dominates the TCO of a hydrogen-powered HGV (at around 55%). It is, therefore, obvious that the competitiveness of hydrogen as a fuel carrier for use within the long-haul road freight transport in the UK relies largely on its ultimate price at pump against conventional fuels and other alternative fuel options, as otherwise the conversion of the existing HGV fleet into H2HGVs would be a significantly costly and inhibiting commitment from freight companies. At the same time, the ultimate cost of hydrogen at pump relies greatly on the total demand for hydrogen at the downstream of the HSC, and the penetration level of H2-HGVs into the long-haul road freight fleet
+
+(hence the "chicken and egg" situation). It is also interesting to note that hydrogen production cost can be contributing to as low as 10% of the total cost of the hydrogen delivered at pump, as other value adding activities (particularly, storage and transport) can add significantly to the ultimate cost. Therefore, efficient and cost-effective design of HSC is of utmost importance to a hydrogen economy and any insight on targeting the right penetration level of H2-HGVs into the fleet during the transition period would be of significant value to policy makers.
+In this section, we are exercising a set of experiments against the proposed optimisation-based methodology in this paper to provide insights on how different technoeconomic and policy scenarios would lead to different costs for hydrogen at pump, and also untap various important policy insights regarding key strategic decisions for the HSC network design and the HGV fleet conversion.
+In the following, we will first discuss how demand has been realised and represented through HRSs. Then, the production, storage, and transport technologies and scales considered within the scenarios, and their development over the planning horizons of the years 2025, 2035 and 2050 (which is an important milestone in the UK's net-zero programme) are introduced. Following this, a baseline scenario and a set of alternative scenarios are derived which are assessed through the application of the proposed optimisation model. Results and a discussion on these analyses and a further discussion on a set of experiments conducted to provide first-hand insights on the curve of H2-HGVs penetration, among other important policy insights are finally presented.
+All tests were conducted on a computer with Intel CoreTM i7 2.50 GHz processor with 8 GB RAM. The branch-and-bound solver of CPLEXTM 12.10 was used as the exact solver, and all other algorithms were coded in MATLAB R2020aTM. All data and details of the solutions reported in this study are available within the manuscript's supplementary document.
+Freight HGV demand analysis and the location and size of HRSs
+According to the UK Energy in Brief 2021 report by the UK's Department for Business, Energy and Industrial Strategy (BEIS),4 the demand for diesel fuel for HGVs in the UK during 2019 was 6,179,000 tonnes (2019 is selected to bypass the COVID-19 impact over 2020e2022). Given that each ton of diesel equals to about 850 L of diesel, energy content of 1 L of diesel is approximately 10 kWh/l, efficiency coefficient for internal combustion engine HGVs and H2-HGVs is about 42% and 45% [10,26], respectively, this translates to 5,252,150,000 L of diesel and a total annual energy demand of 49,020,066,667 kWh that the HSC must satisfy in case of full conversion (assuming the demand level remains unchanged). One way to distribute this total annual demand for hydrogen (or a certain penetration ratio of the total) among a set of HRSs would be to collect data on all existing HGV refuelling stations in the UK and convert their annual demand for diesel to hydrogen. However, such data is not openly available and very
+4 Available at: https://www.gov.uk/government/statistics/ukenergy-in-brief-2021.
+
+676
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+difficult to obtain. Alternatively, we followed an analytical
+
+approach to allocate demand to a set of identified HRS
+
+locations.
+
+To construct the set LH, existing refuelling stations for the
+
+current HGV fleet in the UK were analysed and further po-
+
+tential sites were also added. The initial data collection on the
+
+existing refuelling facilities included 1,765 records of warehouse facilities,5 291 service stations6 and 53 ports.7 For the
+
+dataset of warehouse facilities, features of each record such as
+
+the type of facility, latitude, longitude, and total area are
+
+known. The dataset was cleaned and filtered to only include warehouse facilities with a total area greater than 9,000 m2
+
+(smaller distribution centres and warehouses tend not to
+
+establish an on-site refuelling facility due to their limited size
+
+and scale of operations). This resulted in a dataset of 382 re-
+
+cords of warehouse facilities in GB. The dataset of HGV service
+
+stations includes features such as the type, longitude, and
+
+latitude. This dataset was also cleaned and filtered to 111 re-
+
+cords of HGV service stations in GB. The dataset of ports in-
+
+cludes features such as the longitude and latitude, and was
+
+cleaned and filtered to 46 records of ports. The three datasets
+
+were combined to create a set of 539 records of candidate fa-
+
+cilities for HRSs.
+
+Following the identification of the set LH, the next step was
+
+to allocate daily hydrogen demand to each one. According to
+
+the Petrol Retailers Association (PRA), approximately 75% of
+
+the current diesel upliftment for HGVs in GB occurs at ware-
+
+house facilities (from discussions carried out with PRA in
+
+2021), and the remaining demand is equally divided between
+
+the sets of service stations and ports. The energy demand per
+
+warehouse facility was calculated as a function of the ware-
+
+house total area; that is, the larger a warehouse is, the larger
+
+the expected demand would be. To do that, assume the total
+
+area of a warehouse i2W (W is the set of warehouses) is li, and there are w warehouses in W; then, the energy demand
+
+fulfilled
+
+by
+
+warehouse
+
+i
+
+can
+
+be
+
+calculated
+
+by:
+
+P H lwi
+i¼1
+
+li
+
+W
+
+(where
+
+HW is the total amount of hydrogen supplied through all
+
+warehouses). The set of 539 candidate facilities with their
+
+associated daily total demand measured in kg of CH2 is geographically plotted across the GB in Fig. 1 in case of full
+
+conversion (the full list of all these locations with their lati-
+
+tude, longitude and demand is available in the supplementary
+
+document in Table SD 1).
+
+It is worth mentioning that, to calculate the cost of estab-
+
+lishing each HRS as a variable dependent on the HRS's size
+
+(i.e., daily demand), the refuelling station worksheet of H2A
+
+tool version 3.2018 developed by the National Renewable En-
+
+ergy Laboratory [49] was used to derive estimations for
+
+acapex; bcapex; aopex and bopex at À0.07, 520.96, 0.26 and 0.00014, respectively, using regression analysis (see Section Problem
+
+description for further details).
+
+5 Required data were collected from Valuation Office Agency
+(VOA). 6 Required data were collected from ESSO fuels and INDEPEN-
+DENT directory. 7 Required data were collected from STATISTA.
+
+Fig. 1 e The total daily HGV energy demand (in kg) distributed amongst the identified HRSs.
+Production technologies and data
+Six different existing and futuristic blue and green hydrogen production technologies over three planning horizons for the years 2025, 2035 and 2050 are considered in our analyses. The included blue hydrogen production technologies are based on Carbon Capture, Usage and Storage (CCUS)-enabled methane reformation, and correspond to: (i) Steam Methane Reformer with CCUS (SMR with CCUS), (ii) Autothermal Reformer with CCUS (ATR with CCUS), and (iii) Autothermal Reformer with Gas Heated Reformer with CCUS (ATR þ GHR with CCUS). These technologies have been considered at 300 MW and 1000 MW scales. The included green hydrogen production technologies, on the other hand, are based on water electrolysis and correspond to: (i) Alkaline electrolysis (AE), (ii) Proton Exchange Membrane electrolysis (PEM), and (iii) Solid Oxide Electrolysis (SOE). These technologies have been considered
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+677
+
+Table 2 e Capital and operational cost of different hydrogen production tech-caps considered in scenarios.
+
+Production tech-cap
+
+Pimin (kg/d)
+
+Pmi ax (kg/d)
+
+Capital cost (£)
+
+Unit production cost (£/kg)
+
+2025
+
+2035
+
+2050
+
+2025 2035 2050
+
+PeIa P-II P-III P-IV PeV P-VI P-VII P-VIII P-IX
+
+8,687 28,956 8,687 28,956 8,687 28,956 290 290 290
+
+173,736 579,120 173,736 579,120 173,736 579,120 5,791 5,791 5,791
+
+£24,615,920 £62,008,676 £29,267,794 £65,751,654 £29,569,530 £63,131,569 £844,501 £828,567 £1,611,239
+
+£21,644,180 £54,522,719 £25,435,768 £57,142,804 £25,771,072 £55,021,783 £739,835 £588,562 £1,128,206
+
+£17,879,974 £45,040,507 £20,992,839 £47,161,528 £21,271,361 £45,414,805 £695,997 £520,085 £850,167
+
+£2.06 £2.06 £2.08 £2.08 £1.88 £1.88 £6.39 £6.62 £5.26
+
+£2.25 £2.25 £2.20 £2.20 £1.99 £1.99 £5.98 £5.99 £4.78
+
+£2.37 £2.37 £2.25 £2.25 £2.03 £2.03 £5.87 £5.84 £4.61
+
+a PeI: SMR with CCUS - 300 MW, P-II: SMR with CCUS - 1000 MW, P-III: ATR with CCUS - 300 MW, P-IV: ATR with CCUS - 1000 MW, PeV: ATR þ GHR with CCUS - 300 MW, P-VI: ATR þ GHR with CCUS - 1000 MW, P-VII: AE e 10 MW, P-VIII: PEM e 10 MW, P-IX: SOE e 10 MW.
+
+at 10 MW scale. For brevity, a full exposition of these technologies and how the levelized capital and operational costs of these are calculated is avoid here, and instead we refer the interested reader to the BEIS' Hydrogen Production Costs 2021 report [7] which has been used to generate all the production-related data for the purpose of this study as presented in Table 2.8 It is worth mentioning that the levelized costs reported by BEIS include all feedstock, transportation and carbon costs, and as the cost of carbon is considered in the production cost of hydrogen for each hydrogen production tech-cap, carbon emissions are minimised within the proposed methodology in a rather implicit fashion. Specifically speaking, carbon cost and CO2 transport and storage costs constitute 23%, 16% and 16% of the OPEX of each kg hydrogen produced through SMR with CCUS, ATR with CCUS, and ATR þ GHR with CCUS technologies, respectively. BEIS report also assumes 90% of all CO2 emissions are captured through CCUS technologies. As regards the carbon prices, BEIS report assumes that the carbon prices faced by hydrogen producers are the EU ETS carbon value projections as set out in Annex M to BEIS's Energy and Emission Projections under baseline policies.9 It is worth mentioning that BEIS report provides no instructions on the minimum daily production capacity of a production tech-cap (i.e., Pimin), and we have arbitrarily chosen this at around 5% of the total production output of a facility to allow a high level of optimisation flexibility. While this might sound like too small, we observe the impact on the ultimate optimal cost yielded by the model is very marginal. Our sensitivity analysis of Pimin within the range of 0%e55% of the total production output of a facility indicate the ultimate hydrogen cost at pump yielded is rather insensitive to this value, as the high initial capital investment of a production facility per se inhibits the
+8 The cost factors reported for CCUS-enabled methane reformation technologies are based on "Industrial Retail Price (Central) Baseload" in BEIS' Hydrogen Production Costs 2021 report, and electrolysis costs are based on "Grid electricity: Industrial Retail Price (Central) Baseload" in the report.
+9 BEIS (2020), `Updated energy and emission projections: 2019, Annex M'.
+
+optimisation procedure from opening low-capacity facilities.
+To come up with candidate locations for setting up hydrogen production facilities, 34 uniformly distributed points covering the entire area of Great Britain (GB) have been selected. The latitude and longitude of all these candidate locations are given in the supplementary document in Table SD 2.
+Storage technologies and data
+As stated earlier, a key element in the assessment of alternative scenarios in this paper is the inclusion of large geographically agnostic, as well as geological storage options, alongside conventional overground compressed hydrogen gas tanks at 700 MPa. Three different underground bulk hydrogen storage technologies corresponding to: (i) underground pipes (UGP), (ii) Lined Rock Caverns (LRC), and (iii) Salt Caverns (SC), are considered and all required data are adopted from the recent study of Papadias et al. [48] as presented in Table 310. Overground (OG) storage-related data, on the other hand, are adopted from Seo et al. [57] and all cost factors for all storage tech-caps have been extended to the years 2025, 2030, and 2050 by applying a learning rate related annual cost reduction of 5%.
+Candidate locations similar to the ones identified for production facilities have been used to establish geographically agnostic storage options (i.e., storage options SeI, S-IV, SeV and S-VI), and the location of 7 bulk salt cavern sites at Hornsea Atwick, Hornsea Aldbrough, Saltholm (Teesside), Holford H-165, Hole House Farm, Byley and Preesall, identified by Beutel and Black [9], have been appropriately associated with the candidate sites to introduce them into scenarios when needed and assess the added value of large underground geological storage options.
+10 For bulk underground pipe storage, figures for 500-t H2 underground pipe storage facility for 2400-O.D., schedule 60 pipe are adopted.
+
+678
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+Table 3 e Capital and operational cost of different hydrogen storage tech-caps considered in scenarios.
+
+Storage tech-cap
+
+Smi in (kg)
+
+Smi ax (kg)
+
+Capital cost (£)
+
+Unit storage cost (£/kg/ day)
+
+2025
+
+2035
+
+2050
+
+2025
+
+2035
+
+2050
+
+SeIa S-II S-III S-IV SeV S-VI
+
+5,000 5,000 5,000 0 5,100 12,500
+
+500,000 500,000 500,000 5,000 10,000 25,000
+
+£233,398,410 £25,330,060 £15,831,287 £5,697,342 £9,695,092 £19,939,657
+
+£139,744,250 £15,166,043 £9,478,776 £3,411,209 £5,804,810 £11,938,609
+
+£64,742,285 £7,026,295 £4,391,434 £1,580,383 £2,689,317 £5,531,053
+
+£0.19 £0.02 £0.02 £9.31 £4.83 £0.75
+
+£0.11 £0.01 £0.01 £5.57 £2.89 £0.45
+
+£0.05 £0.01 £0.01 £2.58 £1.34 £0.21
+
+a SeI: UGP, S-II: LRS, S-III: SC, S-IV: OG small, SeV: OG medium, S-VI: OG large.
+
+Transport-related data
+All transport-related data and parameters needed for the model (mainly adopted from [4] and updated when necessary) are presented in Table 4.
+The baseline and the alternative scenarios
+Depending on the penetration level of H2-HGVs into the HGV fleet, the hydrogen production and storage technologies considered, and the planning horizon of interest, a number of different technoeconomic scenarios can be developed and analysed against the proposed methodology to gain useful managerial insights. In this section, we introduce a set of 12 different design scenarios for the HSC network optimisation problem by diversifying three main attributes, corresponding to: (i) the considered production technology, (ii) the considered storage technology, and (iii) the planning horizon. The first attribute, i.e., the production technology has been considered in two modes of blue and green, and green only. Within the second attribute, we consider two storage technology modes where in mode 1 both underground storage options (including the existing 7 bulk salt cavern sites referred to earlier) and conventional overground storage options are considered, and in mode II only conventional overground storage options (i.e., storage options S-IV, SeV and S-VI) are allowed. Finally, the planning horizon attribute comprising three modes corresponding to 2025, 2035 and 2050 have been considered. Table 5 lists all the 12 scenarios and their specific characteristics against the three attributes considered.
+
+Table 4 e Transport-related parameters.
+Each tube trailer capacity (kg) Fuel economy of a tube trailer (km/l) Average travelling speed of a tube trailer across the
+network (km/h) Total number of hours of availability of a tube trailer in
+each day (hr/day) Total loading and unloading time of a tube trailer (hr) Tube trailer's driver hourly wage (£) Price of each litre of tube trailer's fuel (£/L) Maintenance expenses of a tube trailer per km travelled
+(£/km) General daily expenses of a tube trailer (£/day) Acquisition cost of a tube trailer (£)
+
+900 2.55 55
+18
+2 17.02 1.69 0.0732
+6.08 185,000
+
+We refer to scenario "S3-A-A-C" as the baseline scenario, as this is expected to yield the lowest cost of hydrogen at pump due to its highest level of flexibility and the exploitation of the most cost-effective planning horizon, i.e., 2050.
+It is worth mentioning that for all the scenarios described above, we have considered a penetration level of 20% for H2HGVs into the long-haul road freight fleet. As mentioned earlier, penetration level is a very important and impactful exogenous variable to the optimal design of the HSC, and the cost of hydrogen at pump against the penetration level is not at all easy to predict and optimise. To untap important insights in this regard, we run a set of further 100 simulations to derive fully the "penetration level vs. H2 cost" curve for the first time and provide important insights and policy takeaways in this regard. Furthermore, we draw attention to the impact of the "safety stock period" and "tube trailer capacity" on the cost of hydrogen at pump by performing over 30 other simulations and deriving their corresponding curves, too. The results of all these experiments are presented and discussed next.
+Scenario assessment and discussions
+All the 12 scenarios discussed earlier have been exercised against the proposed modelling approach and all results have been presented in Table 6, Table 7 and Table 8 for the years 2025, 2035 and 2050, respectively. These tables report the results for the ultimate levelized cost of each kg H2 distributed at pump (i.e., P) alongside a set of other KPIs. Other details relating to the results such as the number of each production and storage tech-cap facilities opened within the HSC can be referred to in the supplementary material in Table SD 3. As expected, the most flexible scenarios within each planning horizon, i.e., scenarios S1-AAA, S2-AAB and S3-AAC yield the lowest cost within each planning horizon, as the model has been given the freedom to choose from green and blue hydrogen production technologies, as well as the inclusion of geographical storage options. The baseline scenario, i.e., scenario S3-A-A-C represents the lowest cost among all scenarios.
+To represent the design of the HSC and the distribution network, the HSC design and the cost contributions within two scenarios, i.e., S3-A-A-C (the baseline scenario) and S9eBA-C (equivalent to the baseline scenario with the difference that only green hydrogen production is allowed) have been illustrated in Figs. 2 and 3, respectively.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+679
+
+Table 5 e Simulation scenarios.
+
+Scenario Label Production technology attribute
+
+S1-A-A-A S2-A-A-B S3-A-A-C S4-A-B-A S5-A-B-B S6-A-B-C S7eB-A-A S8eB-A-B S9eB-A-C S10eBeB-A S11eBeBeB S12eBeBeC
+
+Blue þ Green Blue þ Green Blue þ Green Blue þ Green Blue þ Green Blue þ Green Green Only Green Only Green Only Green Only Green Only Green Only
+
+Storage technology attribute
+Both underground and overground storage options allowed Both underground and overground storage options allowed Both underground and overground storage options allowed Only overground storage options allowed Only overground storage options allowed Only overground storage options allowed Both underground and overground storage options allowed Both underground and overground storage options allowed Both underground and overground storage options allowed Only overground storage options allowed Only overground storage options allowed Only overground storage options allowed
+
+Planning Horizon
+2025 2035 2050 2025 2035 2050 2025 2035 2050 2025 2035 2050
+
+In Fig. 2a, the opened blue hydrogen production sites have been shown using blue squares and the storage sites are shown using yellow and red circles, representing UGP and SC storage options, respectively. The figure shows that in most cases in the baseline scenario, storage is established at the site of blue hydrogen production, and only in two cases first tier transportation between production and storage sites is required. Fig. 2b, represents the HRSs optimal allocation to opened storage sites using dedicated colours. An HRS is shown using a "*" marker, and a storage site is shown by a large circle in this figure, and colour correspondence denotes allocation. In Fig. 2c, the contribution of hydrogen production, storage, transport and distribution in the total capital cost required to establish the HSC and the distribution network within the baseline scenario is presented. The storage cost is shown to be dominating the scene at 43% and establishing production sites requires only 13% of the total capital cost required. As indicated in Fig. 2d, however, these ratios are opposite in the case of the total daily cost of operating the HSC, where hydrogen production dominates the HSC daily cost at 56% and storage is represented at only 8% within the baseline scenario.
+In Fig. 3a, the opened green hydrogen production sites have been shown using green squares and the storage sites are shown using yellow and red circles, representing UGP and SC storage options, respectively. The figure shows that in all cases except for one in scenario S9eB-A-C, storage is established at the site of green hydrogen production, and only one
+
+first-tier transportation between production and storage sites is required. Fig. 3b, represents the HRSs optimal allocation to opened storage sites using dedicated colours. In Fig. 3c and d, the contribution of hydrogen production, storage, transport and distribution in the total capital cost required to establish the HSC, and in the total daily cost of the HSC are given. Fig. 3d shows that the operating cost of hydrogen production in the case of green hydrogen production within this scenario is significant (mainly due to the cost of electricity) and the economic viability of a green hydrogen economy relies greatly on this element of the HSC.
+As was discussed earlier, a set of experiments were also performed to derive the curve of the penetration level, the safety stock period, and the tube trailer's capacity against the levelized cost of each kg hydrogen delivered at pump. To derive the curve for the H2-HGV penetration level, all penetration levels from 1% to 100% were considered, and the baseline scenario was optimised 100 times, each time with an incremented penetration level of 1%, and the ultimate optimal cost of each kg hydrogen at pump under each penetration level was recorded and plotted in Fig. 4. The figure shows that at low penetration levels (up to around 5%) the cost of each kg hydrogen is quite high, but this drops sharply and stays within the range of £3.5 to £4 for most penetration levels, with the lowest cost being at the penetration level of 13% as shown in the figure.
+A zoom-in on the interval between 10% and 80% penetration levels in Fig. 4, on the other hand, reveals interesting
+
+Table 6 e Scenario assessment results for th. year 2025.
+
+KPI
+
+S1-A-A-A
+
+S4-A-B-A
+
+P G GP GS GT g gP gS gT
+% Blue % Green
+
+£5.28 £2,427,115,964 £177,417,180 £1,744,607,879 £149,665,000 £3,603,510 £1,282,632 £701,277 £289,438 100% 0%
+
+£14.68 £6,095,909,916 £147,847,650 £2,147,483,647 £149,110,000 £10,017,623 £1,282,632 £5,116,885 £277,646 100% 0%
+
+Scenario
+
+S7eB-A-A
+£8.61 £2,437,867,464 £193,348,680 £1,744,607,879 £144,485,000 £5,874,699 £3,588,645 £701,277 £248,723 0% 100%
+
+S10eBeB-A
+£18.00 £6,135,872,035 £190,954,769 £2,147,483,647 £145,964,999 £12,279,612 £3,588,751 £5,116,885 £211,619 0% 100%
+
+680
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+Table 7 e Scenario assessment results for the year 2035.
+
+KPI
+
+S2-A-A-B
+
+S5-A-B-B
+
+P G GP GS GT g gP gS gT
+% Blue % Green
+
+£4.37 £1,728,199,591 £180,397,504 £1,044,561,182 £147,815,000 £2,982,235 £1,357,680 £400,476 £276,885 100% 0%
+
+£10.02 £3,939,918,721 £180,397,504 £3,259,240,312 £144,855,000 £6,838,823 £1,357,680 £3,070,131 £251,917 100% 0%
+
+Scenario
+
+S8eB-A-B
+£7.08 £1,680,430,012 £136,512,926 £1,044,561,182 £143,929,999 £4,830,984 £3,261,164 £400,476 £248,325 0% 100%
+
+S11eBeBeB
+£12.71 £3,894,739,142 £136,512,926 £3,259,240,312 £143,559,999 £8,673,460 £3,261,164 £3,070,131 £207,826 0% 100%
+
+fluctuations from one level to the next and hence the sensitivity of any policy decision made regarding the right penetration level. While the daily cost of the HSC is non-decreasing against the increasing penetration level, this fluctuation from one level to the next is best explained by the trade-off between the increase in demand and production output which per se increases several cost components. To make this clearer, an indicative representation of the optimisation details for penetration levels 14%, 15% and 16% is provided in Table 9. The table shows that to go from 14% penetration level to 15% level, one additional hydrogen production facility of tech-cap PeV must be opened, and same goes for going from 15% to 16% level; in terms of storage facilities, there is no change from 15% to 16%, but one additional storage facility of tech cap SeI is required to go from 14% to 15% level. It is also visible that none of the cost elements except for the daily operating cost of transport is decreasing and that is mainly due to fewer storage sites opened in the case of 14% level which in turn gives rise to the need for more intensive transport operations to/from existing sites. What is clear is that the extra cost to go from 14% to 15% penetration level is not captured by the increase in demand as well as it is from the 15% penetration level to 16% penetration level. All in all, the most important takeaway insight from the presented penetration level curve is that there is an optimal penetration level (which is interestingly low enough to address the ever-ongoing chicken and egg situation), and increasing this (given the current assumptions
+
+adopted within the case study) would not essentially lead to improved cost of hydrogen at pump.
+Similar to the case of the H2-HGV penetration level, to derive the curve for the safety stock period, a range of safety stock period decisions from 1 day to 30 days were considered, and the baseline scenario was optimised 30 times, each time with an incremented safety stock period of 1 day, and the ultimate optimal cost of each kg hydrogen at pump under each safety stock period decision was recorded and plotted in Fig. 5. The safety stock storage decision is an important decision with regard to the resilience and reliability of the HSC, but can also have significant cost implications; therefore, striking a right balance between cost and reliability is of great importance, and Fig. 5 can be quite helpful in that respect. The most interesting point of this figure might be the safety stock of 5 days where the slope starts to take off at a significantly sharper slope. This suggests that as the HSC becomes more mature over time, a safety stock of 5 days could be a quite attractive point in terms of controlling costs and maintaining the HSC's reliability against disruptions, but during the early stages of the HSC, 5 days of stock holding might be quite small in the face of supply chain disruptions, and to keep costs at around 3.5 £/kg, a safety stock of 9 days might be worth considering.
+Finally, to represent the impact of the tube trailer's capacity in the ultimate cost of hydrogen at pump, the corresponding curve was generated by running the baseline scenario against
+
+Table 8 e Scenario assessment results for the year 2050.
+
+KPI
+
+S3-A-A-C
+
+S6-A-B-C
+
+P G GP GS GT g gP gS gT
+% Blue % Green
+
+£3.64 £1,135,706,466 £148,899,527 £483,936,035 £147,444,999 £2,484,460 £1,384,970 £201,166 £275,784 100% 0%
+
+£6.22 £2,137,516,524 £127,628,166 £1,509,977,453 £144,485,000 £4,243,109 £1,384,970 £1,432,728 £253,933 100% 0%
+
+Scenario
+
+S9eB-A-C
+£6.14 £1,085,977,147 £102,870,207 £483,936,035 £143,745,000 £4,189,695 £3,145,181 £201,951 £247,271 0% 100%
+
+S12eBeBeC
+£8.71 £2,113,979,151 £105,940,793 £1,509,977,453 £142,635,000 £5,942,585 £3,145,327 £1,432,728 £205,949 0% 100%
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+681
+
+Fig. 2 e a.) First tier allocations, b.) second tier allocations, and c.) the contribution of cost elements in the total capital cost and the total daily cost for the baseline scenario (i.e., S3-A-A-C).
+
+the optimisation model 18 times within a capacity range of 300 kge2000 kg (incremented at 100 kg) as illustrated in Fig. 6. While this is an all decreasing curve with the increasing capacity of the transport mode, the slope of the decrease is significantly higher within the range of 300 kge900 kg. Also note that after 1800 kg, the cost remains unchanged.
+
+All in all, various managerial insights may be derived from the presented results in this section and summarised as follows.
+ At 20% penetration level of H2-HGVs into the long-haul road freight fleet, the cost of distributing each kg of
+
+682
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+Fig. 3 e a.) First tier allocations, b.) second tier allocations, c.) the contribution of cost elements in the total capital cost and d.) the contribution of cost elements in the total daily cost for scenario S9eB-A-C.
+
+hydrogen at pump can be brought down to as low as £3.64 by the year 2050.  Inclusion of bulk geographical storage options in the design of the HSC can save up to around 65% in the cost of each kg hydrogen distributed at pump.  In all scenarios where both green and blue hydrogen production technologies are allowed, the optimal design of the HSC relies fully on blue hydrogen production and tends to ignore the green hydrogen production option altogether.
+
+ In scenarios with green hydrogen only production sites, the ultimate cost of hydrogen at pump tends to increase by up to 1.7 times. This is mainly due to the large operational cost of green hydrogen production facilities which is itself a result of the high cost of electricity.
+ ATR þ GHR with CCUS at 300 MW turns out to be the most favourable blue hydrogen production tech-cap and SOE at 10 MW is the favoured green hydrogen production technology.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+683
+
+Fig. 4 e The curve for H2-HGV penetration level vs hydrogen cost at pump.
+
+ Even when bulk geographical hydrogen storage options (i.e., SC and LRC) are not considered, large underground UGP (which is a geographically agnostic technology) is preferred over overground storage technologies.
+ The cost of distributing each kg hydrogen at pump is significantly reliant on the penetration level of H2-HGVs. Policies tailored to reinforce the HGV penetration rate must be carefully designed with reference to the H2-HGVs penetration level curve, as increased penetration level would not essentially lead to improved cost of H2 at pump. Our results indicate optimality at 13% penetration level.
+ HSC resilience and reliability is significantly dependent on the decision pertaining to safety stock storage period. Lowering the number of days would deteriorate the reliability of the HSC. Striking a right balance between
+
+reliability and cost requires a careful attention to the tradeoff between the two and the maturity of the HSC. Our results indicate that a safety stock of 5 days when the HSC is rather mature provides a good balance.  Improving the capacity of tube trailers would overall lead to H2 cost improvements, but these improvements would not be very sharp after 900 kg of capacity, and also flat after 1800 kg of capacity.
+Concluding remarks
+Hydrogen has been increasingly attracting attention as a promising fuel carrier option within the long-haul road freight HGV sector due to its various advantages over other
+
+Table 9 e Scenario assessment results for the year 2050.
+
+Penetration level
+
+14%
+
+P G GP GS GT g gP gS gT
+Production mix Storage mix Total daily demand
+
+£3.55 £712,951,821 £106,356,805 £224,966,894 £132,830,000 £1,694,898 £969,480 £99,217 £235,335 5 * PeV (3 * SeI) þ (7 * S-III) 477,576 kg
+
+15%
+£3.60 £819,511,764 £127,628,166 £289,709,179 £135,605,000 £1,842,059 £1,038,728 £116,642 £237,429 6 * PeV (4 * SeI) þ (7 * S-III) 511,689 kg
+
+16%
+£3.56 £859,479,422 £148,899,527 £289,709,179 £136,530,000 £1,945,481 £1,107,977 £133,967 £232,373 7 * PeV (4 * SeI) þ (7 * S-III) 545,802 kg
+
+684
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+Fig. 5 e The curve for safety stock period vs hydrogen cost at pump.
+
+competing net-zero options. Conversion of the existing HGV fleet into H2-HGVs is, however, very much dependent on the cost of hydrogen distributed at pump, as it contributes significantly to the TCO of H2-HGVs. At the same time, the
+
+ultimate cost of each kg hydrogen delivered at pump is greatly dependent on the optimal and demand-aware configuration of the HSC, as hydrogen production cost comprises only a fraction of the total cost, and other value adding activities
+
+Fig. 6 e The curve for tube trailer's capacity vs hydrogen cost at pump.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+685
+
+along the chain such as transport, storage and distribution add significantly to the final cost. In this paper, we focused on designing an economically viable and competitive HSC and distribution network to support and accelerate the widespread adoption of H2-HGVs in the UK by developing an improved end-to-end and spatially-explicit optimisation tool to perform scenario analysis and provide important first-hand managerial and policy making insights. Our methodology incorporates spatially-explicit locations of HRSs and provides more flexibility and accuracy, and allows the inclusion of bulk geographically agnostic, as well as geological underground hydrogen storage options. The paper developed a set of alternative scenarios which were analysed against the proposed methodology and a number of important managerial insights and cost saving opportunities were reported. The optimisation-based methodology was also used to derive the curve for H2-HGVs penetration levels, safety stock period decisions, and the transport mode capacity against hydrogen levelized cost at pump as important policy making tools to provide decision support and insights into cost, resilience and reliability of the HSC.
+Along with a set of other important findings reported in Section Scenario assessment and discussions, a key result from the analysis carried out in the paper sheds light on the possibility of saving up to around 65% in the ultimate cost of each kg hydrogen distributed at pump through the inclusion of bulk geographical storage options in the design of the HSC. It is through such initiatives that we find that at 20% penetration level of H2-HGVs into the long-haul road freight fleet, the cost of distributing each kg of hydrogen at pump can be brought down to as low as £3.64 by the year 2050, hence accelerating the H2-HGVs penetration into the long-haul road freight fleet in the UK. Through the performed experiments, we also highlighted that the cost of distributing each kg hydrogen at pump is significantly affected by the penetration level of H2-HGVs into the long-haul road freight fleet in a rather erratic and fluctuating form, and policies tailored to reinforce the HGV penetration rate need to be carefully designed with reference to the H2-HGVs penetration level curve, as increased penetration level would not essentially lead to improved cost of H2 at pump.
+
+There are multiple promising future research directions to develop and improve the work reported in this paper. In particular, within the current study we approached HGVs' demand for hydrogen using a high-level analytical approach relying on appropriate energy conversion factors and ratios. Future studies can improve this by zooming in on accurate hydrogen demand by H2-HGVs based on either hydrogen internal combustion engines or hydrogen fuel cells. In addition to this, inclusion of other transport modes such as pipelines and rail would add to the generality of the model and may lead to better cost saving opportunities. Finally, we focused merely on centralised hydrogen production within this study and an important line of future research pertains to the simultaneous consideration of centralised and on-site hydrogen production.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Acknowledgments
+The work reported in this paper has been supported by the UK's Engineering and Physical Sciences Research Council (EPSRC) through the Programme Grant EP/S032134/1 "A network for hydrogen-fuelled transportation (Network-H2)".
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi.org/10.1016/j.ijhydene.2023.03.474.
+Appendix B. List of the acronyms
+
+Acronym
+AE ATR with CCUS ATR þ GHR with
+CCUS CCUS CH2 HGV H2-HGV HRS HSC LRC KPI
+
+Meaning
+
+Acronym
+
+Alkaline electrolysis Autothermal Reformer with CCUS
+
+LH2 MILP
+
+Autothermal Reformer with Gas Heated Reformer with CCUS OG
+
+Meaning
+Liquid Hydrogen Mixed-Integer Linear Programming Overground storage
+
+Carbon Capture, Usage and Storage Compressed-gaseous Hydrogen Heavy Goods Vehicle Hydrogen powered HGV Hydrogen Refuelling Station Hydrogen Supply Chain Lined Rock Cavern Key Performance Indicator
+
+PRA
+
+Petrol Retailers Association
+
+PEM
+
+Proton Exchange Membrane electrolysis
+
+SC
+
+Salt Cavern
+
+SOE
+
+Solid Oxide Electrolysis
+
+SMR with CCUS Steam Methane Reformer with CCUS
+
+TCO
+
+Total Cost of Ownership
+
+UGP
+
+Underground Pipe
+
+686
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+references
+[1] Ahluwalia RK, Wang X, Star AG, Papadias DD. Performance and cost of fuel cells for off-road heavy-duty vehicles. Int J Hydrogen Energy 2022;47(20):10990e1006.
+[2] Almansoori A, Betancourt-Torcat A. Design of optimization model for a hydrogen supply chain under emission constraints - a case study of Germany. Energy 2016;111:414e29.
+[3] Almansoori A, Shah N. Design and operation of a future hydrogen supply chain: snapshot model. Chem Eng Res Des 2006;84(6 A):423e38.
+[4] Almansoori A, Shah N. Design and operation of a future hydrogen supply chain: multi-period model. Int J Hydrogen Energy 2009;34(19):7883e97.
+[5] Almansoori A, Shah N. Design and operation of a stochastic hydrogen supply chain network under demand uncertainty. Int J Hydrogen Energy 2012;37(5):3965e77.
+[6] Amirthan T, Perera MSA. Underground hydrogen storage in Australia: a review on the feasibility of geological sites. Int J Hydrogen Energy 2023;48(11):4300e28.
+[7] BEIS. Hydrogen production costs 2021. Department for Business, Energy and Industrial Strategy (BEIS); 2021. /Hydrogen_Production_Costs_2021.pdf, https://assets. publishing.service.gov.uk/government/uploads/system/ uploads/attachment_data/file/1011506.
+[8] BEIS. UK territorial greenhouse gas emissions national statistics. Department for Business, Energy & Industrial Strategy; 2022.
+[9] Beutel T, Black S. Salt deposits and gas cavern storage in the UK with a case study of salt exploration from cheshire. Erdoel, Erdgas, Kohle 2005;121(3):31e5.
+[10] Bossel U. Does a hydrogen economy make sense? Proc IEEE 2006;94(10):1826e37.
+[11] Brey JJ, Carazo AF, Brey R. Analysis of a hydrogen station rollout strategy to introduce hydrogen vehicles in Andalusia. Int J Hydrogen Energy 2014;39(8):4123e30.
+[12] Burnham A, Gohlke D, Rush L, Stephens T, Zhou Y, Delucchi MA, Boloor M. Comprehensive total cost of ownership quantification for vehicles with different size classes and powertrains (No. ANL/ESD-21/4. Argonne, IL (United States): Argonne National Lab. (ANL); 2021.
+[13] Carrera E, Azzaro-Pantel C. Bi-Objective optimal design of hydrogen and methane supply chains based on power-to-gas systems. Chem Eng Sci 2021;246:116861.
+[14] CCC. The sixth carbon budget: the UK's path to net zero. Committee on Climate Change. 2020; Retrieved from: https:// www.theccc.org.uk/wp-content/uploads/2020/12/The-SixthCarbon-Budget-The-UKs-path-to-Net-Zero.pdf
+[15] Cullen DA, Neyerlin KC, Ahluwalia RK, Mukundan R, More KL, Borup RL, Weber AZ, Myers DJ, Kusoglu A. New roads and challenges for fuel cells in heavy-duty transportation. Nat Energy 2021;6(5):462e74.
+[16] DfT. Decarbonising transport: a better. greener Britain: Department for Transport; 2021.
+[17] Gandhi K, Apostoleris H, Sgouridis S. Catching the hydrogen train: economics-driven green hydrogen adoption potential in the United Arab Emirates. Int J Hydrogen Energy 2022;47(53):22285e301.
+[18] Gec¸ici E, Gu¨ ler MG, Bilgic¸ T. Multi-period planning of hydrogen refuelling stations using flow data: a case study for Istanbul. Int J Hydrogen Energy 2022;47(95):40138e55.
+[19] Gorbunova AD, Anisimov IA. Assessment of the use of renewable energy sources for the charging infrastructure of electric vehicles. Emerg. Sci. J. 2020;4(6):539e50.
+[20] Greene DL, Ogden JM, Lin Z. Challenges in the designing, planning and deployment of hydrogen refueling
+
+infrastructure for fuel cell electric vehicles. eTransp 2020;6. Article 100086. [21] Gu¨ ler MG, Gec¸ ici E, Erdogan A. Design of a future hydrogen supply chain: a multi period model for Turkey. Int J Hydrogen Energy 2021;46(30):16279e98. [22] Han JH, Ryu JH, Lee IB. Multi-objective optimization design of hydrogen infrastructures simultaneously considering economic cost, safety and CO2 emission. Chem Eng Res Des 2013;91(8):1427e39. [23] Haugen MJ, Flynn D, Greening P, Tichler J, Blythe P, Boies AM. Electrification versus hydrogen for UK road freight: conclusions from a systems analysis of transport energy transitions. Energy for Sustainable Development 2022;68:203e10. [24] HM Government. UK hydrogen strategy. London: HM Government; 2021. https://doi.org/10.1002/cind.859_6.x. [25] HM Government. British energy security strategy. HM Government; 2022. [26] Hosseini SE, Butler B. An overview of development and challenges in hydrogen powered vehicles. Int J Green Energy 2020;17(1):13e37. [27] Hwangbo S, Lee IB, Han J. Mathematical model to optimize design of integrated utility supply network and future global hydrogen supply network under demand uncertainty. Appl Energy 2017;195:257e67. [28] IRENA. Geopolitics of the energy transformation: the hydrogen factor. Abu Dhabi: IRENA Publications; 2022. [29] ITF. Towards road freight decarbonisation: trends, measures and policies. 2018. [30] Kim H, Eom M, Kim BI. Development of strategic hydrogen refueling station deployment plan for Korea. Int J Hydrogen Energy 2020;45(38):19900e11. [31] Kim J, Lee Y, Moon I. Optimization of a hydrogen supply chain under demand uncertainty. Int J Hydrogen Energy 2008;33(18):4715e29. [32] Kim M, Kim J. Optimization model for the design and analysis of an integrated renewable hydrogen supply (IRHS) system: application to Korea's hydrogen economy. Int J Hydrogen Energy 2016;41(38):16613e26. [33] Kuvvetli Y. Multi-objective and multi-period hydrogen refueling station location problem. Int J Hydrogen Energy 2020;45(55):30845e58. [34] Laguipo J, Forde C, Carton JG. Enabling the scale up of green hydrogen in Ireland by decarbonising the haulage sector. Int J Hydrogen Energy 2022;47(63):26812e26. [35] Lankof L, Tarkowski R. Assessment of the potential for underground hydrogen storage in bedded salt formation. Int J Hydrogen Energy 2020;45(38):19479e92. [36] Lemieux A, Sharp K, Shkarupin A. Preliminary assessment of underground hydrogen storage sites in Ontario, Canada. Int J Hydrogen Energy 2019;44(29):15193e204. [37] Li L, Manier H, Manier MA. Hydrogen supply chain network design: an optimization-oriented review. Renew Sustain Energy Rev 2019;103:342e60. [38] Li L, Manier H, Manier MA. Integrated optimization model for hydrogen supply chain network design and hydrogen fueling station planning. Comput Chem Eng 2020;134:106683. [39] Liu F, Mauzerall DL, Zhao F, Hao H. Deployment of fuel cell vehicles in China: greenhouse gas emission reductions from converting the heavy-duty truck fleet from diesel and natural gas to hydrogen. Int J Hydrogen Energy 2021a;46(34):17982e97. [40] Liu W, Zuo H, Wang J, Xue Q, Ren B, Yang F. The production and application of hydrogen in steel industry. Int J Hydrogen Energy 2021b;46(17):10548e69. [41] Manna J, Jha P, Sarkhel R, Banerjee C, Tripathi AK, Nouni MR. Opportunities for green hydrogen production in petroleum
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 6 7 e6 8 7
+
+687
+
+refining and ammonia synthesis industries in India. Int J Hydrogen Energy 2021;46(77):38212e31. [42] Melaina M, Penev M. Hydrogen station cost estimates: comparing hydrogen station cost calculator results with other recent estimates. Issue No: National Renewable Energy Lab (NREL); 2013. NREL/TP-5400-56412). [43] Moriarty P, Honnery D. Prospects for hydrogen as a transport fuel. Int J Hydrogen Energy 2019;44(31):16029e37. [44] Navaid HB, Emadi H, Watson M. A comprehensive literature review on the challenges associated with underground hydrogen storage. Int J Hydrogen Energy 2023;48(28):10603e35. [45] Ochoa Bique A, Zondervan E. An outlook towards hydrogen supply chain networks in 2050 d design of novel fuel infrastructures in Germany. Chem Eng Res Des 2018;134:90e103. [46] Okolie JA, Patra BR, Mukherjee A, Nanda S, Dalai AK, Kozinski JA. Futuristic applications of hydrogen in energy, biorefining, aerospace, pharmaceuticals and metallurgy. Int J Hydrogen Energy 2021;46(13):8885e905. [47] Othman K. Multidimension analysis of autonomous vehicles: the future of mobility. Civ. eng. j. 2021;7:71e93. [48] Papadias DD, Ahluwalia RK. Bulk storage of hydrogen. Int J Hydrogen Energy 2021;46(70):34527e41. [49] Penev M, Saur G, Hunter C, Zuboy J. H2A: hydrogen production model: version 3.2018 user guide. National Renewable Energy Lab; 2018 (NREL). [50] Perna A, Minutillo M, Di Micco S, Jannelli E. Design and costs analysis of hydrogen refuelling stations based on different hydrogen sources and plant configurations. Energies 2022;15(2):541. [51] Raeesi R, Zografos KG. The multi-objective Steiner pollutionrouting problem on congested urban road networks. Transport Res B-Meth 2019;122:457e85. [52] Raeesi R, Zografos KG. The electric vehicle routing problem with time windows and synchronised mobile battery swapping. Transport Res B-Meth 2020;140:101e29.
+
+[53] Raeesi R, Zografos KG. Coordinated routing of electric commercial vehicles with intra-route recharging and en-route battery swapping. Eur J Oper Res 2022;301(1):82e109.
+[54] Reuß M, Dimos P, Leon A, Grube T, Robinius M, Stolten D. Hydrogen road transport analysis in the energy system: a case study for Germany through 2050. Energies 2021;14(11):3166.
+[55] Robles JO, Azzaro-Pantel C, Aguilar-Lasserre A. Optimization of a hydrogen supply chain network design under demand uncertainty by multi-objective genetic algorithms. Comput Chem Eng 2020;140:106853.
+[56] Rose PK, Neumann F. Hydrogen refueling station networks for heavy-duty vehicles in future power systems. Transport Res D-Tr E 2020;83:102358.
+[57] Seo SK, Yun DY, Lee CJ. Design and optimization of a hydrogen supply chain using a centralized storage model. Appl Energy 2020;262:114452.
+[58] Stone HB, Veldhuis I, Richardson RN. Underground hydrogen storage in the UK. Geological Society, London, Special Publications 2009;313(1):217e26.
+[59] Sun H, He C, Wang H, Zhang Y, Lv S, Xu Y. Hydrogen station siting optimization based on multi-source hydrogen supply and life cycle cost. Int J Hydrogen Energy 2017;42(38):23952e65.
+[60] Thiel D. A pricing-based location model for deploying a hydrogen fueling station network. Int J Hydrogen Energy 2020;45(46):24174e89.
+[61] Weinert JX, Shaojun L, Ogden JM, Jianxin M. Hydrogen refueling station costs in Shanghai. Int J Hydrogen Energy 2007;32(16):4089e100.
+[62] Wickham D, Hawkes A, Jalil-Vega F. Hydrogen supply chain optimisation for the transport sector e focus on hydrogen purity and purification requirements. Appl Energy 2022;305:117740.
+[63] Zivar D, Kumar S, Foroozesh J. Underground hydrogen storage: a comprehensive review. Int J Hydrogen Energy 2021;46(45):23436e62.
+
+

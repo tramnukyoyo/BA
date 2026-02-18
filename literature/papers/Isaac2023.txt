@@ -1,0 +1,504 @@
+energies
+
+Article
+A Review of the Optimization Strategies and Methods Used to Locate Hydrogen Fuel Refueling Stations
+Nithin Isaac and Akshay K. Saha *
+
+Howard College Campus, University of KwaZulu-Natal, Durban 4041, South Africa * Correspondence: saha@ukzn.ac.za
+Abstract: Increasing sales of conventional fuel-based vehicles are leading to an increase in carbon emissions, which are dangerous to the environment. To reduce these, conventional fuel-based vehicles must be replaced with alternative fuel vehicles such as hydrogen-fueled. Hydrogen can fuel vehicles with near-zero greenhouse gas emissions. However, to increase the penetration of such alternative fuel vehicles, there needs to be adequate infrastructure, specifically, refueling infrastructure, in place. This paper presents a comprehensive review of the different optimization strategies and methods used in the location of hydrogen refueling stations. The findings of the review in this paper show that there are various methods which can be used to optimally locate refueling stations, the most popular being the p-median and flow-capture location models. It is also evident from the review that there are limited studies that consider location strategies of hydrogen refueling stations within a rural setting; most studies are focused on urban locations due to the high probability of penetration into these areas. Furthermore, it is apparent that there is still a need to incorporate factors such as the safety elements of hydrogen refueling station construction, and for risk assessments to provide more robust, realistic solutions for the optimal location of hydrogen refueling stations. Hence, the methods reviewed in this paper can be used and expanded upon to create useful and accurate models for a hydrogen refueling network. Furthermore, this paper will assist future studies to achieve an understanding of the extant studies on hydrogen refueling station and their optimal location strategies.
+Keywords: location; optimization; hydrogen refueling station; infrastructure
+
+Citation: Isaac, N.; Saha, A.K. A Review of the Optimization Strategies and Methods Used to Locate Hydrogen Fuel Refueling Stations. Energies 2023, 16, 2171. https://doi.org/10.3390/en16052171
+Academic Editor: Adolfo Dannier
+Received: 23 January 2023 Revised: 7 February 2023 Accepted: 9 February 2023 Published: 23 February 2023
+Copyright: © 2023 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https:// creativecommons.org/licenses/by/ 4.0/).
+
+1. Introduction
+Emissions in the transport sector have been found to contribute to 22.9% of the total carbon emissions, globally [1]. Consequently, there has been a worldwide consensus on the need to move towards cleaner forms of road transport. Sustainable green transportation is being widely discussed in Europe, America, and Asia, and battery electric vehicles (BEV) and hydrogen fuel vehicles (HFV), which are zero-emission vehicles, are viewed as the top contenders to help reduce increasing GHG emissions [2]. These environmental trepidations for sustainable progress have reached increased attention from global technical and scientific communities [3,4]; however, the transition to HFVs, or any other alternative fuel vehicles (AFVs), can only happen if there is sufficient and adequate infrastructure to support their growth [5]. This is especially true since the establishment of refueling stations is an expensive process [5]. This notion is supported by [6­9], indicating that the major challenge in transitioning to cleaner vehicles remains the development of the refueling structure needed to support this transition. According to [10], the layout of these initial stations will impact "driver concern" regarding refueling and consequently also impact decisions to adopt these vehicles. It is also clear that the availability of fueling stations will accelerate the market acceptance of non-fossil fuel vehicles such as HFVs [11], so uncovering the optimum number and possible placement for these first stations is of interest [5,12]. Furthermore, many researchers and industry representatives indicate that in the "chicken-and-egg" dilemma regarding alternative fuel stations and vehicles--that is,
+
+Energies 2023, 16, 2171. https://doi.org/10.3390/en16052171
+
+https://www.mdpi.com/journal/energies
+
+Energies 2023, 16, 2171
+
+2 of 16
+which comes first?--the optimization of refueling station location is inevitable if looking to maximize the integration of such vehicles into society is applied to finding the optimal location of fueling stations. This is deemed necessary because the location of the facility has a direct influence on the cost-effectiveness, quality, type and efficiency of services that will be provided. However, recent literature on AFV station locations primarily focuses on the optimum placement of electric vehicle charging stations and often is limited in its consideration of HFV location problems. Additionally, safety is also a factor that is of major concern, as hydrogen can ignite at low temperatures, making it dangerous [13,14]. There are several studies that consider and perform risk analysis in order to plan for appropriate control measures and to establish safety standards. However, it is still unclear whether location optimization papers also take safety into account in their designs. Moreover, as indicated in [13], this becomes imperative when the safety of a large population is involved, as is the case when establishing hydrogen refueling stations (HRSs). Another consideration is the safety aspects of hydrogen vehicles in relation to the safety of workers at filling stations, customers and the general public. Hence this paper aims to:
+1. Provide a comprehensive review, evaluation, and comparison of the current and most popular methods and models used to optimally locate refueling stations, and in doing so, identify the main gaps/weaknesses within these models.
+2. Understand and draw potential conclusions on other factors, such as safety factors and their role in optimization location strategies.
+It should be noted that even though these methods have been individually and briefly reviewed in other papers, a comprehensive review, analysis and comparison have not been presented yet. Hence, a brief overview and description of refueling infrastructure (i.e., hydrogen vehicles infrastructure) and the parameters considered in the design of these stations are provided in Section 2. Section 3 of this paper presents the methodology and approach used to develop this study. Section 4 considers the different models and methods used currently to locate fueling stations in an optimized manner. Section 5 discusses and compares the various methods and models, and finally, Section 6 presents a conclusion and suggestions for future studies.
+2. Background of Hydrogen Refueling Stations
+This section is presented to provide context and background on hydrogen stations. Hydrogen has been considered an alternative fuel for vehicles for a long time. One of the primary advantages of hydrogen fuel is that its only oxidation product is water vapor, i.e., there is no production of carbon dioxide [15]. Despite these advantages, the deployment of hydrogen vehicles has not advanced much over the years due to several factors. One of them is the lack of adequate refueling infrastructure. Hence, there have even been considerable drops in plans to develop hydrogen cars in favor of electric vehicles [12,15]. Compared to conventional fuel stations, there is limited knowledge about the competitive locations for HFVs. Additionally, the location decisions for these stations are often neglected, to the advantage of possible competitor decisions [15]. In urban areas especially, there is dense coverage of fueling stations for other types of vehicles; hence, competition is high for optimal locations [16,17]. In terms of investment costs, HFV refueling infrastructure exceeds the cost of other AFV fueling stations by a factor of 10­25. It is estimated that the cost to build an HFV station is in the range of USD 1 to USD 24 million [15]. Moreover, it has been noted in [4,15­21] that hydrogen infrastructure will be limited by existing conventional fuel stations, as they share similar safety and space requirements [2]. The design of a hydrogen station classification depends on the type of production technology used, and the location of fuel generation (i.e., offsite or onsite). Offsite hydrogen production is where the hydrogen fuel is produced at a central unit and then delivered via road or through pipelines. On on-site stations, the hydrogen for refueling is generated locally, usually through the process of steam methane reforming (SMR) and water electrolysis. Compared to offsite stations, on-site stations present technical capacity limitations.
+
+Energies 2023, 16, 2171
+
+3 of 16
+However, despite differences in the production method, and delivery of hydrogen, the majority of HRSs require these components [2,20,21]:
+- A hydrogen production unit. - A purification unit that meets a hydrogen purity of at least 99.97%. - Hydrogen compressors. - Hydrogen storage tanks. - Cooling units to reduce the temperature of the hydrogen gas to -40 C. - Safety equipment. - Mechanical and electrical equipment. - Hydrogen dispensers to supply HFV tanks with hydrogen fuel from the compressed
+storage tanks.
+Overall, [4] notes that HRS costs are related to the capacity of the station and are dependent on:
+- Hydrogen production cost per unit. - The mass of hydrogen supplied by a source to an HRS. - Storage and transportation costs (with transportation distance playing a factor).
+Planning an HRS consists of considering factors such as the technology type, number, locations and station sizes to meet the anticipated demand for hydrogen fuel [22]. Ultimately, the HRS planning aims to minimize the associated costs for given constraints and to guide the deployment of these stations [23].
+Over-building can result in high station costs, leading to higher-than-average hydrogen fuel prices; on the other hand, under-building could lead to refueling inconvenience possibly inhibiting the penetration of HFVs. Hence, the planning of HRSs must consider both supply and demand for the fuel. Additionally, safety considerations, too, need to be reinforced within the construction of HRSs [13,14].
+3. Methodology
+The performance of a location optimization model depends on the measurement method chosen. This section details the methodology followed to select the models reviewed in this paper as well as to determine the accuracy of the results obtained in relation to the comprehensive review of the location optimization models studied.
+3.1. Model Selection
+In selecting the models and strategies of interest, the aim was to involve and study extant literature on popular or most frequently used location optimization models. Moreover, to provide a holistic review of the strategies and approaches for HRS placement, the following was considered:
+· Models that were single-objective focused and solely looked into minimizing weighted travel distance or maximizing the number of trips intercepted.
+· Papers that presented multi-objective models, or comprehensive models that consider additional factors such as safety, cost, and risks associated with HRS placement.
+It is assumed that the papers reviewed contain highly accurate representations of the models studied. Additionally, in order to ensure the accuracy of the outputs obtained, the papers presented in this review were selected and studied with the following in mind:
+· Initial conditions: The accuracy of results depends on the quality and accuracy of the initial data used as input. The papers selected for this review presented demographic data, transportation data, hydrogen demand forecasts and other relevant information of high quality and accuracy.
+· Restrictions: The accuracy of the results obtained from optimization models also depends on the restrictions that are imposed on the optimization process. For example, if certain areas are off-limits for HRSs due to zoning restrictions or other factors, these had to be accurately reflected in the optimization process.
+
+Energies 2023, 16, 2171
+
+4 of 16
+
+· Model complexity: The complexity of the model will also impact result accuracy. Simple models may run faster but may be less accurate, whereas complex models may be more accurate but slower to run.
+· Algorithms: The accuracy of the result obtained also depends on the choice of the algorithm used for optimization. Different algorithms may produce different results for the same problem.
+· Parameterization: The accuracy of outputs also depends on the parameterization of the optimization model; hence, papers selected clearly presented the justification behind the choice of decision variables, objective functions, and constraints, as well as the calibration of the model parameters.
+
+3.2. Limitations
+The limitations of this study are outlined below.
+· As the selection of the review papers focused on studies within regions with higher population densities and greater demand for fuel, the location optimization models reviewed tend to focus on urban settings.
+· Studies focused on rural settings tend to focus on the availability of hydrogen production and distribution infrastructure, building and operating costs; while this should be considered, the studies fell beyond the scope of this study.
+· This paper looks at identifying whether or not safety factors form part of the majority of optimization models and does not look at detailing how exactly these factors have been integrated into these models.
+
+4. Models for Hydrogen Refueling Station Location
+The location of HRSs and their layout could account for the lack or shortage of hydrogen refueling infrastructure [4,24­26]. As such, the use of these location models can help in the placement problem by providing suggestion for the optimal locations of stations in relation to an objective function. Several studies have been conducted on the different models that can be used to locate HRSs.
+HRS location models include single-objective models and multiple-objective models, as explained in [27]. Single objective models include the covering model, p-median model, p-center model and flow-intercepting model. Multi-objective models or comprehensive models consider factors such as costs, safety, risks, etc. This section presents the models and strategies chosen for this review as per the methodology presented in Section 3. Moreover, where required, illustrations of the general working principles of some models are presented. A summary of these models is presented below in Figure 1.
+
+4.1. Covering Models
+
+Covering models can be categorized as either set covering models or maximal covering
+
+location models. Set covering models study station coverage and decide whether a point
+
+can be covered by the station by evaluation of the distance between them [27,28]. This type
+
+of model can be used to reduce the number of stations needed. In the set covering models,
+
+the demand point set is represented by P. Cp indicates the stations that encompass or
+
+cover p, the demand point, and D represents alternate station sets. The model is provided
+
+as follows:
+
+ min d=D
+
+xd
+
+(1)
+
+This is subject to the following:
+
+ dCp xd  1 , p  P
+
+(2)
+
+where xd  {0, 1}, p  P.
+
+Energies 2023, 16, 2171
+
+p-center model and flow-intercepting model. Multi-objective models or comprehensive models consider factors such as costs, safety, risks, etc. This section presents the models and strategies chosen for this review as per the methodology presented in Section 3. Moreover, where required, illustrations of the general working principles of some models a5roef 16 presented. A summary of these models is presented below in Figure 1.
+
+P-median
+
+Single-objective
+e.g., minimize travel distance; maximize number
+of flow interceptions
+
+Flow intercepting P-center
+
+Popular location optimization models
+
+Covering models Agent-based
+
+Multi-objective e.g., risk, safety, cost, etc.
+
+Generalized Bass diffusion
+
+Price-based location strategy
+
+FigFuirgeu1r.eL1o.cLaoticoantimonomdeolds ealdsaapdtaepdtferdomfro[m27[].27].
+
+4.1. CovEerqinugatMioond(e1ls) is used to minimize the number of stations and the decision variable, xd,
+
+suCchovthearitnigf xmd o=de1l,stchaenn baesctaattieogno,rdiz, ceadnabseeictohnesrtsruetctceodv.eTrihnegsmecoodnedlseqour amtiaoxni,mEaqlucaotvioenr-(2),
+
+ingrelopcraetsieonntsmeovdeeryls.pSoeint tcothvaetriinsgsemrvoeddelbsystoundeyosrtamtioorne csotavteiroangse. aSntudddieesciidnediwcahteeththeartathe poicnotncvaenrgbinegcotivmereefdorbtyhitshseosltuattiioonncbayn ebveallouwateiroendoiff tthhies dmiostdaenlcies binettewgeraentedthwemith[2a7r,o28u]t.ine Thisselteycpteioonf omfoedaeclhcdanrivbeeru. sTehdetsoertecdouvceeritnhge nmuomdbelerhoasf sbteaetinonussendeebdyedse. vInertahlesstuetdcieosv,esru- ch icnogmasmp[ao2sd8Ts­eh3lose0r,]st,cehfocoevorednsreditmecao,snevtldheerecpitniodogiennmm.t asoendtdeils,prtoheipenrtm,esaaenxnditmedalbcryoepPvre.ersinengitnslodcaiacltateitorennsatmtheeosdsttaeatl,tioimonnassxetitmhsa.itzTeehsne-the mocdoevleirsepdrdoevmidaenddaws fhoelnlotwhes:number of stations is a given [27]. This model considers factors
+such as population, income, family size, etc., to determine the need at a certain point in the
+
+network. The model is represented by the=below equations:
+
+(1)
+
+This is subject to the following:  max pPmpep
+   1 ,   
+
+(3) (2)
+
+where   {0,1},   . considering,  d=Cp xd  ep, p  P
+
+(4)
+
+Equation (1) is used to minimize the number of stations and the decision variable,
+
+, such that if  tion (2), represents
+
+=ev1e,rythpeoninatstthaatitoins,ser,vceadnd=bbyDexocdnoe=nostarrmucotered.stTahtieonsesc. oSntuddeieqsuiantdioinca, tEeqtuhaa-t
+
+(5)
+
+thewchoenrveexrgd,inegp,ttihmeedfeocristihoins svoalruiatibolnesc,aanrebeitlhowere0readndif 1thfiosrmaolldvealliuseisnotefgdraatned wp,itdhisa an rouetlienme esnelteoctfioDn, oafnedacphisdarinveerl.eTmheensteotfcPov, ewrihnegremPodreepl rheassenbetsenthuesdedembyansdevpeorainl tsst.udFioers,the
+
+sucmhaaxsim[2a8l­c3o0v],efroargseitme osedleelc,tEioqnu.ation (3) maximizes the covered demand. mp represents the
+
+demand at point p.
+
+4.2. P-Median Model
+The P-median model aims to minimize the total distance that is traveled from a demand node to a given number of stations, p, by optimizing the location of the refueling stations and assigning them demand nodes. These are seen as min-sum problems. This model is often utilized to place refueling facilities for AFVs close to where people stay, since
+
+Energies 2023, 16, 2171
+
+6 of 16
+
+it is perceived that consumers prefer to refuel closer to where they reside [2,31,32], and is possibly the most widely-used model in optimal-location studies [32]. This model was first applied to refueling stations as an objective in a multi-objective programming model for the relocation of existing refueling stations [5]. In terms of location optimization, the p-median has been used to allocate fire stations and even to determine sensor locations within municipal water networks [33]. Application of p-median for HRS planning involves minimization of the weighted average distance of hydrogen demand to the nearest station. This leads to the premise that HRS network accessibility becomes better as the weighted average distance for HFV users becomes smaller [22]. Over the years, different adaptations of this model have been used to try to optimize the location of refueling stations; for example, authors in [34] developed a "fuel travel-back" model which uses a similar approach to the p-median; however, the demand nodes are subjective to the fuel quantity expended on the parts of a road going through these nodes, instead of to the population, as in the p-median model. Further, the time of travel between the nodes was considered instead of the distance, which proves advantageous because only data on the road network and population is required. One study observed and used this specific model to understand the rural needs for hydrogen availability; however, the population taken to be "rural" in this instance were people who lived within a one-mile radius of the urbanized area [35].
+In [36] challenges relating to the application of the p-median model to a specific location problem are discussed. According to this study, these challenges include:
+- Computational: the listing of all locations possible when searching for an optimal one is formidable; hence, there has been much research into the use of efficient algorithms to solve the p-median problem.
+- Aggregation error: errors may arise when measuring the distance between the HFV users/demand points and serving points (refueling stations).
+- Applied to urban areas: of interest is the fact that this model is generally applied within the urban context, but by considering Euclidean distance, this model could potentially be applied to homogenous rural areas, as indicated in [36].
+- Obtaining an analytical solution in polynomial time using this model. - The model is represented by the equations below [27,37]:
+
+  min pP dDmpdpdypd
+
+(6)
+
+subject to: ypd  xd,  d  D, p  P
+
+(7)
+
+ d=Dypd = 1, p  P
+
+(8)
+
+ d=Dxd = a
+
+(9)
+
+ypd, xd  {0, 1},  d  D, p  P
+
+(10)
+
+In these Equations (6)­(10), dpd represents the distance between point p and d; mp indicates the demand at point p. ypd, xd are decision variables such that if ypd = 1, then the station, d, can serve the demand at point. Equation (6) is to minimize distance with demand. The model considers the fact that only one refueling facility serves at each point of demand, and it should be noted that the decision variables can only be either 0 or 1. In Equation (9), a represents the number of stations to be built, and P is the demand point sets considered, while D represents the alternative station sets.
+
+4.3. P-Center Model
+Like the p-median model, this optimization model also works by reducing the maximum distance between a point and the station that it covers. This model is considered
+
+Energies 2023, 16, 2171
+
+7 of 16
+
+to be a min­max problem [27]. Equations (11) and (12) function to reduce the maximum distance; xd, ypd represent the decision variables. This model is presented below.
+
+minr
+
+(11)
+
+ dDdpdypd  r
+
+(12)
+
+ dDxd = a
+
+(13)
+
+ypd  xd, d  D, p  P
+
+(14)
+
+ dDypd = 1, p  P
+
+(15)
+
+xd, ypd,  {0, 1}, d  D, p  P
+
+(16)
+
+It should be noted that this model is not directly linked to the demand calculation, so it can be used to locate facilities or sites that could be used for emergency fueling or pitstops [27]. As with Equations (6)­(10), dpd represents the distance between point p and d; p represents the point demand, and ypd, xd are decision variables such that if ypd = 1, then the station, d, can serve the demand at point; a represents the number of stations to be built, and P is the demand point sets considered, while D represents the alternative station sets. In Equation (12), r, refers to the maximum distance.
+
+4.4. Flow Refueling Location Model (FRLM)
+Flow intercepting models such as this model can calculate the demand in a dynamic manner. This model extends on the flow capture location model (FCLM) designed to avoid double-counting of flows captured by more than one station along its route and looks at the optimal location of refueling facilities for alternative fuel vehicles such as HFVs. The FRLM considers the fact that a vehicle may stop at more than one facility along its path to successfully refuel, depending on the vehicle range, path length, and node (refueling station) spacing. This model optimally locates n fueling stations on a network such that the total flow volume refueled is maximized. The model makes use of a mixed-integer programming formulation for the nodes and an algorithm to determine all combinations of nodes that can refuel a given path [11]. The difference between this model and the FCLM is that, unlike the FCLM, this model takes into consideration a combination of facilities at which a vehicle can refuel on its path. However, the objective function that maximizes the total flow for refueling across several stations is the same as that of the FCLM model. The model considers different vehicle ranges; it was noted that fewer facilities are required to refuel, the longer the vehicle range: 60% more refueling was shown with five optimally located stations should the vehicle range be 12; a range of eight required six refueling stations to refuel the vehicle, 60% full, and with a vehicle range of four, it would take 15 stations. The study concludes that it is not optimal to refuel vehicles with a vehicle range. This model later became termed the flow-intercepting location model (FILM), as the passing traffic flow is maximized without counting the traffic multiple times [5].
+Several studies such as [32] have indicated that this model performs better that the pmedian model as it does a better job at considering both theories of fueling station location, i.e., stations near consumers' homes and stations convenient to people's trips. However, one of the problems with this model is the assumption that drivers do not make trips for the sole reason of refueling; rather, it is assumed that drivers refuel along their way to somewhere else. Moreover, each flow intercepted is only counted once, regardless of the number of stations on the route [27].
+
+Energies 2023, 16, 2171
+
+take 15 stations. The study concludes that it is not optimal to refuel vehicles with a vehicle
+
+range. This model later became termed the flow-intercepting location model (FILM), as
+
+the passing traffic flow is maximized without counting the traffic multiple times [5].
+
+Several studies such as [32] have indicated that this model performs better that the
+
+p-median model as it does a better job at considering both theories of fueling station location, i.e., stations near consumers' homes and stations convenient to people's trips. How- 8 of 16
+
+ever, one of the problems with this model is the assumption that drivers do not make trips
+
+for the sole reason of refueling; rather, it is assumed that drivers refuel along their way to somewhereAelgseen. eMriocrfleoovweri,netearcchepfltoinwgimntoedrceelpistepdroisvoidneldy cboeulonwte:d once, regardless of the
+
+number of stations on the route [27]. A generic flow intercepting model
+
+is
+
+prmoavxidedobOelfoowyo:
+
+(17)
+
+   
+considering, dD xd = a considering,   = 
+
+(17) (18)
+(18)
+
+ = d= Co xd,y o, o  O
+
+(19) (19)
+
+  {0,1},   ,   
+
+(20)
+
+Equation (17) indicates the maxixmdiyzoed c{a0p,t1u}r,eddflowD; ,o,O refer to the decision var- (20)
+
+iables;  reEpqrueasteinotns (a1l7l )oirnigdiinc-adtesttinhaetimonaxpimaiirzse. dcraepptruersedntfls otwhe; vyoo,luxmd ereofef rtrtaofftihcebde-ecision tweenvaanriOabDleps;aOir, rseoprthesaetnitscalnl ocarpigtiunr-edethsteinflaotwiononpapirast.h, fo.repressheonwtss tthhee vaoltleurmnaetiovfe traffic
+
+stationb, eatnwdeeniasnthOeDnupmaibr,esroofthsatattitoncasntocabpetbuureilt.hAe sflwowithotnhepactohv,eor.inCgo mshoodwelss,thanedalttheernative
+
+p-medsiatantimono,daenl,dthaeisdtehceisniounmvbaerriaobflesstactaionnosntloybbeeb0uoilrt.1A. s with the covering models, and the
+
+Mpo-dmeelsdisaunchmaosdtehl,ethFeCdLeMcisciaonnbveariniatbelgersacteadn wonitlyh baelg0oroirth1m. s such as the greedy al-
+
+gorithm to Mlocoadtelhs ysdurcohgeans sthtaetiFoCnsL[M38]c.an be integrated with algorithms such as the greedy
+
+Foarlgsoinrigthlem-obtojelcotcivaetefuhnycdtriognemn ostdaetlisonsus c[h38a]s. the p-median, p-center and FLRM mod-
+
+els, the folloFworinsigngleen-oebrijcecftriavme feuwnocrtikonanmdoldoegliscscuacnh baes tahpeppli-emde,daisanse, epn-cienntFeirgaunred 2F,LwRhMenmodels,
+
+develotphiengfotlhloewseinmgodgelnsearsicinfrfaomrmeewdoirnk[a3n9]d. logic can be applied, as seen in Figure 2, when
+
+developing these models as informed in [39].
+
+Figure 2. Single-objective optimization framework. Figure 2. Single-objective optimization framework.
+4.5. Agent-Based Simulation
+Agent-based models are quite popular for studying refueling location optimization, as they can help explore the emergence of a complex behavior [40]. In [10], the placement of a station is modeled using an agent-based simulation. This model typically has two types of agents: the driver agent and the station-owner agent.
+- A driver agent updates his/her vehicle after a given period of years, and when updating his/her vehicle will evaluate the utility of adopting an HFV-using function.
+- A station owner agent considers establishing a refueling station at a location where there are many vehicles passing at that location.
+
+Energies 2023, 16, 2171
+
+9 of 16
+This paper selects a group of targeted drivers based within different locations in a city in order to understand where to place the first refueling station. The paper selects four different groups of motorists: (a) all drivers in the city, (b) drivers concerned about refueling falling under a certain threshold, (c) motorists residing in the city center, and (d) drivers residing in the suburbs within the city.
+The agent-based model runs computer-based simulations on the diffusion of alternative fuel vehicles such as HFVs, where a successful diffusion process is defined as one where initially there are few adopters of HFVs, and with the initial construction of fueling stations, there is a higher adoption of HFVs by drivers. As a result, more refueling stations will be built, decreasing driver concerns, and encouraging more people to adopt these vehicles [10,40]. The genetic algorithm modeled takes into consideration the initial location of refueling stations by using random probability selection, and driver agents' total concerns to select the location and layout of a refueling station with the maximal fitness. However, as stated in this study, it is uncertain whether this algorithm can find a globally optimal solution; rather, such a result is deemed "optimal" within reiterations and finds a local solution rather than a global one.
+Overall, the co-adoption of HFVs and HRSs is seen to be the result of interactions among the defined agents within an urban area. Although this model and simulations help understand the complexity of the adoption process of alternative fuel vehicles, the work lacked a realistic inclusion of a city/area's social and economic background.
+4.6. Generalized Bass Diffusion Model and FCLM
+Studies have also considered integrating different models and the FCLM to find the optimal location of refueling facilities. One such study is [41], which considered optimization through the integration of the Bass diffusion model and the FCLM. This model uses a capacitated FCLM algorithm and a designed solution. The capacitated FCLM algorithm, unlike the original FCLM, does not assume there is a refueling facility present which serves all flows passing through a node, despite the volume. The number of vehicles that are refueled at each facility or node is limited by the capacitated model by introducing an objective function that is modified to maximize vehicle kilometers (distance) traveled rather than trips taken [41]. In using the generalized Bass diffusion model (GBDM), the study considers HFVs and refueling stations to be complementary goods, with the stations added as a peripheral variable to explore infrastructure as the limitation to HFV diffusion within the market.
+In building the integrated optimization model, the GBDM projects the sales of vehicles by considering an increase in the rate of stations and also provisions for the increase of the vehicle flow for the FCLM. The FCLM provides the placement plan for the refueling station networks and then inputs an increasing rate of refueling stations for the GBDM. Hence, the growth rate of HFVs and the increasing rate of HRSs is the important link between the two models. The major assumptions used in this model are as follows:
+- All stations are homogenous and a vehicle that enters the market is removed when the optimization period ends.
+- Vehicle sale growth rate is the same for the area considered in each timeframe; the increase in the rate of refueling stations follow the same rules.
+The integration model considered in this study is innovative in that it comprises a forecasting model (GBDM) and the FCLM based on a cooperative and complementary relationship between the two. This results in a model that allows the location of the refueling stations to be linked to the diffusion patterns of HFVs. Of note is that the model claims to break the "chicken and egg" conundrum in that it balances the interest of all parties, i.e., diffusion and building of sufficient infrastructure for refueling.
+One critique of this model, however, is that it uses a simplistic scenario; hence, the optimization model may not be as robust and may not take into consideration more practical considerations. Moreover, more geographical and security issues need to be considered [41].
+
+Energies 2023, 16, 2171
+
+10 of 16
+4.7. Price-Based Location Strategy
+In [42], the location of new HRSs was considered using a price-based location strategy. The study makes use of an agent-based model (as explained in Section 4.5) using an integrated particle swarm optimization model and a geographic information system to locate these stations. This model considers two decision factors often overlooked in current research, such as the P-median, FRLM/FCLM, which are (1) proximity and (2) price differences in order to compare fuel price variations and the traveling costs to allocate a station to an HFV user. Using this model, the optimal price at which the highest profit of a new HRS is derived, regardless of the location of the HFV, is maximized. The calculation considers the market size, the variable costs of ownership, depreciation costs, and fixed costs as well as the selling price of hydrogen fuel at an existing station. The assumption is that HFV users select stations based on distance and cost [43].
+A number of studies such as [23] have also considered the total cost of ownership in relation to the optimized arrangement of HRSs. The authors in this study conducted an economic analysis of the TCO of a HFV and the correlation between TCO and the market share of HFVs. For optimization, the study considers two options for refueling station location, namely balance and focus. In the balance approach, construction of fueling stations occurs equally on a national basis. In the focused approach, the construction of HRSs occurs preferentially in major cities.
+Assumptions in the model include the fueling capacity of the HRSs. The study notes that the factor impacting the TCO the most is the initial purchase cost of HFVs, and additionally, the cost of fuel is a crucial factor to the TCO in the early years of market penetration. Consequently, the outcomes in this paper indicate that early-stage HRS is preferred to construct equally in the nation first. However, as time passes, refueling stations can be constructed where a high density of HFVs exists [23].
+4.8. Multi-Criteria Approach to HRS Location
+This study interestingly notes that there is a gap between the location of stations and the sufficiency of HRSs to meet supply. Using a multi-criteria mathematical model, the authors in [5] aimed at finding the optimal station locations while optimizing the number of stations required to meet demand. In multi-criteria approaches, the methodology has two levels. First, the model must determine a threshold so that the distance (or travel time) between the HFV user and refueling station is given to be less than or equal to a set value. Second, the model needs to consider a series of evaluation criteria to satisfy the demands of early adopters [42].
+The model considers the overall costs of station construction as well as the costs of the fuels used for all trips using a simple net present value calculation and engineering economics. In solving the above-mentioned problem, the study considers limits on the number of fuel stations possible, flow at each node, the population distribution, construction costs, and target population, to mention a few. The problem was solved using Python (a mathematical coding software) and solved using the IBM ILOG CPLEX 12.7 solver. The developed model allows control of parameter values and different scenarios to be run. The results of this study indicate that this approach is quite effective as it determines the optimal number and location of HRSs. However, it is emphasized that there is a high dependence of the results on the parameter values; hence, further simulations need to be done in order to obtain more robust solutions to this problem. It should also be noted that the proposed formulation considers the criteria used in the two most common models for location optimization: the p-median model and the FRLM.
+Figure 3 below provides the general framework for multi-objective optimization and multi-attribute decision making, as adapted from [39]. This framework can be generalized to the various multi-objective models presented in this paper.
+
+Energies 2023, 16, 2171
+
+done in order to obtain more robust solutions to this problem. It should also be noted that the proposed formulation considers the criteria used in the two most common models for location optimization: the p-median model and the FRLM.
+Figure 3 below provides the general framework for multi-objective optimization and multi-attribute decision making, as adapted from [39]. This framework can be genera1l1izofe1d6 to the various multi-objective models presented in this paper.
+
+FFiigguurree 33.. GGeenneerraalliizzeedd mmuullttii--oobbjjeeccttiivvee ffrraammeewwoorrkk..
+44..99.. OOtthheerrMMooddeellss CCoonnssiiddeerreedd dctapatmioonobibrcroogepodtddduiurteoiSieteonSttcnodleotgtts[hmrhimm4,fcmtuee4atoeoet]sioofu,n[diupiw4pnmrneet4etttuletiite]asmeomlh,rr,clruemeehaaeaastlssosilscatntptioucwptianeonlmhtltagceageligcoeelncelpuosapmeem.aofrimodlsenMsfeessueseitasn.niaoneirbttcbMghltnigohiilenioliiuafinistngfftcHiiguiedeahHeisRenieilscsnelRSooitfoaeanShurmcrrgceltnotceutopeuipoefanmrcuulcurreghdothnelpentdlcitnbiiudneiemnieqctbsgqgaehuseteudlhtnsepg[eete4siaotrhcsq5ooulhrteugt]hicsnhg.teoeueahiuUasrsqtsmotiishesutdcfciha[aeneoamt4vmsnhgnf5teahah]mbmtc.bmteahehUelavaafaeicuucnestuiahnhiseelsrnmeielilnenynlgiadednaseerabmignftntrelloroseenpaleoyaainfcormonrrrhobbbnonugcitetmpiniseanamneeersiigngdnespnol,verdaumiiiiineantnneosvrofliedfpunssoioddo.rsirppreenuAmmidoldognsscsasia.,accdsstptitAtoaiiitaiirbbooroetcitlldnasnnoy--epinofsosrimbleintofradsettreurcmtuinreeltohceatsitoante. Hofofwueevlienrg, tirnaifnuitnugrethteimmeosdteolgtouipdreedthicet ftuheelionpgtipmraolcleoscsaatinodn poof sfsuieblliynginsftoartmioninsfwraosturludctrueqreuliorecadtaiotan.sHouorwceesv--ere,ittrhaeirniancgtutahledmatoadtehlattoisparevdaiiclat bthleeoorpntiu-mmaelrilcoaclastiimonuloaftiofunedliantga [s4ta6t]i.oMnsorweoovuelrd, irneoqrudireer tdoaatachsioevuercaecsc--ureaitteherersauclttus,ailt disaitma pthoarttanist atovahilaavbelesuofrfincuiemnet rdicaatal saivmauillaabtiloe,nsdoatthaa[t4t6h].eMsaomrepolveesri,ziensoartdisefiretsotahcehnieeveedascocfutrhaetemreascuhlitnse, ilteiasrniminpgomrtaondtetlo. have sufficient data available, so that the sample size satisfies the needs of the machine learning model. 5. Discussion and Comparison of the Models Reviewed
+It was evident that the performance of a chosen location optimization model is dependent on the method of measurement employed in the study. A number of optimization modeling methods were studied and reviewed in this paper. The two most popular approaches represent fuel demands as either a node (point demand) or a path (flow demand). This implies that different definitions for refueling behavior and convenience need to be considered [47]. Hence, it is evident that location optimization studies mainly differ in approach by one basic factor--demand type [48]. In addition to point demand and flow demand, there are comprehensive demand models. These models are different from the conventional location model that only considers point demand and flow demand. Com-
+
+Energies 2023, 16, 2171
+
+12 of 16
+prehensive models consider the application of mathematical models by combining many factors in hydrogen production and application [48].
+Point demand models include the p-median model, often considered one of the core methods for HRS planning and optimal location studies. It is evident that many other HRS location models are variants of this model, e.g., using different definitions of distance and applying different constraints. One of the first steps in using a p-median model in HRS location planning is to define where the demand for hydrogen originates from. But this assumes that HFV owners form a large percentage of road traffic. So, for the early market, the use of this model may not be that realistic, as the penetration of HFVs into the market could be disproportionate in certain areas and may form some hydrogen demand groups/clusters during the planning phase. Hence this model should be adapted to focus on hydrogen demand clusters rather than the general traffic within a region. Moreover, introducing a wide variety of constraints such as station capacity, driving range, etc., to the p-median model can provide a better-optimized solution for the location of HRSs.
+In the flow demand type model, the demand refers to the traffic that passes through the path between the origin and the destination nodes. Typical flow demand type models include the FRLM and FCLM. The main assumption for such models is that the refueling demands are from vehicle flows and that the refueling occur en route from origin to destination.
+It should be noted that both these models consider the "most convenient" location for refueling as close to the driver's home or on the way. From the review of existing literature, it is evident that flow models such as the FRLM minimize distances from population nodes (HFV users) to stations better than the point-demand type models. Flow-based locations are also considered to be more stable because only a small proportion of locations that are considered for small values of p remains optimal as the p-value increases in a p-median model. Significant evidence of this is provided in [47]. Overall, studies such as [21,31] indicate that the p-median model is more likely to favor denser clusters of the population, while FRLM/FCLM prefers intersections that can capture large flow volumes.
+Both types of models are applicable for real-world planning within urban areas, but it is evident that more convenience and coverage are provided when using a flow demand type model. This is because such models:
+· reduce wasteful travel time for refueling, i.e., refueling happens on the way of the trip. · cater to a larger percentage of demand in a region. · do not depend on single stations but can utilize different stations based on where the
+HFV users are headed.
+One thing that was evident across the studies is the fact that when designing an optimal layout of initial HRSs in a city, targeting motorists in or close to the center of the city is better if the technologies are already at a mature state [40,49]. This is in line with the suggestions in [23] that indicate that when there is a higher penetration of HFVs in the market it is better to locate stations where there is a higher population density of HFV users. Moreover, there are limited studies that incorporate economic cost, utilization rate, risk, and safety as factors for optimal HRS location. This agrees with the findings in [50]. The study also expressed that it is important to consider hydrogen supply sources and life-cycle costs, which are not necessarily accounted for in simplistic point demand and flow demand models. Hence the use of comprehensive models could lead to better results when it comes to the optimal location of HRSs.
+It was also evident from the review that most studies that were reviewed tend to focus on urban settings because they generally have higher populations and greater demand for fuel, making it more economically viable to build and operate HRSs in these areas. That being said, the studies that explore the potential for HRSs in rural areas consider factors such as the availability of hydrogen production and distribution infrastructure, as well as the expenses associated with the construction and operation of HRSs in rural areas.
+Table 1 presents a summary of the different models reviewed in this paper.
+
+Energies 2023, 16, 2171
+
+13 of 16
+
+Table 1. Summary of different models reviewed.
+
+Model
+Coverage models P-median
+
+Demand Type Point demand Point demand
+
+Single/Multi Objective Single
+Single
+
+Location Area
+Urban Rural
+Urban
+
+P-center
+
+Point demand Single
+
+FCLM/FRLM Flow demand Single
+
+Urban Urban
+
+Agent-based simulation
+
+Comprehensive Multiple demand
+
+Urban
+
+Price-based location strategy
+GBDM and FCLM
+
+Comprehensive Multiple demand
+Comprehensive Multiple demand
+
+Urban Urban
+
+Multi-criteria approach
+
+Comprehensive Multiple demand
+
+Urban
+
+Machine learning models
+
+Comprehensive Multiple demand
+
+Urban
+
+Approach
+
+Gaps/Weaknesses
+
+Demand points set
+Demand served based on distances between distances between residential areas and refueling facilities. Minimize total travel distance. Minimize fuel consumption-weighted travel distance
+Maximize distance coverage
+Demand served along the travel route. Maximize the number of trips intercepted.
+Use of agent-based simulation to highlight the issue of HFV drivers in the design of HRS number and layout.
+A modeling approach for optimal pricing and location.
+Approach using Bass diffusion model and flow capture model. Can provide a long-term location plan by studying the mutual relationship between the HFV sales and the number of HRSs.
+Determining a demand threshold and evaluation criteria to cater to the demand of pioneer adopters.
+Use of data to simulate and predict refueling behavior to inform fuel station location.
+
+Distance calculation is not related to the model.
+This method does not consider factors such as driving range, station capacity, safety factors or prices. Rural context is not established with this model. Demand not associated with the flow of traffic.
+Demand level not a primary consideration.
+Conventional models do not consider factors such as driving range, station capacity, safety or prices. Relies on the traffic matrix Modified models: Yes, but do not consider costs.
+The results of agent-based simulations depend on initial conditions which are only moderately comparable and reproducible [51].
+Positional factors, safety and positional factors not considered.
+Limited consideration of any geographical and security elements; no specific layout location; no reference for short-term layout.
+High dependence on initial parameters defined. Limited studies on the safety factors and their impact on station placement.
+High dependence on large data sets.
+
+6. Conclusions
+The development of hydrogen infrastructure is seen to be a key prerequisite for the penetration of HFVs into markets. Due to high costs associated with the construction of these facilities, it is important to consider the optimal placement of refueling stations to minimize the number of stations initially while still serving the demand.
+The objective of this paper was to review the models used in the optimization of refueling stations for HFVs to provide a comprehensive understanding of the models being
+
+Energies 2023, 16, 2171
+
+14 of 16
+
+used. Since the development of HFVs, the "chicken and egg" conundrum has created a need for the optimized location of fueling stations to make sense from a socio-economic perspective. This paper presented a detailed review of the topic: Optimization Strategies and Methods Used to Locate Hydrogen Fuel Refueling Stations.
+From the review carried out, it is apparent that there are a handful of popular methods by which the location of HRSs can be optimized. These models include the ever-popular FCLM and P-median models, i.e., single objective models that focus either on minimizing the distance traveled to a station for refueling or maximizing the number of refueling trips intercepted [32,36,47]. Other popular models incorporated the use of a combination of mathematical models with hydrogen production and application factors. These location optimization techniques were studied and discussed. From the review, it is evidenced that although there are studies that look into the application of these models to rural contexts, the accuracy of the results still needs to be verified, as some of these studies focus on population groups that are within a one-mile radius of an urbanized area [35]. This could possibly be because these optimization models require inputs such as high population density and HFV demand. Hence, the applicability of these models is still to be ascertained. Furthermore, multi-objective or comprehensive models do seemingly account for extra factors, unlike the single-objective models, and this includes factors that impact hydrogen demand, hydrogen penetration factors, and risk assessments. However, none of the studies reviewed in this paper explicitly reflects the impact of safety considerations within the optimization model and its impact on station placement. Hence, this presents an area for further research.
+Overall, the existing models reviewed in this paper do well in trying to optimize the location of refueling stations. However, as indicated in studies such as [21,31,32,47], to mention but a few, there is still a need to incorporate two main factors, namely rural context and safety implications of HRSs into these models, so that a more realistic, robust optimization solution is provided. Of interest is the possibility of using a machine learning algorithm to optimally position a HRS, and this is suggested for future research.
+
+Author Contributions: Conceptualization, N.I. and A.K.S.; methodology, N.I.; software, N.I; validation, N.I. and A.K.S.; formal analysis, N.I.; investigation, N.I.; resources, N.I.; data curation, N.I.; writing--original draft preparation, N.I.; writing--review and editing, N.I.; visualization, N.I.; supervision, A.K.S.; project administration, A.K.S.; funding acquisition, A.K.S. All authors have read and agreed to the published version of the manuscript.
+Funding: This research received no external funding.
+Data Availability Statement: No research data available.
+Conflicts of Interest: The authors declare no conflict of interest.
+
+Nomenclature
+
+AFV BEV FCLM FRLM GHG HFV HRS OD TCO
+
+Alternative Fuel Vehicle Battery Electric Vehicle Flow Capture Location Model Flow Refueling Location Model Greenhouse Gas Hydrogen Fuel Vehicle Hydrogen Refueling Station Origin-destination Nodes Total Costs of Ownership
+
+References
+1. IEA. CO2 Emissions from Fuel Combustion: Overview; IEA: Paris, France, 2020. 2. Apostolou, D.; Xydis, G. A literature review on hydrogen refuelling stations and infrastructure. Current status and future prospects.
+Renew. Sustain. Energy Rev. 2019, 113, 109292. [CrossRef]
+
+Energies 2023, 16, 2171
+
+15 of 16
+
+3. Thompson, S.T.; James, B.D.; Huya-Kouadio, J.M.; Houchins, C.; DeSantis, D.A.; Ahluwalia, R.; Wilson, A.R.; Kleen, G.; Papageorgopoulos, D. Direct hydrogen fuel cell electric vehicle cost analysis: System and high-volume manufacturing description, validation, and outlook. J. Power Sources 2018, 399, 304­313. [CrossRef]
+4. Wang, D.; Wang, Z.; Han, F.; Zhao, F.; Ji, Y. Location Optimization of Hydrogen Refueling Stations in Hydrogen Expressway Based on Hydrogen Supply Chain Cost. Front. Artif. Intell. Appl. 2021, 341, 368­374. [CrossRef]
+5. Badri-Koohi, B.; Tavakkoli-Moghaddam, R.; Asghari, M. Optimizing Number and Locations of Alternative-Fuel Stations Using a Multi-Criteria Approach. Eng. Technol. Appl. Sci. Res. 2019, 9, 3715­3720. [CrossRef]
+6. Abbaas, O.; Ventura, J.A. A lexicographic optimization approach to the deviation-flow refueling station location problem on a general network. Optim. Lett. 2022, 16, 953­982. [CrossRef]
+7. Vijayakumar, V.; Jenn, A.; Fulton, L. Low Carbon Scenario Analysis of a Hydrogen-Based Energy Transition for On-Road Transportation in California. Energies 2021, 14, 7163. [CrossRef]
+8. Baykara, S.Z. Hydrogen: A brief overview on its sources, production and environmental impact. Int. J. Hydrogen Energy 2018, 43, 10605­10614. [CrossRef]
+9. Zhao, J.; Melaina, M.W. Transition to hydrogen-based transportation in China: Lessons learned from alternative fuel vehicle programs in the United States and China. Energy Policy 2006, 34, 1299­1309. [CrossRef]
+10. Zhao, J.; Ma, T. Optimizing layouts of initial AFV refuelling stations targeting different drivers and experiments with agent-based simulations. Eur. J. Oper. Res. 2016, 249, 706­716. [CrossRef]
+11. Kim, J.-G.; Kuby, M. The deviation-flow refueling location model for optimizing a network of refueling stations. Int. J. Hydrogen Energy 2012, 37, 5406­5420. [CrossRef]
+12. Huang, Y.; Li, S.; Qian, S. Optimal Deployment of Alternative Fueling Stations on Transportation Networks Considering Deviation Paths. Netw. Spat. Econ. 2015, 15, 183­204. [CrossRef]
+13. Veres, J.; Ochodek, T.; Kolonicný, J. Safety Aspects of Hydrogen Fuelling Stations. Chem. Eng. Trans. 2022, 91, 49­54. [CrossRef] 14. Timmers, P.G.J.; Stam, G. Risk Based Safety Distances for Hydrogen Refueling Stations. Available online: http://www.
+publicatiereeksgevaarlijkestoffen.nl/publicaties/PGS35.html (accessed on 10 November 2022). 15. Crönert, T.; Minner, S. Location selection for hydrogen fuel stations under emerging provider competition. Transp. Res. Part C
+Emerg. Technol. 2021, 133, 103426. [CrossRef] 16. Kovac, A.; Paranos, M.; Marcius, D. Hydrogen in energy transition: A review. Int. J. Hydrogen Energy 2021, 46, 10016­10035.
+[CrossRef] 17. Murugan, A.; de Huu, M.; Bacquart, T.; van Wijk, J.; Arrhenius, K.; Ronde, I.T.; Hemfrey, D. Measurement challenges for hydrogen
+vehicles. Int. J. Hydrogen Energy 2019, 44, 19326­19333. [CrossRef] 18. Wang, X.; Fu, J.; Liu, Z.; Liu, J. Review of researches on important components of hydrogen supply systems and rapid hydrogen
+refueling processes. Int. J. Hydrogen Energy 2022, 48, 1904­1929. [CrossRef] 19. Mathe, M. South African Hydrogen Economy Activities--National Hydrogen Energy & Fuel Cell R & D Strategy Development; The
+Hydrogen Economy for Sustainable Development; Council for Scientific and Industrial Research: Pretoria, South Africa, 2006. 20. Lin, R.; Ye, Z.; Guo, Z.; Wu, B. Hydrogen station location optimization based on multiple data sources. Int. J. Hydrogen Energy
+2020, 45, 10270­10279. [CrossRef] 21. Yoo, B.-H.; Wilailak, S.; Bae, S.-H.; Gye, H.-R.; Lee, C.-J. Comparative risk assessment of liquefied and gaseous hydrogen refueling
+stations. Int. J. Hydrogen Energy 2021, 46, 35511­35524. [CrossRef] 22. Greene, D.L.; Ogden, J.M.; Lin, Z. Challenges in the designing, planning and deployment of hydrogen refueling infrastructure for
+fuel cell electric vehicles. Etransportation 2020, 6, 100086. [CrossRef] 23. Lee, H.; Kim, A.; Lee, A.; Lee, B.; Lim, H. Optimized H2 fueling station arrangement model based on total cost of ownership
+(TCO) of fuel cell electric vehicle (FCEV). Int. J. Hydrogen Energy 2021, 46, 34116­34127. [CrossRef] 24. Kuby, M.; Lim, S. The flow-refueling location problem for alternative-fuel vehicles. Socio-Econ. Plan. Sci. 2005, 39, 125­145.
+[CrossRef] 25. Isaac, N.; Saha, A. Analysis of refueling behavior of hydrogen fuel vehicles through a stochastic model using Markov Chain
+Process. Renew. Sustain. Energy Rev. 2021, 141, 110761. [CrossRef] 26. Isaac, N.; Saha, A.K. Predicting Vehicle Refuelling Trips through Generalised Poisson Modelling. Energies 2022, 15, 6616.
+[CrossRef] 27. Lin, R.-H.; Ye, Z.-Z.; Wu, B.-D. A review of hydrogen station location models. Int. J. Hydrogen Energy 2020, 45, 20176­20183.
+[CrossRef] 28. Reggia, J.A.; Naut, D.S.; Wangw, P.Y. Diagnostic expert systems based on a set covering model. Int. J. Man-Mach. Stud. 1983, 19,
+437­460. 29. Wang, F.; Ye, M.; Zhu, H.; Gu, D. Optimization Method for Conventional Bus Stop Placement and the Bus Line Network Based on
+the Voronoi Diagram. Sustainability 2022, 14, 7918. [CrossRef] 30. Huang, Z.; Liu, X. A Hierarchical Approach to Optimizing Bus Stop Distribution in Large and Fast Developing Cities. ISPRS Int.
+J. Geo-Inf. 2014, 3, 554­564. [CrossRef] 31. Mahmutog ullari, Ö.; Yaman, H. Robust alternative fuel refueling station location problem with routing under decision-dependent
+flow uncertainty. Eur. J. Oper. Res. 2022, 306, 173­188. [CrossRef]
+
+Energies 2023, 16, 2171
+
+16 of 16
+
+32. Upchurch, C.; Kuby, M. Comparing the p-median and flow-refueling models for locating alternative-fuel stations. J. Transp. Geogr. 2010, 18, 750­758. [CrossRef]
+33. Karatas, M.; Razi, N.; Tozan, H. A Comparison of p-median and Maximal Coverage Location Models with Q­coverage Requirement. Procedia Eng. 2016, 149, 169­176. [CrossRef]
+34. Lin, Z.; Ogden, J.; Fan, Y.; Chen, C.-W. The fuel-travel-back approach to hydrogen station siting. Int. J. Hydrogen Energy 2008, 33, 3096­3101. [CrossRef]
+35. Nicholas, M.A.; Johnson, N.; Nicholas, M. Rural Needs for Hydrogen Station Coverage. 2014. Available online: https://www. researchgate.net/publication/228747119 (accessed on 12 December 2022).
+36. Han, M. Heuristic Optimization of the p-Median Problem and Population Re-Distribution. Doctoral Dissertation, Dalarna University, Falun, Sweden, 2013.
+37. Ghani, N.A.; Ruslim, N.M. An Application of the p-Median Problem with Uncertainty in Demand in Emergency Medical Services. 2006. Available online: https://www.researchgate.net/publication/228847851 (accessed on 12 December 2022).
+38. Hodgson, M.J.; Rosing, K.E.; Leontien, A.; Storrier, G. Applying the flow-capturing location-allocation model to an authentic network: Edmonton, Canada. Eur. J. Oper. Res. 1996, 90, 427­443. [CrossRef]
+39. Wei, N.; Yang, F.; Lu, K.; Xie, J.; Zhang, S. A Method of Multi-Objective Optimization and Multi-Attribute Decision-Making for Huangjinxia Reservoir. Appl. Sci. 2022, 12, 6300. [CrossRef]
+40. Zhou, Q.; Bu, C.; Feng, Y. Layout of Gas Station Based on Multi-Agent Simulation. J. Softw. 2014, 9, 627­633. [CrossRef] 41. Li, Y.; Cui, F.; Li, L. An integrated optimization model for the location of hydrogen refueling stations. Int. J. Hydrogen Energy 2018,
+43, 19636­19649. [CrossRef] 42. Thiel, D. A pricing-based location model for deploying a hydrogen fueling station network. Int. J. Hydrogen Energy 2020, 45,
+24174­24189. [CrossRef] 43. Xu, Z.; Dong, W.; Yang, K.; Zhao, Y.; He, G. Development of efficient hydrogen refueling station by process optimization and
+control. Int. J. Hydrogen Energy 2022, 47, 23721­23730. [CrossRef] 44. Iravani, H. A multicriteria GIS-based decision-making approach for locating electric vehicle charging stations. Transp. Eng. 2022,
+9, 100135. [CrossRef] 45. Alabi, T.M.; Aghimien, E.I.; Agbajor, F.D.; Yang, Z.; Lu, L.; Adeoye, A.R.; Gopaluni, B. A review on the integrated optimization
+techniques and machine learning approaches for modeling, prediction, and decision making on integrated energy systems. Renew. Energy 2022, 194, 822­849. [CrossRef] 46. Wang, Y.; Decès-Petit, C. Predicting fueling process on hydrogen refueling stations using multi-task machine learning. Int. J. Hydrogen Energy 2020, 45, 32743­32752. [CrossRef] 47. Lu, C.; Jiang, H.; Yang, J.; Wang, Z.; Zhang, M.; Li, J. Shale oil production prediction and fracturing optimization based on machine learning. J. Pet. Sci. Eng. 2022, 217, 110900. [CrossRef] 48. Honma, Y.; Kuby, M. Node-based vs. path-based location models for urban hydrogen refueling stations: Comparing convenience and coverage abilities. Int. J. Hydrogen Energy 2019, 44, 15246­15261. [CrossRef] 49. Wang, Z.; Wang, D.; Zhao, F.; Han, F.; Ji, Y.; Cai, W. Hydrogen Refueling Stations and Carbon Emission Reduction of Coastal Expressways: A Deployment Model and Multi-Scenario Analysis. J. Mar. Sci. Eng. 2022, 10, 992. [CrossRef] 50. Zhou, J.; Wu, Y.; Tao, Y.; Gao, J.; Zhong, Z.; Xu, C. Geographic information big data-driven two-stage optimization model for location decision of hydrogen refueling stations: An empirical study in China. Energy 2021, 225, 120330. [CrossRef] 51. Manzo, G. Revue Française de Sociologie. 2014. Available online: www.cairn-int.info (accessed on 5 February 2023).
+Disclaimer/Publisher's Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+
+

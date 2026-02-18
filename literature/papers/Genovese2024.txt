@@ -1,0 +1,388 @@
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+Available online at www.sciencedirect.com
+ScienceDirect
+
+journal homepage: www.elsevier.com/locate/he
+
+Multi-year energy performance data for an electrolysis-based hydrogen refueling station
+Matteo Genovese a,*, David Blekhman b, Michael Dray c, Petronilla Fragiacomo a
+a Department of Mechanical, Energy and Management Engineering, University of Calabria, Arcavacata di Rende, 87036, Cosenza, Italy b Department of Technology, Hydrogen Research and Fueling Facility, California State University Los Angeles, Los Angeles, 90032, CA, USA c Hydrogen Research and Fueling Facility, California State University Los Angeles, Los Angeles, 90032, CA, USA
+
+highlights
+ Evaluation of the Energy Performance of an HRS from 2016 to 2020.  Multi-annual Assessment and Breakdown of the Station Energy Expenditure.  Analysis based on 4500 Refueling Events and over 8800 kg of Hydrogen Dispensed.  A new approach to HRS operation is recommended.  Usage of Historical Data Source to Document and Evaluate Station Performance.
+
+article info
+Article history: Received 25 August 2022 Received in revised form 10 February 2023 Accepted 6 April 2023 Available online 26 April 2023
+Keywords: Hydrogen refueling station Hydrogen station demand Energy performance Hydrogen economy Multi-annual energy assessment Water electrolysis
+
+abstract
+Financing, sizing, operating, or upgrading a hydrogen refueling station (HRS) is challenging and may be complex, much more so in today's rapidly changing and growing hydrogen industry. There is a significant information gap regarding experimental hydrogen station activities. A high-level perspective on such data and information may facilitate the transition between present and future HRS operations. To address the need for such high-level perspective, this paper presents a comprehensive data set on the performance of the California State University Los Angeles Hydrogen Research and Fueling Facility, based on multi-year operational data. The analysis of over 4500 refueling events and over 8800 kg of hydrogen dispensed, as well as the operation of the facility electrolyzer and of both storage and refueling compressors from 2016 to 2020, reveals a comprehensive picture of HRS energy performance and the identification of useful key performance indicators. In 2016, the station's energy efficiency was 25%, but in 2017 and the first three quarters of 2018, it dropped to 15%. Station-specific energy consumption increased during these quarters. The 2020 first quarter energy consumption was between 70 and 80 kWh/kg. At this time, the energy efficiency of the station reached 40%.
+This research is based on an unprecedented and unique dataset of an HRS operating under real-world conditions, with an approach that can be informative for modeling the
+
+* Corresponding author. E-mail address: matteo.genovese@unical.it (M. Genovese).
+https://doi.org/10.1016/j.ijhydene.2023.04.084 0360-3199/© 2023 The Authors. Published by Elsevier Ltd on behalf of Hydrogen Energy Publications LLC. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+689
+
+performance of other stations, providing a dataset that HRS designers, operators, and investors may utilize to make data-driven choices regarding HRS components and their specs and size, as well as operating strategies. © 2023 The Authors. Published by Elsevier Ltd on behalf of Hydrogen Energy Publications LLC. This is an open access article under the CC BY license (http://creativecommons.org/
+licenses/by/4.0/).
+
+Introduction
+Hydrogen technologies are living an important momentum [1,2] and are being promoted by R&D government funding [3,4], stakeholder actions [5,6], involvement of industrial realities [7], and trials of pilot projects [8].
+Among the several attractive properties, hydrogen is a flexible energy carrier [9], enabling sector coupling [10,11] and energy system integration [12,13]. However, for its utilization to end-users, production [14,15], storage [16] and delivery facilities [17] are needed and have to be installed [18]. Concerning hydrogen utilization in sustainable mobility via the adoption of Fuel Cell Electric Vehicles (FCEVs) [19], the most important facilities for hydrogen distribution are represented by the hydrogen refueling stations (HRS) [20]. These facilities are key elements to foster the energy transition and support hydrogen-based mobility [21,22].
+In this transition, the number of fueling stations and their location are fundamental parameters to ensure a reliable service to customers [23] and to create clusters and hydrogen valleys, promoting the adoption of such energy carrier [24].
+Important developments are present in different countries. Japan counts 160 stations, with a planned number of FCEVs of 200,00 in 2025 and 800,000 in 2030, aiming to install about 1000 HRSs at the end of 2030 [25]. Europe has been very active in recent years [26], promoting incentivizing policies and access to community funds [27]. Besides, different countries, such as Germany and France, promoted national actions in the deployment of hydrogen stations [28]. The United States is the most active country and leader in the world in hydrogen vehicle deployment, with around 11,000 sold or leased, and hydrogen station installations. California already has 48 hydrogen stations in operation and around 9500 registered FCEVs [29], with other 127 total retail HRSs hydrogen stations in development [30].
+Even though some countries have an early hydrogen economy developed, the overall world installation of HRSs is not substantial to allow a diffused marked penetration [31]. Greene et al. [32] addressed this research question, analyzing the challenges and the obstacles that are slowing down the deployment of HRSs and FCEVs, and identifying how the interplay between HRS deployment and demand for FCEVs remains an important topic for future research. Scale economy will undoubtedly play a significant part in the hydrogen industry: with the global push toward decarbonization and advancements in existing technologies, the hydrogen economy is prepared to accelerate at scale. Scaling up can result in lower capital and transportation costs, particularly if the production process is also maintained in the same country [33].
+Kluschke et al. [34] examined a possible HRS cluster and network for heavy-duty trucks in Germany in 2050. Their
+
+suggested model was based on a node optimization with many limitations on driving distance, refueling time, station capacity, traffic volume, and station size, and was scalable to various alternative fuel infrastructures. To identify hydrogen refueling station layouts, Genovese et al. [35] examined the state-of-the-art and ongoing development of hydrogen-based infrastructures, with an emphasis on hydrogen refueling stations. Hydrogen infrastructure has been studied in many configurations. Thus, numerous layouts with gaseous and liquid storage were evaluated to determine their strengths and shortcomings. The authors concluded that there is no perfect hydrogen station configuration, regardless of data and facts. In addition, local market scenarios, the number of automobiles to be supplied daily, distances from centralized hydrogen production centers, supply options, laws, and local requirements must be addressed. Caponi et al. [36] compared a single-tank fueling system and a cascade fueling system using a dynamic lumped parameter thermodynamic model of a hydrogen refueling station for fuel cell buses. The cascade system is modeled after the HRS configuration of the station located in Aalborg. Filled mass, filling time, gas heating, compressor energy consumption, and hydrogen use are analyzed. The average pressure ramp rate, established at the start of the refueling process, dictates the fueling time, therefore station layout does not affect it. Due to the vehiclestorage tank pressure differential, the single-tank system generates 20% more heat than the cascade system. Wang et al. [37] provided a machine-learning technique that predicts important fueling factors, enabling HRS optimization. The robust regression model outperforms "least absolute shrinkage and selection operator" and "Gaussian process regression" for three of four hydrogen refueling stations analyzed and captures typical operating conditions. Gec¸ ici et al. [38] examined the future placement of HRSs in Istanbul, by considering as horizon the next thirty years. To calculate demand, the authors utilized the people development index and vehicle movement across districts, minimizing overall average distances. Brown and Kisting [39] analyzed the queuing problem at HRSs. According to data presented by the authors, normal refueling durations may be as little as 6.7 min if passengers do not wait in queues. However, the waiting-line model and refueling statistics show that these restricted capacity networks are already affecting customer wait times in California and will be insufficient for hydrogen consumers when vehicle adoption rates rise in other regions. Simunovic et al. [40] proposed a new approach that can generate a new stochastic hourly load profile using a unique technique for varied HRS sizes. In addition, a unique electrolyzer sizing approach is suggested that considers the worst-case scenario by combining the highest daily demand and the lowest weekly wind farm energy output. This guarantees that the
+
+690
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+electrolyzer can satisfy the HRS demands throughout the week when energy output from a wind farm is low and the HRS load profile is at its peak. Wang et al. [41] presented a comprehensive overview of the current status and perspective on PEM fuel cell application in vehicles and on hydrogen station networks worldwide. Concerning hydrogen station status, the authors marked the importance of improving both single components and the overall station energy efficiencies, favoring also actions aiming to optimize HRS operation and to provide a better refueling experience for customers. However, in this direction, very few lessons learned based on HRS experimental operation are present and discussed in literature. Kurtz et al. [42] addressed the gap in predicting the hydrogen demand at an HRS, by proposing a predictive model and forecasting refueling profiles. Similarly, Wang and DecesPetit [43] proposed a machine learning-based model to predict the final vehicle state-of-charge at an HRS dispenser. The model was based on multi-task machine learning techniques. Kurtz et al. [44] investigated the reliability and the maintenance activities of HRS, analyzing HRS operation by processing data related to 180,000 fueling events and 5000 maintenance events. Within the 3Emotion project, Caponi et al. [45] examined the operating performance of 5 hydrogen refueling stations and 34 cell buses. Even though there are variances in the stations' activity timing and bus operation, the study spanned four years. The data reveal a comparable distribution of hydrogen quantity per fill, but very variable refueling times across the stations. Bacquart et al. [46] focused on hydrogen quality for FCEVs after the dispensing process, by comparing different sampling approaches. Samuelsen et al. [47] presented the operation of the HRS installed at the University of Irvine, with an overview of maintenance activities and different refueling profiles, and how they can affect the HRS dispensing and financial performance. The National Renewable Energy Lab (NREL) collects and organizes data on FCEV and HRS performance from numerous California HRS databases. This information includes station installation, safety, operation, availability, and economics, shared in the NREL Composite Data Products [48].
+Financing, sizing, operating, or upgrading an HRS is difficult and it could be challenging, above all in the current, constantly changing, and emerging hydrogen market, moving from a pre-commercial phase towards an early market. Station owners, and particularly HRS investors, who aim to explore the business case of future HRS, must have a clear picture of energy expenditure breakdown while servicing a steadily growing demand. As it can be seen, to the best knowledge of the authors, there is a significant research gap on hydrogen station operational data, and, even less for HRS energy performance particularly. Specific energy consumption, hydrogen production, storage, and dispensing levels, are all important parameters to be evaluated, from where datadriven decisions, monitoring activities, and actions aimed to improve the station energy efficiency could be derived.
+From these gaps, there comes the need for a comprehensive overview not only of the overall energy performance of an HRS but also of specific equipment and its contribution/share to the station energy expenditure. Such overview could support and enable actions for an intermediate transition between current and future operation of HRSs, also having the
+
+potential to be extended in the future. This stated industrial and research gap could then be filled by sharing data on operating HRS, with more value if the data are based on multiannual HRS operation.
+To address this issue, the present paper provides an extensive data set on Cal State LA hydrogen station performance, based on a multi-year data and energy assessment. The analysis will present some proposed Key Performance Indicators (KPIs) for hydrogen station evaluation, which are representing five areas: hydrogen production via electrolysis, storage compressor, booster compressors, dispensing line, and station site overall. The presented multi-annual energy assessment has the potential to be a dataset that HRS engineers and operators may utilize to make data-driven choices regarding HRS components and their specs and size, as well as on operating strategies. Additionally, in the current energy transition, numerous HRS operators and policymakers favoring the hydrogen economy are understandably focused on the near-term difficulties rather than on long-term comprehensive goals. The associated near-term difficulties could be summarized into two main actions: establishing and developing a profitable HRS operation and hydrogen market. Throughout this context, a multi-annual assessment, such as the one proposed in the present paper, can support and aid HRS operators and policymakers in tackling the discussed challenge. The current hydrogen economy and HRS market, but also the future and more developed hydrogen market, necessitate a new approach to address HRS operation, emphasizing analysis and control of fueling demand and the equipment energy expenditure, rather than focusing on operating pilot projects by demonstrating their feasibility. Thus, sharing the proposed extensive data set covering the operation of all the HRS key areas, from production to dispensing, could inform future HRS designs and modeling to ensure the success of the HRS infrastructure.
+For this reason, the present study will attempt to address these three research issues.
+ What is the real energy expenditure of an HRS during the early years of operation and after the increase in hydrogen demand?
+ What are the primary KPIs to be used to analyze the operation of hydrogen refueling stations?
+ What scenarios can affect the energy performance, system utilization, and operating time of the station and of the station equipment?
+In particular, the paper will present and analyze Cal State LA Hydrogen Research and Fueling Facility (HRFF) operation using the field data of the facility using KPIs relevant to the hydrogen refueling industry. As a result, this paper presents and analyzes an HRS operation by processing the data recorded from 2016 to the second quarter of 2020, and by providing the definition of KPIs for the assessment of energy performance. The analysis of over 4500 refueling events and more than 8800 kg of dispensed hydrogen, as well as electrolyzer performance and the operation of both storage and refueling compressors, identifies a global picture of HRS energy performance, laying the groundwork for creating data-driven reliability improvement strategies. There are various easily
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+691
+
+Fig. 1 e Cal state LA Hydrogen research and fueling facility overview.
+
+Table 1 e HRS components description [52].
+
+HRS Equipment
+
+Description
+
+Alkaline Electrolyzer [52] - Component 1 in Fig. 1 Diaphragm Compressor [52] - Component 2 in Fig. 1 Main Ground H2 Storage [52] - Component 3 in Fig. 1 Booster Compressors [52,56] - Component 4 in Fig. 1
+High-pressure Buffer Tanks [52,57] - Component 5 in Fig. 1 Main Coil H2 Chiller [52,56] - Component 6 in Fig. 1
+Secondary H2 Chiller, Flat Evaporator [54] - Component 7 in Fig. 1 H2 Dispenser Unit [52,58] - Component 8 in Fig. 1
+
+Hydrogenics - HySTATtm A 1000 D/30/10, 60 kg/day @10 bar PDC Machines - PDV-4-1000-7500, 0.044 kg/min @10 bar, Discharge Pressure: 420 bar CPI 8 Â 16247, 3 Â 20 kg @350 bar 2x Hydropac Compressors - C 12-60-10500LX/SS, Pressure Ratio 8:1, Inlet Pressure 100e400 bar, Discharge Pressure: 827 bar, Flowrate: 76e325 Nm3/ hr Faber Industrie e 4 Â 1 kg @800 bar Quantum Technologies e Modified Unit, Coolant: Ethylene Glycol; Maximum H2 Capacity: 280 Nm3/hr; Nominal Power: 3.2 kW; Chiller Coil Temperature: 37 C Air Product, Nominal Power: 17.7 kW; Refrigerant: R404A; Refrigerant Suction Temperature: 40 C Quantum Technologies e Modified Unit, Double Hose 35/70 MPa, Station Type B: 20 C, Accuracy Class 5.0 ( ± 5%)
+
+available station capacity tools that might make use of the data presented in this article. For example, the Hydrogen Station Capacity Evaluation (HySCapE) [49] allows users to assess station capacity as a function of a user-defined vehicle demand profile, and the simulation findings may be more trustworthy when combined with the data presented in this study. Another tool is H2SCOPE, presented by Reddi et al. [50] as a complete tool for technical and economic evaluation of hydrogen refueling facilities, taking into account the most prevalent layouts for both gaseous and liquid HRSs. Calculating and monitoring many operating parameters, including pressure, temperature, and mass flow, the tool analyzes the performance of an HRS. The model may also replicate station operations using an hourly fuelling profile based on a rescaled typical conventional automobile refueling frequency. The future growth of hydrogen infrastructures requires accurate information on HRS equipment performance and procedures, and sharing data could sustain the energy transition.
+Thus after the introduction, the paper is structured as follows: Section Hydrogen Research and Fueling Facility presents the installed equipment and operation at the Cal State LA
+
+HRFF; Section Methodology and Instrument discusses the adopted data collection methodology and the instruments; and, Section Equipment Performance Evaluation summarizes the main findings of the multi-annual assessment. The latter contains the equipment performancedthe electrolyzer, storage, compressors, and dispensing linedand the overall performance evaluation of the station itself.
+To the best knowledge of the authors, the presented realworld energy analysis is a unique dataset and assessment, not published previously. The data is shared for adoption in research and modeling of the HRS performance and network development. The study is also unique in that it employs a consistent energy analysis approach to determine the performance as a baseline against which progress and required improvements can be tracked.
+Moreover, this research makes use of not only the Cal State LA HRFF historical data to document and evaluate station performance, but the case study and the proposed approach that can be largely adopted and used to identify the performance of other HRSs in the current hydrogen market, as well as
+
+692
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+Fig. 2 e Methodology & instruments, and assessment approach for the HRS multi-annual evaluation.
+
+their evolution in future scenarios with an increasing hydrogen demand and usage or with different technical solutions.
+Hydrogen research and fueling facility
+California State University in Los Angeles Hydrogen Research and Fueling Facility (HRFF) is an HRS located on campus, and it has been the first station to be certified to sell commercial hydrogen on a per kilogram basis and the largest US university hydrogen station when it started its operation [51]. The facility is conveniently situated near many major highways, allowing quick access to both FCEV external drivers and college/ scholars drivers. Moreover, the site puts hydrogen fuel available within five miles of downtown Los Angeles. In terms of location and distance from other stations, the Cal State LA HRFF is located within an acceptable driving distance from other hydrogen stations: about 10 miles from South Pasadena Hydrogen Station, driving Nord, 35 miles from Hollywood Station, driving west, 32 miles from the recently opened Baldwin Park Station, driving east, and about 22 miles from Long Beach Station, driving south. To the U.S. Department of Energy and National Labs, as well as to state authorities such
+
+as the California Energy Commission and the California Air Resources Board, the hydrogen facility offers critical experience in fueling performance and station operations. The station is also utilized as an applied research center for equipment testing and verification, hydrogen purity, and dispensing accuracy testing, among other research collaborations and initiatives. Another important role of the station is to promote hydrogen as a safe transportation fuel by training engineering students, and educating the public and forming collaborations with other organizations. Tours are provided to the general public as a part of the university's public outreach on sustainability, where in the past several years, more than 10,000 young people have visited the station [52].
+The station generates on-site hydrogen via an alkaline water electrolysis unit operating at 10 bar with a rate of 60 kg per day while allowing a maximum daily hydrogen dispensing for 15e20 cars. The station is equipped with a diaphragm compressor to store the generated hydrogen into a horizontal ground storage system of up to 60 kg of hydrogen at 350 bar. For the refueling side, the station is equipped with two highpressure compressors and a double hose hydrogen dispenser with both 350 and 700 bar pressures. The station is gridconnected and powered entirely by certified renewable energy.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+693
+
+Fig. 3 e Electrolyzer KPIs from 2016 to 2020, reporting the quarterly water consumption (a), the hydrogen production (b), the electrolyzer energy demand (c), the operating time (d), the electrolyzer LHV efficiency (e), and the specific energy consumption (f).
+
+To fuel a vehicle, it is connected to the dispenser and the process is initiated. Two small, metered puffs of hydrogen are dispensed to estimate the tank capacity and pressure and to check the integrity of the connection at the nozzle for any leaks. After the integrity is confirmed, the valve is open between the medium pressure storage and the tank directly. When the pressure between the storage tank and the vehicle equalizes, which is typically around 400 bar, the high-pressure compressors are engaged to finish the vehicle's refilling to a pressure level up to 700 bar while drawing hydrogen from the storage tanks. During refueling, the hydrogen is additionally cooled by a dual cooling system working at temperatures below À30 C, and the cooled hydrogen is subsequently injected into the vehicle at a temperature within the assigned corridor for À20 C fueling, classifying the HRFF as a Station Type B e T20 according to the current SAE J2601 standard [53].
+An overview of Cal State LA HRFF is shown in Fig. 1, and the main equipment is listed and described in Table 1. The plant can be considered as consisting of two main sections: hydrogen production and hydrogen dispensing. The hydrogen storage system represents a mid-point section among the other two. The hydrogen production section contains all
+
+converters and power supply, demineralized water supply, electrolysis-based hydrogen generator, the diaphragm compressor, and the main base storage tanks. All productionrelated components have their own pipeline, which does not interfere with the dispensing line, which helps to prevent prolonged downtime in the event of an electrolyzer stand-by period or maintenance operations.
+The hydrogen dispensing section is comprised of the following: - a low-pressure buffer tank which purpose is to maintain a constant suction pressure for the compressors; two hydrogen booster compressors; - four high-pressure buffer tanks to smooth hydrogen vibrations and ensure pulsation-free operation; - a double pre-cooling system; and a double-side hydrogen dispenser.
+In more challenging circumstances, such as successive back-to-back refueling, the main hydrogen chiller had trouble sustaining the T20 compliance [53]. The station was then augmented with a second chiller to accommodate multiple back-to-back refueling operations [54]. The additional chiller enables the monitored hose temperature to stay within the SAE J2601 protocol upper and lower corridors (Station Type B). The hydrogen stream is cooled in a primary hydrogen chiller
+
+694
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+Fig. 4 e PDC Storage Compressor, KPIs from 2016 to 2020, reporting the quarterly energy demand (a), the processed hydrogen (b), and specific energy consumption (c) and the operating time (d).
+
+before entering the vehicle tank. The secondary chiller has an 18 kW rated power and a À40 C R404A suction temperature. "Waive Car" was an FCEV-based shared mobility initiative at Cal State LA [55] that eventually grew to 17 Hyundai Tuscon vehicles in the program and campus use. The shared mobility program on campus was launched by the campus Parking and Transportation office -and Hydrogen Station Management Team. The first 2 h of the vehicle rental were free, and each extra hour was $5.99. Waive Car operated with a smartphone app that allowed users to fully manage the rental process. The driving range was limited to a 30-mile circle with the campus at the center.
+Car sharing has boosted the demand for hydrogen and the use of the HRFF. The initiative also helped the College in terms of green mobility education and outreach.
+Methodology and instrument
+This paper aims to present the multi-annual energy performance of Cal State LA Hydrogen Research and Fueling Facility, by proposing and evaluating different KPIs for the main station components. To design and explain the HRS evaluation
+
+conducted in the present paper, a two-tiered method was used, as shown in Fig. 2, based on the analysis of the specific equipment performance, namely the electrolyzer, the storage and the booster compressors, and the 350-bar/700-bar dispensing line, and the station overall performance analysis. This part provides a high-level overview, addressing broad concepts and deferring to the next sections for specifics.
+The analysis is based on data acquired directly and data processed via the station data acquisition system. Different data acquisition rates have been considered to analyze different parameters, such as the performance of a single refueling process, but also cumulative values, such as the number of fills per week, month, and quarter.
+A significant number of sensors and meters have been placed in the station to allow efficient data gathering on the station's operation. Data gathering and reporting to the National Renewable Energy Laboratory are handled by a specifically designed software program that generates reports compliant with the requirements. The custom developed Human Machine Interface (HMI) monitors and displays normal and alarm conditions visually and enables operator involvement. It is implemented using the Labview software. The data is managed and stored using SQL Server Database
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+695
+
+Fig. 5 e Booster Compressors, KPIs from 2016 to 2020, reporting the quarterly energy demand (a), the processed hydrogen (b), and specific energy consumption (c) and the operating time (d).
+
+software. Reports are produced automatically or upon request. The station's data is kept in five SQL databases ("1sData", "10sData", "MinuteData", "FuelingData", and "FuelingReport"). Data are logged and stored in the HMI hard drive. The majority of the station's observed variables can be monitored in real-time. Throughout the data collecting and analysis process, the station's hardware and software have been updated to enhance performance and include additional technical/safety features. The following reports are generated quarterly for each month of the quarter.
+ Storage and Delivery  350 bar compression  700 bar compression of the first booster  700 bar compression of the second booster  Dispensing Report  Electrolyzer Log  Several others including manual input for maintenance,
+repair and operational notes
+For the hydrogen storage and delivery records, each day, a spreadsheet record of hydrogen storage and delivery is generated at 11:59 p.m. The data refers to the main storage tanks' information such as ambient temperature, nominal
+
+pressure of each tank, calculations of storage single tank amount, and the total storage amount (kg).
+Concerning the compression records, three spreadsheets are generated to describe the monthly operation of each compressor. In this report, the data refers to the hydrogen compression, the operation time, the electricity used, the electricity cost, the total energy consumed during the compression, and the specific energy consumed during the compression. Within the electrolyzer log, the spreadsheet reports the hydrogen produced, the operating time of the electrolysis unit, the water consumption, and the energy demand. In the on-site overall report, the site electricity is monthly recorded and the site electricity cost per month is calculated.
+For the purpose of the present paper, the assessment is performed by processing data from 2016 to the second quarter of 2020 and by defining key performance indicators (KPIs) for assessing the energy performance of the equipment and of the station. The multi-annual assessment is then commented on to evaluate how various scenarios for hydrogen demand had an impact on the different components of the hydrogen refueling station.
+
+696
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+Fig. 6 e 350 Dispensing Line, KPIs from 2016 to 2020, reporting the quarterly pre-cooling chiller energy demand (a), the dispensed hydrogen (b), and the energy consumption of the dispenser electronics (c).
+
+Equipment performance evaluation
+By processing the data recorded from 2016 to the second quarter of 2020, five main areas have been investigated (electrolyzer, storage compressor, booster compressors, dispensing line, and station overall performance), and their related analyses are presented below. These main areas represent the main activities involved in an HRS operation, starting from the hydrogen production, via the water electrolyzer, to the hydrogen storage, thanks to the adoption of a storage compressor. During the refueling process, booster compressors are operated, to increase the pressure level up to 700 bar. In the dispensing line, several components are involved, too, especially a hydrogen chiller, to cool down the hydrogen temperature to À20 C, avoiding the overheating of the vehicle tank. Finally, it is very useful to investigate the facility's overall performance, which includes all the mentioned areas plus the secondary energy systems, such as the secondary chillers, the air compression systems, and the data acquisition systems.
+For each of the five main areas, several KPIs will be presented, to characterize and present the performance from an energy point of view.
+
+Electrolyzer
+The facility operates a Hydrogenics HySTATtm electrolyzer, model number A 1000 D/30/10, produced in 2009. The electrolyzer operates with two stacks, with a nominal hydrogen flow of 30 Nm3/hr, with a flexible range between 40% and 100%. The operating pressure is 10 barg, and hydrogen purity after the purification system is 99.998%. The installed power is 275 kVA, and both the electrolyte and the gases are cooled with dedicated closed-loop cooling systems.
+For the electrolyzer operation, six KPIs have been considered as the most relevant. The first KPI is related to the water consumption, calculated as the cumulated value during the quarter when the electrolyzer is in operation (no idle mode). Similarly, hydrogen production is recorded. Fig. 3a shows the water consumption trend from the first quarter of 2016 over the second quarter of 2020. The amount of water is expressed in cubic meters, and normally the electrolyzer requires around 11.21 cubic meters of water for each ton of produced hydrogen. Correlating the trend of the produced hydrogen, shown in Fig. 3b, to the trend of the water consumption, it is noticeable how for the whole of 2016 the electrolyzer required abnormal quantities of water. The ratio is then almost stable
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+697
+
+Fig. 7 e 700 Dispensing Line, KPIs from 2016 to 2020, reporting the quarterly pre-cooling chiller energy demand (a), the dispensed hydrogen (b), and the energy consumption of the dispenser electronics (c).
+
+from 2017 on. Data misreading could be associated with sensor bad calibration, fixed afterall.
+Fig. 3c shows the electrolyzer energy demand, by including the total energy consumed in electrochemical conversion (electrical, thermal, purification, etc.), while Fig. 3d shows the electrolyzer operating time. Both KPIs are related to the electrolyzer production mode, not considering the energy expenditure and the operating time in idle mode. The electrolyzer energy demand starts increasing in 2019, achieving its peak value in the first quarter of 2020. During the second quarter of 2020, station operation has been affected by the COVID-19 pandemic, negatively impacting the hydrogen demand and thus the hydrogen production and the electrolyzer operating time. The quarterly operating time was increased up to 850 h during 2020-Q1, dropping then in the next quarter. The electrolyzer's primary energy efficiency is defined as Hydrogen Output (LHV) compared to the energy input of the process, by including all energy associated with both electrolysis and purification. It is useful to mark that the efficiency accounting for the present paper is calculated on a quarterly basis, so it corresponds to an average value of the efficiency associated with the operation of the electrolyzer in the analyzed quarter, including start-up and shut-down operations. Its trend is shown in Fig. 3e, achieving the highest value in the first quarter of 2020, close to 57%, and a minimum value of 52% in the last quarter of 2017. The reason for such behavior in efficiency is
+
+mainly associated with a more intense and stable operation of the facility, and thus of the electrolyzer, in the last years. Being a value calculated quarterly, the quarterly hydrogen production became more consistent with a more stable operation of the system, intended as a more regular daily procedure, with few startups and less frequent shutdowns and stand-by operation, demonstrated also by a higher operating time, as shown in Fig. 3d. Among the main factors that increased station use, it is worth mentioning, as previously described, the "Waive Car" FCEV-based shared mobility initiative at Cal State LA, which eventually grew to 17 Hyundai Tuscon vehicles.
+The electrolyzer's specific energy consumption is then presented in Fig. 3f, with higher values in the past years, and achieving lower values in recent years, with values between 58 and 62 kWh/kg, when the hydrogen production started to increase. The nominal estimated power consumption in the company datasheet is about 60 kWh/kg at beginning of life, with a 1% increase per annum. The increase in the hydrogen demand, thanks to the new chiller installation and the carsharing program, positively impacted the station utilization, decreasing the component-specific energy demand.
+Storage compressor
+For the storage compressor, the model installed at the station is the PDC-4-1000/7500, with a nominal capacity of 0.044 kg/
+
+698
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+Fig. 8 e Hydrogen Station, Overall Picture, KPIs from 2016 to 2020, reporting the quarterly energy demand (a), the dispensed hydrogen (b), and the number of refueling events (c).
+
+min of processed hydrogen and outlet pressure up to 420 bar. When any of the hydrogen storage tanks are below the maximum storage pressure, cascade recharging is required (about 440 bar). This process comprises activating the electrolyzer to enable the generation of hydrogen. It will then be completed by the low-pressure compressor and storage. After ensuring all safety and control protocols, the electrolyzer is activated. The low-pressure compressor will only start when the electrolyzer has sufficient minimum pressure (10 bar). This technology can process hydrogen and increase the pressure level with a pressure ratio of up to 40, from 10 bar to about 400 bar.
+The performance of this station component has been analyzed by investigating the quarterly data, from 2016 to 2020, excluding three quarters of 2017 (Q2, Q3, and Q4), when data was unavailable. Fig. 4a shows the energy demand of the storage compressor: besides the first quarter of 2016, the compressor energy demand resulted below the 1 MWh per quarter level until the second quarter of 2019. From that quarter on, the compressor energy demand increased with a peak of almost 2.5 MWh per quarter. The related hydrogen processed graph is displayed in Fig. 4b, and the energy peak corresponds to a marked increase of the compressed hydrogen, about 1.6 tons, with an overall value of operating
+
+hours of about 800 h, shown in Fig. 4d. In the first quarter of 2016, the compressor operating hours and energy demand are higher than every other quarter. This difference could be related to the maintenance actions related to the compression operation. In the last quarters, the operating hours increased up to 750 h, in line with the rise in hydrogen demand, as a result of the new chiller installation and the carsharing program, which had a favorable influence on the station's usage.
+Fig. 4c finally shows the compression specific energy consumption, with a value almost constant (1.5 kWh/kg) over several quarters. The uniform value is mainly due to the stable suction pressure of the PDC compressor, set by the electrolyzer outlet pressure (10 bar), and the similar charging trends for the main ground storage tanks, up to 400 bar.
+Booster compressors
+The station is equipped with two hydrogen high-pressure compressors. These are hydraulic/piston booster compressors, belonging to the model category Hydropac C12-6010500XL, each with an average capacity of 0.5 kg/min and maximum outlet pressure of 827 bar.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+699
+
+Fig. 9 e Hydrogen Station, Overall Picture, KPIs from 2016 to 2020, reporting the quarterly produced hydrogen (a), the dispensed hydrogen (b), and the storage quarterly delta (c).
+
+As for the storage compressors, the high-pressure compressors and their performance have been represented via the evaluation of four KPIs: the energy demand (Fig. 5a), the processed hydrogen (Fig. 5b), the specific energy consumption (Fig. 5c), and the operating hours (Fig. 5d). The processed data is presented from 2016 to 2020, excluding three quarters of 2017 (Q2, Q3, and Q4), when data was unavailable.
+The boosters' energy demand, as for the electrolyzer and the storage compressor, increased in the last two years, thanks to a higher hydrogen demand. Both the energy expenditure and the operating time of the boosters are less than for the PDC compressor, which runs up to 24 h per day in full demand, storing the produced hydrogen at the low rate matching the electrolyzer production. In contrast, the booster compressors turn on on-demand for a part of a fueling event. Before any fueling procedure is activated, all safety conditions must be verified. If conditions are satisfied, the dispenser will commence refueling and choose which hydrogen storage tank to draw from first. This selection is determined by the tank with the lowest useable pressure. If this tank's pressure is insufficient to fuel the vehicle, the dispenser will move to the next tank in the cascade. If the vehicle demands a higher hydrogen pressure than the cascade can provide, the dispenser will activate the booster compressors.
+The energy consumption and the corresponding operating time typically would be lower than 0.8 MWh and 40 h per quarter, respectively, per the combined operation of the two booster compressors. If compared to the storage compressor,
+
+the energy consumption of the boosters is less mainly because of the lower pressure ratio (up to 8:1) the Hydropac compressors have to process and deliver. For the operating time, a part of the fueling event is taken by the flow from the storage without the assistance of compressors until the pressure in storage reaches equilibrium with the onboard vehicle tank. After that, the booster compressors start their operation of pumping hydrogen from the storage until the tank is full. The specific energy consumption for the booster compressors, shown in Fig. 5c, resulted in lower values than the storage compressor, with values ranging from 1.2 kWh/kg to 2.6 kWh/ kg over 2018 and 2019, respectively.
+Because the mass flow meter had to be recalibrated and replaced in recent years, the measurement of processed hydrogen by the boosters has been relatively accurate and repeatable. Research activities on the measurement instruments' reliability and how it was addressed have been already discussed in the authors' previous paper [59]. Nevertheless, the trends of the KPI shown in Fig. 5 provide interesting insights into the operation of this HRS equipment.
+Dispensing line
+The refueling process is one of the most critical aspects of an HRS operation. Besides two booster compressors (oil-free piston compressors), the dispensing line includes four highpressure buffer tanks, as well as a hydrogen chiller. The chiller cools the hydrogen flow to À20 C, therefore classifying
+
+700
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+Fig. 10 e Hydrogen Station, Overall Picture, KPIs from 2016 to 2020, reporting the quarterly station energy efficiency (a), the station-specific energy consumption (b), and the production-to-dispensing rate (c).
+
+the station as a T20 or Type B that complies with the J2601 fueling standard and the necessary conditions for safe fueling. The dispenser's dual-sided design permits both 350 bar and 700 bar recharging procedures. Connecting the nozzle to the vehicle, reading the fuelling card, and raising the dispenser lever are the initial steps to commence the fueling procedure. The dispenser will initiate a programmed pressure check of the vehicle's tank to calculate the amount of hydrogen necessary to achieve the pressure goal and the average pressure ramp rate. These values will be calculated and extrapolated from the SAE J2601 protocol tables. In order to undertake numerous B-to-B fuelling procedures, the station was updated to include extra cooling, namely a secondary flat evaporator chiller [54]. The performance of the hydrogen main coil chiller was satisfactory for many refueling procedures, but under more severe situations, such as during successive B-to-B fills, the system failed to maintain the acceptable temperature range. The installation of the secondary chiller enables the monitored hose temperature to remain within the upper and lower corridors specified by the SAE J2601 standard (Station Type B) [53,60].
+The dispensing process has been monitored by dividing the fueling events into 350 bar-fills and 700 bar-fills. For each fueling category, three main KPIs have been investigated: the
+
+pre-cooling unit energy demand, the hydrogen dispensed, and the energy demand of the dispenser electronics.
+Fig. 6 offers an overview of the 350 bar fills from 2016 to 2020. The quarterly hydrogen dispensed is displayed in Fig. 6b, showing the highest value at the beginning of 2016, some sporadic 350 bar-fill demand, and a recent increase between 2019 and 2020. The dispensing electronics account for a very small amount of energy, often below 10 kWh during a single quarter. Data on the pre-cooling chiller refers only to the primary hydrogen chiller, and for the 350 bar refueling processes, it has a low impact on the energy demand, showing often values under 0.5 MWh per quarter.
+In comparison with 350 bar refueling processes, 700 bar fueling events are predominant at Cal State LA Hydrogen Station. Fig. 7b shows the hydrogen dispensed over several quarters, maintaining levels of about 400 kg from 2016 to 2017, then decreasing in 2018, and then increasing again achieving a peak of 1.4 tons of dispensed hydrogen during the first quarter of 2020. The dispenser electronics do not present significant energy consumption, slightly changing from an average value of 0.25 MWh per month. The precooling energy demand, here referring only to the primary hydrogen chiller, showed a value under 4 MWh per quarter for 2016, increasing in 2017 up to
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+701
+
+about 7 MWh per quarter, dropping in 2018, and then increasing again up to 7 MWh per quarter in 2019.
+Station overall performance
+To describe the station's overall performance, three sets of KPIs have been considered, related to different aspects. The first set of KPIs is shown in Fig. 8 and it includes the hydrogen station site overall energy demand (Fig. 8a), the hydrogen dispensed (Fig. 8b), and the number of refueling events (Fig. 8c).
+For the quarters belonging to 2016, the station's overall energy demand ranged between 55 and 70 MWh, then increased in 2017 with a peak in the third quarter with a value of about 105 MWh. In recent years the number of refueling processes increased from the values of 2016e2018 when they were ranging between 100 and 300 events per quarter. At the end of 2019 the refueling events increased up to 550, and in the first quarter of 2020, they have reached a peak value of almost 750. The corresponding amount of hydrogen dispensed, shown in Fig. 8b, reached about 1.4 tons.
+The second set of KPIs is shown in Fig. 9 and it includes the production (Fig. 9a), the hydrogen dispensed (Fig. 9b), and the storage delta, Dm , H2;storage expressed in kg, between the start of the quarter and the end of the quarter (Fig. 9c.)
+The aim of comparing the KPIs related to this set is to give an overview of the hydrogen levels in the production area, in the storage, and then in the dispensed amount Concerning the hydrogen production, it is not directly measured, because of the lack of calibration on the Sage meter. The production is estimated through the electrolyzer reported data based on Faraday's law, using the current of the cell stacks within the electrolyzer. There is always a difference in the recorded data between hydrogen production and the amount of hydrogen dispensed sometimes up to 30%. The issues were already described in the authors' previous paper [59]. The difference between the amount of hydrogen stored in the storage system, at the beginning of the quarter and at the end of the quarter, is presented and illustrated in Fig. 9c, with significant values from the second quarter of 2019 to the second quarter of 2020. These amounts need to be accounted for if production and dispensing differences need to be resolved as demonstrated in Ref. [59].
+The third and last set of KPIs is shown in Fig. 10. It includes the station's energy efficiency, hLHV;site;Qi (Fig. 10a), the stationspecific energy consumption, esite (Fig. 10b), and the production-to-dispensing rate, %P2D, expressed in percentage points, and shown in Fig. 10c.
+The station energy efficiency is calculated as expressed in Equation (1), by comparing the station energy output (in terms of lower heating value LHV of the hydrogen dispensed, m , H2;dispensed and the delta in the hydrogen storage system, Dm ) H2;storage to the electricity demand for the whole facility, calculated as integration between the analyzed quartes of the overall power demand of the facility, Wsite. The overall hydrogen dispensed within the quarter is calculated as a finite summation given the approach used in the data acquisition system: after each refueling process, the quantity of hydrogen delivered to the vehicle is recorded. The finite summation of such values throughout the quarter provides the overall hydrogen dispensed for the considered span of time. The site
+
+power is recorded every minute, so the overall energy demand of the site is calculated as integral.
+
+QPi þ1
+
+
+
+m þ Dm $LHV H2;dispensed
+
+H2;storage
+
+hLHV;site;Qi ¼ Qi
+
+QZi þ1
+
+Wsite $dt
+
+Qi
+
+Eq. 1
+
+The specific energy consumption, esite, is calculated as the ratio between the electricity demand for the whole facility in relation to the amount of hydrogen produced in each quarter, m ; H2;produced as shown in Equation (2). As for the hydrogen dispensed, the total amount of hydrogen produced during the quarter is calculated as a finite sum based on the data acquisition system's frequency, which in this case is monthly.
+
+QZi þ1 Wsite $dt
+
+esite
+
+¼
+
+Qi
+QPi þ1
+
+mH2;produced
+
+Qi
+
+Eq. 2
+
+The last KPI is the production-to-dispensing rate, %P2D, shown in Equation (3). It is calculated as the ratio between the sum of the quantity of hydrogen dispensed during the quarter and the delta in the amount of hydrogen stored in the same quarter, Dm , H2;storage divided by the quantity of hydrogen produced in that quarter, m . H2;produced
+
+QPi þ1
+
+
+
+m þ Dm H2;dispensed
+
+H2;storage
+
+%P2D ¼ Qi
+
+QPi þ1
+
+$100
+
+mH2;produced
+
+Qi
+
+Eq. 3
+
+The refueling performance is dependent on the quantity of hydrogen available in the storage and the accompanying pressure levels in addition to the precooling capacity. The station's energy efficiency maintained a value of about 25% during 2016, dropping under 15% during 2017 and the first quarters of 2018. During these quarters, the station-specific energy demand drastically increased. The specific energy consumption then dropped to its lowest value in the first quarters of 2020, resulting within the range of 70e80 kWh/kg. During the same period, the station's energy efficiency reached its maximum levels, up to 40%. As described above, the increase in the hydrogen demand, because of the new chiller installation and the car-sharing program, positively impacted the station utilization, decreasing the componentsspecific energy demand and increasing the energy performance.
+Concerning the production-to-dispensing rate, excluding 2018-related data, presented almost a uniform trend, stable around 75e80%.
+
+Conclusions
+This paper presented the multi-annual energy performance of the Cal State LA Hydrogen Research and Fueling Facility, by proposing and evaluating different KPIs for the main station components. The analysis is based on data acquired and
+
+702
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+processed by the station data acquisition system that was specifically integrated for future research purposes and a part of the Department of Energy funding. The data was recorded from the first quarter of 2016 to the second quarter of 2020 leading to five main areas being investigated (electrolyzer, storage compressor, booster compressors, dispensing line, and station site overview).
+In the first quarter of 2020, the efficiency of the alkaline electrolyzer was close to 57%, with a minimum of 52% in the fourth quarter of 2017. When the hydrogen production began more consistent and stable, the electrolyzer's specific energy consumption decreased to between 58 and 62 kWh/kg. Historically, the electrolyzer's specific energy consumption had higher values, but in recent years, it has decreased to between 58 and 62 kWh/kg. Throughout many quarters, the storage compressor's compression specific energy consumption was almost constant at 1.5 kWh/kg. The uniform value is mostly attributable to the constant suction pressure of the PDC compressor, which is determined by the electrolyzer output pressure (10 bar), and the identical charging patterns for the primary ground storage tanks, which may reach up to 400 bar. In 2018 and 2019, the booster compressors' specific energy consumption was lower than that of the storage compressor, with values ranging from 1.2 kWh/kg to 2.6 kWh/kg, respectively.
+Concerning 350 bar refueling procedures, the station had irregular demand in 2019 and a recent surge in 2020. The dispensing electronics used a negligible amount of electricity, often less than 10 kWh every quarter. The data on the precooling chiller solely pertains to the main hydrogen chiller, and for the 350 bar refueling procedures, it has a negligible influence on the energy requirement, with quarterly values often under 0.5 MWh.
+At the Cal State LA Hydrogen Station, 700 bar fueling occurrences predominate over 350 bar refueling procedures, with a level of around 400 kg from 2016 to 2017, followed by a decrease in 2018, and then an increase to a high of 1.4 tons in the first quarter of 2020. The energy usage of the dispenser's electrical components is negligible, averaging 0.25 MWh per month, with a little monthly variation. The precooling energy requirement for the main hydrogen chiller was less than 4 MWh per quarter in 2016, increased to about 7 MWh per quarter in 2017, decreased to around 4 MWh per quarter in 2018, and then again to 7 MWh per quarter in 2019.
+Among the main results, the station's overall energy performance is the most interesting. The station's overall energy efficiency was about 25% in 2016 but dropped to less than 15% in 2017 and the first three quarters of 2018. During these quarters, there was a significant rise in station-specific energy consumption. In the first quarters of 2020, specific energy consumption reached its lowest level, which was in the region of 70e80 kWh/kg. The fueling station reached its greatest energy efficiency over the same time period, approaching 40% in certain cases. As a result of the new refrigeration capacity and car-sharing service, there has been an increase in hydrogen demand, which had a beneficial effect on station usage, lowering component-specific energy consumption and improving overall energy performance. If the 2018-related data are excluded, it can be seen that the production-todispensing ratio is on an almost constant upward trajectory,
+
+hovering between 75 and 80%. This reveals how various scenarios for hydrogen demand had an impact on the different components of the hydrogen station in terms of energy production, system usage, and operating time. Indeed, the operation of all components has changed significantly since 2019, with all components reporting relevant and improved performance. This is primarily due to the 2019 Cal State LA Hydrogen Station upgrade, which improved the overall operation.
+The main limitation of the study is the collection of data per quarter, due to the significant number of sensors and meters that have been placed in the station to allow efficient data gathering on the station's operation. Since specific KPIs are calculated via data processing, data mismatching could cause missing data, as it occurred for the station's overall performance in 2019-Q1, Q3, and Q4. A reliable data collection for more energy-related parameters and a higher frequency of data acquisition, e.g. per hour or per day, could allow a deeper understanding of the equipment performance. It is worth mentioning that the case study and the proposed approach can be broadly applied to identify the performance of other hydrogen research stations in the current hydrogen market, as well as to inform their evolution and design in future scenarios with changing hydrogen demand and usage.
+Based on the results of this study, the authors recommend adopting a new approach, to HRS operation that is more focused on analyzing and increasing consumer demand and optimizing equipment energy expenditure, rather than focusing on operating pilot projects and demonstrating their feasibility, not only for the current hydrogen market but also for the future hydrogen infrastructure. Thus, sharing the suggested comprehensive data set capable of covering all aspects of HRS operation, from hydrogen production to dispensing, may aid in the design and operation of HRS networks, as well as operate in tandem with technological and operational advances to guarantee the HRS industry's success.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Acknowledgments
+This research was supported by a U.S. Department of Energy grant (DE-EE0005890) and in part by the National Science Foundation CREST Center for Energy and Sustainability funding (NSF1547723). The research was also supported by the grant PON RI 2014e2020 for Innovative Industrial PhD (CUP H25D18000120006 and Code DOT1305040), funded by the European Union and the Italian Ministry of Education, University and Research (MIUR).
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+703
+
+Nomenclature
+
+%P2D Production-to-dispensing rate [%] hLHV;site;Qi Energy efficiency of the site in quarter number i [À] DmH2;storage Storage delta, expressed in kg, between the start of
+the quarter and the end of the quarter [kg]
+
+dt
+
+Time [s]
+
+esite
+
+Overall specific energy consumption of the facility
+
+[kWh/kgH2]
+
+i
+
+Number of quarter within a year, from 1 to 4 [À]
+
+KPI
+
+Key Performance Indicator
+
+LHV
+
+Lower Heating Value, 33.33 [kWh/kgH2]
+
+mH2;dispensed Quantity of dispensed hydrogen [kg]
+
+mH2;produced Quantity of produced hydrogen [kg]
+
+Qi
+
+Quarter number i [À]
+
+Wsite Overall power of the facility [W]
+
+references
+
+[1] European Commission. The hydrogen strategy for a climateneutral Europe. 2020. https://doi.org/10.1017/ CBO9781107415324.004.
+[2] Kakoulaki G, Kougias I, Taylor N, Dolci F, Moya J, JagerWaldau A. Green hydrogen in Europe e a regional assessment: substituting existing production with electrolysis powered by renewables. Energy Convers Manag 2021. https://doi.org/10.1016/j.enconman.2020.113649.
+[3] BDI Department Energy and Climate Policy. Bringing a European hydrogen economy to scale. 2020.
+[4] Dunlap A, Laratte L. European Green Deal necropolitics: exploring `green' energy transition, degrowth & infrastructural colonization. Polit Geogr 2022;97:102640. https://doi.org/10.1016/j.polgeo.2022.102640.
+[5] Pan G, Gu W, Chen S, Lu Y, Zhou S, Wei Z. Investment equilibrium of an integrated multiestakeholder electricityegasehydrogen system. Renew Sustain Energy Rev 2021;150:111407. https://doi.org/10.1016/j.rser.2021.111407.
+[6] Potter A, Graham S. Supplier involvement in eco-innovation: the co-development of electric, hybrid and fuel cell technologies within the Japanese automotive industry. J Clean Prod 2019. https://doi.org/10.1016/j.jclepro.2018.10.336.
+[7] E4tech. The Fuel Cell Industry Review 2020 2021. https:// fuelcellindustryreview.com.
+[8] Chehade Z, Mansilla C, Lucchese P, Hilliard S, Proost J. Review and analysis of demonstration projects on power-toX pathways in the world. Int J Hydrogen Energy 2019. https:// doi.org/10.1016/j.ijhydene.2019.08.260.
+[9] Patel M, Roy S, Roskilly AP, Smallbone A. The technoeconomics potential of hydrogen interconnectors for electrical energy transmission and storage. J Clean Prod 2022;335:130045. https://doi.org/10.1016/j.jclepro.2021.130045.
+[10] Gulagi A, Alcanzare M, Bogdanov D, Esparcia E, Ocon J, Breyer C. Transition pathway towards 100% renewable energy across the sectors of power, heat, transport, and desalination for the Philippines. Renew Sustain Energy Rev 2021;144:110934. https://doi.org/10.1016/j.rser.2021.110934.
+[11] Genovese M, Schluter A, Scionti E, Piraino F, Corigliano O, Fragiacomo P. Power-to-hydrogen and hydrogen-to-X energy systems for the industry of the future in Europe. Int J Hydrogen Energy 2023. https://doi.org/10.1016/ j.ijhydene.2023.01.194.
+[12] Osorio-Aravena JC, Aghahosseini A, Bogdanov D, Caldera U, Ghorbani N, Mensah TNO, et al. The impact of renewable
+
+energy and sector coupling on the pathway towards a sustainable energy system in Chile. Renew Sustain Energy Rev 2021;151:111557. https://doi.org/10.1016/ j.rser.2021.111557. [13] Hanley ES, Deane JP, Gallachoir BPO . The role of hydrogen in low carbon energy futureseA review of existing perspectives. Renew Sustain Energy Rev 2018. https://doi.org/10.1016/ j.rser.2017.10.034. [14] Qyyum MA, Dickson R, Ali Shah SF, Niaz H, Khan A, Liu JJ, et al. Availability, versatility, and viability of feedstocks for hydrogen production: product space perspective. Renew Sustain Energy Rev 2021;145:110843. https://doi.org/10.1016/ j.rser.2021.110843. [15] Genovese M, Fragiacomo P. Parametric technical-economic investigation of a pressurized hydrogen electrolyzer unit coupled with a storage compression system. Renew Energy 2021;180:502e15. https://doi.org/10.1016/ J.RENENE.2021.08.110. [16] Hassan IA, Ramadan HS, Saleh MA, Hissel D. Hydrogen storage technologies for stationary and mobile applications: review, analysis and perspectives. Renew Sustain Energy Rev 2021;149:111311. https://doi.org/10.1016/j.rser.2021.111311. [17] Zare Oskouei M, Mehrjerdi H. Optimal allocation of powerto-hydrogen units in regional power grids for green hydrogen trading: opportunities and barriers. J Clean Prod 2022;358:131937. https://doi.org/10.1016/ j.jclepro.2022.131937. [18] Yue M, Lambert H, Pahon E, Roche R, Jemei S, Hissel D. Hydrogen energy systems: a critical review of technologies, applications, trends and challenges. Renew Sustain Energy Rev 2021;146:111180. https://doi.org/10.1016/ j.rser.2021.111180. [19] Morgenthaler S, Dunzen J, Stadler I, Witthaut D. Three stages in the co-transformation of the energy and mobility sectors. Renew Sustain Energy Rev 2021;150:111494. https://doi.org/ 10.1016/j.rser.2021.111494. [20] Apostolou D, Xydis G. A literature review on hydrogen refuelling stations and infrastructure. Current status and future prospects. Renew Sustain Energy Rev 2019. https:// doi.org/10.1016/j.rser.2019.109292. [21] Zhang Y, Davis D, Brear MJ. The role of hydrogen in decarbonizing a coupled energy system. J Clean Prod 2022;346:131082. https://doi.org/10.1016/ j.jclepro.2022.131082. [22] Pyza D, Golda P, Sendek-Matysiak E. Use of hydrogen in public transport systems. J Clean Prod 2022;335:130247. https://doi.org/10.1016/j.jclepro.2021.130247. [23] Isaac N, Saha AK. Analysis of refueling behavior of hydrogen fuel vehicles through a stochastic model using Markov chain Process. Renew Sustain Energy Rev 2021;141:110761. https:// doi.org/10.1016/j.rser.2021.110761. [24] Parra D, Valverde L, Pino FJ, Patel MK. A review on the role, cost and value of hydrogen energy systems for deep decarbonisation. Renew Sustain Energy Rev 2019. https:// doi.org/10.1016/j.rser.2018.11.010. [25] de Miranda Pe V. Chapter 5.3 - utilization of hydrogen energy. In: Science and engineering of hydrogen-based energy technologies. Academic Press; 2019. p. 237e58. https://doi.org/10.1016/B978-0-12-814251-6.00012-5. [26] Kovac A, Paranos M, Marcius D. Hydrogen in energy transition: a review. Int J Hydrogen Energy 2021. https:// doi.org/10.1016/j.ijhydene.2020.11.256. [27] Iordache M, Schitea D, Iordache I. Hydrogen refuelling station infrastructure roll-up, an indicative assessment of the commercial viability and profitability in the Member States of Europe Union. Int J Hydrogen Energy 2017;42:29629e47. https://doi.org/10.1016/ j.ijhydene.2017.09.146.
+
+704
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 2 ( 2 0 2 4 ) 6 8 8 e7 0 4
+
+[28] Record number of new hydrogen stations in 2020. Fuel Cell Bull 2021;2021:1. https://doi.org/10.1016/S1464-2859(21) 00056-0.
+[29] Air Resources Board C. Annual evaluation of fuel cell electric vehicle deployment and hydrogen. Fuel Station Network Development; 2021.
+[30] California Fuel Cell Partnership. FCEV sales. FCEB, & Hydrogen Station Data; 2021. https://cafcp.org/by_the_ numbers. accessed August 30, 2021.
+[31] Xu C, Wu Y, Dai S. What are the critical barriers to the development of hydrogen refueling stations in China? A modified fuzzy DEMATEL approach. Energy Pol 2020;142:111495. https://doi.org/10.1016/j.enpol.2020.111495.
+[32] Greene DL, Ogden JM, Lin Z. Challenges in the designing, planning and deployment of hydrogen refueling infrastructure for fuel cell electric vehicles. ETransportation 2020;6:100086. https://doi.org/10.1016/j.etran.2020.100086.
+[33] Mayyas A, Mann M. Manufacturing competitiveness analysis for hydrogen refueling stations. Int J Hydrogen Energy 2019. https://doi.org/10.1016/j.ijhydene.2019.02.135.
+[34] Kluschke P, Nugroho R, Gnann T, Plotz P, Wietschel M, Reuter-Oppermann M. Optimal development of alternative fuel station networks considering node capacity restrictions. Transp Res D Transp Environ 2020. https://doi.org/10.1016/ j.trd.2019.11.018.
+[35] Genovese M, Fragiacomo P. Hydrogen refueling station: overview of the technological status and research enhancement. J Energy Storage 2023;61:106758. https:// doi.org/10.1016/j.est.2023.106758.
+[36] Caponi R, Ferrario AM, Bocci E, Bodker S, del Zotto L. Singletank storage versus multi-tank cascade system in hydrogen refueling stations for fuel cell buses. Int J Hydrogen Energy 2022;47:27633e45. https://doi.org/10.1016/ j.ijhydene.2022.06.100.
+[37] Wang Y, Wang S, Deces-Petit C. Less is more: robust prediction for fueling processes on hydrogen refueling stations. Int J Hydrogen Energy 2022;47:28993e9005. https:// doi.org/10.1016/j.ijhydene.2022.06.239.
+[38] Gecici E, Guler MG, Bilgic T. Multi-period planning of hydrogen refuelling stations using flow data: a case study for Istanbul. Int J Hydrogen Energy 2022;47:40138e55. https:// doi.org/10.1016/j.ijhydene.2022.08.068.
+[39] Brown T, Kisting H. Analysis of customer queuing at hydrogen stations. Int J Hydrogen Energy 2022;47:17107e20. https://doi.org/10.1016/j.ijhydene.2022.03.211.
+[40] Simunovic J, Pivac I, Barbir F. Techno-economic assessment of hydrogen refueling station: a case study in Croatia. Int J Hydrogen Energy 2022;47:24155e68. https://doi.org/10.1016/ j.ijhydene.2022.05.278.
+[41] Wang Y, Yuan H, Martinez A, Hong P, Xu H, Bockmiller FR. Polymer electrolyte membrane fuel cell and hydrogen station networks for automobiles: status, technology, and perspectives. Advances in Applied Energy 2021. https:// doi.org/10.1016/j.adapen.2021.100011.
+[42] Kurtz J, Bradley T, Winkler E, Gearhart C. Predicting demand for hydrogen station fueling. Int J Hydrogen Energy 2020;45:32298e310. https://doi.org/10.1016/ j.ijhydene.2019.10.014.
+[43] Wang Y, Deces-Petit C. Predicting fueling process on hydrogen refueling stations using multi-task machine learning. Int J Hydrogen Energy 2020;45:32743e52. https:// doi.org/10.1016/j.ijhydene.2020.08.281.
+[44] Kurtz J, Sprik S, Peters M, Bradley TH. Retail hydrogen station reliability status and advances. Reliab Eng Syst Saf 2020. https://doi.org/10.1016/j.ress.2020.106823.
+[45] Caponi R, Monforti Ferrario A, Bocci E, Valenti G, della Pietra M. Thermodynamic modeling of hydrogen refueling
+
+for heavy-duty fuel cell buses and comparison with aggregated real data. Int J Hydrogen Energy 2021;46:18630e43. https://doi.org/10.1016/ j.ijhydene.2021.02.224. [46] Bacquart T, Moore N, Storms W, Chramosta N, Morris A, Murugan A, et al. Hydrogen fuel quality for transport e first sampling and analysis comparison in Europe on hydrogen refuelling station (70 MPa) according to ISO 14687 and EN 17124. Fuel Communications 2021;6:100008. https://doi.org/ 10.1016/j.jfueco.2021.100008. [47] Samuelsen S, Shaffer B, Grigg J, Lane B, Reed J. Performance of a hydrogen refueling station in the early years of commercial fuel cell vehicle deployment. Int J Hydrogen Energy 2020. https://doi.org/10.1016/j.ijhydene.2020.08.251. [48] NREL. Next generation hydrogen station composite data Products: retail stations. 2020. https://www.nrel.gov/ hydrogen/infrastructure-cdps-retail.html. accessed February 3, 2020). [49] Sprik S, Murphy D, Kuroki T, Terlip D, Eichman J, Penev M, et al. Hydrogen Station Capacity Evaluation (HySCapE). NREL n.d. https://openei.org/apps/hyscape/#about (accessed February 10, 2021). [50] Reddi K, Elgowainy A, Sutherland E. Hydrogen refueling station compression and storage optimization with tubetrailer deliveries. Int J Hydrogen Energy 2014;39:19169e81. https://doi.org/10.1016/j.ijhydene.2014.09.099. [51] Mesa C, Forest L, Niguel L, Motor T, Corporation C, Ramon S, et al. Cal State LA opens largest US university hydrogen station. Fuel Cell Bull 2014:7e8. https://doi.org/10.1016/ s1464-2859(14)70169-5. [52] Cal State LA. Cal state LA hydrogen research and fueling facility (H2 station) - equipment. 2021. https://www. calstatela.edu/ecst/h2station/equipment. accessed September 1, 2021). [53] Society of Automotive Engineers (Sae). Sae j2601(2016): fueling protocols for light duty gaseous hydrogen surface vehicles. 2016. [54] Piraino F, Blekhman D, Dray M, Fragiacomo P. Empirically verified analysis of dual pre-cooling system for hydrogen refuelling station. Renew Energy 2021. https://doi.org/ 10.1016/j.renene.2020.10.004. [55] Waive car - cal state LA. 2021. http://www.calstatela.edu/ parking/waivecar. accessed February 10, 2021. [56] Genovese M, Blekhman D, Dray M, Fragiacomo P. Improving chiller performance and energy efficiency in hydrogen station operation by tuning the auxiliary cooling. Int J Hydrogen Energy 2021;47:2532e46. https://doi.org/10.1016/ j.ijhydene.2021.10.156. [57] Genovese M, Blekhman D, Xie C, Dray M, Fragiacomo P. Assuring pulsation-free flow in a directly pressurized fuel delivery at a retail hydrogen station. Int J Hydrogen Energy 2018;43:16623e37. https://doi.org/10.1016/ j.ijhydene.2018.07.024. [58] Genovese M, Blekhman D, Dray M, Fragiacomo P. Hydrogen station in situ back-to-back fueling data for design and modeling. J Clean Prod 2021;329:129737. https://doi.org/ 10.1016/j.jclepro.2021.129737. [59] Genovese M, Blekhman D, Dray M, Fragiacomo P. Hydrogen losses in fueling station operation. J Clean Prod 2020;248:119266. https://doi.org/10.1016/ j.jclepro.2019.119266. [60] Reddi K, Elgowainy A, Rustagi N, Gupta E. Impact of hydrogen SAE J2601 fueling methods on fueling time of light-duty fuel cell electric vehicles. Int J Hydrogen Energy 2017;42:16675e85. https://doi.org/10.1016/ j.ijhydene.2017.04.233.
+
+

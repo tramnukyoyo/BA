@@ -1,0 +1,890 @@
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+Available online at www.sciencedirect.com
+ScienceDirect
+
+journal homepage: www.elsevier.com/locate/he
+
+Development of strategic hydrogen refueling station deployment plan for Korea
+Hyunjoon Kim, Myungeun Eom, Byung-In Kim*
+Department of Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Pohang, Gyeongbuk, 37673, Republic of Korea
+
+highlights
+ The nationwide hydrogen refueling station deployment problem (RSDP) is introduced.  To handle the multi-objectiveness, RSDP is solved lexicographically.  Three mathematical models for the RSDP are developed.  The results of station deployment plan for the years 2022e2040 are presented.
+
+article info
+Article history: Received 24 February 2020 Received in revised form 17 April 2020 Accepted 27 April 2020 Available online 7 July 2020
+Keywords: Hydrogen refueling stations Facility location problem Mixed integer programming Republic of Korea's annual hydrogen refueling station deployment plan
+
+abstract
+The Republic of Korea government has set yearly targets of hydrogen cars and buses and plans to install hydrogen refueling stations nationwide. This paper proposes a methodology for developing a strategic deployment plan with three mathematical models. For a given target, future refueling demand locations and amount from general road and expressway are systematically estimated. First, the required number of refueling stations to satisfy the target covering ratio of the total demand set by the government is determined by the Station number determination model. Next, the locations of the capacitated stations and the allocation of demand to the stations are determined by the second Max cover and the third p-median models. Since the max covering is more important than minimizing the travel time, the two models are used sequentially. The nationwide hydrogen station deployment plan for the years 2022e2040 obtained by the proposed methodology is reported.
+© 2020 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+Introduction
+Due to population and economic growth over the past decades, the vehicle ownership rate and traffic demand have increased. This has led to an intensification of air pollution caused by fossil fuel vehicles and the greenhouse gas
+
+emission problem. Much attention has turned to alternativefuel vehicles, which serve the purpose of conventional vehicles while reducing the emission of exhaust gases. Recently, interest in hydrogen fuel cell vehicles (HFCVs) has begun to rise as the development of this technology has accelerated.
+Although HFCVs have many benefits, such as no emissions, short charging time, and long driving distance, there is a
+
+* Corresponding author. E-mail addresses: dnwjd2355@postech.ac.kr (H. Kim), meeom@postech.ac.kr (M. Eom), bkim@postech.ac.kr (B.-I. Kim).
+https://doi.org/10.1016/j.ijhydene.2020.04.246 0360-3199/© 2020 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+19901
+
+barrier for HFCVs to become more popular: a lack of charging station infrastructure. The construction cost of one hydrogen refueling station (HRS) is approximately 1.5e3.0 million US dollars, which is ten times higher than that of a gas station [1e3]. Due to high installation costs, the government can only afford to place a limited number of HRSs. However, potential consumers of HFCVs tend to only buy them when there is a sufficient number of HRSs. Many researchers call this problem the "chicken-and-egg problem" [4]. Due to these intricate issues, the location problem for HRSs is critical.
+The strategic deployment problem for charging stations has been studied for several decades. Detailed assumptions and constraints vary, but most proposed models for the refueling station deployment problem (RSDP) fit into one of three categories: the p-median model, the covering model, or the flow-refueling location model (FRLM). The p-median model, which is a node-based demand model, determines the locations for p facilities and allocates demand nodes to them to minimize the total weighted distance between facilities and matched demand nodes [5]. The covering model focuses on the coverage, which is usually evaluated by the distance or travel time between demand nodes and refueling stations [6]. The FRLM is a path-based demand model that deploys p refueling stations to maximize the traffic flow between origindestination (OeD) pairs where refueling can occur given the limited driving range of alternative-fuel vehicles [4]. These three types of models have been used with different assumptions, and detailed explanations are as follows.
+The p-median model requires that all demands are allocated to a facility, whereas the FRLM is a modified version of the max covering model. To satisfy all charging demands, some researchers have assumed that the charging stations have infinite capacity, or the number of total alternative-fuel charging stations is not limited. For example, Nicholas and Odgen [7] assumed that all existing gasoline stations are candidates for uncapacitated HRSs, while Itaoka et al. [8] defined every 1 km square grid area as a candidate site for uncapacitated HRSs. Some researchers have used slightly different approaches from the p-median model. Lin et al. [9] developed the "fuel-travel-back model", which is a variant of the p-median model, based on vehicle miles traveled as the demands instead of population.
+The covering model is divided into two categories, the set covering model and the maximal covering model [6]. The set covering model determines the minimum number and the location of stations to cover all demands. For example, the STREET model developed by Stephens-Romero et al. [10] minimizes the number of stations to guarantee that all demands reach at least one station within an acceptable travel time and capacitated set covering models have been applied to locate the electric bus charging stations [11,12]. The maximal covering model maximizes the covered demand when the number of stations is given [13]. Example includes the Frade et al. [14] model to determine the location and capacity of the stations considering residential and workplace distinctively.
+The FRLM was proposed by Kuby and Lim [4] based on the flow-capturing location model (FCLM), considering additional constraints related to the limited driving range of alternative-
+
+fuel vehicles and the scarcity of refueling facilities. Demand information for all OeD pairs is required to employ the FRLM. There have been several extensions of the FRLM. The original FRLM was essentially an uncapacitated model, but Upchurch et al. [15] developed a capacitated flow-refueling location model (CFRLM) by introducing station capacities. Kim and Kuby [16] developed the deviation-flow refueling location model (DFRLM) by considering the willingness of drivers to deviate from their shortest paths to refuel vehicles and complete their trips, and Yildiz et al. [17] generalized DFRLM considering routing aspects of individuals. To overcome the computational burden required to generate the feasible combinations of refueling stations, Capar and Kuby [18] proposed a modified formulation for FRLM that does not require pre-generation of feasible station combinations. The FRLM has been employed to expressways [15,19], metropolitan areas [20e22], and highway and urban networks simultaneously [23,24].
+Apart from the model types for the RSDP, the assumptions of the problem are critical from a practical perspective. Some assumptions are related to the type of alternative-fuel. HFCVs, which our study focuses on, can achieve long driving distances and fast refueling time. Some researchers interpreted this property as capacity or the fuel type not being of concern for HRSs and then considered only one type of refueling station with an infinite capacity [7,8,20]. However, the assumption of infinite capacity is not realistic since the production and delivery of hydrogen from hydrogen production plants to HRSs, are limited. Another assumption regarding the maximum driving range of vehicles is also notable. Many studies assumed a reasonable driving range of HFCVs considering safety and driver error [20,22] or some tolerance for driving time to the nearest station from drivers' homes [7,8]. If the average driving speed per vehicle varies greatly from region to region, considering tolerance for driving time instead of tolerance for driving distance can be more realistic.
+Defining demand sources and candidate sites is another key point for practical implementation. In the RSDP, it is mandatory to define demand sources and candidate sites. Demand sources are representative locations where demand for refueling occurs, and candidate sites represent locations that are suitable for installing refueling stations on. Candidate sites are usually defined in correspondence with the definition of demand sources. Many studies considering node-based demand defined centers of census tracts as demand sources and estimated the demand of each node using population data or other data, such as the number of cars per household [7,14]. Despite the same definition for demand sources, Nicholas and Ogden [7] and Frade et al. [14] respectively defined existing gasoline stations and parking spaces as candidate sites. Other definitions, including 1 km square grids of the study area [8] and service plazas [25], have been used for demand sources. For the case of studies considering path-based demand, defining demand sources is the same as defining origins and destinations because the demand occurs on each OeD path. Many researchers defined capital cities or major junctions in their networks as origin and destination nodes and used traffic flow data to estimate the demand [15,19e22]. As Chung and Kwon [19] developed a case study for the
+
+19902
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+expressway, they treated existing tollgates as candidate sites. In general, definitions of demand sources and candidate sites used for RSDP are not sufficient to reflect reality because candidate sites for alternative-fuel refueling stations should be representative and accessible. To overcome this practical issue, the authors define representative places as candidate sites for refueling stations; a more detailed discussion about this is in Section Data.
+Unlike other studies, the purpose of our study is to propose an optimized plan for locating HRSs throughout the country. To the best of our knowledge, there have been no studies dealing with the characteristics of the general road, expressway, and bus refueling stations at the same time. Most researchers have proposed refueling station deployment methods for either general road networks [7e9,14,17,21] or expressway networks [15,19]. In recent years, there have been various studies dealing with general road and expressway networks simultaneously [22,24], but they focused on the subsection of the entire networks considering realistic factors, such as driver behaviors near expressway entrances and exits. For bus refueling stations, the electric bus charging station location problem has been studied considering operational factors, such as dwell times of buses and bus routes [11,12,26,27]. Since the purpose of this study is to establish a nationwide guideline for installing HRSs, detailed aspects such as detouring, bus operations, or site costs are not considered. For a nationwide optimized deployment plan, this paper proposes deployment optimization algorithm (DOA), composed of three mathematical models. The first mathematical model, the Station number determination model, determines the required number of general road, expressway, and bus HRSs to satisfy the target covering ratio of the total demand set by the government. Then capacitated stations are strategically located and allocation of demand to them are determined by the Max cover and the p-median models.
+Furthermore, the authors attempt to achieve realistic results by choosing representative locations for candidate sites as well as demand sources, which are administrative office buildings for general roads, gas stations located in rest areas for expressways, and bus garages for bus RSDPs. Besides, the authors assume that refueling stations have finite capacity because infinite capacity is not realistic, as explained earlier. Since capacitated refueling stations cannot cover all demands, the Max cover model is employed to maximize the number of assigned HFCVs, and the p-median model to minimize the total travel time between assigned vehicles and refueling stations. Since the max covering is more important than minimizing the travel distance, the two models are used sequentially. Contrary to other models, our model also reduces the travel time between demand sources that are not covered and the nearest candidate sites. The authors believe that this can provide more reasonable results from a practical perspective.
+This study is dedicated to finding the optimal locations for HRSs nationwide based on the Korean government's policies. The government of the Republic of Korea announced a policy titled "Roadmap for Activating the Hydrogen Economy" in January 2019 [28]. The authors attempt to solve the HRS location problem following the government's plan regarding the supply of HFCVs and
+
+specifications of HRSs. However, the proposed approach can be used for other countries as well.
+The remainder of this paper is organized as follows. In Section Problem Description and Methodology, the authors define the hydrogen RSDP mathematically and describe the proposed DOA, composed of three mathematical models. A detailed explanation of how to collect data and estimate parameter values is provided in Section Data. The numerical results obtained using a commercial mathematical model solver, CPLEX, with the above approach are presented in Section Computational Results. Finally, conclusions are drawn in Section Conclusion.
+Problem description and methodology
+The government of the Republic of Korea requires an efficient deployment plan for HRSs to expedite the use of HFCVs. Due to the high installation cost of HRSs, it is challenging to install sufficient refueling stations simultaneously. Hence, a limited number of HRSs are initially installed. It is vital to determine how many and where to install HRSs because a limited number of stations cannot accommodate all HFCVs. In this study, the required number of HRSs is determined and strategically placed to maximize the number of HFCVs covered and to minimize the sum of the travel time between vehicles and refueling stations. The government has announced the planned cumulative number of HFCVs for 2022, 2030, and 2040. From 2022 to 2040, HRSs will be installed cumulatively. In other words, if an HRS is selected to be installed, that station must be continuously selected thereafter. For example, if a candidate site a2J is selected to install an HRS in 2022, the candidate site a will have to be selected in 2030 and 2040 as well.
+To develop an efficient strategic HRS deployment plan, the authors propose a DOA, shown in Fig. 1, consisting of demand estimation and three mathematical models. The output of each module is set to an input of its following module. The future refueling demand location and amount are estimated in the demand estimation module. A detailed explanation of the demand estimation module is described in Section Data. Next, the required number of refueling stations to satisfy the target covering ratio of the total demand is determined by the Station number determination model. For the given number of stations, Max cover and p-median models determine the location of the capacitated stations and the allocation of demand to them. Since the max covering is more important than minimizing the travel distance, the two models are used sequentially. The result from the p-median model gives the final solution.
+The HRS deployment plan was handled by separating the buses from other vehicles (passenger cars, taxis, trucks) since bus refueling is considered separately in Korea. Both intra-city and inter-city buses refuel at stations near bus garages, which are not accessible by other vehicles. In addition, the distance between any cities is short enough to be covered by a single refueling. Since a hydrogen bus can travel 210 km with 5 kg of hydrogen and has a capacity of up to 21 kg of hydrogen, its possible driving distance is longer than 800 km [28]. The fact that the distance between the farthest bus garages in Korea is
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+19903
+
+Fig. 1 e Whole procedure of deployment optimization algorithm.
+
+551 km, the assumption of no bus refueling demand in the expressway problem is valid. Since refueling on general roads and expressways depend on factors, such as refueling demand sources, candidate sites, and average speed, this research divides the nationwide demand into general road and expressway and solves the deployment plans for both problems.
+This paper uses the DOA independently on general roads, expressways, and bus HRSs. Although the three kinds of demand are addressed separately, the DOA can be adopted nationwide as policy managers can make decisions by experimenting Station number determination model with different target cover ratios for the three kinds of demand. These three mathematical models of the DOA are described in detail below.
+An HRS is a complete unit of standard capacity on a parcel. It is assumed that one or multiple HRSs can be installed at one candidate site. An HFCV can only be refueled at an HRS that can be reached within a specific time R from the demand source. Let aij be 1 if tij is within R, where tij is the time to travel from demand source to candidate site. The authors assume that there is a parameter S, which is the travel time restriction between uncovered HFCVs and the nearest HRS. Even if some HFCVs cannot be covered by HRSs due to their capacity limit, there must be at least one HRS that can be reached within travel time S. Let bij be 1 if tij is within S. The longer the distance to the refueling station, the more the drivers feel uncomfortable. The travel time restriction parameters such as R and S were used to reflect the behavior of potential customers [29].
+Station number determination model
+It is crucial to determine the minimum number of HRSs to be installed to satisfy the target cover criteria when all HFCVs cannot be covered within a limited budget. The Station number determination model determines the minimum number of required refueling stations to satisfy the target covering ratio of the total demand. The Station number determination is formulated as follows:
+Sets:
+I set of locations for demand sources, i2I J set of locations for candidate sites, j2J Ja set of locations for candidate sites that are already
+active or to be installed, j2Ja
+Parameters:
+Lj number of refueling stations already active or to be installed at candidate site, j2Ja.
+
+tij required travel time from demand source i to candidate site j
+Ei HFCVs (demand) of demand source i C capacity of hydrogen refueling station R travel time restriction between covered HFCVs
+and the refueling stations. Stravel time restriction between uncovered HFCVs and the nearest refueling station aij 1, if tij is within R; otherwise, 0 bij 1, if tij is within S; otherwise, 0 g target covering ratio
+
+Decision variables:
+
+xij number of vehicles at demand source i assigned to candidate site j.
+zj number of refueling stations to be installed at candidate site j
+
+Station number determination model
+
+P
+
+Minimize
+
+zj
+
+(1)
+
+j2J
+
+PP P
+
+s.t.
+
+xij ! Ei * g
+
+(2)
+
+i2I j2J
+
+i2I
+
+zj ! Lj
+
+j2Ja
+
+(3)
+
+xij Ei * aij
+P xij * aij Ei
+j2J
+P xij * aij Czj
+i2I
+P zj * bij ! 1
+j2J
+xij2Zþ; zj2Zþ
+
+i2I; j2J
+
+(4)
+
+i2I
+
+(5)
+
+j2J
+
+(6)
+
+i2I
+
+(7)
+
+i2I; j2J
+
+(8)
+
+The objective function (1) is to minimize the required number of refueling stations to be installed. Constraint (2) ensures that more than the ratio g of HFCVs are covered for HRSs to be installed. The ratio g can be given by the policy manager. Constraints (3) ensure that candidate sites that are already active or to be installed must be selected as HRSs. Constraints (4) indicate that an HFCV cannot be assigned to a candidate site that cannot be used due to travel time constraints. Constraints (5) ensure that at most Ei HFCVs can be assigned to candidate sites at the demand source i2I. Constraints (6) guarantee that the number of vehicles allocated to candidate site j2J cannot exceed the open station capacity. Constraints (7) guarantee that all HFCVs, including uncovered ones, must be within travel time S of an installed station. Constraints (8) give non-negative integer restrictions.
+
+19904
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+Station location determination model
+Let N be the objective function value of the solution obtained by solving the Station number determination model. Max cover and p-median models determine the location of the N capacitated stations and the allocation of demand to them. In general, a mathematical model's search for an optimal solution is accelerated if a good initial solution is provided. Hence, an initial construction algorithm is proposed, and the solution obtained from the algorithm is set as the initial solution of the Max cover model. Each model is represented as a mixed integer programming model.
+Initial solution construction algorithm The authors developed a greedy initial solution construction algorithm. The pseudo-code for the initial solution construction algorithm is shown in Algorithm 1. The following new set and variables are assigned for the initial solution construction algorithm. Each candidate site j2 J has a set of possible demand sources Ij, which consist of demand sources within time R. That is, Ij is defined as fi 2I j tij R for j 2Jg. Js is a set of candidate site indices selected to construct HRSs. NAVj and CVj are the number of available HFCVs and the number of HFCVs cumulatively assigned to candidate j, respectively. RVi is the number of unassigned HFCVs at demand source i. After the variables and set Js are initialized, the number of available HFCVs for each candidate site is calculated. The total number of HFCVs within a certain time R from the candidate site becomes the number of available HFCVs for the candidate site.
+The number of available HFCVs NAVj may be greater than the capacity of an HRS C. After calculating the number of available HFCVs NAVj for all candidate sites, the candidate site j* that has the highest number of available HFCVs is designated as an HRS to be installed. After this candidate site is selected, vehicles are assigned to the site in ascending distance order until the capacity of the site is reached.
+If the number of selected HRSs jJsj is less than the planned number of HRSs N and there are unassigned HFCVs
+
+remaining, the above selection process is repeated. The solution obtained from this greedy algorithm is the initial solution to be used in the next mathematical model.
+
+Max cover model As mentioned above, to handle the multi-objectiveness, the authors solve the problem lexicographically by solving Max cover and p-median models sequentially. With the additional decision variables below, the Max cover model is formulated as follows:
+wi ¼ 1, if demand source i cannot reach any installed site within time S; otherwise, 0. Max cover model
+
+PP
+
+P
+
+Maximize
+
+xij À M* wi
+
+(9)
+
+j2J i2I
+
+i
+
+s.t.
+
+CPonstraints (3)e(6), (8)
+
+zj*bij ! 1 À wi
+
+i2I
+
+(10)
+
+j2J
+
+P
+
+zj N
+
+(11)
+
+j2J
+
+wi2f0; 1g
+
+i2I
+
+(12)
+
+The objective function (9) is to maximize the number of covered HFCVs as well as to minimize the number of demand sources that cannot be reached to any installed site within timPe S. M is a large number and is set to the total demand Ei. Constraints (3)e(6) and (8) in the Station
+i2I
+number determination model are also contained in Max cover model. Constraints (10) classify the demand sources according to whether any installed site can be reached with travel time S or not. Constraint (11) ensures that at most N HRSs can be installed. Constraints (12) give binary variable restrictions.
+
+p-medianPmoPdel
+
+Let K be
+
+xij of the solution obtained by solving the Max
+
+j2J i2I
+
+cover model. The p-median model is as follows:
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+19905
+
+p-median model
+
+Minimize s.t.
+
+PP
+
+P
+
+tijxij þ M* wi
+
+j2Ji2I
+
+i
+
+CPonPstraints (3)e(6), (8), (10)e(12) xij ! K
+j2J i2I
+
+(13) (14)
+
+The objective function (13) is to minimize the sum of the travel time between HFCVs and HRSs, taking into account the penalties as in the Max cover model. Constraints (3)e(6), (8), and (10)e(12) in the Max cover model are also contained in the p-median model. Constraint (14) guarantees that the number of covered HFCVs obtained from the p-median model is greater than the first term of the objective function value of the Max cover model. It ensures that the solution of the pmedian model cannot be worse than that of the Max cover model.
+
+Data
+Policy makers taking the decisions on the location of the general road, expressway, and bus HRSs need to consider different factors, such as demand sources, candidate sites, and driving time constraints. Therefore, the entire location problem is separated into three subproblems and solution methods are developed considering the characteristics of each subproblem. This section explains how the authors collected and organized the data and estimated parameter values, which forms the input to solve the RSDP.
+In 2019, the Republic of Korea government announced the "Roadmap for Activating the Hydrogen Economy" and "Plans for Hydrogen Infrastructure and Refueling Stations" [1,28] per which the government has set targets for the cumulative supply of HFCVs for the years 2019, 2022, 2030, and 2040, as listed in Table 1.
+The parameters should be estimated separately for each sub-problem because they are specific to the attributes of the sub-problem. The data estimation for general road, expressway, and bus RSDPs are explained in detail in Sections Data for general road RSDP, Data for expressway RSDP, Data for bus RSDP, respectively. Even though the details vary, the main concept is to split the expected total supply of HFCVs into several sub-regions by using factors that can express the number of vehicles in these regions.
+Data for general road RSDP
+For the general road system, the authors defined the 3,490 government administrative office buildings as demand sources
+
+Table 1 e Target cumulative numbers of HFCVs.
+
+Year
+
+2019
+
+2022
+
+2030
+
+2040
+
+Passenger Cars Taxis Buses Trucks
+
+6,395
+
+65,000 2,000
+
+810,000 10,000 20,000 10,000
+
+2,750,000 80,000 40,000 30,000
+
+and distributed the planned number of HFCVs for each year in Table 1 to the office buildings proportionally. Using individual cars' precise locations as demand source points is ideal, but it is impossible to locate all cars in advance. Who will buy hydrogen cars in the future is not known. Thus, the authors treated each administrative area as a group and defined administrative office buildings as demands sources. A single administrative office building, per sub-municipal-level region, is established by the government considering accessibility and floating population and it is reasonable to define them as demand sources.
+To distribute (or estimate) the number of HFCVs at submunicipal-level regions, the authors used the information on current vehicle registration statistics [30] and population distribution [31]. Using proportions of the collected data, the number of HFCVs per provincial-level region, municipal-level region, and sub-municipal-level region were estimated in sequence. The estimated numbers of hydrogen passenger cars, taxis, and trucks are then converted to hydrogen passenger cars by using the annual hydrogen consumption amount (Table 2). For example, 100 taxis were converted to 100 Â 00::1851z540 passenger cars.
+For the first step, the number of HFCVs per provincial-level region was estimated by multiplying the distribution rate of each provincial-level region with the total planned supply of HFCVs in Table 1. The distribution rate, ratedistribution, represents the ratio of HFCV supply per provincial-level region to the total HFCV supply. It was calculated by a linear function of vehicle registration rate; rateveh, and population rate, ratepop, based on the government's policy. Eq. (17) was used to calculate the supply rates.
+
+ratedistribution ¼ 0:5 Â rateveh þ 0:5 Â ratepop
+
+(17)
+
+By dividing each provincial-level region's HFCV number in
+
+proportion to the number of registered vehicles per
+
+municipal-level region, the number of HFCVs per municipal-
+
+level region was estimated. After that, the number of HFCVs
+
+per sub-municipal-level region was estimated by dividing
+
+each municipal-level region HFCV number in proportion to
+
+the population per sub-municipal-level region. For example,
+
+suppose that 1,200 out of 65,000 HFCVs were assigned to a
+
+municipal-level region X. Assume that X consists of A, B, and C
+
+sub-municipal-level regions and the populations of A, B, and C
+
+are 40,000, 25,000, and 35,000, respectively. In this case, the
+
+number of HFCVs for region A is estimated as 1;200 Â
+
+40;000 40;000þ25;000þ35;000
+
+¼
+
+480.
+
+Similarly,
+
+the
+
+number
+
+of
+
+HFCVs
+
+for
+
+re-
+
+gions B and C are estimated as 300 and 420.
+
+Similar to defining administrative office buildings as demand
+
+sources, the authors defined administrative office buildings as
+
+Table 2 e Average annual miles per vehicle and hydrogen consumption by vehicle type (H2Korea [32]).
+
+Vehicle Average annual miles Annual hydrogen
+
+type
+
+per vehicle (104 km) consumption (ton/year)
+
+Passenger
+
+1.4
+
+0.15
+
+car
+
+Taxi
+
+8.0
+
+0.81
+
+Truck
+
+5.8
+
+5.0
+
+Bus
+
+9.7
+
+9.7
+
+19906
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+candidate sites for installing HRSs. In addition, the authors added HRSs that have already been or will be constructed as candidate sites. The authors estimated the maximum number of HFCVs that each station can serve per day, C, which is a parameter for the mathematical models by using the specifications of HRSs and HFCVs. The specifications of HRSs, including capacity, operating hour, and operation rate, were determined by the government's policy. The operation rate is the estimated utilization level. The properties of HFCVs, such as refueling amount and maximum driving distance for 5 kg of hydrogen, were assumed to be the same as those of the Nexo HFCV, which is a typical HFCV model in the Republic of Korea.
+Table 3 shows the specifications of general road HRSs. To estimate the maximum number of HFCVs that each station can serve per day, the maximum number of HFCVs refueled at one station per day and refueling period were estimated. The maximum number of HFCVs that can be refueled at one station per day was calculated by multiplying the maximum number of HFCVs that a station can hold per hour with given operating hours. The maximum number of HFCVs that a station can hold per hour was calculated by dividing the capacity of the station by operating hours and refueling amount. The refueling period was estimated using the average driving distance of a vehicle in a day and the maximum driving distance from 5 kg of hydrogen. According to statistics from the Korea Transportation Safety Authority, the average driving distance of a vehicle in a day was 39.2 km in 2018 [33]. Because a vehicle can drive 500 km between refueling, each vehicle can be thought of as being refueled once every 12.31 days. With the above values, the maximum number of HFCVs that each station can serve per day was estimated by multiplying the maximum number of vehicles refueled at one station per day, refueling period, and operation rate. For the 2022 case, it was calculated as 50 (maximum number of vehicles refueled at one station per day) Â 12.31 (refueling period) Â 0.8 (operation rate)y492. Similarly, the maximum numbers of vehicles that each station can cover were estimated for the 2030 and 2040 cases.
+In Section Problem Description and Methodology, it was assumed that HFCVs could be refueled at stations that can be driven to within a certain time limit. For this constraint, it is necessary to estimate traveling time from demand sources to candidate sites, which can be calculated as traveling distance
+
+Table 3 e Specifications of general road HRSs for the years 2022, 2030, and 2040.
+
+Specification
+
+2022 2030 2040
+
+Capacity of a station (kg/day) Operating hours (h) Refueling amount (kg) Maximum number of HFCVs that a
+station can hold per hour Maximum number of HFCVs that
+can be refueled per day Maximum driving distance with
+5 kg of hydrogen (km) Refueling period (days) Operation rate Maximum number of HFCVs that a
+station can serve per day
+
+250 10 5 5
+50
+500
+12.31 0.8 492
+
+1,620 18 5 18
+324
+500
+12.31 0.9 3,587
+
+2,160 18 5 24
+432
+500
+12.31 0.9 4,782
+
+divided by average vehicle speed. The authors assumed Euclidean distance for traveling distance and calculated it using the latitudes and longitudes of administration offices. For average vehicle speed, the authors referred to the traffic census of each provincial-level region and assumed it to be 60 km/h for the regions without any available data. Using the above data, the traveling time for every demand sourceecandidate site pair was estimated. Referring to Itaoka et al. [8], the authors assumed that HRSs could cover vehicles located within a 15 min driving time.
+Data for expressway RSDP
+
+Like the general road RSDP, demand source was determined
+
+considering data that can be used to estimate the number of
+
+HFCVs on the expressway. It was assumed that HRSs could be
+
+constructed at the gas stations in the rest areas; hence these
+
+were defined as demand sources and candidate sites. For
+
+estimating the number of HFCVs per demand source, the total
+
+number of HFCVs using each expressway was estimated. The
+
+authors collected the number of vehicles by highway route
+
+from a traffic volume survey [34]. If a vehicle uses multiple
+
+highway routes, it is counted multiple times. The sum of
+
+collected data can be interpreted as the average number of
+
+vehicles using an expressway per day. Given the total supply
+
+of HFCVs for general roads, Ngeneral, the number of HFCVs using
+
+the expressway Nexpressway, was calculated by (18).
+
+P
+
+Nexpressway ¼ Ngeneral Â
+
+l Vl RV
+
+(18)
+
+(Vl: daily traffic volume on the highway route l, and RV: total registered vehicles).
+Contrary to the general road system, vehicles cannot access HRSs that are located on different highway routes from their current ones on an expressway. Therefore, there is eligibility between demand sources and candidate sites. It is necessary to estimate the number of HFCVs for each highway route, Nl. The number of HFCVs for each highway route was estimated by (19).
+
+Nl
+
+¼
+
+Nexpressway
+
+Â
+
+PVl l Vl
+
+(19)
+
+On each highway route, the number of HFCVs for demand sources was estimated. Because the demand sources are defined as gas stations in rest areas, the proportion of vehicles using a demand source to the total vehicles traveling on the highway route can be estimated from sales data of gas stations. Formula (20) was used to calculate the number of HFCVs for each demand source, Nd.
+
+Nd ¼ Nl Â PSdldSdl
+
+(20)
+
+(Sld : sales of gas station located at d on the highway route l). Each year, most specifications of expressway HRSs are the
+same as those of general road HRSs in 2022 but with different station capacities, as shown in Table 4. The maximum number of HFCVs that each station can serve per day was estimated in the same way as that for general road HRSs.
+Like with general roads, Euclidean distance was employed to calculate the traveling distance between demand sources and candidate sites. However, the authors assumed that HFCVs
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+19907
+
+Table 4 e Specifications of expressway HRSs for the years 2022, 2030, and 2040.
+
+Specification
+
+2022 2030 2040
+
+Capacity of a station (kg/day) Operating hour (h) Maximum number of HFCVs that a
+station can hold per hour Refueling amount (kg) Maximum driving distance with
+5 kg of hydrogen (km) Refueling period (day) Maximum number of HFCVs that
+can be refueled per day Operation rate Maximum number of HFCVs that a
+station can serve per day
+
+250 10 5
+5 500
+12.31 50
+0.8 492
+
+500 10 5
+5 500
+12.31 324
+0.9 1,107
+
+500 10 5
+5 500
+12.31 432
+0.9 1,107
+
+Table 5 e Specifications of bus HRSs for the years 2022, 2030, and 2040.
+
+Specification
+
+2022 2030 2040
+
+Capacity of a station (kg/day) Operating hour (h) Maximum number of hydrogen buses
+that a station can hold per hour Refueling amount (kg) Maximum driving distance with 5 kg of
+hydrogen (km) Refueling period (day) Maximum number of hydrogen buses
+that can be refueled per day Operation rate Maximum number of hydrogen buses
+that a station can serve per day
+
+1,134 18 3
+21 210
+0.78 54
+0.8 34
+
+2,646 18 7
+21 210
+0.78 126
+0.9 88
+
+3,780 18 10
+21 210
+0.78 180
+0.9 139
+
+could be refueled at stations that are located within 50 km from demand sources on an expressway rather than after 15 min. The reason for assuming a different driving tolerance from general roads is due to the characteristics of expressways, where relatively less fuel is consumed, and vehicles can drive longer distances. Furthermore, candidate sites, which are defined as gas station in rest areas, are far away from each other.
+Data for bus RSDP
+For bus HRSs, existing bus garages were defined as demand sources and candidate sites because buses are refueled at their designated bus garages, and all buses are assigned to more than one bus garage in the current system. Bus garage information containing municipal-level addresses of bus garages and the number of intra-city and inter-city buses using each bus garage was available. Using the bus garage information and population per municipal-level region, the number of hydrogen buses was estimated as the demand of HFCVs per provincial-level region.
+For preprocessing, the number of hydrogen buses per municipal-level region was estimated by dividing the number of hydrogen buses per provincial-level region proportional to the population per municipal-level region. Next, the number of hydrogen buses per municipal-level region for each demand source was split in proportion to the number of buses using the demand source.
+Table 5 lists the specifications of bus HRSs. The maximum number of hydrogen buses that each station can serve per day was estimated in the same way as that for general road HRSs.
+Computational results
+To deploy HRSs countrywide, the problems of general road, expressway, and bus HRSs have been considered and solved. The government has announced the planned cumulative number of HFCVs for 2022, 2030, and 2040. As described in Section Problem Description and Methodology, there is a specific value S, which is the travel time restriction between uncovered HFCVs and candidate sites that have been chosen to install HRSs and is set to max min tij. For general road,
+i2I j2J
+expressway, and bus HRSs, S was set to 23 min, 66 km, and
+
+42 km, respectively. The IBM ILOG CPLEX 12.8 library in Cþþ
+
+was used to solve the mixed-integer programming models.
+
+The computation time was limited to 3,600 s for the Station
+
+number determination model and 1,800 s for each of the Max
+
+cover and p-median models.
+
+Currently, 86, 8, and 1 HRSs are either already installed or
+
+being constructed on the general road, expressway, and bus
+
+HRSs, respectively, in 2019 [32]. By using these values as input
+
+data for 2022, the Station number determination model was
+
+used to calculate the number of HRSs required each year. The
+
+optimality gap (%) of the Station number determination model
+
+was
+
+calculated
+
+as
+
+Best Objective valueÀLower bound Best Objective value
+
+Â
+
+100ð%Þ.
+
+The
+
+values of HRSs listed in Table 6 are those required to accom-
+
+modate all HFCVs by HRSs (g¼1.0). For the expressways, the
+
+authors could find optimal solutions for all cases. In the case
+
+of general roads, the optimality gaps in 2022, 2030, and 2040
+
+are 2.52%, 2.38%, and 1.29%, respectively. In the case of bus
+
+HRSs, the optimality gaps in 2022, 2030, and 2040 are 2.50%,
+
+1.17%, and 1.03%, respectively. These results seem economi-
+
+cally infeasible because the installation cost of HRSs is very
+
+high. Thus, g is set to 0.9, which means the numbers of sta-
+
+tions that cover more than 90% of HFCVs will be calculated;
+
+Table 7 lists the results. Except for bus HRSs in 2022 and 2030,
+
+Table 6 e The determined number of HRSs by the Station number determination model with g ¼ 1:0 (* represent optimal solutions).
+
+Year
+
+2022
+
+2030
+
+2040
+
+General roads
+
+277
+
+Expressways
+
+72*
+
+Bus refueling stations
+
+127
+
+432
+
+924
+
+74*
+
+101*
+
+283
+
+369
+
+Table 7 e The determined number of HRSs by the Station number determination model with g ¼ 0.9 (* represent optimal solutions).
+
+Year
+
+2022
+
+2030
+
+2040
+
+General roads Expressways Bus refueling stations
+
+186* 58* 69
+
+337* 60* 212
+
+801* 79* 291*
+
+19908
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+Table 8 e Parameters for each HRSs in 2022.
+
+Specification
+
+General Expressway Bus
+
+road
+
+station refueling
+
+station
+
+station
+
+Capacity of an HRS (kg/day) Refueling station conditions The maximum number of
+HFCVs (buses) that can be refueled per day The number of refueling stations
+
+250 15 min
+492
+186
+
+250 50 km
+492
+58
+
+1134 15 km
+34
+69
+
+Table 9 e Summary of results for year 2022.
+General Expressways Bus roads
+
+Total number of demand sources Total number of HRSs to be
+installed Total number of HFCVs ðTNhfcvÞ Total number of covered HFCVs
+ðTCNhfcvÞ within time Covered HFCV ratio ðTNhfcv=
+TCNhfcvÞ (%) Total sum of travel time (min) Average travel time (min) Optimality gap of the Max cover
+model (%) Computation time of the Max
+cover model (s) Optimality gap of the p-median
+model (%) Computation time of p-median
+model (s)
+
+3,490 186
+65,000 58,713
+90.3
+416,273 7.09 0.00
+1,335.0
+21.67
+1,803.5
+
+193 58
+1,767 1,678
+95.0
+28,317 16.88 0.00
+0.5
+0.00
+0.3
+
+402 69
+2,000 1,808
+90.4
+6,084 3.36 1.17
+1,801.1
+16.32
+1,803.4
+
+the authors could find optimal solutions for all cases. In the
+
+case of bus HRSs, the optimality gap in 2022 and 2030 are 4.43%
+
+and 0.68%, respectively.
+
+As discussed in the data estimation method described in
+
+Section Data, a total of 65,000 HFCVs and 2,000 hydrogen buses
+
+will be supplied by 2022. The parameters for general road,
+
+expressway, and bus HRSs are listed in Table 8. The capacity of
+
+a hydrogen station is 250 kg/day, which can accommodate up
+
+to 492 HFCVs per day, and the hydrogen bus HRSs can
+
+accommodate up to 34 hydrogen buses per day with a capacity
+
+of 1,134 kg/day.
+
+Table 9 summarizes the results for 2022. On general roads,
+
+HRSs were chosen to cover 58,713 of 65,000 HFCVs, with an
+
+average travel time of 7.09 min to the assigned HRS per
+
+vehicle. The optimality gap (%) of the Max cover model was
+
+calculated
+
+as
+
+Upper
+
+boundÀ Best Objective Best Objective value
+
+value
+
+Â 100ð%Þ, and the opti-
+
+mality gap (%) of the p-median model was calculated as
+
+Best Objective valueÀLower bound Best Objective value
+
+Â 100ð%Þ. It can be seen that the Max
+
+cover model gave an optimal solution, while with the p-me-
+
+dian model, there was an optimality gap of 21.67%. The Sta-
+
+tion number determination model showed that 277 HRSs
+
+must be installed to cover all 65,000 HFCVs, as shown in Table
+
+6. Considering this, the result of covering more than 90% of
+
+HFCVs using only 186 HRSs is reasonable.
+
+As explained in Table 7, the authors estimated the required
+
+number of HRSs for highway routes in 2022 as 58. On ex-
+
+pressways in 2022, HRSs were selected to cover 1,678 HFCVs,
+
+which is 95.0% of the total 1,767. The solution is optimal, i.e.,
+
+the optimality gap is 0%. The average travel distance is
+
+16.88 km.
+
+In the case of hydrogen bus HRS installation, a total of 2,000
+
+hydrogen buses will be used in 2022, and 69 bus HRSs will be
+
+selected from the nationwide bus garages. The bus HRSs were
+
+selected to accommodate 1,808 hydrogen buses, which is
+
+Fig. 2 e Locations of HRSs in 2022.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+19909
+
+Fig. 3 e Locations of HRSs in 2030.
+
+90.4% of the total 2,000, with an average travel distance of 3.36 km to the assigned bus HRS per vehicle.
+Figs. 2e4 graphically shows the locations of HRSs in 2022, 2030, and 2040, respectively obtained using the methodology. The general road, expressway, and bus HRSs are marked with blue, green, and red circles, respectively. In Figs. 2e4, Box 1 and Box 2 show the metropolitan areas of Seoul and Busan, respectively. Many refueling stations are placed in the two
+
+largest metropolitan areas having a dense population. Black circles represent the next big cities, such as Daegu, Daejeon, and Gwangju, where a reasonable number of refueling stations are located. Overall, refueling stations are spread across the country. Expressway stations are also widespread throughout the country, with several stations on the routes to and from the big cities. Box 3 represents Jeju Island, a famous tourist destination in Korea, where car rentals are the
+
+Fig. 4 e Locations of HRSs in 2040.
+
+19910
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+Table 10 e Summary of results for the years 2030 and 2040. 2030
+
+General roads Expressways
+
+Total number of demand sources Total number of HRSs to be installed Total number of HFCVs ðTNhfcvÞ Total number of covered HFCVs ðTCNhfcv Þ Covered HFCV ratio ðTNhfcv=TCNhfcvÞ(%) Total sum of travel time (min/km) Average travel time (min/km) Optimality gap of the Max cover model (%) Computation time of the Max cover model (s) Optimality gap of the p-median model (%) Computation time of the p-median model (s)
+
+3,490 336 1,196,670 1,077,460
+90.0 4,039,990 3.75 0.00 24.57 0.00 587.56
+
+193 60 22,018 20,937
+95.1 318,312 15.20 0.00 0.3 0.00 0.2
+
+Bus
+402 211 20,000 18,062
+90.3 21,868 1.21 0.24 1,801.1 8.80 1,800.3
+
+General roads
+3,490 801 4,176,670 3,757,620
+90.0 6,003,160 1.60 0.00 18.2 0.01 1,808.6
+
+2040
+Expressways
+193 78 74,753 69,311
+92.7 821,912 11.86 0.00 37.8 0.00 10.2
+
+Bus
+402 290 40,000 36,115
+90.3 29,351 0.81 0.01 1,804.6 4.77 1,802.3
+
+preferred mode of transportation. Hence the number of general road stations in Jeju Island is found to increase reasonably over the next twenty years.
+Table 10 shows that more than 90.0% of HFCVs can be covered yearly if the obtained candidate sites have HRSs, and the average travel time per vehicle tends to decrease over time. It means that when installing the HRSs cumulatively, the average travel time from demand source to refueling station is reduced, and the satisfaction of drives will increase. Then more people can use HFCVs.
+Conclusions
+The purpose of this study was to propose an optimized plan for deploying HRSs nationwide. The Republic of Korea has a supply plan for HFCVs for 2022, 2030, and 2040, successful implementation of which will require deploying HRSs strategically. Due to the high installation cost of HRSs, it is difficult to install a large number of them simultaneously, so a limited number of HRSs will be installed. The required number of HRSs that are planned to be installed can be obtained by solving the Station number determination model.
+In this study, the nationwide facility location problem was separated into three subproblems for each of general road, expressway, and bus HRSs, and each subproblem was solved independently with consideration of the characteristics of the three subnetworks. To efficiently deploy a limited number of HRSs, the authors developed the DOA for HRSs based on three mathematical models to estimate required data based on simple assumptions and logic. Although the three kinds of demand are addressed separately, the DOA is a nationwide methodology because the policy managers can make decisions by experimenting Station number determination model with different target cover ratios for the demand type.
+Moreover, the authors attempted to achieve realistic results with realistic assumptions, such as demand sources, candidate sites, and capacities of stations. With these assumptions, the authors used the Max cover and p-median models to maximize the number of allocated HFCVs to candidate sites while minimizing the total travel times between demand sources and assigned candidate sites. Contrary to other models, our model also reduces the travel time between demand sources that are not covered and the nearest
+
+candidate sites, and the results are more reasonable from a practical perspective since the travel time is a sensitive and important factor for drivers.
+Because the data used in the proposed methodology was estimated with simple logic, it would be possible to obtain more realistic results if the data was estimated more accurately. For example, on general roads, the number of hydrogen cars was estimated at the sub-municipal-level region, the smallest administrative unit, but more realistic results could be obtained by estimating the number of hydrogen cars per household. Also, including detailed aspects such as detouring, bus operations, site costs, safety issues, and refueling demands over time can generate more practical solutions.
+Acknowledgements
+This work was supported by the National Research Foundation of Korea, grant funded by the government of the Republic of Korea (No. NRF-2019R1F1A1058165). The authors also thank Dr.Seunghoon Lee and Mr.Yeogwang Yoon of H2Korea and Dr.Su-Hyun Kim of the Institute for Advanced Engineering for their support and collaboration.
+references
+[1] Ministry of Trade, Industry and Energy. Plans for Hydrogen Infrastructure and refueling Stations. 2019. Retrieved from, http://www.ricon.re.kr/download.php?bn¼7&seq¼4570&fno¼2.
+[2] Lee JS. It is time to improve the subsidy system for hydrogen refueling stations. Retrieved from. In: Monthly hydrogen economy; 2019 July 1. http://www.h2news.kr/news/article. html?no¼7666.
+[3] Construction Association of Korea. Calculation of the Construction Cost. Retrieved from. 2020. http://cais.cak.or. kr/cost/cost/costPage.do.
+[4] Kuby M, Lim S. The flow-refueling location problem for alternative-fuel vehicles. Soc Econ Plann Sci 2005;39:125e45.
+[5] Revelle CS, Swain RW. Central facilities location. Geogr Anal 1970;2:30e42.
+[6] Lin RH, Ye ZZ, Wu BD. A review of hydrogen station location models. Int J Hydrogen Energy. Advance online publication; 2020.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 5 ( 2 0 2 0 ) 1 9 9 0 0 e1 9 9 1 1
+
+19911
+
+[7] Nicholas MA, Ogden J. Detailed analysis of urban station siting for California hydrogen highway network. Transport Res Rec 2006;1983:121e8.
+[8] Itaoka K, Kimura S, Hirose K. Methodology Development to Locate Hydrogen Stations for the Initial Deployment Stage. In: 2018 International Symposium on Hydrogen Energy and Energy Technologies, vol. 83. HEET 2018; 2019.
+[9] Lin Z, Ogden J, Fan Y, Chen CW. The fuel-travel-back approach to hydrogen station siting. Int J Hydrogen Energy 2008;33:3096e101.
+[10] Stephens Romero SD, Brown TM, Kang JE, Recker WW, Samuelsen GS. Systematic planning to optimize investments in hydrogen infrastructure deployment. Int J Hydrogen Energy 2010;35:4652e67.
+[11] Kunith A, Goehlich D, Mendelevitch R. Planning and optimization of a fastcharging infrastructure for electric urban bus systems. Proceedings of the 2nd International Conference on Traffic and Transport Engineering 2014:43e51.
+[12] Kunith A, Mendelevitch R, Goehlich D. Electrification of a city bus networkdan optimization model for cost-effective placing of charging infrastructure and battery sizing of fastcharging electric bus systems. International Journal of Sustainable Transportation 2017;11:707e20.
+[13] Church R, ReVelle C. The maximal covering location problem. Pap Reg Sci Assoc Reg Sci Assoc Meet 1974;32:101e18.
+[14] Frade I, Ribeiro A, Gonc¸ alves G, Antunes A. Optimal location of charging stations for electric vehicles in a neighborhood in Lisbon, Portugal. Transport Res Rec 2011;2252:91e8.
+[15] Upchurch C, Kuby M, Lim S. A model for location of capacitated alternative-fuel stations. Geogr Anal 2009;41:85e106.
+[16] Kim JG, Kuby M. The deviation-flow refueling location model for optimizing a network of refueling stations. Int J Hydrogen Energ 2012;37:5406e20.
+[17] Yildiz B, Arslan O, Karas, an OE. A branch and price approach for routing and refueling station location model. Eur J Oper Res 2016;248:815e26.
+[18] Capar I, Kuby M. An efficient formulation of the flow refueling location model for alternative-fuel stations. IIE Trans 2012;44:622e36.
+[19] Chung SH, Kwon C. Multi-period planning for electric car charging station locations: a case of Korean expressways. Eur J Oper Res 2015;242:677e87.
+[20] Kuby M, Lines L, Schultz R, Xie Z, Kim JG, Lim S. Optimization of hydrogen stations in Florida using the flow-refueling location model. Int J Hydrogen Energy 2009;34:6045e64.
+
+[21] Lim S, Kuby M. Heuristic algorithms for siting alternativefuel stations using the flow-refueling location model. Eur J Oper Res 2010;204:51e61.
+[22] Zhao Q, Kelley SB, Xiao F, Kuby MJ. A multi-scale framework for fuel station location: from highways to street intersections. Transport Res Transport Environ 2019;74:48e64.
+[23] Capar I, Kuby M, Leon VJ, Tsai YJ. An arc coverepath-cover formulation and strategic analysis of alternative-fuel station locations. Eur J Oper Res 2013;227:142e51.
+[24] Honma Y, Kuby M. Node-based vs. path-based location models for urban hydrogen refueling stations: comparing convenience and coverage abilities. Int J Hydrogen Energy 2019;44:15246e61.
+[25] Hwang SW, Kweon SJ, Ventura JA. Locating alternative-fuel refueling stations on a multi-class vehicle transportation network. Eur J Oper Res 2017;261:941e57.
+[26] Liu Z, Song Z. Robust planning of dynamic wireless charging infrastructure for battery electric buses. Transport Res C Emerg Technol 2017;83:77e103.
+[27] Xylia M, Leduc S, Patrizio P, Kraxner F, Silveira S. Locating charging infrastructure for electric buses in Stockholm. Transport Res C Emerg Technol 2017;78:183e200.
+[28] Ministry of Trade, Industry and Energy. Roadmap for Activating the Hydrogen Economy. Retrieved from. 2019. http://www.motie.go.kr/motie/py/td/Industry/bbs/bbsView. do?bbs_cd_n¼72&cate_n¼1&bbs_seq_n¼210222.
+[29] Brey JJ, Brey R, Carazo AF. Eliciting preferences on the design of hydrogen refueling infrastructure. Int J Hydrogen Energ 2017;42(19):13382e8.
+[30] Ministry of Land, Infrastructure, and Transport. Vehicle Registration Statistics in May 2019. Retrieved from. 2019. http://stat.molit.go.kr/portal/cate/statFileView.do? hRsId¼58&hFormId¼5.
+[31] Ministry of Public Administration and Security. Population and Household Status in May 2019. Retrieved from. 2019. http://27.101.213.4/.
+[32] H2Korea. Information System for Locations of Hydrogen Refueling Stations. Retrieved from. 2019. http://www. h2korea.or.kr/.
+[33] Korea Transportation Safety Authority. Expressway Routes Status by 2018. Retrieved from. 2018. http://stat.molit.go.kr/ portal/cate/statView.do? hRsId¼63&hFormId¼&hDivEng¼&month_yn¼.
+[34] Korean Statistical Information Service. Average daily traffic volume on expressway by line. Retrieved from. 2018. http:// kosis.kr/statisticsList/statisticsListIndex.do?menuId¼M_01_ 01.
+
+

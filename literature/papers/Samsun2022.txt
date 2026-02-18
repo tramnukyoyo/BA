@@ -1,0 +1,1067 @@
+energies
+
+Article
+Deployment of Fuel Cell Vehicles and Hydrogen Refueling Station Infrastructure: A Global Overview and Perspectives
+Remzi Can Samsun 1,* , Michael Rex 2, Laurent Antoni 3 and Detlef Stolten 4
+
+1 Forschungszentrum Jülich GmbH, IEK-14--Electrochemical Process Engineering, 52425 Jülich, Germany 2 Advanced Fuel Cells Technology Collaboration Programme Secretariat, 45886 Gelsenkirchen, Germany;
+rex@energy-engineers.de 3 Commissariat à L'energie Atomique et aux Energies Alternatives--CEA-Liten, CEDEX 9,
+38054 Grenoble, France; laurent.antoni@cea.fr 4 Forschungszentrum Jülich GmbH, IEK-3--Techno-Economic Systems Analysis, 52425 Jülich, Germany;
+d.stolten@fz-juelich.de
+* Correspondence: r.c.samsun@fz-juelich.de; Tel.: +49-2461-614616
+
+Citation: Samsun, R.C.; Rex, M.; Antoni, L.; Stolten, D. Deployment of Fuel Cell Vehicles and Hydrogen Refueling Station Infrastructure: A Global Overview and Perspectives. Energies 2022, 15, 4975. https:// doi.org/10.3390/en15144975
+
+Abstract: Hydrogen fuel cell vehicles can complement other electric vehicle technologies as a zeroemission technology and contribute to global efforts to achieve the emission reduction targets. This article spotlights the current deployment status of fuel cells in road transport. For this purpose, data collection was performed by the Advanced Fuel Cells Technology Collaboration Programme. Moreover, the available incentives for purchasing a fuel cell vehicle in different countries were reviewed and future perspectives summarized. Based on the collected information, the development trends in the last five years were analyzed and possible further trends that could see the realization of the defined goals derived. The number of registered vehicles was estimated to be 51,437 units, with South Korea leading the market, with 90% of the vehicles being concentrated in four countries. A total of 729 hydrogen refueling stations were in operation, with Japan having the highest number of these. The analysis results clearly indicate a very positive development trend for fuel cell vehicles and hydrogen refueling stations in 2021, with the highest number of new vehicles and stations in a single year, paralleling the year's overall economic recovery. Yet, a more ambitious ramp-up in the coming years is required to achieve the set targets.
+Keywords: fuel cell bus; fuel cell truck; fuel cell­electric vehicle; heavy-duty vehicle; hydrogen; hydrogen refueling station; light commercial vehicle; light-duty vehicle; PEM fuel cell; zero-emission vehicle
+
+Academic Editor: Mario Marchesoni
+
+Received: 8 June 2022 Accepted: 5 July 2022 Published: 7 July 2022
+Publisher's Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Copyright: © 2022 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https:// creativecommons.org/licenses/by/ 4.0/).
+
+1. Introduction
+Despite the global efforts to reduce greenhouse gas (GHG) emissions in various sectors, the increase in emissions from the transportation sector could not be avoided in recent years. In the European Union (EU), the share of road transportation in all carbon dioxide emissions increased from 16% in 1990 to 26% in 2018, with an increase of road transportation emissions by 24% and a decrease of total emissions by 23% [1]. As a countermeasure, several countries announced plans for all zero-emission passenger vehicle sales goals [2] and the EU proposed an effective ban on new petrol and diesel cars from 2035 in order to accelerate the switch to zero-emission vehicles [3]. Moreover, truck manufacturers in the EU are required to reduce the carbon dioxide emissions of newly sold trucks by 30% by 2030 compared to 2019­2020 levels [4].
+Typically, electric vehicles such as battery (BEV) and fuel cell­electric (FCEV) vehicles producing zero tailpipe emissions are classified as zero-emission vehicles. In 2020, global electric vehicle stock reached a 1% share in all vehicles surpassing 10 million vehicles [5]. This figure is dominated by BEVs and plug-in hybrid­electric vehicles (PHEVs), the latter producing zero emissions only when operating in pure battery mode. The share of electric vehicles operating on fuel cell technology was comparatively low, with around 35,000 at the
+
+Energies 2022, 15, 4975. https://doi.org/10.3390/en15144975
+
+https://www.mdpi.com/journal/energies
+
+Energies 2022, 15, 4975
+
+2 of 34
+end of 2020 [6]. Meanwhile, however, many countries have announced hydrogen strategies or plans and more are developing them, defining a critical role for hydrogen in achieving an energy system with net-zero emissions [7]. Although the direct electrification of various sectors and thus the vehicles with the help of BEVs constitutes the most efficient pathway and shall be preferred where it is technically and practically possible, huge amounts of renewable electricity can be stored and transported in the form of green hydrogen. The renewable energy sources are unstable and intermittent during generation and the highly valuable electricity generated from renewables is difficult to apply continuously and stably for direct electrification of vehicles. This makes it necessary to employ suitable energy storage systems combined with renewable energy sources, greatly improving the utilization possibilities and stability of these [8]. By this means, different sectors can be coupled, especially the energy and industrial, as well as transportation ones. This will require a strong ramp-up of decarbonized hydrogen production technologies from renewable and low-carbon electricity generated using water electrolysis and provide hydrogen for the transportation sector, among others. With this approach, hydrogen FCEVs can complement the battery vehicle technologies, especially in applications that require long ranges and a high power input, where current battery technologies may not fulfill user demand due to heavy battery packs and long or frequent recharging needs. From this perspective, FCEVs shall not be considered as a competitor to battery ones, but instead as a complementary technology for achieving the ambitious target of zero-emissions transportation supporting battery vehicles. It must be noted, here, that while the utilization of hydrogen produced from various sources leads to zero tailpipe emissions, the utilization of green hydrogen from renewable sources enables a complete zero-emission route from production to use. Finally, the remaining applications that are difficult to electrify, such as oceangoing ships and long-range aircraft, can be powered by decarbonized hydrogen-based synthetic fuels, enabling complete GHG-neutrality in the transportation sector [9,10].
+The focus of this work is on fuel cell vehicles and the hydrogen refueling station (HRS) infrastructure. Trencher proposes strategies for the broader use of FCEVs based on the experience from governance strategies implemented by government and industry actors in California [11]. These strategies include regulation, market and consumer incentives, and public­private coordination. A recent review of fuel cell­electric vehicles was published by Inci et al., focusing on vehicle configurations, system components, control, management, technical challenges, marketing, and future aspects [12]. In another study, Trencher and Edianto focused on the German fuel cell market and identified and compared barriers and drivers influencing the production and market penetration of fuel cell passenger cars and buses [13]. Meanwhile, Olabi et al. reviewed the current state and technological advances as well as future prospects regarding automotive fuel cells [14]. Wang et al. report on the technology and HRS station network status as of September 2020 and targets for selected regions, together with numbers of FCEVs for California, South Korea, and Japan [15]. Ruffini and Wei emphasize the role of fuel cells in decarbonization roadmaps, such as four million fuel cell­electric vehicles to be sold in 2030 according to the ambitious 2DS (2) scenario of the International Energy Agency (IEA) and address the higher price of FCEVs compared to internal combustion engines (ICEs) as a key factor hampering their widespread adoption [16]. Their lifecycle cost analysis demonstrates the importance of learning rates for cost competence. The ultimate cost target of U.S. Department of Energy is defined as 30 USD per kWnet, projected to high-volume production of 500,000 systems per year [17]. Thompson et al. point out platinum and air compressors as the largest contributors to the stack and balance of plant cost, respectively, and recommend replacing the platinum group metals in the catalyst and finding low-cost bipolar plate materials [18].
+Khan et al. analyze the consumer preferences for FCEVs in Japan and point out that a well-designed policy incentive package including free public parking and transport can positively influence the switch to FCEVs in Japan in the long term [19]. In turn, Kim et al. focus on hydrogen refueling network development and obtain a nationwide HRS deployment plan for the years 2022­2040 for South Korea [20]. Rose focuses on the
+
+Energies 2022, 15, 4975
+
+3 of 34
+development of a potential HRS network for fuel cell-powered heavy-duty vehicles in Germany for the year 2050. The results of this study indicate the large size difference for HRS for heavy-duty vehicles compared to passenger car stations. Moreover, Rose found that an HRS network with 140 stations with a daily capacity of 30 tons per station, could cover all heavy-duty traffic in Germany [21]. In a further publication, Rose and Neumann recommend aligning investment in heavy-duty vehicle HRS and the power system in order to realize cost savings via synergy effects [22].
+The main aim of this work is to spotlight the current deployment status of fuel cell vehicles in road transport and hydrogen refueling stations around the globe. For this purpose, a data collection effort was performed by the IEA Advanced Fuel Cells Technology Collaboration Programme (AFC TCP), initiated and coordinated by the authors of this paper, the methodology of which will be presented in Section 2. The results of the newest data collection for fuel cell vehicles and hydrogen refueling stations will be presented in Section 3. To understand the collected numbers and their associated trends, Section 4 also reviews the available incentives in different countries for purchasing a fuel cell vehicle. Section 5 reviews the announced roadmaps, national strategies, and objectives, as well as regional roadmaps and global visions for the future deployment of fuel cell vehicles and hydrogen refueling stations. Drawing on the broad information base discussed in the previous sections, Section 6 presents a detailed analysis of the data. With the newest data reflecting the status as of the end of 2021, the study also analyzes development trends in the last five years, building on the results from the previous data collection efforts of the AFC TCP between 2017 and 2020 [6,23­25]. Afterwards, the number of vehicles per station is analyzed for selected countries and compared with future development plans and the present numbers for conventional stations. In an effort to find a correlation between fuel cell vehicle deployment numbers and the other key figures, the numbers of fuel cell vehicles are compared to the number of all registered vehicles in each country in the first step and to the gross domestic product in the second. In a further analytical step, the historical development trends are analyzed in the four countries with the highest numbers of fuel cell vehicles. This analysis is also extended into the future, where development trends are analyzed based on national plans and roadmaps to better understand them. In the final step, the development trends from other electric vehicles are compared with those from fuel cell vehicles in order to analyze any possible similarities that could be used as learning rates.
+With this structure, the originality of the paper lies in its reflecting of the worldwide deployment status of fuel cell vehicles, breaking the numbers down to different countries and vehicle classes, unlike other sources and publications that focus on selected regions only. Moreover, as the data collection is performed for the fifth time under the same guidelines, the present work enables the unique possibility of comparing the data with that from the previous years and analyzing the development trends. The novelty of the present work also lies in its detailed analysis of the collected numbers, which are presented in the detailed review of national policy incentives and targets, combining the previous development trends with future plans in order to emphasize the required growth rates and annual sales volumes.
+2. Methodology
+The information on the number of fuel cell vehicles on the road and hydrogen refueling stations in operation is based on a broad data collection effort organized by the core group of authors of this article under the umbrella of the AFC TCP. This survey was performed for the fifth year in a row, following those published in the period 2018­2021 [6,23­25]. To enable a solid comparison base over the years, each survey is started at the beginning of a year to capture the numbers as of 31 December of the previous year (2017­2020). In this article, the survey results from the data collection as of 31 December 2021 will be presented. The main information input for the numbers comes from the AFC TCP members on the basis of the survey input. However, as the data collection aimed to assess the global status,
+
+Energies 2022, 15, 4975
+
+4 of 34
+
+further data sources were utilized to obtain the global picture and include countries that are not members of the AFC TCP. Furthermore, this complementary approach enables a cross-check of the results, so that the most up-to-date and precise information sources are used for the global assessment. As the collected numbers are also provided to the IEA for the annual Global EV Outlook publication, a further check of the data was undertaken.
+The survey focuses on road vehicles; therefore, fuel cell material handling devices are not included in the numbers. Similarly, fuel cell trains were not included in the analysis. The numbers reflect those vehicles on the roads, namely registered vehicles. Vehicles that were previously utilized in demonstration projects and already taken out of operation are not included. Similarly, vehicles that were produced and not yet put on the road are also not counted. The vehicle numbers were grouped into five categories, which are listed in Table 1.
+
+Table 1. Vehicle classes used to assess the number of fuel cell vehicles (FCVs) in each country.
+
+Vehicle Class Passenger cars
+Buses Light commercial vehicles (LCVs)
+Medium-duty (MD) trucks Heavy-duty (HD) trucks
+
+Explanation
+FCEVs in the category light-duty vehicles (passenger cars and vans) with a maximum mass not exceeding 3.5 tonnes and no more than eight seats in addition to the driver's seat. Examples: Toyota Mirai, Hyundai Nexo, Honda Clarity fuel
+cell, etc. Fuel cell buses (FCBs) for the carriage of passengers with more than eight seats in
+addition to the driver's seat Vehicles for the carriage of goods with a maximum mass not exceeding 3.5 tonnes. Examples: Renault Kangoo & Master, Mercedes-Benz Sprinter, Volkswagen Crafter
+& Caddy, Ford Transit, etc. Fuel cell trucks (FCTs) having a maximum mass exceeding 3.5 tonnes but not exceeding 12 tonnes; trailers and semitrailers with a maximum mass exceeding
+3.5 tonnes, but not exceeding 10 tonnes FCTs with a maximum mass exceeding 12 tonnes; trailers and semitrailers with a
+maximum mass exceeding 10 tonnes
+
+Table 1 also includes the nomenclature used throughout this paper. The term fuel cell vehicle (FCV) refers to all five vehicle classes listed in Table 1. In comparison, the term fuel cell­electric vehicle (FCEV) is only used to refer to passenger cars. The category light commercial vehicles (LCV) is included as an additional category, but based on the experience from previous years, in some countries the number of light commercial vehicles instead pertains to passenger cars. To avoid double counting, this category is present in the survey despite the low number of vehicles reported in this category. Bigger vans for passenger transport are included in the passenger car category, whereas the definition bus is only valid with eight or more passengers carried. The trucks are divided into two categories, namely medium-duty (MD) and heavy-duty (HD) trucks, given that, in recent years, the fuel cell trucks were primarily in the MD category and there were the first indications of a developing HD fuel cell truck market. To follow this development, the trucks are classified into two categories.
+The survey on the number of hydrogen refueling stations focuses on the stations that were built and entered operation. Stations that are being constructed or planned are not included in the numbers. The collected numbers represent both public and non-public stations based on the available information. For some countries, the number of public stations is also available, whereas in others it was not possible to distinguish between public, private and private accessible stations. Where available, further information on the stations will also be given in the results section, such as the number of public stations.
+3. Results of the Data Collection
+This section is divided into two parts. First, the number of fuel cell vehicles as of the end of 2021 will be presented in detail. Second, the state of the global hydrogen refueling station network at the end of year 2021 will be outlined. The collected data on both parts can be found in tabulated form in the Supplementary Materials.
+
+3.1. Fuel Cell Vehicles According to our assessment, the worldwide fleet of FCVs surpassed 50,000 units,
+Energwiesi2t0h22,5151,,4497357 being on the road as of the end of 2021. The numbers of vehicles for ea5cohf 34 country and vehicle category are provided by AFC TCP member states Austria [26­28], Denmark [29], Cana3d.1a. F[u3el0C],ellCVhehiinclaes [31], France [32], Finland [33], Germany [34], Italy [35,36], Japan [37], SpainA[c3c8o­rd4i0ng],tSowouerdasesness[m41e,n4t,2t]h,eUw.oSr.ld[w43id­e4fl5e]e,taonf FdCSVos usutrhpaKssoedre5a0,[04006u] ninitst,hweith first place, based on 5t1h,4e37suberivngeyoninthpe urota.dDasaotaf thfreoemnd ofuf 2r0t2h1e. rThEeunruompbeerasnofcvoeuhincltersiefosr esaucchhcoausntBryeal-nd gium, Estonia, Icelanvedh,icLleactavteigao, rCy azreecphroRviedpedubbyliAc,FCLTuCxPemmebmubregr,stPatoelsaAnuds,triaan[2d6­S2l8o],vDaeknimaarwka[2s9], provided by the CleaCSnpaanHiandy[a3d8[r3­o04]g0,]eC, nShwiPneaad[re3tn1n][e,4F1rr,s4ah2n]ic,peU[P.3Sr2.o][,4gF3ri­na4l5ma]n,mdan[e3d3OS],ofGuftiehcrmeKabonraeysae[3[d446]o,] Iintnadltyhae[t3fia5r,s3ftr6o]p,lmJaacpeta,hnbea[is3re7d], database [47]. Furtheornmthoerseu,rcvoeyminppleumt. eDnattaarfyromEufurortpheeraEnurdoapteaanwcaousnatrliseos stuackheans fBreolgmiumth, eEsEtoun-ia, ropean Alternative FIcueelalnsdO, Lbastevirav, aCtzoerchyR[4ep8u­b5l1ic],.LTuxheemdbuartga, PfoorlanAdu, asntrdaSllioav,aBkiraawzials, pCroovsitdaedRbicyat,he India, Switzerland anCdleatnhHe yUd.rKog.ewn aPasrotnbetrashinipePdrofgrorammmIPe HOfEficceobuansetdryonudpadtaaftreosm[5th2e­ir5d7a]t.abase [47]. Figure 1 clearlyFFsuuhretolhsweOrmsbsotehrreav, atcotSomroypul[et4mh8­eK5n1to]a.rryTehaEeulrdeoaaptdaeasfnoirdnAattuahswetraansliuaal,msBorbtaaezkrieln,oCffrooFsmtCatVRhiescEao,unIrnodiptiesaa,rnSoAwalidttezsren,ralaatsinvde in previous years, wainthd t1h9e,U4.0K4. wvaeshoibctlaeisnetdrafrnomslaIPtiHnEgctooun3tr8y%upodfattehse[5g2­l5o7b].al FCV population. The U.S. is in second placFeig,uwreit1hcl1ea2r,l3y5s8hovweshtihcalteSso(u2t4h%Ko)r,efaollelaodws iendthbeynuCmhbienrao(f1F6C%Vs)oannidts Jraoapdasn, as (13%). These numberTinshpesrhUeov.Siwo. uistshiynaetasrensc,ionwnedithopul1a9tc,e4o,0f4wevivtehehri1cy2le,3ts5et8nravnFesChlaiVctlienssga(tr2oe43%i8n)%, ofoonflletohwoeefgdltohbbeyaslCeFhCfionVuapr(o1cp6o%uul)antaion-nd. tries. Germany is poJsapitainon(1e3d%)i. nThfeisfethnupmlbaecres sahsowthtehaot nnilnye ocuotuonf etvryeryfrteonmFCtVhsearreeimn oanine ionf gtheosne efosur that surpassed the 10co0u0nvtreiehs.icGleermthanreysishpoolsdit.ioned in fifth place as the only country from the remaining ones
+that surpassed the 1000 vehicle threshold.
+Figure 1. Waterfall diaFgirgaumre 1s.hWoawteirnfagll tdhiaegrbarmeashkodwoinwgnthoefbraelalkFdCowVnsowf aollrFldCVwsiwdoer.ldwide.
+Figure 2 shows the distribution of the 51,437 FCVs across different vehicle classes on
+Figure 2 shows tthheeledfti-shtarnidbusitdieoanndoftothdieffe5r1e,n4t3c7onFtiCneVntssaocnrtohsesridghift.feTrheenptievcehharitcolen cthlae slesfet scloeanrly the left-hand side ansdhotwosdthifaftemreonrettchoannftoinurenouttsoofnevtehryefirvige hFCt.VTsharee ppaiesscenhgaerrtcoarns. tThhee lreemftacinleinagrlpyart shows that more thahinsigafhlomeurorsshtoaeurqeuttaholalfyneshvheaearvreyyd-dfbiuevttyweoeFneCensVb. uLssigeahsrtaecnopdmatmrsusecerkcnsia,glwevhreehcriecalaresssm.mTeadhkieeuumrpe-dtmhuetayliontwriuencskgtssphhaaarvreetoaf is almost equally shaarlleFdCVbse.tTwheeepnie bchuasret osnatnhde rtigrhutciknds,icwatehsethreatams omreetdhaiun mtw-odtuhitrydstoruf tchkesvehhaicvlees aare higher share than heoanvtyhe-dAusitayn roonadess,.foLlliogwhetdcboymonme feorucritahlbveienhg iocpleersatmedainkeNourpth tAhmeelroicwa. eEsutrospheahraes a of all FCVs. The pie rcahthaerrtloown sthhaereroifg7h.7t%inodf tihceawteosrltdhwaitdemfuoerlecetlhl vaenhitcwle opotphuilradtiosno. f the vehicles
+
+Energies 2022, 15, x FOR PEER REVIEW
+
+6 of 37
+
+Energies 2022, 15, 4975
+
+are on the Asian roads, followed by one fourth being operated in North America. Eu6roofp3e4 has a rather low share of 7.7% of the worldwide fuel cell vehicle population.
+
+Figure 2. FSighuarree2s. oSfhavraersioofuvsarvieohusicvlehciclalesscelasssaecscaocrcdoirndgingtotoTTaabblele 11 ((lleefftt))aannddofoFfCFVCsVons doinffedreifnftecreon-t continentsti(nreingths t()r.ight).
+Figure 3 Fciagnurhee3lpcapnrohveildpeparocvloidseeralcolokseartlothoek natutmhebenrusmfobrerpsafsosrepnagsesrencgaerrs.cTarhse. Tfihrestfipriset chart on tphiee uchpaprteronletfht-ehuapnpdesrildeeft-dheapnidctssidtheeddepisictrtsibtuhetiodnistorifbtuhteio4n2o,1f9t2hep4a2s,s1e9n2gpearscsaenrsgearcrcoasrss the four caocrnotsisntehnetfso.uAr csotnhteinpenatsss.eAnsgtehre cpaarsssemngaekrecaurps mthaekehuigphtehsethsighhaerset oshfaarlel ovfeahllicvleehsi,ctlehse, distributitohne tdoisctroinbutitnioennttsoicsocnotminepnatrsaibslecotmo ptharaatbfloertaollthFaCt Vfosr ianllFFigCuVrsei2n. FAigguarien,2.thAeghaiing,htehset share of ahfunigdehl2ec5set,9lsl0h1vareceahroiscf,lffeuoslellioncwetlelhdvisbehyciacNtleeosgrtiohnrAtyhmiissecroaincteagAwosriyitahinsapornporaAodxssiiam, nwartioetlahydahs,aswlhfioathfretahosehfva6er1he.io4cfl%e61pa.o4np%d25,901 caursla, tfioolnloinwAedsiab.yHNeroer,twh eAsmeeearischaifwt iinthfaavpoprroofxNimoartthelAymhearlficoafifthweevceohmicplaerpe othpeuslahtairoens in Asia. wHiethret,howsee fsreoemaalslhviefht iicnlefcalavsosreso. fEuNrooprtehisAinmtehriridcapliafcwe,ewcitohm35p5a6repatshseensghearrceasrsw, fiotlhthose fromlowaelldvbeyhAiculestrcalalisaswesit.hE1u9r7ocpaersisapinpetahriirndg pfolracthee, wfiristthti3m5e56inpthaessneunmgberercsa. rTsh,efoplileocwhaerdt by Austroanlitahewliotwhe1r9l7eftc-ahrasndapsipdeeasrhinowg sfothrathpeasfisernstgetrimveehicnletshien nAusima bareersd.istTrihbeutpedieinchtwarot on the locwouerntlreifets-hoannlyd: SsoidutehsKhoorweasatnhdatJappaasns.eTnhgeerfovrmeheirc,lheosmine Acosuinataryreodf tihsteriHbyuutnedaiinNtewxo countriesanodnliyts:pSroeudethceKssor,etaheanHdyuJanpdani i.xT35hFeufeolrCmeellr,,hhaos mthe hcioguhnesttrynuomf tbheer oHf pyausnsednagieNr ceaxros and its porpeedreactiensgsonr, ftuheel cHellytuecnhdnaoiloigxy3,5wFituhe1l9C,2e7l0l,uhniats. Tthhee thhiigrdhepsiet cnhuamrt obnerthoefuppapsesrernigghetrcars operhaatnindgsiodne sfuhoewl csetlhlattetchhenNoolortghy,Awmietrhic1a9n,2n7u0mubneristsa.rTe hdeomthiniradtepdibeycvheahritcolens itnhethuepUp.Se.r, right-hanwditshid1e2,s2h83owunsittsh,abtrtinhgeinNgotrhtehUA.Sm. etorisceacnonndumplabceersafaterer SdooumthinKaotreeda,bays vinehthicelleasstinyetahre. U.S., withW1it2h,228531 puansistesn, gberrincagrisn,gCathnaedUa .aSl.sotofinsedcsoanpdlapcelaicnethaeftteorpS1o0ucothunKtroieresaw, iaths tihnethhieghlaesstt Energies 2022, 15, x FOR PEER REVIEWy6h6eig3ah1r.ecsWatrinstncaruhoaluarmarn2emsda5bdsabd1e.neyorprdchoaocoafsfucvsFFcpeeuCCnimpeEEgsioVVeertsrsseh.t.cithJarJhaiadrrpapdsnap,anp9Cln,a0l,aha%cchoneemoo,a,mfadaetssaheciioeancnulwoslnluaoaotsnrrstfiylttdyrnyowyedfeaiosratdh'frseae'trsfhpTuaernloeaalkyTcnciooenektygaliilonn.MptSgaatoi.hsruMsaeSteihoi,ntroufgaKopetiloh,rlor1fceowK0aalros,lcoptrothwehoueaepsn,UuUtttlrh.ha.SiSetee..i,,soUaUwnwn..SiodSti.nht.,7J,hawt6ahop6tnfieha3tidnh13er7 Japan already have more than 90% of the worldwide fuel cell passenger car population on their roads.
+
+FFigiguurere33. .CCloloseserrloloookkaattththeeddiissttrriibbuuttiioonnooff ffuueel cell passenger carrss ttoo ccoonnttiinneennttssaannddccoouunntrtrieiess. .
+The survey results and the further available sources do not enable a breakdown of the passenger cars in each country by different carmakers. However, a Korea Herald article from the end of 2021 reports that 8900 Hyundai Nexo, 5700 Toyota Mirai, and 300 Honda Clarity Fuel Cell vehicles were sold globally between January and November 2021
+
+Energies 2022, 15, 4975
+
+7 of 34
+The survey results and the further available sources do not enable a breakdown of the passenger cars in each country by different carmakers. However, a Korea Herald article from the end of 2021 reports that 8900 Hyundai Nexo, 5700 Toyota Mirai, and 300 Honda Clarity Fuel Cell vehicles were sold globally between January and November 2021 [58]. The article also reports 16,200 registered passenger cars in this period, which is in good agreement with the increase in the number of passenger cars worldwide from 25,932 (end of 2020) to 42,192 (end of 2021) in one year according to our data collection. In addition, Zhang et al. [59] report cumulative sales of 12,717 vehicles from Hyundai and 12,015 from Toyota in the period 2016­2020, which is also in good agreement with the number of registered passenger cars (25,932) at the end of 2020 if other brands are also taken into account. Additionally, they point out that the dominance of the share of the Mirai with more than 75% of FCEV stock in the years 2016­2018 was equalized in 2020 with an almost equal share between the Mirai and Nexo. Looking at the U.S. numbers, the website carfigures.com reports 2629 units of the Mirai and 430 units of the Nexo sold in 2021 in the U.S. [60,61]. In total, the newly registered FCEVs from both Toyota and Hyundai sum up to 3059 units, which is in good agreement with the difference between the 9188 passenger cars at the end of 2020 and the 12,283 at the end of 2021 from the U.S. in our surveys. Combining all of these figures from various sources shows that Hyundai has been selling more FCEVs than Toyota in 2020 and 2021. Considering the fact that most of the fuel cell passenger cars are in South Korea, the U.S., and Japan (see Figure 3), all registered vehicles in South Korea are from Hyundai [62] and Japan is the home country of Toyota, an analysis of the available numbers presented here reveals that most of the Nexos sold in 2021 are on the South Korean roads and most of the produced Mirais have been sold in the U.S. and Japan, with an almost equal share in 2021.
+The last pie chart in the lower right-hand part of Figure 3 shows that the European FCEVs are distributed across many countries on the continent. Germany has the highest number, with 1452 passenger cars, followed by the Netherlands (488), France (396), and the U.K. (355). These countries are placed in the fourth to seventh positions, ahead of Canada. Another European country, Norway, is in ninth place (231), ahead of Australia and completing the top ten list for passenger cars. Switzerland (180) and Denmark (173) are additional European countries with more than 100 FCEVs. In the next group, Belgium, Sweden, Austria, Italy, and Iceland feature double figures. The final group of countries, including Spain, Poland, Luxemburg, Czech Republic, Finland, Estonia, and Slovakia, each have less than ten vehicles but still contribute to fuel cell mobility in Europe.
+The next vehicle class considered was the number of fuel cell buses. For this purpose, the breakdown of 4738 buses across sixteen countries currently operating them is shown in Figure 4. With 4150 units, China clearly dominates the worldwide fleet with a share of 88% of all fuel cell buses in this category. Zhang et al. [59] list Foshan FEICHI, SAIC MAXUS, Xiamen King Long, Zhengzhou Yuting, and Zhongtong Bus as the top five bus companies connected to the national platform. South Korea (129) and Japan (110) follow China in second and third place. The U.S. (70), Germany (61), U.K., and India (each 58) are further countries with more than 50 units. It must be noted here that India appears for the first time in the statistics and fuel cell mobility has been advanced with the remarkable number of buses in this country. The Netherlands (41), France (27), and Italy (19) also operate fuel cell buses in the double digits. Other European countries, such as Belgium, Denmark, Austria, and Spain, as well as Brazil and Costa Rica are the remaining countries that operate fuel cell buses, with one to five units each.
+Switching to MD trucks as logistic vehicles, a similar picture is present with a strong dominance by China, as presented in Figure 5. A total of 98% of the 3606 MD fuel cell trucks are driven on Chinese roads. Ballard Power Systems published information on the 2000 trucks in operation in China as of June 2019 using the fuel cell technology from Ballard [63]. The truck integration was realized by various companies such as SinoHytec, Re-Fire, Broad Ocean, and Synergy. The trucks in the 7.5 t, 7.9 t, and 8.7 t weight classes
+
+Energies 2022, 15, 4975
+
+MAXUS, Xiamen King Long, Zhengzhou Yuting, and Zhongtong Bus as the top five bus companies connected to the national platform. South Korea (129) and Japan (110) follow China in second and third place. The U.S. (70), Germany (61), U.K., and India (each 58) are further countries with more than 50 units. It must be noted here that India appears for the first time in the statistics and fuel cell mobility has been advanced with the remarkable number of buses in this country. The Netherlands (41), France (27), and Italy 8(1o9f )34also operate fuel cell buses in the double digits. Other European countries, such as Belgium, Denmark, Austria, and Spain, as well as Brazil and Costa Rica are the remaining countries twhaetreopbuerilattebafsueedl coenllabfuuseelsc, ewllitrhatoendeptoowfievreouf n3i0tskeWa,chw.hich can be considered a rangeextender application.
+
+Energies 2022, 15, x FOR PEER REVIEW
+
+9 of 37
+
+FFiigguurree 44.. WWateerrffaallllddiiaaggrraammshshoowwininggthtehebrberaekadkodwonwonf ofufefluceelllceblulsbeuss(eFsC(BFsC) Bwso)rwldowrlidew. ide.
+Switching to MD trucks as logistic vehicles, a similar picture is present with a strong dominance by China, as presented in Figure 5. A total of 98% of the 3606 MD fuel cell trucks are driven on Chinese roads. Ballard Power Systems published information on the 2000 trucks in operation in China as of June 2019 using the fuel cell technology from Ballard [63]. The truck integration was realized by various companies such as SinoHytec, ReFire, Broad Ocean, and Synergy. The trucks in the 7.5 t, 7.9 t, and 8.7 t weight classes were built based on a fuel cell rated power of 30 kW, which can be considered a range-extender application.
+
+FFiigguurree 55.. WWaatteerrffaallllddiaigargarmamshoshwoinwginthge tbhreeabkrdeoawkndoowf funeol cfeflul melecdeilulmm-dedutiyumtru-dckust(yMtDruFcCksTs()MwDorFldCwTisd)e. worldFwuidrteh. er trucks in the MD class are operated in the U.K. (36), Germany (20), the NethFeurrlathnedrstr(1u4c)k,sSionutthheKMoDreacl(a5s)s, aNreorowpearya(te4d), iFnrathneceU(.1K)., (a3n6d), DGeenrmmaanrky ((210).),AthpearNt efrthome(paCWtDW(IataaeoHHrhsnexsshelsiierwaDMpcitDthMtDinhonheeCeahDAeemdFnrDAr7whF7ecsieCcss9e9tbiCeesthetnh6rno6Tm(terdcTteueh1efucrHshoHtssr4cbee)9htce)ne2k)DhdeDtk3ae,s0chssaecr%smree2S.etFoem.Fc2hplt0ocCnoaohCo0t,oetourrcnnT,ef2Tn5ungtelggd0tshsat0dpegchar,riksdituternK5gHnt,trdsbirc0ueggfotruiDaktafosfelcaorHegscorfttlkertreekaaeFbbaaarDertlceaClriatne,ci,na(relvlgFCnatT5auCtteeiteCt)ttshcocnehh,igogtkvtiTcgweiNrnoaturonsseouhloraMneuoa.arwceygwrhtyrTrnk,hrDerMwe,eaatstoitahtrrebhsamawhaDsoeis,lleaeyrreesaawtmesgioodhgsnH2(daria4iai,auptpiisssDl)Hhnniwssflth,rntaaropueDarolFiciccaastrfibcawprethbaeeschuauctdltcnhusesaaniltretegytiatitcietuceeoninevhesoedeovdrgnttdearateneeo(idhryitdioed1din'rnoientss)fdishia,ef,diCnFstotcinsriahtohusimanh,h'nCgemisrthiFiseudevntinh8isinhigcger8ganui5taDiaeony5hh,us2arntr2aei6vnebrhsnycsh,neg.euucheau.ebsmeToytrveI6aumiunvrhnaii.vnahrynnteibvvrc.yotasygnTkheayte-Itvhvrondsiyh-tois(pdehietnwu1insctsusvheup)ghtalav.yyeiotytuesvcsyoehAfeyiltwef1hnaneisuufhpc4iwcitluenneolccioayherHclelltcefreiaeolle1crtceoueDselrce4ccvpofsnatlllercecaeapsaFlHcohllldsriseslCataemnaa,DsrsrtssrbsTtwuit,trassfyiayuw.citFoietiifiehhikacItnxntCoidhneeekssat-t.nTdhnyss.. a share of 93% of the global total. Table 2 shows that this high number was achieved by ten different truck original equipment manufacturers (OEMs), with almost half of the trucks being produced by Nanjing Golden Dragon Bus Co., Ltd., Nanjing, China, followed by Feichi Technology [31].
+
+Energies 2022, 15, 4975
+
+9 of 34
+
+Energies 2022, 15, x FOR PEER REVIEWdifferent truck original equipment manufacturers (OEMs), with almost half of the t1r0ucokf s37 being produced by Nanjing Golden Dragon Bus Co., Ltd., Nanjing, China, followed by Feichi Technology [31].
+
+FFiigguurree 6. WWaterfall diaggrraamm sshhoowwiinnggtthheebbrreeaakkddoowwnnoof fHHDDFFCCTsTswworoldrlwdwidied.e.
+
+TTaabbllee 22.. DDiissttrriibbuuttiioonn ooffhheeaavvyy--dduuttyyffuueellcceelllltrtruucckkssininCChhininaatotoddififfefreernetnOt OEMEMs [s3[13].1].
+
+TruTcrkuOckEMOEM
+
+NumNbuemr ber
+
+WWebebPaPgaege
+
+NNaannjinjigngGoGldoeldneDnraDgroangBouns BCuo.s, LCtod., Ltd. FeFicehici hTeicThencohlongoylogy
+ChengdSuuSDzuahzyohuuonGuAoGuldtooelmndDoebnrialDegoCrnao/g.,HoLnitgd/eH.r(CigDeDr Y) ChengduSADICayHuOnNAGuYtAomN oCboimlepCanoy., Ltd. (CDDY)
+SAJiIaCngHliOngNhGeaYvAy tNruCckompany JiWanangxliinangghAeuatvoy truck
+DongfenSgAWMICaonMtxoiAraCXnoUgrSpAouratotion Beijing TianlutoSnAgITCecMhnAolXoUgySCo., Ltd.
+
+362 362
+
+98 98
+
+63 62
+
+63
+
+56 62
+
+49 56
+
+27 49
+
+25 21
+
+27
+
+5 25
+
+hhttttpp::///w/wwwww..nnjgddbbuuss.c.coomm/g/gooldldenednrdagraogno.hntm.hltml wwwwww.f.sfsfefiecihcih.cio.cmo.mcn.cn
+http://glhhotbtttpapsl.:sc/:d///dwwaywwuwwn..hc.hiogmiegr/e.ccro/.cmgol/amn/ce.html http://ghlottbpa:/l./cwddwawy.huynt.rcuocmk.c/oc/mg/lance.html
+http://www-.hytruck.com/ https://www.wan-xiangauto.com/ httphtst:p//sw:/w/www.ww.-adnfmxica.cnogma.ucnto/.com/ http://www.tianlutong.co-m.cn/EN/about.aspx#1
+
+Dongfeng Motor Corporation
+
+21
+
+https://www.dfmc.com.cn/
+
+Beijing Tianlutong TechnologSywCitoz.e, rLlatdn.d is in second5 place, withhtt4p7:/H/wDwFwC.Ttiaunnliutst.oTnhge.cSowmi.scsnfl/EeNet/iasbcooumt.paospsexd#1of
+
+Hyundai Xcient Fuel Cell trucks, with a total train weight of 36 t and a 400 km range with 34.5 kSgwhityzderrolagnedn i[s64in]. sNecinoentdrupclkascein, wtoittahl4a7reHrDepForCteTdufnoirtsth. Te hUe.SS.w, Siwssefdleeent, iasncdoDmepnomseadrko, f HwyhuernedaasiiXt icsieenxtpFeucteeldCtehlal ttrfuucrtkhse, rwHitDh aFCtoTtsalwtreareinuwseedigihntdoefm36ontsatnradtiaon40p0rokjmectrsanbguet dwidith 3n4o.5t akpgpehayrdirnotgheens[t6a4ti]s.tiNcsi.ne trucks in total are reported for the U.S., Sweden, and DenmarkT, Hwihsedreetaasilietdisaneaxlpyescisteodf tthheatbrfeuarkthdeorwHnDofFtCheTnsuwmebreerus soefdFCinVdseinmdoinffsetrreantitocnoupnrotrjieecsts binuttodvidarnioout sapvpeheaicrleinctlhasessetsahtiastsicssh.own that FCVs in most countries are passenger cars,
+wherTeHasisthdeeCtahiliendesaenfauleylsicselolfflteheet bisrepaukrdeloywcnomofptohsednuofmbbuesressoafnFdCtVruscikns,dwifhfeicrehnptlcaocuesn-
+tCriheisnianitno avafrairoulesadvienhgicpleosciltaisosnesinhtahsesheovwehnictlheatcaFtCegVosriiens.mAotstthceousanmtrieestimaree, pthaessheinggher
+
+cnaurms, bwehrseroefarsegthiseteCrehdinveesheicflueeslincetlhl efsleectaitsegpourrieslybcrionmgspCosheidnaotfobtuhseetshairnddptorsuictikosn, owfhailclh
+
+pfulaeclecselCl vheinhaiclienraegfiasrtrlaetaiodninsgwporolsdiwtioidnei,naltheosueghvenhoicflueecl acteellgpoarisesse.nAgetrtchaerssaamreecutirmreen,tltyhe
+
+hdirgivhennuomnbCehrsinoefsreergoiasdtesr.ed vehicles in these categories brings China to the third position
+
+of all fuel cell vehicle registrations worldwide, although no fuel cell passenger cars are c3u.2r.reHnytdlyrodgreinvRenefuoenliCnghSintaetsieonrsoads.
+After the analysis of the numbers of FCVs in different countries and for different
+
+3v.e2h. HiclyedrcolagsenseRs eifnuetlhinegpSrteavtioonuss section, this section presents the survey results for the numAbefrteorfthhyedarnoagleynsirseofufetlhinegnustmatbioenrss oinf oFpCeVrastiinondiafsfeorfetnhteceonudntorfie2s0a21n.d for different ve-
+
+hicle classes in the previous section, this section presents the survey results for the number
+
+of hydrogen refueling stations in operation as of the end of 2021.
+
+In the survey, 729 hydrogen refueling stations (HRSs) were counted as those in op-
+
+eration for the reporting date of 31 December 2021. For Austria [65], Canada [30], Croatia
+
+Energies 2022, 15, 4975
+
+10 of 34
+
+Energies 2022, 15, x FOR PEER REVIEW In the survey, 729 hydrogen refueling stations (HRSs) were counted as11thoof s3e7 in opera-
+tion for the reporting date of 31 December 2021. For Austria [65], Canada [30], Croatia [66],
+China [67], Denmark [68], France [69], Germany [70], Japan [37], Korea [71], Spain [72],
+[S6w6]e, dCehnin[a7[36]7,]S, wDeitnzmeralrakn[d68[]7, 0F]r,anacned[6t9h]e, GUe.rSm. a[7n4y],[7t0h]e, Jianpfaonrm[37a]t,ioKnorweaa[s71d]e, lSivpaeirned by the A[72F]C, STwCePdemn e[7m3]b, eSrwcitozuernlatrnides[7a0s],paanrdt othfethUe.Ss. u[7r4v]e, yth. eNinufmorbmeartsioonnwthase dsetalitvieornesd ibnyBelgium, tChzeeAcFhCRTeCpPubmleicm, bIceerlcaonudn,trNieestahsepralartnodfst,hNe sourrwveayy.,NUu.Km.b,earnsdonStlhoevsetnatiiaonwseirneBpelrgoivuimd,ed by the CCzleeachnRHepyudbrloicg,eIncePlaanrdt,nNeresthheiprlaPnrdosg, rNaomrwmaey,OUf.fiKc.,ea[n4d7]S.loTvheeniianwfoerrme partoiovnidferdobmy Athue stralia is bSCbSaaaaleususeadeddndiioAHoAnrynaradabanrbinoaIig,PaIeTHP,naTHEiPawEciaowarcuntnao,nneuatrr,nnsydahturniptypdhdeuPtarphUtoedegn[ariU5tate6emnd].[imt5FAe6oerd]raO.bCAFfofEoriscmarteabCir[RE4aoi7tmsce]tas.ai,,TrHtRahhtueieecnisaingn,,faftHoorhryruemm, nIiaanngttdifiaoooirannry,m,fLwrIaoanatmtsvdioidiaAanr,,auMwLwstaanarltaasvflyiridasoairm,aiasM,wanlafyrosima, hh22ssttaattiioonns.so.orgrg[7[57]5. ].
+AAssFiFgiugruer7es7hoswhso,wthse,tothpethtroepe ctohurnetericeos,uanntdriaetst,heansadmaettitmheetshaomseeoptiemraetinthgomsoereoperating tmhaonre10th0aHnR1S0a0sHofRthSearsepoofrtthinegrdepatoer, tairnegJadpaatne,(1a6r9e),JaCphainna((116497)),, aCnhdinSaou(t1h4K7)o,raenad(1S14o)u. th Korea (W11it4h).thWis,itJhaptahnism, JaaipntaaninmedaiitnstlaeiandeindgitpsolseitaidoninwgitphotshietiohinghweisthnuthmebherigohfeHstRnSsuimn boepr- of HRSs einraotipone,rawtiitohna, lwarigtehsahalraergoef 1s5h6apruebolifc 1st5a6tiopnusb. lTihcusst,aJtaipoanns.isTahlsuost,hJeacpoaunntirsy awlsitoh thee country
+whigithhestht neuhmigbheresotf npubmlibceHrRoSfsp. IunbClihcinHaR, 6S5s.adIndiCtiohninalas,t6at5ioandsdwiteiroenbaulislttabtuitonnostwtaekreenbuilt but innotot toapkeerantiionnt,oeiogphet rsatattiioonn,sewigehret osntaptiaounses awnedr1e0ounndpearucsoensatnrudct1i0onuantdtheer ecnodnsotfr2u0c2t1ion at the [e6n7d]. oGfe2rm02a1ny[6, 7th].eGUe.Sr.m, aanndy,FtrhanecUe .aSr.e, tahnedoFthrearntchereaerecotuhnetroitehsetrhatht orepeercaoteunmtorireesththanat operate 5m0oHreRSths aenac5h0. IHn GReSrsmeaancyh.anInd GFrearnmcea,nayll raenpdorFteradnsctaet,ioanllsraerpeoprutebdlicsotartpiounblsicaareccpesusbiblilce,or public wachceersesaisbline,twhehUer.Se.a4s9ionftthhee U67.Sst.a4t9ioonfs tahree p6u7bsltica.tions are public.
+
+Figguurree77. .WWataetrefraflal dlliadgiaragmrasmhoswhionwg itnhegbtrheeakbdreoawkndoofwhnydorfogheyndrreofguenlinrgefsutaetliionngs satsaotfiothneseansdooffthe end of 22002211wwoorrldldwwidied.e.
+FFigiguurere88prperseesnetsnthsethdeisdtrisbturtiibountoiof nhyodfrhogyednroregfeunelrinegfusetalitniognsstaactrioosnssthaecrdoisffsertehnet different ccoonnttiinneenntst.sA. Asiasilaealdeasdthsethpeictpuircetuwriethwailtmhoasltm60o%sto6f0H%RoSsf,HfoRlloSws,efdolbloyw29e%d ibnyE2u9r%opein, Europe, 1100%%ininNNorothrtAhmAermicea,raicnad, 1a%ndin 1th%e rienst tohfethreewstoroldf .tIhneAwsiao,rtlhde.re IisnanAaslima,ostht bearleanisceadn almost dbiasltarinbcuetdiondbisettrwibeuentioJanpabne(t3w9%ee)n, CJhaipnaan(3(43%9)%, a)n, dCShoiuntah (K3o4r%ea),(2a6n%d).SInouEtuhroKpoe,retwao(-26%). In teEhvuierrrdo,spthoeef, ptthwreesose-tntahctieiorondfssfauorrefthtsehitreuHastRteaSdtsiioinnntmswaaonrecyosouitnthuterarietEse,udnroainpmeteawlnyocGoceuornmutrnaientrsyipearsno,dvniFdarmeasneacleyp.oGHsieotirwvme- any and cFornatnrcibeu. tHioonwteovheyr,dtrhoegepnr-ebsaesnecde torfanfusprtohretartHionRSins iEnumroapney. oFitnhaelrlyE, uinropNeoarnthcoAumnetrriiceas, provides ma oproestihtiavne9c0o%notrfitbhuetsitoantiotnoshayredirnotgheenU-b.Sa.sHedowtreavners,ptohertCatainoandiiannEstuartioopnes.exFtiennadllhyy,-in North Adrmogeernic-dar,ivmeonrteratnhsapnor9t0in%NoofrtthheAmsteartiicoan, sanadrearienththeereUfo.rSe.vHeroywimevpeorr,tatnhte. ICnathneadUi.aS.n, stations 5e2xtoefntdhehy6d7 rsotagteionn-ds rairveenloctraatendspinorCt ainlifNoronriath. HAamweariii,caM, aasnsdacahruesetthtse,reMfoicrheigvaenr,yOimhipo,ortant. In ethacehUh.aSv.,e5t2woofstthateio6n7s,stwahtieorneassaArerilzoocnaat,eCdoilnorCadaoli,foCronninae.cHticauwt,aDiie,lMawaasrsea, cNheuwseYttosr,kM, ichigan, VOihrgioin,ieaa, acnhdhWavaeshtiwngotosntaetaiochnsh,awvehoenreea[7s4A]. rizona, Colorado, Connecticut, Delaware, New York, Virginia, and Washington each have one [74].
+
+Energies 2022, 15, 4975 Energies 2022, 15, x FOR PEER REVIEW
+
+12 o1f13o7f 34
+
+Country
+South Korea U.S. China
+Japan Germany France Canada Italy Austria Spain Sweden
+
+Figure 8. DistriFbiguutiroe n8. oDfishtryibdurtoiogneonf rheyfduroeglienngresftuaetliongnstabtyioncos nbyticnoenntitn.ent.
+
+4. Incentives 4. Incentives
+
+In this sectionIn, athsisesleeccttiioonn, aosfeltehcteioinncoef tnhteivinecsenfotivrebsufoyribnugyianng aFnCFVCVwwililllbbee aannaalylyzezde.dT.hTe he prices and inspcpreiecncettsiviavenecdsoiunfnocterrnytt,hivaenesdrfetohlraetrtheeebdyrectlhaoetuendnutcmroiubenesrtrswiecsailnwl biblelebfoepuprnerdesseiennntttheededoinrinigthitnehacleusrcoruuenrrccreyesnoffocrtyhceoomrfe--the respective copuanristroyn,s ianntdhetnheexrteybeayrst,hanednaulsmo dboenrsotcdaenpebnde ofnoucunrrdenicny ftlhuectuoartiiognins.aAltsthoeuerncdesoffor comparisonsthinis tshecetionne,xTtaybleea3rsg,ivaensda saulsmomdaroynoof tsedleecpteednindfoornmactuiornreanlscoyinflUuScDtubaatsieodnosn. 2A02t1the
+end of this seecxtcihoann,gTearbatlees3frogmivOesECaDsu[7m6]m. ary of selected information also in USD based on
+
+Country
+
+2021 exchange rates from OECD [76].
+Table 3. Overview of purchasing prices and available incentives for buying a fuel cell passenger car
+in different countries. See Section 4 for references. Notes: Fuel cell vehicle types: 1 Hyundai Nexo, 2
+Table 3. OvervTieowyotoafMpiuraric, h3 Hasoinndga CplraircietysFaunedl Caevll.aCiluarbrelenciynecxecnhtainvgeesrfaotersbbausyedinogn aOEfuCeDl dcaetlal fpoar s2s02e1n[g7e6r].car in differePnrticceooufnFturieelsC. eSlelePSasescetniogner4Cfaorr references.INncoetnetsi:vFesuel cell vehicle types: 1 Hyundai Nexo, 2 Toyota MNairtaioi,n3aHl CounrdraenCclyarity FueUlSCDell. Currency exNchatainognealraCtuesrrbeansceyd on OECDUdSaDta for 2021 [76].
+
+KRW 22.5 million (govern-
+
+Price of Fuel Cell Passenger
+NationaSloCuuthrreKnocyrea
+
+Car
+
+KRUWSD67.65­70.05
+
+million
+
+Incentives
+N1 aUtiSoDna5l 9C,u1r3r7e­n6cy1,235
+
+ment) +  KRW 10­15
+
+million
+
+(local
+
+USD 19,669 + USD USD8742­13,112
+
+KRW67.65­70.05 million 1
+USD 49U,50.S0.­66,000 2
+USD 59,435­62,885 1
+
+USD 59,137­61,235
+USD 49,500­66,000 2 USseDe l5e9ft,435­62,885 1
+
+KRW 22.5 million (governgmovenetr)n+ments)
+
+USD 19,669 + USD
+
+KURSsDeWe81l0e00­f0t1(5femdielrliaoln) +(lo25ca0l0UUg­SSUoDDvSeDr89n905m5000e000n((t(ffsfeee)dddeeerrraaallls)tsa+ttae2ts5e)s0)0­
+
+8742­13,112
+seesleefet left
+
+China
+JPY 6.45­7.82 million 2 JPY 7.12 million 3
+EUR 63J,9a0p0a­n73,900 2
+EUR 77,290 1
+CAD 54,990­76,750 2
+Germany
+EUR 59,500 (starting price) 2
+aSrEoKun8d49FE,r0Ua0R0nc16e5,000 1,2
+
+RMB 6000 per kWel; RMB 6000 per kWel;
+
+USDU9S3D0 p9e3r0kpWeerl;kmWaxe.l;
+
+max. RMB 200,000
+
+max. RMB 200,000
+
+USDm3a1x,0.1U3 SD 31,013
+
+USD 58,768­71,250 2
+JPUYS6D.4654­,877.2823 million JPUUYSS7DD.179251,,m6426i17ll­1i8o7n,4536 2
+
+2
+
+JPUY S1.D455­28.,3786m8­il7li1o,n250 2
+EUR 7500
+USD 64,872 3
+
+JPY
+
+1.45­2.38
+
+million
+
+USD 13,211­21,685
+USD 13,211­21,685
+USD 8876
+
+EUURSD634,39,80502­­7631,,290040 2 EUR 77,290 1
+USD 70,414
+USD 76,923 USD 94,333
+
+ECUAURDS2D500007005(,(m6fe2ad1xe.­rEa8lU7),R+45C465A,0D003)0­0E0U­R8060000(0states)
+
+EU2R 6000­10,000
+
+EUR 7500
+
+USD 2367­7101 USD 3987 + 2392­USD 6380
+USDU7S1D018­81178634
+
+EUURS4D00901(,c4o6m7p1anies
+(private) up to EUR 6000 SEK 70,000
+
+and organizations)­EUR 5000
+
+USD 4734­5917
+
+EUR EUR
+
+2000 6000
+
+(max.
+
+EUR
+
+45,000U)­SDU7S1D012367­7101
+USD 7778
+
+Canada
+
+CAD 54,990­76,750 2
+
+USD
+
+43,852­61,204
+
+CAD 5000 3000­8000
+
+(federal) (states)
+
++
+
+CAD
+
+USD 3987 + 2392­ USD 6380
+
+In South Korea, the country with the highest number of FCVs worldwide, the price of
+
+a Hyundai Nexo varies between KRW 67.65 and 70.95 million [62]. To this price, subsidies
+
+of KRW 32.5­37.5 million apply, from which KRW 22.5 million comes from the government
+
+and the rest are variable, coming from the local governments [77]. It is clear that the
+
+available incentives enable a very strong price reduction in this country, which reduces
+
+the final price to around 50% of the original. The commitments of the South Korean
+
+government and local governments have therefore made a very positive contribution to
+
+vehicle sales, bringing the country to number one in the rankings. The typical price for fuel
+
+cell buses is around KRW 630 million [62], for which incentives of KRW 150­330 million
+
+Energies 2022, 15, 4975
+
+12 of 34
+are available, with KRW 150 million as a government subsidy and the additional variable subsidies coming from local governments [77].
+The U.S. features the second highest number of fuel cell vehicles on the road. Available passenger car models are the Toyota Mirai, Honda Clarity Fuel Cell, and Hyundai Nexo. The purchasing price of a Toyota Mirai varies from USD 49,500 to 66,000 based on the selected model [78]. Similarly, the Hyundai Nexo can be purchased for prices starting at USD 59,435­62,885 based on the model [79]. Until the end of 2021, the fuel cell vehicles received a tax credit of up to USD 8000 at the federal level, organized by the U.S. Internal Revenue Service [80]. In addition to the federal tax credit, state level incentives apply to FCVs in different federal states. In California, all three of the models mentioned above are eligible for a rebate of USD 4500 as part of the Clean Vehicle Rebate Project [81]. The California Air Resources Board also offers grants for the replacement of old buses with new zero-emission ones, e.g., fuel cell transit buses receive a grant of USD 400,000 [82]. In Connecticut, the residents can receive incentives of up to USD 9500 (standard rebate: USD 7500, Rebate + New incentive USD 2000) from the Connecticut Hydrogen and Electric Automobile Purchase Rebate (CHEAPR) for all three FCV types available [83]. Similarly, the Massachusetts Offers Rebates for Electric Vehicles (MOR-EV) program provides a rebate of USD 2500 for the purchase or lease of FCVs [83]. It should be noted that further incentives are available in other federal states, which can be reviewed in detail in the Alternative Fuels Data Center database of the U.S. Department of Energy [84].
+China has the third highest fuel cell vehicle population and the second highest number of HRSs in operation. As mentioned previously, its market is dominated by buses, mediumand heavy-duty trucks, unlike any other country. Until the end of 2019, FCVs received government funding as part of the Financial Support Policy for New Energy Vehicles (NEVs). According to this policy, passenger cars received RMB 6000 per kWel at a maximum of RMB 200,000 per vehicle, small buses and trucks RMB 300,000, and large buses and trucks RMB 500,000 [85]. By the end of 2021, 556 FCV types had been added to the recommendation catalog of NEVs, demonstrating the extreme diversity of the available FCV models in the country. In 2020 alone, 284 vehicle types were added to the catalog. In the last three years, the vehicle types were dominated by trucks and buses, leaving only a 1% share to passenger cars. At the same time, a rapid increase was observed for heavy-duty trucks, from 5% in 2019 to 41% in 2021, whereas the proportion of buses decreased from 69% to 44% in this period [59]. In September 2020, several ministries and governmental bodies jointly issued the Notice of the Pilot Application of Fuel Cell Vehicles adopting the approach of "awards instead of subsidies" to promote the industrialization of the essential core technologies for FCVs [59]. The new policy emphasizes the challenges in core technologies, the production of key components, and the lack of HRSs in this country [86]. It aims to focus on developing the Chinese FCV sector in four key areas instead of providing subsidies for purchasing vehicles. These areas include achieving breakthroughs in core technologies and key components along the value chain, performing demonstrations focusing on medium- and heavy-duty commercial vehicles, cost reductions, and creating economies of scale across the value chain, from hydrogen production to distribution, and finally improving the policy and institutional environment to support the adoption of vehicles across the entire value chain. Over a period of four years, the policy will provide subsidies to selected numbers of cities and clusters. Each city cluster can receive up to RMB 1.5 billion based on how well it meets the set targets and promotion of FCVs. The technical targets include power and power density, minimum ranges based on vehicle classification, and demonstration of at least 1000 vehicles. Moreover, an additional RMB 200 million has been made available for meeting hydrogen refueling infrastructure targets, which include the reduction of hydrogen costs to under 35 RMB/kg at the pump [86]. In 2021, the three metropolitan areas of Beijing, Shanghai, and Guangdong were selected to receive funding in this program [87]. Since 2021, hydrogen energy is one of the six future prospective industries of the 14th Five-Year Plan [59].
+
+Energies 2022, 15, 4975
+
+13 of 34
+Another leading country for the deployment of hydrogen technologies is Japan. Being the home country for leading FCEV OEMs Toyota and Honda, Japan has the highest number of hydrogen refueling stations and is in fourth place for fuel cell vehicle deployment. The available commercial fuel cell passenger vehicle models are the Toyota Mirai and Honda Clarity Fuel Cell [64]. The price of the Mirai varies between JPY 6.45 and 7.82 million based on the model and the Clarity Fuel Cell has a price of JPY 7.12 million. The subsidy amounts vary between JPY 1.45 million and 2.38 million [88].
+Among the European countries, Germany has the highest FCV population on the road, as well as the highest number of hydrogen refueling stations. As passenger car models, currently the Toyota Mirai and Hyundai Nexo can be purchased. In recent years, the Mercedes-Benz GLC F-CELL was also available for selected customers based on a full-service rental model, but this vehicle is unavailable at present [89]. Different versions of Mirai are available in Germany for EUR 63,900­73,900 [90]. The Hyundai Nexo is available for EUR 77,290 [91]. Fuel cell­ and battery­electric vehicles are eligible for the same amount of incentives in Germany, which is called the environmental bonus. In addition, there are further funding programs for purchasing fuel cell vehicles for fleet operation. Presently, the Toyota Mirai is the only FCV model eligible for the environmental bonus and purchasers receive EUR 5000 from the government and EUR 2500 from the car manufacturer, totaling EUR 7500. The Hyundai Nexo and its predecessor model, the ix35 Fuel Cell, were also eligible for the environmental bonus in past versions. The environmental bonus can be combined with several support mechanisms [92]. The evaluation of the applications for the environmental bonus through 1 March 2022 shows that only 241 fuel cell vehicles received support from this program, specifically 170 Hyundai Nexos, 19 Hyundai ix35 Fuel Cells and 52 Toyota Mirais [93]. Comparing these numbers with the total number of FCEVs in Germany, it is clear that it was not the environmental bonus alone that motivated the buyers of fuel cell vehicles. Other funding possibilities from various calls within the National Innovation Programme for Hydrogen and Fuel Cell Technology (NIP), as well as from state governments and European programs also drove the deployment of fuel cell vehicles in Germany. For example, as of January 2021, 876 passenger cars, 503 light commercial vehicles, 79 buses, 35 garbage trucks, and eight street sweepers, as well as 43 public and 12 non-public HRSs, had received approval for funding from the NIP II since 2016 [94,95].
+In France, private buyers of FCVs receive EUR 6000 in support for a maximum purchase price of EUR 45,000 and EUR 2000 for a price higher than EUR 45,000. For commercial vehicles, subsidy rates of EUR 4000 and 2000, respectively, apply [96].
+In Canada, the price of the Toyota Mirai varies between CAD 54,990 and 76,750 based on model type [97]. A federal incentive of up to CAD 5000 applies for fuel cell vehicles [98]. On top of this, additional incentives are available at the state level, such as CAD 8000 in Quebec [99], CAD 5000 in Yukon [100], and CAD 3000 in British Columbia [101], each valid according to the vehicle manufacturer's maximum suggested retail price.
+As well as the exemption from mineral oil tax for hydrogen as a fuel in Switzerland, an additional support scheme is available for fuel cell trucks [53]. On the one hand, fuel cell trucks are exempt from the performance-related heavy vehicle tax, which is 0.023 CHF/tkm for Euro 6 trucks. Additionally, an investment contribution of CHF 50,000 is provided or an annual subsidy paid until 2030, which covers around two-thirds of the additional rental or leasing costs of the truck compared to a diesel version. With this scheme, the operation of fuel cell trucks is a business model without subsidies or project funding in Switzerland.
+In Italy, the purchase of FCEVs is supported by EUR 6000­10,000, provided that the maximum price is less than EUR 61,000 [102].
+In Austria, the Hyundai Nexo is only available for customers with a professional connection to the topic of hydrogen [103], whereas the Toyota Mirai can be purchased for a starting price of EUR 59,900 [104]. As in many of the other countries, the fuel cell­ and battery­electric vehicles are eligible for the same incentives: private buyers of new passenger cars can save EUR 5000 (60% federal funding and 40% from car importers). Companies and organizations can save EUR 4000 (50% each from federal funding and
+
+Energies 2022, 15, 4975
+
+14 of 34
+car importers) for purchasing passenger cars and transporters with a weight of less than 2000 kg. The incentives are limited to 30% of the purchase price, whereas the gross list purchase price can be up to EUR 60,000. To profit from the funding, it must be proven that only renewable hydrogen is used as a fuel. FCVs are also exempted from the standardized consumption tax, engine-related insurance tax, and vehicle tax [105­107].
+The Hyundai Nexo and Toyota Mirai are also the only fuel cell passenger car models available in Spain, with prices of around EUR 65,000 each [108]. FCVs receive incentives of up to EUR 6000 [109].
+In Sweden, the Hyundai Nexo can be purchased for a price of SEK 849,900 [110], whereas the Toyota Mirai can only be rented through car-sharing company Kinto Share [111]. SEK 70,000 is available as an incentive for buyers of fuel cell vehicles in the country [112].
+The analysis of the incentives shows that the available mechanisms provide only a limited reduction in the purchase price of an FCV. Moreover, the incentives vary within a country due to the available support schemes from local or state governments. An exception to this general trend comes from South Korea, where the incentives reduce the price by around 50%. This contrasting trend surely played an important role in bringing South Korea to the leading position in the number of fuel cell vehicles. Other important results from this section arise from the Chinese landscape. On the one hand, the unique diversity of the available fuel cell vehicle models in the country is apparent. On the other, the outcome of the recent change in the funding mechanism, which aims to provide awards to selected regions instead of general subsidies, must be monitored in the coming years.
+5. Perspectives
+After analyzing the subsidy schemes in Section 4 that could have an influence on the present deployment status reported in Section 3, this section focuses on the perspectives in the form of roadmaps, national plans, targets, and visions that can play a role in further development in the coming years.
+In November 2021, the Basic Plan for Implementing the Hydrogen Economy of Korea was published by the Ministry of Trade, Industry and Energy, which was prepared by contributions from industry, academia, and experts. This report highlights the announcements of large-scale investment plans of South Korean companies to the hydrogen industry, including companies such as SK, Hyundai, POSCO, Hanwha, and Hyosung, which plan to invest approximately 43 trillion KRW by 2030. According to this plan, South Korea intends to achieve 34% self-sufficiency in clean hydrogen production by 2030 and 60% by 2050, with a hydrogen supply of 3.9 million tonnes and 27.9 million tonnes, respectively. On the utilization side, the plans foresee securing the production capacity of 100,000 passenger cars per year and 2000 commercial vehicles per year between 2020 and 2030. The plan targets 850,000 passenger cars and 30,000 commercial vehicles for 2030 and 5,150,000 passenger cars and 110,000 commercial vehicles for 2050. For commercial vehicles, the durability target is to increase the current level of 200,000 km to 500,000 km by 2025 and reach the ICE durability of above 800,000 km in 2030. For passenger cars, it is intended to achieve the equivalence of ICE durability with above 300,000 km by 2023 and more than 500,000 km by 2025. Concerning the mileage targets, the equivalence of ICE vehicles to 600 km is already considered state-of-the-art for FCEVs. At present, commercial vehicles reach 400 km, which is set to be increased to 800 km by 2025 and reach equivalence in ICE vehicles in 2030 with above 1000 km. Concerning the hydrogen refueling station infrastructure, it is planned that the public side leads the balanced deployment by region in the early stages of FCEV deployment through 2025 and the private side leads the expansion based on market demand. With that being said, the goals foresee 310 stations in 2022, 450 in 2025, 660 in 2030, 1200 in 2040, and 2000 or more in 2050. Overall, the present South Korean plan anticipates an accumulated economic ripple effect of 1319 trillion KRW and the creation of 567,000 jobs by 2050. The revenues from the hydrogen economy are reported to be 2.85 trillion KRW and employment with 150,000 jobs in 2019 was foreseen [113].
+
+Energies 2022, 15, 4975
+
+15 of 34
+In 2020, the Roadmap to a U.S. Hydrogen Economy was released with input from a coalition of 20 companies and organizations [114]. The milestones of this ambitious plan include FCV sales of 30,000 units in 2022 (early scale-up), 150,000 units in 2025 (diversification) and 1,200,000 units in 2030 (broad roll-up). It is also intended to increase the number of hydrogen refueling stations to 165 in 2022, 1000 in 2025, and 4300 in 2030. According to the base scenario, fuel cell light-duty passenger vehicles will have a share of 5% in 2050 (1% in 2030), buses 18% (2%), and trucks 8% (2%). In the ambitious scenario, the share of fuel cell light-duty passenger vehicles will increase to 41% in 2050 (7% in 2030), buses to 55% (13%), and trucks to 35% (9%).
+California has traditionally been the most active U.S. federal state for the deployment of FCEVs and for developing an HRS network as part of the state targets for zero-emission transport. The California Energy Commission will co-fund the development of retail HRSs until at least 100 stations are in operation in the state. In addition to the 100 station milestone, an additional target of 200 HRSs by 2025 was defined. Funding from the state and private sources will contribute to achieving the set target. It should also be noted that the California Air Resources Board reported that it was tracking 176 station development projects as of September 2021. The annual evaluation of the Board estimates 30,800 FCEVs on the road by 2024 and 61,000 by the end of 2027 in California, based on automobile manufacturer targets [115]. Moreover, in 2018 the California Fuel Cell Partnership published its vision for 2030, reflecting the input and consensus of more than 40 partners, including automobile manufacturers, energy companies, fuel cell companies, governmental and non-governmental organizations, and universities. According to this vision, termed "The California Fuel Cell Revolution," the Partnership will pursue a network of 1000 HRSs and one million FCEVs in California by 2030 [116].
+It has been reported that 30 provinces and cities in China have issued special policies regarding hydrogen energy, with the most comprehensive ones being from Shanghai, Beijing, Guangdong, Hebei, Jiangsu, Hubei, and Shandong, which have issued more than 70 documents specifically concerning fuel cells and hydrogen energy [59]. It has also been reported that more than every third government-owned company has developed a layout covering the complete industry chain, including hydrogen production, storage, refueling and utilization, with the most representative companies being Sinopec, CNPC, CHN Energy, SPIC, and DEC. Among these, Sinopec set the target of building 1000 hydrogen refueling stations during the 14th Five-Year Plan and becoming the number one hydrogen energy company in China [59]. In 2020, China SAE published the Technology Roadmap for Energysaving and New Energy Vehicles: Version 2.0 [117]. This roadmap defines the target of reaching 50,000­100,000 FCVs and more than 1000 hydrogen refueling stations by 2025, and one million FCVs and more than 5000 stations latest by 2035. The roadmap also includes technical targets for passenger and commercial vehicles, as well as hydrogen provision.
+In March 2019, the Hydrogen and Fuel Cell Strategy Council in Japan presented an action plan developed with broad participation from industry, academia, and government representatives to realize a hydrogen society [118]. The resulting document, "The Strategic Road Map for Hydrogen and Fuel Cells", sets targets for the period through 2030. Accordingly, Japan will try to introduce 200,000 fuel cell electric vehicles and 320 HRSs by 2025 and 800,000 FCEVs, 1200 buses, and 900 stations by 2030. If we look back to the 2020 targets defined in this roadmap, we can see that the 40,000-vehicle target has not been achieved yet; however, the additional targets with 100 buses and 160 stations have been. The roadmap also defines the driving range target of 800 km (2019 state-of-the-art: 650 km), 6 kW/L power density (2019: 3 kW/L), over 15 years' durability (2019: 15 years), and the amount of rare materials used to be reduced to 0.1 g/kW in 2030. The vehicle price for the Mirai class will be comparable to that of hybrid electric vehicles in the same class around 2025. Moreover, the cost of the fuel cell system will be reduced to less than 4000 JPY/kW (2019: 20,000 JPY/kW) and hydrogen storage systems capable of carrying 5 kg to 100,000­200,000 JPY (2019: 700,000 JPY) in 2030 [118].
+
+Energies 2022, 15, 4975
+
+16 of 34
+Although the National Hydrogen Strategy of Germany defines a critical role for hydrogen for the energy transition in the country, there are not yet any defined roadmaps concerning the broad deployment of FCVs [119]. As part of the application of the EU directive 2014/94/EU, the target of building 400 HRSs, coupled with the actual deployment status of fuel cell vehicles, was defined [120]. In parallel, several federal states have developed or are developing hydrogen roadmaps. For instance, similar to the example of California in the U.S., the federal state North Rhine­Westphalia (NRW) defined ambitious targets for the period through 2030 in its roadmap. These targets include a fleet of more than 400 fuel cell trucks, 20 HRSs for trucks and 60 for passenger cars, 500 fuel cell buses for public transportation, and the operation of the first inland ship operating on hydrogen by 2025. The longer-term targets through 2030 include 11,000 fuel cell trucks with more than 20 t weight, 200 stations for trucks and passenger cars, 1000 fuel cell garbage trucks, and 3800 fuel cell buses for public transportation [121].
+Similarly, the Dutch government considers the development of hydrogen as an energy carrier vital to mobility, particularly for heavy-duty transport according to the Climate Agreement from June 2019 [122]. In this context, 15,000 passenger cars in 2025 and 300,000 cars in 2030 are anticipated. Moreover, 50 HRSs and 3000 heavy-duty vehicles are intended for 2025 as a strategic base for accelerated growth towards 2030 and 2050.
+The "Hydrogen Deployment Plan for the Energy Transition" of France defined the target of 5000 light commercial vehicles and 200 heavy-duty ones and the construction of 100 stations supplied with locally produced hydrogen by 2023 [123]. A total of 20,000­50,000 light commercial vehicles, 800­2000 heavy-duty vehicles, and 400­1000 stations are planned by 2028.
+The "Hydrogen Strategy for Canada" from 2020 does not define concrete targets for FCEVs but presents the vision for hydrogen in Canada in 2050 as including more than five million on the road [124].
+Switzerland plans a fleet of 1000 fuel cell trucks by 2023, 1600 by 2025, and a nationwide HRS infrastructure with more than 33 stations by 2023 [53].
+The Italian hydrogen and fuel cell targets include 1000 fuel cell buses and 25,000 passenger cars by 2025 [125]. Moreover, 442 HRSs, of which 346 will be for light-duty and 96 for heavy-duty vehicles, as well as 200,000 heavy-duty trucks, are targeted for 2030. Back in 2016, Italy defined the goals of 290,000 passenger cars and 3,600 buses operating on fuel cell technology by 2030 [126­128].
+The Spanish government promotes the deployment of hydrogen as a sustainable energy vector that will play a key role in achieving climate-neutrality by 2050 at the latest with the "Hydrogen Roadmap: A Commitment to a Renewable Hydrogen" [129]. The main objectives of the roadmap include 150­200 buses, 5000­7000 light, and heavy vehicles for goods transportation with fuel cell technology, as well as 100­150 HRSs.
+In addition to the national roadmaps, the Hydrogen Roadmap Europe from 2019 presents an ambitious path with significant shares of FCVs in the transportation sector [130]. The roadmap developed by the Fuel Cells and Hydrogen Joint Undertaking was supported by Hydrogen Europe and 17 companies and organizations along the entire hydrogen value chain. Compared with the business-as-usual scenario, where hydrogen could provide 8% of the total energy demand in Europe in 2050, the ambitious scenario estimates a share of 24%, of which 30% would be used for transportation. In the ambitious vision, every 12th light commercial vehicle and every 22nd passenger vehicle sold in 2030 to operate on fuel cell technology; in 2040, the shares increase to one in five and one in seven, respectively. Totals of 45,000 trucks and buses in 2030 and 450,000 in 2040 are set as further milestones. Furthermore, the ambitious scenario aims for 300,000 vehicles sold in 2025, 1.2 million in 2030, 1.8 million in 2035, 3.1 million in 2040, 5.3 million in 2045, and 8 million in 2050. This translates to 11 times more vehicles in 2030 and 16 times more vehicles in 2050 compared to the business-as-usual scenario. Based on this development, the number of FCVs on the road may exceed to 50 million units in 2050, consisting of approximately 45 million passenger cars, 6.5 million light commercial vehicles, 250,0000 buses, and 1.7 million trucks.
+
+Energies 2022, 15, 4975
+
+17 of 34
+In parallel, the ambitious scenario requires 1500 HRSs in 2025, 3750 in 2030, 8500 in 2035, 15,000 in 2040, 23,000 in 2045, and 33,000 in 2050. Looking at the FCV share in the respective car segments, small cars will have a share of 2­22% in vehicles sold per year (2030­2050), larger cars 5­39%, taxis 14­61%, vans and light commercial vehicles 8­49%, buses 6­45%, and trucks 1­35%. The roadmap points out that more than 750 stations are either already announced or planned for 2025 in Europe.
+In June 2021, a proposal for a regulation of the European Parliament and the Council on the Deployment of Alternative Fuels Infrastructure Regulation (AFIR) was published [131], which shall replace the Alternative Fuels Infrastructure Directive (AFID) from 2014. It is proposed that the EU Member States will ensure a minimum number of public HRSs by 2030, with a minimum capacity of 2 t/d and at least one 700 bar dispenser, with a maximum distance of 150 km between two stations along the Trans-European Transport Network (TEN-T) core and TEN-T comprehensive network. In addition, liquid hydrogen will be made available at public HRSs with a maximum distance of 450 km in between sites. It is expected that the existing AFID will be reviewed in 2022. In April 2022, Hydrogen Europe, representing over 100 companies and organizations from the road transport sector and the entire hydrogen value chain, published an open letter raising concerns on an apparent lack of ambition in the proposed targets [132]. Instead, they call for a realistic timeline for the rollout of hydrogen refueling infrastructure and argue that the current proposal would result in approximately only 1100 HRS, which would be insufficient to cover even the most basic levels of demand. Hydrogen Europe's trajectory includes three steps. For the first, half of the network density corresponding to an HRS every 200 km will already be met by 2025. In 2027, the TEN-T core network with full density (HRSs every 100 km) will be established to match the expected large-scale rollout by manufacturers, at a minimum of 2 t/d with 700 and 350 bar dispensers. As the last step, by 2030, the full density coverage will be extended to the entire TEN-T network, with the same minimum capacities and dispenser options, liquid hydrogen being available every 300 km, and at least 2 HRS for each of the 424 TEN-T nodes, providing customers with certainty and basic reliability for users.
+After discussing the regional and national roadmaps and visions for Asian, North American, and European countries, we can present an overall perspective that brings all visions together and gives a worldwide overview. The Hydrogen Council defines itself as "a global CEO-led initiative of leading companies with a united vision and long-term ambition: for hydrogen to foster the clean energy transition for a better, more resilient future". As of March 2022, the Council had more than 130 members across the globe. The Hydrogen--Scaling Up report from 2017 defines milestones for the year 2030 as a precursor to reaching the 2050 targets. According to this roadmap, one in 12 cars in Germany, Japan, South Korea, and California are to be powered by hydrogen as 2030 milestones. Furthermore, globally, 10­15 million cars and 500,000 trucks are to be powered by hydrogen, with an annual sales volume of four million vehicles and almost 3% of new vehicle sales. The targets for 2050 consist of up to 400 million passenger vehicles, five million trucks, and more than 15 million buses operated on hydrogen technologies. These numbers correspond to a market share of 25% for passenger vehicles, 30% for trucks, 25% for buses, and about 35% of new vehicle sales in 2050. The 2017 report counted 5300 announcements for HRSs for 2030 and pointed out that roughly 15,000 stations would be needed in that year to serve the 10­15 million vehicles, according to the roadmap [133].
+To give an overall impression of the announced targets, developed roadmaps and visions, Figure 9 summarizes the numbers presented in this section on a timeline, starting with the current numbers from this study. In the next section, the present deployment status will first be analyzed, observing the development trend of the last five years, and then combined with the announced numbers from this section in order to predict the required development trends over time.
+
+EnergiesE2n0e2rg2i,es1520, 2429,7155, x FOR PEER REVIEW
+
+20 of 3718 of 34
+
+FigumFirgaetuio9ren. 9sV.oViusiruscuaeasllassnuudmmtmympaaerrsyyoofofttfahrtegheceto(mcroomamdummniacuapnt,eincdaatttaieordngeattlsat,arvgrgieseitotsno, srv,viasinsiiodonnps)r,oajraeencetdixopnplsaroidnjieesdccutiisnosneSdesc. dtTiohisnec5iun.sfoser-d. The information sources and types of target (roadmap, national target or vision) are explained in Section 5.
+6. A6.nAanlyaslyissis After the detailed presentation of the numbers of FCVs and HRSs in Section 3, the
+avAaiflatebrlethinecednettiavielsedforppreusrecnhatasitniognoor foptheerantiungmabnerFsCoVf wFCerVe shiagnhdligHhtRedSsininSeScetciotinon4. 3, the avaSielactbiolen i5ncfoecnutsivedesofnotrhpe uarncnhoausnincegdoprlaonpsearnadtinrogadamn aFpCsVfrowmerdeifhfeirgehnltigcohutendtriiens Sanedction 4. Secrteioginon5s,fococmuspeledmoennttehdebaynwnooruldnwceiddepplearnspseacntivdesr.oIandtmheaprsesfreonmt sedctiifofenr,etnhet caovauinlatbrliees and regiinofnosrm, caotimonpflreommetnhteedprbevyiowuos rsledcwtioindsewpiellrbspe ecoctmivbeinse. dInfotrhaenparneasleynsitssoefctthioenn,utmhbeearvs.ailable informaFtiirosntlyf,rFoimgutrhee10psrhevowiosutshesedcetvioenlospwmielnl tboef cthoemnbuimnebderfoofrFaCnVasninaltyhseislaostf ftihve yneuamrsbers.
+baFseirdstolyn, oFuigr upraest1s0usrhveoyws s[6t,h2e3­d2e5v] ealnodptmheenptreosfentht esunruvmeybreersuolftsFfCroVms itnhitshsetuladsyt. fiTvhe years based on our past surveys [6,23­25] and the present survey results from this study. The first data from passenger cars are for 2017, whereas the data collected for all vehicles started in 2018. It should be noted that Hyundai started offering the world's first mass-produced fuel cell vehicle, the ix35 Fuel Cell, for lease in U.S. in 2014 and the Toyota Mirai was launched at the end of 2014 in Japan [134]. For passenger cars, after a 56% increase in the annual
+
+Energies 2022, 15, x FOR PEER REVIEW
+
+21 of 37
+
+Energies 2022, 15, 4975
+
+first data from passenger cars are for 2017, whereas the data collected for all vehicles started in 2018. It should be noted that Hyundai started offering the world's first ma1s9s-of 34 produced fuel cell vehicle, the ix35 Fuel Cell, for lease in U.S. in 2014 and the Toyota Mirai was launched at the end of 2014 in Japan [134]. For passenger cars, after a 56% increase in thdeeapnlnoyumalednetprlaotyemfreonmt ra2t0e17frotom22001187, tthoe2h01ig8h, ethste ihnicgrheeassteirnactreeaosfe6r9a%te wofa6s9r%ecowradserdecfr-om or2d0e1d8 ftroo2m01290.1T8htoe i2n0c1r9e.aTseheraitnecsreloawseerdatdeoswlonwteod3d7%owinn 2to02307,%whinic2h02ca0n, wbheiecxhpclaaninbede by extphleaignleodbablyetchoenogmlobicalreecceosnsoiomniccareucseesdsiboyn tchaeusCeOd VbyIDth-1e9CpOaVndIDem-19ic.paInnd2e0m21i,c.thIne 2in0c2r1e,ase threatiencwreaasse63r%ateanwdasap63p%roaacnhdedaptphreoahcighhedestthreatheigohfe6s9t %ratjue sotfb6e9f%orejutshtebpefaonrdeetmheicp, awnh- ich deismiinc,awcchoicrhdaisnicne awccitohrdthanecfierwstitshigthnes foifrsetcsoignnosmoifcerceocnoovmeriyc rienco2v02er1y. iHno2w02e1v.eHr,olwooevkeinr,g at lotohkeinagbsaot ltuhteeanbusomlubteerns,uimt ibsecrlse,aitritshcalet athr ethiantctrheeasinecirnea2s0e2i1n, 2w0i2t1h, w16i,t2h6106p,2a6s0sepnagsseerncgaerrs, is camrsu, icshmsturcohnsgterronthgaenr tthhaant tihna2t0i1n92,0w19it,hw7it7h0177u0n1iutsn. iAtss. Athsethsetosctkocokfofuf feulecleclel lpl apsassesnegnegrercars cairsssitseasdteialydiilnycrineacsreinagsi,ntgh,etahnenaunanluianlcrineacrseearsaeteradtoeedsoneostnroetflerecftltehcte tphreogprreosgsreaslosnaelo, wneh, ich wmhiuchstmbeusctobmepcloemmpelnetmedenbtyedthbeyatbhseoalubsteoliuntcereinacsree. aLsoeo. Lkionogkiantgthaet tdheevdeelovpemlopenmteonftaolfl aFlCl Vs, FCitViss,cilteiasrcltehaart tthhaet sthtreosntgroinngcrienacsreearsaeteraotef 9o5f%95f%rofmrom2021081t8oto20210919diddidnnoot tccoonntitninuueeiinnthe thseusbusbeqseuqeunetnyteyaeras.rsT.hTehienicnrecraesaesrearteatieni2n022002w0 awsa3s83%8,%a,nadntdhtuhsucsocmompapraarbalbelteottohtehiencinre-ase crreaatseeorfapteaossfepnagsesrencgaresr.cIanrs2.0I2n12, 0a2n1i,manpriomvpermovenemt wenatswobasseorbvseedrvweidthwait4h8a%4i8n%crienacsreearasete in raoteneinyoenare. year.
+60,000
+
+Number of fuel cell vehicles
+7186 11,212 12,952 18,913 25,212 25,932 34,804 42,192 51,437
+
+50,000
+
+40,000
+
+30,000
+
+20,000
+
+10,000
+
+0 2017
+
+2018
+
+2019
+
+2020
+
+2021
+
+passenger cars all vehicles
+
+FiFgiugruer1e01.0D. eDveevloeplompemnet notf othfethneunmubmerboerf foufefluceelllcevlelhviechleisclbeassbeadsoedn roensureltssuflrtosmfropmrevpiroeuvsiosuusrvseuyrsveys anadndthtihs iws owrokr.k.
+
+InInthtehneenxetxatnaanlyaslyiss,isth, ethcehcahnagnegien ignlogblaolbsahl asrheasrefrsofmro2m022002to0 2to02210i2s1ciosmcopmarpedarfeodr for thtehteotpopfivfievceocuonutnritersietshatht ahtahdaadt aletalseta1s0t 01000fu0efluceelllcevlelhviechleiscloens tohnetrhoeadroaasdoafseonfdeonfd20o2f12.021. ThTeheabasbosloultuetneunmumbebrserasrearaelsaolsaodaddeddetdo tFoigFuigreur1e1.1A1.ltAhlotuhgohugthhethraenrkainnkgindgiddnidotncohtacnhgaenge inin2022012,1t,htehsehsahraeroefovfevheichliecsleins iSnouSothutKhoKreoareinacirnecarseeadsesdtrosntrgolnyg, lfyro, fmro2m9%29t%o 3t8o%3,8l%ea,dleinagding totorerdeudcuticotinosnosfotfhtrheerepeeprceercnetangtaegpeopinotisnftosrfothrethUe.SU. .aSn. danedigehitgfhotrfoCrhCinhai.nTah. eTshheasrhesarfeosr for JaJpaapnananadndthtehreersetsotfotfhtehwe owroldrlidncinrecareseadsesdligslhigtlhytlwyitwhitohneonpeerpceerncteangteagpeoipnot ienatceha, cwhi,twh ith GGeremrmanaynymmainaitnaitnaiinnginigtsitsshsahrearaet a3t%3.%A. nAannaalnyasliys soisf tohfethaebsaoblusotelunteumnubmerbs efrosr fCorhiCnhaina shsohwows osnolnylay salisglhigthint cinrecarseeasine itnhethneunmubmerboefr FoCf VFCs Vinstihnetchoeucnoturyn,twryi,twh iotnhlyon3l1yv3e1hvicelhesic. les. ThTehaenaanlyaslyissiosf othf ethneunmubmerbsefrosr fdoirffderifefnetrevnethivcelehiccalteegcaotreiegsoirnieCshininCa hshinoawsshaonwinscarneaisnecirnease MiDn M(3D70(n37e0wnuenwitus)naitnsd) aHnDd H(7D96(7n9e6wnuewnitus,naitlsl,naellwn)etwru)ctkrus,cwksh, ewrehaesretahse tbhuesbnuusmnubemrsbers dedcerceraesaesdedbyby11141040inin22002211..TThheerreedduuccttiioonn wwaass dduuee ttoo aannoovveerreessttimimaattioionnininththeepprerveivoiuosusyear.
+Although the current numbers are based on vehicle registrations in China, the previous ones were provided by vehicle manufacturers and included vehicles that were planned but not manufactured and put into operation [31].
+
+Energies 2022, 15, x FOR PEER REVIEyWear. Although the current numbers are based on vehicle registrations in C2h2inofa3,7the pre-
+
+vious ones were provided by vehicle manufacturers and included vehicles that were
+
+planned but not manufactured and put into operation [31].
+
+year. Although the current numbers are based on vehicle registrations in China, the pre-
+
+Energies 2022, 15, 4975
+
+vious ones were provided by vehicle manufacturers and included vehicles that w20eorfe34
+
+planned but not manufactured and put into operation [31].
+
+Figure 11. FCVs in the top five countries with more than 1000 fuel cell vehicles on the road as of the
+eFniFdgiugorufer2e10112.1F1. C:FcCVhVsaisnnigntehtehoetfotspohpfaivrfieevseco2cu0o2nu0tnr­tire2is0e2sw1wi.thithmmoroerethtahnan10100000fufeulecleclellvl evheihcilcelsesononthteheroraodadasasofotfhtehe
+enedndoIfon2f 02a2012s:1icm:hcahilnaagnregmeofoasfhnsahnraeersre,s20t2h2002e­02d­02e20v12.1e.lopment of the HRS infrastructure will be analyzed in
+the nIenIxntaasstisemipmi.liaAlrarsmmcaanannnebree,r,tohtbhesedederveveledolopinpmmFeneigntutorofeftht1he2eH, H2R0RS2S1inienfrxfarhsaitsbrturitucetcudturterhewewislilhllbaberepaenasnatlayilynzezcderdeianisne, both itnhthethenenexaetxntsntseutpeap.lA.inAscscracenaansbeeberoabotsbeesraevrnevddedainbinsFoiFgliugtureren121u,2m2, 02b20e12r1esx.ehxThihbieibtieitdnedctrhteheaesshseharraaprtpeesetisntinioncrncereaesayese,eab, rbotowhthas 35%, winihntihctheheainasnenuvuaelanilninchrciegraehsaesrerartthaetaeannandthdaabatsboisnloulu2te0ten1un9,ummwbebitrehsr.sT2. 3hT%ehei.niIcnnrceraesbaeseoralrutaeteininounomeneybeyeaerrsa,wr twahsaes35n3%u5%m, ,ber of HwwRhhSicishchinisisoeepvveeernnathiiognheirntcthhraeanansthethdaattbinyin2102810991,s9wt,aiwttihiot2hn3s%2,3w.%Ihn. iIacnbhsaoibslusmotelounrtueemtnhbuaemnrsbt,ewtrhsiec, enthutehmenbuhemrigobhfeeHrsRtoSfinscrease oHfiRn8S7ospsitenartoaiptoieonrnsatiiinnocn2re0ina1sc9er.edabseyd1b8y9 1s8ta9tsiotantsio, nwsh, wichiicshmisomreotrheatnhatnwtiwceictehtehheihgihgehsetsitnicnrceraesaeseof
+of8787stsattaitoinosnsinin2021091.9.
+
+NuNummbbererofofhhyyddrrogenn rreeffuueleilinngg ssttaattiions
+
+880000
+
+729 729
+
+770000
+
+660000
+
+540 540
+
+550000
+
+468468
+
+440000 333030 330000
+
+383181
+
+220000
+
+110000
+
+0
+0 2017
+
+2018
+
+2019
+
+2020
+
+2021
+
+2017 2018 2019 2020 2021
+
+Figure 12. Development of the number of HRSs based on the results from previous surveys and this FwiFgoiurgkru.ere121.2D. Deveevleoloppmmeennttoofftthheennuummbbeerr ooff HHRRSSssbbaasseeddoonnththeereresusultlstsfrformomprperveiovuiosussursvueryvseyansdand this wothriks.work.
+Similar to Figure 11, Figure 13 compares the shares of HRSs in countries that were
+sbosiibsosiiKnnehnnpueh1puGitKtboccoanchhcoet2apouetroroerorcee0rrnearneeeatrnerrnea%aSaarmleasleeseaddststaeoioshSsaaiiloymoyiaticenensfifsnaniaenmaioeonegt2rgntcr2inrahnnyaoehglararicrtmpdaerdmnepdltahehr,otmae,reaeeetreroeaftarsrrroesaeatshotrdrycneae2shtrsisonecrieeondsidanpeeraeiieknpnatpnrdndFkehnF2ittrrtttednekch,hhiea2hi0a2itrtpgtncgrigdgai2a0chen0ainperotuuvgenu1gei22nedcisgr5sone,vrr1c1iephpi5c0rele5pswtt,te,ceay0hioaipih0fwosholo1cwnt,1igaiayhfaotstin1nanegfac1iieohnri,aiat,invatsitece,othnnslregipcFceigohdiofeFlfattsihlbeaionoeir.nislyfgticodnbyeoidoineJ,igwfstunheaasnymdure..eiusfsftprneoiaareJorswttefsJ3rasaactaomdhouapGte2sahtnpt1tamiapureith6nte33ttnoa1tarwahrrh2iGread2cenoeG3ntntcmenaeiinewhm6neotn3oennidcnrehrea2renm2renaeeitodnwdnmsmna6snmeiwmGtdmnpynge2iaosneaGasenaveeeaetoafptnwndanswirrdvieeafoi2pGnteneymaynnrtea0on2oswidiemrssnneea2o0tasfiedttpatinnrd12.nanaahtos2sfpnemth1.Wdttinstiye0nsreirandH.it,eoycns2orahttsaasCiHetihncetfi1.Unnnhnoaetnhfehrpeseh.Wrdinandsye.nt.irrslsHSs,Ureasdn,aesttthtefW.a,Cgiiah,ca,rto.ettspUfaCnSeegoiehuohwrpiaitlr.,odntehse.,auUrpnieihlwSshfgins,waccrpdosnitf..iHleinscSia,crociioeiatht,tonSnelno.hhauwiRretaiiawot,tnfcnhcosrahtrsnSnaruswhthhnegrHt,icresshddihttseegilart,snUhhiocliReiaheethSsirSnnUwhih.tag.saKeteaooSnSocphnFrts.hscuews.oScarussperooentdtortCe.rlhachetihtueesiorefCanUnhtghdoeaclovaatni7sKichhtdviwsnteg.otKe3nvcietSeoiteruvrolnno%shneaesiyykl.orrecoelyruoaetdoeeyCartolyksta,amtyipndrehnfafonth,wtemoovattenuthd7hon7odwdirvniedech3n3sdaottioSoeurtoshel1h%e%tdeaskioSyryf2sarcoohserweouettoa0hatrrnktaarahhtmuiatee%hvtenaarhnohneeessatooerreteddonaheeedssrfvtsdSoeh1weorf2arutte0arhhter%theeees Kocorneastainntc,rweaitshed13tnheewir HshRaSrseabnyd tfhoeurresatnodf tsheevwenorplderncoewnthaagseapsoliignhttsly, rreesdpueccetdivsehlayr,e wofhereas
+
+two percentage points.
+
+Energies 2022, 15, x FOR PEER REVIEW
+
+23 of 37
+
+Energies 2022, 15, 4975
+
+Germany had a reduction of four percentage points and the U.S. three. France kept its share constant, with 13 new HRSs and the rest of the world now has a slightly red2u1coefd34 share of two percentage points.
+
+Figure 13. HRSs in the top six countries with more than 50 stations in operation as of the end of 2021: Fcihgaunrege1o3.f HshRaSressi2n0t2h0e­2to02p1s. ix countries with more than 50 stations in operation as of the end of 2021: change of shares 2020­2021.
+Taking a deeper look at the stagnating development status in Germany, we can see thatT1a7kfiunrgthaerdseteaptieornlsowokeraetitnhdeisffteargennattpinhgasdeesvoeflodpevmeelonpt msteantut s(fionuGr ienrmthaenpyl,awnneincganstsaegee, thonate 1in7 afpuprtrhoevrals,tfiavtieoninsewxeecruetiionnd, sifefveernenitn pcohmasmesisosifodneinvgelaonpdmtreinatl o(fpoeurratiinont)haet pthlaenennidngof s2ta0g2e1,, aonnde tinhiaspnpertwovoarlk, fisivceoninsiedxeerceudtitohne,bsaesvicenneintwcoormk mfoirss7i0o0nbinagr raenfudetlriniagl.oSptaerrtaitniognf)roamt th20e2e1n, dHRofSs20w2i1l,l abnedpothsitsionneetwd oinrksuischcoloncsaidtieornesd, wthheebreasaicshnoertwt-toerrkmfodrem70a0nbdafrorelfougeilsitnicga.l Svtaerhtiicnlegsfrisomexp20ec2t1e,dH, RanSds wihllebreerpisoisnigtiodneemdainndsufocrhploucbalitciosntast,iwonhsefroerapsahsosretn-tgeerrmcadresmseaenmds fomrelaonginstgifcual v[7e0h]i.cles is expected, and where rising demand for public stations for passenger caFrsorsetheemnsemxteaannailnygsfius,lt[h7e0n].umbers of FCVs on the road are combined with the numbers of HFRoSrsthine onpeexrtaatnioanlyfsoisr,athbeasniucmanbaelryssoisf.FTChVestopn tshixe crouadntarriescwomithbimneodrewtihthanth5e0nHuRmS-s bweresreofseHleRcStesdi.nFoopreeractihoncofuonr taryb,atshiec nanuamlybseirs.oTfhveehtoicplessixwcaosudnitvriedsedwbityh tmheorneutmhabner5o0f
+HHRRSSsswaseroefstehleecetned.oFfo2r0e2a1cthocoobutanitnrya, fithrestnfiugmurbeeronoftvhehniuclmesbweraosfdvievhidiceldesbpyetrhHe RnuSminbtehre
+opfaHrtRicSuslars coofuthnetreyn. dFiogfu2re02114tsohoobwtasitnhae friersut lftiignugrenuomn tbheersn,usmtarbteinr gofwviethiJcalepsapne, rfeHatRuSriinng
+ththeephairgthiceusltasrhcaoruens torfyH. FRigSus.reTh14e ushtioliwzastitohne preesrusltaintigonusmeebmesrst,ostbaerttihneghwigithhesJtapfoarnS, ofeuat-h tuKroinregatahnedhitghheeUst.Ssh. aInretshoefseHcRoSusn. tTrhiees,uetialiczhatsitoantiopnerwstoautilodnsseerevme s17to0­b1e85thFeChVigsh, eifstefaocrh SvoeuhtihclKe owreareatnodbtehme aUth.Se.mInattihceaslleycaolulonctartiesd, teoacahcesrtatationnstwatoiounld. Jsaeprvane 1a7n0d­C18h5inFaCfVosll,oiwf eaafcthervaebhigclegawpe, rfoertdoebsepimteatthheemhiagthiceasltlynuamllobceartoedf HtoRSasc, eorntlayin40s­ta5t8iovne.hJiacpleasnaraenadllCochaintead fotolloeawchafstteartiaonb.igIngtahpe, tfworodEeusrpoipteeathnecohuignhterisetsnoufmGbeerrmoafnHy RanSds, Fornalnyc4e0, ­th5e8 uvteihliizcaletisonaroef atlhloecsattaetdiotnosesaecehmsstattoiobne. IlnowthientwcoomEpuarroispoena,nwciotuhnetaricehs sotfatGioenrmsearnvyinagnd8­F1r7anvceeh,itchleesu. tAi-s liazlaretiaodnyomf ethnetiostnaetdio,nthseseaenmalsystios bpeerlfoowrminedcohmerpeaisriasobna,swiciothneeaanchd sdtoaetisonnosteernvainbgle8t­h1e7exvaec-t hailclloecsa. tAiosnaolfreeaadchy vmeehnictlieontoeda,stthaetioann.alysis performed here is a basic one and does not enableInththeeexeaxcatmapllloecoaftitohneoUf .eSa.,cmh voesthoicflethteosatasttiaotniosna.nd vehicles are located in California (see Section 3), and so each station serves a very high number of vehicles in this state. The
+2021 Annual Evaluation of FCEV Deployment from the California Air Resources Board
+(CARB) projects 176 open stations by 2026 and 2027 in California, from which locations of
+110 HRSs are already defined today. With an estimated vehicle population of 67,400 units
+by 2027, CARB points to a four times higher FCEV deployment opportunity with the
+176 stations, which would result in more than 1500 vehicles per station [115]. In the case
+of 67,400 units and 176 stations, each station will serve 383 vehicles in California in 2027,
+which doubles the current utilization. In the detailed analyses from CARB, the longest
+drive to a station for a disadvantaged community corresponds to 15 min.
+
+EEnneregrgieises22002222, ,1155, ,x4F9O75R PEER REVIEW
+
+2422ofof3374
+
+Vehicles per HRS
+
+200
+
+184.4
+
+180
+
+170.2
+
+160
+
+140
+
+120
+
+100
+
+80
+
+60
+
+57.6
+
+40 39.9
+
+20
+
+17.0
+
+8.3
+
+0
+Japan China Rep. of Germany U.S. France Korea
+
+FFigiguurere1144. .FFCCVVssppererstsattaitoionnininththeetotoppsisxixcocouunntrtireise,s,wwitihthmmoorereththaann5500stsatatitoionnssininooppeeraratitoionnaassooffththee eennddooff22002211. .
+
+InInthaereecxeanmt pcolenofefrtehneceUp.Sr.e,smenotsattoiofnthfreosmtatPioanqsueatnedt vael.h, iTcoleysoatareMlooctaotreEduirnoCpealpifooirnntiead
+(soeuetStehcattioHn R3)S, auntdiliszoateiaocnhmstuatsitonbesesrivgensifiacvaenrtylyhiignhcrneuasmedbetroofsevceuhriecleths einvtihaibsislittayteo. fThthee
+2s0t2a1tioAnnsn[u1a3l5]E.vTahlueaytiroenpoorftFthCeEVavDereapgleoynmumenbtefrroomf FtChEeVCsaplieforrsntaiatiAonirtoRebseouarroceusnBdo1a6rdat
+(CprAeRseBn)tp, rwohjeiccths 1is76inopgeonodstaatgiorenesmbeyn2t0w26itahndth2e01277 ivneChiaclliefos rpneiar,HfrRomS iwn hGicehrmloacnaytioinnsooufr 1a1n0aHlyRsiSss. aTrheeairlrienavdeystdigeaftiinoendstpoedcaifiye. sWairtheqaunireesmtiemnattoefd5v0e0hpicalsesepnogpeurlcaatirosnpoerf 6st7a,t4i0o0nuunsiitnsg bbylu2e02h7y,dCroAgReBn opro8in3t3sutsoinagfogureretnim, aesssuhmigihnegrtFhCatEeVacdhecpalrocyomnseunmt oepsp0o.3r3tukngi/tydawyiothn tahveer1a7g6e. sFtaotriotnaxs,iswahnidchvawnosuclodnsruesmuilnt gin2.m7 okrge/tdhaayn, t1h5e0n0uvmehbiecrlsesdipmerinsitsahtitoon67[1v1e5h].icInlesthuesicnagsebloufe 6h7y,4d0r0ougennitsoran1d111u76sinstgatgiorneesn, .eaFcohrsftuaetilocnelwl bilul sseesrv(e3038k3g/vdehaiyc)l,e1s5inveChaiclilfeosrnariae irneq2u0i2r7e,d wuhsiinchg bdlouuebhleysdrthoegecnuorrre4n1t uustiinligzagtrioeenn. Ianndthfeordfeutaelilceedllatnruaclyksse(s60frkogm/dCaAy)R,B2,4tvheehlioclnegseasrte drreiqvueitroeda ustsaitnigonblfuoer ahyddisraodgvenanatnadge7d3cuosminmg ugnreiteync[o1r3r5e]s.ponds to 15 min.
+InBaacrkeicnen2t01co7n, Mfereelanicneaperteasle.nftraotmionthferoNmatPioanqauleRt eent eawl.,aTboleyoEtnaeMrgoytoLrabEourraotpoeryp(oNinRteEdL) opuut bthliasht eHdRaS duetitlaizilaetdiornepmoursttabsepsairgtnoiffictahnetlHy 2iUncSrAeaLseodcatotiosnecsuRreoathdemvaipabWiliotrykoinf gthGe rsotau-p tioonnsth[1e3n5a].tiTohnewyidreepdoertvtehloepamveernatgoefnaunmHbeRrSonf eFtCwEoVrks pinerthsteatUio.Sn.t[o13b6e].arTohuenydd1e6vaetloppree-d stehnrte,ewshciecnhairsioins wgoitohddaigffreereemntenext pwainthsitohnec1a7sevsehanicdleessptiemr HatRedS tihneGteortmalaFnCyEiVn ostuorcaknaanlydstish.e TnhuemirbinervseostfigHaRtiSosnfospr e2c0i2fi5e,s2a03r5e,qaunidre2m0e5n0t. Aofcc5o0r0dpinagssteontgheersccaernsaprieorasntaatliyosnisurseisnugltsb,luthee hayvderroaggeennuorm8b3e3r uofsivneghigcrleesenp,earssstuatmioinngintchraetaseeascfhrocmar3c2o0nisnu2m0e2s5,0t.o3312k7g0/dinay20o3n5,aavnedra2g9e6.0 Fionr2ta0x5i0s. aInndcovmanpsacroisnosnu,mthinegy 2r.e7pkogr/tdaayra, ttihoeonfuambobuerts2d00im0 ignaissholtione67vevheihcilcelsespuersignagsbolluinee hsytdatrioogneinnotrh1e1U1.uSs. i[n1g36g]r.eFeonr. GFoerrmfuaenl cye, lalbbouuste4s8(3,500k0g,0/0d0ayp)a,s1s5envgehericclaesrsawreerreeqrueigreisdteurseidngin bqp2ftsluuhrtu0oaibi2erstmle2i,iBohds,Tfiahntybhrhucedes[ekesdit1rin,no3W inantgeg7ghoxd,e2se1btrnee03lnqltr1d8uaovuu7]eirHe.,emledsMh4edtb1yiabeoedrlyulrntearhspooaiiinsfrognOoahraegrutnloeglgnatwaarsrdaenneltpgie.do1zainf4sairr7,ntott4a3eitm5onoreue0frndsdpttfih(hfrunWvoeeeegetrNlHHhtgfshiaur2tOceUateeli)etenloSins[uoncA1enima[3nl1lsL9lb3Rao]ate5,rcnecr]tuans.odocteufgikrrwoneoesnttsmahr(sub6yeRlla0rtewiopnwkEaaaggndisr/tteimdhainrcangatuayhaypl)laer,yLWarnz2tacie4uoboodmrouvkorbnebifahantet3rsiogry3cer.l5oGdyeT0fsroo(FocNanaaCurnRriepVsnsEwrspopLenuiee)-nrrt ththeant actoiuonnwtryid, iendoervdeelroptomdeentteromf ainneHifRthSenreetawreoraknyinctlheaerUco.Sr.r[e1la3t6i]o.nTshbeeytwdeevenelothpeednuthmrbeeer socefnaallrvioeshwiclieths danifdfeFreCnVtse.xFpiagnusrieo1n5cdasisepslaanyds tehsetinmuamtebderthoef tFoCtaVl sFCfrEomV satlol cvkehanicdlethcleasnsuems i-n beearcshocfoHuRnStrsyf,otor g2e0t2h5e,r2w03i5th, athnedir20sh50a.reAicncoarlldrienggisttoerthede svceehniaclreios ianntahlyasticsoruensutrlyts. ,Wthitehatvh-e etrwagoecnouumntbrieersooffvCehhiicnlaesanpdertshteatUio.Sn. ihnacvreinasgetshferohmigh32e0stinnu2m02b5e,rtoof1a2l7l0reingi2s0te3r5e,danvdeh2i9c6le0s, inth2e0n5u0.mInbecrosmopf aFrCisVosn,artheeaylsroephoigrht ,awraitthiothofe aUb.oSu. tan2d00C0 hgiansaolbineienvgeihnicsleecsopnedr agnadsotlhinired sptalaticoens.inHtohweeUv.eSr., [c1o3u6n]t.rFieosr lGikeermInadniay,aanbdoBurta4z8il,,5b00ei,0n0g0inpathsseetnhgiredr caanrds fwouerrethrepglaiscteesrefodrianll 2r0e2g2i,sbteeriendg vseerhviceldesb,ybrairnogunadve1r4y,4l5o0wfuneulmstbaetiroonfsFaCndVsretsoutlhtienrgoianda. Arantioothoefr3d35is0ticnacrtsiopneris sptarteisoennt[1in37t,h1e38c]a.se of South Korea, as this country has the highest number of FCVs globally, despTihteetnheexnt uqmuebsetrioonf iasllhroewgisttoerinedtervperheitcltehsebneuinmgbaetrsa fcroommpaarpaabrltyicauvlaerracgoeulnetvreyl.,Tino 1a2nt-h spwoesrittihoins., Afirnsta,ntahleysnius mofbtehreosfhaalrleroefgiFsCteVresdamveohnigclaelsl irnegaisctoeurendtrvyewhiacsleatnyapleyszesudpbpaosretds tohnis infipnudtinfgro, mwitthhethWe sohraldreHineaSlotuhthOKrgoarneiazbateiionng (aWppHroOx)im[1a3t9e]l,ytaotgleetahsetranwoitrhdethr eofnmumagbneirtuodfe FhCigVhseirntthhaant caonuynottrhye,rincoourdnterrytowdoerltderwmidinee. Iinf tShoeuretharKeoarneay,celveearryco1r3r2e3ltahtivoenhsibcleetwiseaennFthCeV. number of all vehicles and FCVs. Figure 15 displays the number of FCVs from all vehicle
+
+globally, despite the number of all registered vehicles being at a comparably average level, in 12th position. An analysis of the share of FCVs among all registered vehicle types supports this finding, with the share in South Korea being approximately at least an order of magnitude higher than any other country worldwide. In South Korea, every 1323th vehiEnergies 2022,c1l5e, 4i9s75an FCV. This exceptional ratio should be interpreted by recalling the incentive mech23-of 34 anism In the country outlined in Section 4, which was also fairly different from other countries and the ambitious national plans noted in Section 5. For the U.S., every 22,764th vehicle is a fuel cTehllisoenxec,eapntidonianl Crahtiionsahiotuilsdebveeirnyte3r4p,r7e7te6dthb.yJarepcaalnlinmgatkheesinucpentthiveehmigechhearnbisamndIn, the together with Iccteholeaunnamtdry,bifotoiuortultisnhneedatriieonmnSaealciptniloainnngs4n,cowoteuhdincihtnriwSeesacstoiaotlhnsoe5rf.aFtihrolaryntdhieSffoUeur.eStn.h,tefKvreoormrye2oa2t,h,7we6r4ictthhouvenevthreiicerlsyeains da 12,150th and 13,1fu5e9lthcevlleohniec,laen, dreisnpCehcitniva eitlyis, eovpeeryra3t4i,n7g76othn. fJaupealncemllask.eTshuepsthhearheigshienrGbaenrdm, taongyether and the Netherlawnidths Iacreelancodm, fopratrhaeblremwaitnhintghcoosuenitnrieths eotUhe.Sr .t,hCanhiSnoau,thanKdorJeaap, awni.thInevthereyn1e2x,1t50th group of countriaensdb1e3t,w15e9ethnvtehheicUle,.Kre.sp(4e4ct9ivFeCly,Vosp)earantidngBoenlgfiuueml ce(l8ls5. TFhCeVshs)a,retshiensGhearrmeavnayraineds the in the window bNetewtheeerlnan1d0s-4aarencdom10p-a5.raIbnlethweitfhinthaolsgerionuthpebUe.tSw., eCehninIat,aalynd(6Ja5pFanC.VIns)thaenndexStlog-roup vakia (one FCV)wo, ftinhcodeuosnwhtrabieresetwsbeedtewrnoe1pe0n-f4tuharenthUde.1Kr0.-a(n54.4dI9nvFtCahreVyfis)ninaanladgrlBoaeurlpggieburemtww(ie8ne5ndFoICtwaVlysb)(,e6t5thweFCseheVansr)e1av0na-d5riSaelsnoidvnatkhiae 10-7. One excepti(oonneinFCthVi)s, tghreosuhpariessIdcreolpanfudr,thaesraalnredavdayryniontaedla.rIgteirswailnsdoorwembeatrwkeaebnl1e0t-h5aatntdhe10-7. share in Brazil isOthnee leoxwcepetsitodn uinetthoistghreoruepbiseiInceglaonndl,yasoanlreeaFdCyVn,odteeds.pItitiseatlhsoe rveemryarhkaigblhe tnhuatmthbeesrhare of registered vehiincBlersaziinl itshtihsecloouwnestrt yd.ue to there being only one FCV, despite the very high number of
+registered vehicles in this country.
+
+25,000
+
+110E-2-02
+
+20,000 15,000 10,000
+55,000000
+
+110E-3-03 110E-4-04 110E-5-05 110E-6-06 110E-7-07
+
+0
+
+110E-8-08
+
+Number of fuel cell vehicles
+Brazil Slovakia Estonia Finland Czech Rep. Luxemburg
+Poland Costa Rica
+Spain Iceland Austria
+India Sweden
+Italy Belgium Denmark Australia Norway Switzerland Canada
+France U.K.
+Netherlands Germany Japan China U.S.
+Republic of Korea
+Share of fuel cell vehicles in all registered vehicles
+
+Total (FCV) Share of FCV
+Figure 15. NumbeFriogfurFeC1V5.sNautmthbeereonfdFCoVf s20at2t1hefreonmd otfh2i0s2s1tufrdomy (tlheisfts)tuvds.yt(hleefts)hvas.rtehoe fshFaCreVosf aFmCVosnagmaolnlg all registered vehiclesrebgaissteedredonvethhiecleWs bHasOeddoantathbeaWseH(rOigdhatt)ab[a1s3e9(]r.ight) [139].
+In a further analysis, gross domestic product (GDP) and gross domestic product per
+In a furthercaanpaitlaybsaise,dgroonsOsEdCoDmdeasttaic[1p40r]owdeurcetr(eGlaDtedP)toatnhde ngurmosbserdoofmFCeVstsicinperaocdh ucocut npteryr. An capita based on OanEaClyDsisdoaf ttahe[1g4en0e]rwaletrreenrdeslfaotreGdDtoP tahned nGuDmP pbeerrcoafpiFtaCpVressiennteeadcihn Fcioguunretr1y6.dAoens not analysis of the gsehnoewraalnytrcelneadrscoforrrelGatDioPnsabnetdwGeeDn PthepseervaclaupeistaanpdrtehseennutmedbeirnoFf FigCuVrsein16thde ocoeusntry. not show any cleAGarmDcPoonprgerrethlcaeatptioiotpan,fsoatubcreotcmwoupenaetrnraibetslheienvsateleurvemasslwuoieftshFCamnVadnnyuthmEeubrneorupsm,etahbneecUrou.oSnf.thFriaCessVtwhseiithhnigltohhweesectroGnuuDnmP-baenrds try. Among the toofpFCfoVusr. ScoouutnhtKrioerseainantedrJmapsaonfhFavCeVsinmuilmarbGeDrsP,stahnedUG.SD.Phpaesrtchaepihtai,gnhoetshtigGhDerPthan and GDP per catphoitsae,caout nctorimespinarthaeblgerovuaplhuaevsinwg i6t0h­1m45a0nFyCVEsu. rHoopweeavner,cbooutnhtSroieusthwKiotrhealaonwdeJrapan numbers of FCVhsa.vSeomuuthchKhoigrheear annumd bJearpsaonf FhCaVvseosnimthieliarrroGadDsP. sChainnda iGs aDnPothpeerrexctarpemitae,exnaomt ple,
+with a rather low GDP and GDP per capita, but still having the third ranking in terms of the number of FCVs. This brief analysis shows that there is no relation between the GDP or GDP per capita and the number of FCVs in a country. The deployment of FCEVs appears more connected to political and industrial policies.
+
+Number of fuel cell vehicles
+Brazil Slovakia Estonia Finland Czech Rep. Luxemburg
+Poland Costa Rica
+Spain Iceland Austria
+India Sweden
+Italy Belgium Denmark Australia Norway Switzerland Canada
+France U.K.
+Netherlands Germany Japan China U.S.
+Republic of Korea
+GDP per capita / US dollars per capita GDP / Million USD
+
+higher than those countries in the group having 60­1450 FCVs. However, both South Korea and Japan have much higher numbers of FCVs on their roads. China is another extreme example, with a rather low GDP and GDP per capita, but still having the third ranking in terms of the number of FCVs. This brief analysis shows that there is no relation Energies 2022, 15, b49e7t5ween the GDP or GDP per capita and the number of FCVs in a country. The deployment of FCEVs appears more connected to political and industrial policies.
+
+25,000
+
+300,000
+
+24 of 34
+
+20,000 15,000 10,000
+55,000000
+
+250,000 200,000 150,000 100,000 50,000
+
+0
+
+0
+
+Total (FCV) GDP GDP per capita
+Figure 16. NumbFeirguorfeF1C6V. Ns autmtbhereonfdFCofV2s0a2t1thfreoemndthoifs2w02o1rkfro(lmeftt)hviss.wGoDrkP(laenftd) vGsD. GPDpPerancadpGitDa P per capita based on the OECbDaseddatoanbtahseeO(rEigChDt)d[a1t4a0b]a. se (right) [140].
+As the next anaAlysstihsesnteepx,t tahnealfyosciussstiespp, ltahceefdocounstihsepdlaecveedloopnmtheendt eovfetlhoepmnuemntboefrtshoefnumbers of FCVs and HRSsFCinVtshaentdopHfRoSusrincotuhnettroipesfowuirthcotuhnethriiegshwesitthntuhme bheigrhs eosftFnCuVmsbearssoofftFhCeVesndas of the end tomrfea2nx0di2ms1u.dFmroawrvtanhluiwstUmoerpfise.atS2unhox.0rd,in2pmtsth1hot.udehesFmreehnao,irewurtvlhmytapnhe-lbuiawonsexefupirsetdmushooirfnffbtpofhHeetorehrrsRsaeeehSni,webrsttleheypwfter-utaeoeannxfrspuecducamtsioiltoffrbmfooeneeransrrpdeasaainywnbrctiehseoFftoirumtigeengnhrmpucocutirofionetonmton2h1cns0p7eh1.aiatan7rArcr,iesFtolbnolimaugdncntumshdo.sraofehStrnthott1hasewc7erh.udtetairsAdenreevtglnoleatdnlwhcnoslhedy.piatSsmthrahattaseetmsrhlnudtieegitsenhevgtetwhlioneipctsrhmeaatmehsneeet U.S., the numbeorvoefrHthReSysewarass, awlrheiachdycahnigbheinex2p0r1e7ss, ebdutbsyhaowlineedaorntrlyenads.liTghhet ivnechriecalesenouvmerbers show a the years, whicmh ocraendbyenaemxpicrtersesnedd, wbyithatlhine eeaxrcetpretinodn.oTf htheevselohwicelreinncurmeabseerisn s2h0o20wdauemtoorthee pandemic dynamic trend,awndiththteheoveexrcaelpl tiinocnreoafstinhge strloenwdercainncbreeadseefiinne2d02b0ydaupeotloynthoempicantrdeenmdliicnaenodf the second the overall incredaesgirnege.trInenJdapcaann, boetdhecfainteegdobriyesaspholwynaommoircetrdeynndalminiec otrfetnhde, swehcoernedasdtehgereinec.rease in the In Japan, both claatsetgyoeraiersissheospwecaiamlloyrreedmyanrakmabilcet,raenndd,thwehrefroeraes bthoethintrcerneadsseairnetdheeslcarsibt eydeairn terms of a is especially rempoalryknaobmlei,catnredntdh.eArenfoerveenbosthrotnrgenerddsyanreamdiecscisriobbesderivnetderfmorsCohfianap,oelsypneocmialilcy given that trend. An eventshterroenwgerredaylmnaomst incoisveohbiscelersviend2f0o1r7 Canhdintha,eensupmecbiearlloyf gHiRvSesnwthaastvtehreyrleowweinrethe first year almost no vehicolfesaninal2y0si1s7. Danude ttohea nmuimnimbearl oinfcHreRaSses iwna2s02v1e,rwy hloicwh iwnatsheexfpirlasitnyeedaeraorfliaenr ainl-this section, ysis. Due to a mthieniFmCaVl dinecvreeloapsemiennt20is2d1e, swcrhibicehd wbyasa leixnpealaritnreednde,awrlhieerreians tthhiesHseRcStidoenv,etlhoepment trend FCV developmuesnetsias pdoelsycnroibmeidc tbreynadlliinneeoafrtthreensedc,owndhdereegarseet.hSeouHthRSKodreevaeelxohpimbitesnftrotrmenthde beginning uses a polynomaicvterreynddylinnaemoifctihnecrseeacsoenrdatdee, wgrheiec.hScoaunthonKlyorbeeadeexshcirbibitesdfrboyma tsheecobnedg-idnengirnege polynomic afuvnecrtyiodny. nHaomwiecfnvuiunenmrcc,rtbIteinhoeanresth.eotrHefreavnonteweedhx,eiitwcvsaleenhnrso,iacittlnhhyaes2nci0atsre2,nex1tnhop.denolnidyseenbnvoetetiladoalepnosmencxreeipn,boatenstdreietnbnwtyidaoasluosinlendcetoh,renaeqsdluai-tdsirtweefigoavruneeledeypvereeoaqnrlysuhniwrioegimlhalneibcreevceonmhbiignheedr number of vehiwclietshitnhe20a2n1n.ounced roadmaps or national targets for the same countries. The Basic Plan
+for Implementing the Hydrogen Economy of Korea [113] defines targets for 2022, 2025, 2030, 2040, and 2050. The Roadmap to a U.S. Hydrogen Economy [114] sets milestones for 2022, 2025, and 2030. The Technology Roadmap for Energy-Saving and New Energy Vehicles [117] in China defines targets for 2025 and 2030­2035 and, similarly, the Strategic Road Map for Hydrogen and Fuel Cells [118] in Japan defines targets for 2025 and 2030. Due to different time scales and the resulting numerical targets in each of the four countries, the axis windows could not be kept the same in each diagram in Figure 18, which combines the achieved (2017­2021, this work and previous survey results) with the target numbers from the four sources mentioned above and discussed in detail in the previous section. To separate the realized numbers with those from the targets, the targets (2022­2050) are
+
+Energies 2022, 15, 4975
+
+25 of 34
+
+marked with dots in the figure. As the realized numbers are relatively low compared to the target numbers, in most of the cases third-degree polynomials are required to draw the trend lines combining the present numbers with the plans. One exception is the case for HRSs in South Korea. As the targets are defined for many more years, a second-degree polynomic function can describe the curve there well. Another remarkable deviation in the Energies 2022, 15, x FOR PEER RgEeVnIEeWral trends is for HRSs in Japan. As the end target is already defined for2720of3307 and is on the same order of magnitude as the current numbers, the present HRS numbers are also fairly apparent for Japan.
+
+U.S.
+20,000
+
+Japan
+
+200
+
+20,000
+
+200
+
+Hydrogen refueling stations
+
+Hydrogen refueling stations Fuel cell vehicles
+
+Fuel cell vehicles
+
+15,000
+
+150
+
+15,000
+
+150
+
+10,000
+
+100
+
+10,000
+
+100
+
+55,00000
+
+50
+
+55,000
+
+50
+
+0
+
+0
+
+2017 2018 2019 2020 2021
+
+FCV HRS
+
+0
+
+0
+
+2017 2018 2019 2020 2021
+
+FCV HRS
+
+20,000
+
+China
+
+Rep. of Korea
+
+200
+
+20,000
+
+200
+
+Hydrogen refueling stations
+
+Hydrogen refueling stations Fuel cell vehicles
+
+Fuel cell vehicles
+
+15,000
+
+150
+
+15,000
+
+150
+
+10,000
+
+100
+
+10,000
+
+100
+
+55,000
+
+50
+
+55,0000
+
+50
+
+0
+
+0
+
+2017 2018 2019 2020 2021
+
+0
+
+0
+
+2017 2018 2019 2020 2021
+
+FCV HRS
+
+FCV HRS
+
+Energies 2022, 15, x FOR PEER REVIEW
+
+28 of 37
+
+Figure 17. Comparative development trends of the numbers of FCVs and HRSs in the four countries
+
+withFtihgeurhei1g7h. eCsotmnpuamrabtievresdoevfeFloCpVmsenotntrtehnedsrooaf tdheansuomf btheres eonf FdCoVfs2a0n2d1H. RSs in the four countries
+with the highest numbers of FCVs on the road as of the end of 2021.
+
+Fuel cell vehicles Hydrogen refueling stations
+2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030
+
+Hydrogen refueling stations 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030
+
+5000 4000 3000 2000 1000
+0
+
+Fuel cell vehicles
+
+U.S.
+
+Japan
+
+with
+
+Itnhethaennneoxutnac11ne.5.ad5lxEyr+1os00ias66d, mthaepdseovre1lno0ap0t0imonenalt
+
+trends targets
+
+ifnorththeelassatmfievecoyuenatrrsiews.ilTl hb11e.e0.0BcxEoa+1sm00ic66bPinleadn
+
+f2o0r30Im, 2p0l4e0m, aenndtin2g0115.0.t00h.xEeT+10Hh066eyRdoroagdemnaEpc86to00on00aomU.yS.oHf yKdorroegae[n11E3c]ondoefminyes[1t1a4r]gseettssfmo68ri68..l00..2e000sxxEEt2++11o20000n,5555e2s0f2o5r,
+
+2022, 2025, and 2505.30.00xE. +1T00h55e Technolo4g0y0Roadmap for Energy-Saving and New44.E0.0nxEe+1r00g55y Ve-
+
+hicles [117] in China defines target2s0f0or 2025 and 2030­2035 and, similarly, 2t2h.0.e0xES+1t0r55ategic
+
+Road Map for Hy00d.0roE+g0e0n and Fuel Ce0lls [118] in Japan defines targets for 200205.0aEn+d002030.
+
+Due to different time scales and the resulting numerical targets in each of the four coun-
+
+tries, the axis windows could not be kept the same in each diagram in Figure 18Error!
+
+HRS RefFeCrVence source not found., which combines the achHieRvSed F(2C0V17­2021, this work and
+
+previous survey results) with the target numbers from the four sources mentioned above
+Chiannad discussed in detail in the previous section. ToRseepp.aroafteKothreearealized numbers with
+
+6000 4000 2000
+0
+
+those from the tar11g..00eEtxs+1,00t6h6 e targets2(520022­2050) are marked with dots in the fi6g6.u.0Er+xe0.16A06s the realized numbers88a..00reEx+r10e05l5atively low20c0o0mpared to the target numbers, in most55o..0fE+xth016e06cases nctaAhuruseirmrtvddheb-eedetfheriensnegerdwrdeetiewatfhorpegrtloehlm.lteyA24606420ianps.......000nn0000olaaoEEEEyxxxmln++++tr111hme0000is000aae.5550555olrdOsrryneeademryeeeeafxarircnrekesqea,p11dubat505ilif000reoose0000nedrdce2iosv0tnoi3tahd0tde-iadorcnaenadwgsireniestfethooherpneHotgtrlheRyeennnSseodsarmiamnlliinectSreoofesuurndntcdheocsrtmKiioosobfnfriomnecraiaan.HnggARn02413ds02431tiS....teh.....0000tsEEEEEushe+++++xxxxcdien00000r1111peit066660000Jbraaa6666eerspsgtetaehhnnteest.
+
+Fuel cell vehicles
+
+current numbers, the present HRS numbers are also fairly apparent for Japan.
+
+Fuel cell vehicles Hydrogen refueling stations
+2017 2020 2023 2026 2029 2032 2035 2038 2041 2044 2047 2050
+
+Hydrogen refueling stations 2017 2019 2021 2023 2025 2027 2029 2031 2033 2035
+
+HRS FCV
+
+HRS FCV
+
+Figure 18. Combination of realized (2017­2021, sources: [6,23­25] and this work) and targeted [113,114,117,118]
+
+numFbiegrusreo1f8F. CCVoms boinnatthioen roofardeaalinzeddH(2R01S7s­2in02o1,pseoruartcieosn: [f6o,2r3t­h2e5]coaundnttrhiiesswworitkh) apnrdesteanrgtelytedthe highest
+
+nume[b1ne1t3rly,1ot1fh4eF,1Ch1i7Vg,h1s1eo8st]nnntuuhmmebbireerrrsooofafFdFCsCV. Vs sononthtehier
+
+road and roads.
+
+HRSs
+
+in
+
+operation
+
+for
+
+the
+
+countries
+
+with
+
+pres-
+
+To understand the dynamics of the trends, the resulting annual increase rates will be analyzed in the next step. The analysis of the annual increase rates for the development of the vehicle numbers reveals that the highest increase is seen in the first year of the development prognosis curves. The increase rate is the highest for Japan, with 533%, followed by 296% for South Korea, 209% for China, and 143% for the U.S. in the first prognosis year
+
+Energies 2022, 15, 4975
+
+26 of 34
+To understand the dynamics of the trends, the resulting annual increase rates will be analyzed in the next step. The analysis of the annual increase rates for the development of the vehicle numbers reveals that the highest increase is seen in the first year of the development prognosis curves. The increase rate is the highest for Japan, with 533%, followed by 296% for South Korea, 209% for China, and 143% for the U.S. in the first prognosis year (2022). For the second year (2023), the increase rate already drops to 32% from 88% and becomes comparable with the values reported in recent years for FCVs. From the third year on, which corresponds to 2024, the Korean annual increase rate drops from 52% over the years to 5% in 2050. For China, the increase rate drops from a comparable value of 55% in 2024 to 18% in 2035, and for Japan from 64% to 25% in 2030. The U.S. exhibits a different behavior here, whereas the first target year is already 2022, as the roadmap was already defined earlier. Here, the increase in the first year was the lowest, as it was defined by the target and not the polynomial function. Therefore, a second strong increase in the annual increase rate is observed for the U.S. in the third year, 2024, and from then on the increase rates drop to 37% in the last target year of 2030.
+As discussed earlier, a strong increase in the annual increase rate brings the stock to a higher level and further high increases in the absolute numbers are not necessarily accompanied by a high increase rate. For example, in the case of the highest increase rate in 2022 in Japan, with 533%, the stock increases by 35,900 vehicles in one year. In the following year, where the annual increase rate corresponds to 88%, the absolute increase is even higher, with 37,400 new vehicles. With this, it is clear that the number of new vehicles introduced increases every year, due to the polynomic function, despite the decreasing annual increase rates. A snapshot for 2030 for each country shows 80,000 new vehicles for China, 141,000 for Korea, 162,000 for Japan, and 322,000 for the U.S. There are a few exceptions to this trend. One is caused by the second strong increase for the U.S. in 2024, the other being for a slight reduction in the absolute stock increase in 2023 for South Korea, which is solely due to mathematical reasons. It should also be noted that approximately 130,000 FCVs must be put into operation in 2022 in these four countries for the required annual increase rates for the year 2022 to be realized. This is compared to approximately 16,500 FCVs that were registered in 2021. As a result, it can be concluded that such an increase in the annual production rate is not in sight for 2022, and this fact increases the pressure on the upcoming years and makes it challenging to reach the set targets.
+If the same analysis is performed for HRS development, a similar picture appears. The highest annual increase rates arise in the beginning, with 172% for South Korea, 127% for China, and 146% for the U.S. The second-degree polynomial selected for South Korea leads to slightly lower numbers than the targets at first, which is corrected by 2030. Starting with 2024, the annual increase rate drops from 19% to 4% in 2050. For China, the increase rate drops from 55% in 2023 down to 11% in 2035. In the case of the U.S., the increase rate in the second year also remains high at 133%, but drops from 65% in the third year, to 27% in 2030. In the case of Japan, as the present number of HRSs is in the same order of magnitude as the final target in 2030, as noted above, the first-year increase rate in 2022 is only 9%, followed by 19% in 2023, then increasing slightly up to 23% between 2026 and 2029, and ending with 22% in 2030. With this, the number of new stations varies between 16 and 161 Japan, with an increasing number towards the end (2030). Due to the comparatively higher target of 4000 stations in the U.S. for the same year, the number of newly built stations should increase from 98 in 2022 to a very challenging number of 922 in 2030 in this country. For China, since the intermediate target in 2025 is the same, but the end target is higher and to be reached later (2035: 5000 HRS), 397 new stations are to be opened in the year 2030 and 494 in 2035, which is also challenging but less steep at the end. As the South Korean roadmap targets 2000 stations in 2050, the number of newly opened stations in one year in 2030 are 57 and in 2050 75 units.
+Finally, the deployment trend of all electric vehicles is compared with that of FCVs to check for possible learning curves from the wider deployment of BEV technologies thanks to their earlier market introduction. Figure 19 shows the cumulative stock of BEVs and
+
+Energies 2022, 15, 4975
+
+27 of 34
+
+PHEVs from 2010 to 2020 in millions based on the IEA Global EV Outlook 2021 [5] on the left axis. On the right axis, the deployment of all FCVs, based on this work and the previous AFC TCP data collection efforts [6,23­25], are displayed. As the first mass-produced FCV was introduced in 2014, the x-axis for fuel cells starts in 2014, but the first numbers are displayed for 2018, where the initial data is available for all vehicle classes. Thus, the BEV, PHEV, and FCV curves have different reference years. With that being said, the very good overlap of the complete FCV curve and the BEV and PHEV curves of 2014­2017 can be observed, with the absolute numbers lying two orders of magnitude away from each other. Energies 2022, 15, x FOR PEER REVIEWIf the deployment trend of FCVs continues to follow an analogous trend to that30ofofBE37Vs and PHEVs in the next three years as well, it can be expected that the stock reaches around 160,000 units in 2024.
+
+14
+
+180,000
+
+Battery (BEV) and plug-in hybrid (PHEV) electric vehicles (Millions) Fuel cell vehicles
+
+12
+
+BEV and PHEV
+
+FCV
+
+160,000 140,000
+
+10 120,000
+
+8
+
+100,000
+
+6
+
+80,000
+
+60,000 4
+40,000
+
+2
+
+20,000
+
+0
+
+0
+
+BEV & PHEV 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 FCV 2014 2015 2016 2017 2018 2019 2020 2021
+
+Years
+
+FFiigguurree1199..CCoommppaarirsiosonnoof fththeeddepeplolyomymenetnttrternednsdosfoBf EBVEsVasnadndPHPEHVEsV2s021001­02­022002(0so(usorcuer:cIeE:AIE[A5])[,5]), lleefftt;;aannddaalllFFCCVVss22001188­­22002211(s(osouurcrece: :[6[6,2,233­­2255]] aannddtthhiisswwoorrkk)),,rriigghhtt..
+
+TThhiissffiigguurreeiissoonnllyysslilgighhtltylyhhigighheerrththananththee13103,00,00000vevheihcilcelsetshtahtamt musut sbtebpeuptuotnotnhethe roroaaddssininoonneeyeyaera,r2, 022022,2i,ninorodrderertotoacahciheiveevethtehesestettatragregtestisninnantaiotinoanlapllpanlasnasnadnrdoarodamdampasps bbasaesdedoonnththeeddeveevleolpoepdedtrternedndfufnucntciotinosnisninthteheprperseesnetnsttustduyd, yi,ninthtehfeofuorucrocuonutnritersietshatht at aacccocouuntntfofrormmoroereththanan909%0%oof fththeecucurrrernent tFFCCVVppooppuulaltaitoinonwworolrdlwdwidied.eC. oCmombinbiinnginbgobthoth aannalaylsyissisrerseuslutsl,tsw, ewceancacnonccolnucdleudtheatthFaCtVFCdVepdloeypmloeynmt menutstmfoulsltowfolalomworaemamorbeitaiomubsidtieo-us vdeleovpemloepnmt etrnetntdreinndthinetfhuetufuretuarnedanthdethperopdruocdtuiocntiocnapcaacpiaticeistimesumstubset breamrapmedpeudpuqpuqicukilcykly sosoththatatthtehecaclacluclualtaetdedhihgihghanannunaulailnicnrceraesaesreartaetseasraeraebaleblteotoopoepnetnhethpeapthattho htoighhiegrhderepdleopyl-oymmenent tnnuummbberesrsininstsetaedadofosfhsihftiifntigngthtehperpersessusruerteotloatlaerteyreyaeras.rsIt. cItanca, nm,omreoorevoevr,ebr,ebperepdreicdtiecdted ththatatththeeexepxpecetcetdedanadndrerqeuqiurierdedhihgihghanannunaulailnicnrceraesaeserartaetteotoiniintiiattieattehtehme moroeraemambitbioituiosus inincrcereaaseseininththeemmoommeenntutummooffFFCCVVddeeppllooyymmeennttwwiillll bbee sshhiifftteedd ttoowwaarrddss 22002244 aanndd bbeeyyoonndd,,as aasnaneigeihgth-fto-flodldinicnrecraesaesieninnenwelwy lryegriesgteisrteedreFdCFVCsVcsomcopmarpeadretdo 2to02210i2s1niostnroeat lriestailcisftoicr 2fo0r22. 2702. 2C.onclusions
+7. ConAcnluosvioenrvsiew of the present deployment status of FCVs and HRSs was presented in this pAanpoerveinrvainewefofofrtthteopcroensveenyt daespnlaopysmheont tosfttahteusgloofbFaCl pVisctaunrde aHsRoSfsthweaesnpdreosfe2n0te2d1. iTnhe trwrheesiessuurplelttassipnooefforttphihneeeradadnataiteoatfanfcocoaroltsllelteococtfictoiotohnnneveeferffeyofporatorstsrnhtsiahonpowgswhtdhotahatttaeo5t.f15tTh,14he,34e7g3l7nFoCuFbmCaVlVsbpwseircwestrueedrreeeomnaosntohontefhstrtehroareaotdeeansdtdahsneoadfnle27da027d2921iHn9. TgRHhSrResoSles woferSeoiunthopKeorarteiao,nwasithofatrhoeurnedpo4r0ti%ngodf avteeh. iTchleesnbueminbgerisndtehmisocnosutrnattrey.thMe loeraedoivnegr,roalreooufnd S9o0u%thoKf othreeav, ewhiitchleasroaurendin4S0o%utohf Kveohriecale, sthbeeiUng.S.i,nCthhiisnaco, uanndtryJa. pMaonr,ecolveearr,lyarhoiugnhdlig9h0%ting otfhethwe ovrelhdiwcliedseahreubins oSfodutehveKloopreina,gtfhueeUl c.Sel.,l mChoibniali,tay.ndThJeapcaonll,ecclteeadrldyahtaigahlslioghshtionwg sthtehat wpaosrsldewngidere chaurbssdoofmdienvaetleopthinegnfuumel bceerlls,mmobaikliitnyg. Tuhpemcoolrleectthedand8at0a%alosfoaslhlovwehs itchlaest .pOasv- er s9e0n%georfcpaarsssdeonmgeinr actaersthaerenuinmtbhererse,cmouaknitnrigesu,pnmamoerelythSaonut8h0%Koorfeaal,ltvheehUic.lSe.s,.aOndveJra9p0a%n.oTfhe paavsasielnabgleer icnafrosramreatiniotnhrseheocwosunthtraitest,hneammaejloyrSitoyuothf pKaosrseean, gtheer Uca.Srs., aarnedfJraopmanH. Tyhuendavaai ial-nd able information shows that the majority of passenger cars are from Hyundai and Toyota, with Hyundai selling more FCVs than Toyota in 2020 and 2021, reversing the trend in the years before. Although the numbers are relatively low in Europe, many countries in Europe put FCVs on their roads, led by Germany, the Netherlands, and France. Being in the
+
+Energies 2022, 15, 4975
+
+28 of 34
+Toyota, with Hyundai selling more FCVs than Toyota in 2020 and 2021, reversing the trend in the years before. Although the numbers are relatively low in Europe, many countries in Europe put FCVs on their roads, led by Germany, the Netherlands, and France. Being in the third position for all vehicles, China dominates the markets for fuel cell buses and trucks, with a huge share of between 88% and 98% in these vehicle categories, bringing the country to the leading position for commercial vehicles. In particular, the heavy-duty truck market showed a significant expansion in 2021, with 796 heavy-duty trucks registered only in China.
+Around 60% of HRSs are being operated in three Asian countries, namely Japan, China, and South Korea. This is also the list of the three countries with more than 100 HRSs in operation in decreasing order. Germany, the U.S., and France operate more than 50 HRSs each.
+An overview of the available incentives for purchasing an FCV showed that in most countries, the available incentives are the same for FCVs and BEVs. Moreover, these make only a limited contribution to vehicle price reductions. In some cases, the available fuel cell vehicle models are not even eligible for incentives, as the net list price of the vehicle is higher than the defined maximum level. However, this general trend does not apply to South Korea, where incentives can reduce the vehicle price by around 50% and make it an attractive option compared to other vehicle technologies. This exceptional situation is very important to understanding the numbers in this paper, as South Korea is the country with the highest number of FCVs worldwide. For the case of Germany, a deeper analysis of the numbers showed that the numbers of vehicles that received funding from the National Innovation Programme was much higher than those that received incentives, demonstrating the importance of national programs for the market ramp-up of FCVs. It should also be noted that China recently changed its funding policy, which now aims to provide rewards to selected regions in order to provide the basis for reaching the technical and economic targets for the wider deployment of hydrogen FCVs, instead of providing funds for buying vehicles only. Moreover, hundreds of FCVs are available in the New Energy Vehicles catalog in China, showing the extreme diversity of suppliers and models in this country.
+The analysis showed that the absolute increase in the number of FCVs and HRSs was the highest in 2021, demonstrating important signs of recovery after the pandemic year. A simplified analysis of the number of FCVs per station in the six countries with more than 50 HRSs showed the highest numbers for South Korea and the U.S. (170­185), followed by Japan and China (40­58), and the lowest for Germany and France (8­17). Our literature-based analysis showed the economic necessity and technical possibility of reaching much higher vehicles per station. Although most of the already-built stations can serve many more vehicles, it is clear that future stations will be built with higher capacities to cover rising hydrogen demand.
+To understand the present numbers of FCVs on the road, two further analyses were performed. Firstly, the analysis of the share of FCVs in all registered vehicles distinguishes the situation in Korea, where every 1323th vehicle is a fuel cell one. With this, the Korean share is at least an order of magnitude higher than in every other country in the world. Secondly, the trend between GDP and GDP per capita and the number of FCVs was analyzed, but the results did not show a correlation.
+Furthermore, the development trends in the last five years in the four countries with the highest numbers of FCVs were analyzed. The most dynamic trends were observed for both vehicle numbers and refueling stations in South Korea and China. In the next step, this information was combined with the target numbers defined in national plans and the roadmaps for these countries to understand the required development trends in the coming years. In all cases, a very strong annual increase rate is required in the first year of future development, which reduces over time. However, the strong annual increase rate in the first year simply brings the stock and, respectively, the number of operating stations to a higher number, so that further high annual absolute increases in the numbers are not accompanied by high annual increase rates, although the absolute increase in the
+
+Energies 2022, 15, 4975
+
+29 of 34
+
+newly introduced vehicles and stations still grows over the years. Our analysis estimates a necessity of 130,000 new FCVs in the first year of "future" development scenarios, which begins in 2022. This compares to 16,500 new registered vehicles in 2021 according to this paper and does not seem feasible for 2022. As a direct consequence, it can be expected that the year with the highest annual increase rate is shifted to 2024, which will of course increase the pressure on the coming years for reaching the defined targets or milestones. This brings us to the conclusion that vehicle production capacities must be increased more radically and supporting mechanisms must accompany the market ramp-up phase, so that the defined goals remain realistic.
+If the same analysis is performed for the development of HRSs, a similar trend is observed, yet with a milder annual increase rate in the beginning due to comparatively lower numbers. In comparison to South Korea and Japan, very steep curves are expected for the U.S. and China due to comparatively higher numbers of HRSs defined as end targets.
+Finally, a comparison of the development trend of all electric vehicles with that of fuel cell vehicles, which are also electric vehicles with a fairly low contribution to the statistics up until now, shows an interesting overlap: the development trend for FCVs from 2018 to 2021 is in good agreement with that of all electric vehicles from 2014 to 2017, noting that the numbers differ by two orders of magnitude from one another. If the deployment of FCVs continues to follow this trend in the coming years, it will be challenging to achieve the defined targets, as the high expected annual increase rate cannot be realized with this trend. This finding supports the aforementioned finding from the analysis of future trend developments. Thus, the FCV deployment must follow a more ambitious trend, so that fuel cell technology can provide a contribution to sustainable transportation supporting other electric vehicle technologies. If the required ramp-up dynamics are delayed, the fuel cell technology may lose its strategic position in future roadmaps.
+Supplementary Materials: The following supporting information can be downloaded at: https: //www.mdpi.com/article/10.3390/en15144975/s1, Table S1: Vehicles, Table S2: Stations.
+Author Contributions: Conceptualization, R.C.S.; Data curation, R.C.S., M.R. and L.A.; Formal analysis, R.C.S.; Investigation, R.C.S.; Methodology, R.C.S. and M.R.; Project administration, R.C.S., M.R. and D.S.; Supervision, R.C.S. and D.S.; Visualization, R.C.S.; Writing--original draft, R.C.S.; Writing--review and editing, R.C.S., M.R., L.A. and D.S. All authors have read and agreed to the published version of the manuscript.
+Funding: This research received no external funding.
+Institutional Review Board Statement: Not applicable.
+Informed Consent Statement: Not applicable.
+Data Availability Statement: Not applicable.
+Acknowledgments: Data collection by the Advanced Fuel Cells Technology Collaboration Programme (AFC TCP) Executive Committee Members. The authors are deeply grateful to all Executive Committee Members of the AFC TCP who delivered data for the annual data collection. Special thanks also to the Clean Hydrogen Partnership Programme Office for supplying the European data. The results from the data collection were originally provided to the Global EV Outlook 2022 publication of the International Energy Agency (IEA). The authors thank Elizabeth Connelly and Jacob Teter from the IEA Secretariat for the excellent collaboration and information exchange.
+Conflicts of Interest: The authors declare no conflict of interest.
+References
+1. Road Transport: EU-Wide Carbon Dioxide Emissions Have Increased by 24% Since 1990, Statistisches Bundesamt (Destatis). Available online: https://www.destatis.de/Europa/EN/Topic/Environment-energy/CarbonDioxideRoadTransport.html (accessed on 13 May 2022).
+2. Slowik, P.; Hall, D.; Lutsey, N.; Nicholas, M.; Wappelhorst, S. Funding the Transition to All Zero-Emission Vehicles. ICCT White Paper. Available online: https://theicct.org/wp-content/uploads/2021/06/Funding_transition_ZEV_20191014.pdf (accessed on 13 May 2022).
+
+Energies 2022, 15, 4975
+
+30 of 34
+
+3. Carey, N.; Steitz, C. EU Proposes Effective Ban for New Fossil-Fuel Cars from 2035. Available online: https://www.reuters.com/ business/retail-consumer/eu-proposes-effective-ban-new-fossil-fuel-car-sales-2035-2021-07-14/ (accessed on 13 May 2022).
+4. Breed, A.K.; Speth, D.; Plötz, P. CO2 fleet regulation and the future market diffusion of zero-emission trucks in Europe. Energy Policy 2021, 159, 112640. [CrossRef]
+5. IEA. Global EV Outlook 2021. Accelerating Ambitions Despite the Pandemic; International Energy Agency: Paris, France, 2021. 6. Samsun, R.C.; Rex, M.; Antoni, L.; Stolten, D. Deployment Status of Fuel Cells in Road Transport: 2021 Update; Forschungszentrum
+Jülich: Jülich, Germany, 2021; Volume 542. 7. Global Hydrogen Review 2021, IEA. Available online: https://www.iea.org/reports/global-hydrogen-review-2021 (accessed on
+13 May 2022). 8. Sun, C.; Zhang, H. Review of the development of first-generation redox flow batteries: Iron-chromium system. ChemSusChem
+2022, 15, e202101798. [CrossRef] [PubMed] 9. Schmidt, P.; Batteiger, V.; Roth, A.; Weindorf, W.; Raksha, T. Power-to-liquids as renewable fuel option for aviation: A review.
+Chem-Ing-Tech 2018, 90, 127­140. [CrossRef] 10. Schemme, S.; Breuer, J.L.; Köller, M.; Meschede, S.; Walman, F.; Samsun, R.C.; Peters, R.; Stolten, D. H2-based synthetic fuels:
+A techno-economic comparison of alcohol, ether and hydrocarbon production. Int. J. Hydrogen Energy 2020, 45, 5395­5414. [CrossRef] 11. Trencher, G. Strategies to accelerate the production and diffusion of fuel cell electric vehicles: Experiences from California. Energy Rep. 2020, 6, 2503­2519. [CrossRef] 12. Inci, M.; Büyük, M.; Demir, M.H.; Ilbey, G. A review and research on fuel cell electric vehicles: Topologies, power electronic converters, energy management methods, technical challenges, marketing and future aspects. Renew. Sustain. Energy Rev. 2021, 137, 110648. [CrossRef] 13. Trencher, G.; Edianto, A. Drivers and barriers to the adoption of fuel cell passenger vehicles and buses in Germany. Energies 2021, 14, 833. [CrossRef] 14. Olabi, A.G.; Wilberforce, T.; Abdelkareem, M.A. Fuel cell application in the automotive industry and future perspective. Energy 2021, 214, 118955. [CrossRef] 15. Wang, Y.; Yuan, H.; Martinez, A.; Hong, P.; Xu, H.; Bockmiller, F.R. Polymer electrolyte membrane fuel cell and hydrogen station networks for automobiles: Status, technology, and perspectives. Adv. Appl. Energy 2021, 2, 100011. [CrossRef] 16. Ruffini, E.; Wei, M. Future costs of fuel cell electric vehicles in California using a learning rate approach. Energy 2018, 150, 329­341. [CrossRef] 17. DOE Technical Targets for Fuel Cell Systems and Stacks for Transportation Applications. Available online: https://www.energy. gov/eere/fuelcells/doe-technical-targets-fuel-cell-systems-and-stacks-transportation-applications (accessed on 28 June 2022). 18. Thompson, S.T.; James, B.D.; Huya-Kouadio, J.M.; Houchins, C.; DeSantis, D.A.; Ahluwalia, R.; Wilson, A.R.; Kleen, G.; Papageorgopoulos, D. Direct hydrogen fuel cell electric vehicle cost analysis: System and high-volume manufacturing description, validation, and outlook. J. Power Source 2018, 399, 304­313. [CrossRef] 19. Khan, U.; Yamamoto, T.; Sato, H. Consumer preferences for hydrogen fuel cell vehicles in Japan. Transp. Res. Part D Transp. Environ. 2020, 87, 102542. [CrossRef] 20. Kim, H.; Eom, M.; Kim, B.-I. Development of strategic hydrogen refueling station deployment plan for Korea. Int. J. Hydrogen Energy 2020, 45, 19900­19911. [CrossRef] 21. Rose, P. Modeling a Potential Hydrogen Refueling Station Network for Fuel Cell Heavy-Duty Vehicles in Germany in 2050. Ph.D. Thesis, Karlsruher Institut für Technologie (KIT), Karlsruhe, Germany, 2020. 22. Rose, P.K.; Neumann, F. Hydrogen refueling station networks for heavy-duty vehicles in future power systems. Transp. Res. Part D Transp. Environ. 2020, 83, 102358. [CrossRef] 23. Closer Look at the Deployment of Fuel Cell Electric Vehicles by the End of 2017; Advanced Fuel Cells Collaboration Programme (AFC TCP): Gelsenkirchen, Germany, 2018. 24. Closer Look at the Deployment of Fuel Cell Electric Vehicles by the End of 2018; Advanced Fuel Cells Collaboration Programme (AFC TCP): Gelsenkirchen, Germany, 2019. 25. Samsun, R.C.; Antoni, L.; Rex, M. Mobile Fuel Cell Application: Tracking Market Trends as of End 2019; Advanced Fuel Cells Collaboration Programme (AFC TCP): Gelsenkirchen, Germany, 2020. 26. Data Provided by Austrian Energy Agency Based on Wiener Linien. 2022. Available online: https://blog.wienerlinien.at/derwasserstoffbus-er-hat-ueberzeugt/ (accessed on 10 February 2022). 27. Data Provided by Austrian Energy Agency Based on Postbus. 2022. Available online: https://www.postbus.at/en/dasunternehmen/innovationen/wasserstoffbusse (accessed on 10 February 2022). 28. Data Provided by Austrian Energy Agency Based on Statistik Austria. 2022. Available online: https://www.statistik.at/web_ de/statistiken/energie_umwelt_innovation_mobilitaet/verkehr/strasse/kraftfahrzeuge_-_bestand/index.html (accessed on 10 February 2022). 29. Data Provided by EUDP, Based on Statistics Denmark (dst.dk); Center for Energy Administration: Esbjerg, Denmark, 2022. 30. Data Provided by NRCan; Natural Resources Canada: Ottawa, ON, Canada, 2022. 31. Data Provided by SAE China, Based on Insurance Data; Society of Automotive Engineers: Beijing, China, 2022.
+
+Energies 2022, 15, 4975
+
+31 of 34
+
+32. Data Provided by CEA, based on Hydrogen Mobility France; Commissariat à l'énergie atomique et aux énergies alternatives: Grenoble, France, 2022.
+33. Data Provided by VTT Research Center of Finland, Based on Data from Hyundai; VTT Research Center of Finland: Espoo, Finland, 2022. 34. Auswertung KBA Zahlen, 11.01.2022, NOW GmbH. Available online: https://www.now-gmbh.de/wp-content/uploads/2022
+/01/KBA_Report_12-2021.pdf (accessed on 4 February 2022). 35. Data Provided by ENEA, Based on SEAB AG. 2022. Available online: https://www.seab.bz.it/it/news/seab-e-asm-merano-
+collaborano-al-progetto-revive (accessed on 10 February 2022). 36. Data Provided by ENEA, Based on L'Associazione Italiana per l'Idrogeno e Celle a Combustibile--H2IT. 2022. Available online:
+https://www.h2it.it/ (accessed on 10 February 2022). 37. Data Provided by NEDO, Based on METI: Ministry of Economy, Trade and Industry of Japan; NEDO: Tokyo, Japan, 2022. 38. Data Provided by CNH2, Based on Europapress. 2022. Available online: https://www.europapress.es/economia/noticia-alsa-
+estrena-madrid-primer-autobus-hidrogeno-espana-linea-urbana-20220126111229.html (accessed on 10 February 2022). 39. Data Provided by CNH2, Based on TMB Transports Metropolitans de Barcelona. 2022. Available online: https://noticies.tmb.cat/
+file/16104/download?token=aaltGte1 (accessed on 10 February 2022). 40. Data Provided by CNH2, Based on Anfac. 2022. Available online: https://anfac.com/tag/ideauto (accessed on 10 February 2022). 41. Data Provided by Swedish Energy Agency Based on Renova AB. 2022. Available online: https://www.renova.se/hallbarhet/
+hallbarhetsarbete/hallbara-transporter/ (accessed on 10 February 2022). 42. Data Provided by Swedish Energy Agency Based on European Alternative Fuels Observatory. 2022. Available online: https:
+//www.eafo.eu/vehicles-and-fleet/m1# (accessed on 10 February 2022). 43. Snapshot of Hydrogen and Fuel Cell Applications in the US -Examples, US Department of Energy. Available online: https:
+//www.energy.gov/sites/default/files/2022-01/snapshot-h2-fuel-cell-applications-jan2022.pdf (accessed on 26 January 2022). 44. Fuel Cell Electric Vehicle Sales Tracking January 2022 based on Vehicle Sales Data from Baum and Associates, California Fuel Cell
+Partnership. Available online: https://cafcp.org/sites/default/files/FCEV-Sales-Tracking.pdf (accessed on 13 January 2022). 45. Port of Los Angeles Rolls Out Hydrogen Fuel Cell Electric Freight Demonstration. Available online: https://www.kenworth.com/
+about-us/news/port-of-los-angeles-rolls-out-hydrogen-fuel-cell-electric-freight-demonstration/ (accessed on 10 February 2022). 46. Data Provided by Korea Institute of Energy Technology (KENTECH), Based on Ministry of Land, Infrastructure and Transport, Republic of
+Korea; Korea Institute of Energy Technology: Daejeon, Korea, 2022. 47. Data provided by Clean H2 JU Programme Office; Clean H2 JU Programme Office: Brussels, Belgium, 2022. 48. Data (France, FCEV) Gathered by the European Alternative Fuels Observatory, Commissioned by Contract by the Euro-
+pean Commission. Dg Mobility and Transport. Available online: https://www.eafo.eu/vehicles-and-fleet/m1 (accessed on 25 February 2022). 49. Data (Netherlands) Gathered by the European Alternative Fuels Observatory, Commissioned by Contract by the European Commission. Dg Mobility and Transport. Available online: https://www.eafo.eu/vehicles-and-fleet/m1 (accessed on 25 February 2022). 50. Data (Norway, FCEV) Gathered by the European Alternative Fuels Observatory, Commissioned by Contract by the European Commission. Dg Mobility and Transport. Available online: https://www.eafo.eu/vehicles-and-fleet/m1 (accessed on 25 February 2022). 51. Data (Italy, FCEV) Gathered by the European Alternative Fuels Observatory, Commissioned by Contract by the European Commission. Dg Mobility and Transport. Available online: https://www.eafo.eu/vehicles-and-fleet/m1 (accessed on 25 February 2022). 52. IPHE Country Update United Kingdom: January 2022. Available online: https://www.iphe.net/united-kingdom (accessed on 4 February 2022). 53. IPHE Country Update Switzerland: June 2021. Available online: https://www.iphe.net/switzerland (accessed on 4 February 2022). 54. IPHE Country Update India: July 2021. Available online: https://www.iphe.net/india (accessed on 4 February 2022). 55. IPHE Country Update Costa Rica: January 2022. Available online: https://www.iphe.net/costa-rica (accessed on 4 February 2022). 56. IPHE Country Update Australia: June 2021. Available online: https://www.iphe.net/australia (accessed on 4 February 2022). 57. IPHE Country Update Brazil: June 2021. Available online: https://www.iphe.net/brazil (accessed on 4 February 2022). 58. Da-sol, K. Hyundai's Nexo Takes Up Half of Global FCEV Sales. Available online: http://www.koreaherald.com/view.php?ud= 20211230000656 (accessed on 27 April 2022). 59. Zhang, J.; Hou, F.; Wang, J.; Song, Z.; Baronas, J.; Li, H.; Wu, C.; Deng, X.; Lei, X.; Li, K.; et al. General Report: Ready to Go, the "Dual Carbon" Goals Are Leading the "Hydrogen Era"; China Machine Press: Beijing, China, 2022. 60. Toyota Mirai US Sales Figures. Available online: https://carfigures.com/us-market-brand/toyota/mirai (accessed on 27 April 2022). 61. Hyundai Nexo US Sales Figures. Available online: https://carfigures.com/us-market-brand/hyundai/nexo (accessed on 27 April 2022). 62. Data provided by Korea Institute of Energy Technology (KENTECH), based Hyundai Motor Company; Korea Institute of Energy Technology: Daejeon, Korea, 2022. 63. Brochure: Fuel Cell Electric Vehicle Deployments in China. Powered by Ballard Technology; Ballard Technology: Vancouver, BC, Canada, 2019.
+
+Energies 2022, 15, 4975
+
+32 of 34
+
+64. Hyundai Hydrogen Mobility--Our Truck--Xcient Fuel Cel. Available online: https://hyundai-hm.com/en/unser-truck/ (accessed on 28 April 2022).
+65. Data Provided by Austrian Energy Agency. 2022. Available online: https://h2.live/en (accessed on 10 February 2022). 66. First Croatian Hydrogen Refuelling Station. Available online: https://hydrogen.hr/en/projects/first-croatian-hydrogen-
+refuelling-station/ (accessed on 10 February 2022). 67. Data Provided by SAE China, Based on Trendbank Data; Society of Automotive Engineers: Beijing, China, 2022. 68. Tankstationer--Brintbiler.dk. Available online: https://brintbiler.dk/tankstationer/ (accessed on 20 January 2022). 69. Data Provided by CEA, Based on France Hydrogène; CEA: Grenoble, France, 2022. 70. D-700 bar--Netzausbau Live. Das Tankstellennetz für Wasserstoffautos in Deutschland, H2 Mobility. Available online:
+https://h2.live/ (accessed on 3 January 2022). 71. Data Provided by Korea Institute of Energy Technology (KENTECH), Based on H2KOREA; Korea Institute of Energy Technology:
+Daejeon, Korea, 2022. 72. Data Provided by CNH2. 2022. Available online: www.h2stations.org (accessed on 10 February 2022). 73. Vätgas Sverige. Available online: https://vatgas.se/tanka/stationer/ (accessed on 10 February 2022). 74. Alternative Fueling Station Counts by State, U.S. Department of Energy--Energy Efficiency and Renewable Energy Alternative
+Fuels Data Center. Available online: https://afdc.energy.gov/stations/states (accessed on 3 January 2022). 75. h2stations.org. An info Service of Ludwig-Bölkow-Systemtechnik GmbH and TÜV SÜD. Available online: https://www.h2
+stations.org/ (accessed on 10 February 2022). 76. OECD Data. Exchange Rates. Available online: https://data.oecd.org/conversion/exchange-rates.htm (accessed on 3 July 2022). 77. Data provided by Korea Institute of Energy Technology (KENTECH), Based on Government of Korea; Korea Institute of Energy Technology:
+Daejeon, Korea, 2022. 78. 2022 Toyota Mirai Fuel Cell Vehicle. Available online: https://www.toyota.com/mirai/ (accessed on 9 March 2022). 79. 2020 NEXO Fuel Cell Vehicle Overview Hyundai USA. Available online: https://www.hyundaiusa.com/us/en/vehicles/nexo
+(accessed on 9 March 2022). 80. Alternative Fuels Data Center Fuel Cell Motor Vehicle Tax Credit. Available online: https://afdc.energy.gov/laws/350 (accessed
+on 9 March 2022). 81. Eligible Vehicles Clean Vehicle Rebate Project. Available online: https://cleanvehiclerebate.org/en/eligible-vehicles (accessed on
+9 March 2022). 82. Hydrogen Laws and Incentives in California. Available online: https://afdc.energy.gov/fuels/laws/HY?state=ca (accessed on
+9 March 2022). 83. CHEAPR--New Eligible Vehicles. Available online: https://portal.ct.gov/DEEP/Air/Mobile-Sources/CHEAPR/CHEAPR---
+New-Eligible-Vehicles#foot1 (accessed on 9 March 2022). 84. Alternative Fuels Data Center. Federal and State Laws and Incentives. Available online: https://afdc.energy.gov/laws (accessed
+on 9 March 2022). 85. Factsheet: Hydrogen and Fuel Cell Technology in China. Available online: https://www.now-gmbh.de/wp-content/uploads/
+2020/09/Factsheet-China-FC-EN.pdf (accessed on 14 March 2022). 86. Lews, S. China's New Fuel Cell Vehicle Subsidy Policy Focuses on Whole Value Chain. Available online: https://www.spglobal.com/
+commodity-insights/en/market-insights/latest-news/coal/100120-chinas-new-fuel-cell-vehicle-subsidy-policy-focuses-onwhole-value-chain (accessed on 14 March 2022). 87. Lin, M.T. To Jumpstart Hydrogen Economy, China Needs More than Subsidies for Fuel-Cell Vehicles. Available online: https:// cleanenergynews.ihsmarkit.com/research-analysis/to-jumpstart-hydrogen-economy-china-needs-more-than-subsidies-.html (accessed on 14 March 2022). 88. Info Service METI. Available online: https://www.meti.go.jp/policy/mono_info_service/mono/automobile/cev/cevr3/file1 .pdf (accessed on 21 March 2022). 89. Wasserstofffahrzeuge: Wer bei uns tankt, H2 Mobility. Available online: https://h2.live/wasserstoffautos/ (accessed on 21 March 2022). 90. Toyota Mirai Advanced Limousine, Preise und Angebote. Available online: https://www.toyota.de/automobile/mirai/preiseund-angebote/grade=fbe1d2a9-2ac1-4ce6-8576-806337d5d1a9\T1\textbar{}bodytype=74469257-47ae-46eb-859d-2c693e672 6ca (accessed on 21 March 2022). 91. Der Hyundai NEXO. Available online: https://www.hyundai.de/downloads/modelle/preisliste/hyundai-nexo-preisliste (accessed on 21 March 2022). 92. Elektromobilität--Einzelantrag Stellen. Bundesamt für Wirtschaft und Ausfuhrkontrolle. Available online: https://www. bafa.de/DE/Energie/Energieeffizienz/Elektromobilitaet/Neuen_Antrag_stellen/neuen_antrag_stellen.html (accessed on 21 March 2022). 93. BAFA--Zwischenbilanz zum Antragstand vom 1. März 2022. Available online: https://www.bafa.de/SharedDocs/Downloads/ DE/Energie/emob_zwischenbilanz.html (accessed on 21 March 2022). 94. von Knobelsdorff, K.-C. Wasserstoffmobilität in Deutschland, Presentation at Deutsche Wasserstoff-Vollversammlung 2021, Berlin. Available online: https://www.now-gmbh.de/wp-content/uploads/2021/02/Tag1-01-Knobelsdorff-Wasserstoffmobilitaet.pdf (accessed on 13 May 2022).
+
+Energies 2022, 15, 4975
+
+33 of 34
+
+95. Mutwil, A. Nationales Innovationsprogramm Wasserstoff- und Brennstoffzellentechnologie, Presentation at Deutsche WasserstoffVollversammlung 2021, 26.01.2021, Berlin. Available online: https://www.now-gmbh.de/wp-content/uploads/2021/02/Tag1-0 3-Mutwil-BMVI.pdf (accessed on 13 May 2022).
+96. France Postpones EV Subsidy Reduction. Available online: https://www.electrive.com/2021/10/26/france-postpones-evsubsidy-reduction/ (accessed on 25 March 2022).
+97. 2022 Mirai. Available online: https://www.toyota.ca/toyota/en/vehicles/mirai/overview (accessed on 25 March 2022). 98. Zero Emission Vehicles. Available online: https://tc.canada.ca/en/road-transportation/innovative-technologies/zero-emission-
+vehicles (accessed on 25 March 2022). 99. New Vehicle Rebate. Available online: https://vehiculeselectriques.gouv.qc.ca/english/rabais/ve-neuf/programme-rabais-
+vehicule-neuf.asp (accessed on 25 March 2022). 100. Apply for a Rebate for a New Zero-Emission Vehicle. Available online: https://yukon.ca/en/driving-and-transportation/apply-
+rebate-new-zero-emission-vehicle (accessed on 25 March 2022). 101. Eligible CleanBC Go Electric Vehicles. Available online: https://newcardealersgoelectric.ca/eligible-CleanBC-vehicles (accessed
+on 25 March 2022). 102. Ecobonus. L'incentivo per La Mobilita Sostenible. Available online: https://ecobonus.mise.gov.it/ (accessed on 25 March 2022). 103. Hyundai NEXO. Available online: https://www.hyundai.at/nexo/finanzierung-preise (accessed on 25 March 2022). 104. Mirai Basis--Limousine. Available online: https://www.toyota.at/new-cars/mirai/index.json (accessed on 25 March 2022). 105. Data Provided by Austrian Energy Agency. 2022. Available online: https://www.umweltfoerderung.at (accessed on 25 March 2022). 106. Data Provided by Austrian Energy Agency. 2022. Available online: https://www.oeamtc.at/thema/elektromobilitaet/ (accessed
+on 25 March 2022). 107. Data Provided by Austrian Energy Agency. 2022. Available online: https://www.wko.at/service/t/umwelt-energie/
+foerderungen-elektromobilitaet.html (accessed on 25 March 2022). 108. Data Provided by CNH2 (Centro Nacional del Hidrógeno); CNH2 (Centro Nacional del Hidrógeno): Puertollano, Spain, 2022. 109. Ministerio Para La Transición Ecológicay El Reto Demográfico. Available online: https://www.boe.es/boe/dias/2020/06/17
+/pdfs/BOE-A-2020-6235.pdf (accessed on 25 March 2022). 110. NEXO. Available online: https://www.hyundai.se/bilar/nexo?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiNDFmAfwN0zJM5
+3-dtCcS2C73MGAFmlNCpX0LK_o2_RTdre_2UW2IAaAqnwEALw_wcB (accessed on 25 March 2022). 111. Drive the Future with KINTO! Available online: https://www.kinto-mobility.se/en/kinto-vatgas (accessed on 25 March 2022). 112. Klimatbonusbilar 2022. Available online: https://www.bilsweden.se/miljo-sakerhet/klimatbonusbilar/klimatbonusbilar-2022
+(accessed on 25 March 2022). 113. Basic Plan for Implementing the Hydrogen Economy of Korea; Ministry of Trade, Industry and Energy: Sejong City, Korea, 2021. 114. Road Map to a US Hydrogen Economy; The Fuel Cell and Hydrogen Energy Association (FCHEA): Washington, DC, USA, 2020. 115. 2021 Annual Evaluation of Fuel Cell Electric Vehicle Deployment and Hydrogen Fuel Station Network Development (Report Pursuant to
+Assembly Bill 8; Perea, Chapter 401, Statutes of 2013); California Air Resources Board: Sacramento, CA, USA, 2021. 116. The California Fuel Cell Revolution. A Vision for Advancing Economic, Social, and Environmental Priorities; California Fuel Cell
+Partnership: West Sacramento, CA, USA, 2018. 117. Wang, J. Overview and trends of China's FCV industry. In Proceedings of the EFC European Fuel Cells and Hydrogen Piero
+Lunghi Conference 2021, Virtual Conderence, 15­17 December 2021. 118. The Strategic Road Map for Hydrogen and Fuel Cells: Industry-Academia-Government Action Plan to Realize a "Hydrogen
+Society". Available online: https://www.meti.go.jp/english/press/2019/0312_002.html (accessed on 21 March 2022). 119. The National Hydrogen Strategy. Available online: https://www.bmwi.de/Redaktion/EN/Publikationen/Energie/the-national-
+hydrogen-strategy.html (accessed on 21 March 2022). 120. Nationaler Strategierahmen über den Aufbau der Infrastruktur für Alternative Kraftstoffe als Teil der Umsetzung der Richtlinie
+2014/94/EU. Available online: https://www.bmvi.de/SharedDocs/DE/Anlage/G/MKS/mks-nationaler-strategierahmenafid.html (accessed on 21 March 2022). 121. Wasserstoff-Roadmap für Nordrhein-Westfalen Vorgestellt. Available online: https://www.land.nrw/pressemitteilung/ wasserstoff-roadmap-fuer-nordrhein-westfalen-vorgestellt (accessed on 21 March 2022). 122. National Climate Agreement--The Netherlands. Available online: https://www.klimaatakkoord.nl/documenten/publicaties/ 2019/06/28/national-climate-agreement-the-netherlands (accessed on 21 March 2022). 123. Plan de Déploiement de L'hydrogène pour la Transition Énergétique; Ministre de la Transition Écologique et Solidaire: Paris, France, 2018. 124. Hydrogen Strategy for Canada. Seizing the Opportunities for Hydrogen. A Call to Action; Government of Canada: Ottawa, ON, Canada, 2020; ISBN 978-0-660-36760-6. 125. IPHE Country Update Italy: November 2021. Available online: https://www.iphe.net/italy (accessed on 25 March 2022). 126. Data Provided by ENEA, Based on Ministry of Economic Development. 2022. Available online: https://www.mise.gov.it/ images/stories/documenti/Strategia_Nazionale_Idrogeno_Linee_guida_preliminari_nov20.pdf (accessed on 25 March 2022). 127. Data Provided by ENEA, Based on Italian Government. 2022. Available online: http://www.governo.it/it/provvedimento/ provvedimento-d3406751201213/16029 (accessed on 25 March 2022). 128. Data Provided by ENEA, Based on Gazetta Ufficiale Della Repubblica Italiana. 2022. Available online: https://www. gazzettaufficiale.it/eli/id/2017/01/13/17G00005/sg (accessed on 25 March 2022).
+
+Energies 2022, 15, 4975
+
+34 of 34
+
+129. Hydrogen Roadmap: A Commitment to Renewable Hydrogen. Available online: https://www.miteco.gob.es/es/ministerio/ planes-estrategias/hidrogeno/h2executivesummary_tcm30-513831.pdf (accessed on 25 March 2022).
+130. Hydrogen Roadmap Europe: A sustainable pathway for the European Energy Transition; Publications Office of the European Union: Luxembourg, 2019.
+131. Proposal for a Regulation of the European Parliament and of the Council on the Deployment of Alternative Fuels Infrastructure, and Repealing Directive 2014/94/EU of the European Parliament and of the Council. Available online: https://eur-lex.europa. eu/legal-content/en/TXT/?uri=CELEX:52021PC0559 (accessed on 5 May 2022).
+132. AFIR Industry Letter 27/04/2022: AmBitious Binding Targets for Hydrogen Refuelling Infrastructure Are Central to Climate Action. Available online: https://hydrogeneurope.eu/afir-industry-letter/ (accessed on 5 May 2022).
+133. Hydrogen, Scaling up. Hydrogen Council. Available online: https://hydrogencouncil.com/wp-content/uploads/2017/11/ Hydrogen-Scaling-up_Hydrogen-Council_2017.compressed.pdf (accessed on 1 April 2022).
+134. Samsun, R.C. Global development status of fuel cell vehicles. In Fuel Cells: Data, Facts and Figures; Stolten, D., Samsun, R.C., Garland, N., Eds.; Wiley-VCH: Weinheim, Germany, 2016; pp. 37­60.
+135. Paquet, T.; Hayashi, T.; Herbst, S.; Killmann, G.; Yoshida, K. Supporting the deployment of a viable hydrogen ecosystem by multiple applications of Toyota's second generation fuel cell technology--Toyota motor Europe. In Proceedings of the Aachen Hydrogen Colloquium, Aachen, Germany, 3­4 May 2022.
+136. Melaina, M.; Bush, B.; Muratori, M.; Zuboy, J.; Ellis, S. National Hydrogen Scenarios: How Many Stations, Where, and When? Prepared by the National Renewable Energy Laboratory for the H2USA Locations Roadmap Working Group. 2017. Available online: http://h2usa.org/sites/default/files/H2USA_LRWG_NationalScenarios2017.pdf (accessed on 6 May 2022).
+137. Number of Registered Cars in Germany from 1960 to 2022. Available online: https://www.statista.com/statistics/587764 /number-of-registered-cars-germany/ (accessed on 6 May 2022).
+138. Most Common Non-Motorway Petrol Station Brands in Germany as of January 2021. Available online: https://www.statista. com/statistics/525572/number-of-petrol-fuel-filling-stations-in-germany-by-brand/ (accessed on 6 May 2022).
+139. World Health Organization. Global Health Obervatory Data Repository. Registered Vehicles. Data by Country. Available online: https://apps.who.int/gho/data/node.main.A995 (accessed on 20 April 2022).
+140. OECD, Gross Domestic Product (GDP) (Indicator). Available online: https://data.oecd.org/gdp/gross-domestic-product-gdp.htm (accessed on 20 April 2022).
+
+
