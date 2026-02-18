@@ -1,1 +1,33 @@
 this is the content and text of the table of contents and its content as a reference
+
+
+Ausgangslage
+In dem Zeitalter der Digitalisierung sind die Begriffe „Künstliche Intelligenz“ und „Maschinelles
+Lernen“ nicht mehr wegzudenken. Jedoch stellen sich häufig die Fragen was ist damit gemeint
+und inwiefern beeinflusst diese Technologien den Markt?
+Bei der K¸nstlichen Intelligenz werden Kompetenzen und F‰higkeiten, die dem Menschlichen
+Handeln ‰hneln, in einer Maschine bzw. einem Roboter integriert, um Prozesse automatisiert
+zu gestalten. Ein Teil der K¸nstlichen Intelligenz stellt das Maschinelle Lernen dar, welches
+auf Grundlage von Algorithmen den Lernprozess eines Menschen imitiert und sich selbst wei-
+terentwickeln kann.1
+Die Abbildung 1 stellt den prognostizierten Zuwachs des Umsatzes durch Implementierung
+von intelligenten Anwendungen der K¸nstlichen Intelligenz dar. Ebenfalls l‰sst sich daraus
+entnehmen, dass Nordamerika, Europa und Asien-Pazifik die hˆchsten Ums‰tze mit Anwen-
+dungen von K¸nstlicher Intelligenz erbringen.
+Abbildung 1: Prognostizierter Umsatz mit Anwendungen der K¸nstlichen Intelligenz. Statista (2018): o.S.
+Jedoch stellt die Grafik nur eine Prognose dar und soll zur Vorstellung des wachsenden KI-
+Markt verhelfen. Denn der generierte Umsatz durch KI-Anwendungen entspricht im Jahr 2022
+ca. 86,9 Milliarden US-Dollar2 und liegt somit mehr als 100 % ¸ber der Pr‰diktion.
+1 Vgl. Stadelmann (2019): 67-68
+2 Vgl. Watts (2023): o.S.
+2
+Da Statistiken solche Ergebnisse liefern, ist es unabdingbar, dass K¸nstliche Intelligenz den
+Zukunftsmarkt enorm umstrukturieren wird und es ausschlaggebend ist eine Vielzahl an ver-
+schiedenen KI-Anwendungen im Unternehmen zu integrieren. Durch die Weiterentwicklung
+der Technologien im KI-Bereich werden diese ebenfalls im Bereich der Logistik bzw. im
+Supply-Chain-Management verwendet.
+Die Supply-Chain beschreibt ein Netzwerk aus verschiedenen notwendigen Elementen, um
+ein Produkt oder eine Dienstleistung vom Rohstofflieferanten bis zum Endverbraucher zu brin-
+gen. Die Koordination und Integration der Elemente der Lieferkette wird auch als Supply-
+Chain-Management bezeichnet.3
+
