@@ -16,7 +16,10 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "Bash(npx get-shit-done-cc:*)",
       "Bash(dir \"C:\\\\Users\\\\denny\\\\Bachelorarbeit\\\\expose\")",
-      "Bash(biber expose_bachelor:*)"
+      "Bash(biber expose_bachelor:*)",
+      "Skill(gsd:set-profile)",
+      "Bash(node:*)",
+      "Bash(wc:*)"
     ]
   }
 }

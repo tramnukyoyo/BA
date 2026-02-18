@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.31)  13 FEB 2026 21:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.31)  18 FEB 2026 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -644,71 +644,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'expose_bachelor.bbl' found.
- (expose_bachelor.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Chung2024
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                ECH2A2023
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                EUCommission2020
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Eissler2023
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                METI2023
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Odenweller2025
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Prokopou2025
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Sujan2024
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Vizza2025
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (expose_bachelor.bbl)
 Package biblatex Info: Reference section=0 on input line 46.
 Package biblatex Info: Reference segment=0 on input line 46.
 
@@ -765,93 +701,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 67.
 
-
-LaTeX Warning: Citation 'Odenweller2025' on page 1 undefined on input line 71.
-
-
-LaTeX Warning: Citation 'EUCommission2020' on page 1 undefined on input line 76
-.
-
-
 Overfull \hbox (12.4884pt too wide) in paragraph at lines 76--77
 []\OT1/cmr/bx/n/12 Europ[]aische Uni-on: \OT1/cmr/m/n/12 Die EU-Verordnung f[]u
 r Al-ter-na-ti-ve Fuels In-fra-struc-ture (AFIR)
  []
 
 
-LaTeX Warning: Citation 'METI2023' on page 1 undefined on input line 78.
-
-
-LaTeX Warning: Citation 'Chung2024' on page 1 undefined on input line 85.
-
-
-LaTeX Warning: Citation 'Eissler2023' on page 1 undefined on input line 85.
-
-
-LaTeX Warning: Citation 'Vizza2025' on page 1 undefined on input line 85.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.86 
-      [1]
-
-LaTeX Warning: Citation 'ECH2A2023' on page 2 undefined on input line 99.
-
-
-LaTeX Warning: Citation 'EUCommission2020' on page 2 undefined on input line 99
-.
-
-
-Overfull \hbox (48.89522pt too wide) in paragraph at lines 99--100
-\OT1/cmr/m/n/12 Richt-li-nie 2014/94/EU) HRS-Netzwerk-Aufbau und schaf-fen neue
- Compliance-Anforderungen
- []
-
-
+l.81 \end{itemize}
+                   [1]
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.100 
-       [2]
-
-LaTeX Warning: Citation 'Eissler2023' on page 3 undefined on input line 101.
-
-
-LaTeX Warning: Citation 'Prokopou2025' on page 3 undefined on input line 101.
-
-
-LaTeX Warning: Citation 'Sujan2024' on page 3 undefined on input line 103.
-
-
-LaTeX Warning: Citation 'Eissler2023' on page 3 undefined on input line 103.
-
-
-LaTeX Warning: Citation 'Prokopou2025' on page 3 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'Chung2024' on page 3 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'Vizza2025' on page 3 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'METI2023' on page 3 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'EUCommission2020' on page 3 undefined on input line 10
-8.
-
-
-Overfull \hbox (7.87071pt too wide) in paragraph at lines 108--109
-\OT1/cmr/m/n/12 gns und Zu-verl[]assigkeit [], []okonomische Sze-na-ri-en []; [
-],
- []
-
-[3]
+       [2] [3]
 Overfull \hbox (9.32222pt too wide) in paragraph at lines 126--127
 []\OT1/cmr/bx/n/12 RQ2: \OT1/cmr/m/n/12 Wel-che HRS-Integrationsszenarien (Korr
 idor-basiert, ur-ba-ne Clus-ter, Industrie-
@@ -863,13 +730,13 @@ Overfull \hbox (8.10248pt too wide) in paragraph at lines 143--144
 tz, Aus-tra-li-en mit Export-
  []
 
-
+[4]
 Overfull \hbox (30.03976pt too wide) in paragraph at lines 144--145
 []\OT1/cmr/m/n/12 Szenarioentwicklung: De-fi-ni-ti-on und Be-wer-tung von HRS-I
 ntegrationsszenarien (Korridor-
  []
 
-[4]
+
 Overfull \hbox (50.95935pt too wide) in paragraph at lines 151--152
 []\OT1/cmr/bx/n/12 HRS-spezifische Grund-la-gen \OT1/cmr/m/n/12 schaf-fen (Wass
 erstoff-Refueltechnologie, HRS-Komponenten,
@@ -881,17 +748,13 @@ Overfull \hbox (22.34915pt too wide) in paragraph at lines 153--154
 -ma-ti-sche Ver-gleichs-ma-trix (3 Barriere-
  []
 
-
-LaTeX Warning: Citation 'Odenweller2025' on page 5 undefined on input line 174.
-
-
-[5]
+[5] [6]
 Overfull \hbox (11.80101pt too wide) in paragraph at lines 207--208
 []\OT1/cmr/m/n/12 Regulatorische H[]urden: ISO-Standards, na-tio-na-le Zer-ti-f
 i-zie-rung, Druckstandards-
  []
 
-[6] [7]
+[7]
 Overfull \hbox (43.91318pt too wide) in paragraph at lines 257--258
 []\OT1/cmr/m/n/12 Logistische H[]urden pro Re-gi-on (Ver-sor-gungs-kos-ten, Tra
 ns-port-me-tho-den, Verf[]ugbarkeit) 
@@ -915,7 +778,7 @@ Overfull \hbox (26.29532pt too wide) in paragraph at lines 350--351
 del-le die HRS-Entwicklung? 
  []
 
-[11] [12]
+[11] [12] [13]
 Overfull \hbox (1.95009pt too wide) in paragraph at lines 392--393
 []\OT1/cmr/bx/n/12 Wirtschaftliche Be-wer-tung: \OT1/cmr/m/n/12 Kostenstruktur-
 Analyse (CA-PEX/OPEX), Net Pre-
@@ -927,7 +790,7 @@ Overfull \hbox (9.76913pt too wide) in paragraph at lines 394--395
 Markt-Treiber und Adoption-
  []
 
-[13] [14] (expose_bachelor.aux)
+[14] [15] (expose_bachelor.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -939,13 +802,13 @@ Package logreq Info: Writing requests to 'expose_bachelor.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18726 strings out of 467871
- 334878 string characters out of 5418376
- 1209373 words of memory out of 5000000
- 47367 multiletter control sequences out of 15000+600000
+ 18839 strings out of 467871
+ 337606 string characters out of 5418376
+ 1210889 words of memory out of 5000000
+ 47470 multiletter control sequences out of 15000+600000
  634350 words of font info for 62 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 75i,11n,79p,1070b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1344b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\denny\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/denny/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -954,9 +817,9 @@ type1/public/amsfonts/cm/cmr12.pfb><C:/Users/denny/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/denny/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/denny/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on expose_bachelor.pdf (16 pages, 132017 bytes).
+Output written on expose_bachelor.pdf (17 pages, 144758 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
+ 272 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

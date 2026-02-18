@@ -3,5 +3,5 @@
 \contentsline {section}{Problemstellung / Herausforderung und Forschungsstand}{2}{section*.5}%
 \contentsline {section}{Formulierung der Forschungsfragen}{4}{section*.8}%
 \contentsline {section}{Zielsetzung und Aufgabenstellung}{4}{section*.9}%
-\contentsline {section}{Gliederung}{5}{section*.10}%
-\contentsline {section}{Konzeptioneller Rahmen}{13}{section*.18}%
+\contentsline {section}{Gliederung}{6}{section*.10}%
+\contentsline {section}{Konzeptioneller Rahmen}{14}{section*.18}%
