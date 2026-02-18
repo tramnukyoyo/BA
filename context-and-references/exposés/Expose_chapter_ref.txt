@@ -1,5 +1,11 @@
 this is the content and text of the table of contents and its content as a reference
 
+topic of reference: Analyse und Potenziale einer intelligenten Optimierung des Supply-Chain-Ma-
+nagements durch K¸nstlicher Intelligenz und Maschinelles Lernen in der Logis-
+tik
+-
+Analysis and potential for intelligent optimization of supply chain management
+through artificial intelligence and machine learning in logistics
 
 Ausgangslage
 In dem Zeitalter der Digitalisierung sind die Begriffe „Künstliche Intelligenz“ und „Maschinelles
