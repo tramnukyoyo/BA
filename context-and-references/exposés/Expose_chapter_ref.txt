@@ -1,4 +1,4 @@
-this is the content and text of the table of contents and its content as a reference
+no this is the content and text of the table of contents and its content as a reference
 
 topic of reference: Analyse und Potenziale einer intelligenten Optimierung des Supply-Chain-Ma-
 nagements durch K¸nstlicher Intelligenz und Maschinelles Lernen in der Logis-
@@ -70,3 +70,64 @@ werden. Am Ende der Abschlussarbeit sollen die Funktionsweise, die Signifikanz u
 tenziale einer Integration von K¸nstlichen Intelligenz Anwendungen im Supply-Chain-Manage-
 ment ¸bermittelt werden.
 
+
+Gliederung
+1) Einleitung
+1.1 Motivation
+1.2 Aufbau der Arbeit
+1.3 Methodisches Vorgehen
+2) Theoretische Grundlagen
+2.1 Supply-Chain-Management – Grundlagen und Herausforderungen
+2.2 K¸nstliche Intelligenz
+2.2.1 Maschinelles Lernen
+3) 4) 2.3 2.2.2 Verarbeitung nat¸rlicher Sprache
+2.2.3 Intelligente Prozessautomatisierung
+Entwicklungen im Bereich der Industrieautomation
+2.3.1 Industrie 4.0
+2.3.2 Industrie 5.0
+Anwendungen von KI und ML im SCM
+3.1 Bedarfsplanung und Nachfrageprognosen
+3.2 Lieferantenauswahl
+3.3 Risikomanagement der Lieferkette
+3.4 Produktion und Bestandsmanagement
+3.5 Transportoptimierung
+Auswirkungen und Potenziale von KI und ML in der Logistik
+4.1 Effizienzsteigerung und Kostenreduktion
+4.1.1 Automatisierungsgrad
+4.1.2 Durchlaufzeiten und Lieferungsgenauigkeiten
+4.2 Verbesserung der Lieferkettenflexibilit‰t
+4.2.1 Anpassungsf‰higkeit an Kundenanforderungen
+4.2.2 Reaktionszeiten auf Marktver‰nderungen
+4.3 Innovationspotenziale f¸r Unternehmen und Gesch‰ftsmodelle
+4.3.1 Return of Investment
+4.3.2 Innovationsrate
+4.4 Auswirkungen auf den Arbeitsmarkt
+4.4.1 Qualifikationsanforderungen
+4.5 Nachhaltigkeit und Umweltaspekte in der digitalen Logistik
+4.5.1 Ver‰nderung der CO2-Emissionen und der Abfallproduktion
+5) Diskussion der Technologien
+6) Zusammenfassung und Ausblick
+5
+Literaturverzeichnis
+Brandt, M. (2018, 13. Juni). Das Milliardengesch‰ft mit der k¸nstlichen Intelligenz. Statista
+Daily Data. Abgerufen am 15. November 2023, von https://de.statista.com/infogra-
+fik/14245/prognostizierter-umsatz-mit-ki-anwendungen-weltweit/.
+Brown, T. (2023, 19. Februar). Impact of AI in supply chain management. ITChronicles. Ab-
+gerufen am 16. November 2023, von https://itchronicles.com/artificial-intelligence/ai-
+in-supply-chain-management/#Adoption_of_AI_in_Supply_Chain_Management.
+G‰rtner, C. & Heinrich, C. (2018). Fallstudien zur digitalen Transformation. In Springer e-
+Books. https://doi.org/10.1007/978-3-658-18745-3.
+Hofbauer et. al. (2015). Strategische Lieferantenauswahl [Working Paper]. Technische Hoch-
+schule Ingolstadt.
+MHI & Deloitte. (2023). The Responsible Supply Chain: Transparency, Sustainability, and the
+case for business. MHI.
+Stadelmann, T. (2019). Wie maschinelles Lernen den Markt ver‰ndert. Digitalisierung: Da-
+tenhype mit Werteverlust? Ethische Perspektiven f¸r eine Schl¸sseltechnologie, 67–
+68. https://doi.org/10.21256/zhaw-18822.
+Vofl, P. H. (2020). Logistik – die untersch‰tzte Zukunftsindustrie. In Springer eBooks (2.
+Aufl.). Springer Gabler. https://doi.org/10.1007/978-3-658-27317-0.
+Watts, R. (2023, 25. Oktober). 36 Statistiken und Trends zum Thema K¸nstliche Intelligenz
+(KI). Forbes Advisor Deutschland. Abgerufen am 15. November 2023, von
+https://www.forbes.com/advisor/de/business/software/kuenstliche-intelligenz-ki-
+trends-statistiken/#:~:text=Die%20Marktforscher%20von%20MarketsandMar-
+kets%20prognostizieren,Dollar%20im%20Jahr%202022%20entspricht.
